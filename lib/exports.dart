@@ -18,6 +18,7 @@ export 'package:marking_web/presentation/screens/my_button.dart';
 export 'package:marking_web/presentation/screens/searchh_bar.dart';
 export 'package:url_launcher/url_launcher.dart';
 export 'package:marking_web/presentation/screens/sale_screen.dart';
+export 'package:marking_web/presentation/screens/widgets_footer.dart';
 
 
 

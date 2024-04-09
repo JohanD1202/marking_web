@@ -24,16 +24,18 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_4.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
               priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
+              priceDescuento: '\$14.000',
               promotion: Price(),
             ),
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
@@ -44,6 +46,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
@@ -54,6 +57,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
@@ -71,6 +75,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_4.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
@@ -81,6 +86,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
@@ -91,6 +97,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
@@ -101,6 +108,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
@@ -118,6 +126,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_4.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
@@ -128,6 +137,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
@@ -138,6 +148,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
@@ -148,6 +159,7 @@ class _LocionesHombreSaleState extends State<LocionesHombreSale> {
             Spacer(),
             WidgetLocion(
               imageLocion: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',

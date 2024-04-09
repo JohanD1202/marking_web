@@ -17,7 +17,7 @@ class Screen1 extends StatelessWidget {
           fit: BoxFit.cover,
           image: AssetImage('assets/images/locion_13.jpg'),
         ),
-      ),           
+      ),
       child: Material(
         type: MaterialType.transparency,
         child: Stack(
@@ -38,7 +38,7 @@ class Screen1 extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 30),
                           width: 1100,
                           color: Colors.black.withOpacity(0.7),
-                          child: Text('Explora Marking', style: styleTextInicio)
+                          child: Text('Explora Aromas Selectos', style: styleTextInicio)
                         ),
                       ),
                     ),
@@ -50,7 +50,7 @@ class Screen1 extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 30, right: 30, top: 8, bottom: 8),
                         color: Colors.black.withOpacity(0.7),
                         child: Text('''
-Descubre la esencia de la elegancia con Marking 
+Descubre la elegancia con Aromas Selectos 
 A través de fragancias exquisitas diseñadas para ti. 
 Sumérgete en un mundo de sensaciones únicas''', style: styleTextB),
                       ),
@@ -63,11 +63,11 @@ Sumérgete en un mundo de sensaciones únicas''', style: styleTextB),
                         child: Container(
                           width: 1100,
                           padding: const EdgeInsets.only(left: 30, top: 8, bottom: 8),
-                          color: Colors.white.withOpacity(0.5),
+                          color: Colors.black.withOpacity(0.7),
                           child: Text('''
-Nuestras camisetas estampadas son únicas 
-Y reflejan tu personalidad y estilo
-Aquí encontrarás la prenda perfecta''', style: styleTextC),
+Nuestros aromas son únicos y 
+Reflejan tu personalidad.
+Aquí encontrarás tu fragancia favorita''', style: styleTextC),
                         ),
                       ),
                     ),
@@ -77,13 +77,13 @@ Aquí encontrarás la prenda perfecta''', style: styleTextC),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(40),
                         child: Container(
-                          width: 800,
+                          width: 700,
                           padding: const EdgeInsets.only(left: 30, top: 8, bottom: 8),
                           color: Colors.black.withOpacity(0.7),
                           child: Text('''
 ¡Y eso no es todo!
-En Marking, también ofrecemos emocionantes rifas y sorteos,
-Donde tendrás la oportunidad de ganar
+En Aromas Selectos, también ofrecemos emocionantes 
+Rifas y sorteos, donde tendrás la oportunidad de ganar
 Fabulosos premios y vivir experiencias inolvidables.''', style: styleTextB),
                         ),
                       ),
@@ -116,7 +116,7 @@ class Screen2 extends StatelessWidget {
           ),
           Positioned(
             top: 50,
-            left: 70,
+            left: 100,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
@@ -133,17 +133,14 @@ class Screen2 extends StatelessWidget {
               borderRadius: BorderRadius.circular(40),
               child: Container(
                 padding: const EdgeInsets.all(14),
-                color: Colors.white.withOpacity(0.5),
+                color: Colors.black.withOpacity(0.7),
                 child: Text('''
 En Aromas Selectos, no solo vendemos fragancias, 
-              
 ¡Creamos experiencias memorables! 
-              
-Nuestro equipo de expertos perfumistas 
-              
+
+Nuestro equipo de expertos perfumistas             
 Trabaja arduamente para ofrecerte productos únicos 
-              
-Que reflejen Tu Estilo y Personalidad''', style: styleTextC),
+Que reflejen Tu Estilo y Personalidad''', style: styleTextD),
               ),
             ),
           )
@@ -169,7 +166,7 @@ class Screen3 extends StatelessWidget {
           ),
           Positioned(
             top: 50,
-            left: 70,
+            left: 100,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
@@ -181,24 +178,22 @@ class Screen3 extends StatelessWidget {
           ),
           Positioned(
             top: 220,
-            left: 85,
+            left: 100,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
                 padding: const EdgeInsets.all(14),
-                color: Colors.white.withOpacity(0.5),
+                color: Colors.black.withOpacity(0.7),
                 child: Text('''
-Desde nuestra sede en el corazón de la industria de la perfumería, 
-
-Nos esforzamos por superar las expectativas de nuestros clientes en cada interacción. 
+Desde nuestra sede en el Corazón del Valle, 
+Nos esforzamos por superar las expectativas
+De nuestros clientes en cada interacción. 
 
 Con un compromiso inquebrantable con la calidad, 
-
 La innovación y la excelencia en el servicio al cliente, 
-
-Nos hemos convertido en el destino preferido para los amantes 
-
-De las fragancias exigentes y sofisticados''', style: styleTextC),
+Nos hemos convertido en el destino preferido 
+Para los amantes de las fragancias 
+Exigentes y sofisticadas''', style: styleTextD),
               ),
             ),
           )
@@ -224,7 +219,7 @@ class Screen4 extends StatelessWidget {
           ),
           Positioned(
             top: 50,
-            left: 70,
+            left: 100,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
@@ -236,22 +231,19 @@ class Screen4 extends StatelessWidget {
           ),
           Positioned(
             top: 210,
-            left: 90,
+            left: 100,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
                 padding: const EdgeInsets.all(14),
-                color: Colors.white.withOpacity(0.5),
+                color: Colors.black.withOpacity(0.7),
                 child: Text('''
 ¿Estás listo para descubrir el mundo de Aromas Selectos? 
-
-Únete a nosotros y déjate llevar 
-
+Únete a nosotros y déjate llevar
 Por una experiencia olfativa incomparable. 
 
-Encuentra tu fragancia perfecta 
-
-Y haz una declaración de estilo con Aromas Selectos''', style: styleTextC),
+Encuentra tu fragancia perfecta
+Y haz una declaración de estilo con Aromas Selectos''', style: styleTextD),
               ),
             ),
           )
@@ -260,7 +252,7 @@ Y haz una declaración de estilo con Aromas Selectos''', style: styleTextC),
   }
 }
 
-class Screen5 extends StatelessWidget {
+/*class Screen5 extends StatelessWidget {
   const Screen5({
     super.key,
   });
@@ -277,7 +269,7 @@ class Screen5 extends StatelessWidget {
           ),
           Positioned(
             top: 50,
-            left: 70,
+            left: 100,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
@@ -289,22 +281,20 @@ class Screen5 extends StatelessWidget {
           ),
           Positioned(
             top: 220,
-            left: 90,
+            left: 100,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
                 padding: const EdgeInsets.all(14),
-                color: Colors.white.withOpacity(0.5),
+                color: Colors.black.withOpacity(0.7),
                 child: Text('''
 Llévate tus lociones favoritas desde tan solo \$13.000. 
-
 ¡No te pierdas esta increíble oportunidad de disfrutar 
-
-De fragancias de calidad a un precio increíblemente bajo!''', style: styleTextC),
+De fragancias de calidad a un precio increíblemente bajo!''', style: styleTextD),
               ),
             ),
           )
         ],
       );
   }
-}
+}*/

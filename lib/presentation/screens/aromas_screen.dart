@@ -54,14 +54,12 @@ class _AromasScreenState extends State<AromasScreen> with SingleTickerProviderSt
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
                 child: Row(
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Bienvenido a la sección de Aromas Selectos', style: styleText3),
-                        const SizedBox(height: 20),
                         Text('Descubre Aromas Selectos:', style: styleText3),
                         const SizedBox(height: 10),
                         const Text('''

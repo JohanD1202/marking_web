@@ -4,6 +4,7 @@ import 'package:marking_web/exports.dart';
 class WidgetLocion extends StatefulWidget {
 
   final String imageLocion;
+  final String imageLocion2;
   final double imageWidth;
   final double imageHeight;
   final String nameLocion;
@@ -15,6 +16,7 @@ class WidgetLocion extends StatefulWidget {
   const WidgetLocion({
     Key? key,
     required this.imageLocion,
+    required this.imageLocion2,
     required this.imageWidth,
     required this.imageHeight,
     required this.nameLocion,
@@ -50,7 +52,12 @@ class _WidgetLocionState extends State<WidgetLocion> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4),
-              child: Image.asset(widget.imageLocion, width: widget.imageWidth, height: widget.imageHeight),
+              child: ImageOnHover(
+                imagePath: widget.imageLocion, 
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth, 
+                imageHeight: widget.imageHeight
+              ),
             ),
             Positioned(
               top: 360,
@@ -120,22 +127,20 @@ class _WidgetBolsosState extends State<WidgetBolsos> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 12,
+      elevation: 3,
+      shadowColor: const Color.fromARGB(255, 255, 171, 15),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
-        side: const BorderSide(color: Colors.white)
+        side: const BorderSide(color: Color.fromARGB(255, 255, 171, 15), width: 3)
       ),
-      child: Container(
+      child: SizedBox(
         height: 510,
         width: 250,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          border: Border.all(color: Colors.black),
-        ),
         child: Stack(
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4),
+              //TODO:
               child: ImageOnHover(
                 imagePath: widget.imageBolso,
                 hoverImagePath: widget.imageBolso2,
@@ -236,7 +241,7 @@ class _WidgetCamisetasState extends State<WidgetCamisetas> {
               ),
             ),
             Positioned(
-              top: 360,
+              top: 365,
               bottom: 8,
               left: 12,
               right: 8,

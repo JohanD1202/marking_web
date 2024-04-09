@@ -38,15 +38,15 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SingleChildScrollView(
           child: SizedBox(
           width: size.width * 1,
-          height: size.height * 2.84,
+          height: size.height * 2.9,
           child: Column(
             children: [
               Material(
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   height: 40,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[400],
+                  decoration: const BoxDecoration(
+                    color: Color.fromARGB(255, 255, 171, 15)
                   ),
                 child: Row(
                   children: [
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: FilledButton(
                           style: ButtonStyle(
                             foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                            backgroundColor: MaterialStateProperty.all(Colors.grey[400]),
+                            backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 255, 171, 15)),
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               const RoundedRectangleBorder(
                                 borderRadius: BorderRadius.all(Radius.circular(0)),
@@ -88,52 +88,55 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
-          Material(
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: 90,
-              decoration: const BoxDecoration(
-                color: Colors.white,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  //const SizedBox(width: 500),
-                  const Spacer(flex: 2),
-                  const MyButton(),
-                  const Spacer(),
-                  const SearchhBar(),
-                  const SizedBox(width: 20),
-                Padding(
-                  padding: const EdgeInsets.only(top: 18),
-                  child: Material(
-                    type: MaterialType.transparency,
-                    child: IconButton(
-                      hoverColor: Colors.transparent,
-                      onPressed: () {},
-                      icon: const Icon(Icons.shopping_bag_outlined, size: 35, color: Colors.black),
-                    ),
+            Row(
+              children: [
+                SizedBox(
+                  width: 180,
+                  height: 150,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Spacer(),
+                      Image.asset('assets/images/aromas_selectos_10.jpg')
+                    ],
                   ),
                 ),
-                const SizedBox(width: 40),
+                Material(
+                  child: Container(
+                    width: 1050,           //MediaQuery.of(context).size.width,
+                    height: 50,
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Spacer(),
+                        //const MyButton(),
+                        const SearchhBar(),
+                        const Spacer(),
+                        Material(
+                          type: MaterialType.transparency,
+                          child: IconButton(
+                            hoverColor: Colors.transparent,
+                            onPressed: () {},
+                            icon: const Icon(Icons.shopping_bag_outlined, size: 35, color: Color.fromARGB(255, 255, 171, 15)),
+                          ),
+                        ),
+                        const Spacer()
+                      ],
+                    ),
+                  )
+                ),
               ],
             ),
-           )
-          ),
           Row(
             children: [
-              /*Padding(
-                padding: const EdgeInsets.only(left: 62),
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.all(Radius.circular(90)),
-                  child: Image.asset('assets/images/aromas_selectos_1.jpg', width: 95, height: 95, fit: BoxFit.fitWidth)
-                ),
-              ),*/
               const Spacer(flex: 1),
               Padding(
-                padding: const EdgeInsets.only(left: 100, bottom: 15),
+                padding: const EdgeInsets.only(left: 100, bottom: 30),
                 child: ButtonTextBar(
                   buttonText: 'Inicio', 
                   onPressed: () {
@@ -143,9 +146,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
               ),
-              const SizedBox(width: 40),
+              //const Spacer(),
+              const SizedBox(width: 50),
               Padding(
-                padding: const EdgeInsets.only(bottom: 15),
+                padding: const EdgeInsets.only(bottom: 30),
                 child: ButtonTextBar(
                   buttonText: 'Aromas Selectos', 
                   onPressed: () {
@@ -155,9 +159,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
               ),
-              const SizedBox(width: 40),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 15),
+              /*Padding(
+                padding: const EdgeInsets.only(bottom: 30),
                 child: ButtonTextBar(
                   buttonText: 'Estampados', 
                   onPressed: () {
@@ -166,10 +169,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     });
                   }
                 ),
-              ),
-              const SizedBox(width: 40),
+              ),*/
+              //const Spacer(),
+              const SizedBox(width: 50),
               Padding(
-                padding: const EdgeInsets.only(bottom: 15),
+                padding: const EdgeInsets.only(bottom: 30),
                 child: ButtonTextBar(
                   buttonText: 'Nuevo', 
                   onPressed: () {
@@ -179,9 +183,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
               ),
-              const SizedBox(width: 40),
+              const SizedBox(width: 50),
               Padding(
-                padding: const EdgeInsets.only(bottom: 15),
+                padding: const EdgeInsets.only(bottom: 30),
                 child: ButtonTextBar(
                   buttonText: 'Hombre', 
                   onPressed: () {
@@ -191,7 +195,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
               ),
-              const SizedBox(width: 40),
+              const SizedBox(width: 50),
               //TODO:
               /*Tooltip(
                 message: 'Bolsos', // Texto que se mostrará al pasar el ratón por encima
@@ -205,7 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),*/
               Padding(
-                padding: const EdgeInsets.only(bottom: 15),
+                padding: const EdgeInsets.only(bottom: 30),
                 child: ButtonTextBar(
                   buttonText: 'Mujer', 
                   onPressed: () {
@@ -216,9 +220,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
               ),
-              const SizedBox(width: 40),
+              const SizedBox(width: 50),
               Padding(
-                padding: const EdgeInsets.only(bottom: 15),
+                padding: const EdgeInsets.only(bottom: 30),
                 child: ButtonTextBar(
                   buttonText: 'Sale', 
                   onPressed: () {
@@ -228,7 +232,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
               ),
-              const Spacer(),
+              const Spacer(flex: 1),
               /*Padding(
                 padding: const EdgeInsets.only(right: 40),
                 child: Material(
@@ -243,17 +247,17 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
           Visibility(
-            visible: _selectedIndex == 0, // Mostrar Inicio cuando _selectedIndex es 0
+            visible: _selectedIndex == 0, 
             child: inicio,
           ),
           Visibility(
-            visible: _selectedIndex == 1, // Mostrar widget2 cuando _selectedIndex es 1
+            visible: _selectedIndex == 1, 
             child: aromas,
           ),
-          Visibility(
-            visible: _selectedIndex == 2, // Mostrar widget3 cuando _selectedIndex es 2
+          /*Visibility(
+            visible: _selectedIndex == 2, 
             child: estampados,
-          ),
+          ),*/
           Visibility(
             visible: _selectedIndex == 3,
             child: hombre,
@@ -270,28 +274,12 @@ class _HomeScreenState extends State<HomeScreen> {
             visible: _selectedIndex == 6,
             child: sale,
           ),
-
-          FloatingActionButton(
-            onPressed: () => _launchWhatsApp('573107312102'),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Image.asset('assets/images/whats.png')
-                ),
-              )
-            )
-          ),
           
           //TODO: FOOTER
           Material(
             child: Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
+              height: MediaQuery.of(context).size.height * 1.05,
               decoration: const BoxDecoration(
                 color: Colors.black,
               ),
@@ -302,183 +290,138 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(width: 100),
-                        Text('Nuestras Redes Sociales', style: styleTextFooter),
-                        const SizedBox(width: 220),
-                        Text('Categorías', style: styleTextFooter),
-                        const SizedBox(width: 275),
-                        Text('Teléfonos', style: styleTextFooter),
+                        const Spacer(),
+                        const SocialNetworks(),
+                        const Spacer(),
+                        Padding(
+                        padding: const EdgeInsets.only(top: 25),
+                        child: Container(
+                          height: 250,
+                          width: 200.5,
+                          decoration: const BoxDecoration(color: Colors.black),
+                          child: Column(
+                            children: [
+                              Text('Categorías', style: styleTextFooter),
+                              const SizedBox(height: 40),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  ButtonTextFooter(
+                                    buttonText: 'Aromas               Selectos', 
+                                    onPressed: () {
+                                      setState(() {
+                                         _selectedIndex = 1;//(_selectedIndex + 1) % 3;
+                                      });
+                                    }
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 30),
+                              Row(
+                                children: [
+                                  //const Spacer(),
+                                  ButtonTextFooter(
+                                    buttonText: 'Hombre', 
+                                    onPressed: () {
+                                      setState(() {
+                                         _selectedIndex = 3;  
+                                      });
+                                    }
+                                  ),
+                                  const Spacer(),
+                                  ButtonTextFooter(
+                                    buttonText: 'Mujer', 
+                                    onPressed: () {
+                                      setState(() {
+                                        _selectedIndex = 4;     //(_selectedIndex + 1) % 3;
+                                      });
+                                    }
+                                  ),
+                                  //const Spacer(),
+                                ],
+                              ),
+                              const SizedBox(height: 30),
+                              Row(
+                                children: [
+                                  //const Spacer(),
+                                  ButtonTextFooter(
+                                    buttonText: 'Nuevo', 
+                                    onPressed: () {
+                                      setState(() {
+                                         //_selectedIndex = 1;
+                                      });
+                                    }
+                                  ),
+                                  const Spacer(),
+                                  ButtonTextFooter(
+                                    buttonText: 'Sale', 
+                                    onPressed: () {
+                                      setState(() {
+                                        //_selectedIndex = 1;//(_selectedIndex + 1) % 3;
+                                      });
+                                    }
+                                  ),
+                                  //const Spacer(),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        ),
+                        const Spacer(),
+                        const Phones(),
+                        const Spacer(),
                       ]
                     ),
                   ),
                   Row(
                     children: [
-                        GestureDetector(
-                          onTap: () => _launchWhatsApp('573107312102'),
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 160, top: 15),
-                            child: Image.asset('assets/images/whats.png', height: 45, width: 45),
+                      const Spacer(),
+                        Comments(
+                          iconOrImage: IconButton(
+                            color: Colors.white,
+                            onPressed: () {},
+                            icon: const Icon(Icons.key_rounded, size: 50),
                           ),
+                          text: 'Compra 100% Segura',
                         ),
-                        GestureDetector(
-                        onTap: _launchInstagram,
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 0, top: 13),
-                          child: Image.asset('assets/images/instagr.png', height: 75, width: 95),
+                        const Spacer(),
+                        Comments(
+                          iconOrImage: IconButton(
+                            color: Colors.white,
+                            onPressed: () {},
+                            icon: const Icon(Icons.wallet_rounded, size: 50),
+                          ),
+                          text: 'Paga en línea o en efectivo',
                         ),
+                        const Spacer(),
+                        Comments(
+                          iconOrImage: Image.asset('assets/images/camion.png', height: 70, width: 70),
+                          text: 'Envío gratis desde \$200.000',
                         ),
-                        const SizedBox(width: 180),
-                        ButtonTextFooter(
-                          buttonText: 'Aromas Selectos', 
-                          onPressed: () {
-                            setState(() {
-                               _selectedIndex = 1;//(_selectedIndex + 1) % 3;
-                            });
-                          }
-                        ),
-                        const SizedBox(width: 30),
-                        ButtonTextFooter(
-                          buttonText: 'Estampados', 
+                        const Spacer(),
+                        Comments(
+                          iconOrImage: IconButton(
+                            icon: const Icon(Icons.info_outline_rounded), 
                             onPressed: () {
                               setState(() {
-                                  _selectedIndex = 2;//(_selectedIndex + 1) % 3;
+                                _selectedIndex = 5;
                               });
-                            }
+                            },
+                            color: Colors.white, 
+                            iconSize: 50
+                          ),
+                          text: 'Centro de Ayuda',
                         ),
-                        const SizedBox(width: 150),
-                        GestureDetector(
-                          onTap: () => _launchWhatsApp('573107312102'),
-                          child: Image.asset('assets/images/whats.png', height: 30, width: 30),
-                        ),
-                        GestureDetector(
-                          onTap: () => _launchWhatsApp('573107312102'),
-                          child: Text('(+57) 310 731 2102', style: styleTextCar)
-                        )
-                    ],
-                  ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(width: 457),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 62, bottom: 15),
-                        child: ButtonTextFooter(
-                          buttonText: 'Nuevo', 
-                          onPressed: () {
-                            setState(() {
-                               //_selectedIndex = 1;
-                            });
-                          }
-                        ),
-                      ),
-                      const SizedBox(width: 80),
-                      ButtonTextFooter(
-                        buttonText: 'Hombre', 
-                        onPressed: () {
-                          setState(() {
-                             _selectedIndex = 3;  
-                          });
-                        }
-                      ),
-                      const SizedBox(width: 169),
-                      GestureDetector(
-                          onTap: () => _launchWhatsApp('573104025062'),
-                          child: Image.asset('assets/images/whats.png', height: 28, width: 28),
-                        ),
-                      GestureDetector(
-                          onTap: () => _launchWhatsApp('573104025062'),
-                        child: Text('(+57) 310 402 5062', style: styleTextCar)
-                      )
-                    ],
-                  ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 520, top: 20),
-                        child: ButtonTextFooter(
-                          buttonText: 'Mujer', 
-                          onPressed: () {
-                            setState(() {
-                              _selectedIndex = 4;     //(_selectedIndex + 1) % 3;
-                            });
-                          }
-                        ),
-                      ),
-                      const SizedBox(width: 93),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 15),
-                        child: ButtonTextFooter(
-                          buttonText: 'Sale', 
-                          onPressed: () {
-                            setState(() {
-                              //_selectedIndex = 1;//(_selectedIndex + 1) % 3;
-                            });
-                          }
-                        ),
-                      ),
+                      const Spacer(),
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 35),
+                    padding: const EdgeInsets.only(bottom: 50, top: 60),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(width: 155),
-                        IconButton(
-                          color: Colors.white,
-                          onPressed: () {},
-                          icon: const Icon(Icons.key_rounded, size: 50),
-                        ),
-                        const SizedBox(width: 220),
-                        IconButton(
-                          color: Colors.white,
-                          onPressed: () {},
-                          icon: const Icon(Icons.wallet_rounded, size: 50),
-                        ),
-                        const SizedBox(width: 220),
-                        GestureDetector(
-                          onTap: () {
-                            //launchInstagram(); 
-                          },
-                          child: Image.asset('assets/images/camion.png', height: 70, width: 70),
-                        ),
-                        const SizedBox(width: 220),
-                        IconButton(
-                          icon: const Icon(Icons.info_outline_rounded), 
-                          onPressed: () {
-                            setState(() {
-                              _selectedIndex = 4;
-                            });
-                          },
-                          color: Colors.white, 
-                          iconSize: 50
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 80),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const SizedBox(width: 117),
-                        Text('Compra 100% Segura', style: styleTextCar),
-                        const SizedBox(width: 110),
-                        Text('Paga en línea o en efectivo', style: styleTextCar),
-                        const SizedBox(width: 85),
-                        Text('Envío gratis desde \$200.000', style: styleTextCar),
-                        const SizedBox(width: 117),
-                        Text('Centro de Ayuda', style: styleTextCar),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 60),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const SizedBox(width: 450),
+                        const Spacer(),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(30),
                           child: Image.asset('assets/images/nequi1.png', height: 25, width: 75)
@@ -497,14 +440,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(30),
                           child: Image.asset('assets/images/efecty.jpg', height: 25, width: 82)
-                        )
+                        ),
+                        const Spacer(),
                       ],
                     ),
                   ),
                   Row(
                     children: [
-                      const SizedBox(width: 420),
-                      Text('© 2024 | Todos los Derechos Reservados Marking', style: styleTextCar)
+                      const Spacer(),
+                      Text('© 2024 | Todos los Derechos Reservados Aromas Selectos', style: styleTextCar),
+                      const Spacer(),
                     ],
                   )
                 ],
@@ -524,7 +469,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
 class Inicio extends StatefulWidget {
 
-  const Inicio({Key?key}) : super(key: key);
+  // ignore: use_super_parameters
+  const Inicio({Key? key}) : super(key: key);
 
   @override
   State<Inicio> createState() => _InicioState();
@@ -539,7 +485,7 @@ class _InicioState extends State<Inicio> {
     const Screen2(),
     const Screen3(),
     const Screen4(),
-    const Screen5(),
+    //const Screen5(),
   ];
 
   void _next() {
@@ -588,6 +534,8 @@ class _InicioState extends State<Inicio> {
   }
 }
 
+
+
 void _launchWhatsApp(String phoneNumber) async {
 
   String url;
@@ -611,6 +559,8 @@ void _launchInstagram() async {
   
 
 }
+
+
 
 
 //TODO: DIRECCIÓN

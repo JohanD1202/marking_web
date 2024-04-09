@@ -6,12 +6,12 @@ ButtonStyle styleButton = ButtonStyle(
   overlayColor: MaterialStateProperty.resolveWith<Color>(
     (Set<MaterialState> states) {
       if (states.contains(MaterialState.focused))
-        return Colors.transparent;
+        return const Color.fromARGB(255, 255, 171, 15);
       if (states.contains(MaterialState.hovered))
-        return Colors.transparent;
+        return const Color.fromARGB(255, 255, 171, 15);
       if (states.contains(MaterialState.pressed))
-        return Colors.transparent;
-      return Colors.transparent;
+        return const Color.fromARGB(255, 255, 171, 15);
+      return const Color.fromARGB(255, 255, 171, 15);
     }
   )
 );
@@ -45,14 +45,26 @@ class _ButtonTextBarState extends State<ButtonTextBar> {
         onExit: (_) => setState(() => _isHovered = false),
         child: Tooltip(
           message: '',
-          child: TextButton(
-            onPressed: widget.onPressed,
-            child: Text(
-              widget.buttonText,
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w900,
-                color: _isHovered ? Colors.grey[700] : Colors.black,
+          child: Container(
+            decoration: _isHovered
+            ? const BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: Color.fromARGB(255, 255, 171, 15),
+                  width: 1.5
+                )
+              )
+            )
+            : null,
+            child: TextButton(
+              onPressed: widget.onPressed,
+              child: Text(
+                widget.buttonText,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w900,
+                  color: _isHovered ? const Color.fromARGB(255, 255, 171, 15) : Colors.black,
+                ),
               ),
             ),
           ),
@@ -167,7 +179,7 @@ TextStyle styleTextTitle = const TextStyle(
 TextStyle styleTextInicio = const TextStyle(
   fontSize: 60,
   fontWeight: FontWeight.bold,
-  color: Colors.white
+  color: Color.fromARGB(255, 255, 171, 15)
 );
 
 TextStyle styleText = const TextStyle(
@@ -191,13 +203,19 @@ TextStyle styleTextA = const TextStyle(
 TextStyle styleTextB = const TextStyle(
   fontSize: 26,
   fontWeight: FontWeight.w800,
-  color: Colors.white
+  color: Color.fromARGB(255, 255, 171, 15)
 );
 
 TextStyle styleTextC = const TextStyle(
   fontSize: 26,
   fontWeight: FontWeight.w800,
-  color: Colors.black
+  color: Color.fromARGB(255, 255, 171, 15)
+);
+
+TextStyle styleTextD = const TextStyle(
+  fontSize: 35,
+  fontWeight: FontWeight.w800,
+  color: Color.fromARGB(255, 255, 171, 15)
 );
 
 TextStyle styleText3 = const TextStyle(
@@ -221,6 +239,12 @@ TextStyle styleText4 = const TextStyle(
 TextStyle styleTextLocion = TextStyle(
   fontSize: 17,
   color: Colors.grey [800]
+);
+
+TextStyle styleTextLocion2 = TextStyle(
+  fontSize: 17,
+  color: Colors.grey [800],
+  fontWeight: FontWeight.w600
 );
 
 TextStyle styleTextPrice = TextStyle(
@@ -287,16 +311,8 @@ class TextHelp {
     - Preguntas Frecuentes: Explora nuestra sección de Preguntas Frecuentes para obtener 
       respuestas rápidas a las consultas más comunes.
 
-    - Guías de Producto: Descubre guías detalladas sobre nuestros productos, 
-      incluyendo características, especificaciones y consejos de uso.
-
     - Proceso de Compra: Aprende más sobre cómo realizar pedidos, 
       opciones de pago y seguimiento de envíos.
-
-    - Atención al Cliente: ¿Necesitas ayuda personalizada? 
-      Nuestro equipo de atención al cliente está disponible para ayudarte.
-
-      Contáctanos por chat, correo electrónico o teléfono.
 
     Explora nuestras Categorías:
 
@@ -306,24 +322,6 @@ class TextHelp {
     - Hombre
     - Mujer
     - Sale
-
-    Estamos comprometidos a proporcionarte la mejor experiencia de compra. 
-    Si no encuentras la información que necesitas, no dudes en contactarnos. 
-    ¡Estamos aquí para ayudarte!
-
-    Comunícate con nosotros a los Teléfonos:    
-    (+57) 310 731 2102
-    (+57) 310 402 5062
-
-    WhatsApp:    
-    (+57) 310 402 5062
-
-    Instagram:
-    @aromasselectos_co
-
-    Correo Eléctrónico:
-    idarragajohan8@gmail.com
-
   ''';
 }
 
@@ -350,9 +348,9 @@ class TextHelpWidget extends StatelessWidget {
     final List<TextSpan> textSpans = [];
     final List<String> highlightedWords = [
       'Preguntas Frecuentes', 'Aromas Selectos', 
-      'Guías de Producto', 'Proceso de Compra', 
-      'Atención al Cliente', 'Nuevo', 'Hombre', 
-      'Mujer', 'Estampados', 'Sale'
+      'Proceso de Compra','Atención al Cliente', 
+      'Nuevo', 'Hombre', 'Mujer', 
+      'Estampados', 'Sale'
     ];
 
     // Creamos una expresión regular para buscar las palabras destacadas

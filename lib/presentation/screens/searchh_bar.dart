@@ -51,48 +51,45 @@ class _SearchhBarState extends State<SearchhBar> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 25),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 40,
-            width: 270,
-            child: TextField(
-              controller: _controller,
-              decoration: InputDecoration(
-                hintText: 'Busca tus favoritos',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: const BorderSide(color: Colors.black)
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: const BorderSide(color: Colors.grey)
-                ),
-                contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                prefixIcon: const Icon(Icons.search_rounded),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 50,
+          width: 900,
+          child: TextField(
+            controller: _controller,
+            decoration: InputDecoration(
+              hintText: 'Busca tus favoritos',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(40),
+                borderSide: const BorderSide(color: Color.fromARGB(255, 255, 171, 15))
               ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(40),
+                borderSide: const BorderSide(color: Color.fromARGB(255, 255, 171, 15))
+              ),
+              contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              prefixIcon: const Icon(Icons.search_rounded),
             ),
           ),
-          const SizedBox(height: 10),
-          /*Expanded(
-            flex: 2,
-            child: ListView.builder(
-              itemCount: filteredSuggestions.length,
-              itemBuilder: (BuildContext context, int index) {
-                return ListTile(
-                  title: Text(filteredSuggestions[index]),
-                  onTap: () {
-                    //_controller.text = filteredSuggestions[index];
-                  },
-                );
-              }
-            ),
-          )*/
-        ],
-      ),
+        ),
+        //const SizedBox(height: 10),
+        /*Expanded(
+          flex: 2,
+          child: ListView.builder(
+            itemCount: filteredSuggestions.length,
+            itemBuilder: (BuildContext context, int index) {
+              return ListTile(
+                title: Text(filteredSuggestions[index]),
+                onTap: () {
+                  //_controller.text = filteredSuggestions[index];
+                },
+              );
+            }
+          ),
+        )*/
+      ],
     );
   }
 }

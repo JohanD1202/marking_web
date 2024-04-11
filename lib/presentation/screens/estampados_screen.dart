@@ -42,7 +42,7 @@ Descubre la calidad y la originalidad en cada detalle.
                   ],
                 ),
               ),
-              const CamisetasScreen(),
+              //const CamisetasScreen(),
               const SizedBox(height: 50)
             ],
           ),

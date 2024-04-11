@@ -1,7 +1,308 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:marking_web/exports.dart';
 
+class Locion extends StatefulWidget {
 
-class WidgetLocion extends StatefulWidget {
+  final String imageLocion;
+  final String imageLocion2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameLocion;
+  final String symbol;
+  final double priceOriginal;
+
+  // ignore: use_super_parameters
+  const Locion( {
+    Key? key,
+    required this.imageLocion,
+    required this.imageLocion2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameLocion,
+    required this.symbol,
+    required this.priceOriginal, 
+  }) : super(key: key);
+
+  @override
+  State<Locion> createState() => _LocionState();
+}
+
+class _LocionState extends State<Locion> {
+
+  /*double parsePrice(String priceString) {
+    String cleanPrice = priceString.replaceAll('\$','').replaceAll('','');
+    return double.parse(cleanPrice);
+  }*/
+
+  Color? textColor = Colors.grey[700];
+  int selectedNumber = 1;
+  OverlayEntry? _overlayEntry;
+  double totalPrice = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    totalPrice = widget.priceOriginal;
+  }
+
+  void updateTotalPrice(int quantity) {
+    setState(() {
+      selectedNumber = quantity;
+      totalPrice = widget.priceOriginal * quantity;
+    });
+  }
+
+  void _showCartOverlay() {
+
+    totalPrice = widget.priceOriginal * selectedNumber;
+
+    _overlayEntry = OverlayEntry(
+      builder: (context) => Positioned(
+        top: MediaQuery.of(context).size.height * 0.22,
+        right: 50,
+        width: 320,
+        height: 445,
+        child: Material(
+          elevation: 12,
+          child: Container(
+            color: Colors.white,
+            child: Column(
+              children: [
+                Material(
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[350]
+                    ),
+                    child: Row(
+                      children: [
+                        const Spacer(),
+                        Text('ENVÍO GRATIS DESDE \$200.000', style: styleTextHeader),
+                        const Spacer(),
+                      ],
+                    ),
+                  ),
+                ),
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+                      child: Image.asset(widget.imageLocion, width: 160),
+                    ),
+                    Positioned(
+                      top: 15,
+                      left: 160,
+                      child: Text(widget.nameLocion, style: styleTextLocion),
+                    ),
+                    Positioned(
+                      top: 60,
+                      left: 160,
+                      child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
+                    ),
+                    Positioned(
+                      top: 110,
+                      left: 160,
+                      child: Text('Cantidad:', style: styleTextLocion),
+                    ),
+                    Positioned(
+                      top: 150,
+                      left: 170,
+                      child: Cantidad(
+                        onQuantityChanged: (quantity) {
+                          setState(() {
+                            selectedNumber = quantity;
+                            totalPrice = widget.priceOriginal * quantity;
+                          });
+                        }
+                      )
+                    )
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+    Overlay.of(context)?.insert(_overlayEntry!);
+  }
+  //Cart myCart = Cart();
+
+  @override
+  void dispose() {
+    _overlayEntry?.remove();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white)
+      ),
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageLocion,
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth, 
+                imageHeight: widget.imageHeight
+              ),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameLocion, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 420,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice)
+            ),
+            Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                onAddToCart: _showCartOverlay,
+                productToAdd: Product(
+                  id: 1, 
+                  name: widget.nameLocion, 
+                  price: widget.priceOriginal, 
+                  image: widget.imageLocion,
+                ),
+              ),
+            )
+          ],
+        )
+      ),
+    );
+  }
+}
+
+class Cantidad extends StatefulWidget {
+
+  final Function(int) onQuantityChanged;
+
+  // ignore: use_super_parameters
+  const Cantidad({
+    Key? key, 
+    required this.onQuantityChanged, 
+  }) : super(key: key);
+
+  @override
+  State<Cantidad> createState() => _CantidadState();
+}
+
+class _CantidadState extends State<Cantidad> {
+  
+
+  OverlayEntry? _overlayEntry;
+
+  Color? textColor = Colors.grey[700];
+  int selectedNumber = 1;
+
+  OverlayEntry _createOverlayEntry() {
+    RenderBox renderBox = context.findRenderObject() as RenderBox;
+    var size = renderBox.size;
+    var offset = renderBox.localToGlobal(Offset.zero);
+
+    return OverlayEntry(
+      builder: (context) => Positioned(
+        left: offset.dx,
+        top: offset.dy + size.height * 1,//+ (1 * 20),
+        width: size.width * 1.18,
+        height: size.height * 7.5,
+        child: Material(
+          elevation: 4,
+          child: ListView.builder(
+            shrinkWrap: true,
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              int itemNumber = index + 1;
+              return Container(
+                height: 32,
+                child: ListTile(
+                  title: Text('$itemNumber'),
+                  onTap: () {
+                    setState(() {
+                      selectedNumber = itemNumber; //
+                    });
+                    widget.onQuantityChanged(itemNumber);
+                    _overlayEntry?.remove();
+                  },
+                ),
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
+
+
+  void _showMenu() {
+    _overlayEntry = _createOverlayEntry();
+    Overlay.of(context)!.insert(_overlayEntry!);
+  }
+
+  @override
+  void dispose() {
+    _overlayEntry?.remove();
+    super.dispose();
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: _showMenu,
+      child: Container(
+        width: 50,
+        height: 30,
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black87),
+          color: Colors.white
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('$selectedNumber', style: const TextStyle(fontSize: 13, color: Colors.black)),
+            const Icon(Icons.keyboard_arrow_down_rounded, color: Colors.black),
+          ],
+        )
+      ),
+    );
+  }
+}
+
+/*
+  void _setHovering(bool hovering) {
+    setState(() {
+      isHovering = hovering;
+      textColor = isHovering ? Colors.white : Colors.grey[700];
+    });
+  }
+}
+*/
+/*
+class LocionPromotion extends StatefulWidget {
 
   final String imageLocion;
   final String imageLocion2;
@@ -13,7 +314,7 @@ class WidgetLocion extends StatefulWidget {
   final Widget promotion;
 
   // ignore: use_super_parameters
-  const WidgetLocion({
+  const LocionPromotion({
     Key? key,
     required this.imageLocion,
     required this.imageLocion2,
@@ -26,10 +327,10 @@ class WidgetLocion extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<WidgetLocion> createState() => _WidgetLocionState();
+  State<LocionPromotion> createState() => _LocionPromotionState();
 }
 
-class _WidgetLocionState extends State<WidgetLocion> {
+class _LocionPromotionState extends State<LocionPromotion> {
 
   Cart myCart = Cart();
 
@@ -96,7 +397,7 @@ class _WidgetLocionState extends State<WidgetLocion> {
   }
 }
 
-class WidgetBolsos extends StatefulWidget {
+class Bolsos extends StatefulWidget {
 
   final String imageBolso;
   final String imageBolso2;
@@ -106,7 +407,7 @@ class WidgetBolsos extends StatefulWidget {
   final String priceOriginal;
 
   // ignore: use_super_parameters
-  const WidgetBolsos({
+  const Bolsos({
     Key? key,
     required this.imageBolso,
     required this.imageBolso2,
@@ -117,30 +418,32 @@ class WidgetBolsos extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<WidgetBolsos> createState() => _WidgetBolsosState();
+  State<Bolsos> createState() => _BolsosState();
 }
 
-class _WidgetBolsosState extends State<WidgetBolsos> {
+class _BolsosState extends State<Bolsos> {
 
   Cart myCart = Cart();
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 3,
-      shadowColor: const Color.fromARGB(255, 255, 171, 15),
+      elevation: 12,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
-        side: const BorderSide(color: Color.fromARGB(255, 255, 171, 15), width: 3)
+        side: const BorderSide(color: Colors.white)
       ),
-      child: SizedBox(
+      child: Container(
         height: 510,
         width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
         child: Stack(
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4),
-              //TODO:
               child: ImageOnHover(
                 imagePath: widget.imageBolso,
                 hoverImagePath: widget.imageBolso2,
@@ -174,7 +477,193 @@ class _WidgetBolsosState extends State<WidgetBolsos> {
   }
 }
 
-class WidgetCamisetas extends StatefulWidget {
+
+class BolsosPromotion extends StatefulWidget {
+
+  final String imageBolso;
+  final String imageBolso2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameBolso;
+  final String priceOriginal;
+  final String priceDescuento;
+  final Widget promotion;
+
+  // ignore: use_super_parameters
+  const BolsosPromotion({
+    Key? key,
+    required this.imageBolso,
+    required this.imageBolso2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameBolso,
+    required this.priceOriginal,
+    required this.priceDescuento,
+    required this.promotion
+  }) : super(key: key);
+
+  @override
+  State<BolsosPromotion> createState() => _BolsosPromotionState();
+}
+
+class _BolsosPromotionState extends State<BolsosPromotion> {
+
+  //Cart myCart = Cart();
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white)
+      ),
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageBolso, 
+                hoverImagePath: widget.imageBolso2,
+                imageWidth: widget.imageWidth, 
+                imageHeight: widget.imageHeight
+              ),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameBolso, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 390,
+              left: 13,
+              right: 12,
+              child: Text(widget.priceOriginal, style: styleTextSale),
+            ),
+            Positioned(
+              top: 420,
+              left: 13,
+              right: 12,
+              child: Text(widget.priceDescuento, style: styleTextPrice),
+            ),
+            Positioned(
+              top: 420,
+              left: 90,
+              child: widget.promotion,
+            ),
+            const Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(),
+            )
+          ],
+        )
+      ),
+    );
+  }
+}
+
+class Price extends StatelessWidget {
+
+  final String price;
+
+  // ignore: use_super_parameters
+  const Price({
+    Key? key,
+    required this.price
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 38,
+      height: 23,
+      decoration: BoxDecoration(
+        color: Colors.black,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.black),
+      ),
+      child: InkWell(
+        onTap: () {},
+        child: Center(
+          child: Text(price, style: const TextStyle(fontSize: 14, color: Colors.white),
+          ),
+        ),
+      ),
+    );
+  }
+}
+*/
+class CarShop extends StatelessWidget {
+
+  final VoidCallback onAddToCart;
+  final Product productToAdd;
+
+  // ignore: use_super_parameters
+  const CarShop({
+    Key? key, 
+    required this.onAddToCart, 
+    required this.productToAdd
+  }) : super(key: key);
+
+  void addToCart(BuildContext context) {
+    Provider.of<CartProvider>(context, listen: false).addToCart(productToAdd);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton.icon(
+      icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 17),
+      onPressed: () {
+        onAddToCart();
+        addToCart(context);
+      },
+      label: Text('AGREGAR AL CARRITO', style: styleTextCar),
+      style: OutlinedButton.styleFrom(
+        backgroundColor: Colors.black,
+        shape: const RoundedRectangleBorder()
+      ),
+    );
+  }
+}
+
+
+class CartProvider extends ChangeNotifier {
+  List<Product> _cartItems = [];
+
+  List<Product> get cartItems => _cartItems;
+
+  void addToCart(Product product) {
+    _cartItems.add(product);
+    notifyListeners();
+  }
+}
+
+
+class Product {
+  final int id;
+  final String name;
+  final double price;
+  final String image;
+
+  Product({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.image
+  });
+}
+/*class WidgetCamisetas extends StatefulWidget {
 
   final String imageCamiseta;
   final String imageCamiseta2;
@@ -336,7 +825,7 @@ class _ShirtSizeState extends State<ShirtSize> {
       textColor = isHovering ? Colors.white : Colors.grey[700];
     });
   }
-}
+}*/
 /*
 class ButtonTextBar extends StatefulWidget {
 
@@ -410,47 +899,3 @@ class _ButtonTextBarState extends State<ButtonTextBar> {
 
     */
 
-
-
-class Price extends StatelessWidget {
-  const Price({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 38,
-      height: 23,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: Colors.black),
-      ),
-      child: InkWell(
-        onTap: () {},
-        child: const Center(
-          child: Text(
-            '23%',
-            style: TextStyle(fontSize: 14, color: Colors.white),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class CarShop extends StatelessWidget {
-  const CarShop({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return OutlinedButton.icon(
-      icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 17),
-      onPressed: () {}, 
-      label: Text('AGREGAR AL CARRITO', style: styleTextCar),
-      style: OutlinedButton.styleFrom(
-        backgroundColor: Colors.black,
-        shape: const RoundedRectangleBorder()
-      ),
-    );
-  }
-}

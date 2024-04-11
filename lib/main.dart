@@ -1,10 +1,18 @@
-import 'package:flutter/material.dart';
 import 'package:marking_web/config/theme/app_theme.dart';
 import 'package:marking_web/presentation/screens/home_screen.dart';
+import 'package:marking_web/exports.dart';
+
 
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CartProvider()),
+      ],
+    child: const MyApp(),
+  ),
+ );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 0).getTheme(), 
-      title: 'Marking Web',
+      title: 'Aromas Selectos',
       home: const HomeScreen(),
     );
   }

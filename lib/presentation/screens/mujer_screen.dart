@@ -75,12 +75,12 @@ class MujerScreen extends StatelessWidget {
                           const SizedBox(height: 20),
                           const Text('''
 Bienvenidos a nuestra sección dedicada a las mujeres sofisticadas y con estilo.
-En Marking, no solo te ofrecemos una exquisita variedad de fragancias
+En Aromas Selectos, no solo te ofrecemos una exquisita variedad de fragancias
 Que reflejan tu esencia única, sino que también hemos seleccionado
-Cuidadosamente una colección de bolsos y accesorios que realzarán tu look
+Cuidadosamente una colección de bolsos que realzarán tu look
 Con feminidad y originalidad.
 
-Descubre tus aromas favoritos desde tan solo \$13.000.
+Descubre tus aromas favoritos desde tan solo \$14.000.
 ¡No te pierdas esta maravillosa oportunidad de disfrutar
 De fragancias de primera calidad a un precio increíblemente asequible!
                           ''', style: TextStyle(fontSize: 18)),
@@ -95,7 +95,7 @@ De fragancias de primera calidad a un precio increíblemente asequible!
                   ],
                 ),
               ),
-              const BolsosScreen(),
+              const SectionMujer(),
               
               const SizedBox(height: 50),
             ],

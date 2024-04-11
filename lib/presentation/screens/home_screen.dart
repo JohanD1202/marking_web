@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:marking_web/exports.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
@@ -14,16 +15,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
-  int _selectedIndex = 0;
-
-  Widget inicio = const Inicio();
-  Widget aromas = const AromasScreen();
-  Widget estampados = const EstampadosScreen();
-  Widget hombre = const HombreScreen();
-  Widget mujer = const MujerScreen();
-  Widget help = const Help();
-  Widget sale = const SaleScreen();
-
+  int indiceWidget = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -45,16 +37,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   height: 40,
-                  decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 255, 171, 15)
+                  decoration: BoxDecoration(
+                    color: Colors.grey[350]
                   ),
                 child: Row(
                   children: [
-                    //const SizedBox(width: 455),
                     const Spacer(flex: 6),
                     Text('ENVÍO GRATIS POR COMPRAS DESDE \$200.000', style: styleTextHeader),
                     const Spacer(flex: 2),
-                    //const SizedBox(width: 100),
                     const Text('|', style: TextStyle(fontSize: 20)),
                     SizedBox(
                       height: 45,
@@ -64,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: FilledButton(
                           style: ButtonStyle(
                             foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                            backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 255, 171, 15)),
+                            backgroundColor: MaterialStateProperty.all(Colors.grey[350]),
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               const RoundedRectangleBorder(
                                 borderRadius: BorderRadius.all(Radius.circular(0)),
@@ -73,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _selectedIndex = 5;
+                              indiceWidget = 5;
                             });
                           },
                           child: Text(
@@ -90,40 +80,39 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Row(
               children: [
-                SizedBox(
-                  width: 180,
-                  height: 150,
+                Container(
+                  width: 165,
+                  height: 125,
+                  decoration: const BoxDecoration(
+                    color: Colors.white
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Spacer(),
-                      Image.asset('assets/images/aromas_selectos_10.jpg')
+                      Image.asset('assets/images/logo_pr1.jpg')
                     ],
                   ),
                 ),
                 Material(
                   child: Container(
                     width: 1050,           //MediaQuery.of(context).size.width,
-                    height: 50,
+                    height: 40,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.white
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Spacer(),
-                        //const MyButton(),
                         const SearchhBar(),
                         const Spacer(),
-                        Material(
-                          type: MaterialType.transparency,
-                          child: IconButton(
-                            hoverColor: Colors.transparent,
-                            onPressed: () {},
-                            icon: const Icon(Icons.shopping_bag_outlined, size: 35, color: Color.fromARGB(255, 255, 171, 15)),
-                          ),
+                        IconButton(
+                          hoverColor: const Color.fromARGB(255, 255, 240, 213),
+                          onPressed: () {},
+                          icon: const Icon(Icons.shopping_bag_outlined, size: 35, ),
                         ),
                         const Spacer()
                       ],
@@ -132,149 +121,82 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-          Row(
-            children: [
-              const Spacer(flex: 1),
-              Padding(
-                padding: const EdgeInsets.only(left: 100, bottom: 30),
-                child: ButtonTextBar(
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10, top: 0),
+            child: Row(
+              children: [
+                const Spacer(),
+                ButtonTextBar(
                   buttonText: 'Inicio', 
                   onPressed: () {
                     setState(() {
-                      _selectedIndex = 0;                       
+                      indiceWidget = 0;                       
                     });
                   }
                 ),
-              ),
-              //const Spacer(),
-              const SizedBox(width: 50),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: ButtonTextBar(
+                //const Spacer(),
+                const SizedBox(width: 50),
+                ButtonTextBar(
                   buttonText: 'Aromas Selectos', 
                   onPressed: () {
                     setState(() {
-                      _selectedIndex = 1;
+                      indiceWidget = 1;
                     });
                   }
                 ),
-              ),
-              /*Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: ButtonTextBar(
-                  buttonText: 'Estampados', 
-                  onPressed: () {
-                    setState(() {
-                      _selectedIndex = 2;
-                    });
-                  }
-                ),
-              ),*/
-              //const Spacer(),
-              const SizedBox(width: 50),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: ButtonTextBar(
-                  buttonText: 'Nuevo', 
-                  onPressed: () {
-                    setState(() {
-                          
-                    });
-                  }
-                ),
-              ),
-              const SizedBox(width: 50),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: ButtonTextBar(
+                const SizedBox(width: 50),
+                ButtonTextBar(
                   buttonText: 'Hombre', 
                   onPressed: () {
                     setState(() {
-                      _selectedIndex = 3;
+                      indiceWidget = 2;
                     });
                   }
                 ),
-              ),
-              const SizedBox(width: 50),
-              //TODO:
-              /*Tooltip(
-                message: 'Bolsos', // Texto que se mostrará al pasar el ratón por encima
-                child: TextButton(
-                  onPressed: () {
-                    setState(() {
-                      _selectedIndex = 4;
-                    });
-                  },
-                  child: Text('Mujer', style: styleText), // Texto del botón
-                ),
-              ),*/
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: ButtonTextBar(
+                const SizedBox(width: 50),
+                ButtonTextBar(
                   buttonText: 'Mujer', 
-                  onPressed: () {
-                
+                  onPressed: () {  
                     setState(() {
-                      _selectedIndex = 4;
+                      indiceWidget = 3;
                     });
                   }
                 ),
-              ),
-              const SizedBox(width: 50),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: ButtonTextBar(
+                const SizedBox(width: 50),
+                ButtonTextBar(
+                  buttonText: 'Nuevo', 
+                  onPressed: () {
+                    setState(() {
+                      //indiceWidget = 4;
+                    });
+                  }
+                ),
+                const SizedBox(width: 50),
+                ButtonTextBar(
                   buttonText: 'Sale', 
                   onPressed: () {
                     setState(() {
-                      _selectedIndex = 6;
+                      indiceWidget = 4;
+                      //indiceWidget = 5;
                     });
                   }
                 ),
-              ),
-              const Spacer(flex: 1),
-              /*Padding(
-                padding: const EdgeInsets.only(right: 40),
-                child: Material(
-                  type: MaterialType.transparency,
-                  child: IconButton(
-                    hoverColor: Colors.transparent,
-                    onPressed: () {},
-                    icon: const Icon(Icons.shopping_cart_rounded, size: 45),
-                  ),
-                ),
-              )*/
+                const Spacer(flex: 1),
+              ],
+            ),
+          ),
+          IndexedStack(
+            index: indiceWidget,
+            children: const [
+              Inicio(),
+              AromasScreen(),
+              HombreScreen(),
+              MujerScreen(),
+              //NuevoScreen(),
+              SaleScreen(),
+              Help(),
             ],
           ),
-          Visibility(
-            visible: _selectedIndex == 0, 
-            child: inicio,
-          ),
-          Visibility(
-            visible: _selectedIndex == 1, 
-            child: aromas,
-          ),
-          /*Visibility(
-            visible: _selectedIndex == 2, 
-            child: estampados,
-          ),*/
-          Visibility(
-            visible: _selectedIndex == 3,
-            child: hombre,
-          ),
-          Visibility(
-            visible: _selectedIndex == 4,
-            child: mujer,
-          ),
-          Visibility(
-            visible: _selectedIndex == 5,
-            child: help,
-          ),
-          Visibility(
-            visible: _selectedIndex == 6,
-            child: sale,
-          ),
-          
           //TODO: FOOTER
           Material(
             child: Container(
@@ -310,7 +232,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Aromas               Selectos', 
                                     onPressed: () {
                                       setState(() {
-                                         _selectedIndex = 1;//(_selectedIndex + 1) % 3;
+                                        indiceWidget = 1;  
                                       });
                                     }
                                   ),
@@ -324,7 +246,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Hombre', 
                                     onPressed: () {
                                       setState(() {
-                                         _selectedIndex = 3;  
+                                        indiceWidget = 2;  
                                       });
                                     }
                                   ),
@@ -333,7 +255,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Mujer', 
                                     onPressed: () {
                                       setState(() {
-                                        _selectedIndex = 4;     //(_selectedIndex + 1) % 3;
+                                        indiceWidget = 3;
                                       });
                                     }
                                   ),
@@ -348,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Nuevo', 
                                     onPressed: () {
                                       setState(() {
-                                         //_selectedIndex = 1;
+                                        //indiceWidget = 4;
                                       });
                                     }
                                   ),
@@ -357,11 +279,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Sale', 
                                     onPressed: () {
                                       setState(() {
-                                        //_selectedIndex = 1;//(_selectedIndex + 1) % 3;
+                                        indiceWidget = 4;
                                       });
                                     }
                                   ),
-                                  //const Spacer(),
                                 ],
                               )
                             ],
@@ -405,7 +326,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             icon: const Icon(Icons.info_outline_rounded), 
                             onPressed: () {
                               setState(() {
-                                _selectedIndex = 5;
+                                indiceWidget = 5;
                               });
                             },
                             color: Colors.white, 
@@ -561,7 +482,18 @@ void _launchInstagram() async {
 }
 
 
-
+/*Padding(
+                padding: const EdgeInsets.only(bottom: 30),
+                child: ButtonTextBar(
+                  buttonText: 'Estampados', 
+                  onPressed: () {
+                    setState(() {
+                      _selectedIndex = 2;
+                    });
+                  }
+                ),
+              ),*/
+              //const Spacer(),
 
 //TODO: DIRECCIÓN
 /*
@@ -632,3 +564,15 @@ Somos una marca enfocada en un estilo de vida joven, fresco y urbano.
 Creamos colecciones de moda con las últimas tendencias de temporada 
 para todos los gustos y todas las edades.
         */
+
+           /*Tooltip(
+                message: 'Bolsos', // Texto que se mostrará al pasar el ratón por encima
+                child: TextButton(
+                  onPressed: () {
+                    setState(() {
+                      _selectedIndex = 4;
+                    });
+                  },
+                  child: Text('Mujer', style: styleText), // Texto del botón
+                ),
+              ),*/

@@ -28,7 +28,7 @@ class Help extends StatelessWidget {
                           //mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Bienvenido al Centro de Ayuda de Marking', style: styleText3),
+                              Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3),
                               const SizedBox(height: 15),
                               const TextHelpWidget(TextHelp.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w200)),
                               const Row(

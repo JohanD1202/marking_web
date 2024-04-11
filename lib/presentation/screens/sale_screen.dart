@@ -1,5 +1,5 @@
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/lociones_hombre_sale.dart';
+import 'package:marking_web/presentation/screens/section_sale.dart';
 
 
 class SaleScreen extends StatelessWidget {
@@ -48,7 +48,7 @@ Con nuestros productos de alta calidad a precios irresistibles.
                   ],
                 ),
               ),
-              const LocionesHombreSale(),
+              const SectionSale(),
               const SizedBox(height: 40),
             ],
           ),

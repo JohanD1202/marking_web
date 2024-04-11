@@ -1,18 +1,7 @@
 import 'package:marking_web/exports.dart';
 
 
-class Product {
-  final int id;
-  final String name;
-  final double price;
-
-  Product({
-    required this.id,
-    required this.name,
-    required this.price
-  });
-}
-
+/*
 class Cart {
   final List<Product> products = [];
 
@@ -54,4 +43,4 @@ class _ShoppingCartState extends State<ShoppingCart> {
       },
     );
   }
-}
+}*/

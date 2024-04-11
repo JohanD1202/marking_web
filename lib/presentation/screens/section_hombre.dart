@@ -2,17 +2,25 @@ import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/widgets_lociones.dart';
 
 
-class LocionesHombreScreen extends StatefulWidget {
+class SectionHombre extends StatefulWidget {
   // ignore: use_super_parameters
-  const LocionesHombreScreen({Key? key}) : super (key: key);
+  const SectionHombre({Key? key}) : super (key: key);
 
   @override
-  State<LocionesHombreScreen> createState() => _LocionesHombreScreenState();
+  State<SectionHombre> createState() => _SectionHombreState();
 }
 
-class _LocionesHombreScreenState extends State<LocionesHombreScreen> {
+class _SectionHombreState extends State<SectionHombre> {
 
-  Cart myCart = Cart();
+  Locion? selectedProduct;
+
+  void selectProduct(Locion product) {
+    setState(() {
+      selectedProduct = product;
+    });
+  }
+
+  //Cart myCart = Cart();
 
   @override
   Widget build(BuildContext context) {
@@ -22,48 +30,47 @@ class _LocionesHombreScreenState extends State<LocionesHombreScreen> {
         Row(
           children: [
             Spacer(),
-            WidgetLocion(
+            //if (selectedProduct == null)
+            Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            //if (selectedProduct != null)
+            
+            Locion(
               imageLocion: 'assets/images/locion_5.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_7.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 17.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_10.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
           ],
@@ -73,48 +80,44 @@ class _LocionesHombreScreenState extends State<LocionesHombreScreen> {
         Row(
           children: [
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_4.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_5.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_7.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_10.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
           ],
@@ -124,48 +127,44 @@ class _LocionesHombreScreenState extends State<LocionesHombreScreen> {
         Row(
           children: [
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_4.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_5.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_7.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_10.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
           ],
@@ -175,48 +174,44 @@ class _LocionesHombreScreenState extends State<LocionesHombreScreen> {
         Row(
           children: [
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_4.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_5.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_7.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_10.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
           ],
@@ -226,56 +221,47 @@ class _LocionesHombreScreenState extends State<LocionesHombreScreen> {
         Row(
           children: [
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_4.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_5.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_7.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
-            WidgetLocion(
+            Locion(
               imageLocion: 'assets/images/locion_10.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(),
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
           ],
-        ),
-        SizedBox(height: 50),
-        Row(
-          children: [
-          ]
         ),
       ],
     );

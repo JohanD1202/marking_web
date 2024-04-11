@@ -50,7 +50,7 @@ class _ButtonTextBarState extends State<ButtonTextBar> {
             ? const BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: Color.fromARGB(255, 255, 171, 15),
+                  color: Colors.grey,
                   width: 1.5
                 )
               )
@@ -63,7 +63,7 @@ class _ButtonTextBarState extends State<ButtonTextBar> {
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w900,
-                  color: _isHovered ? const Color.fromARGB(255, 255, 171, 15) : Colors.black,
+                  color: _isHovered ? Colors.grey : Colors.black,
                 ),
               ),
             ),
@@ -179,7 +179,7 @@ TextStyle styleTextTitle = const TextStyle(
 TextStyle styleTextInicio = const TextStyle(
   fontSize: 60,
   fontWeight: FontWeight.bold,
-  color: Color.fromARGB(255, 255, 171, 15)
+  color: Colors.white
 );
 
 TextStyle styleText = const TextStyle(
@@ -203,19 +203,19 @@ TextStyle styleTextA = const TextStyle(
 TextStyle styleTextB = const TextStyle(
   fontSize: 26,
   fontWeight: FontWeight.w800,
-  color: Color.fromARGB(255, 255, 171, 15)
+  color: Colors.white
 );
 
 TextStyle styleTextC = const TextStyle(
   fontSize: 26,
   fontWeight: FontWeight.w800,
-  color: Color.fromARGB(255, 255, 171, 15)
+  color: Colors.white
 );
 
 TextStyle styleTextD = const TextStyle(
   fontSize: 35,
   fontWeight: FontWeight.w800,
-  color: Color.fromARGB(255, 255, 171, 15)
+  color: Colors.white
 );
 
 TextStyle styleText3 = const TextStyle(
@@ -230,6 +230,13 @@ TextStyle styleTextHeader = TextStyle(
   color: Colors.grey[900]
 );
 
+/*
+TextStyle styleTextShop = TextStyle(
+  fontSize: 12,
+  fontWeight: FontWeight.w100,
+  color: Colors.grey[900]
+);
+*/
 TextStyle styleText4 = const TextStyle(
   fontSize: 45,
   fontWeight: FontWeight.w900,

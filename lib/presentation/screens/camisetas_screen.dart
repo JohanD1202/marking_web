@@ -1,4 +1,4 @@
-import 'package:marking_web/exports.dart';
+/*import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/widgets_lociones.dart';
 
 class CamisetasScreen extends StatelessWidget {
@@ -278,4 +278,4 @@ class CamisetasScreen extends StatelessWidget {
       ]
     );
   }
-}
+}*/

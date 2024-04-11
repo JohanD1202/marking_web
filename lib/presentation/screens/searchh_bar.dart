@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:marking_web/exports.dart';
 
 
@@ -55,7 +54,7 @@ class _SearchhBarState extends State<SearchhBar> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          height: 50,
+          height: 40,
           width: 900,
           child: TextField(
             controller: _controller,
@@ -63,11 +62,11 @@ class _SearchhBarState extends State<SearchhBar> {
               hintText: 'Busca tus favoritos',
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(40),
-                borderSide: const BorderSide(color: Color.fromARGB(255, 255, 171, 15))
+                borderSide: const BorderSide(color: Colors.grey)
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(40),
-                borderSide: const BorderSide(color: Color.fromARGB(255, 255, 171, 15))
+                borderSide: const BorderSide(color: Colors.grey)
               ),
               contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               prefixIcon: const Icon(Icons.search_rounded),

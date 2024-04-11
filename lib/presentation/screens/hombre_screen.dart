@@ -13,7 +13,7 @@ class HombreScreen extends StatefulWidget {
 
 class _HombreScreenState extends State<HombreScreen> {
 
-  Cart myCart = Cart();
+  //Cart myCart = Cart();
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _HombreScreenState extends State<HombreScreen> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 35),
+                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 12),
                 child: Row(
                   children: [
                     Expanded(
@@ -56,7 +56,7 @@ De fragancias de calidad a un precio increíblemente bajo!
                   ],
                 ),
               ),
-              const LocionesHombreScreen(),
+              const SectionHombre(),
               //ShoppingCart(cart: myCart),
               const SizedBox(height: 50),
             ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const colorList = <Color>[
+  Colors.white,
   Colors.grey,
   Colors.black,
   Colors.black87,

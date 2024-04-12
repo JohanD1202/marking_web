@@ -4,6 +4,8 @@ import 'package:marking_web/exports.dart';
 import 'dart:html' as html;
 
 
+
+
 class HomeScreen extends StatefulWidget {
 
   // ignore: use_super_parameters
@@ -110,9 +112,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         const SearchhBar(),
                         const Spacer(),
                         IconButton(
-                          hoverColor: const Color.fromARGB(255, 255, 240, 213),
-                          onPressed: () {},
-                          icon: const Icon(Icons.shopping_bag_outlined, size: 35, ),
+                          icon: const Icon(Icons.shopping_cart_rounded),
+                          iconSize: 35,
+                          onPressed: () {
+                            //Locion.showCartOverlay();
+                          },
                         ),
                         const Spacer()
                       ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:marking_web/exports.dart';
 
+
 class Locion extends StatefulWidget {
 
   final String imageLocion;
@@ -35,6 +36,19 @@ class _LocionState extends State<Locion> {
     return double.parse(cleanPrice);
   }*/
 
+  /*
+  void showCartOverlay() {
+    _locionState?._showCartOverlay;
+  }
+
+  static _LocionState? _locionState;
+
+  class _LocionState extends State<Locion> {
+    _LocionState() {
+      Locion._locionState = this;
+    }
+  }*/
+
   Color? textColor = Colors.grey[700];
   int selectedNumber = 1;
   OverlayEntry? _overlayEntry;
@@ -53,74 +67,84 @@ class _LocionState extends State<Locion> {
     });
   }
 
+  void _closeCartOverlay() {
+    _overlayEntry?.remove();
+  }
+
   void _showCartOverlay() {
 
     totalPrice = widget.priceOriginal * selectedNumber;
 
     _overlayEntry = OverlayEntry(
-      builder: (context) => Positioned(
-        top: MediaQuery.of(context).size.height * 0.22,
-        right: 50,
-        width: 320,
-        height: 445,
-        child: Material(
-          elevation: 12,
-          child: Container(
-            color: Colors.white,
-            child: Column(
-              children: [
-                Material(
-                  child: Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[350]
-                    ),
-                    child: Row(
-                      children: [
-                        const Spacer(),
-                        Text('ENVÍO GRATIS DESDE \$200.000', style: styleTextHeader),
-                        const Spacer(),
-                      ],
+      builder: (context) => Consumer<CartNotifier>(
+        builder: (context, cart, _) => Positioned(
+          top: MediaQuery.of(context).size.height * 0.22,
+          right: 50,
+          width: 320,
+          height: 445,
+          child: Material(
+            elevation: 12,
+            child: Container(
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Material(
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[350]
+                      ),
+                      child: Row(
+                        children: [
+                          const Spacer(),
+                          Text('ENVÍO GRATIS DESDE \$200.000', style: styleTextHeader),
+                          const Spacer(),
+                          IconButton(
+                            icon: const Icon(Icons.close_rounded),
+                            onPressed: _closeCartOverlay,
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-                      child: Image.asset(widget.imageLocion, width: 160),
-                    ),
-                    Positioned(
-                      top: 15,
-                      left: 160,
-                      child: Text(widget.nameLocion, style: styleTextLocion),
-                    ),
-                    Positioned(
-                      top: 60,
-                      left: 160,
-                      child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
-                    ),
-                    Positioned(
-                      top: 110,
-                      left: 160,
-                      child: Text('Cantidad:', style: styleTextLocion),
-                    ),
-                    Positioned(
-                      top: 150,
-                      left: 170,
-                      child: Cantidad(
-                        onQuantityChanged: (quantity) {
-                          setState(() {
-                            selectedNumber = quantity;
-                            totalPrice = widget.priceOriginal * quantity;
-                          });
-                        }
+                  Stack(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+                        child: Image.asset(widget.imageLocion, width: 160),
+                      ),
+                      Positioned(
+                        top: 15,
+                        left: 160,
+                        child: Text(widget.nameLocion, style: styleTextLocion),
+                      ),
+                      Positioned(
+                        top: 60,
+                        left: 160,
+                        child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 160,
+                        child: Text('Cantidad:', style: styleTextLocion),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 170,
+                        child: Cantidad(
+                          onQuantityChanged: (quantity) {
+                            setState(() {
+                              selectedNumber = quantity;
+                              totalPrice = widget.priceOriginal * quantity;
+                            });
+                          }
+                        )
                       )
-                    )
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),
@@ -224,32 +248,34 @@ class _CantidadState extends State<Cantidad> {
     var offset = renderBox.localToGlobal(Offset.zero);
 
     return OverlayEntry(
-      builder: (context) => Positioned(
-        left: offset.dx,
-        top: offset.dy + size.height * 1,//+ (1 * 20),
-        width: size.width * 1.18,
-        height: size.height * 7.5,
-        child: Material(
-          elevation: 4,
-          child: ListView.builder(
-            shrinkWrap: true,
-            itemCount: 10,
-            itemBuilder: (context, index) {
-              int itemNumber = index + 1;
-              return Container(
-                height: 32,
-                child: ListTile(
-                  title: Text('$itemNumber'),
-                  onTap: () {
-                    setState(() {
-                      selectedNumber = itemNumber; //
-                    });
-                    widget.onQuantityChanged(itemNumber);
-                    _overlayEntry?.remove();
-                  },
-                ),
-              );
-            },
+      builder: (context) => Consumer<CartNotifier>(
+        builder: (context, cart, _) => Positioned(
+          left: offset.dx,
+          top: offset.dy + size.height * 1,//+ (1 * 20),
+          width: size.width * 1.18,
+          height: size.height * 7.5,
+          child: Material(
+            elevation: 4,
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                int itemNumber = index + 1;
+                return Container(
+                  height: 32,
+                  child: ListTile(
+                    title: Text('$itemNumber'),
+                    onTap: () {
+                      setState(() {
+                        selectedNumber = itemNumber; //
+                      });
+                      widget.onQuantityChanged(itemNumber);
+                      _overlayEntry?.remove();
+                    },
+                  ),
+                );
+              },
+            ),
           ),
         ),
       ),
@@ -637,6 +663,22 @@ class CarShop extends StatelessWidget {
   }
 }
 
+class CartNotifier extends ChangeNotifier {
+  bool _isCartOpen = false;
+
+  bool get isCartOpen => _isCartOpen;
+
+  void openCart() {
+    _isCartOpen = true;
+    notifyListeners();
+  }
+
+  void closeCart() {
+    _isCartOpen = false;
+    notifyListeners();
+  }
+}
+
 
 class CartProvider extends ChangeNotifier {
   List<Product> _cartItems = [];
@@ -663,6 +705,8 @@ class Product {
     required this.image
   });
 }
+
+
 /*class WidgetCamisetas extends StatefulWidget {
 
   final String imageCamiseta;

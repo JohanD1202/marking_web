@@ -13,7 +13,10 @@ void main() {
         ),
         ChangeNotifierProvider(
           create: (context) => CartNotifier(),
-        )
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HelpScreenState(),
+        ),
       ],
     child: const MyApp(),
   ),

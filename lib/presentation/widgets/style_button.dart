@@ -188,6 +188,24 @@ TextStyle styleText = const TextStyle(
   color: Colors.black
 );
 
+TextStyle style = const TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.w600,
+  color: Colors.black
+);
+
+TextStyle frequent = const TextStyle(
+  fontSize: 40,
+  fontWeight: FontWeight.w900,
+  color: Colors.black
+);
+
+TextStyle frequent2 = const TextStyle(
+  fontSize: 25,
+  fontWeight: FontWeight.w900,
+  color: Colors.black
+);
+
 TextStyle styleText10 = const TextStyle(
   fontSize: 22,
   fontWeight: FontWeight.w900,
@@ -221,6 +239,12 @@ TextStyle styleTextD = const TextStyle(
 TextStyle styleText3 = const TextStyle(
   fontSize: 21,
   fontWeight: FontWeight.w700,
+  color: Colors.black
+);
+
+TextStyle answer = const TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.w500,
   color: Colors.black
 );
 
@@ -318,16 +342,14 @@ class TextHelp {
     - Preguntas Frecuentes: Explora nuestra sección de Preguntas Frecuentes para obtener 
       respuestas rápidas a las consultas más comunes.
 
-    - Proceso de Compra: Aprende más sobre cómo realizar pedidos, 
-      opciones de pago y seguimiento de envíos.
+    - Proceso de Compra: Aprende más sobre cómo realizar pedidos y opciones de pago.
 
     Explora nuestras Categorías:
 
     - Aromas Selectos
-    - Estampados
-    - Nuevo
     - Hombre
     - Mujer
+    - Nuevo
     - Sale
   ''';
 }
@@ -357,7 +379,7 @@ class TextHelpWidget extends StatelessWidget {
       'Preguntas Frecuentes', 'Aromas Selectos', 
       'Proceso de Compra','Atención al Cliente', 
       'Nuevo', 'Hombre', 'Mujer', 
-      'Estampados', 'Sale'
+      'Sale'
     ];
 
     // Creamos una expresión regular para buscar las palabras destacadas

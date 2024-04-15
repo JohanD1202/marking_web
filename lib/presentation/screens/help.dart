@@ -1,92 +1,147 @@
+import 'package:flutter/material.dart';
 import 'package:marking_web/exports.dart';
+import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 import 'dart:html' as html;
 
+import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
 
-class Help extends StatelessWidget {
 
-  const Help({super.key});
+class Help extends StatefulWidget {
+
+  // ignore: use_super_parameters
+  const Help({Key? key}) : super(key: key);
+
+  @override
+  State<Help> createState() => _HelpState();
+}
+
+class _HelpState extends State<Help> {
 
   @override
   Widget build(BuildContext context) {
+    
+    return Consumer<HelpScreenState>(builder: (context, helpScreenState, _) {
+      return helpScreenState.showFullContent
+        ? buildFullContent(context)
+        : helpScreenState.showAromasGuide
+          ? buildAromasGuide(context)
+          : buildPartialContent(context);
+      },
+    );
+  }
 
-    final size = MediaQuery.of(context).size;
+  Widget buildAromasGuide(BuildContext context) {
+    return const GuiaAromas();
+  }
 
-    return SizedBox(
-      height: size.height * 1,
-      width: size.width * 1,
-      child: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        child: Column(
-                          //mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3),
-                              const SizedBox(height: 15),
-                              const TextHelpWidget(TextHelp.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w200)),
-                              const Row(
-                                children: [
-                                  Contactanos(
-                                    image: 'assets/images/whats.png', 
-                                    title: 'WhatsApp', 
-                                    description: 'Escríbenos para responder tus dudas',
+  Widget buildFullContent(BuildContext context) {
+
+
+  final size = MediaQuery.of(context).size;
+  
+  return SizedBox(
+    height: size.height * 1,
+    width: size.width * 1,
+    child: Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3),
+                            const SizedBox(height: 15),
+                            const TextHelpWidget(TextHelp.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w200)),
+                            Row(
+                              children: [
+                                const Contactanos(
+                                  image: 'assets/images/whats.png', 
+                                  title: 'WhatsApp', 
+                                  description: 'Escríbenos para responder tus dudas',
                                     padding: EdgeInsets.fromLTRB(20, 20, 100, 20),
                                   ),
-                                  SizedBox(width: 15),
-                                  GuideSize(
+                                  const SizedBox(width: 15),
+                                  Questions(
                                     image: 'assets/images/preguntas.png', 
                                     title: 'Preguntas Frecuentes', 
                                     description: 'Resuelve las dudas más frecuentes',
-                                    padding: EdgeInsets.fromLTRB(15, 20, 100, 20),
+                                    padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
+                                    onTapCallback: () {
+                                      Provider.of<HelpScreenState>(context, listen: false).toggleContent();
+                                    },
                                   ),
                                 ],
                               ),
                               const SizedBox(height: 15),
-                              const Row(
-                                children: [
-                                  GuideSize(
-                                    image: 'assets/images/regla1.png', 
-                                    title: 'Guía de Tallas', 
-                                    description: 'Conoce tu talla indicada',
-                                    padding: EdgeInsets.fromLTRB(32, 20, 100, 20),
-                                  ),
-                                  SizedBox(width: 15),
-                                  Debito(
-                                    image: 'assets/images/debito1.jpg',
-                                    height: 100,
-                                    title: 'Medios de Pago', 
-                                    description: 'Consulta, agrega o edita las opciones de pago',
-                                    padding: EdgeInsets.fromLTRB(2, 0, 100, 0),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                       ),
-                       const SizedBox(width: 10),
-                       Padding(
-                         padding: const EdgeInsets.all(6),
-                         child: ClipRRect(
-                          borderRadius: const BorderRadius.all(Radius.circular(15)),
-                          child: Image.asset('assets/images/logo_principal_1.png', width: 200, height: 130, fit: BoxFit.cover)),
-                       )
-                    ],
-                  ),  
-                 )
-               ] 
-             ),
+                                Row(
+                                  children: [
+                                    AromasGuide(
+                                      image: 'assets/images/olor1.jpg', 
+                                      title: 'Guía de Aromas', 
+                                      description: 'Conoce tu Aroma indicado',
+                                      padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
+                                      onTapCallback: () {
+                                        Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
+                                      },
+                                    ),
+                                    const SizedBox(width: 15),
+                                    const Debito(
+                                      image: 'assets/images/debito1.jpg',
+                                      height: 100,
+                                      title: 'Medios de Pago', 
+                                      description: 'Consulta, agrega o edita las opciones de pago',
+                                      padding: EdgeInsets.fromLTRB(2, 0, 100, 0),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                         ),
+                         const SizedBox(width: 10),
+                         Padding(
+                           padding: const EdgeInsets.all(6),
+                           child: ClipRRect(
+                            borderRadius: const BorderRadius.all(Radius.circular(15)),
+                            child: Image.asset('assets/images/aromas_selectos.jpg', width: 205, height: 135, fit: BoxFit.cover)),
+                         )
+                      ],
+                    ),  
+                   )
+                 ] 
+               ),
+          ),
         ),
-      ),
-    );
+      );
+  }
+} 
+  
+  Widget buildPartialContent(BuildContext context) {
+    return const PreguntasFrecuentes();
+  }
+
+      
+
+class HelpScreenState extends ChangeNotifier {
+  bool showFullContent = true;
+  bool showAromasGuide = false;
+
+  void toggleContent() {
+    showFullContent = !showFullContent;
+    notifyListeners();
+  }
+
+  void toggleAromasGuide() {
+    showAromasGuide = !showAromasGuide;
+    notifyListeners();
   }
 }
+
 
 void _launchWhatsApp(String phoneNumber) async {
 
@@ -172,27 +227,35 @@ class _ContactanosState extends State<Contactanos> {
   }
 }
 
-class GuideSize extends StatefulWidget {
+class Questions extends StatefulWidget {
 
   final String image;
   final String title;
   final String description;
   final EdgeInsets padding;
+  final Function onTapCallback;
 
   // ignore: use_super_parameters
-  const GuideSize({
+  const Questions({
     Key? key,
     required this.image, 
     required this.title, 
     required this.description, 
     required this.padding, 
+    required this.onTapCallback, 
   }) : super(key: key);
 
   @override
-  State<GuideSize> createState() => _GuideSizeState();
+  State<Questions> createState() => _QuestionsState();
 }
 
-class _GuideSizeState extends State<GuideSize> {
+class _QuestionsState extends State<Questions> {
+
+  //int indiceWidget2 = 0;
+  void _handleTap() {
+    widget.onTapCallback;
+  }
+
   @override
   Widget build(BuildContext context) {
     return 
@@ -220,7 +283,9 @@ class _GuideSizeState extends State<GuideSize> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(100),
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Provider.of<HelpScreenState>(context, listen: false).toggleContent();
+                    },
                     child: Image.asset(widget.image)
                   )
                 )
@@ -233,7 +298,87 @@ class _GuideSizeState extends State<GuideSize> {
             Padding(
               padding: const EdgeInsets.only(left: 100, top: 40),
               child: Text(widget.description, style: styleTextLocion),
-            )
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+//TODO:
+
+class AromasGuide extends StatefulWidget {
+
+  final String image;
+  final String title;
+  final String description;
+  final EdgeInsets padding;
+  final Function onTapCallback;
+
+  // ignore: use_super_parameters
+  const AromasGuide({
+    Key? key,
+    required this.image, 
+    required this.title, 
+    required this.description, 
+    required this.padding, 
+    required this.onTapCallback, 
+  }) : super(key: key);
+
+  @override
+  State<AromasGuide> createState() => _AromasGuideState();
+}
+
+class _AromasGuideState extends State<AromasGuide> {
+
+  //int indiceWidget2 = 0;
+  void _handleTap() {
+    widget.onTapCallback;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return 
+    Card(
+      elevation: 8,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white)
+      ),
+      child: Container(
+        height: 110,
+        width: 430,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: widget.padding,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(100),
+                  child: GestureDetector(
+                    onTap: () {
+                      Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
+                    },
+                    child: Image.asset(widget.image)
+                  )
+                )
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 100, top: 10),
+              child: Text(widget.title, style: styleTextLocion2),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 100, top: 40),
+              child: Text(widget.description, style: styleTextLocion),
+            ),
           ],
         ),
       ),

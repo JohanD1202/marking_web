@@ -272,6 +272,12 @@ TextStyle styleTextLocion = TextStyle(
   color: Colors.grey [800]
 );
 
+
+TextStyle styleText9 = const TextStyle(
+  fontSize: 15.5,
+  color: Colors.black
+);
+
 TextStyle styleTextLocion2 = TextStyle(
   fontSize: 17,
   color: Colors.grey [800],
@@ -293,6 +299,12 @@ TextStyle styleTextCar = const TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.w500,
   color: Colors.white
+);
+
+TextStyle styleTextMo = const TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.w500,
+  color: Colors.black
 );
 
 TextStyle styleTextCar2 = const TextStyle(
@@ -331,6 +343,77 @@ ButtonStyle styleText20 = ButtonStyle(
   foregroundColor: MaterialStateProperty.all(Colors.white),
   textStyle: MaterialStateProperty.all(styleTextCar)
 );
+
+ButtonStyle styleText200 = ButtonStyle(
+  fixedSize: MaterialStateProperty.all(const Size(300, 35)),
+  shape: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
+  backgroundColor: MaterialStateProperty.all(Colors.black),
+  foregroundColor: MaterialStateProperty.all(Colors.white),
+);
+
+ButtonStyle styleText400 = ButtonStyle(
+  fixedSize: MaterialStateProperty.all(const Size(300, 35)),
+  side: MaterialStateProperty.all(const BorderSide(color: Colors.black, width: 1)),
+  shape: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
+  backgroundColor: MaterialStateProperty.all(Colors.white),
+  foregroundColor: MaterialStateProperty.all(Colors.black),
+);
+
+
+
+class SeguirComprando extends StatefulWidget {
+
+  // ignore: use_super_parameters
+  const SeguirComprando({Key? key}) : super(key: key);
+
+  @override
+  State<SeguirComprando> createState() => _SeguirComprandoState();
+}
+
+class _SeguirComprandoState extends State<SeguirComprando> {
+
+  bool isHovering = false;
+  Color? textColor = Colors.black;
+
+  void _setHovering(bool hovering) {
+    setState(() {
+      isHovering = hovering;
+      textColor = isHovering ? Colors.white : Colors.black;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => _setHovering(true),
+      onExit: (_) => _setHovering(false),
+      child: Container(
+        width: 300,
+        height: 35,
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black),
+          color: isHovering ? Colors.black : Colors.white
+        ),
+        child: InkWell(
+          onTap: () {},
+          child: Center(
+            child: Text('SEGUIR COMPRANDO', 
+              style: TextStyle(
+                color: textColor, 
+                fontSize: 16,
+                fontWeight: FontWeight.normal
+              )
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
 
 class TextHelp {
   static const String helpText = '''

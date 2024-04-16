@@ -8,9 +8,9 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (_) => CartProvider(),
-        ),
+        /*ChangeNotifierProvider(
+          create: (context) => CartProvider(),
+        ),*/
         ChangeNotifierProvider(
           create: (context) => CartNotifier(),
         ),
@@ -28,11 +28,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 0).getTheme(), 
-      title: 'Aromas Selectos',
-      home: const HomeScreen(),
+    return ChangeNotifierProvider(
+      create: (context) => CartProvider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme(selectedColor: 0).getTheme(), 
+        title: 'Aromas Selectos',
+        home: const HomeScreen(),
+      ),
     );
   }
 }

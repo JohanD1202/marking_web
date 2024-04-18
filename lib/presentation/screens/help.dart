@@ -73,7 +73,7 @@ class _HelpState extends State<Help> {
                                     description: 'Resuelve las dudas más frecuentes',
                                     padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
                                     onTapCallback: () {
-                                      Provider.of<HelpScreenState>(context, listen: false).toggleContent();
+                                      Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
                                     },
                                   ),
                                 ],

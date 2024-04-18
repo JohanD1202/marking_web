@@ -63,6 +63,14 @@ class _LocionState extends State<Locion> {
     });
   }
 
+  void _addToCartAndShowOverlay() {
+
+    setState(() {
+      isCartEmpty = false;
+    });
+    _showCartOverlay();
+  }
+
 
   void _showCartOverlay() {
 
@@ -152,45 +160,7 @@ class _LocionState extends State<Locion> {
       ],
     );
   }
-/*
-  void _showCartBottomSheet() {
-    showModalBottomSheet(
-      context: context,
-      builder: (BuildContext context) {
-        return StatefulBuilder(
-          builder: (BuildContext context, StateSetter setState) {
-            return Container(
-              padding: EdgeInsets.all(15),
-              height: 500,
-              child: Column(
-                children: [
-                  Image.asset(widget.imageLocion, width: 160),
-                  Text(widget.nameLocion, style: styleTextLocion),
-                  Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice),
-                  Text('Cantidad: ', style: styleTextLocion),
-                  Cantidad(
-                    onQuantityChanged: (quantity) {
-                      setState(() {
-                        selectedNumber = quantity;
-                        totalPrice = widget.priceOriginal * quantity;
-                      });
-                    },
-                  ),
-                  const Spacer(),
-                    IconButton(
-                    icon: const Icon(Icons.close_rounded),
-                    onPressed: _closeCartOverlay,
-                  )
-                ],
-              ),
-            );
-          },
-        );
-      }
-    );
-  }
 
-*/
 
   Widget _buildCartContent(BuildContext context) {
     return Column(
@@ -330,7 +300,7 @@ class _LocionState extends State<Locion> {
               left: 5,
               right: 5,
               child: CarShop(
-                onAddToCart: _showCartOverlay,
+                onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
                   id: 1, 
                   name: widget.nameLocion, 
@@ -559,6 +529,8 @@ class _LocionPromotionState extends State<LocionPromotion> {
     );
   }
 }
+*/
+/*
 
 class Bolsos extends StatefulWidget {
 
@@ -586,7 +558,6 @@ class Bolsos extends StatefulWidget {
 
 class _BolsosState extends State<Bolsos> {
 
-  Cart myCart = Cart();
 
   @override
   Widget build(BuildContext context) {
@@ -631,7 +602,15 @@ class _BolsosState extends State<Bolsos> {
               top: 470,
               left: 5,
               right: 5,
-              child: CarShop(),
+              child: CarShop(
+                onAddToCart: _addToCartAndShowOverlay,
+                productToAdd: Product(
+                  id: 1, 
+                  name: widget.nameLocion, 
+                  price: widget.priceOriginal, 
+                  image: widget.imageLocion,
+                ),
+              ),
             )
           ],
         )
@@ -639,7 +618,6 @@ class _BolsosState extends State<Bolsos> {
     );
   }
 }
-
 
 class BolsosPromotion extends StatefulWidget {
 

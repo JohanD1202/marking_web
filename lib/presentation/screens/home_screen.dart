@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:marking_web/exports.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
@@ -481,7 +480,6 @@ void _launchInstagram() async {
   const url = 'https://www.instagram.com/aromasselectos_co/';
   
   html.window.open(url, 'Instagram');
-  
 
 }
 

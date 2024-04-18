@@ -182,6 +182,12 @@ TextStyle styleTextInicio = const TextStyle(
   color: Colors.white
 );
 
+TextStyle styleTextInicioMobile = const TextStyle(
+  fontSize: 30,
+  fontWeight: FontWeight.bold,
+  color: Colors.white
+);
+
 TextStyle styleText = const TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w900,
@@ -224,6 +230,12 @@ TextStyle styleTextB = const TextStyle(
   color: Colors.white
 );
 
+TextStyle styleTextBMobile = const TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.w800,
+  color: Colors.white
+);
+
 TextStyle styleTextC = const TextStyle(
   fontSize: 26,
   fontWeight: FontWeight.w800,
@@ -232,6 +244,12 @@ TextStyle styleTextC = const TextStyle(
 
 TextStyle styleTextD = const TextStyle(
   fontSize: 35,
+  fontWeight: FontWeight.w800,
+  color: Colors.white
+);
+
+TextStyle styleTextDMobile = const TextStyle(
+  fontSize: 20,
   fontWeight: FontWeight.w800,
   color: Colors.white
 );
@@ -250,6 +268,12 @@ TextStyle answer = const TextStyle(
 
 TextStyle styleTextHeader = TextStyle(
   fontSize: 15,
+  fontWeight: FontWeight.w100,
+  color: Colors.grey[900]
+);
+
+TextStyle styleTextHeaderMobile = TextStyle(
+  fontSize: 13,
   fontWeight: FontWeight.w100,
   color: Colors.grey[900]
 );

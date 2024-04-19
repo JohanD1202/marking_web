@@ -325,6 +325,12 @@ TextStyle styleTextCar = const TextStyle(
   color: Colors.white
 );
 
+TextStyle styleTextCarMobile = const TextStyle(
+  fontSize: 11,
+  fontWeight: FontWeight.w500,
+  color: Colors.white
+);
+
 TextStyle styleTextMo = const TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.w500,

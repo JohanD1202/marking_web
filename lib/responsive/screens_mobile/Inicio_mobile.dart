@@ -90,7 +90,7 @@ class FloatingBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         color: Colors.white,
-        height: 50,
+        height: 45,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [

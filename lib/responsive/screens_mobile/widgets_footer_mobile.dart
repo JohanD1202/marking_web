@@ -4,118 +4,187 @@ import 'dart:html' as html;
 
 
 
-class SocialNetworks extends StatelessWidget {
+class SocialNetworksMobile extends StatelessWidget {
   // ignore: use_super_parameters
-  const SocialNetworks({Key? key}) : super(key: key);
+  const SocialNetworksMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 25),
-      child: Container(
-        decoration: const BoxDecoration(color: Colors.black),
-        child: Column(
-          children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('Nuestras Redes Sociales', style: styleTextFooter),
-              ]
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                GestureDetector(
-                  onTap: () => _launchWhatsApp('573107312102'),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 10, top: 15),
-                    child: Image.asset('assets/images/whats.png', height: 45, width: 45),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: _launchInstagram,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 15),
-                    child: Image.asset('assets/images/instagr.png', height: 75, width: 95),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),            
+    return Container(
+      decoration: const BoxDecoration(color: Colors.black),
+      child: Column(
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Nuestras Redes Sociales', style: styleTextFooterMobile),
+            ]
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              GestureDetector(
+                onTap: () => _launchWhatsApp('573107312102'),
+                child: Image.asset('assets/images/whats.png', height: 40, width: 40),
+              ),
+              GestureDetector(
+                onTap: _launchInstagram,
+                child: Image.asset('assets/images/instagr.png', height: 70, width: 90),
+              ),
+            ],
+          ),
+        ],
+      ),            
+    );
+  }
+}
+
+class Categories extends StatelessWidget {
+
+  // ignore: use_super_parameters
+  const Categories({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 200,
+      width: 200.5,
+      decoration: const BoxDecoration(color: Colors.black),
+      child: Column(
+        children: [
+          Text('Categorías', style: styleTextFooterMobile),
+          const SizedBox(height: 20),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ButtonTextFooter(
+                buttonText: 'Aromas               Selectos', 
+                onPressed: () {
+                  /*setState(() {
+                    indiceWidget = 1;  
+                  });*/
+                }
+              ),
+            ],
+          ),
+          const SizedBox(height: 15),
+          Row(
+            children: [
+              //const Spacer(),
+              ButtonTextFooter(
+                buttonText: 'Hombre', 
+                onPressed: () {
+                  /*setState(() {
+                    indiceWidget = 2;  
+                  });*/
+                }
+              ),
+              const Spacer(),
+              ButtonTextFooter(
+                buttonText: 'Mujer', 
+                onPressed: () {
+                  /*setState(() {
+                    indiceWidget = 3;
+                  });*/
+                }
+              ),
+              //const Spacer(),
+            ],
+          ),
+          const SizedBox(height: 15),
+          Row(
+            children: [
+              //const Spacer(),
+              ButtonTextFooter(
+                buttonText: 'Nuevo', 
+                onPressed: () {
+                  /*setState(() {
+                    //indiceWidget = 4;
+                  });*/
+                }
+              ),
+              const Spacer(),
+              ButtonTextFooter(
+                buttonText: 'Sale', 
+                onPressed: () {
+                  /*setState(() {
+                    indiceWidget = 4;
+                  });*/
+                }
+              ),
+            ],
+          )
+        ],
       ),
     );
   }
 }
 
-class Phones extends StatelessWidget {
+class PhonesMobile extends StatelessWidget {
   // ignore: use_super_parameters
-  const Phones({Key? key}) : super(key: key);
+  const PhonesMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 25),
-      child: Container(
-        width: 200,
-        height: 150,
-        decoration: const BoxDecoration(color: Colors.black),
-        child: Column(
-          children: [
-            Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(right: 20),
-                  child: Text('Teléfonos', style: styleTextFooter),
-                ),
-              ],
-            ),
-            const SizedBox(height: 30),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => _launchWhatsApp('573107312102'),
-                      child: Image.asset('assets/images/whats.png', height: 30, width: 30),
-                    ),
-                    GestureDetector(
-                      onTap: () => _launchWhatsApp('573107312102'),
-                      child: Text('(+57) 310 731 2102', style: styleTextCar)
-                    )
-                  ],
-                ),
-                const SizedBox(height: 20),
-                Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => _launchWhatsApp('573104025062'),
-                      child: Image.asset('assets/images/whats.png', height: 28, width: 28),
-                    ),
-                    GestureDetector(
-                      onTap: () => _launchWhatsApp('573104025062'),
-                      child: Text('(+57) 310 402 5062', style: styleTextCar)
-                    )
-                  ],
-                )
-                
-              ],
-            )
-          ],
-        ),
+    return Container(
+      width: 200,
+      height: 150,
+      decoration: const BoxDecoration(color: Colors.black),
+      child: Column(
+        children: [
+          Column(
+            children: [
+              Text('Teléfonos', style: styleTextFooterMobile),
+            ],
+          ),
+          const SizedBox(height: 15),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Spacer(),
+                  GestureDetector(
+                    onTap: () => _launchWhatsApp('573107312102'),
+                    child: Image.asset('assets/images/whats.png', height: 30, width: 30),
+                  ),
+                  GestureDetector(
+                    onTap: () => _launchWhatsApp('573107312102'),
+                    child: Text('(+57) 310 731 2102', style: styleTextCa)
+                  ),
+                  const Spacer(),
+                ],
+              ),
+              const SizedBox(height: 20),
+              Row(
+                children: [
+                  const Spacer(),
+                  GestureDetector(
+                    onTap: () => _launchWhatsApp('573104025062'),
+                    child: Image.asset('assets/images/whats.png', height: 30, width: 30),
+                  ),
+                  GestureDetector(
+                    onTap: () => _launchWhatsApp('573104025062'),
+                    child: Text('(+57) 310 402 5062', style: styleTextCa)
+                  ),
+                  const Spacer(),
+                ],
+              )
+            ],
+          )
+        ],
       ),
     );
   }
 }
 
-class Comments extends StatelessWidget {
+class CommentsMobile extends StatelessWidget {
 
   final Widget? iconOrImage;
   final String text;
 
   // ignore: use_super_parameters
-  const Comments({
+  const CommentsMobile({
     Key? key, 
     this.iconOrImage, 
     required this.text,
@@ -124,26 +193,22 @@ class Comments extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 35),
+      padding: const EdgeInsets.only(top: 10, bottom: 10),
       child: Container(
         height: 100,
-        width: 230,
+        width: 170,
         decoration: const BoxDecoration(color: Colors.black),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if (iconOrImage != null) iconOrImage!,
-            Text(text, style: styleTextCar),
+            Text(text, style: styleTextCa),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
 
 void _launchWhatsApp(String phoneNumber) async {
 

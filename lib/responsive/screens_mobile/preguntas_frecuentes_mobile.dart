@@ -11,37 +11,37 @@ class PreguntasFrecuentesMobile extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1,
+      height: size.height * 1.2,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(right: 340, top: 30),
-                child: Text('PREGUNTAS FRECUENTES', style: frequent),
+                padding: const EdgeInsets.only(right: 130, top: 30),
+                child: Text('PREGUNTAS FRECUENTES', style: frequentMobile),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 610, top: 30),
-                child: Text('COMPRAS ONLINE', style: frequent2),
+                padding: const EdgeInsets.only(right: 240, top: 30),
+                child: Text('COMPRAS ONLINE', style: frequent2Mobile),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 15),
               Center(
                 child: Container(
-                  width: size.width * 0.70,
-                  child: const FaqSection(),
+                  width: size.width * 0.9,
+                  child: const FaqSectionMobile(),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 580, top: 30),
-                child: Text('DESPACHO Y ENTREGA', style: frequent2),
+                padding: const EdgeInsets.only(right: 160, top: 30),
+                child: Text('DESPACHO Y ENTREGA', style: frequentMobile),
               ),
               const SizedBox(height: 30),
               Center(
                 child: Container(
-                  width: size.width * 0.70,
+                  width: size.width * 0.9,
                   height: size.height * 1.2,
-                  child: const FaqSection2(),
+                  child: const FaqSection2Mobile(),
                 ),
               )
             ],
@@ -63,9 +63,9 @@ class FaqItem {
 
 }
 
-class FaqSection extends StatelessWidget {
+class FaqSectionMobile extends StatelessWidget {
    // ignore: use_super_parameters
-  const FaqSection({Key? key}) : super(key: key);
+  const FaqSectionMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -132,7 +132,7 @@ El valor de todos los productos que ves en nuestra página de internet ya tiene 
           )
         ),
         child: ExpansionTile(
-          title: Text(item.question, style: style),
+          title: Text(item.question, style: styleMobile),
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -147,10 +147,10 @@ El valor de todos los productos que ves en nuestra página de internet ya tiene 
  }
 }
 
-class FaqSection2 extends StatelessWidget {
+class FaqSection2Mobile extends StatelessWidget {
 
     // ignore: use_super_parameters
-    const FaqSection2({
+    const FaqSection2Mobile({
       Key? key
     }) : super(key: key);
    @override
@@ -222,7 +222,7 @@ Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
           )
         ),
         child: ExpansionTile(
-          title: Text(item.question, style: style),
+          title: Text(item.question, style: styleMobile),
           children: [
             Text(item.answer, style: answer, textAlign: TextAlign.left),
             //const Divider()

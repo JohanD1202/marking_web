@@ -200,14 +200,32 @@ TextStyle style = const TextStyle(
   color: Colors.black
 );
 
+TextStyle styleMobile = const TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.w500,
+  color: Colors.black
+);
+
 TextStyle frequent = const TextStyle(
   fontSize: 40,
   fontWeight: FontWeight.w900,
   color: Colors.black
 );
 
+TextStyle frequentMobile = const TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.w900,
+  color: Colors.black
+);
+
 TextStyle frequent2 = const TextStyle(
   fontSize: 25,
+  fontWeight: FontWeight.w900,
+  color: Colors.black
+);
+
+TextStyle frequent2Mobile = const TextStyle(
+  fontSize: 15,
   fontWeight: FontWeight.w900,
   color: Colors.black
 );
@@ -260,6 +278,12 @@ TextStyle styleText3 = const TextStyle(
   color: Colors.black
 );
 
+TextStyle styleText3Mobile = const TextStyle(
+  fontSize: 17,
+  fontWeight: FontWeight.w700,
+  color: Colors.black
+);
+
 TextStyle answer = const TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w500,
@@ -296,6 +320,11 @@ TextStyle styleTextLocion = TextStyle(
   color: Colors.grey [800]
 );
 
+TextStyle styleTextLocionMobile = TextStyle(
+  fontSize: 15,
+  color: Colors.grey [800]
+);
+
 
 TextStyle styleText9 = const TextStyle(
   fontSize: 15.5,
@@ -304,6 +333,12 @@ TextStyle styleText9 = const TextStyle(
 
 TextStyle styleTextLocion2 = TextStyle(
   fontSize: 17,
+  color: Colors.grey [800],
+  fontWeight: FontWeight.w600
+);
+
+TextStyle styleTextLocion2Mobile = TextStyle(
+  fontSize: 15.5,
   color: Colors.grey [800],
   fontWeight: FontWeight.w600
 );
@@ -331,6 +366,12 @@ TextStyle styleTextCarMobile = const TextStyle(
   color: Colors.white
 );
 
+TextStyle styleTextCa = const TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: Colors.white
+);
+
 TextStyle styleTextMo = const TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.w500,
@@ -352,6 +393,12 @@ TextStyle styleTextTitle2 = const TextStyle(
 
 TextStyle styleTextFooter = const TextStyle(
   fontSize: 22,
+  fontWeight: FontWeight.w500,
+  color: Colors.white
+);
+
+TextStyle styleTextFooterMobile = const TextStyle(
+  fontSize: 18,
   fontWeight: FontWeight.w500,
   color: Colors.white
 );
@@ -467,13 +514,111 @@ class TextHelp {
   ''';
 }
 
+class TextHelpMobile {
+  static const String helpText = '''
+  Estamos aquí para brindarte asistencia 
+  Y responder a todas tus preguntas. 
+  Nuestra misión es hacer que tu experiencia 
+  De compra sea lo más fácil posible.
+
+    Cómo podemos ayudarte:
+
+  - Preguntas Frecuentes: 
+
+    Explora nuestra sección de Preguntas 
+    Frecuentes para obtener respuestas 
+    Rápidas a las consultas más comunes.
+
+  - Proceso de Compra: 
+  
+    Aprende más sobre cómo realizar pedidos
+    Y opciones de pago.
+
+    Explora nuestras Categorías:
+
+    - Aromas Selectos
+    - Hombre
+    - Mujer
+    - Nuevo
+    - Sale
+  ''';
+}
+
+
+
 class TextHelpWidget extends StatelessWidget {
   final String text;
   final TextStyle? textStyle;
 
   const TextHelpWidget(
     this.text, 
-    this.textStyle
+    this.textStyle, {super.key}
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return RichText(
+      text: TextSpan(
+        style: textStyle, 
+        children: _buildTextSpans(text)
+      )
+    );
+  }
+
+  List<TextSpan> _buildTextSpans(String text) {
+    final List<TextSpan> textSpans = [];
+    final List<String> highlightedWords = [
+      'Preguntas Frecuentes', 'Aromas Selectos', 
+      'Proceso de Compra','Atención al Cliente', 
+      'Nuevo', 'Hombre', 'Mujer', 
+      'Sale'
+    ];
+
+    // Creamos una expresión regular para buscar las palabras destacadas
+    final RegExp regExp = RegExp(
+      highlightedWords.map((word) => '\\b$word\\b').join('|'),
+      caseSensitive: false
+    );
+
+    // Usamos el método allMatches para encontrar todas las ocurrencias de las palabras destacadas
+    final Iterable<Match> matches = regExp.allMatches(text);
+
+    // Iteramos sobre las coincidencias y agregamos TextSpans
+    int currentPosition = 0;
+    for (final Match match in matches) {
+      // Agregamos el texto antes de la coincidencia
+      if (match.start > currentPosition) {
+        textSpans.add(TextSpan(text: text.substring(currentPosition, match.start)));
+      }
+
+      // Agregamos la palabra destacada en negrita
+      textSpans.add(TextSpan(
+        text: match.group(0),
+        style: const TextStyle(fontWeight: FontWeight.w900),
+      ));
+
+      // Actualizamos la posición actual
+      currentPosition = match.end;
+    }
+
+    // Agregamos el texto restante después de la última coincidencia
+    if (currentPosition < text.length) {
+      textSpans.add(TextSpan(text: text.substring(currentPosition)));
+    }
+
+    return textSpans;
+  }
+}
+
+
+
+class TextHelpWidgetMobile extends StatelessWidget {
+  final String text;
+  final TextStyle? textStyle;
+
+  const TextHelpWidgetMobile(
+    this.text, 
+    this.textStyle, {super.key}
   );
 
   @override

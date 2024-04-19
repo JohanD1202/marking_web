@@ -4,6 +4,8 @@ import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 import 'dart:html' as html;
 
 import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
+import 'package:marking_web/responsive/screens_mobile/guia_aromas_mobile.dart';
+import 'package:marking_web/responsive/screens_mobile/preguntas_frecuentes_mobile.dart';
 
 
 class HelpMobile extends StatefulWidget {
@@ -31,7 +33,7 @@ class _HelpMobileState extends State<HelpMobile> {
   }
 
   Widget buildAromasGuide(BuildContext context) {
-    return const GuiaAromas();
+    return const GuiaAromasMobile();
   }
 
   Widget buildFullContent(BuildContext context) {
@@ -40,14 +42,14 @@ class _HelpMobileState extends State<HelpMobile> {
   final size = MediaQuery.of(context).size;
   
   return SizedBox(
-    height: size.height * 1,
+    height: size.height * 1.2,
     width: size.width * 1,
     child: Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -55,61 +57,59 @@ class _HelpMobileState extends State<HelpMobile> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3),
+                            Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3Mobile),
                             const SizedBox(height: 15),
-                            const TextHelpWidget(TextHelp.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w200)),
+                            const TextHelpWidgetMobile(TextHelpMobile.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w200)),
                             Row(
                               children: [
-                                const Contactanos(
+                                const Spacer(),
+                                const ContactanosMobile(
                                   image: 'assets/images/whats.png', 
                                   title: 'WhatsApp', 
                                   description: 'Escríbenos para responder tus dudas',
                                     padding: EdgeInsets.fromLTRB(20, 20, 100, 20),
                                   ),
-                                  const SizedBox(width: 15),
-                                  Questions(
-                                    image: 'assets/images/preguntas.png', 
-                                    title: 'Preguntas Frecuentes', 
-                                    description: 'Resuelve las dudas más frecuentes',
-                                    padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
-                                    onTapCallback: () {
-                                      Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
-                                    },
-                                  ),
+                                const Spacer(),
+                                QuestionsMobile(
+                                  image: 'assets/images/preguntas.png', 
+                                  title: 'Preguntas Frecuentes', 
+                                  description: 'Resuelve las dudas más frecuentes',
+                                  padding: const EdgeInsets.fromLTRB(55, 15, 55, 20),
+                                  onTapCallback: () {
+                                    Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
+                                  },
+                                ),
+                                const Spacer(),
                                 ],
                               ),
                               const SizedBox(height: 15),
                                 Row(
                                   children: [
-                                    AromasGuide(
+                                    const Spacer(),
+                                    AromasGuideMobile(
                                       image: 'assets/images/olor1.jpg', 
                                       title: 'Guía de Aromas', 
                                       description: 'Conoce tu Aroma indicado',
-                                      padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
+                                      padding: const EdgeInsets.fromLTRB(53, 15, 55, 20),
                                       onTapCallback: () {
-                                        Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
+                                        //Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
                                       },
                                     ),
-                                    const SizedBox(width: 15),
-                                    const Debito(
+                                    const Spacer(),
+                                    const DebitoMobile(
                                       image: 'assets/images/debito1.jpg',
                                       height: 100,
                                       title: 'Medios de Pago', 
-                                      description: 'Consulta, agrega o edita las opciones de pago',
-                                      padding: EdgeInsets.fromLTRB(2, 0, 100, 0),
+                                      description: 'Consulta o agrega las opciones de pago',
+                                      padding: EdgeInsets.fromLTRB(40, 0, 40, 0),
                                     ),
+                                    const Spacer(),
                                   ],
                                 ),
                               ],
                             ),
                          ),
                          const SizedBox(width: 10),
-                         Padding(
-                           padding: const EdgeInsets.all(6),
-                           child: ClipRRect(
-                            borderRadius: const BorderRadius.all(Radius.circular(15)),
-                            child: Image.asset('assets/images/aromas_selectos.jpg', width: 205, height: 135, fit: BoxFit.cover)),
-                         )
                       ],
                     ),  
                    )
@@ -122,11 +122,11 @@ class _HelpMobileState extends State<HelpMobile> {
 } 
   
   Widget buildPartialContent(BuildContext context) {
-    return const PreguntasFrecuentes();
+    return const PreguntasFrecuentesMobile();
   }
 
       
-
+/*
 class HelpScreenState extends ChangeNotifier {
   bool showFullContent = true;
   bool showAromasGuide = false;
@@ -141,7 +141,7 @@ class HelpScreenState extends ChangeNotifier {
     notifyListeners();
   }
 }
-
+*/
 
 void _launchWhatsApp(String phoneNumber) async {
 
@@ -158,7 +158,7 @@ void _launchWhatsApp(String phoneNumber) async {
 
 }
 
-class Contactanos extends StatefulWidget {
+class ContactanosMobile extends StatefulWidget {
 
   final String image;
   final String title;
@@ -166,7 +166,7 @@ class Contactanos extends StatefulWidget {
   final EdgeInsets padding;
 
   // ignore: use_super_parameters
-  const Contactanos({
+  const ContactanosMobile({
     Key? key,
     required this.image, 
     required this.title, 
@@ -175,10 +175,10 @@ class Contactanos extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<Contactanos> createState() => _ContactanosState();
+  State<ContactanosMobile> createState() => _ContactanosMobileState();
 }
 
-class _ContactanosState extends State<Contactanos> {
+class _ContactanosMobileState extends State<ContactanosMobile> {
   @override
   Widget build(BuildContext context) {
     return 
@@ -189,8 +189,8 @@ class _ContactanosState extends State<Contactanos> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 110,
-        width: 430,
+        height: 180,
+        width: 180,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -213,12 +213,12 @@ class _ContactanosState extends State<Contactanos> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 10),
+              padding: const EdgeInsets.only(left: 20, top: 85),
               child: Text(widget.title, style: styleTextLocion2),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 40),
-              child: Text(widget.description, style: styleTextLocion),
+              padding: const EdgeInsets.only(left: 20, top: 115),
+              child: Text(widget.description, style: styleTextLocionMobile),
             )
           ],
         ),
@@ -227,7 +227,7 @@ class _ContactanosState extends State<Contactanos> {
   }
 }
 
-class Questions extends StatefulWidget {
+class QuestionsMobile extends StatefulWidget {
 
   final String image;
   final String title;
@@ -236,7 +236,7 @@ class Questions extends StatefulWidget {
   final Function onTapCallback;
 
   // ignore: use_super_parameters
-  const Questions({
+  const QuestionsMobile({
     Key? key,
     required this.image, 
     required this.title, 
@@ -246,10 +246,10 @@ class Questions extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<Questions> createState() => _QuestionsState();
+  State<QuestionsMobile> createState() => _QuestionsMobileState();
 }
 
-class _QuestionsState extends State<Questions> {
+class _QuestionsMobileState extends State<QuestionsMobile> {
 
   //int indiceWidget2 = 0;
   void _handleTap() {
@@ -266,8 +266,8 @@ class _QuestionsState extends State<Questions> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 110,
-        width: 430,
+        height: 180,
+        width: 180,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -292,12 +292,12 @@ class _QuestionsState extends State<Questions> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 10),
-              child: Text(widget.title, style: styleTextLocion2),
+              padding: const EdgeInsets.only(left: 12, top: 95),
+              child: Text(widget.title, style: styleTextLocion2Mobile),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 40),
-              child: Text(widget.description, style: styleTextLocion),
+              padding: const EdgeInsets.only(left: 20, top: 125),
+              child: Text(widget.description, style: styleTextLocionMobile),
             ),
           ],
         ),
@@ -307,7 +307,7 @@ class _QuestionsState extends State<Questions> {
 }
 //TODO:
 
-class AromasGuide extends StatefulWidget {
+class AromasGuideMobile extends StatefulWidget {
 
   final String image;
   final String title;
@@ -316,7 +316,7 @@ class AromasGuide extends StatefulWidget {
   final Function onTapCallback;
 
   // ignore: use_super_parameters
-  const AromasGuide({
+  const AromasGuideMobile({
     Key? key,
     required this.image, 
     required this.title, 
@@ -326,10 +326,10 @@ class AromasGuide extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<AromasGuide> createState() => _AromasGuideState();
+  State<AromasGuideMobile> createState() => _AromasGuideMobileState();
 }
 
-class _AromasGuideState extends State<AromasGuide> {
+class _AromasGuideMobileState extends State<AromasGuideMobile> {
 
   //int indiceWidget2 = 0;
   void _handleTap() {
@@ -346,8 +346,8 @@ class _AromasGuideState extends State<AromasGuide> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 110,
-        width: 430,
+        height: 180,
+        width: 180,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -372,11 +372,11 @@ class _AromasGuideState extends State<AromasGuide> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 10),
+              padding: const EdgeInsets.only(left: 20, top: 90),
               child: Text(widget.title, style: styleTextLocion2),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 40),
+              padding: const EdgeInsets.only(left: 20, top: 120),
               child: Text(widget.description, style: styleTextLocion),
             ),
           ],
@@ -386,7 +386,7 @@ class _AromasGuideState extends State<AromasGuide> {
   }
 }
 
-class Debito extends StatefulWidget {
+class DebitoMobile extends StatefulWidget {
 
   final String image;
   final String title;
@@ -395,7 +395,7 @@ class Debito extends StatefulWidget {
   final double height;
 
   // ignore: use_super_parameters
-  const Debito({
+  const DebitoMobile({
     Key? key,
     required this.image, 
     required this.title, 
@@ -405,10 +405,10 @@ class Debito extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<Debito> createState() => _DebitoState();
+  State<DebitoMobile> createState() => _DebitoMobileState();
 }
 
-class _DebitoState extends State<Debito> {
+class _DebitoMobileState extends State<DebitoMobile> {
   @override
   Widget build(BuildContext context) {
     return 
@@ -419,8 +419,8 @@ class _DebitoState extends State<Debito> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 110,
-        width: 430,
+        height: 180,
+        width: 180,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -435,12 +435,12 @@ class _DebitoState extends State<Debito> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 10),
+              padding: const EdgeInsets.only(left: 20, top: 90),
               child: Text(widget.title, style: styleTextLocion2),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 100, top: 40),
-              child: Text(widget.description, style: styleTextLocion),
+              padding: const EdgeInsets.only(left: 15, top: 120),
+              child: Text(widget.description, style: styleTextLocionMobile),
             )
           ],
         ),

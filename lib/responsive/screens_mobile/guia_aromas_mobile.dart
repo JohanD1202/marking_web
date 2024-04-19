@@ -1,10 +1,10 @@
 import 'package:marking_web/exports.dart';
 
 
-class GuiaAromas extends StatelessWidget {
+class GuiaAromasMobile extends StatelessWidget {
 
   // ignore: use_super_parameters
-  const GuiaAromas({Key? key}) : super(key: key);
+  const GuiaAromasMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

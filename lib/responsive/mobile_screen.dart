@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:marking_web/exports.dart';
+import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
+import 'package:marking_web/presentation/screens/searchh_bar.dart';
 //import 'package:marking_web/presentation/screens/home_screen.dart';
 import 'dart:html' as html;
 
 import 'package:marking_web/presentation/widgets/style_button.dart';
 import 'package:marking_web/responsive/screens_mobile/Inicio_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/aromas_screen_mobile.dart';
+import 'package:marking_web/responsive/screens_mobile/guia_aromas_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/help_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/hombre_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/mujer_mobile.dart';
+import 'package:marking_web/responsive/screens_mobile/preguntas_frecuentes_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/sale_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_footer_mobile.dart';
 
@@ -25,6 +30,8 @@ class MobileScreen extends StatefulWidget {
 
 class _MobileScreenState extends State<MobileScreen> {
   int indiceWidget = 0;
+  
+
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -63,13 +70,16 @@ class _MobileScreenState extends State<MobileScreen> {
                 IndexedStack(
                   index: indiceWidget,
                   children: const [
-                    InicioMobile(),
-                    AromasScreenMobile(),
-                    HombreScreenMobile(),
-                    MujerScreenMobile(),
+                    InicioMobile(),               //0
+                    AromasScreenMobile(),         //1
+                    HombreScreenMobile(),         //2
+                    MujerScreenMobile(),          //3
                     //NuevoScreen(),
-                    SaleScreenMobile(),
-                    HelpMobile(),
+                    SaleScreenMobile(),           //4
+                    HelpMobile(),                 //5
+                    PreguntasFrecuentesMobile(),  //6
+                    GuiaAromasMobile(),           //7
+                    SearchhBarMobile()                  //8
                   ],
                 ),
                 //TODO: FOOTER
@@ -99,9 +109,76 @@ class _MobileScreenState extends State<MobileScreen> {
                               thickness: 1,
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 15),
-                            child: Categories(),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 15),
+                            child: Container(
+                              height: 200,
+                              width: 200.5,
+                              decoration: const BoxDecoration(color: Colors.black),
+                              child: Column(
+                                children: [
+                                  Text('Categorías', style: styleTextFooterMobile),
+                                  const SizedBox(height: 20),
+                                  Row(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      ButtonTextFooter(
+                                        buttonText: 'Aromas               Selectos', 
+                                        onPressed: () {
+                                          setState(() {
+                                            indiceWidget = 1;  
+                                          });
+                                        }
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 15),
+                                  Row(
+                                    children: [
+                                      ButtonTextFooter(
+                                        buttonText: 'Hombre', 
+                                        onPressed: () {
+                                          setState(() {
+                                            indiceWidget = 2;  
+                                          });
+                                        }
+                                      ),
+                                      const Spacer(),
+                                      ButtonTextFooter(
+                                        buttonText: 'Mujer', 
+                                        onPressed: () {
+                                          setState(() {
+                                            indiceWidget = 3;
+                                          });
+                                        }
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 15),
+                                  Row(
+                                    children: [
+                                      ButtonTextFooter(
+                                        buttonText: 'Nuevo', 
+                                        onPressed: () {
+                                          /*setState(() {
+                                            //indiceWidget = 4;
+                                          });*/
+                                        }
+                                      ),
+                                      const Spacer(),
+                                      ButtonTextFooter(
+                                        buttonText: 'Sale', 
+                                        onPressed: () {
+                                          setState(() {
+                                            indiceWidget = 4;
+                                          });
+                                        }
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )
                           ),
                           SizedBox(
                             width: 330,
@@ -236,8 +313,16 @@ o en efectivo''',
           right: 0,
           bottom: 0,
           child: FloatingBar(
-            onPressedHome: () {},
-            onPressedSearch: () {}, 
+            onPressedHome: () {
+              setState(() {
+                indiceWidget = 0;
+              });
+            },
+            onPressedSearch: () {
+              setState(() {
+                indiceWidget = 8;
+              });
+            }, 
             onPressedMenu: () {
               _scaffoldKey.currentState?.openDrawer();
             }, 
@@ -274,29 +359,67 @@ o en efectivo''',
               ListTile(
                 title: const Text('Aromas Selectos'),
                 onTap: () {
-                  indiceWidget = 1;
+                  setState(() {
+                    indiceWidget = 1;                    
+                  });
                 },
               ),
               ListTile(
                 title: const Text('Hombre'),
-                onTap: () {},
+                onTap: () {
+                  setState(() {
+                    indiceWidget = 2;                    
+                  });
+                },
               ),
               ListTile(
                 title: const Text('Mujer'),
-                onTap: () {},
+                onTap: () {
+                  setState(() {
+                    indiceWidget = 3;                    
+                  });
+                },
               ),
-              ListTile(
+              /*ListTile(
                 title: const Text('Nuevo'),
-                onTap: () {},
-              ),
+                onTap: () {
+                  setState(() {
+
+                  });
+                },
+              ),*/
               ListTile(
                 title: const Text('Sale'),
-                onTap: () {},
+                onTap: () {
+                  setState(() {
+                    indiceWidget = 4;                    
+                  });
+                },
               ),
               ListTile(
                 title: const Text('Centro de Ayuda'),
-                onTap: () {},
+                onTap: () {
+                  setState(() {
+                      indiceWidget = 5;
+                  });
+                },
               ),
+              ListTile(
+                title: const Text('Preguntas Frecuentes'),
+                onTap: () {
+                  setState(() {
+                    indiceWidget = 6;
+                  });
+                },
+              ),
+              ListTile(
+                title: const Text('Guía de Aromas'),
+                onTap: () {
+                  setState(() {
+                    indiceWidget = 7;
+                  });
+                },
+              )
             ],
           ),
         ),

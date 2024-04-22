@@ -311,4 +311,3 @@ Widget _buildContent() {
 //*? footed de Compra 100% segura, Pago en línea o en efectivo, Envio gratis desde 200.000 arriba y abajo.
 //* colocar logos de nequi, Bancolombia, PSE y efecty 
 //* copiright
-

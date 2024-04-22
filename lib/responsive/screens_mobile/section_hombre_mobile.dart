@@ -1,6 +1,22 @@
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/widgets_lociones.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
+
+
+enum ContentState {
+  Initial,
+  HelloWorld,
+}
+
+class ContentModel extends ChangeNotifier {
+  ContentState _contentState = ContentState.Initial;
+
+  ContentState get contentState => _contentState;
+
+  void changeContent(ContentState newState) {
+    _contentState = newState;
+    notifyListeners(); 
+  }
+}
 
 
 class SectionHombreMobile extends StatefulWidget {
@@ -15,6 +31,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
 
   Locion? selectedProduct;
 
+
   void selectProduct(Locion product) {
     setState(() {
       selectedProduct = product;
@@ -25,22 +42,22 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         //TODO: PRIMER ROW DE LOCIONES DE HOMBRE
+
         Row(
           children: [
             Spacer(),
-            //if (selectedProduct == null)
             LocionMobile(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_2.jpg',
-              imageHeight: 277.5,
-              imageWidth: 180,
-              nameLocion: 'Moschino Toy Boy',
-              symbol: '\$',
-              priceOriginal: 14.000,
-            ),
+                imageLocion: 'assets/images/aroma_1.jpg',
+                imageLocion2: 'assets/images/aroma_2.jpg',
+                imageHeight: 277.5,
+                imageWidth: 180,
+                nameLocion: 'Moschino Toy Boy',
+                symbol: '\$',
+                priceOriginal: 14.000,
+              ),
             Spacer(),
             //if (selectedProduct != null)
             LocionMobile(

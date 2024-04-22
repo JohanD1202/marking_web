@@ -30,7 +30,6 @@ class _SectionHombreState extends State<SectionHombre> {
         Row(
           children: [
             Spacer(),
-            //if (selectedProduct == null)
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_2.jpg',
@@ -40,9 +39,7 @@ class _SectionHombreState extends State<SectionHombre> {
               symbol: '\$',
               priceOriginal: 14.000,
             ),
-            Spacer(),
-            //if (selectedProduct != null)
-            
+            Spacer(),            
             Locion(
               imageLocion: 'assets/images/locion_5.jpg',
               imageLocion2: 'assets/images/aroma_1.jpg',

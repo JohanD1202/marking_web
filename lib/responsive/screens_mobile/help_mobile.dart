@@ -25,19 +25,16 @@ class _HelpMobileState extends State<HelpMobile> {
     return Consumer<HelpScreenState>(builder: (context, helpScreenState, _) {
       return helpScreenState.showFullContent
         ? buildFullContent(context)
-        : helpScreenState.showAromasGuide
-          ? buildAromasGuide(context)
-          : buildPartialContent(context);
+        : buildPartialContent(context);
       },
     );
   }
-
+/*
   Widget buildAromasGuide(BuildContext context) {
     return const GuiaAromasMobile();
   }
-
+*/
   Widget buildFullContent(BuildContext context) {
-
 
   final size = MediaQuery.of(context).size;
   
@@ -92,7 +89,7 @@ class _HelpMobileState extends State<HelpMobile> {
                                       description: 'Conoce tu Aroma indicado',
                                       padding: const EdgeInsets.fromLTRB(53, 15, 55, 20),
                                       onTapCallback: () {
-                                        //Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
+                                        Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
                                       },
                                     ),
                                     const Spacer(),

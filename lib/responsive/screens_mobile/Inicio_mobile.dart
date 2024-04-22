@@ -96,7 +96,7 @@ class FloatingBar extends StatelessWidget {
           children: [
             const SizedBox(width: 20),
             IconButton(
-              icon: const Icon(Icons.home_filled),
+              icon: const Icon(Icons.home_rounded),
               color: Colors.black,
               iconSize: 30,
               onPressed: onPressedHome,

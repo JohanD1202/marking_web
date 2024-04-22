@@ -23,24 +23,22 @@ class _HelpState extends State<Help> {
     return Consumer<HelpScreenState>(builder: (context, helpScreenState, _) {
       return helpScreenState.showFullContent
         ? buildFullContent(context)
-        : helpScreenState.showAromasGuide
-          ? buildAromasGuide(context)
-          : buildPartialContent(context);
+        : buildPartialContent(context);
       },
     );
   }
-
+/*
   Widget buildAromasGuide(BuildContext context) {
     return const GuiaAromas();
   }
-
+*/
   Widget buildFullContent(BuildContext context) {
 
 
   final size = MediaQuery.of(context).size;
   
   return SizedBox(
-    height: size.height * 1,
+    height: size.height * 1.2,
     width: size.width * 1,
     child: Scaffold(
       body: SingleChildScrollView(
@@ -87,7 +85,7 @@ class _HelpState extends State<Help> {
                                       description: 'Conoce tu Aroma indicado',
                                       padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
                                       onTapCallback: () {
-                                        Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
+                                        Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
                                       },
                                     ),
                                     const SizedBox(width: 15),

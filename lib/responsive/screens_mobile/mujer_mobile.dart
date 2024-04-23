@@ -58,7 +58,7 @@ class MujerScreenMobile extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1,
+      height: size.height * 1.2,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(
@@ -99,7 +99,6 @@ A un precio increíblemente asequible!
                 ),
               ),
               const SectionMujerMobile(),
-              const SizedBox(height: 50),
             ],
           ),
         ),

@@ -42,10 +42,9 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         //TODO: PRIMER ROW DE LOCIONES DE HOMBRE
-
         Row(
           children: [
             Spacer(),
@@ -59,7 +58,6 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
                 priceOriginal: 14.000,
               ),
             Spacer(),
-            //if (selectedProduct != null)
             LocionMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_3.jpg',
@@ -78,8 +76,8 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
           children: [
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/locion_7.jpg',
-              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/locion_7.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
               nameLocion: 'L \'Aventure',
@@ -88,8 +86,8 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
             ),
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/locion_10.jpg',
-              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/locion_10.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
               nameLocion: 'AMETHYST (Unisex)',
@@ -105,8 +103,8 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
           children: [
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/locion_7.jpg',
-              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
               nameLocion: 'L \'Aventure',
@@ -115,8 +113,8 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
             ),
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/locion_10.jpg',
-              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
               nameLocion: 'AMETHYST (Unisex)',
@@ -130,14 +128,27 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
         //TODO: CUARTO ROW DE LOCIONES DE HOMBRE
         Row(
           children: [
-            
-          ],
-        ),
-        SizedBox(height: 20),
-        //TODO: QUINTO ROW DE LOCIONES DE HOMBRE
-        Row(
-          children: [
-            
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'L \'Aventure',
+              symbol: '\$',
+              priceOriginal: 14.000,
+            ),
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/locion_10.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'AMETHYST (Unisex)',
+              symbol: '\$',
+              priceOriginal: 14.000,
+            ),
+            Spacer(),
           ],
         ),
       ],

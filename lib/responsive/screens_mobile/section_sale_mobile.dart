@@ -21,18 +21,19 @@ class _SectionSaleMobileState extends State<SectionSaleMobile> {
         //TODO: PRIMER ROW DE LOCIONES DE HOMBRE
         Row(
           children: [
-            Spacer(),/*
+            Spacer(),
             LocionPromotion(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
+              priceOriginal: 17.000,
               priceDescuento: '\$13.000',
-              promotion: Price(price: '20%'),
+              promotion: Price(price: '20%'), 
+              symbol: '\$',
             ),
-            Spacer(),
+            Spacer(),/*
             LocionPromotion(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_5.jpg',

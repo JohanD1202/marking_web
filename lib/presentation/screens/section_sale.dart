@@ -1,5 +1,4 @@
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/widgets_lociones.dart';
 
 
 class SectionSale extends StatefulWidget {
@@ -16,21 +15,22 @@ class _SectionSaleState extends State<SectionSale> {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         //TODO: PRIMER ROW DE LOCIONES DE HOMBRE
-        Row(
+        const Row(
           children: [
-            Spacer(),/*
+            Spacer(),
             LocionPromotion(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
-              promotion: Price(price: '20%'),
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
+              promotion: Price(price: '20%'), 
             ),
             Spacer(),
             LocionPromotion(
@@ -38,9 +38,10 @@ class _SectionSaleState extends State<SectionSale> {
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
               promotion: Price(price: '20%'),
             ),
             Spacer(),
@@ -49,9 +50,10 @@ class _SectionSaleState extends State<SectionSale> {
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
               promotion: Price(price: '20%'),
             ),
             Spacer(),
@@ -60,77 +62,156 @@ class _SectionSaleState extends State<SectionSale> {
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
               promotion: Price(price: '20%'),
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         //TODO: SEGUNDO ROW DE LOCIONES DE HOMBRE
-        Row(
+        const Row(
           children: [
-            Spacer(),/*
+            Spacer(),
             LocionPromotion(
-              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
+              promotion: Price(price: '20%'),
+            ),
+            Spacer(),
+            LocionPromotion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
               promotion: Price(price: '20%'),
             ),
             Spacer(),
             LocionPromotion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_4.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
               priceDescuento: '\$13.000',
               promotion: Price(price: '20%'),
             ),
             Spacer(),
             LocionPromotion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
-              priceDescuento: '\$13.000',
+              nameLocion: 'Calvin Klein',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
+              promotion: Price(price: '20%'),
+            ),
+            Spacer(),
+          ],
+        ),
+        const SizedBox(height: 30),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 60),
+              child: Text('Aromas Mujer', style: styleText3),
+            ),
+          ],
+        ),
+        const SizedBox(height: 30),
+        //TODO: PRIMER ROW DE LOCIONES DE MUJER
+        const Row(
+          children: [
+            Spacer(),
+            LocionPromotion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '212 VIP',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
+              promotion: Price(price: '20%'),
+            ),
+            Spacer(),
+            LocionPromotion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '212 VIP',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
               promotion: Price(price: '20%'),
             ),
             Spacer(),
             LocionPromotion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
+              nameLocion: '212 VIP',
+              symbol: '\$',
+              priceOriginal: 18.000,
               priceDescuento: '\$13.000',
               promotion: Price(price: '20%'),
             ),
-            Spacer(),*/
+            Spacer(),
+            LocionPromotion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '212 VIP',
+              symbol: '\$',
+              priceOriginal: 18.000,
+              priceDescuento: '\$14.000',
+              promotion: Price(price: '20%'),
+            ),
+            Spacer(),
           ],
         ),
-        SizedBox(height: 20),
-        //TODO: TERCER ROW DE LOCIONES DE HOMBRE
+        const SizedBox(height: 30),
         Row(
           children: [
-            Spacer(),/*
+            Padding(
+              padding: const EdgeInsets.only(left: 60),
+              child: Text('Bolsos', style: styleText3),
+            ),
+          ],
+        ),
+        const SizedBox(height: 30),
+        //TODO: PRIMER ROW DE BOLSOS
+        const Row(
+          children: [
+            Spacer(),
             BolsosPromotion(
               imageBolso: 'assets/images/bolso_2.jpg',
               imageBolso2: 'assets/images/bolso_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameBolso: 'Bolso Dior',
-              priceOriginal: '\$100.000',
+              symbol: '\$',
+              priceOriginal: 100.000,
               priceDescuento: '\$80.000',
               promotion: Price(price: '20%'),
             ),
@@ -141,7 +222,8 @@ class _SectionSaleState extends State<SectionSale> {
               imageHeight: 370,
               imageWidth: 240,
               nameBolso: 'Bolso Dior',
-              priceOriginal: '\$100.000',
+              symbol: '\$',
+              priceOriginal: 100.000,
               priceDescuento: '\$80.000',
               promotion: Price(price: '20%'),
             ),
@@ -152,7 +234,8 @@ class _SectionSaleState extends State<SectionSale> {
               imageHeight: 370,
               imageWidth: 240,
               nameBolso: 'Bolso Sencillo',
-              priceOriginal: '\$100.000',
+              symbol: '\$',
+              priceOriginal: 100.000,
               priceDescuento: '\$80.000',
               promotion: Price(price: '20%'),
             ),
@@ -163,13 +246,15 @@ class _SectionSaleState extends State<SectionSale> {
               imageHeight: 370,
               imageWidth: 240,
               nameBolso: 'Bolso Sencillo',
-              priceOriginal: '\$100.000',
+              symbol: '\$',
+              priceOriginal: 100.000,
               priceDescuento: '\$80.000',
               promotion: Price(price: '20%'),
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
+        const SizedBox(height: 20),
       ],
     );
   }

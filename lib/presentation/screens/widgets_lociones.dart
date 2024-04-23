@@ -12,7 +12,7 @@ class Locion extends StatefulWidget {
   final double priceOriginal;
 
   // ignore: use_super_parameters
-  const Locion( {
+  const Locion({
     Key? key,
     required this.imageLocion,
     required this.imageLocion2,
@@ -434,6 +434,348 @@ class CartProvider extends ChangeNotifier {
   }
 }
 */
+
+
+//TODO: LOCION PROMOCION
+
+class LocionPromotion extends StatefulWidget {
+
+  final String imageLocion;
+  final String imageLocion2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameLocion;
+  final String symbol;
+  final double priceOriginal;
+  final String priceDescuento;
+  final Widget promotion;
+
+  // ignore: use_super_parameters
+  const LocionPromotion({
+    Key? key,
+    required this.imageLocion,
+    required this.imageLocion2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameLocion,
+    required this.symbol,
+    required this.priceOriginal, 
+    required this.priceDescuento, 
+    required this.promotion, 
+  }) : super(key: key);
+
+  @override
+  State<LocionPromotion> createState() => _LocionPromotionState();
+}
+
+class _LocionPromotionState extends State<LocionPromotion> {
+
+  bool isCartEmpty = false;
+
+  final List<Widget> _overlayWidgets = [];
+
+
+  Color? textColor = Colors.grey[700];
+  int selectedNumber = 1;
+  OverlayEntry? _overlayEntry;
+  double totalPrice = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    totalPrice = widget.priceOriginal;
+  }
+
+  void updateTotalPrice(int quantity) {
+    setState(() {
+      selectedNumber = quantity;
+      totalPrice = widget.priceOriginal * quantity;
+    });
+  }
+
+  void _closeCartOverlay() {
+
+    _overlayEntry?.remove();
+
+    _overlayEntry = null;
+
+    setState(() {
+      
+    });
+  }
+
+  void _addToCartAndShowOverlay() {
+
+    setState(() {
+      isCartEmpty = false;
+    });
+    _showCartOverlay();
+  }
+
+
+  void _showCartOverlay() {
+
+  totalPrice = widget.priceOriginal * selectedNumber;
+
+    _overlayWidgets.clear();
+
+    _overlayWidgets.add(
+      Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+            child: Image.asset(widget.imageLocion, width: 160),
+          ),
+          Positioned(
+            top: 15,
+            left: 160,
+            child: Text(widget.nameLocion, style: styleTextLocion),
+          ),
+          Positioned(
+            top: 60,
+            left: 160,
+            child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
+          ),
+          Positioned(
+            top: 110,
+            left: 160,
+            child: Text('Cantidad:', style: styleTextLocion),
+          ),
+          Positioned(
+            top: 150,
+            left: 170,
+            child: Cantidad(
+              onQuantityChanged: (quantity) {
+                setState(() {
+                  selectedNumber = quantity;
+                  totalPrice = widget.priceOriginal * quantity;
+                });
+              }
+            )
+          )
+        ],
+      ),
+    );
+
+    _overlayEntry = OverlayEntry(
+      builder: (context) => Consumer<CartProvider>(
+        builder: (context, cart, _) => Positioned(
+          top: MediaQuery.of(context).size.height * 0.22,
+          right: 50,
+          width: 320,
+          height: 445,
+          child: Material(
+            elevation: 12,
+            child: Container(
+              color: Colors.white,
+              child: isCartEmpty ? _buildEmptyCart() : _buildCartContent(context),
+            ),
+          ),
+        ),
+      ),
+    );    
+    Overlay.of(context)?.insert(_overlayEntry!);
+  }
+
+  Widget _buildEmptyCart() {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [    
+            IconButton(
+              icon: const Icon(Icons.close_rounded),
+              onPressed: _closeCartOverlay
+            )
+          ],
+        ),
+        Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Image.asset('assets/images/logo_pr1.jpg', width: 194, height: 178),
+            ),
+            Text('Tu carrito de compras está vacío', style: styleTextMo)
+          ],
+        )
+      ],
+    );
+  }
+
+
+  Widget _buildCartContent(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Material(
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            height: 40,
+            decoration: BoxDecoration(
+              color: Colors.grey[350]
+            ),
+            child: Row(
+              children: [
+                const Spacer(),
+                Text('ENVÍO GRATIS DESDE \$200.000', style: styleTextHeader),
+                const Spacer(),
+                IconButton(
+                  icon: const Icon(Icons.close_rounded),
+                  onPressed: _closeCartOverlay,
+                )
+              ],
+            ),
+          ),
+        ),
+        Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+              child: Image.asset(widget.imageLocion, width: 160),
+            ),
+            Positioned(
+              top: 23,
+              left: 160,
+              child: Text(widget.nameLocion, style: styleText9),
+            ),
+            Positioned(
+              top: 13.5,
+              left: 283,
+              child: IconButton(
+                icon: Icon(Icons.delete_rounded, color: Colors.grey[700], size: 18),
+                onPressed: () {
+                  setState(() {
+                    isCartEmpty = true;
+                  });
+                  _showCartOverlay();
+                },
+              ),
+            ),
+            Positioned(
+              top: 60,
+              left: 160,
+              child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextSale)
+            ),
+            Positioned(
+              top: 90,
+              left: 160,
+              child: Text(widget.priceDescuento, style: styleTextPrice),
+            ),
+            Positioned(
+              top: 125,
+              left: 160,
+              child: Text('Cantidad:', style: styleTextLocion),
+            ),
+            Positioned(
+              top: 160,
+              left: 165,
+              child: Cantidad(
+                onQuantityChanged: (quantity) {
+                  setState(() {
+                    selectedNumber = quantity;
+                    totalPrice = widget.priceOriginal * quantity;
+                  });
+                }
+              )
+            ),
+          ],
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(10, 120, 10, 0),
+          child: FilledButton(
+            onPressed: () {},
+            style: styleText200,
+            child: Text('FINALIZAR COMPRA', style: styleTextCar),
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: SeguirComprando(),
+        ),
+      ],
+    );
+  }
+
+  @override
+  void dispose() {
+    _overlayEntry?.remove();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white)
+      ),
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageLocion,
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth, 
+                imageHeight: widget.imageHeight
+              ),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameLocion, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 390,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale)
+            ),
+            Positioned(
+              top: 420,
+              left: 13,
+              right: 12,
+              child: Text(widget.priceDescuento, style: styleTextPrice),
+            ),
+            Positioned(
+              top: 420,
+              left: 90,
+              child: widget.promotion,
+            ),
+            Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                onAddToCart: _addToCartAndShowOverlay,
+                productToAdd: Product(
+                  id: 1, 
+                  name: widget.nameLocion, 
+                  price: widget.priceOriginal, 
+                  image: widget.imageLocion,
+                ),
+              ),
+            )
+          ],
+        )
+      ),
+    );
+  }
+}
+
+
+
+
 /*
 class LocionPromotion extends StatefulWidget {
 
@@ -530,8 +872,664 @@ class _LocionPromotionState extends State<LocionPromotion> {
   }
 }
 */
-/*
 
+
+
+class Bolsos extends StatefulWidget {
+
+  final String imageBolso;
+  final String imageBolso2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameBolso;
+  final String symbol;
+  final double priceOriginal;
+
+  // ignore: use_super_parameters
+  const Bolsos({
+    Key? key,
+    required this.imageBolso,
+    required this.imageBolso2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameBolso,
+    required this.symbol,
+    required this.priceOriginal, 
+  }) : super(key: key);
+
+  @override
+  State<Bolsos> createState() => _BolsosState();
+}
+
+class _BolsosState extends State<Bolsos> {
+
+  bool isCartEmpty = false;
+
+  List<Widget> _overlayWidgets = [];
+
+
+  Color? textColor = Colors.grey[700];
+  int selectedNumber = 1;
+  OverlayEntry? _overlayEntry;
+  double totalPrice = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    totalPrice = widget.priceOriginal;
+  }
+
+  void updateTotalPrice(int quantity) {
+    setState(() {
+      selectedNumber = quantity;
+      totalPrice = widget.priceOriginal * quantity;
+    });
+  }
+
+  void _closeCartOverlay() {
+
+    _overlayEntry?.remove();
+
+    _overlayEntry = null;
+
+    setState(() {
+      
+    });
+  }
+
+  void _addToCartAndShowOverlay() {
+
+    setState(() {
+      isCartEmpty = false;
+    });
+    _showCartOverlay();
+  }
+
+
+  void _showCartOverlay() {
+
+  totalPrice = widget.priceOriginal * selectedNumber;
+
+    _overlayWidgets.clear();
+
+    _overlayWidgets.add(
+      Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+            child: Image.asset(widget.imageBolso, width: 160),
+          ),
+          Positioned(
+            top: 15,
+            left: 160,
+            child: Text(widget.nameBolso, style: styleTextLocion),
+          ),
+          Positioned(
+            top: 60,
+            left: 160,
+            child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
+          ),
+          Positioned(
+            top: 110,
+            left: 160,
+            child: Text('Cantidad:', style: styleTextLocion),
+          ),
+          Positioned(
+            top: 150,
+            left: 170,
+            child: Cantidad(
+              onQuantityChanged: (quantity) {
+                setState(() {
+                  selectedNumber = quantity;
+                  totalPrice = widget.priceOriginal * quantity;
+                });
+              }
+            )
+          )
+        ],
+      ),
+    );
+
+    _overlayEntry = OverlayEntry(
+      builder: (context) => Consumer<CartProvider>(
+        builder: (context, cart, _) => Positioned(
+          top: MediaQuery.of(context).size.height * 0.22,
+          right: 50,
+          width: 320,
+          height: 445,
+          child: Material(
+            elevation: 12,
+            child: Container(
+              color: Colors.white,
+              child: isCartEmpty ? _buildEmptyCart() : _buildCartContent(context),
+            ),
+          ),
+        ),
+      ),
+    );    
+    Overlay.of(context)?.insert(_overlayEntry!);
+  }
+
+  Widget _buildEmptyCart() {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [    
+            IconButton(
+              icon: const Icon(Icons.close_rounded),
+              onPressed: _closeCartOverlay
+            )
+          ],
+        ),
+        Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Image.asset('assets/images/logo_pr1.jpg', width: 194, height: 178),
+            ),
+            Text('Tu carrito de compras está vacío', style: styleTextMo)
+          ],
+        )
+      ],
+    );
+  }
+
+
+  Widget _buildCartContent(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Material(
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            height: 40,
+            decoration: BoxDecoration(
+              color: Colors.grey[350]
+            ),
+            child: Row(
+              children: [
+                const Spacer(),
+                Text('ENVÍO GRATIS DESDE \$200.000', style: styleTextHeader),
+                const Spacer(),
+                IconButton(
+                  icon: const Icon(Icons.close_rounded),
+                  onPressed: _closeCartOverlay,
+                )
+              ],
+            ),
+          ),
+        ),
+        Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+              child: Image.asset(widget.imageBolso, width: 160),
+            ),
+            Positioned(
+              top: 23,
+              left: 160,
+              child: Text(widget.nameBolso, style: styleText9),
+            ),
+            Positioned(
+              top: 13.5,
+              left: 283,
+              child: IconButton(
+                icon: Icon(Icons.delete_rounded, color: Colors.grey[700], size: 18),
+                onPressed: () {
+                  setState(() {
+                    isCartEmpty = true;
+                  });
+                  _showCartOverlay();
+                },
+              ),
+            ),
+            Positioned(
+              top: 60,
+              left: 160,
+              child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
+            ),
+            Positioned(
+              top: 110,
+              left: 160,
+              child: Text('Cantidad:', style: styleTextLocion),
+            ),
+            Positioned(
+              top: 150,
+              left: 170,
+              child: Cantidad(
+                onQuantityChanged: (quantity) {
+                  setState(() {
+                    selectedNumber = quantity;
+                    totalPrice = widget.priceOriginal * quantity;
+                  });
+                }
+              )
+            ),
+          ],
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(10, 120, 10, 0),
+          child: FilledButton(
+            onPressed: () {},
+            style: styleText200,
+            child: Text('FINALIZAR COMPRA', style: styleTextCar),
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: SeguirComprando(),
+        ),
+      ],
+    );
+  }
+
+  @override
+  void dispose() {
+    _overlayEntry?.remove();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white)
+      ),
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageBolso,
+                hoverImagePath: widget.imageBolso2,
+                imageWidth: widget.imageWidth, 
+                imageHeight: widget.imageHeight
+              ),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameBolso, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 420,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice)
+            ),
+            Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                onAddToCart: _addToCartAndShowOverlay,
+                productToAdd: Product(
+                  id: 1, 
+                  name: widget.nameBolso, 
+                  price: widget.priceOriginal, 
+                  image: widget.imageBolso,
+                ),
+              ),
+            )
+          ],
+        )
+      ),
+    );
+  }
+}
+
+
+class BolsosPromotion extends StatefulWidget {
+
+  final String imageBolso;
+  final String imageBolso2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameBolso;
+  final String symbol;
+  final double priceOriginal;
+  final String priceDescuento;
+  final Widget promotion;
+
+  // ignore: use_super_parameters
+  const BolsosPromotion({
+    Key? key,
+    required this.imageBolso,
+    required this.imageBolso2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameBolso,
+    required this.symbol,
+    required this.priceOriginal, 
+    required this.priceDescuento, 
+    required this.promotion, 
+  }) : super(key: key);
+
+  @override
+  State<BolsosPromotion> createState() => _BolsosPromotionState();
+}
+
+class _BolsosPromotionState extends State<BolsosPromotion> {
+
+  bool isCartEmpty = false;
+
+  final List<Widget> _overlayWidgets = [];
+
+
+  Color? textColor = Colors.grey[700];
+  int selectedNumber = 1;
+  OverlayEntry? _overlayEntry;
+  double totalPrice = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    totalPrice = widget.priceOriginal;
+  }
+
+  void updateTotalPrice(int quantity) {
+    setState(() {
+      selectedNumber = quantity;
+      totalPrice = widget.priceOriginal * quantity;
+    });
+  }
+
+  void _closeCartOverlay() {
+
+    _overlayEntry?.remove();
+
+    _overlayEntry = null;
+
+    setState(() {
+      
+    });
+  }
+
+  void _addToCartAndShowOverlay() {
+
+    setState(() {
+      isCartEmpty = false;
+    });
+    _showCartOverlay();
+  }
+
+
+  void _showCartOverlay() {
+
+  totalPrice = widget.priceOriginal * selectedNumber;
+
+    _overlayWidgets.clear();
+
+    _overlayWidgets.add(
+      Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+            child: Image.asset(widget.imageBolso, width: 160),
+          ),
+          Positioned(
+            top: 15,
+            left: 160,
+            child: Text(widget.nameBolso, style: styleTextLocion),
+          ),
+          Positioned(
+            top: 60,
+            left: 160,
+            child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
+          ),
+          Positioned(
+            top: 110,
+            left: 160,
+            child: Text('Cantidad:', style: styleTextLocion),
+          ),
+          Positioned(
+            top: 150,
+            left: 170,
+            child: Cantidad(
+              onQuantityChanged: (quantity) {
+                setState(() {
+                  selectedNumber = quantity;
+                  totalPrice = widget.priceOriginal * quantity;
+                });
+              }
+            )
+          )
+        ],
+      ),
+    );
+
+    _overlayEntry = OverlayEntry(
+      builder: (context) => Consumer<CartProvider>(
+        builder: (context, cart, _) => Positioned(
+          top: MediaQuery.of(context).size.height * 0.22,
+          right: 50,
+          width: 320,
+          height: 445,
+          child: Material(
+            elevation: 12,
+            child: Container(
+              color: Colors.white,
+              child: isCartEmpty ? _buildEmptyCart() : _buildCartContent(context),
+            ),
+          ),
+        ),
+      ),
+    );    
+    Overlay.of(context)?.insert(_overlayEntry!);
+  }
+
+  Widget _buildEmptyCart() {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [    
+            IconButton(
+              icon: const Icon(Icons.close_rounded),
+              onPressed: _closeCartOverlay
+            )
+          ],
+        ),
+        Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Image.asset('assets/images/logo_pr1.jpg', width: 194, height: 178),
+            ),
+            Text('Tu carrito de compras está vacío', style: styleTextMo)
+          ],
+        )
+      ],
+    );
+  }
+
+
+  Widget _buildCartContent(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Material(
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            height: 40,
+            decoration: BoxDecoration(
+              color: Colors.grey[350]
+            ),
+            child: Row(
+              children: [
+                const Spacer(),
+                Text('ENVÍO GRATIS DESDE \$200.000', style: styleTextHeader),
+                const Spacer(),
+                IconButton(
+                  icon: const Icon(Icons.close_rounded),
+                  onPressed: _closeCartOverlay,
+                )
+              ],
+            ),
+          ),
+        ),
+        Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
+              child: Image.asset(widget.imageBolso, width: 160),
+            ),
+            Positioned(
+              top: 23,
+              left: 160,
+              child: Text(widget.nameBolso, style: styleText9),
+            ),
+            Positioned(
+              top: 13.5,
+              left: 283,
+              child: IconButton(
+                icon: Icon(Icons.delete_rounded, color: Colors.grey[700], size: 18),
+                onPressed: () {
+                  setState(() {
+                    isCartEmpty = true;
+                  });
+                  _showCartOverlay();
+                },
+              ),
+            ),
+            Positioned(
+              top: 60,
+              left: 160,
+              child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextSale)
+            ),
+            Positioned(
+              top: 90,
+              left: 160,
+              child: Text(widget.priceDescuento, style: styleTextPrice),
+            ),
+            Positioned(
+              top: 125,
+              left: 160,
+              child: Text('Cantidad:', style: styleTextLocion),
+            ),
+            Positioned(
+              top: 160,
+              left: 165,
+              child: Cantidad(
+                onQuantityChanged: (quantity) {
+                  setState(() {
+                    selectedNumber = quantity;
+                    totalPrice = widget.priceOriginal * quantity;
+                  });
+                }
+              )
+            ),
+          ],
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(10, 120, 10, 0),
+          child: FilledButton(
+            onPressed: () {},
+            style: styleText200,
+            child: Text('FINALIZAR COMPRA', style: styleTextCar),
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: SeguirComprando(),
+        ),
+      ],
+    );
+  }
+
+  @override
+  void dispose() {
+    _overlayEntry?.remove();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white)
+      ),
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageBolso,
+                hoverImagePath: widget.imageBolso2,
+                imageWidth: widget.imageWidth, 
+                imageHeight: widget.imageHeight
+              ),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameBolso, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 390,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale)
+            ),
+            Positioned(
+              top: 420,
+              left: 13,
+              right: 12,
+              child: Text(widget.priceDescuento, style: styleTextPrice),
+            ),
+            Positioned(
+              top: 420,
+              left: 90,
+              child: widget.promotion,
+            ),
+            Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                onAddToCart: _addToCartAndShowOverlay,
+                productToAdd: Product(
+                  id: 1, 
+                  name: widget.nameBolso, 
+                  price: widget.priceOriginal, 
+                  image: widget.imageBolso,
+                ),
+              ),
+            )
+          ],
+        )
+      ),
+    );
+  }
+}
+
+
+
+
+/*
 class Bolsos extends StatefulWidget {
 
   final String imageBolso;
@@ -598,7 +1596,7 @@ class _BolsosState extends State<Bolsos> {
               right: 12,
               child: Text(widget.priceOriginal, style: styleTextPrice),
             ),
-            const Positioned(
+            Positioned(
               top: 470,
               left: 5,
               right: 5,
@@ -606,9 +1604,9 @@ class _BolsosState extends State<Bolsos> {
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
                   id: 1, 
-                  name: widget.nameLocion, 
+                  name: widget.nameBolso, 
                   price: widget.priceOriginal, 
-                  image: widget.imageLocion,
+                  image: widget.imageBolso,
                 ),
               ),
             )
@@ -618,7 +1616,8 @@ class _BolsosState extends State<Bolsos> {
     );
   }
 }
-
+*/
+/*
 class BolsosPromotion extends StatefulWidget {
 
   final String imageBolso;
@@ -713,7 +1712,7 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
     );
   }
 }
-
+*/
 class Price extends StatelessWidget {
 
   final String price;
@@ -744,7 +1743,7 @@ class Price extends StatelessWidget {
     );
   }
 }
-*/
+
 class CarShop extends StatelessWidget {
 
   final VoidCallback onAddToCart;

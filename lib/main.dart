@@ -9,9 +9,9 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        /*ChangeNotifierProvider(
+        ChangeNotifierProvider(
           create: (context) => CartProvider(),
-        ),*/
+        ),
         ChangeNotifierProvider(
           create: (context) => CartNotifier(),
         ),

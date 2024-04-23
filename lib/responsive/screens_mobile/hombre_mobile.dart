@@ -56,7 +56,6 @@ A un precio increíblemente bajo!''', style: TextStyle(fontSize: 18)),
                   ],
                 ),
               ),
-              
               const SectionHombreMobile(),
               //ShoppingCart(cart: myCart),
             ],

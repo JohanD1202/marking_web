@@ -1,5 +1,4 @@
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/widgets_lociones.dart';
 
 
 class SectionMujer extends StatefulWidget {
@@ -13,19 +12,20 @@ class SectionMujer extends StatefulWidget {
 class _SectionMujerState extends State<SectionMujer> {
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         //TODO: PRIMER ROW DE BOLSOS
-        Row(
+        const Row(
           children: [
-            Spacer(),/*
+            Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_1.jpg', 
-              imageBolso2: 'assets/images/bolso_2.jpg',
+              imageBolso: 'assets/images/bolso_2.jpg', 
+              imageBolso2: 'assets/images/bolso_1.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
-              nameBolso: 'Bolso Prada', 
-              priceOriginal: '\$80.000',
+              nameBolso: 'Bolso Prada',
+              symbol: '\$',
+              priceOriginal: 80.000,
             ),
             Spacer(),
             Bolsos(
@@ -34,127 +34,139 @@ class _SectionMujerState extends State<SectionMujer> {
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Dior', 
-              priceOriginal: '\$80.000',
+              symbol: '\$', 
+              priceOriginal: 80.000,
             ),
             Spacer(),
             Bolsos(
               imageBolso: 'assets/images/bolso_5.jpg', 
               imageBolso2: 'assets/images/bolso_6.jpg',
               imageWidth: 240, 
-              imageHeight: 370, 
+              imageHeight: 370,
+              symbol: '\$', 
               nameBolso: 'Bolso Balenciaga', 
-              priceOriginal: '\$80.000',
+              priceOriginal: 80.000,
             ),
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_7.jpg', 
-              imageBolso2: 'assets/images/bolso_8.jpg',
+              imageBolso: 'assets/images/bolso_8.jpg', 
+              imageBolso2: 'assets/images/bolso_7.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Gucci', 
-              priceOriginal: '\$80.000',
+              symbol: '\$',
+              priceOriginal: 80.000,
             ),
-            Spacer(),*/
+            Spacer(),
           ],
        ),
-       SizedBox(height: 20),
+       const SizedBox(height: 20),
         //TODO: SEGUNDO ROW DE BOLSOS
-       Row(
+       const Row(
          children: [
-          Spacer(),/*
+          Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_1.jpg', 
+            imageBolso: 'assets/images/bolso_9.jpg', 
             imageBolso2: 'assets/images/bolso_2.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Prada', 
-            priceOriginal: '\$80.000',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
           Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_3.jpg', 
+            imageBolso: 'assets/images/bolso_10.jpg', 
             imageBolso2: 'assets/images/bolso_4.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Dior', 
-            priceOriginal: '\$80.000',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
           Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_5.jpg', 
+            imageBolso: 'assets/images/bolso_13.jpg', 
             imageBolso2: 'assets/images/bolso_6.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Balenciaga', 
-            priceOriginal: '\$80.000',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
           Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_7.jpg', 
+            imageBolso: 'assets/images/bolso_24.jpg', 
             imageBolso2: 'assets/images/bolso_8.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Gucci', 
-            priceOriginal: '\$80.000',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
-          Spacer(),*/
+          Spacer(),
          ],
        ),
-       SizedBox(height: 20),
+       const SizedBox(height: 20),
         //TODO: TERCER ROW DE BOLSOS
-       Row(
+       const Row(
          children: [
-          Spacer(),/*
+          Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_1.jpg', 
+            imageBolso: 'assets/images/bolso_25.jpg', 
             imageBolso2: 'assets/images/bolso_2.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
-            nameBolso: 'Bolso Prada', 
-            priceOriginal: '\$80.000',
+            nameBolso: 'Bolso Prada',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
           Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_3.jpg', 
+            imageBolso: 'assets/images/bolso_26.jpg', 
             imageBolso2: 'assets/images/bolso_4.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
-            nameBolso: 'Bolso Dior', 
-            priceOriginal: '\$80.000',
+            nameBolso: 'Bolso Dior',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
           Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_5.jpg', 
+            imageBolso: 'assets/images/bolso_27.jpg', 
             imageBolso2: 'assets/images/bolso_6.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Balenciaga', 
-            priceOriginal: '\$80.000',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
           Spacer(),
           Bolsos(
-            imageBolso: 'assets/images/bolso_7.jpg', 
+            imageBolso: 'assets/images/bolso_28.jpg', 
             imageBolso2: 'assets/images/bolso_8.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
-            nameBolso: 'Bolso Gucci', 
-            priceOriginal: '\$80.000',
+            nameBolso: 'Bolso Gucci',
+            symbol: '\$',
+            priceOriginal: 80.000,
           ),
-          Spacer(),*/
+          Spacer(),
         ],
       ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         //TODO: CUARTO ROW DE BOLSOS
-        Row(
+        const Row(
           children: [
-            Spacer(),/*
+            Spacer(),
             Bolsos(
               imageBolso: 'assets/images/bolso_1.jpg', 
               imageBolso2: 'assets/images/bolso_2.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
-              nameBolso: 'Bolso Prada', 
-              priceOriginal: '\$80.000',
+              nameBolso: 'Bolso Prada',
+              symbol: '\$',
+              priceOriginal: 80.000,
             ),
             Spacer(),
             Bolsos(
@@ -163,7 +175,8 @@ class _SectionMujerState extends State<SectionMujer> {
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Dior', 
-              priceOriginal: '\$80.000',
+              symbol: '\$',
+              priceOriginal: 80.000,
             ),
             Spacer(),
             Bolsos(
@@ -172,7 +185,8 @@ class _SectionMujerState extends State<SectionMujer> {
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Balenciaga', 
-              priceOriginal: '\$80.000',
+              symbol: '\$',
+              priceOriginal: 80.000,
             ),
             Spacer(),
             Bolsos(
@@ -180,16 +194,26 @@ class _SectionMujerState extends State<SectionMujer> {
               imageBolso2: 'assets/images/bolso_8.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
-              nameBolso: 'Bolso Gucci', 
-              priceOriginal: '\$80.000',
+              nameBolso: 'Bolso Gucci',
+              symbol: '\$',
+              priceOriginal: 80.000,
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
-        SizedBox(height: 20),
-        //TODO: PRIMER ROW DE LOCIONES DE MUJER
+        const SizedBox(height: 30),
         Row(
-          children: [/*
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 60),
+              child: Text('Aromas Mujer', style: styleText3),
+            ),
+          ],
+        ),
+        const SizedBox(height: 30),
+        //TODO: PRIMER ROW DE LOCIONES DE MUJER
+        const Row(
+          children: [
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
@@ -197,7 +221,8 @@ class _SectionMujerState extends State<SectionMujer> {
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Moschino Toy Boy',
-              priceOriginal: '\$17.000',
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
             Locion(
@@ -206,7 +231,8 @@ class _SectionMujerState extends State<SectionMujer> {
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Fahrenheit',
-              priceOriginal: '\$17.000',
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
             Locion(
@@ -215,7 +241,8 @@ class _SectionMujerState extends State<SectionMujer> {
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'L \'Aventure',
-              priceOriginal: '\$17.000',
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
             Spacer(),
             Locion(
@@ -224,9 +251,57 @@ class _SectionMujerState extends State<SectionMujer> {
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
-              priceOriginal: '\$17.000',
+              symbol: '\$',
+              priceOriginal: 14.000,
             ),
-            Spacer(),*/
+            Spacer(),
+          ],
+        ),
+        const SizedBox(height: 20),
+        //TODO: SEGUNDO ROW DE LOCIONES DE MUJER
+        const Row(
+          children: [
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: 'Moschino Toy Boy',
+              symbol: '\$',
+              priceOriginal: 14.000,
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: 'Fahrenheit',
+              symbol: '\$',
+              priceOriginal: 14.000,
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: 'L \'Aventure',
+              symbol: '\$',
+              priceOriginal: 14.000,
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: 'AMETHYST (Unisex)',
+              symbol: '\$',
+              priceOriginal: 14.000,
+            ),
+            Spacer(),
           ],
         ),
       ],

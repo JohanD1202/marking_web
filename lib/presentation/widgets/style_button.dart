@@ -73,6 +73,66 @@ class _ButtonTextBarState extends State<ButtonTextBar> {
     );
   }
 }
+
+class ButtonTextMobile extends StatefulWidget {
+
+  final String buttonText;
+  final VoidCallback onPressed;
+  final EdgeInsets padding;
+
+  // ignore: use_super_parameters
+  const ButtonTextMobile({
+    Key? key, 
+    required this.buttonText, 
+    required this.onPressed,
+    required this.padding,
+  }) : super(key: key);
+
+  @override
+  State<ButtonTextMobile> createState() => _ButtonTextMobileState();
+}
+
+class _ButtonTextMobileState extends State<ButtonTextMobile> {
+
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: widget.onPressed,
+      child: MouseRegion(
+        onEnter: (_) => setState(() => _isHovered = true),
+        onExit: (_) => setState(() => _isHovered = false),
+        child: Container(
+          decoration: _isHovered
+          ? const BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                color: Colors.grey,
+                width: 1.5
+              )
+            )
+          )
+          : null,
+          child: TextButton(
+            onPressed: widget.onPressed,
+            child: Padding(
+              padding: widget.padding,
+              child: Text(
+                widget.buttonText,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w600,
+                  color: _isHovered ? Colors.grey : Colors.black,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ) ,
+    );
+  }
+}
 /*
 TextButton(
       onPressed: widget.onPressed,

@@ -21,7 +21,7 @@ class _HombreScreenMobileState extends State<HombreScreenMobile> {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1.2,
+      height: size.height * 1.35,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(

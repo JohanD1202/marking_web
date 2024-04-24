@@ -1,21 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
-import 'package:marking_web/presentation/screens/searchh_bar.dart';
-//import 'package:marking_web/presentation/screens/home_screen.dart';
-import 'dart:html' as html;
-
 import 'package:marking_web/presentation/widgets/style_button.dart';
-import 'package:marking_web/responsive/screens_mobile/Inicio_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/aromas_screen_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/guia_aromas_mobile.dart';
+//import 'package:marking_web/presentation/screens/home_screen.dart';
+
 import 'package:marking_web/responsive/screens_mobile/help_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/hombre_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/mujer_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/preguntas_frecuentes_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/sale_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/widgets_footer_mobile.dart';
 
 
 class MobileScreen extends StatefulWidget {
@@ -46,7 +34,7 @@ class _MobileScreenState extends State<MobileScreen> {
           SingleChildScrollView(
           child: SizedBox(
             width: size.width * 1,
-            height: size.height * 3.12,
+            height: size.height * 3.25,
             child: Column(
               children: [
                 Material(
@@ -79,7 +67,7 @@ class _MobileScreenState extends State<MobileScreen> {
                     HelpMobile(),                 //5
                     PreguntasFrecuentesMobile(),  //6
                     GuiaAromasMobile(),           //7
-                    SearchhBarMobile()                  //8
+                    SearchhBarMobile()            //8
                   ],
                 ),
                 //TODO: FOOTER
@@ -239,9 +227,9 @@ o en efectivo''',
                                 iconOrImage: IconButton(
                                   icon: const Icon(Icons.info_outline_rounded), 
                                   onPressed: () {
-                                    /*setState(() {
+                                    setState(() {
                                       indiceWidget = 5;
-                                    });*/
+                                    });
                                   },
                                   color: Colors.white, 
                                   iconSize: 40
@@ -334,7 +322,10 @@ o en efectivo''',
       ),
       drawer: Drawer(
         width: 250,
-        child: SizedBox(
+        child: Container(
+          decoration: const BoxDecoration(
+            color: Colors.white
+          ),
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
@@ -345,8 +336,8 @@ o en efectivo''',
                     color: Colors.white,
                     border: Border(
                       bottom: BorderSide(
-                        color: Colors.black,
-                        width: 1
+                        color: Colors.grey,
+                        width: 1.5
                       )
                     )
                   ),
@@ -356,30 +347,36 @@ o en efectivo''',
                   ),
                 ),
               ),
-              ListTile(
-                title: const Text('Aromas Selectos'),
-                onTap: () {
+              ButtonTextMobile(
+                buttonText: 'Aromas Selectos',
+                padding: const EdgeInsets.only(right: 100),
+                onPressed: (){
                   setState(() {
-                    indiceWidget = 1;                    
+                    indiceWidget = 1;
                   });
-                },
+                }
               ),
-              ListTile(
-                title: const Text('Hombre'),
-                onTap: () {
+              const SizedBox(height: 15),
+              ButtonTextMobile(
+                buttonText: 'Hombre',
+                padding: const EdgeInsets.only(right: 160),
+                onPressed: (){
                   setState(() {
-                    indiceWidget = 2;                    
+                    indiceWidget = 2;
                   });
-                },
+                }
               ),
-              ListTile(
-                title: const Text('Mujer'),
-                onTap: () {
+              const SizedBox(height: 15),
+              ButtonTextMobile(
+                buttonText: 'Mujer',
+                padding: const EdgeInsets.only(right: 175),
+                onPressed: (){
                   setState(() {
-                    indiceWidget = 3;                    
+                    indiceWidget = 3;
                   });
-                },
+                }
               ),
+              
               /*ListTile(
                 title: const Text('Nuevo'),
                 onTap: () {
@@ -388,38 +385,46 @@ o en efectivo''',
                   });
                 },
               ),*/
-              ListTile(
-                title: const Text('Sale'),
-                onTap: () {
+              const SizedBox(height: 15),
+              ButtonTextMobile(
+                buttonText: 'Sale',
+                padding: const EdgeInsets.only(right: 185),
+                onPressed: (){
                   setState(() {
-                    indiceWidget = 4;                    
+                    indiceWidget = 4;
                   });
-                },
+                }
               ),
-              ListTile(
-                title: const Text('Centro de Ayuda'),
-                onTap: () {
+              const SizedBox(height: 10),
+              ButtonTextMobile(
+                buttonText: 'Centro de Ayuda', 
+                padding: const EdgeInsets.only(right: 105),
+                onPressed: (){
                   setState(() {
-                      indiceWidget = 5;
+                    indiceWidget = 5;
                   });
-                },
+                }
               ),
-              ListTile(
-                title: const Text('Preguntas Frecuentes'),
-                onTap: () {
+              const SizedBox(height: 15),
+              ButtonTextMobile(
+                buttonText: 'Preguntas Frecuentes', 
+                padding: const EdgeInsets.only(right: 70),
+                onPressed: (){
                   setState(() {
                     indiceWidget = 6;
                   });
-                },
+                }
               ),
-              ListTile(
-                title: const Text('Guía de Aromas'),
-                onTap: () {
+              const SizedBox(height: 15),
+              ButtonTextMobile(
+                buttonText: 'Guía de Aromas', 
+                padding: const EdgeInsets.only(right: 110),
+                onPressed: (){
                   setState(() {
                     indiceWidget = 7;
                   });
-                },
-              )
+                }
+              ),
             ],
           ),
         ),

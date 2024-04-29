@@ -42,7 +42,7 @@ Bienvenidos a nuestra sección dedicada a los hombres modernos y con estilo.
 En Aromas Selectos, te ofrecemos una exquisita variedad de fragancias 
 Que reflejan tu personalidad única.
 
-Llévate tus aromas favoritos desde tan solo \$14.000. 
+Llévate tus aromas favoritos desde tan solo \$15.000. 
 ¡No te pierdas esta increíble oportunidad de disfrutar 
 De fragancias de calidad a un precio increíblemente bajo!
                           ''', style: TextStyle(fontSize: 18))

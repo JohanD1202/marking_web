@@ -1,5 +1,7 @@
 // ignore_for_file: curly_braces_in_flow_control_structures
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:marking_web/exports.dart';
 
 
 ButtonStyle styleButton = ButtonStyle(
@@ -115,6 +117,16 @@ class _ButtonTextMobileState extends State<ButtonTextMobile> {
           )
           : null,
           child: TextButton(
+            style: const ButtonStyle(
+              backgroundColor: MaterialStatePropertyAll(Colors.white),
+              shape: MaterialStatePropertyAll(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.horizontal(
+                    right: Radius.zero
+                  )
+                )
+              )
+            ),
             onPressed: widget.onPressed,
             child: Padding(
               padding: widget.padding,
@@ -488,6 +500,13 @@ ButtonStyle styleText200 = ButtonStyle(
   foregroundColor: MaterialStateProperty.all(Colors.white),
 );
 
+ButtonStyle styleText300 = ButtonStyle(
+  fixedSize: MaterialStateProperty.all(const Size(437, 35)),
+  shape: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
+  backgroundColor: MaterialStateProperty.all(Colors.black),
+  foregroundColor: MaterialStateProperty.all(Colors.white),
+);
+
 ButtonStyle styleText400 = ButtonStyle(
   fixedSize: MaterialStateProperty.all(const Size(300, 35)),
   side: MaterialStateProperty.all(const BorderSide(color: Colors.black, width: 1)),
@@ -526,6 +545,56 @@ class _SeguirComprandoState extends State<SeguirComprando> {
       onExit: (_) => _setHovering(false),
       child: Container(
         width: 300,
+        height: 35,
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black),
+          color: isHovering ? Colors.black : Colors.white
+        ),
+        child: InkWell(
+          onTap: () {},
+          child: Center(
+            child: Text('SEGUIR COMPRANDO', 
+              style: TextStyle(
+                color: textColor, 
+                fontSize: 16,
+                fontWeight: FontWeight.normal
+              )
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class SeguirComprandoMobile extends StatefulWidget {
+
+  // ignore: use_super_parameters
+  const SeguirComprandoMobile({Key? key}) : super(key: key);
+
+  @override
+  State<SeguirComprandoMobile> createState() => _SeguirComprandoMobileState();
+}
+
+class _SeguirComprandoMobileState extends State<SeguirComprandoMobile> {
+
+  bool isHovering = false;
+  Color? textColor = Colors.black;
+
+  void _setHovering(bool hovering) {
+    setState(() {
+      isHovering = hovering;
+      textColor = isHovering ? Colors.white : Colors.black;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => _setHovering(true),
+      onExit: (_) => _setHovering(false),
+      child: Container(
+        width: 437,
         height: 35,
         decoration: BoxDecoration(
           border: Border.all(color: Colors.black),

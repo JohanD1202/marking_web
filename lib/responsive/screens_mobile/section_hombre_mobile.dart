@@ -1,7 +1,7 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
 
-
+/*
 enum ContentState {
   Initial,
   HelloWorld,
@@ -18,7 +18,7 @@ class ContentModel extends ChangeNotifier {
   }
 }
 
-
+*/
 class SectionHombreMobile extends StatefulWidget {
   // ignore: use_super_parameters
   const SectionHombreMobile({Key? key}) : super (key: key);

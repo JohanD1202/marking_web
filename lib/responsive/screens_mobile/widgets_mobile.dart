@@ -119,10 +119,9 @@ class _LocionMobileState extends State<LocionMobile> {
     _overlayEntry = OverlayEntry(
       builder: (context) => Consumer<CartProvider>(
         builder: (context, cart, _) => Positioned(
-          top: MediaQuery.of(context).size.height * 0.22,
-          right: 50,
-          width: 320,
-          height: 445,
+          top: MediaQuery.of(context).size.height * 0.37,
+          width: MediaQuery.of(context).size.width * 1,
+          height: 320,
           child: Material(
             elevation: 12,
             child: Container(
@@ -190,16 +189,16 @@ class _LocionMobileState extends State<LocionMobile> {
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-              child: Image.asset(widget.imageLocion, width: 160),
+              child: Image.asset(widget.imageLocion, width: 100),
             ),
             Positioned(
               top: 23,
-              left: 160,
+              left: 130,
               child: Text(widget.nameLocion, style: styleText9),
             ),
             Positioned(
               top: 13.5,
-              left: 283,
+              left: 260,
               child: IconButton(
                 icon: Icon(Icons.delete_rounded, color: Colors.grey[700], size: 18),
                 onPressed: () {
@@ -212,17 +211,17 @@ class _LocionMobileState extends State<LocionMobile> {
             ),
             Positioned(
               top: 60,
-              left: 160,
+              left: 130,
               child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
             ),
             Positioned(
               top: 110,
-              left: 160,
+              left: 130,
               child: Text('Cantidad:', style: styleTextLocion),
             ),
             Positioned(
-              top: 150,
-              left: 170,
+              top: 110,
+              left: 220,
               child: Cantidad(
                 onQuantityChanged: (quantity) {
                   setState(() {
@@ -235,16 +234,16 @@ class _LocionMobileState extends State<LocionMobile> {
           ],
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(10, 120, 10, 0),
+          padding: const EdgeInsets.fromLTRB(7, 45, 7, 0),
           child: FilledButton(
             onPressed: () {},
-            style: styleText200,
+            style: styleText300,
             child: Text('FINALIZAR COMPRA', style: styleTextCar),
           ),
         ),
         const Padding(
-          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-          child: SeguirComprando(),
+          padding: EdgeInsets.fromLTRB(7, 7, 7, 7),
+          child: SeguirComprandoMobile(),
         ),
       ],
     );
@@ -1444,7 +1443,7 @@ class CarShopMobile extends StatelessWidget {
     );
   }
 }
-
+/*
 class CartNotifier extends ChangeNotifier {
   bool _isCartOpen = false;
 
@@ -1476,7 +1475,7 @@ class CartProvider extends ChangeNotifier {
   int get itemCount => _cartItems.length;
 }
 
-
+*/
 /*
 class Product {
   final int id;

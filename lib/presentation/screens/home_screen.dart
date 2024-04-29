@@ -2,6 +2,8 @@ import 'package:marking_web/exports.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
+import 'package:marking_web/presentation/screens/arabes_screen.dart';
+
 
 
 
@@ -64,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           onPressed: () {
                             setState(() {
-                              indiceWidget = 5;
+                              indiceWidget = 6;
                             });
                           },
                           child: Text(
@@ -149,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
-                  buttonText: 'Hombre', 
+                  buttonText: 'Aromas Árabes', 
                   onPressed: () {
                     setState(() {
                       indiceWidget = 2;
@@ -158,8 +160,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
-                  buttonText: 'Mujer', 
-                  onPressed: () {  
+                  buttonText: 'Hombre', 
+                  onPressed: () {
                     setState(() {
                       indiceWidget = 3;
                     });
@@ -167,20 +169,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
-                  buttonText: 'Nuevo', 
-                  onPressed: () {
+                  buttonText: 'Mujer', 
+                  onPressed: () {  
                     setState(() {
-                      //indiceWidget = 4;
+                      indiceWidget = 4;
                     });
                   }
-                ),
+                ),                
                 const SizedBox(width: 50),
                 ButtonTextBar(
                   buttonText: 'Sale', 
                   onPressed: () {
                     setState(() {
-                      indiceWidget = 4;
-                      //indiceWidget = 5;
+                      indiceWidget = 5;
                     });
                   }
                 ),
@@ -193,9 +194,9 @@ class _HomeScreenState extends State<HomeScreen> {
             children: const [
               Inicio(),
               AromasScreen(),
+              ArabesScreen(),
               HombreScreen(),
               MujerScreen(),
-              //NuevoScreen(),
               SaleScreen(),
               Help(),
             ],

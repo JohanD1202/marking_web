@@ -10,6 +10,7 @@ class Locion extends StatefulWidget {
   final String nameLocion;
   final String symbol;
   final double priceOriginal;
+  final String onzas;
 
   // ignore: use_super_parameters
   const Locion({
@@ -20,7 +21,8 @@ class Locion extends StatefulWidget {
     required this.imageHeight,
     required this.nameLocion,
     required this.symbol,
-    required this.priceOriginal, 
+    required this.priceOriginal,
+    required this.onzas,
   }) : super(key: key);
 
   @override
@@ -290,7 +292,14 @@ class _LocionState extends State<Locion> {
               child: Text(widget.nameLocion, style: styleTextLocion),
             ),
             Positioned(
-              top: 420,
+              top: 390,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.onzas, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 435,
               left: 13,
               right: 12,
               child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice)
@@ -449,6 +458,7 @@ class LocionPromotion extends StatefulWidget {
   final double priceOriginal;
   final String priceDescuento;
   final Widget promotion;
+  final String onzas;
 
   // ignore: use_super_parameters
   const LocionPromotion({
@@ -461,7 +471,8 @@ class LocionPromotion extends StatefulWidget {
     required this.symbol,
     required this.priceOriginal, 
     required this.priceDescuento, 
-    required this.promotion, 
+    required this.promotion,
+    required this.onzas,
   }) : super(key: key);
 
   @override
@@ -736,19 +747,26 @@ class _LocionPromotionState extends State<LocionPromotion> {
               child: Text(widget.nameLocion, style: styleTextLocion),
             ),
             Positioned(
-              top: 390,
+              top: 385,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.onzas, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 412.5,
               left: 13,
               right: 12,
               child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale)
             ),
             Positioned(
-              top: 420,
+              top: 435,
               left: 13,
               right: 12,
               child: Text(widget.priceDescuento, style: styleTextPrice),
             ),
             Positioned(
-              top: 420,
+              top: 435,
               left: 90,
               child: widget.promotion,
             ),

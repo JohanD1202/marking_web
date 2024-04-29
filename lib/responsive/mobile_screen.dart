@@ -62,7 +62,6 @@ class _MobileScreenState extends State<MobileScreen> {
                     AromasScreenMobile(),         //1
                     HombreScreenMobile(),         //2
                     MujerScreenMobile(),          //3
-                    //NuevoScreen(),
                     SaleScreenMobile(),           //4
                     HelpMobile(),                 //5
                     PreguntasFrecuentesMobile(),  //6

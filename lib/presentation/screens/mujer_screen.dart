@@ -80,7 +80,7 @@ Que reflejan tu esencia única, sino que también hemos seleccionado
 Cuidadosamente una colección de bolsos que realzarán tu look
 Con feminidad y originalidad.
 
-Descubre tus aromas favoritos desde tan solo \$14.000.
+Descubre tus aromas favoritos desde tan solo \$15.000.
 ¡No te pierdas esta maravillosa oportunidad de disfrutar
 De fragancias de primera calidad a un precio increíblemente asequible!
                           ''', style: TextStyle(fontSize: 18)),

@@ -19,15 +19,15 @@ class ContentModel extends ChangeNotifier {
 }
 
 */
-class SectionHombreMobile extends StatefulWidget {
+class SectionArabeMobile extends StatefulWidget {
   // ignore: use_super_parameters
-  const SectionHombreMobile({Key? key}) : super (key: key);
+  const SectionArabeMobile({Key? key}) : super (key: key);
 
   @override
-  State<SectionHombreMobile> createState() => _SectionHombreMobileState();
+  State<SectionArabeMobile> createState() => _SectionArabeMobileState();
 }
 
-class _SectionHombreMobileState extends State<SectionHombreMobile> {
+class _SectionArabeMobileState extends State<SectionArabeMobile> {
 
   Locion? selectedProduct;
 
@@ -44,7 +44,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        //TODO: PRIMER ROW DE LOCIONES DE HOMBRE
+        //TODO: PRIMER ROW DE LOCIONES ARABES
         Row(
           children: [
             Spacer(),
@@ -53,7 +53,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
                 imageLocion2: 'assets/images/aroma_2.jpg',
                 imageHeight: 277.5,
                 imageWidth: 180,
-                nameLocion: 'Moschino Toy Boy',
+                nameLocion: 'Yara - Lattafa',
                 symbol: '\$',
                 priceOriginal: 15.000,
                 onzas: '1 fl oz',
@@ -64,7 +64,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
-              nameLocion: 'Fahrenheit',
+              nameLocion: 'Ombre Nómada - Lattafa',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -73,7 +73,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
           ],
         ),
         SizedBox(height: 20),
-        //TODO: SEGUNDO ROW DE LOCIONES DE HOMBRE
+        //TODO: SEGUNDO ROW DE LOCIONES ARABES
         Row(
           children: [
             Spacer(),
@@ -82,7 +82,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
               imageLocion2: 'assets/images/locion_7.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
-              nameLocion: 'L \'Aventure',
+              nameLocion: 'Amethyst - Lattafa',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -93,7 +93,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
               imageLocion2: 'assets/images/locion_10.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
-              nameLocion: 'AMETHYST (Unisex)',
+              nameLocion: 'Oud for Greatness - Initio',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -102,7 +102,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
           ],
         ),
         SizedBox(height: 20),
-        //TODO: TERCER ROW DE LOCIONES DE HOMBRE
+        //TODO: TERCER ROW DE LOCIONES ARABES
         Row(
           children: [
             Spacer(),
@@ -111,7 +111,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
-              nameLocion: 'L \'Aventure',
+              nameLocion: 'Amber Oud - Haramain',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -122,7 +122,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
-              nameLocion: 'AMETHYST (Unisex)',
+              nameLocion: 'L Aventure - Haramain',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -131,7 +131,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
           ],
         ),
         SizedBox(height: 20),
-        //TODO: CUARTO ROW DE LOCIONES DE HOMBRE
+        //TODO: CUARTO ROW DE LOCIONES ARABES
         Row(
           children: [
             Spacer(),
@@ -140,7 +140,7 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
-              nameLocion: 'L \'Aventure',
+              nameLocion: 'Madinah - Haramain',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -151,7 +151,94 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
               imageLocion2: 'assets/images/locion_10.jpg',
               imageHeight: 277.5,
               imageWidth: 180,
-              nameLocion: 'AMETHYST (Unisex)',
+              nameLocion: 'Santal 33 - Le labo',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: QUINTO ROW DE LOCIONES ARABES
+        Row(
+          children: [
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'Il Kakuno - ILMIN',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'Il Femme - ILMIN',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: QUINTO ROW DE LOCIONES ARABES
+        Row(
+          children: [
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'Arabians Tonka - Móntale',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'Intense Cafe - Móntale',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: QUINTO ROW DE LOCIONES ARABES
+        Row(
+          children: [
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'Baccarat - Francis Kurkdjian',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 277.5,
+              imageWidth: 180,
+              nameLocion: 'Orientica - Oud Safran',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',

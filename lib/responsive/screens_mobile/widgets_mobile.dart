@@ -10,6 +10,7 @@ class LocionMobile extends StatefulWidget {
   final String nameLocion;
   final String symbol;
   final double priceOriginal;
+  final String onzas;
 
   // ignore: use_super_parameters
   const LocionMobile({
@@ -21,6 +22,7 @@ class LocionMobile extends StatefulWidget {
     required this.nameLocion,
     required this.symbol,
     required this.priceOriginal, 
+    required this.onzas,
   }) : super(key: key);
 
   @override
@@ -289,7 +291,13 @@ class _LocionMobileState extends State<LocionMobile> {
               child: Text(widget.nameLocion, style: styleTextLocion),
             ),
             Positioned(
-              top: 305,
+              top: 290,
+              left: 12,
+              right: 8,
+              child: Text(widget.onzas, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 312.5,
               left: 13,
               right: 12,
               child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice)

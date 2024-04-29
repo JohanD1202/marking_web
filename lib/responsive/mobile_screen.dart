@@ -1,5 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/widgets/style_button.dart';
+import 'package:marking_web/responsive/screens_mobile/arabes_screen_mobile.dart';
 //import 'package:marking_web/presentation/screens/home_screen.dart';
 
 import 'package:marking_web/responsive/screens_mobile/help_mobile.dart';
@@ -60,13 +61,14 @@ class _MobileScreenState extends State<MobileScreen> {
                   children: const [
                     InicioMobile(),               //0
                     AromasScreenMobile(),         //1
-                    HombreScreenMobile(),         //2
-                    MujerScreenMobile(),          //3
-                    SaleScreenMobile(),           //4
-                    HelpMobile(),                 //5
-                    PreguntasFrecuentesMobile(),  //6
-                    GuiaAromasMobile(),           //7
-                    SearchhBarMobile()            //8
+                    ArabesScreenMobile(),         //2
+                    HombreScreenMobile(),         //3
+                    MujerScreenMobile(),          //4
+                    SaleScreenMobile(),           //5
+                    HelpMobile(),                 //6
+                    PreguntasFrecuentesMobile(),  //7
+                    GuiaAromasMobile(),           //8
+                    SearchhBarMobile()            //9
                   ],
                 ),
                 //TODO: FOOTER
@@ -110,10 +112,18 @@ class _MobileScreenState extends State<MobileScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       ButtonTextFooter(
-                                        buttonText: 'Aromas               Selectos', 
+                                        buttonText: 'Aromas Selectos', 
                                         onPressed: () {
                                           setState(() {
                                             indiceWidget = 1;  
+                                          });
+                                        }
+                                      ),
+                                      ButtonTextFooter(
+                                        buttonText: 'Aromas Árabes', 
+                                        onPressed: () {
+                                          setState(() {
+                                            indiceWidget = 2;  
                                           });
                                         }
                                       ),
@@ -126,7 +136,7 @@ class _MobileScreenState extends State<MobileScreen> {
                                         buttonText: 'Hombre', 
                                         onPressed: () {
                                           setState(() {
-                                            indiceWidget = 2;  
+                                            indiceWidget = 3;  
                                           });
                                         }
                                       ),
@@ -135,7 +145,7 @@ class _MobileScreenState extends State<MobileScreen> {
                                         buttonText: 'Mujer', 
                                         onPressed: () {
                                           setState(() {
-                                            indiceWidget = 3;
+                                            indiceWidget = 4;
                                           });
                                         }
                                       ),
@@ -144,20 +154,12 @@ class _MobileScreenState extends State<MobileScreen> {
                                   const SizedBox(height: 15),
                                   Row(
                                     children: [
-                                      ButtonTextFooter(
-                                        buttonText: 'Nuevo', 
-                                        onPressed: () {
-                                          /*setState(() {
-                                            //indiceWidget = 4;
-                                          });*/
-                                        }
-                                      ),
                                       const Spacer(),
                                       ButtonTextFooter(
                                         buttonText: 'Sale', 
                                         onPressed: () {
                                           setState(() {
-                                            indiceWidget = 4;
+                                            indiceWidget = 5;
                                           });
                                         }
                                       ),
@@ -227,7 +229,7 @@ o en efectivo''',
                                   icon: const Icon(Icons.info_outline_rounded), 
                                   onPressed: () {
                                     setState(() {
-                                      indiceWidget = 5;
+                                      indiceWidget = 6;
                                     });
                                   },
                                   color: Colors.white, 
@@ -307,7 +309,7 @@ o en efectivo''',
             },
             onPressedSearch: () {
               setState(() {
-                indiceWidget = 8;
+                indiceWidget = 9;
               });
             }, 
             onPressedMenu: () {
@@ -319,6 +321,7 @@ o en efectivo''',
         )
        ]
       ),
+      //TODO: DRAWER
       drawer: Drawer(
         width: 250,
         child: Container(
@@ -357,11 +360,21 @@ o en efectivo''',
               ),
               const SizedBox(height: 15),
               ButtonTextMobile(
+                buttonText: 'Aromas Árabes', 
+                padding: const EdgeInsets.only(right: 110),
+                onPressed: () {
+                  setState(() {
+                    indiceWidget = 2;  
+                  });
+                }
+              ),
+              const SizedBox(height: 15),
+              ButtonTextMobile(
                 buttonText: 'Hombre',
                 padding: const EdgeInsets.only(right: 160),
                 onPressed: (){
                   setState(() {
-                    indiceWidget = 2;
+                    indiceWidget = 3;
                   });
                 }
               ),
@@ -371,26 +384,17 @@ o en efectivo''',
                 padding: const EdgeInsets.only(right: 175),
                 onPressed: (){
                   setState(() {
-                    indiceWidget = 3;
+                    indiceWidget = 4;
                   });
                 }
               ),
-              
-              /*ListTile(
-                title: const Text('Nuevo'),
-                onTap: () {
-                  setState(() {
-
-                  });
-                },
-              ),*/
               const SizedBox(height: 15),
               ButtonTextMobile(
                 buttonText: 'Sale',
                 padding: const EdgeInsets.only(right: 185),
                 onPressed: (){
                   setState(() {
-                    indiceWidget = 4;
+                    indiceWidget = 5;
                   });
                 }
               ),
@@ -400,7 +404,7 @@ o en efectivo''',
                 padding: const EdgeInsets.only(right: 105),
                 onPressed: (){
                   setState(() {
-                    indiceWidget = 5;
+                    indiceWidget = 6;
                   });
                 }
               ),
@@ -410,7 +414,7 @@ o en efectivo''',
                 padding: const EdgeInsets.only(right: 70),
                 onPressed: (){
                   setState(() {
-                    indiceWidget = 6;
+                    indiceWidget = 7;
                   });
                 }
               ),
@@ -420,7 +424,7 @@ o en efectivo''',
                 padding: const EdgeInsets.only(right: 110),
                 onPressed: (){
                   setState(() {
-                    indiceWidget = 7;
+                    indiceWidget = 8;
                   });
                 }
               ),

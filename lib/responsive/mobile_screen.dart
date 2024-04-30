@@ -102,7 +102,7 @@ class _MobileScreenState extends State<MobileScreen> {
                             padding: const EdgeInsets.only(top: 15),
                             child: Container(
                               height: 200,
-                              width: 200.5,
+                              width: 280,
                               decoration: const BoxDecoration(color: Colors.black),
                               child: Column(
                                 children: [
@@ -163,6 +163,7 @@ class _MobileScreenState extends State<MobileScreen> {
                                           });
                                         }
                                       ),
+                                      const Spacer(),
                                     ],
                                   )
                                 ],

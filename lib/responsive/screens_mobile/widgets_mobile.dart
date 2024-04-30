@@ -266,8 +266,8 @@ class _LocionMobileState extends State<LocionMobile> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 382.5,
-        width: 187.5,
+        height: 340,
+        width: 160,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -284,29 +284,29 @@ class _LocionMobileState extends State<LocionMobile> {
               ),
             ),
             Positioned(
-              top: 270,
+              top: 227,
               bottom: 8,
-              left: 12,
+              left: 8,
               right: 8,
-              child: Text(widget.nameLocion, style: styleTextLocion),
+              child: Text(widget.nameLocion, style: styleTextLocionMobile),
             ),
             Positioned(
-              top: 290,
-              left: 12,
+              top: 262,
+              left: 8,
               right: 8,
-              child: Text(widget.onzas, style: styleTextLocion),
+              child: Text(widget.onzas, style: styleTextLocionMobile),
             ),
             Positioned(
-              top: 312.5,
-              left: 13,
+              top: 280,
+              left: 9,
               right: 12,
-              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice)
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPriceMobile)
             ),
             Positioned(
-              top: 340,
-              left: 5,
-              right: 5,
-              bottom: 5,
+              top: 305,
+              left: 3,
+              right: 3,
+              bottom: 3,
               child: CarShopMobile(
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
@@ -660,7 +660,7 @@ class _LocionPromotionMobileState extends State<LocionPromotionMobile> {
   }
 }
 
-
+//TODO: BOLSOS MOBILE
 
 
 class BolsosMobile extends StatefulWidget {
@@ -927,8 +927,8 @@ class _BolsosMobileState extends State<BolsosMobile> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 382.5,
-        width: 187.5,
+        height: 340,
+        width: 160,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -945,20 +945,20 @@ class _BolsosMobileState extends State<BolsosMobile> {
               ),
             ),
             Positioned(
-              top: 270,
+              top: 227,
               bottom: 8,
-              left: 12,
+              left: 8,
               right: 8,
               child: Text(widget.nameBolso, style: styleTextLocion),
             ),
             Positioned(
-              top: 305,
-              left: 13,
+              top: 275,
+              left: 9,
               right: 12,
               child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice)
             ),
             Positioned(
-              top: 340,
+              top: 305,
               left: 5,
               right: 5,
               bottom: 5,
@@ -1438,12 +1438,45 @@ class CarShopMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedButton.icon(
-      icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 13),
+      icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 11),
       onPressed: () {
         onAddToCart();
         addToCart(context);
       },
       label: Text('AGREGAR AL CARRITO', style: styleTextCarMobile),
+      style: OutlinedButton.styleFrom(
+        backgroundColor: Colors.black,
+        shape: const RoundedRectangleBorder()
+      ),
+    );
+  }
+}
+
+class CarShopMobileBolsos extends StatelessWidget {
+
+  final VoidCallback onAddToCart;
+  final Product productToAdd;
+
+  // ignore: use_super_parameters
+  const CarShopMobileBolsos({
+    Key? key, 
+    required this.onAddToCart, 
+    required this.productToAdd
+  }) : super(key: key);
+
+  void addToCart(BuildContext context) {
+    Provider.of<CartProvider>(context, listen: false).addToCart(productToAdd);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton.icon(
+      icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 13),
+      onPressed: () {
+        onAddToCart();
+        addToCart(context);
+      },
+      label: Text('AGREGAR AL CARRITO', style: styleTextCarMobile2),
       style: OutlinedButton.styleFrom(
         backgroundColor: Colors.black,
         shape: const RoundedRectangleBorder()

@@ -393,7 +393,7 @@ TextStyle styleTextLocion = TextStyle(
 );
 
 TextStyle styleTextLocionMobile = TextStyle(
-  fontSize: 15,
+  fontSize: 12,
   color: Colors.grey [800]
 );
 
@@ -420,6 +420,11 @@ TextStyle styleTextPrice = TextStyle(
   color: Colors.grey[900]
 );
 
+TextStyle styleTextPriceMobile = TextStyle(
+  fontSize: 13,
+  color: Colors.grey[900]
+);
+
 TextStyle styleTextSale = TextStyle(
   decoration: TextDecoration.lineThrough,
   fontSize: 14,
@@ -433,6 +438,12 @@ TextStyle styleTextCar = const TextStyle(
 );
 
 TextStyle styleTextCarMobile = const TextStyle(
+  fontSize: 8.5,
+  fontWeight: FontWeight.w500,
+  color: Colors.white
+);
+
+TextStyle styleTextCarMobile2 = const TextStyle(
   fontSize: 11,
   fontWeight: FontWeight.w500,
   color: Colors.white

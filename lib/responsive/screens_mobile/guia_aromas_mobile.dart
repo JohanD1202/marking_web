@@ -12,13 +12,30 @@ class GuiaAromasMobile extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1,
+      height: size.height * 1.35,
       width: size.width * 1,
-      child: const Scaffold(
+      child: Scaffold(
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Text('HOLA MUNDO')
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Bienvenido a Nuestra Guía de Aromas', style: styleText3Mobile),
+                          const SizedBox(height: 15),
+                          const Text(TextAromasGuide.aromasGuideText, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500))
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),

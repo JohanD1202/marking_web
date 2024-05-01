@@ -431,6 +431,12 @@ TextStyle styleTextSale = TextStyle(
   color: Colors.grey [700]
 );
 
+TextStyle styleTextSaleMobile = TextStyle(
+  decoration: TextDecoration.lineThrough,
+  fontSize: 12,
+  color: Colors.grey [700]
+);
+
 TextStyle styleTextCar = const TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.w500,
@@ -654,6 +660,39 @@ class TextHelp {
   ''';
 }
 
+class TextAromasGuide {
+  static const String aromasGuideText = '''
+En Aromas Selectos, creemos que cada
+Fragancia cuenta una historia única y
+Evocadora. Con el fin de enriquecer su
+Experiencia de compra y ayudarle a
+Descubrir el aroma que mejor se adapte
+A su estilo y emociones, hemos creado
+Esta exclusiva Guía de Aromas.
+
+Aquí, explorará un mundo de fragancias 
+Detalladamente descritas, desde las vibrantes 
+Notas de salida hasta las profundas 
+Y duraderas notas de fondo. Cada aroma se 
+Presenta con descripciones claras y 
+Sugerentes que le invitan a imaginar y sentir 
+Cada fragancia en su complejidad.
+
+Esta guía está diseñada para ser su compañera
+En el descubrimiento de nuevos perfumes
+Y para profundizar su apreciación por los
+Aromas que ya conoce y ama. Tómese su
+Tiempo para navegar a través de nuestra
+Colección y dejar que su nariz le guíe
+A través de un viaje olfativo sin igual.
+
+En Aromas Selectos, su viaje hacia el perfume 
+Perfecto comienza aquí. Explore, experimente y 
+Encuentre ese aroma que resuena con su 
+Esencia.
+''';
+}
+
 class TextHelpMobile {
   static const String helpText = '''
   Estamos aquí para brindarte asistencia 
@@ -760,6 +799,8 @@ class TextHelpWidgetMobile extends StatelessWidget {
     this.text, 
     this.textStyle, {super.key}
   );
+
+  
 
   @override
   Widget build(BuildContext context) {

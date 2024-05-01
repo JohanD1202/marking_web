@@ -324,6 +324,8 @@ class _LocionMobileState extends State<LocionMobile> {
   }
 }
 
+//TODO: LOCION PROMOTION
+
 class LocionPromotionMobile extends StatefulWidget {
 
   final String imageLocion;
@@ -335,6 +337,7 @@ class LocionPromotionMobile extends StatefulWidget {
   final double priceOriginal;
   final String priceDescuento;
   final Widget promotion;
+  final String onzas;
 
   // ignore: use_super_parameters
   const LocionPromotionMobile({
@@ -347,7 +350,8 @@ class LocionPromotionMobile extends StatefulWidget {
     required this.symbol,
     required this.priceOriginal, 
     required this.priceDescuento, 
-    required this.promotion, 
+    required this.promotion,
+    required this.onzas
   }) : super(key: key);
 
   @override
@@ -597,8 +601,8 @@ class _LocionPromotionMobileState extends State<LocionPromotionMobile> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 382.5,
-        width: 187.5,
+        height: 370,
+        width: 160,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -615,34 +619,40 @@ class _LocionPromotionMobileState extends State<LocionPromotionMobile> {
               ),
             ),
             Positioned(
-              top: 265,
+              top: 227,
               bottom: 8,
-              left: 12,
+              left: 8,
               right: 8,
-              child: Text(widget.nameLocion, style: styleTextLocion),
+              child: Text(widget.nameLocion, style: styleTextLocionMobile),
             ),
             Positioned(
-              top: 290,
-              left: 13,
+              top: 262.5,
+              left: 8,
+              right: 8,
+              child: Text(widget.onzas, style: styleTextLocionMobile),
+            ),
+            Positioned(
+              top: 283,
+              left: 8,
               right: 12,
-              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale)
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSaleMobile)
             ),
             Positioned(
-              top: 315,
-              left: 13,
+              top: 305,
+              left: 8,
               right: 12,
-              child: Text(widget.priceDescuento, style: styleTextPrice),
+              child: Text(widget.priceDescuento, style: styleTextPriceMobile),
             ),
             Positioned(
-              top: 315,
+              top: 305,
               left: 100,
               child: widget.promotion,
             ),
             Positioned(
-              top: 350,
-              left: 5,
-              right: 5,
-              bottom: 5,
+              top: 335,
+              left: 3,
+              right: 3,
+              bottom: 3,
               child: CarShopMobile(
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
@@ -979,13 +989,16 @@ class _BolsosMobileState extends State<BolsosMobile> {
   }
 }
 
+//TODO: BOLSOS PROMOTION
+
+
 class BolsosPromotionMobile extends StatefulWidget {
 
-  final String imageLocion;
-  final String imageLocion2;
+  final String imageBolso;
+  final String imageBolso2;
   final double imageWidth;
   final double imageHeight;
-  final String nameLocion;
+  final String nameBolso;
   final String symbol;
   final double priceOriginal;
   final String priceDescuento;
@@ -994,11 +1007,11 @@ class BolsosPromotionMobile extends StatefulWidget {
   // ignore: use_super_parameters
   const BolsosPromotionMobile({
     Key? key,
-    required this.imageLocion,
-    required this.imageLocion2,
+    required this.imageBolso,
+    required this.imageBolso2,
     required this.imageWidth,
     required this.imageHeight,
-    required this.nameLocion,
+    required this.nameBolso,
     required this.symbol,
     required this.priceOriginal, 
     required this.priceDescuento, 
@@ -1065,12 +1078,12 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-            child: Image.asset(widget.imageLocion, width: 160),
+            child: Image.asset(widget.imageBolso, width: 160),
           ),
           Positioned(
             top: 15,
             left: 160,
-            child: Text(widget.nameLocion, style: styleTextLocion),
+            child: Text(widget.nameBolso, style: styleTextLocion),
           ),
           Positioned(
             top: 60,
@@ -1172,12 +1185,12 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-              child: Image.asset(widget.imageLocion, width: 160),
+              child: Image.asset(widget.imageBolso, width: 160),
             ),
             Positioned(
               top: 23,
               left: 160,
-              child: Text(widget.nameLocion, style: styleText9),
+              child: Text(widget.nameBolso, style: styleText9),
             ),
             Positioned(
               top: 13.5,
@@ -1252,8 +1265,8 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
         side: const BorderSide(color: Colors.white)
       ),
       child: Container(
-        height: 382.5,
-        width: 187.5,
+        height: 370,
+        width: 160,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.black),
@@ -1263,38 +1276,38 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4),
               child: ImageOnHover(
-                imagePath: widget.imageLocion,
-                hoverImagePath: widget.imageLocion2,
+                imagePath: widget.imageBolso,
+                hoverImagePath: widget.imageBolso2,
                 imageWidth: widget.imageWidth, 
                 imageHeight: widget.imageHeight
               ),
             ),
             Positioned(
-              top: 265,
+              top: 227,
               bottom: 8,
-              left: 12,
+              left: 8,
               right: 8,
-              child: Text(widget.nameLocion, style: styleTextLocion),
+              child: Text(widget.nameBolso, style: styleTextLocion),
             ),
             Positioned(
-              top: 290,
-              left: 13,
+              top: 280,
+              left: 8,
               right: 12,
               child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale)
             ),
             Positioned(
-              top: 315,
-              left: 13,
+              top: 300,
+              left: 8,
               right: 12,
               child: Text(widget.priceDescuento, style: styleTextPrice),
             ),
             Positioned(
-              top: 315,
+              top: 300,
               left: 100,
               child: widget.promotion,
             ),
             Positioned(
-              top: 350,
+              top: 330,
               left: 5,
               right: 5,
               bottom: 5,
@@ -1302,9 +1315,9 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
                   id: 1,
-                  name: widget.nameLocion, 
+                  name: widget.nameBolso, 
                   price: widget.priceOriginal, 
-                  image: widget.imageLocion,
+                  image: widget.imageBolso,
                 ),
               ),
             )

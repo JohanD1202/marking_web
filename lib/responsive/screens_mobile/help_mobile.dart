@@ -64,7 +64,7 @@ class _HelpMobileState extends State<HelpMobile> {
                                   image: 'assets/images/whats.png', 
                                   title: 'WhatsApp', 
                                   description: 'Escríbenos para responder tus dudas',
-                                    padding: EdgeInsets.fromLTRB(20, 20, 100, 20),
+                                    padding: EdgeInsets.fromLTRB(55, 15, 55, 20),
                                   ),
                                 const Spacer(),
                                 QuestionsMobile(

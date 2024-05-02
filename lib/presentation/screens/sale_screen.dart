@@ -30,12 +30,13 @@ class SaleScreen extends StatelessWidget {
                           const SizedBox(height: 20),
                           const Text('''
 Aquí encontrarás las mejores promociones en una amplia variedad de productos.
-desde los mejores aromas hasta las camisetas estampadas más top
 Aprovecha estas ofertas especiales y añade estilo a tu vida
 Con nuestros productos de alta calidad a precios irresistibles.
 
-¡No te pierdas esta oportunidad de renovar tu estilo y disfrutar de grandes ahorros!
-¡No te pierdas nuestras increíbles rebajas y ahorra en tus compras favoritas!
+¡Descubre los aromas más vendidos!
+
+No te pierdas esta oportunidad de renovar tu estilo y disfrutar 
+de grandes ahorros y nuestras increíbles rebajas.
 ''', style: TextStyle(fontSize: 18)),
                         Text('Aromas de Hombre', style: styleText3)
                         ],

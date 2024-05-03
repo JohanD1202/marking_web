@@ -45,7 +45,7 @@ class _SectionArabeState extends State<SectionArabe> {
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Ombre Nómada - Lattafa',
+              nameLocion: 'Ombre Nomade - Louis Vuitton',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',

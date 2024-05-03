@@ -35,7 +35,38 @@ class GuiaAromasMobile extends StatelessWidget {
                     )
                   ],
                 ),
-              )
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Text('YARA - LATTAFA', style: styleText3Mobile),
+                  ),
+                  const SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Text('''
+Yara de Lattafa Perfumes es una fragancia de la familia olfativa Ámbar Vainilla para Mujeres. 
+Yara se lanzó en 2020. Las Notas de Salida son orquídea, heliotropo y naranja tangerina; 
+las Notas de Corazón son Acuerdo goloso y frutas tropicales; 
+las Notas de Fondo son vainilla, almizcle y sándalo. Aroma Femenino. 
+Su longevidad y su estela son moderadas. Es un aroma Femenino.
+''', style: styleTextLocion),
+                  ),
+                  Row(
+                    children: [
+                      Image.asset('assets/images/yara_lattafa.jpg', height: 200, width: 200),
+                      Column(
+                        children: [
+                          
+                        ],
+                      )
+                    ],
+                  )
+
+                ],
+              ),
             ],
           ),
         ),

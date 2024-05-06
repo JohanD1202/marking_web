@@ -1497,6 +1497,78 @@ class CarShopMobileBolsos extends StatelessWidget {
     );
   }
 }
+
+
+
+class Aromas extends StatelessWidget {
+
+  final String image;
+  final String text;
+  final EdgeInsets padding;
+  // ignore: use_super_parameters
+  const Aromas({
+    Key? key, 
+    required this.image, 
+    required this.text,
+    required this.padding
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: padding,
+      child: Column(
+        children: [
+          Image.asset(image, height: 60),
+          Text(text, style: styleTextLocion),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+
+
+class MainChords extends StatelessWidget {
+
+  final double containerWidth;
+  final Color? containerColor;
+  final Color colorText;
+  final String text;
+  // ignore: use_super_parameters
+  const MainChords({
+    Key? key, 
+    required this.containerWidth, 
+    required this.containerColor, 
+    required this.colorText,
+    required this.text
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: containerWidth,
+      height: 20,
+      decoration: BoxDecoration(
+        color: containerColor,
+        borderRadius: const BorderRadius.horizontal(right: Radius.circular(5))
+      ),
+      child: Stack(
+        children: [
+          Row(
+            children: [
+              const Spacer(),
+              Text(text, style: TextStyle(color: colorText, fontSize: 14)),
+              const Spacer(),
+            ]
+          )
+        ],
+      ),
+    );
+  }
+}
 /*
 class CartNotifier extends ChangeNotifier {
   bool _isCartOpen = false;

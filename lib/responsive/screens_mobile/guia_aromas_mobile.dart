@@ -580,6 +580,169 @@ estela es pesada. Es un aroma Unisex.
                     containerColor10: Color.fromRGBO(158, 151, 142, 1),
                     colorText10: Colors.white70,
                     text10: 'terrosos',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Amber Oud - Al Haramain',
+                    description: '''
+Amber Oud de Al Haramain Perfumes es una
+fragancia de la familia olfativa Ámbar
+amaderada para Hombres y Mujeres.
+Amber Oud se lanzó en 2018. Tiene una
+longevidad duradera y su estela es pesada.
+Es un aroma Unisex.
+''',
+                    imageLocion: 'assets/images/amber_oud_haramain.webp',
+
+                    imageNotaSalida: 'assets/images/romero.jpg',
+                    textNotaSalida: 'Romero',
+
+                    imageNotaSalida2: 'assets/images/bergamota.jpg',
+                    textNotaSalida2: 'Bergamota',
+
+                    imageNotaSalida3: 'assets/images/cedro.jpg',
+                    textNotaSalida3: 'Cedro',
+
+                    imageNotaSalida4: 'assets/images/limon.jpg',
+                    textNotaSalida4: 'Limón',
+
+                    imageCorazon: 'assets/images/especias.jpg',
+                    textCorazon: 'Especias',
+
+                    imageCorazon2: 'assets/images/cedro.jpg',
+                    textCorazon2: 'Cedro',
+
+                    imageCorazon3: 'assets/images/madera_de_gaiac.jpg',
+                    textCorazon3: 'Madera de Gaiac',
+
+                    imageBase: 'assets/images/resinas.jpg',
+                    textBase: 'Resinas',
+
+                    imageBase2: 'assets/images/ambar.jpg',
+                    textBase2: 'Ámbar',
+
+                    imageBase3: 'assets/images/almizcle.jpg',
+                    textBase3: 'Almizcle',
+
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(188, 77, 16, 1), 
+                    colorText: Colors.white,
+                    text: 'ámbar',
+
+                    containerWidth2: 225,
+                    containerColor2: Color.fromRGBO(121, 71, 24, 1), 
+                    colorText2: Colors.white,
+                    text2: 'amaderado',
+
+                    containerWidth3: 165,
+                    containerColor3: Color.fromRGBO(95, 179, 160, 1),
+                    colorText3: Colors.black87,
+                    text3: 'aromático',
+
+                    containerWidth4: 155,
+                    containerColor4: Color.fromRGBO(250, 255, 124, 1),
+                    colorText4: Colors.black54,
+                    text4: 'cítrico',
+
+                    containerWidth5: 150,
+                    containerColor5: Color.fromRGBO(165, 216, 99, 1),
+                    colorText5: Colors.black54,
+                    text5: 'fresco especiado',
+
+                    containerWidth6: 135,
+                    containerColor6: Color.fromRGBO(244, 233, 233, 1),
+                    colorText6: Colors.black45,
+                    text6: 'atalcado',
+
+                    containerWidth7: 130,
+                    containerColor7: Color.fromRGBO(240, 231, 242, 1),
+                    colorText7: Colors.black45,
+                    text7: 'almizclado',
+
+                    containerWidth8: 125,
+                    containerColor8: Color.fromRGBO(224, 134, 104, 1),
+                    colorText8: Colors.white60,
+                    text8: 'cálido especiado',
+
+                    containerWidth9: 115,
+                    containerColor9: Color.fromRGBO(211, 188, 166, 1),
+                    colorText9: Colors.black45,
+                    text9: 'balsámico'
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'L\'Aventure - Al Haramain',
+                    description: '''
+L'Aventure de Al Haramain Perfumes es una
+fragancia de la familia olfativa Chipre
+Frutal para Hombres. L'Aventure se lanzó en 2016.
+Tiene una longevidad duradera y su estela
+es moderada. Es un aroma Masculino
+(Tiene su versión femenina) L' Aventure femme.
+''',
+                    imageLocion: 'assets/images/l_aventure_haramain.jpg',
+
+                    imageNotaSalida: 'assets/images/limon.jpg',
+                    textNotaSalida: 'Limón',
+
+                    imageNotaSalida2: 'assets/images/bergamota.jpg',
+                    textNotaSalida2: 'Bergamota',
+                    
+                    imageNotaSalida3: 'assets/images/elemi.jpg',
+                    textNotaSalida3: 'Elemí',
+
+                    imageCorazon: 'assets/images/notas_amaderadas.jpg',
+                    textCorazon: 'Notas Amaderadas',
+
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: 'Jazmín',
+
+                    imageCorazon3: 'assets/images/lirio_de_los_valles.jpg',
+                    textCorazon3: 'Lirio de los Valles',
+                    
+                    imageBase: 'assets/images/almizcle.jpg',
+                    textBase: 'Almizcle',
+                    
+                    imageBase2: 'assets/images/pachuli.jpg',
+                    textBase2: 'Pachulí',
+
+                    imageBase3: 'assets/images/ambar.jpg',
+                    textBase3: 'Ámbar',
+                    
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(249, 255, 82, 1),
+                    colorText: Colors.black,
+                    text: 'cítrico',
+                    
+                    containerWidth2: 160,
+                    containerColor2: Color.fromRGBO(114, 188, 172, 1),
+                    colorText2: Colors.black54,
+                    text2: 'aromático',
+
+                    containerWidth3: 155,
+                    containerColor3: Color.fromRGBO(162, 128, 95, 1),
+                    colorText3: Colors.white70,
+                    text3: 'amaderado',
+
+                    containerWidth4: 135,
+                    containerColor4: Color.fromRGBO(240, 232, 242, 1),
+                    colorText4: Colors.black45,
+                    text4: 'almizclado',
+                    
+                    containerWidth5: 130,
+                    containerColor5: Color.fromRGBO(184, 224, 132, 1),
+                    colorText5: Colors.black45,
+                    text5: 'fresco especiado',
+                    
+                    containerWidth6: 125,
+                    containerColor6: Color.fromRGBO(245, 236, 227, 1),
+                    colorText6: Colors.black45,
+                    text6: 'atalcado',
+                    
+                    containerWidth7: 125,
+                    containerColor7: Color.fromRGBO(245, 248, 252, 1),
+                    colorText7: Colors.black45,
+                    text7: 'floral blanco',
                   )
                 ],
               ),
@@ -602,12 +765,20 @@ class Aromas100 extends StatelessWidget {
   final String textNotaSalida2;
   final String imageNotaSalida3;
   final String textNotaSalida3;
+  final String? imageNotaSalida4;
+  final String? textNotaSalida4;
   final String imageCorazon;
   final String textCorazon;
+  final String? imageCorazon2;
+  final String? textCorazon2;
+  final String? imageCorazon3;
+  final String? textCorazon3;
   final String imageBase;
   final String textBase;
   final String imageBase2;
   final String textBase2;
+  final String? imageBase3;
+  final String? textBase3;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -636,18 +807,18 @@ class Aromas100 extends StatelessWidget {
   final Color? containerColor7;
   final Color colorText7;
   final String text7;
-  final double containerWidth8;
+  final double? containerWidth8;
   final Color? containerColor8;
-  final Color colorText8;
-  final String text8;
-  final double containerWidth9;
+  final Color? colorText8;
+  final String? text8;
+  final double? containerWidth9;
   final Color? containerColor9;
-  final Color colorText9;
-  final String text9;
-  final double containerWidth10;
+  final Color? colorText9;
+  final String? text9;
+  final double? containerWidth10;
   final Color? containerColor10;
-  final Color colorText10;
-  final String text10;
+  final Color? colorText10;
+  final String? text10;
   
   // ignore: use_super_parameters
   const Aromas100({
@@ -660,13 +831,21 @@ class Aromas100 extends StatelessWidget {
     required this.imageNotaSalida2, 
     required this.textNotaSalida2, 
     required this.imageNotaSalida3, 
-    required this.textNotaSalida3, 
+    required this.textNotaSalida3,
+    this.imageNotaSalida4,
+    this.textNotaSalida4,
     required this.imageCorazon, 
     required this.textCorazon, 
+    this.imageCorazon2,
+    this.textCorazon2,
+    this.imageCorazon3,
+    this.textCorazon3,
     required this.imageBase, 
     required this.textBase, 
     required this.imageBase2, 
-    required this.textBase2, 
+    required this.textBase2,
+    this.imageBase3,
+    this.textBase3,
     required this.containerWidth, 
     required this.containerColor, 
     required this.colorText, 
@@ -695,18 +874,18 @@ class Aromas100 extends StatelessWidget {
     required this.containerColor7, 
     required this.colorText7, 
     required this.text7, 
-    required this.containerWidth8, 
-    required this.containerColor8, 
-    required this.colorText8, 
-    required this.text8, 
-    required this.containerWidth9, 
-    required this.containerColor9, 
-    required this.colorText9, 
-    required this.text9, 
-    required this.containerWidth10, 
-    required this.containerColor10, 
-    required this.colorText10, 
-    required this.text10,
+    this.containerWidth8, 
+    this.containerColor8, 
+    this.colorText8, 
+    this.text8, 
+    this.containerWidth9, 
+    this.containerColor9, 
+    this.colorText9, 
+    this.text9, 
+    this.containerWidth10, 
+    this.containerColor10, 
+    this.colorText10, 
+    this.text10,
   }) : super(key: key);
 
   @override
@@ -743,6 +922,12 @@ class Aromas100 extends StatelessWidget {
             Aromas(
               image: imageNotaSalida3,
               text: textNotaSalida3,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            if (imageNotaSalida4 != null && textNotaSalida4 != null)
+            Aromas(
+              image: imageNotaSalida4!,
+              text: textNotaSalida4!,
               padding: const EdgeInsets.only(right: 0),
             ),
           ],
@@ -759,6 +944,18 @@ class Aromas100 extends StatelessWidget {
               image: imageCorazon,
               text: textCorazon,
               padding: const EdgeInsets.only(left: 30, right: 15),
+            ),
+            if (imageCorazon2 != null && textCorazon2 != null)
+            Aromas(
+              image: imageCorazon2!,
+              text: textCorazon2!,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            if (imageCorazon3 != null && textCorazon3 != null)
+            Aromas(
+              image: imageCorazon3!,
+              text: textCorazon3!,
+              padding: const EdgeInsets.only(right: 15),
             ),
           ],
         ),
@@ -778,7 +975,13 @@ class Aromas100 extends StatelessWidget {
             Aromas(
               image: imageBase2,
               text: textBase2,
-              padding: const EdgeInsets.only(right: 0),
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            if (imageBase3 != null && textBase3 != null)
+            Aromas(
+              image: imageBase3!,
+              text: textBase3!,
+              padding: const EdgeInsets.only(right: 15),
             ),
           ],
         ),
@@ -836,23 +1039,41 @@ class Aromas100 extends StatelessWidget {
                   colorText: colorText7,
                   text: text7,
                 ),
+                if (
+                  containerWidth8 != null && 
+                  containerColor8 != null &&
+                  colorText8 != null &&
+                  text8 != null  
+                )
                 MainChords(
-                  containerWidth: containerWidth8,
-                  containerColor: containerColor8,
-                  colorText: colorText8,
-                  text: text8,
+                  containerWidth: containerWidth8!,
+                  containerColor: containerColor8!,
+                  colorText: colorText8!,
+                  text: text8!,
                 ),
+                if (
+                  containerWidth9 != null && 
+                  containerColor9 != null &&
+                  colorText9 != null &&
+                  text9 != null  
+                )
                 MainChords(
-                  containerWidth: containerWidth9,
-                  containerColor: containerColor9,
-                  colorText: colorText9,
-                  text: text9,
+                  containerWidth: containerWidth9!,
+                  containerColor: containerColor9!,
+                  colorText: colorText9!,
+                  text: text9!,
                 ),
+                if (
+                  containerWidth10 != null && 
+                  containerColor10 != null &&
+                  colorText10 != null &&
+                  text10 != null  
+                )
                 MainChords(
-                  containerWidth: containerWidth10,
-                  containerColor: containerColor10,
-                  colorText: colorText10,
-                  text: text10,
+                  containerWidth: containerWidth10!,
+                  containerColor: containerColor10!,
+                  colorText: colorText10!,
+                  text: text10!,
                 ),
                 const SizedBox(height: 30)
               ],

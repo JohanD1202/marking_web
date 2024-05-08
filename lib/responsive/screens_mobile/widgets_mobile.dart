@@ -1520,7 +1520,7 @@ class Aromas extends StatelessWidget {
       child: Column(
         children: [
           Image.asset(image, height: 60),
-          Text(text, style: styleTextLocion),
+          Text(text, style: styleTextLocion, maxLines: 2),
         ],
       ),
     );

@@ -1003,6 +1003,7 @@ Rosa''',
                     colorText10: Colors.white70,
                     text10: 'oud',
                   ),
+                  //TODO:
                   const Aromas100(
                     title: 'Il Femme - ILMIN',
                     description: '''
@@ -1082,103 +1083,533 @@ de Cachemira''',
                     colorText9: Colors.black54,
                     text9: 'afrutados',
                   ),
+                  //TODO:
                   const Aromas100(
-                      title: 'Arabians Tonka - Montale',
-                      description: '''
+                    title: 'Arabians Tonka - Montale',
+                    description: '''
 Arabians Tonka de Montale es una fragancia
 de la familia olfativa Ámbar Amaderada para
 Hombres y Mujeres. Arabians Tonka se lanzó
 en 2019. Tiene una longevidad muy duradera
 y su estela es enorme. Es un aroma Unisex.
 ''',
-                      imageLocion: 'assets/images/arabians_tonka_montale.webp',
+                    imageLocion: 'assets/images/arabians_tonka_montale.webp',
+                    imageNotaSalida: 'assets/images/azafran.jpg',
+                    textNotaSalida: 'Azafrán',
+                    imageNotaSalida2: 'assets/images/bergamota.jpg',
+                    textNotaSalida2: 'Bergamota',
+                    imageCorazon: 'assets/images/madera_de_oud.jpg',
+                    textCorazon: '''
+Madera
+de Oud''',
+                    imageCorazon2: 'assets/images/rosa.jpg',
+                    textCorazon2: '''
+Rosa de
+Bulgaria''',
+                    imageBase: 'assets/images/cumarina.jpg',
+                    textBase: '''Haba
+Tonka''',
+                    imageBase2: 'assets/images/caña_de_azucar.jpg',
+                    textBase2: '''
+Caña de
+Azúcar''',
+                    imageBase3: 'assets/images/ambar.jpg',
+                    textBase3: 'Ámbar',
+                    imageBase4: 'assets/images/almizcle.jpg',
+                    textBase4: '''
+Almizcle
+Blanco''',
+                    imageBase5: 'assets/images/musgo_de_roble.jpg',
+                    textBase5: '''Musgo
+de Roble''',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(238, 54, 59, 1),
+                    colorText: Colors.white,
+                    text: 'dulce',
+                    containerWidth2: 210,
+                    containerColor2: Color.fromRGBO(255, 254, 198, 1),
+                    colorText2: Colors.black,
+                    text2: 'avainillado',
+                    containerWidth3: 200,
+                    containerColor3: Color.fromRGBO(197, 101, 48, 1),
+                    colorText3: Colors.white,
+                    text3: 'ámbar',
+                    containerWidth4: 170,
+                    containerColor4: Color.fromRGBO(216, 101, 63, 1),
+                    colorText4: Colors.white70,
+                    text4: 'cálido especiado',
+                    containerWidth5: 165,
+                    containerColor5: Color.fromRGBO(128, 114, 106, 1),
+                    colorText5: Colors.white70,
+                    text5: 'oud',
+                    containerWidth6: 155,
+                    containerColor6: Color.fromRGBO(254, 80, 153, 1),
+                    colorText6: Colors.white70,
+                    text6: 'rosas',
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(241, 232, 242, 1),
+                    colorText7: Colors.black54,
+                    text7: 'almizclado',
+                    containerWidth8: 130,
+                    containerColor8: Color.fromRGBO(144, 202, 189, 1),
+                    colorText8: Colors.black54,
+                    text8: 'aromático',
+                    containerWidth9: 130,
+                    containerColor9: Color.fromRGBO(197, 211, 215, 1),
+                    colorText9: Colors.black54,
+                    text9: 'metálico',
+                    containerWidth10: 125,
+                    containerColor10: Color.fromRGBO(246, 237, 228, 1),
+                    colorText10: Colors.black54,
+                    text10: 'atalcado',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Intense Cafe - Montale',
+                    description: '''
+Intense Cafe de Montale es una fragancia
+de la familia olfativa Ámbar Vainilla para
+Hombres y Mujeres. Intense Cafe se lanzó
+en 2013. Tiene una longevidad duradera y
+su estela es pesada. Es un aroma Unisex.
+''',
+                    imageLocion: 'assets/images/intense_cafe_montale.jpg',
+                    imageNotaSalida: 'assets/images/notas_florales.jpg',
+                    textNotaSalida: 'Notas Florales',
+                    imageCorazon: 'assets/images/rosa.jpg',
+                    textCorazon: 'Rosa',
+                    imageCorazon2: 'assets/images/cafe.jpg',
+                    textCorazon2: 'Café',
+                    imageBase: 'assets/images/vainilla.jpg',
+                    textBase: 'Vainilla',
+                    imageBase2: 'assets/images/almizcle.jpg',
+                    textBase2: 'Almizcle Blanco',
+                    imageBase3: 'assets/images/ambar.jpg',
+                    textBase3: 'Ámbar',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(254, 1, 107, 1),
+                    colorText: Colors.white,
+                    text: 'rosas',
+                    containerWidth2: 210,
+                    containerColor2: Color.fromRGBO(255, 254, 198, 1),
+                    colorText2: Colors.black,
+                    text2: 'avainillado',
+                    containerWidth3: 190,
+                    containerColor3: Color.fromRGBO(113, 97, 72, 1),
+                    colorText3: Colors.white,
+                    text3: 'café',
+                    containerWidth4: 185,
+                    containerColor4: Color.fromRGBO(255, 128, 165, 1),
+                    colorText4: Colors.black87,
+                    text4: 'florales',
+                    containerWidth5: 170,
+                    containerColor5: Color.fromRGBO(243, 231, 219, 1),
+                    colorText5: Colors.black54,
+                    text5: 'atalcado',
+                    containerWidth6: 160,
+                    containerColor6: Color.fromRGBO(239, 229, 241, 1),
+                    colorText6: Colors.black54,
+                    text6: 'almizclado',
+                    containerWidth7: 160,
+                    containerColor7: Color.fromRGBO(222, 123, 91, 1),
+                    colorText7: Colors.white60,
+                    text7: 'cálido especiado',
+                    containerWidth8: 150,
+                    containerColor8: Color.fromRGBO(215, 151, 115, 1),
+                    colorText8: Colors.white60,
+                    text8: 'ámbar',
+                    containerWidth9: 140,
+                    containerColor9: Color.fromRGBO(246, 149, 152, 1),
+                    colorText9: Colors.white60,
+                    text9: 'dulce',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Baccarat Rouge 540 - Francis Kurkdjian',
+                    description: '''
+Baccarat Rouge 540 de Maison Francis
+Kurkdjian es una fragancia de la familia
+olfativa Ámbar Floral para Hombres y Mujeres.
+Baccarat Rouge 540 se lanzó en 2015. Su
+longevidad es muy duradera y su estela 
+es pesada. Es un aroma Unisex.
+''',
+                    imageLocion:
+                        'assets/images/baccarat_rouge_francis_kurkdjian.webp',
+                    imageNotaSalida: 'assets/images/azafran.jpg',
+                    textNotaSalida: 'Azafrán',
+                    imageNotaSalida2: 'assets/images/jazmin.jpg',
+                    textNotaSalida2: 'Jazmín',
+                    imageCorazon: 'assets/images/amberwood.jpg',
+                    textCorazon: 'Amberwood',
+                    imageCorazon2: 'assets/images/ambar_gris.jpg',
+                    textCorazon2: 'Ámbar Gris',
+                    imageBase: 'assets/images/resina_de_abeto.jpg',
+                    textBase: 'Resina de Abeto',
+                    imageBase2: 'assets/images/cedro.jpg',
+                    textBase2: 'Cedro',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(119, 68, 20, 1),
+                    colorText: Colors.white,
+                    text: 'amaderado',
+                    containerWidth2: 215,
+                    containerColor2: Color.fromRGBO(193, 90, 33, 1),
+                    colorText2: Colors.white,
+                    text2: 'ámbar',
+                    containerWidth3: 170,
+                    containerColor3: Color.fromRGBO(217, 104, 67, 1),
+                    colorText3: Colors.white,
+                    text3: 'cálido especiado',
+                    containerWidth4: 130,
+                    containerColor4: Color.fromRGBO(187, 225, 137, 1),
+                    colorText4: Colors.black54,
+                    text4: 'fresco especiado',
+                    containerWidth5: 130,
+                    containerColor5: Color.fromRGBO(146, 203, 191, 1),
+                    colorText5: Colors.black54,
+                    text5: 'aromático',
+                    containerWidth6: 130,
+                    containerColor6: Color.fromRGBO(198, 212, 216, 1),
+                    colorText6: Colors.black54,
+                    text6: 'metálico',
+                    containerWidth7: 128,
+                    containerColor7: Color.fromRGBO(245, 248, 252, 1),
+                    colorText7: Colors.black54,
+                    text7: 'floral blanco',
+                    containerWidth8: 128,
+                    containerColor8: Color.fromRGBO(195, 159, 130, 1),
+                    colorText8: Colors.white60,
+                    text8: 'aromático',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Oud Saffron - Orientica',
+                    description: '''
+Oud Saffron de Orientica Premium es una
+fragancia de la familia olfativa Amaderada
+Especiada para Hombres y Mujeres. Oud
+Saffron se lanzó en 2021. Su longevidad
+es muy duradera y su estela es pesada.
+Es un aroma Unisex.
+''',
+                    imageLocion: 'assets/images/oud_saffron_orientica.webp',
+                    imageNotaSalida: 'assets/images/notas_orientales.jpg',
+                    textNotaSalida: 'Notas Orientales',
+                    imageNotaSalida2: 'assets/images/vainilla.jpg',
+                    textNotaSalida2: 'Vainilla',
+                    imageCorazon: 'assets/images/azafran.jpg',
+                    textCorazon: 'Azafrán',
+                    imageCorazon2: 'assets/images/pachuli.jpg',
+                    textCorazon2: 'Pachulí',
+                    imageBase: 'assets/images/madera_de_oud.jpg',
+                    textBase: 'Madera de Oud',
+                    imageBase2: 'assets/images/madera_de_gaiac.jpg',
+                    textBase2: 'Madera de Gaiac',
+                    imageBase3: 'assets/images/almizcle.jpg',
+                    textBase3: 'Almizcle',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(204, 51, 0, 1),
+                    colorText: Colors.white,
+                    text: 'cálido especiado',
+                    containerWidth2: 150,
+                    containerColor2: Color.fromRGBO(210, 135, 94, 1),
+                    colorText2: Colors.white70,
+                    text2: 'ámbar',
+                    containerWidth3: 140,
+                    containerColor3: Color.fromRGBO(239, 230, 241, 1),
+                    colorText3: Colors.black54,
+                    text3: 'almizclado',
+                    containerWidth4: 140,
+                    containerColor4: Color.fromRGBO(146, 134, 127, 1),
+                    colorText4: Colors.white70,
+                    text4: 'oud',
+                    containerWidth5: 140,
+                    containerColor5: Color.fromRGBO(169, 137, 106, 1),
+                    colorText5: Colors.white70,
+                    text5: 'amaderado',
+                    containerWidth6: 140,
+                    containerColor6: Color.fromRGBO(255, 254, 215, 1),
+                    colorText6: Colors.black54,
+                    text6: 'avainillado',
+                    containerWidth7: 130,
+                    containerColor7: Color.fromRGBO(245, 236, 226, 1),
+                    colorText7: Colors.black54,
+                    text7: 'atalcado',
+                    containerWidth8: 125,
+                    containerColor8: Color.fromRGBO(198, 212, 216, 1),
+                    colorText8: Colors.black54,
+                    text8: 'metálico',
+                    containerWidth9: 120,
+                    containerColor9: Color.fromRGBO(173, 174, 146, 1),
+                    colorText9: Colors.white60,
+                    text9: 'pachulí',
+                  ),
+                  //TODO: AROMAS HOMBRE
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30, bottom: 20),
+                    child: Text('Aromas de Hombre', style: styleText3Mobile),
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: '212 Heroes - Carolina Herrera',
+                    description: '''
+212 Heroes de Carolina Herrera es una
+fragancia de la familia olfativa Aromática
+Frutal para Hombres. 212 Heroes se lanzó
+en 2021. Tiene una longevidad moderada y su
+estela es moderada. Es un aroma de Hombre.
+''',
+                    imageLocion:
+                        'assets/images/212_heroes_carolina_herrera.png',
+                    imageNotaSalida: 'assets/images/pera.jpg',
+                    textNotaSalida: 'Pera',
+                    imageNotaSalida2: 'assets/images/marihuana.jpg',
+                    textNotaSalida2: 'Marihuana (cannabis)',
+                    imageNotaSalida3: 'assets/images/jengibre.jpg',
+                    textNotaSalida3: 'Jengibre',
+                    imageCorazon: 'assets/images/geranio.jpg',
+                    textCorazon: 'Geranio',
+                    imageCorazon2: 'assets/images/salvia.jpg',
+                    textCorazon2: 'Salvia',
+                    imageBase: 'assets/images/almizcle.jpg',
+                    textBase: 'Almizcle',
+                    imageBase2: 'assets/images/cuero.jpg',
+                    textBase2: 'Cuero',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(55, 160, 137, 1),
+                    colorText: Colors.black,
+                    text: 'aromático',
+                    containerWidth2: 190,
+                    containerColor2: Color.fromRGBO(252, 101, 72, 1),
+                    colorText2: Colors.black,
+                    text2: 'afrutados',
+                    containerWidth3: 190,
+                    containerColor3: Color.fromRGBO(130, 178, 146, 1),
+                    colorText3: Colors.black,
+                    text3: 'herbal',
+                    containerWidth4: 170,
+                    containerColor4: Color.fromRGBO(217, 103, 65, 1),
+                    colorText4: Colors.white70,
+                    text4: 'cálido especiado',
+                    containerWidth5: 165,
+                    containerColor5: Color.fromRGBO(118, 169, 106, 1),
+                    colorText5: Colors.white70,
+                    text5: 'cannabis',
+                    containerWidth6: 165,
+                    containerColor6: Color.fromRGBO(242, 109, 113, 1),
+                    colorText6: Colors.white70,
+                    text6: 'dulce',
+                    containerWidth7: 150,
+                    containerColor7: Color.fromRGBO(238, 228, 240, 1),
+                    colorText7: Colors.black54,
+                    text7: 'almizclado',
+                    containerWidth8: 150,
+                    containerColor8: Color.fromRGBO(187, 237, 242, 1),
+                    colorText8: Colors.black54,
+                    text8: 'fresco',
+                    containerWidth9: 140,
+                    containerColor9: Color.fromRGBO(175, 220, 116, 1),
+                    colorText9: Colors.black54,
+                    text9: 'fresco especiado',
+                    containerWidth10: 140,
+                    containerColor10: Color.fromRGBO(154, 222, 236, 1),
+                    colorText10: Colors.black54,
+                    text10: 'acuático',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: '212 VIP Men - Carolina Herrera',
+                    description: '''
+212 VIP Men de Carolina Herrera es una
+fragancia de la familia olfativa Ámbar
+Amaderada para Hombres. 212 VIP Men se
+lanzó en 2011. Tiene una longevidad
+duradera y su estela es pesada. 
+Es un aroma Masculino.
+''',
+                    imageLocion:
+                        'assets/images/212_vip_men_carolina_herrera.png',
+                    imageNotaSalida: 'assets/images/maracuya.jpg',
+                    textNotaSalida: 'Maracuyá',
+                    imageNotaSalida2: 'assets/images/lima.jpg',
+                    textNotaSalida2: 'Lima',
+                    imageNotaSalida3: 'assets/images/pimienta.jpg',
+                    textNotaSalida3: 'Pimienta',
+                    imageNotaSalida4: 'assets/images/jengibre.jpg',
+                    textNotaSalida4: 'Jengibre',
+                    imageCorazon: 'assets/images/vodka.jpg',
+                    textCorazon: 'Vodka',
+                    imageCorazon2: 'assets/images/ginebra.jpg',
+                    textCorazon2: 'Ginebra',
+                    imageCorazon3: 'assets/images/menta.jpg',
+                    textCorazon3: 'Menta',
+                    imageCorazon4: 'assets/images/especias.jpg',
+                    textCorazon4: 'Especias',
+                    imageBase: 'assets/images/ambar.jpg',
+                    textBase: 'Ámbar',
+                    imageBase2: 'assets/images/cuero.jpg',
+                    textBase2: 'Cuero',
+                    imageBase3: 'assets/images/notas_amaderadas.jpg',
+                    textBase3: 'Notas Amaderadas',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(55, 160, 137, 1),
+                    colorText: Colors.black,
+                    text: 'aromático',
+                    containerWidth2: 220,
+                    containerColor2: Color.fromRGBO(244, 250, 248, 1),
+                    colorText2: Colors.black,
+                    text2: 'vodka',
+                    containerWidth3: 220,
+                    containerColor3: Color.fromRGBO(206, 59, 10, 1),
+                    colorText3: Colors.white,
+                    text3: 'cálido especiado',
+                    containerWidth4: 200,
+                    containerColor4: Color.fromRGBO(144, 206, 62, 1),
+                    colorText4: Colors.black87,
+                    text4: 'fresco especiado',
+                    containerWidth5: 190,
+                    containerColor5: Color.fromRGBO(138, 94, 53, 1),
+                    colorText5: Colors.white70,
+                    text5: 'amaderado',
+                    containerWidth6: 175,
+                    containerColor6: Color.fromRGBO(62, 163, 74, 1),
+                    colorText6: Colors.white70,
+                    text6: 'verde',
+                    containerWidth7: 170,
+                    containerColor7: Color.fromRGBO(248, 193, 65, 1),
+                    colorText7: Colors.black54,
+                    text7: 'tropical',
+                    containerWidth8: 165,
+                    containerColor8: Color.fromRGBO(250, 255, 126, 1),
+                    colorText8: Colors.black54,
+                    text8: 'cítrico',
+                    containerWidth9: 160,
+                    containerColor9: Color.fromRGBO(242, 109, 113, 1),
+                    colorText9: Colors.white60,
+                    text9: 'dulce',
+                    containerWidth10: 160,
+                    containerColor10: Color.fromRGBO(253, 125, 100, 1),
+                    colorText10: Colors.black45,
+                    text10: 'afrutados',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                      title: 'CH Men - Carolina Herrera',
+                      description: '''
+CH Men de Carolina Herrera es una
+fragancia de la familia olfativa
+Ámbar Especiada para Hombres.
+CH Men se lanzó en 2009. Su longevidad
+y su estela son moderadas.
+Es un Aroma Masculino.
+''',
+                      imageLocion: 'assets/images/ch_carolina_herrera.webp',
 
-                      imageNotaSalida: 'assets/images/azafran.jpg',
-                      textNotaSalida: 'Azafrán',
+                      imageNotaSalida: 'assets/images/hierba.jpg',
+                      textNotaSalida: 'Hierba',
 
                       imageNotaSalida2: 'assets/images/bergamota.jpg',
                       textNotaSalida2: 'Bergamota',
 
-                      imageCorazon: 'assets/images/madera_de_oud.jpg',
+                      imageNotaSalida3: 'assets/images/toronja.jpg',
+                      textNotaSalida3: 'Toronja',
+
+                      imageCorazon: 'assets/images/notas_amaderadas.jpg',
                       textCorazon: '''
-Madera
-de Oud''',
+Nota
+Amaderada''',
 
-                      imageCorazon2: 'assets/images/rosa.jpg',
+                      imageCorazon2: 'assets/images/nuez_moscada.jpg',
                       textCorazon2: '''
-Rosa de
-Bulgaria''',
+Nuez
+Moscada''',
 
-                      imageBase: 'assets/images/cumarina.jpg',
-                      textBase: '''Haba
-Tonka''',
+                      imageCorazon3: 'assets/images/violeta.jpg',
+                      textCorazon3: 'Violeta',
 
-                      imageBase2: 'assets/images/caña_de_azucar.jpg',
-                      textBase2: '''
-Caña de
-Azúcar''',
+                      imageCorazon4: 'assets/images/azafran.jpg',
+                      textCorazon4: 'Azafrán',
 
-                      imageBase3: 'assets/images/ambar.jpg',
-                      textBase3: 'Ámbar',
+                      imageCorazon5: 'assets/images/jazmin.jpg',
+                      textCorazon5: 'Jazmín',
 
-                      imageBase4: 'assets/images/almizcle.jpg',
-                      textBase4: '''
-Almizcle
-Blanco''',
+                      imageBase: 'assets/images/caña_de_azucar.jpg',
+                      textBase: 'Azúcar',
 
-                      imageBase5: 'assets/images/musgo_de_roble.jpg',
-                      textBase5: '''Musgo
-de Roble''',
+                      imageBase2: 'assets/images/cuero.jpg',
+                      textBase2: 'Cuero',
+
+                      imageBase3: 'assets/images/vainilla.jpg',
+                      textBase3: 'Vainilla',
+
+                      imageBase4: 'assets/images/ambar.jpg',
+                      textBase4: 'Ámbar',
+
+                      imageBase5: 'assets/images/madera_de_cachemira.jpg',
+                      textBase5: '''
+Madera de
+Cachemira''',
+
+                      imageBase6: 'assets/images/sandalo.jpg',
+                      textBase6: 'Sándalo',
+
+                      imageBase7: 'assets/images/musgo_de_roble.jpg',
+                      textBase7: '''
+Musgo de
+Roble''',
+
+                      imageBase8: 'assets/images/vetiver.jpg',
+                      textBase8: 'Vetiver',
 
                       containerWidth: 230,
-                      containerColor: Color.fromRGBO(238, 54, 59, 1),
+                      containerColor: Color.fromRGBO(120, 72, 58, 1),
                       colorText: Colors.white,
-                      text: 'dulce',
+                      text: 'cuerod',
 
-                      containerWidth2: 210,
-                      containerColor2: Color.fromRGBO(255, 254, 198, 1),
-                      colorText2: Colors.black,
-                      text2: 'avainillado',
-                      
+                      containerWidth2: 200,
+                      containerColor2: Color.fromRGBO(240, 77, 81, 1),
+                      colorText2: Colors.white,
+                      text2: 'dulce',
+
                       containerWidth3: 200,
-                      containerColor3: Color.fromRGBO(197, 101, 48, 1),
-                      colorText3: Colors.white,
-                      text3: 'ámbar',
+                      containerColor3: Color.fromRGBO(255, 254, 199, 1),
+                      colorText3: Colors.black,
+                      text3: 'avainillado',
 
-                      containerWidth4: 170,
-                      containerColor4: Color.fromRGBO(216, 101, 63, 1),
-                      colorText4: Colors.white70,
-                      text4: 'cálido especiado',
+                      containerWidth4: 180,
+                      containerColor4: Color.fromRGBO(146, 105, 67, 1),
+                      colorText4: Colors.white,
+                      text4: 'amaderado',
 
                       containerWidth5: 165,
-                      containerColor5: Color.fromRGBO(128, 114, 106, 1),
-                      colorText5: Colors.white70,
-                      text5: 'oud',
+                      containerColor5: Color.fromRGBO(243, 231, 218, 1),
+                      colorText5: Colors.black54,
+                      text5: 'atalcado',
 
                       containerWidth6: 155,
-                      containerColor6: Color.fromRGBO(254, 80, 153, 1),
+                      containerColor6: Color.fromRGBO(98, 180, 108, 1),
                       colorText6: Colors.white70,
-                      text6: 'rosas',
+                      text6: 'verde',
 
-                      containerWidth7: 135,
-                      containerColor7: Color.fromRGBO(241, 232, 242, 1),
-                      colorText7: Colors.black54,
-                      text7: 'almizclado',
+                      containerWidth7: 155,
+                      containerColor7: Color.fromRGBO(182, 140, 104, 1),
+                      colorText7: Colors.white70,
+                      text7: 'animálico',
 
-                      containerWidth8: 130,
-                      containerColor8: Color.fromRGBO(144, 202, 189, 1),
-                      colorText8: Colors.black54,
-                      text8: 'aromático',
+                      containerWidth8: 150,
+                      containerColor8: Color.fromRGBO(177, 221, 121, 1),
+                      colorText8: Colors.black45,
+                      text8: 'fresco especiado',
 
-                      containerWidth9: 130,
-                      containerColor9: Color.fromRGBO(197, 211, 215, 1),
-                      colorText9: Colors.black54,
-                      text9: 'metálico',
+                      containerWidth9: 145,
+                      containerColor9: Color.fromRGBO(251, 255, 152, 1),
+                      colorText9: Colors.black45,
+                      text9: 'cítrico',
 
-                      containerWidth10: 125,
-                      containerColor10: Color.fromRGBO(246, 237, 228, 1),
-                      colorText10: Colors.black54,
-                      text10: 'atalcado',
+                      containerWidth10: 145,
+                      containerColor10: Color.fromRGBO(195, 239, 244, 1),
+                      colorText10: Colors.black45,
+                      text10: 'fresco',
                     ),
                 ],
               ),
@@ -1196,8 +1627,8 @@ class Aromas100 extends StatelessWidget {
   final String imageLocion;
   final String imageNotaSalida;
   final String textNotaSalida;
-  final String imageNotaSalida2;
-  final String textNotaSalida2;
+  final String? imageNotaSalida2;
+  final String? textNotaSalida2;
   final String? imageNotaSalida3;
   final String? textNotaSalida3;
   final String? imageNotaSalida4;
@@ -1232,6 +1663,10 @@ class Aromas100 extends StatelessWidget {
   final String? textBase5;
   final String? imageBase6;
   final String? textBase6;
+  final String? imageBase7;
+  final String? textBase7;
+  final String? imageBase8;
+  final String? textBase8;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -1281,8 +1716,8 @@ class Aromas100 extends StatelessWidget {
     required this.imageLocion,
     required this.imageNotaSalida,
     required this.textNotaSalida,
-    required this.imageNotaSalida2,
-    required this.textNotaSalida2,
+    this.imageNotaSalida2,
+    this.textNotaSalida2,
     this.imageNotaSalida3,
     this.textNotaSalida3,
     this.imageNotaSalida4,
@@ -1317,6 +1752,10 @@ class Aromas100 extends StatelessWidget {
     this.textBase5,
     this.imageBase6,
     this.textBase6,
+    this.imageBase7,
+    this.textBase7,
+    this.imageBase8,
+    this.textBase8,
     required this.containerWidth,
     required this.containerColor,
     required this.colorText,
@@ -1385,11 +1824,12 @@ class Aromas100 extends StatelessWidget {
               text: textNotaSalida,
               padding: const EdgeInsets.only(left: 30, right: 15),
             ),
-            Aromas(
-              image: imageNotaSalida2,
-              text: textNotaSalida2,
-              padding: const EdgeInsets.only(right: 15),
-            ),
+            if (imageNotaSalida2 != null && textNotaSalida2 != null)
+              Aromas(
+                image: imageNotaSalida2!,
+                text: textNotaSalida2!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
             if (imageNotaSalida3 != null && textNotaSalida3 != null)
               Aromas(
                 image: imageNotaSalida3!,
@@ -1523,6 +1963,18 @@ class Aromas100 extends StatelessWidget {
                 image: imageBase6!,
                 text: textBase6!,
                 padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageBase7 != null && textBase7 != null)
+              Aromas(
+                image: imageBase7!,
+                text: textBase7!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageBase8 != null && textBase8 != null)
+              Aromas(
+                image: imageBase8!,
+                text: textBase8!,
+                padding: const EdgeInsets.only(right: 0),
               ),
           ],
         ),

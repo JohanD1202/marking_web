@@ -912,119 +912,274 @@ Es un aroma Unisex.
                       const Spacer(),
                     ],
                   ),
+                  const SizedBox(height: 30),
                   //TODO:
                   const Aromas100(
-                      title: 'Il Kakuno - ILMIN',
-                      description: '''
+                    title: 'Il Kakuno - ILMIN',
+                    description: '''
 Il Kakuno de ILMIN Parfums es una fragancia
 de la familia olfativa para Hombres y Mujeres.
 Il Kakuno se lanzó en 2018. Tiene una
 longevidad moderada y su estela es moderada.
 Es un aroma Unisex.
 ''',
-                      imageLocion: 'assets/images/il_kakuno_ilmin.jpg',
-
-                      imageNotaSalida: 'assets/images/caramelo.jpg',
-                      textNotaSalida: 'Caramelo',
-
-                      imageNotaSalida2: 'assets/images/bayas_silvestres.jpg',
-                      textNotaSalida2: '''
+                    imageLocion: 'assets/images/il_kakuno_ilmin.jpg',
+                    imageNotaSalida: 'assets/images/caramelo.jpg',
+                    textNotaSalida: 'Caramelo',
+                    imageNotaSalida2: 'assets/images/bayas_silvestres.jpg',
+                    textNotaSalida2: '''
 Bayas
-Silvestres
+Silvestres''',
+                    imageNotaSalida3: 'assets/images/pimienta_rosa.jpg',
+                    textNotaSalida3: '''
+Pimienta
+Rosa''',
+                    imageNotaSalida4: 'assets/images/durazno.jpg',
+                    textNotaSalida4: 'Durazno',
+                    imageNotaSalida5: 'assets/images/ladano.jpg',
+                    textNotaSalida5: 'Ládano',
+                    imageNotaSalida6: 'assets/images/fresa.jpg',
+                    textNotaSalida6: 'Fresa',
+                    imageCorazon: 'assets/images/cipriol.jpg',
+                    textCorazon: 'Cipriol',
+                    imageCorazon2: 'assets/images/jengibre.jpg',
+                    textCorazon2: 'Jengibre',
+                    imageCorazon3: 'assets/images/cuero.jpg',
+                    textCorazon3: 'Cuero',
+                    imageCorazon4: 'assets/images/rosa.jpg',
+                    textCorazon4: 'Rosa',
+                    imageCorazon5: 'assets/images/pachuli.jpg',
+                    textCorazon5: 'Pachulí',
+                    imageCorazon6: 'assets/images/azafran.jpg',
+                    textCorazon6: 'Azafrán',
+                    imageBase: 'assets/images/balsamo.jpg',
+                    textBase: 'Bálsamo',
+                    imageBase2: 'assets/images/madera_de_oud.jpg',
+                    textBase2: 'Madera de Oud',
+                    imageBase3: 'assets/images/benjui.jpg',
+                    textBase3: 'Benjuí',
+                    imageBase4: 'assets/images/vainilla.jpg',
+                    textBase4: 'Vainilla',
+                    imageBase5: 'assets/images/almizcle.jpg',
+                    textBase5: 'Almizcle',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(188, 77, 16, 1),
+                    colorText: Colors.white,
+                    text: 'ámbar',
+                    containerWidth2: 220,
+                    containerColor2: Color.fromRGBO(125, 77, 31, 1),
+                    colorText2: Colors.white,
+                    text2: 'amaderado',
+                    containerWidth3: 200,
+                    containerColor3: Color.fromRGBO(184, 147, 111, 1),
+                    colorText3: Colors.black87,
+                    text3: 'balsámico',
+                    containerWidth4: 180,
+                    containerColor4: Color.fromRGBO(215, 96, 56, 1),
+                    colorText4: Colors.white,
+                    text4: 'cálido especiado',
+                    containerWidth5: 175,
+                    containerColor5: Color.fromRGBO(229, 185, 127, 1),
+                    colorText5: Colors.black54,
+                    text5: 'caramelo',
+                    containerWidth6: 170,
+                    containerColor6: Color.fromRGBO(255, 254, 208, 1),
+                    colorText6: Colors.black54,
+                    text6: 'avainillado',
+                    containerWidth7: 165,
+                    containerColor7: Color.fromRGBO(242, 107, 110, 1),
+                    colorText7: Colors.white70,
+                    text7: 'dulce',
+                    containerWidth8: 165,
+                    containerColor8: Color.fromRGBO(253, 124, 100, 1),
+                    colorText8: Colors.black54,
+                    text8: 'afrutados',
+                    containerWidth9: 150,
+                    containerColor9: Color.fromRGBO(239, 229, 241, 1),
+                    colorText9: Colors.black54,
+                    text9: 'almizclado',
+                    containerWidth10: 150,
+                    containerColor10: Color.fromRGBO(143, 130, 123, 1),
+                    colorText10: Colors.white70,
+                    text10: 'oud',
+                  ),
+                  const Aromas100(
+                    title: 'Il Femme - ILMIN',
+                    description: '''
+Il Femme de ILMIN Parfums es una fragancia
+de la familia olfativa Ámbar Amaderada para
+Hombres y Mujeres. Il Femme se lanzó en 2018.
+Su longevidad es muy duradera y su estela
+es moderada. Es un aroma Unisex.
 ''',
+                    imageLocion: 'assets/images/il_femme_ilmin.jpg',
+                    imageNotaSalida: 'assets/images/maracuya.jpg',
+                    textNotaSalida: 'Maracuyá',
+                    imageNotaSalida2: 'assets/images/rosa.jpg',
+                    textNotaSalida2: 'Rosa',
+                    imageNotaSalida3: 'assets/images/nuez_moscada.jpg',
+                    textNotaSalida3: 'Nuez Moscada',
+                    imageNotaSalida4: 'assets/images/canela.jpg',
+                    textNotaSalida4: 'Canela',
+                    imageCorazon: 'assets/images/cedro.jpg',
+                    textCorazon: 'Cedro',
+                    imageCorazon2: 'assets/images/cipriol.jpg',
+                    textCorazon2: 'Cipriol',
+                    imageCorazon3: 'assets/images/madera_de_gaiac.jpg',
+                    textCorazon3: '''
+Madera
+de Gaiac''',
+                    imageCorazon4: 'assets/images/madera_de_cachemira.jpg',
+                    textCorazon4: '''
+Madera
+de Cachemira''',
+                    imageBase: 'assets/images/sandalo.jpg',
+                    textBase: 'Sándalo',
+                    imageBase2: 'assets/images/tabaco.jpg',
+                    textBase2: 'Tabaco',
+                    imageBase3: 'assets/images/almizcle.jpg',
+                    textBase3: 'Almizcle',
+                    imageBase4: 'assets/images/cumarina.jpg',
+                    textBase4: 'Cumarina',
+                    imageBase5: 'assets/images/vainilla.jpg',
+                    textBase5: 'Vainilla',
+                    imageBase6: 'assets/images/ladano.jpg',
+                    textBase6: 'Ládano',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(119, 68, 20, 1),
+                    colorText: Colors.white,
+                    text: 'amaderado',
+                    containerWidth2: 150,
+                    containerColor2: Color.fromRGBO(244, 233, 222, 1),
+                    colorText2: Colors.black54,
+                    text2: 'atalcado',
+                    containerWidth3: 150,
+                    containerColor3: Color.fromRGBO(244, 128, 132, 1),
+                    colorText3: Colors.white70,
+                    text3: 'dulce',
+                    containerWidth4: 145,
+                    containerColor4: Color.fromRGBO(240, 231, 242, 1),
+                    colorText4: Colors.black54,
+                    text4: 'almizclado',
+                    containerWidth5: 135,
+                    containerColor5: Color.fromRGBO(225, 138, 109, 1),
+                    colorText5: Colors.white70,
+                    text5: 'cálido especiado',
+                    containerWidth6: 135,
+                    containerColor6: Color.fromRGBO(254, 111, 171, 1),
+                    colorText6: Colors.white70,
+                    text6: 'rosas',
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(208, 178, 133, 1),
+                    colorText7: Colors.white70,
+                    text7: 'tabaco',
+                    containerWidth8: 125,
+                    containerColor8: Color.fromRGBO(189, 226, 142, 1),
+                    colorText8: Colors.black54,
+                    text8: 'fresco especiado',
+                    containerWidth9: 125,
+                    containerColor9: Color.fromRGBO(253, 161, 143, 1),
+                    colorText9: Colors.black54,
+                    text9: 'afrutados',
+                  ),
+                  const Aromas100(
+                      title: 'Arabians Tonka - Montale',
+                      description: '''
+Arabians Tonka de Montale es una fragancia
+de la familia olfativa Ámbar Amaderada para
+Hombres y Mujeres. Arabians Tonka se lanzó
+en 2019. Tiene una longevidad muy duradera
+y su estela es enorme. Es un aroma Unisex.
+''',
+                      imageLocion: 'assets/images/arabians_tonka_montale.webp',
 
-                      imageNotaSalida3: 'assets/images/pimienta_rosa.jpg',
-                      textNotaSalida3: 'Pimienta Rosa',
+                      imageNotaSalida: 'assets/images/azafran.jpg',
+                      textNotaSalida: 'Azafrán',
 
-                      imageNotaSalida4: 'assets/images/durazno.jpg',
-                      textNotaSalida4: 'Durazno',
+                      imageNotaSalida2: 'assets/images/bergamota.jpg',
+                      textNotaSalida2: 'Bergamota',
 
-                      imageNotaSalida5: 'assets/images/ladano.jpg',
-                      textNotaSalida5: 'Ládano',
+                      imageCorazon: 'assets/images/madera_de_oud.jpg',
+                      textCorazon: '''
+Madera
+de Oud''',
 
-                      imageCorazon: 'assets/images/cipriol.jpg',
-                      textCorazon: 'Cipriol',
+                      imageCorazon2: 'assets/images/rosa.jpg',
+                      textCorazon2: '''
+Rosa de
+Bulgaria''',
 
-                      imageCorazon2: 'assets/images/jengibre.jpg',
-                      textCorazon2: 'Jengibre',
+                      imageBase: 'assets/images/cumarina.jpg',
+                      textBase: '''Haba
+Tonka''',
 
-                      imageCorazon3: 'assets/images/cuero.jpg',
-                      textCorazon3: 'Cuero',
+                      imageBase2: 'assets/images/caña_de_azucar.jpg',
+                      textBase2: '''
+Caña de
+Azúcar''',
 
-                      imageCorazon4: 'assets/images/rosa.jpg',
-                      textCorazon4: 'Rosa',
+                      imageBase3: 'assets/images/ambar.jpg',
+                      textBase3: 'Ámbar',
 
-                      imageCorazon5: 'assets/images/pachuli.jpg',
-                      textCorazon5: 'Pachulí',
-                      
-                      imageCorazon6: 'assets/images/azafran.jpg',
-                      textCorazon6: 'Azafrán',
+                      imageBase4: 'assets/images/almizcle.jpg',
+                      textBase4: '''
+Almizcle
+Blanco''',
 
-                      imageBase: 'assets/images/balsamo.jpg',
-                      textBase: 'Bálsamo',
-
-                      imageBase2: 'assets/images/madera_de_oud.jpg',
-                      textBase2: 'Madera de Oud',
-
-                      imageBase3: 'assets/images/benjui.jpg',
-                      textBase3: 'Benjuí',
-
-                      imageBase4: 'assets/images/vainilla.jpg',
-                      textBase4: 'Vainilla',
-
-                      imageBase5: 'assets/images/almizcle.jpg',
-                      textBase5: 'Almizcle',
+                      imageBase5: 'assets/images/musgo_de_roble.jpg',
+                      textBase5: '''Musgo
+de Roble''',
 
                       containerWidth: 230,
-                      containerColor: Color.fromRGBO(188, 77, 16, 1),
+                      containerColor: Color.fromRGBO(238, 54, 59, 1),
                       colorText: Colors.white,
-                      text: 'ámbar',
+                      text: 'dulce',
 
-                      containerWidth2: 220,
-                      containerColor2: Color.fromRGBO(125, 77, 31, 1),
-                      colorText2: Colors.white,
-                      text2: 'amaderado',
-
+                      containerWidth2: 210,
+                      containerColor2: Color.fromRGBO(255, 254, 198, 1),
+                      colorText2: Colors.black,
+                      text2: 'avainillado',
+                      
                       containerWidth3: 200,
-                      containerColor3: Color.fromRGBO(184, 147, 111, 1),
-                      colorText3: Colors.black87,
-                      text3: 'balsámico',
+                      containerColor3: Color.fromRGBO(197, 101, 48, 1),
+                      colorText3: Colors.white,
+                      text3: 'ámbar',
 
-                      containerWidth4: 180,
-                      containerColor4: Color.fromRGBO(215, 96, 56, 1),
-                      colorText4: Colors.white,
+                      containerWidth4: 170,
+                      containerColor4: Color.fromRGBO(216, 101, 63, 1),
+                      colorText4: Colors.white70,
                       text4: 'cálido especiado',
 
-                      containerWidth5: 175,
-                      containerColor5: Color.fromRGBO(229, 185, 127, 1),
-                      colorText5: Colors.black54,
-                      text5: 'caramelo',
+                      containerWidth5: 165,
+                      containerColor5: Color.fromRGBO(128, 114, 106, 1),
+                      colorText5: Colors.white70,
+                      text5: 'oud',
 
-                      containerWidth6: 170,
-                      containerColor6: Color.fromRGBO(255, 254, 208, 1),
-                      colorText6: Colors.black54,
-                      text6: 'avainillado',
+                      containerWidth6: 155,
+                      containerColor6: Color.fromRGBO(254, 80, 153, 1),
+                      colorText6: Colors.white70,
+                      text6: 'rosas',
 
-                      containerWidth7: 165,
-                      containerColor7: Color.fromRGBO(242, 107, 110, 1),
-                      colorText7: Colors.white70,
-                      text7: 'dulce',
+                      containerWidth7: 135,
+                      containerColor7: Color.fromRGBO(241, 232, 242, 1),
+                      colorText7: Colors.black54,
+                      text7: 'almizclado',
 
-                      containerWidth8: 165,
-                      containerColor8: Color.fromRGBO(253, 124, 100, 1),
+                      containerWidth8: 130,
+                      containerColor8: Color.fromRGBO(144, 202, 189, 1),
                       colorText8: Colors.black54,
-                      text8: 'afrutados',
+                      text8: 'aromático',
 
-                      containerWidth9: 150,
-                      containerColor9: Color.fromRGBO(239, 229, 241, 1),
+                      containerWidth9: 130,
+                      containerColor9: Color.fromRGBO(197, 211, 215, 1),
                       colorText9: Colors.black54,
-                      text9: 'almizclado',
+                      text9: 'metálico',
 
-                      containerWidth10: 150,
-                      containerColor10: Color.fromRGBO(143, 130, 123, 1),
-                      colorText10: Colors.white70,
-                      text10: 'oud',
-                    )
+                      containerWidth10: 125,
+                      containerColor10: Color.fromRGBO(246, 237, 228, 1),
+                      colorText10: Colors.black54,
+                      text10: 'atalcado',
+                    ),
                 ],
               ),
             ],
@@ -1043,12 +1198,14 @@ class Aromas100 extends StatelessWidget {
   final String textNotaSalida;
   final String imageNotaSalida2;
   final String textNotaSalida2;
-  final String imageNotaSalida3;
-  final String textNotaSalida3;
+  final String? imageNotaSalida3;
+  final String? textNotaSalida3;
   final String? imageNotaSalida4;
   final String? textNotaSalida4;
   final String? imageNotaSalida5;
   final String? textNotaSalida5;
+  final String? imageNotaSalida6;
+  final String? textNotaSalida6;
   final String imageCorazon;
   final String textCorazon;
   final String? imageCorazon2;
@@ -1126,12 +1283,14 @@ class Aromas100 extends StatelessWidget {
     required this.textNotaSalida,
     required this.imageNotaSalida2,
     required this.textNotaSalida2,
-    required this.imageNotaSalida3,
-    required this.textNotaSalida3,
+    this.imageNotaSalida3,
+    this.textNotaSalida3,
     this.imageNotaSalida4,
     this.textNotaSalida4,
     this.imageNotaSalida5,
     this.textNotaSalida5,
+    this.imageNotaSalida6,
+    this.textNotaSalida6,
     required this.imageCorazon,
     required this.textCorazon,
     this.imageCorazon2,
@@ -1231,11 +1390,12 @@ class Aromas100 extends StatelessWidget {
               text: textNotaSalida2,
               padding: const EdgeInsets.only(right: 15),
             ),
-            Aromas(
-              image: imageNotaSalida3,
-              text: textNotaSalida3,
-              padding: const EdgeInsets.only(right: 15),
-            ),
+            if (imageNotaSalida3 != null && textNotaSalida3 != null)
+              Aromas(
+                image: imageNotaSalida3!,
+                text: textNotaSalida3!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
             if (imageNotaSalida4 != null && textNotaSalida4 != null)
               Aromas(
                 image: imageNotaSalida4!,
@@ -1247,6 +1407,17 @@ class Aromas100 extends StatelessWidget {
                 image: imageNotaSalida5!,
                 text: textNotaSalida5!,
                 padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageNotaSalida6 != null && textNotaSalida6 != null)
+              Aromas(
+                image: imageNotaSalida6!,
+                text: textNotaSalida6!,
+                padding: const EdgeInsets.only(left: 30, right: 0),
               ),
           ],
         ),

@@ -1494,8 +1494,8 @@ Es un aroma Masculino.
                   ),
                   //TODO:
                   const Aromas100(
-                      title: 'CH Men - Carolina Herrera',
-                      description: '''
+                    title: 'CH Men - Carolina Herrera',
+                    description: '''
 CH Men de Carolina Herrera es una
 fragancia de la familia olfativa
 Ámbar Especiada para Hombres.
@@ -1503,113 +1503,630 @@ CH Men se lanzó en 2009. Su longevidad
 y su estela son moderadas.
 Es un Aroma Masculino.
 ''',
-                      imageLocion: 'assets/images/ch_carolina_herrera.webp',
-
-                      imageNotaSalida: 'assets/images/hierba.jpg',
-                      textNotaSalida: 'Hierba',
-
-                      imageNotaSalida2: 'assets/images/bergamota.jpg',
-                      textNotaSalida2: 'Bergamota',
-
-                      imageNotaSalida3: 'assets/images/toronja.jpg',
-                      textNotaSalida3: 'Toronja',
-
-                      imageCorazon: 'assets/images/notas_amaderadas.jpg',
-                      textCorazon: '''
+                    imageLocion: 'assets/images/ch_carolina_herrera.webp',
+                    imageNotaSalida: 'assets/images/hierba.jpg',
+                    textNotaSalida: 'Hierba',
+                    imageNotaSalida2: 'assets/images/bergamota.jpg',
+                    textNotaSalida2: 'Bergamota',
+                    imageNotaSalida3: 'assets/images/toronja.jpg',
+                    textNotaSalida3: 'Toronja',
+                    imageCorazon: 'assets/images/notas_amaderadas.jpg',
+                    textCorazon: '''
 Nota
 Amaderada''',
-
-                      imageCorazon2: 'assets/images/nuez_moscada.jpg',
-                      textCorazon2: '''
+                    imageCorazon2: 'assets/images/nuez_moscada.jpg',
+                    textCorazon2: '''
 Nuez
 Moscada''',
-
-                      imageCorazon3: 'assets/images/violeta.jpg',
-                      textCorazon3: 'Violeta',
-
-                      imageCorazon4: 'assets/images/azafran.jpg',
-                      textCorazon4: 'Azafrán',
-
-                      imageCorazon5: 'assets/images/jazmin.jpg',
-                      textCorazon5: 'Jazmín',
-
-                      imageBase: 'assets/images/caña_de_azucar.jpg',
-                      textBase: 'Azúcar',
-
-                      imageBase2: 'assets/images/cuero.jpg',
-                      textBase2: 'Cuero',
-
-                      imageBase3: 'assets/images/vainilla.jpg',
-                      textBase3: 'Vainilla',
-
-                      imageBase4: 'assets/images/ambar.jpg',
-                      textBase4: 'Ámbar',
-
-                      imageBase5: 'assets/images/madera_de_cachemira.jpg',
-                      textBase5: '''
+                    imageCorazon3: 'assets/images/violeta.jpg',
+                    textCorazon3: 'Violeta',
+                    imageCorazon4: 'assets/images/azafran.jpg',
+                    textCorazon4: 'Azafrán',
+                    imageCorazon5: 'assets/images/jazmin.jpg',
+                    textCorazon5: 'Jazmín',
+                    imageBase: 'assets/images/caña_de_azucar.jpg',
+                    textBase: 'Azúcar',
+                    imageBase2: 'assets/images/cuero.jpg',
+                    textBase2: 'Cuero',
+                    imageBase3: 'assets/images/vainilla.jpg',
+                    textBase3: 'Vainilla',
+                    imageBase4: 'assets/images/ambar.jpg',
+                    textBase4: 'Ámbar',
+                    imageBase5: 'assets/images/madera_de_cachemira.jpg',
+                    textBase5: '''
 Madera de
 Cachemira''',
-
-                      imageBase6: 'assets/images/sandalo.jpg',
-                      textBase6: 'Sándalo',
-
-                      imageBase7: 'assets/images/musgo_de_roble.jpg',
-                      textBase7: '''
+                    imageBase6: 'assets/images/sandalo.jpg',
+                    textBase6: 'Sándalo',
+                    imageBase7: 'assets/images/musgo_de_roble.jpg',
+                    textBase7: '''
 Musgo de
 Roble''',
+                    imageBase8: 'assets/images/vetiver.jpg',
+                    textBase8: 'Vetiver',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(120, 72, 58, 1),
+                    colorText: Colors.white,
+                    text: 'cuerod',
+                    containerWidth2: 200,
+                    containerColor2: Color.fromRGBO(240, 77, 81, 1),
+                    colorText2: Colors.white,
+                    text2: 'dulce',
+                    containerWidth3: 200,
+                    containerColor3: Color.fromRGBO(255, 254, 199, 1),
+                    colorText3: Colors.black,
+                    text3: 'avainillado',
+                    containerWidth4: 180,
+                    containerColor4: Color.fromRGBO(146, 105, 67, 1),
+                    colorText4: Colors.white,
+                    text4: 'amaderado',
+                    containerWidth5: 165,
+                    containerColor5: Color.fromRGBO(243, 231, 218, 1),
+                    colorText5: Colors.black54,
+                    text5: 'atalcado',
+                    containerWidth6: 155,
+                    containerColor6: Color.fromRGBO(98, 180, 108, 1),
+                    colorText6: Colors.white70,
+                    text6: 'verde',
+                    containerWidth7: 155,
+                    containerColor7: Color.fromRGBO(182, 140, 104, 1),
+                    colorText7: Colors.white70,
+                    text7: 'animálico',
+                    containerWidth8: 150,
+                    containerColor8: Color.fromRGBO(177, 221, 121, 1),
+                    colorText8: Colors.black45,
+                    text8: 'fresco especiado',
+                    containerWidth9: 145,
+                    containerColor9: Color.fromRGBO(251, 255, 152, 1),
+                    colorText9: Colors.black45,
+                    text9: 'cítrico',
+                    containerWidth10: 145,
+                    containerColor10: Color.fromRGBO(195, 239, 244, 1),
+                    colorText10: Colors.black45,
+                    text10: 'fresco',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: '212 VIP Men Wins - Carolina Herrera',
+                    description: '''
+212 VIP Men Wins de Carolina Herrera
+es una fragancia de la familia olfativa
+Aromática Fougère para Hombres. 212 VIP
+Men Wins se lanzó en 2021. Su longevidad
+y su estela son moderadas.
+Es un aroma Masculino.
+''',
+                    imageLocion:
+                        'assets/images/212_vip_wins_carolina_herrera.jpeg',
+                    imageNotaSalida: 'assets/images/yuzu.jpg',
+                    textNotaSalida: 'Yuzu',
+                    imageNotaSalida2: 'assets/images/albahaca.jpg',
+                    textNotaSalida2: 'Albahaca',
+                    imageNotaSalida3: 'assets/images/mandarina.jpg',
+                    textNotaSalida3: 'Mandarina',
+                    imageCorazon: 'assets/images/pimienta.jpg',
+                    textCorazon: '''
+Pimienta de
+Madagascar''',
+                    imageCorazon2: 'assets/images/lavanda.jpg',
+                    textCorazon2: 'Lavanda',
+                    imageBase: 'assets/images/piel.jpg',
+                    textBase: 'Piel',
+                    imageBase2: 'assets/images/cumarina.jpg',
+                    textBase2: 'Haba Tonka',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(131, 201, 40, 1),
+                    colorText: Colors.black,
+                    text: 'fresco especiado',
+                    containerWidth2: 210,
+                    containerColor2: Color.fromRGBO(249, 255, 95, 1),
+                    colorText2: Colors.black87,
+                    text2: 'cítrico',
+                    containerWidth3: 150,
+                    containerColor3: Color.fromRGBO(118, 190, 174, 1),
+                    colorText3: Colors.black54,
+                    text3: 'aromático',
+                    containerWidth4: 145,
+                    containerColor4: Color.fromRGBO(94, 178, 104, 1),
+                    colorText4: Colors.white70,
+                    text4: 'verde',
+                    containerWidth5: 135,
+                    containerColor5: Color.fromRGBO(244, 128, 131, 1),
+                    colorText5: Colors.white70,
+                    text5: 'dulce',
+                    containerWidth6: 120,
+                    containerColor6: Color.fromRGBO(241, 227, 244, 1),
+                    colorText6: Colors.black45,
+                    text6: 'lavanda',
+                    containerWidth7: 120,
+                    containerColor7: Color.fromRGBO(255, 254, 219, 1),
+                    colorText7: Colors.black45,
+                    text7: 'avainillado',
+                    containerWidth8: 115,
+                    containerColor8: Color.fromRGBO(226, 142, 114, 1),
+                    colorText8: Colors.white60,
+                    text8: 'cálido especiado',
+                  ),
+                  //TODO:
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Text('1 Million Parfum - Paco Rabanne',
+                        style: styleText3Mobile),
+                  ),
+                  const SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Text('''
+1 Million Parfum de Paco Rabanne es una
+fragancia de la familia olfativa Cuero
+para Hombres. 1 Million Parfum se lanzó
+en 2020. Su longevidad es duradera y su
+estela es pesada. Es un aroma Masculino.
+''', style: styleTextLocion),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Text('Notas de Fragancia:', style: styleTextLocion2),
+                  ),
+                  const SizedBox(height: 10),
+                  const Row(
+                    children: [
+                      Aromas(
+                        image: 'assets/images/nardos.jpg',
+                        text: 'Nardos',
+                        padding: EdgeInsets.only(left: 30, right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/sal.jpg',
+                        text: 'Sal',
+                        padding: EdgeInsets.only(right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/notas_solares.jpg',
+                        text: '''Notas
+Solares''',
+                        padding: EdgeInsets.only(right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/aceite_de_monoil.jpg',
+                        text: '''Aceite
+de Monoi''',
+                        padding: EdgeInsets.only(right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/ambar_gris.jpg',
+                        text: '''Ámbar
+Gris''',
+                        padding: EdgeInsets.only(right: 0),
+                      ),
+                    ],
+                  ),
+                  const Row(
+                    children: [
+                      Aromas(
+                        image: 'assets/images/cuero.jpg',
+                        text: 'Cuero',
+                        padding: EdgeInsets.only(left: 30, right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/cachemira.jpg',
+                        text: 'Cachemira',
+                        padding: EdgeInsets.only(right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/ladano.jpg',
+                        text: 'Ládano',
+                        padding: EdgeInsets.only(right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/pino.jpg',
+                        text: 'Pino',
+                        padding: EdgeInsets.only(right: 0),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 30),
+                  Row(
+                    children: [
+                      Image.asset('assets/images/1_million_paco_rabanne.webp',
+                          height: 190, width: 190),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 40),
+                            child: Text('Acordes Principales',
+                                style: styleTextLocion),
+                          ),
+                          const SizedBox(height: 10),
+                          const MainChords(
+                            containerWidth: 230,
+                            containerColor: Color.fromRGBO(237, 242, 251, 1),
+                            colorText: Colors.black,
+                            text: 'floral blanco',
+                          ),
+                          const MainChords(
+                            containerWidth: 210,
+                            containerColor: Color.fromRGBO(236, 250, 244, 1),
+                            colorText: Colors.black,
+                            text: 'nardos',
+                          ),
+                          const MainChords(
+                            containerWidth: 190,
+                            containerColor: Color.fromRGBO(197, 101, 48, 1),
+                            colorText: Colors.white70,
+                            text: 'ámbar',
+                          ),
+                          const MainChords(
+                            containerWidth: 180,
+                            containerColor: Color.fromRGBO(161, 105, 58, 1),
+                            colorText: Colors.white,
+                            text: 'animálico',
+                          ),
+                          const MainChords(
+                            containerWidth: 150,
+                            containerColor: Color.fromRGBO(158, 122, 88, 1),
+                            colorText: Colors.white70,
+                            text: 'amaderado',
+                          ),
+                          const MainChords(
+                            containerWidth: 140,
+                            containerColor: Color.fromRGBO(240, 255, 251, 1),
+                            colorText: Colors.black54,
+                            text: 'salado',
+                          ),
+                          const MainChords(
+                            containerWidth: 135,
+                            containerColor: Color.fromRGBO(167, 136, 126, 1),
+                            colorText: Colors.white70,
+                            text: 'cuero',
+                          ),
+                          const MainChords(
+                            containerWidth: 125,
+                            containerColor: Color.fromRGBO(249, 206, 106, 1),
+                            colorText: Colors.black54,
+                            text: 'tropical',
+                          ),
+                          const MainChords(
+                            containerWidth: 120,
+                            containerColor: Color.fromRGBO(241, 232, 242, 1),
+                            colorText: Colors.black45,
+                            text: 'almizclado',
+                          ),
+                          const MainChords(
+                            containerWidth: 115,
+                            containerColor: Color.fromRGBO(247, 242, 231, 1),
+                            colorText: Colors.black45,
+                            text: 'coco',
+                          ),
+                          const SizedBox(height: 30)
+                        ],
+                      ),
+                      const Spacer(),
+                    ],
+                  ),
+                  const SizedBox(height: 30),
+                  //TODO:
+                  const Aromas100(
+                    title: '1 Million Lucky - Paco Rabanne',
+                    description: '''
+1 Million Lucky de Paco Rabanne es una
+fragancia de la familia olfativa Amaderada
+para Hombres. 1 Million Lucky se lanzó en
+2018. Su longevidad es duradera y su
+estela es moderada. Es un aroma Masculino.
+''',
+                    imageLocion:
+                        'assets/images/1_million_lucky_paco_rabanne.jpeg',
+                    imageNotaSalida: 'assets/images/ciruela.jpg',
+                    textNotaSalida: 'Ciruela',
+                    imageNotaSalida2: 'assets/images/notas_ozonicas.jpg',
+                    textNotaSalida2: 'Notas Ozónicas',
+                    imageNotaSalida3: 'assets/images/toronja.jpg',
+                    textNotaSalida3: 'Toronja',
+                    imageNotaSalida4: 'assets/images/bergamota.jpg',
+                    textNotaSalida4: 'Bergamota',
+                    imageCorazon: 'assets/images/avellana.jpg',
+                    textCorazon: 'Avellana',
+                    imageCorazon2: 'assets/images/miel.jpg',
+                    textCorazon2: 'Miel',
+                    imageCorazon3: 'assets/images/cedro.jpg',
+                    textCorazon3: 'Cedro',
+                    imageCorazon4: 'assets/images/madera_de_cachemira.jpg',
+                    textCorazon4: '''Madera de
+Cachemira''',
+                    imageCorazon5:
+                        'assets/images/flor_de_azahar_del_naranjo.jpg',
+                    textCorazon5: '''Flor del
+Naranjo''',
+                    imageBase: 'assets/images/amberwood.jpg',
+                    textBase: 'Amberwood',
+                    imageBase2: 'assets/images/pachuli.jpg',
+                    textBase2: 'Pachulí',
+                    imageBase3: 'assets/images/musgo_de_roble.jpg',
+                    textBase3: 'Musgo de Roble',
+                    imageBase4: 'assets/images/vetiver.jpg',
+                    textBase4: 'Vetiver',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(119, 68, 20, 1),
+                    colorText: Colors.white,
+                    text: 'amaderado',
+                    containerWidth2: 170,
+                    containerColor2: Color.fromRGBO(241, 91, 95, 1),
+                    colorText2: Colors.white,
+                    text2: 'dulce',
+                    containerWidth3: 155,
+                    containerColor3: Color.fromRGBO(198, 174, 133, 1),
+                    colorText3: Colors.black87,
+                    text3: 'nueces',
+                    containerWidth4: 150,
+                    containerColor4: Color.fromRGBO(251, 191, 71, 1),
+                    colorText4: Colors.black87,
+                    text4: 'amielado',
+                    containerWidth5: 140,
+                    containerColor5: Color.fromRGBO(253, 127, 103, 1),
+                    colorText5: Colors.black54,
+                    text5: 'afrutados',
+                    containerWidth6: 120,
+                    containerColor6: Color.fromRGBO(251, 255, 148, 1),
+                    colorText6: Colors.black54,
+                    text6: 'cítrico',
+                    containerWidth7: 110,
+                    containerColor7: Color.fromRGBO(224, 253, 252, 1),
+                    colorText7: Colors.black54,
+                    text7: 'ozónico',
+                    containerWidth8: 110,
+                    containerColor8: Color.fromRGBO(217, 155, 121, 1),
+                    colorText8: Colors.white60,
+                    text8: 'ámbar',
+                    containerWidth9: 100,
+                    containerColor9: Color.fromRGBO(255, 170, 195, 1),
+                    colorText9: Colors.black45,
+                    text9: 'florales',
+                    containerWidth10: 95,
+                    containerColor10: Color.fromRGBO(245, 248, 252, 1),
+                    colorText10: Colors.black45,
+                    text10: 'floral blanco',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Invictus - Paco Rabanne',
+                    description: '''
+Invictus de Paco Rabanne es una fragancia
+de la familia olfativa Amaderada Acuática
+para Hombres. Invictus se lanzó en 2013.
+Su longevidad es de moderada a duradera y
+su estela es moderada. Es un aroma Masculino.
+''',
+                    imageLocion: 'assets/images/invictus_paco_rabanne.jpg',
+                    imageNotaSalida: 'assets/images/notas_marinas.jpg',
+                    textNotaSalida: 'Notas Marinas',
+                    imageNotaSalida2: 'assets/images/toronja.jpg',
+                    textNotaSalida2: 'Toronja',
+                    imageNotaSalida3: 'assets/images/mandarina.jpg',
+                    textNotaSalida3: 'Mandarina',
+                    imageCorazon: 'assets/images/hoja_de_laurel.jpg',
+                    textCorazon: 'Hoja de Laurel',
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: 'Jazmín',
+                    imageBase: 'assets/images/ambar_gris.jpg',
+                    textBase: '''Ámbar
+Gris''',
+                    imageBase2: 'assets/images/madera_de_gaiac.jpg',
+                    textBase2: '''Madera
+de Gaiac''',
+                    imageBase3: 'assets/images/musgo_de_roble.jpg',
+                    textBase3: '''Musgo
+de Roble''',
+                    imageBase4: 'assets/images/pachuli.jpg',
+                    textBase4: 'Pachulí',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(249, 255, 82, 1),
+                    colorText: Colors.black,
+                    text: 'cítrico',
+                    containerWidth2: 200,
+                    containerColor2: Color.fromRGBO(41, 102, 166, 1),
+                    colorText2: Colors.white,
+                    text2: 'marino',
+                    containerWidth3: 195,
+                    containerColor3: Color.fromRGBO(82, 173, 153, 1),
+                    colorText3: Colors.black,
+                    text3: 'aromático',
+                    containerWidth4: 165,
+                    containerColor4: Color.fromRGBO(161, 214, 93, 1),
+                    colorText4: Colors.black87,
+                    text4: 'fresco especiado',
+                    containerWidth5: 145,
+                    containerColor5: Color.fromRGBO(166, 132, 101, 1),
+                    colorText5: Colors.white70,
+                    text5: 'amaderado',
+                    containerWidth6: 135,
+                    containerColor6: Color.fromRGBO(214, 146, 109, 1),
+                    colorText6: Colors.white70,
+                    text6: 'ámbar',
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(241, 255, 251, 1),
+                    colorText7: Colors.black54,
+                    text7: 'salado',
+                    containerWidth8: 125,
+                    containerColor8: Color.fromRGBO(244, 247, 252, 1),
+                    colorText8: Colors.black45,
+                    text8: 'floral blanco',
+                    containerWidth9: 125,
+                    containerColor9: Color.fromRGBO(170, 227, 239, 1),
+                    colorText9: Colors.black45,
+                    text9: 'acuático',
+                    containerWidth10: 125,
+                    containerColor10: Color.fromRGBO(168, 177, 139, 1),
+                    colorText10: Colors.black45,
+                    text10: 'alcanforados',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Black XS - Paco Rabanne',
+                    description: '''
+Black XS de Paco Rabanne es una fragancia de
+la familia olfativa Ámbar Amaderada para
+Hombres. Black XS se lanzó en 2005. Su
+longevidad es duradera y su estela es
+moderada. Es un aroma Masculino.
+''',
+                    imageLocion: 'assets/images/black_xs_paco_rabanne.webp',
+                    imageNotaSalida: 'assets/images/limon.jpg',
+                    textNotaSalida: 'Limón',
+                    imageNotaSalida2: 'assets/images/salvia.jpg',
+                    textNotaSalida2: 'Salvia',
+                    imageCorazon: 'assets/images/praline.jpg',
+                    textCorazon: 'Praliné',
+                    imageCorazon2: 'assets/images/canela.jpg',
+                    textCorazon2: 'Canela',
+                    imageCorazon3: 'assets/images/balsamo_de_tolu.jpg',
+                    textCorazon3: '''Bálsamo
+de Tolú''',
+                    imageCorazon4: 'assets/images/cardamomo.jpg',
+                    textCorazon4: '''Cardamomo
+Negro''',
+                    imageBase: 'assets/images/palo_de_rosa_de_brasil.jpg',
+                    textBase: '''Palo de Rosa
+de Brasil''',
+                    imageBase2: 'assets/images/pachuli.jpg',
+                    textBase2: 'Pachulí',
+                    imageBase3: 'assets/images/ambar_gris.jpg',
+                    textBase3: 'Ámbar Negro',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(238, 54, 59, 1),
+                    colorText: Colors.white,
+                    text: 'dulce',
+                    containerWidth2: 230,
+                    containerColor2: Color.fromRGBO(204, 53, 2, 1),
+                    colorText2: Colors.white,
+                    text2: 'cálido especiado',
+                    containerWidth3: 190,
+                    containerColor3: Color.fromRGBO(250, 255, 108, 1),
+                    colorText3: Colors.black87,
+                    text3: 'cítrico',
+                    containerWidth4: 170,
+                    containerColor4: Color.fromRGBO(203, 117, 70, 1),
+                    colorText4: Colors.white70,
+                    text4: 'ámbar',
+                    containerWidth5: 160,
+                    containerColor5: Color.fromRGBO(107, 184, 167, 1),
+                    colorText5: Colors.black54,
+                    text5: 'aromático',
+                    containerWidth6: 150,
+                    containerColor6: Color.fromRGBO(158, 122, 88, 1),
+                    colorText6: Colors.white70,
+                    text6: 'amaderado',
+                    containerWidth7: 140,
+                    containerColor7: Color.fromRGBO(199, 170, 141, 1),
+                    colorText7: Colors.black54,
+                    text7: 'balsámico',
+                    containerWidth8: 135,
+                    containerColor8: Color.fromRGBO(225, 155, 106, 1),
+                    colorText8: Colors.white70,
+                    text8: 'canela',
+                    containerWidth9: 120,
+                    containerColor9: Color.fromRGBO(158, 159, 125, 1),
+                    colorText9: Colors.white60,
+                    text9: 'pachulí',
+                    containerWidth10: 110,
+                    containerColor10: Color.fromRGBO(245, 245, 243, 1),
+                    colorText10: Colors.black45,
+                    text10: 'lactónico',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                      title: 'Sauvage - Dior',
+                      description: '''
+Sauvage de Dior es una fragancia de la
+familia olfativa Aromática Fougère para
+ombres. Sauvage se lanzó en 2015. Tiene
+una longevidad duradera y su estela es
+pesada. Es un aroma Masculino.
+''',
+                      imageLocion: 'assets/images/sauvage_dior.jpg',
 
-                      imageBase8: 'assets/images/vetiver.jpg',
-                      textBase8: 'Vetiver',
+                      imageNotaSalida: 'assets/images/bergamota.jpg',
+                      textNotaSalida: '''Bergamota
+de Calabria''',
+
+                      imageNotaSalida2: 'assets/images/pimienta.jpg',
+                      textNotaSalida2: 'Pimienta',
+
+                      imageCorazon: 'assets/images/pimienta.jpg',
+                      textCorazon: '''Pimienta
+de Sichuan''',
+                      imageCorazon2: 'assets/images/lavanda.jpg',
+                      textCorazon2: 'Lavanda',
+
+                      imageCorazon3: 'assets/images/pimienta_rosa.jpg',
+                      textCorazon3: '''Pimienta
+Rosa''',
+                      imageCorazon4: 'assets/images/vetiver.jpg',
+                      textCorazon4: 'Vetiver',
+
+                      imageCorazon5: 'assets/images/pachuli.jpg',
+                      textCorazon5: 'Pachulí',
+
+                      imageCorazon6: 'assets/images/geranio.jpg',
+                      textCorazon6: 'Geranio',
+
+                      imageCorazon7: 'assets/images/elemi.jpg',
+                      textCorazon7: 'Elemí',
+
+                      imageBase: 'assets/images/ambroxan.jpg',
+                      textBase: 'Ambroxan',
+
+                      imageBase2: 'assets/images/cedro.jpg',
+                      textBase2: 'Cedro',
+
+                      imageBase3: 'assets/images/ladano.jpg',
+                      textBase3: 'Ládano',
 
                       containerWidth: 230,
-                      containerColor: Color.fromRGBO(120, 72, 58, 1),
-                      colorText: Colors.white,
-                      text: 'cuerod',
+                      containerColor: Color.fromRGBO(131, 201, 40, 1),
+                      colorText: Colors.black,
+                      text: 'fresco especiado',
 
-                      containerWidth2: 200,
-                      containerColor2: Color.fromRGBO(240, 77, 81, 1),
+                      containerWidth2: 170,
+                      containerColor2: Color.fromRGBO(203, 118, 71, 1),
                       colorText2: Colors.white,
-                      text2: 'dulce',
+                      text2: 'ámbar',
 
-                      containerWidth3: 200,
-                      containerColor3: Color.fromRGBO(255, 254, 199, 1),
-                      colorText3: Colors.black,
-                      text3: 'avainillado',
+                      containerWidth3: 165,
+                      containerColor3: Color.fromRGBO(250, 255, 127, 1),
+                      colorText3: Colors.black87,
+                      text3: 'cítrico',
 
-                      containerWidth4: 180,
-                      containerColor4: Color.fromRGBO(146, 105, 67, 1),
-                      colorText4: Colors.white,
-                      text4: 'amaderado',
+                      containerWidth4: 150,
+                      containerColor4: Color.fromRGBO(118, 190, 174, 1),
+                      colorText4: Colors.black87,
+                      text4: 'aromático',
 
-                      containerWidth5: 165,
-                      containerColor5: Color.fromRGBO(243, 231, 218, 1),
+                      containerWidth5: 140,
+                      containerColor5: Color.fromRGBO(239, 229, 241, 1),
                       colorText5: Colors.black54,
-                      text5: 'atalcado',
+                      text5: 'almizclado',
 
-                      containerWidth6: 155,
-                      containerColor6: Color.fromRGBO(98, 180, 108, 1),
+                      containerWidth6: 130,
+                      containerColor6: Color.fromRGBO(173, 142, 114, 1),
                       colorText6: Colors.white70,
-                      text6: 'verde',
+                      text6: 'amaderado',
 
-                      containerWidth7: 155,
-                      containerColor7: Color.fromRGBO(182, 140, 104, 1),
-                      colorText7: Colors.white70,
-                      text7: 'animálico',
+                      containerWidth7: 110,
+                      containerColor7: Color.fromRGBO(176, 206, 186, 1),
+                      colorText7: Colors.black45,
+                      text7: 'herbal',
 
-                      containerWidth8: 150,
-                      containerColor8: Color.fromRGBO(177, 221, 121, 1),
+                      containerWidth8: 110,
+                      containerColor8: Color.fromRGBO(242, 228, 244, 1),
                       colorText8: Colors.black45,
-                      text8: 'fresco especiado',
+                      text8: 'Lavanda',
 
-                      containerWidth9: 145,
-                      containerColor9: Color.fromRGBO(251, 255, 152, 1),
-                      colorText9: Colors.black45,
-                      text9: 'cítrico',
-
-                      containerWidth10: 145,
-                      containerColor10: Color.fromRGBO(195, 239, 244, 1),
-                      colorText10: Colors.black45,
-                      text10: 'fresco',
+                      containerWidth9: 110,
+                      containerColor9: Color.fromRGBO(228, 147, 120, 1),
+                      colorText9: Colors.white60,
+                      text9: 'cálido especiado',
                     ),
                 ],
               ),

@@ -2036,97 +2036,497 @@ de Brasil''',
                   ),
                   //TODO:
                   const Aromas100(
-                      title: 'Sauvage - Dior',
-                      description: '''
+                    title: 'Sauvage - Dior',
+                    description: '''
 Sauvage de Dior es una fragancia de la
 familia olfativa Aromática Fougère para
 ombres. Sauvage se lanzó en 2015. Tiene
 una longevidad duradera y su estela es
 pesada. Es un aroma Masculino.
 ''',
-                      imageLocion: 'assets/images/sauvage_dior.jpg',
-
-                      imageNotaSalida: 'assets/images/bergamota.jpg',
-                      textNotaSalida: '''Bergamota
+                    imageLocion: 'assets/images/sauvage_dior.jpg',
+                    imageNotaSalida: 'assets/images/bergamota.jpg',
+                    textNotaSalida: '''Bergamota
 de Calabria''',
-
-                      imageNotaSalida2: 'assets/images/pimienta.jpg',
-                      textNotaSalida2: 'Pimienta',
-
-                      imageCorazon: 'assets/images/pimienta.jpg',
-                      textCorazon: '''Pimienta
+                    imageNotaSalida2: 'assets/images/pimienta.jpg',
+                    textNotaSalida2: 'Pimienta',
+                    imageCorazon: 'assets/images/pimienta.jpg',
+                    textCorazon: '''Pimienta
 de Sichuan''',
-                      imageCorazon2: 'assets/images/lavanda.jpg',
-                      textCorazon2: 'Lavanda',
-
-                      imageCorazon3: 'assets/images/pimienta_rosa.jpg',
-                      textCorazon3: '''Pimienta
+                    imageCorazon2: 'assets/images/lavanda.jpg',
+                    textCorazon2: 'Lavanda',
+                    imageCorazon3: 'assets/images/pimienta_rosa.jpg',
+                    textCorazon3: '''Pimienta
 Rosa''',
-                      imageCorazon4: 'assets/images/vetiver.jpg',
-                      textCorazon4: 'Vetiver',
+                    imageCorazon4: 'assets/images/vetiver.jpg',
+                    textCorazon4: 'Vetiver',
+                    imageCorazon5: 'assets/images/pachuli.jpg',
+                    textCorazon5: 'Pachulí',
+                    imageCorazon6: 'assets/images/geranio.jpg',
+                    textCorazon6: 'Geranio',
+                    imageCorazon7: 'assets/images/elemi.jpg',
+                    textCorazon7: 'Elemí',
+                    imageBase: 'assets/images/ambroxan.jpg',
+                    textBase: 'Ambroxan',
+                    imageBase2: 'assets/images/cedro.jpg',
+                    textBase2: 'Cedro',
+                    imageBase3: 'assets/images/ladano.jpg',
+                    textBase3: 'Ládano',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(131, 201, 40, 1),
+                    colorText: Colors.black,
+                    text: 'fresco especiado',
+                    containerWidth2: 170,
+                    containerColor2: Color.fromRGBO(203, 118, 71, 1),
+                    colorText2: Colors.white,
+                    text2: 'ámbar',
+                    containerWidth3: 165,
+                    containerColor3: Color.fromRGBO(250, 255, 127, 1),
+                    colorText3: Colors.black87,
+                    text3: 'cítrico',
+                    containerWidth4: 150,
+                    containerColor4: Color.fromRGBO(118, 190, 174, 1),
+                    colorText4: Colors.black87,
+                    text4: 'aromático',
+                    containerWidth5: 140,
+                    containerColor5: Color.fromRGBO(239, 229, 241, 1),
+                    colorText5: Colors.black54,
+                    text5: 'almizclado',
+                    containerWidth6: 130,
+                    containerColor6: Color.fromRGBO(173, 142, 114, 1),
+                    colorText6: Colors.white70,
+                    text6: 'amaderado',
+                    containerWidth7: 110,
+                    containerColor7: Color.fromRGBO(176, 206, 186, 1),
+                    colorText7: Colors.black45,
+                    text7: 'herbal',
+                    containerWidth8: 110,
+                    containerColor8: Color.fromRGBO(242, 228, 244, 1),
+                    colorText8: Colors.black45,
+                    text8: 'Lavanda',
+                    containerWidth9: 110,
+                    containerColor9: Color.fromRGBO(228, 147, 120, 1),
+                    colorText9: Colors.white60,
+                    text9: 'cálido especiado',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Fahrenheit - Dior',
+                    description: '''
+Fahrenheit de Dior es una fragancia de
+la familia olfativa Aromática Fougère
+para Hombres. Fahrenheit se lanzó en 1988.
+Tiene una longevidad duradera y su
+estela es pesada. Es un aroma masculino.
+''',
+                    imageLocion: 'assets/images/fahrenheit_dior.jpeg',
+                    imageNotaSalida: 'assets/images/flor_del_espino.jpg',
+                    textNotaSalida: '''Flor del
+Espino''',
+                    imageNotaSalida2: 'assets/images/lavanda.jpg',
+                    textNotaSalida2: 'Lavanda',
+                    imageNotaSalida3: 'assets/images/cedro.jpg',
+                    textNotaSalida3: 'Cedro',
+                    imageNotaSalida4: 'assets/images/bergamota.jpg',
+                    textNotaSalida4: 'Bergamota',
+                    imageNotaSalida5: 'assets/images/limon.jpg',
+                    textNotaSalida5: 'Limón',
+                    imageNotaSalida6: 'assets/images/nuez_moscada.jpg',
+                    textNotaSalida6: '''Flor del
+Mascadero''',
+                    imageNotaSalida7: 'assets/images/mandarina.jpg',
+                    textNotaSalida7: 'Mandarina',
+                    imageNotaSalida8: 'assets/images/manzanilla.jpg',
+                    textNotaSalida8: 'Manzanilla',
+                    imageCorazon: 'assets/images/hojas_de_violeta.jpg',
+                    textCorazon: '''Hojas de
+Violeta''',
+                    imageCorazon2: 'assets/images/nuez_moscada.jpg',
+                    textCorazon2: '''Nuez
+Moscada''',
+                    imageCorazon3: 'assets/images/cedro.jpg',
+                    textCorazon3: 'Cedro',
+                    imageCorazon4: 'assets/images/clavel.jpg',
+                    textCorazon4: 'Clavel',
+                    imageCorazon5: 'assets/images/madreselva.jpg',
+                    textCorazon5: '''Madre
+Selva''',
+                    imageCorazon6: 'assets/images/jazmin.jpg',
+                    textCorazon6: 'Jazmín',
+                    imageCorazon7: 'assets/images/lirio_de_los_valles.jpg',
+                    textCorazon7: '''Lirio de
+los Valles''',
+                    imageBase: 'assets/images/cuero.jpg',
+                    textBase: 'Cuero',
+                    imageBase2: 'assets/images/vetiver.jpg',
+                    textBase2: 'Vetiver',
+                    imageBase3: 'assets/images/almizcle.jpg',
+                    textBase3: 'Almizcle',
+                    imageBase4: 'assets/images/ambar.jpg',
+                    textBase4: 'Ámbar',
+                    imageBase5: 'assets/images/pachuli.jpg',
+                    textBase5: 'Pachulí',
+                    imageBase6: 'assets/images/cumarina.jpg',
+                    textBase6: 'Haba Tonka',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(120, 72, 58, 1),
+                    colorText: Colors.white,
+                    text: 'cuero',
+                    containerWidth2: 200,
+                    containerColor2: Color.fromRGBO(133, 87, 44, 1),
+                    colorText2: Colors.white,
+                    text2: 'amaderado',
+                    containerWidth3: 180,
+                    containerColor3: Color.fromRGBO(210, 253, 251, 1),
+                    colorText3: Colors.black87,
+                    text3: 'ozónico',
+                    containerWidth4: 170,
+                    containerColor4: Color.fromRGBO(155, 211, 82, 1),
+                    colorText4: Colors.black87,
+                    text4: 'fresco especiado',
+                    containerWidth5: 160,
+                    containerColor5: Color.fromRGBO(167, 115, 72, 1),
+                    colorText5: Colors.white70,
+                    text5: 'animálico',
+                    containerWidth6: 160,
+                    containerColor6: Color.fromRGBO(100, 181, 164, 1),
+                    colorText6: Colors.black54,
+                    text6: 'aromático',
+                    containerWidth7: 140,
+                    containerColor7: Color.fromRGBO(142, 218, 234, 1),
+                    colorText7: Colors.black54,
+                    text7: 'acuático',
+                    containerWidth8: 140,
+                    containerColor8: Color.fromRGBO(255, 141, 173, 1),
+                    colorText8: Colors.black54,
+                    text8: 'florales',
+                    containerWidth9: 130,
+                    containerColor9: Color.fromRGBO(251, 255, 139, 1),
+                    colorText9: Colors.black45,
+                    text9: 'cítrico',
+                    containerWidth10: 120,
+                    containerColor10: Color.fromRGBO(102, 182, 111, 1),
+                    colorText10: Colors.white60,
+                    text10: 'verde',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'CK One - Calvin Klein',
+                    description: '''
+CK One de Calvin Klein es una fragancia
+de la familia olfativa Cítrica Aromática
+para Hombres y Mujeres. CK One se lanzó
+en 1994. Su longevidad y su estela son
+moderadas. Es un aroma Unisex.
+''',
+                    imageLocion: 'assets/images/ck_one_calvin_klein.jpeg',
+                    imageNotaSalida: 'assets/images/limon.jpg',
+                    textNotaSalida: 'Limón',
+                    imageNotaSalida2: 'assets/images/piña.jpg',
+                    textNotaSalida2: 'Piña',
+                    imageNotaSalida3: 'assets/images/bergamota.jpg',
+                    textNotaSalida3: 'Bergamota',
+                    imageNotaSalida4: 'assets/images/mandarina.jpg',
+                    textNotaSalida4: 'Mandarina',
+                    imageNotaSalida5: 'assets/images/papaya.jpg',
+                    textNotaSalida5: 'Papaya',
+                    imageNotaSalida6: 'assets/images/cardamomo.jpg',
+                    textNotaSalida6: 'Cardamomo',
+                    imageNotaSalida7: 'assets/images/notas_verdes.jpg',
+                    textNotaSalida7: '''Notas
+Verdes''',
+                    imageCorazon: 'assets/images/lirio_de_los_valles.jpg',
+                    textCorazon: '''Lirio de
+los Valles''',
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: 'Jazmín',
+                    imageCorazon3: 'assets/images/violeta.jpg',
+                    textCorazon3: 'Violeta',
+                    imageCorazon4: 'assets/images/rosa.jpg',
+                    textCorazon4: 'Rosa',
+                    imageCorazon5: 'assets/images/nuez_moscada.jpg',
+                    textCorazon5: '''Nuez
+Moscada''',
+                    imageCorazon6: 'assets/images/raiz_de_lirio.jpg',
+                    textCorazon6: '''Raíz de
+Lirio''',
+                    imageCorazon7: 'assets/images/fresia.jpg',
+                    textCorazon7: 'Fresia',
+                    imageBase: 'assets/images/notas_verdes.jpg',
+                    textBase: '''Acordes
+Verdes''',
+                    imageBase2: 'assets/images/almizcle.jpg',
+                    textBase2: 'Almizcle',
+                    imageBase3: 'assets/images/cedro.jpg',
+                    textBase3: 'Cedro',
+                    imageBase4: 'assets/images/sandalo.jpg',
+                    textBase4: 'Sándalo',
+                    imageBase5: 'assets/images/musgo_de_roble.jpg',
+                    textBase5: '''Musgo de
+Roble''',
+                    imageBase6: 'assets/images/te_verde.jpg',
+                    textBase6: 'Té Verde',
+                    imageBase7: 'assets/images/ambar.jpg',
+                    textBase7: 'Ámbar',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(249, 255, 82, 1),
+                    colorText: Colors.black,
+                    text: 'cítrico',
+                    containerWidth2: 170,
+                    containerColor2: Color.fromRGBO(74, 168, 85, 1),
+                    colorText2: Colors.white,
+                    text2: 'verde',
+                    containerWidth3: 140,
+                    containerColor3: Color.fromRGBO(168, 136, 105, 1),
+                    colorText3: Colors.white,
+                    text3: 'amaderado',
+                    containerWidth4: 140,
+                    containerColor4: Color.fromRGBO(243, 233, 222, 1),
+                    colorText4: Colors.black54,
+                    text4: 'atalcado',
+                    containerWidth5: 135,
+                    containerColor5: Color.fromRGBO(243, 246, 252, 1),
+                    colorText5: Colors.black54,
+                    text5: 'floral blanco',
+                    containerWidth6: 135,
+                    containerColor6: Color.fromRGBO(194, 238, 243, 1),
+                    colorText6: Colors.black54,
+                    text6: 'fresco',
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(134, 197, 183, 1),
+                    colorText7: Colors.black54,
+                    text7: 'aromático',
+                    containerWidth8: 125,
+                    containerColor8: Color.fromRGBO(185, 224, 134, 1),
+                    colorText8: Colors.black45,
+                    text8: 'fresco especiado',
+                    containerWidth9: 120,
+                    containerColor9: Color.fromRGBO(254, 167, 192, 1),
+                    colorText9: Colors.black45,
+                    text9: 'florales',
+                    containerWidth10: 120,
+                    containerColor10: Color.fromRGBO(241, 233, 243, 1),
+                    colorText10: Colors.black45,
+                    text10: 'almizclado',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: '360° for Men - Perry Ellis',
+                    description: '''
+360° for Men de Perry Ellis es una fragancia
+de la familia olfativa Aromática para Hombres.
+360° for Men se lanzó en 1995. Tiene longevidad
+y estela moderadas. Es un aroma Masculino.
+''',
+                    imageLocion: 'assets/images/360_for_men_perry_ellis.jpg',
+                    imageNotaSalida: 'assets/images/bayas_de_enebro.jpg',
+                    textNotaSalida: '''Bayas de
+Enebro''',
+                    imageNotaSalida2: 'assets/images/limon.jpg',
+                    textNotaSalida2: 'Limón',
+                    imageNotaSalida3: 'assets/images/bergamota.jpg',
+                    textNotaSalida3: 'Bergamota',
+                    imageCorazon: 'assets/images/lavanda.jpg',
+                    textCorazon: 'Lavanda',
+                    imageCorazon2: 'assets/images/salvia.jpg',
+                    textCorazon2: 'Salvia',
+                    imageCorazon3: 'assets/images/cardamomo.jpg',
+                    textCorazon3: 'Cardamomo',
+                    imageCorazon4: 'assets/images/fresia.jpg',
+                    textCorazon4: 'Fresia',
+                    imageBase: 'assets/images/notas_amaderadas.jpg',
+                    textBase: '''Notas
+Amaderadas''',
+                    imageBase2: 'assets/images/vetiver.jpg',
+                    textBase2: 'Vetiver',
+                    imageBase3: 'assets/images/almizcle.jpg',
+                    textBase3: 'Almizcle',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(55, 160, 137, 1),
+                    colorText: Colors.black,
+                    text: 'aromático',
+                    containerWidth2: 140,
+                    containerColor2: Color.fromRGBO(158, 122, 88, 1),
+                    colorText2: Colors.white,
+                    text2: 'amaderado',
+                    containerWidth3: 140,
+                    containerColor3: Color.fromRGBO(168, 217, 105, 1),
+                    colorText3: Colors.black87,
+                    text3: 'fresco especiado',
+                    containerWidth4: 125,
+                    containerColor4: Color.fromRGBO(250, 254, 142, 1),
+                    colorText4: Colors.black54,
+                    text4: 'cítrico',
+                    containerWidth5: 110,
+                    containerColor5: Color.fromRGBO(240, 226, 243, 1),
+                    colorText5: Colors.black45,
+                    text5: 'lavanda',
+                  ), //TODO:
+                  const Aromas100(
+                    title: 'Nautica Voyage - Nautica',
+                    description: '''
+Nautica Voyage de Nautica es una fragancia
+de la familia olfativa Amaderada Acuática
+para Hombres. Nautica Voyage se lanzó en 2006.
+Su longevidad y su estela son moderadas.
+Es un aroma Masculino.
+''',
+                    imageLocion: 'assets/images/nautica_voyage_nautica.jpg',
+                    imageNotaSalida: 'assets/images/notas_verdes.jpg',
+                    textNotaSalida: 'Hojas Verdes',
+                    imageNotaSalida2: 'assets/images/manzana.jpg',
+                    textNotaSalida2: 'Manzana',
+                    imageCorazon: 'assets/images/flor_de_loto.jpg',
+                    textCorazon: 'Flor de Loto',
+                    imageCorazon2: 'assets/images/mimosa.jpg',
+                    textCorazon2: 'Mimosa',
+                    imageBase: 'assets/images/almizcle.jpg',
+                    textBase: 'Almizcle',
+                    imageBase2: 'assets/images/cedro.jpg',
+                    textBase2: 'Cedro',
+                    imageBase3: 'assets/images/musgo_de_roble.jpg',
+                    textBase3: 'Musgo de Roble',
+                    imageBase4: 'assets/images/ambar.jpg',
+                    textBase4: 'Ámbar',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(14, 140, 29, 1),
+                    colorText: Colors.white,
+                    text: 'verde',
+                    containerWidth2: 150,
+                    containerColor2: Color.fromRGBO(252, 126, 101, 1),
+                    colorText2: Colors.black87,
+                    text2: 'afrutados',
+                    containerWidth3: 135,
+                    containerColor3: Color.fromRGBO(254, 149, 179, 1),
+                    colorText3: Colors.black87,
+                    text3: 'florales',
+                    containerWidth4: 120,
+                    containerColor4: Color.fromRGBO(194, 239, 243, 1),
+                    colorText4: Colors.black54,
+                    text4: 'fresco',
+                    containerWidth5: 120,
+                    containerColor5: Color.fromRGBO(244, 234, 224, 1),
+                    colorText5: Colors.black54,
+                    text5: 'atalcado',
+                    containerWidth6: 115,
+                    containerColor6: Color.fromRGBO(165, 225, 238, 1),
+                    colorText6: Colors.black54,
+                    text6: 'acuático',
+                    containerWidth7: 110,
+                    containerColor7: Color.fromRGBO(241, 233, 242, 1),
+                    colorText7: Colors.black54,
+                    text7: 'almizclado',
+                    containerWidth8: 105,
+                    containerColor8: Color.fromRGBO(181, 154, 128, 1),
+                    colorText8: Colors.white70,
+                    text8: 'amaderado',
+                    containerWidth9: 100,
+                    containerColor9: Color.fromRGBO(254, 236, 128, 1),
+                    colorText9: Colors.black45,
+                    text9: 'floral amarillo',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                      title: 'Toy Boy - Moschino',
+                      description: '''
+Toy Boy de Moschino es una fragancia de la
+familia olfativa Amaderada Especiada para Hombres.
+Toy Boy se lanzó en 2019. Su longevidad es duradera
+y su estela es pesada. Es un aroma Unisex.
+''',
+                      imageLocion: 'assets/images/toy_boy_moschino.webp',
 
-                      imageCorazon5: 'assets/images/pachuli.jpg',
-                      textCorazon5: 'Pachulí',
+                      imageNotaSalida: 'assets/images/pimienta_rosa.jpg',
+                      textNotaSalida: '''Pimienta
+Rosa''',
+                      imageNotaSalida2: 'assets/images/pera.jpg',
+                      textNotaSalida2: 'Pera',
 
-                      imageCorazon6: 'assets/images/geranio.jpg',
-                      textCorazon6: 'Geranio',
+                      imageNotaSalida3: 'assets/images/nuez_moscada.jpg',
+                      textNotaSalida3: '''Nuez 
+Moscada''',
+                      imageNotaSalida4: 'assets/images/elemi.jpg',
+                      textNotaSalida4: 'Elemí',
 
-                      imageCorazon7: 'assets/images/elemi.jpg',
-                      textCorazon7: 'Elemí',
+                      imageNotaSalida5: 'assets/images/bergamota.jpg',
+                      textNotaSalida5: 'Bergamota',
 
-                      imageBase: 'assets/images/ambroxan.jpg',
-                      textBase: 'Ambroxan',
+                      imageCorazon: 'assets/images/rosa.jpg',
+                      textCorazon: 'Rosa',
 
-                      imageBase2: 'assets/images/cedro.jpg',
-                      textBase2: 'Cedro',
+                      imageCorazon2: 'assets/images/clavos_de_olor.jpg',
+                      textCorazon2: '''Clavos
+de Olor''',
+                      imageCorazon3: 'assets/images/magnolia.jpg',
+                      textCorazon3: 'Magnolia',
 
-                      imageBase3: 'assets/images/ladano.jpg',
-                      textBase3: 'Ládano',
+                      imageCorazon4: 'assets/images/lino.jpg',
+                      textCorazon4: 'Lino',
+
+                      imageBase: 'assets/images/cachemira.jpg',
+                      textBase: 'Cachemira',
+
+                      imageBase2: 'assets/images/vetiver.jpg',
+                      textBase2: '''Vetiver
+de Haití''',
+                      imageBase3: 'assets/images/sylkolide.jpg',
+                      textBase3: 'Sylkolide',
+
+                      imageBase4: 'assets/images/sandalo.jpg',
+                      textBase4: 'Sándalo',
+
+                      imageBase5: 'assets/images/ambar.jpg',
+                      textBase5: 'Ámbar',
 
                       containerWidth: 230,
-                      containerColor: Color.fromRGBO(131, 201, 40, 1),
-                      colorText: Colors.black,
-                      text: 'fresco especiado',
+                      containerColor: Color.fromRGBO(254, 1, 107, 1),
+                      colorText: Colors.white,
+                      text: 'rosas',
 
                       containerWidth2: 170,
-                      containerColor2: Color.fromRGBO(203, 118, 71, 1),
-                      colorText2: Colors.white,
-                      text2: 'ámbar',
+                      containerColor2: Color.fromRGBO(254, 128, 164, 1),
+                      colorText2: Colors.black87,
+                      text2: 'florales',
 
-                      containerWidth3: 165,
-                      containerColor3: Color.fromRGBO(250, 255, 127, 1),
+                      containerWidth3: 160,
+                      containerColor3: Color.fromRGBO(236, 225, 239, 1),
                       colorText3: Colors.black87,
-                      text3: 'cítrico',
+                      text3: 'almizclado',
 
-                      containerWidth4: 150,
-                      containerColor4: Color.fromRGBO(118, 190, 174, 1),
-                      colorText4: Colors.black87,
-                      text4: 'aromático',
+                      containerWidth4: 155,
+                      containerColor4: Color.fromRGBO(154, 117, 82, 1),
+                      colorText4: Colors.white,
+                      text4: 'amaderado',
 
-                      containerWidth5: 140,
-                      containerColor5: Color.fromRGBO(239, 229, 241, 1),
-                      colorText5: Colors.black54,
-                      text5: 'almizclado',
+                      containerWidth5: 150,
+                      containerColor5: Color.fromRGBO(233, 156, 130, 1),
+                      colorText5: Colors.black87,
+                      text5: 'especiado suave',
 
-                      containerWidth6: 130,
-                      containerColor6: Color.fromRGBO(173, 142, 114, 1),
+                      containerWidth6: 135,
+                      containerColor6: Color.fromRGBO(209, 135, 95, 1),
                       colorText6: Colors.white70,
-                      text6: 'amaderado',
+                      text6: 'ámbar',
+                    
+                      containerWidth7: 135,
+                      containerColor7: Color.fromRGBO(172, 218, 111, 1),
+                      colorText7: Colors.black54,
+                      text7: 'fresco especiado',
+                    
+                      containerWidth8: 135,
+                      containerColor8: Color.fromRGBO(123, 192, 177, 1),
+                      colorText8: Colors.black54,
+                      text8: 'aromático',
+                    
+                      containerWidth9: 125,
+                      containerColor9: Color.fromRGBO(244, 130, 133, 1),
+                      colorText9: Colors.white70,
+                      text9: 'dulce',
 
-                      containerWidth7: 110,
-                      containerColor7: Color.fromRGBO(176, 206, 186, 1),
-                      colorText7: Colors.black45,
-                      text7: 'herbal',
-
-                      containerWidth8: 110,
-                      containerColor8: Color.fromRGBO(242, 228, 244, 1),
-                      colorText8: Colors.black45,
-                      text8: 'Lavanda',
-
-                      containerWidth9: 110,
-                      containerColor9: Color.fromRGBO(228, 147, 120, 1),
-                      colorText9: Colors.white60,
-                      text9: 'cálido especiado',
+                      containerWidth10: 120,
+                      containerColor10: Color.fromRGBO(223, 131, 101, 1),
+                      colorText10: Colors.white70,
+                      text10: 'cálido especiado',
                     ),
                 ],
               ),
@@ -2137,6 +2537,28 @@ Rosa''',
     );
   }
 }
+
+/*
+  containerWidth6: ,
+  containerColor6: ,
+  colorText6: ,
+  text6: ,
+
+  containerWidth7: ,
+  containerColor7: ,
+  colorText7: ,
+  text7: ,
+
+  containerWidth8: ,
+  containerColor8: ,
+  colorText8: ,
+  text8: ,
+
+  containerWidth9: ,
+  containerColor9: ,
+  colorText9: ,
+  text9: ,
+*/
 
 class Aromas100 extends StatelessWidget {
   final String title;
@@ -2154,6 +2576,10 @@ class Aromas100 extends StatelessWidget {
   final String? textNotaSalida5;
   final String? imageNotaSalida6;
   final String? textNotaSalida6;
+  final String? imageNotaSalida7;
+  final String? textNotaSalida7;
+  final String? imageNotaSalida8;
+  final String? textNotaSalida8;
   final String imageCorazon;
   final String textCorazon;
   final String? imageCorazon2;
@@ -2204,14 +2630,14 @@ class Aromas100 extends StatelessWidget {
   final Color? containerColor5;
   final Color colorText5;
   final String text5;
-  final double containerWidth6;
+  final double? containerWidth6;
   final Color? containerColor6;
-  final Color colorText6;
-  final String text6;
-  final double containerWidth7;
+  final Color? colorText6;
+  final String? text6;
+  final double? containerWidth7;
   final Color? containerColor7;
-  final Color colorText7;
-  final String text7;
+  final Color? colorText7;
+  final String? text7;
   final double? containerWidth8;
   final Color? containerColor8;
   final Color? colorText8;
@@ -2243,6 +2669,10 @@ class Aromas100 extends StatelessWidget {
     this.textNotaSalida5,
     this.imageNotaSalida6,
     this.textNotaSalida6,
+    this.imageNotaSalida7,
+    this.textNotaSalida7,
+    this.imageNotaSalida8,
+    this.textNotaSalida8,
     required this.imageCorazon,
     required this.textCorazon,
     this.imageCorazon2,
@@ -2293,14 +2723,14 @@ class Aromas100 extends StatelessWidget {
     required this.containerColor5,
     required this.colorText5,
     required this.text5,
-    required this.containerWidth6,
-    required this.containerColor6,
-    required this.colorText6,
-    required this.text6,
-    required this.containerWidth7,
-    required this.containerColor7,
-    required this.colorText7,
-    required this.text7,
+    this.containerWidth6,
+    this.containerColor6,
+    this.colorText6,
+    this.text6,
+    this.containerWidth7,
+    this.containerColor7,
+    this.colorText7,
+    this.text7,
     this.containerWidth8,
     this.containerColor8,
     this.colorText8,
@@ -2374,7 +2804,19 @@ class Aromas100 extends StatelessWidget {
               Aromas(
                 image: imageNotaSalida6!,
                 text: textNotaSalida6!,
-                padding: const EdgeInsets.only(left: 30, right: 0),
+                padding: const EdgeInsets.only(left: 30, right: 15),
+              ),
+            if (imageNotaSalida7 != null && textNotaSalida7 != null)
+              Aromas(
+                image: imageNotaSalida7!,
+                text: textNotaSalida7!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaSalida8 != null && textNotaSalida8 != null)
+              Aromas(
+                image: imageNotaSalida8!,
+                text: textNotaSalida8!,
+                padding: const EdgeInsets.only(right: 0),
               ),
           ],
         ),
@@ -2537,18 +2979,26 @@ class Aromas100 extends StatelessWidget {
                   colorText: colorText5,
                   text: text5,
                 ),
-                MainChords(
-                  containerWidth: containerWidth6,
-                  containerColor: containerColor6,
-                  colorText: colorText6,
-                  text: text6,
-                ),
-                MainChords(
-                  containerWidth: containerWidth7,
-                  containerColor: containerColor7,
-                  colorText: colorText7,
-                  text: text7,
-                ),
+                if (containerWidth6 != null &&
+                    containerColor6 != null &&
+                    colorText6 != null &&
+                    text6 != null)
+                  MainChords(
+                    containerWidth: containerWidth6!,
+                    containerColor: containerColor6!,
+                    colorText: colorText6!,
+                    text: text6!,
+                  ),
+                if (containerWidth7 != null &&
+                    containerColor7 != null &&
+                    colorText7 != null &&
+                    text7 != null)
+                  MainChords(
+                    containerWidth: containerWidth7!,
+                    containerColor: containerColor7!,
+                    colorText: colorText7!,
+                    text: text7!,
+                  ),
                 if (containerWidth8 != null &&
                     containerColor8 != null &&
                     colorText8 != null &&

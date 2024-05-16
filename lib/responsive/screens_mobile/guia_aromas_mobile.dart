@@ -2680,71 +2680,271 @@ Verde''',
                   ),
                   //TODO:
                   const Aromas100(
-                      title: 'Acqua di Gio - Giorgio Armani',
-                      description: '''
+                    title: 'Acqua di Gio - Giorgio Armani',
+                    description: '''
 Acqua di Gio de Giorgio Armani es una fragancia
 de la familia olfativa Aromática Acuática para
 Hombres. Acqua di Gio se lanzó en 1996. Su longevidad
 y su estela son moderadas. Es un aroma Masculino.
 ''',
-                      imageLocion: 'assets/images/acqua_di_gio_giorgio_armani.webp',
-
-                      imageNotaSalida: 'assets/images/lima.jpg',
-                      textNotaSalida: 'Lima',
-
-                      imageNotaSalida2: 'assets/images/limon.jpg',
-                      textNotaSalida2: 'Limón',
-
-                      imageNotaSalida3: 'assets/images/bergamota.jpg',
-                      textNotaSalida3: 'Bergamota',
-
-                      imageNotaSalida4: 'assets/images/jazmin.jpg',
-                      textNotaSalida4: 'Jazmín',
-
-                      imageNotaSalida5: 'assets/images/naranja.jpg',
-                      textNotaSalida5: 'Naranja',
-
-                      imageNotaSalida6: 'assets/images/mandarina.jpg',
-                      textNotaSalida6: 'Mandarina',
-
-                      imageNotaSalida7: 'assets/images/neroli.jpg',
-                      textNotaSalida7: 'Neroli',
-                      
-                      imageCorazon: 'assets/images/notas_marinas.jpg',
-                      textCorazon: '''Notas
+                    imageLocion:
+                        'assets/images/acqua_di_gio_giorgio_armani.webp',
+                    imageNotaSalida: 'assets/images/lima.jpg',
+                    textNotaSalida: 'Lima',
+                    imageNotaSalida2: 'assets/images/limon.jpg',
+                    textNotaSalida2: 'Limón',
+                    imageNotaSalida3: 'assets/images/bergamota.jpg',
+                    textNotaSalida3: 'Bergamota',
+                    imageNotaSalida4: 'assets/images/jazmin.jpg',
+                    textNotaSalida4: 'Jazmín',
+                    imageNotaSalida5: 'assets/images/naranja.jpg',
+                    textNotaSalida5: 'Naranja',
+                    imageNotaSalida6: 'assets/images/mandarina.jpg',
+                    textNotaSalida6: 'Mandarina',
+                    imageNotaSalida7: 'assets/images/neroli.jpg',
+                    textNotaSalida7: 'Neroli',
+                    imageCorazon: 'assets/images/notas_marinas.jpg',
+                    textCorazon: '''Notas
 Marinas''',
-                      imageCorazon2: 'assets/images/jazmin.jpg',
-                      textCorazon2: 'Jazmín',
-
-                      imageCorazon3: 'assets/images/calone.jpg',
-                      textCorazon3: 'Calone',
-
-                      imageCorazon4: 'assets/images/romero.jpg',
-                      textCorazon4: 'Romero',
-
-                      imageCorazon5: 'assets/images/durazno.jpg',
-                      textCorazon5: 'Durazno',
-
-                      imageCorazon6: 'assets/images/fresia.jpg',
-                      textCorazon6: 'Fresia',
-                      
-                      imageCorazon7: 'assets/images/jacinto.jpg',
-                      textCorazon7: 'Jacinto',
-
-                      imageBase: 'assets/images/almizcle.jpg',
-                      textBase: '''Almizcle
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: 'Jazmín',
+                    imageCorazon3: 'assets/images/calone.jpg',
+                    textCorazon3: 'Calone',
+                    imageCorazon4: 'assets/images/romero.jpg',
+                    textCorazon4: 'Romero',
+                    imageCorazon5: 'assets/images/durazno.jpg',
+                    textCorazon5: 'Durazno',
+                    imageCorazon6: 'assets/images/fresia.jpg',
+                    textCorazon6: 'Fresia',
+                    imageCorazon7: 'assets/images/jacinto.jpg',
+                    textCorazon7: 'Jacinto',
+                    imageCorazon8: 'assets/images/ciclamen.jpg',
+                    textCorazon8: 'Ciclamen',
+                    imageCorazon9: 'assets/images/violeta.jpg',
+                    textCorazon9: 'Violeta',
+                    imageCorazon10: 'assets/images/cilantro.jpg',
+                    textCorazon10: 'Cilantro',
+                    imageCorazon11: 'assets/images/nuez_moscada.jpg',
+                    textCorazon11: '''Nuez
+Moscada''',
+                    imageCorazon12: 'assets/images/rosa.jpg',
+                    textCorazon12: 'Rosa',
+                    imageCorazon13: 'assets/images/reseda.jpg',
+                    textCorazon13: 'Reseda',
+                    imageBase: 'assets/images/almizcle.jpg',
+                    textBase: '''Almizcle
 Blanco''',
-                      imageBase2: 'assets/images/cedro.jpg',
-                      textBase2: 'Cedro',
-
-                      imageBase3: 'assets/images/musgo_de_roble.jpg',
-                      textBase3: '''Musgo de
+                    imageBase2: 'assets/images/cedro.jpg',
+                    textBase2: 'Cedro',
+                    imageBase3: 'assets/images/musgo_de_roble.jpg',
+                    textBase3: '''Musgo de
 Roble''',
-                      imageBase4: 'assets/images/pachuli.jpg',
-                      textBase4: 'Pachulí',
+                    imageBase4: 'assets/images/pachuli.jpg',
+                    textBase4: 'Pachulí',
+                    imageBase5: 'assets/images/ambar.jpg',
+                    textBase5: 'Ámbar',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(249, 255, 82, 1),
+                    colorText: Colors.black,
+                    text: 'cítrico',
+                    containerWidth2: 170,
+                    containerColor2: Color.fromRGBO(112, 187, 171, 1),
+                    colorText2: Colors.black87,
+                    text2: 'aromático',
+                    containerWidth3: 150,
+                    containerColor3: Color.fromRGBO(98, 142, 190, 1),
+                    colorText3: Colors.white70,
+                    text3: 'marino',
+                    containerWidth4: 130,
+                    containerColor4: Color.fromRGBO(183, 224, 131, 1),
+                    colorText4: Colors.black54,
+                    text4: 'fresco especiado',
+                    containerWidth5: 125,
+                    containerColor5: Color.fromRGBO(255, 166, 191, 1),
+                    colorText5: Colors.black45,
+                    text5: 'florales',
+                    containerWidth6: 120,
+                    containerColor6: Color.fromRGBO(182, 155, 129, 1),
+                    colorText6: Colors.white70,
+                    text6: 'amaderado',
+                    containerWidth7: 120,
+                    containerColor7: Color.fromRGBO(202, 241, 245, 1),
+                    colorText7: Colors.black45,
+                    text7: 'fresco',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Polo Blue - Ralph Lauren',
+                    description: '''
+Polo Blue de Ralph Lauren es una fragancia de
+la familia olfativa Aromática Fougère para Hombres.
+Polo Blue se lanzó en 2003. Su longevidad y su
+estela son moderadas. Es un aroma Masculino.
+''',
+                    imageLocion: 'assets/images/polo_blue_ralph_lauren.jpg',
+                    imageNotaSalida: 'assets/images/pepino.jpg',
+                    textNotaSalida: 'Pepino',
+                    imageNotaSalida2: 'assets/images/melon.jpg',
+                    textNotaSalida2: 'Melón',
+                    imageNotaSalida3: 'assets/images/mandarina.jpg',
+                    textNotaSalida3: 'Mandarina',
+                    imageCorazon: 'assets/images/albahaca.jpg',
+                    textCorazon: 'Albahaca',
+                    imageCorazon2: 'assets/images/salvia.jpg',
+                    textCorazon2: 'Salvia',
+                    imageCorazon3: 'assets/images/geranio.jpg',
+                    textCorazon3: 'Geranio',
+                    imageBase: 'assets/images/gamuza.jpg',
+                    textBase: 'Gamuza',
+                    imageBase2: 'assets/images/notas_amaderadas.jpg',
+                    textBase2: '''Notas
+Amaderadas''',
+                    imageBase3: 'assets/images/almizcle.jpg',
+                    textBase3: 'Almizcle',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(201, 253, 251, 1),
+                    colorText: Colors.black,
+                    text: 'ozónico',
+                    containerWidth2: 210,
+                    containerColor2: Color.fromRGBO(111, 208, 228, 1),
+                    colorText2: Colors.black,
+                    text2: 'acuático',
+                    containerWidth3: 170,
+                    containerColor3: Color.fromRGBO(110, 186, 170, 1),
+                    colorText3: Colors.black87,
+                    text3: 'aromático',
+                    containerWidth4: 160,
+                    containerColor4: Color.fromRGBO(169, 217, 106, 1),
+                    colorText4: Colors.black87,
+                    text4: 'fresco especiado',
+                    containerWidth5: 160,
+                    containerColor5: Color.fromRGBO(89, 176, 100, 1),
+                    colorText5: Colors.white,
+                    text5: 'verde',
+                    containerWidth6: 150,
+                    containerColor6: Color.fromRGBO(239, 229, 241, 1),
+                    colorText6: Colors.black87,
+                    text6: 'almizclado',
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(165, 199, 177, 1),
+                    colorText7: Colors.black54,
+                    text7: 'herbal',
+                    containerWidth8: 130,
+                    containerColor8: Color.fromRGBO(197, 240, 244, 1),
+                    colorText8: Colors.black54,
+                    text8: 'fresco',
+                    containerWidth9: 125,
+                    containerColor9: Color.fromRGBO(179, 150, 124, 1),
+                    colorText9: Colors.white70,
+                    text9: 'amaderado',
+                    containerWidth10: 125,
+                    containerColor10: Color.fromRGBO(251, 255, 160, 1),
+                    colorText10: Colors.black45,
+                    text10: 'cítrico',
+                  ),
+                  //TODO: AROMAS MUJER
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30, bottom: 20),
+                    child: Text('Aromas de Mujer', style: styleText3Mobile),
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Carolina Herrera - Carolina Herrera',
+                    description: '''
+Carolina Herrera de Carolina Herrera es una fragancia
+de la familia olfativa Floral para Hombres y Mujeres.
+Carolina Herrera se lanzó en 2016. Su longevidad es
+muy duradera y su estela es pesada. Es un aroma Femenino.
+''',
+                    imageLocion:
+                        'assets/images/carolina_herrera_carolina_herrera.jpg',
+                    imageNotaSalida: 'assets/images/notas_verdes.jpg',
+                    textNotaSalida: 'Notas Verdes',
+                    imageNotaSalida2: 'assets/images/citricos.jpg',
+                    textNotaSalida2: 'Cítricos',
+                    imageCorazon: 'assets/images/nardos.jpg',
+                    textCorazon: 'Nardos',
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: 'Jazmín',
+                    imageBase: 'assets/images/notas_amaderadas.jpg',
+                    textBase: '''Notas
+Amaderadas''',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(237, 242, 251, 1),
+                    colorText: Colors.black,
+                    text: 'floral blanco',
+                    containerWidth2: 180,
+                    containerColor2: Color.fromRGBO(239, 251, 246, 1),
+                    colorText2: Colors.black87,
+                    text2: 'nardos',
+                    containerWidth3: 165,
+                    containerColor3: Color.fromRGBO(84, 173, 94, 1),
+                    colorText3: Colors.white,
+                    text3: 'verdes',
+                    containerWidth4: 145,
+                    containerColor4: Color.fromRGBO(251, 255, 144, 1),
+                    colorText4: Colors.black54,
+                    text4: 'cítrico',
+                    containerWidth5: 135,
+                    containerColor5: Color.fromRGBO(172, 140, 111, 1),
+                    colorText5: Colors.white70,
+                    text5: 'amaderado',
+                    containerWidth6: 120,
+                    containerColor6: Color.fromRGBO(200, 240, 245, 1),
+                    colorText6: Colors.black45,
+                    text6: 'fresco',
+                    containerWidth7: 115,
+                    containerColor7: Color.fromRGBO(195, 160, 131, 1),
+                    colorText7: Colors.white60,
+                    text7: 'animálico',
+                  ),
+                  const SizedBox(height: 30),
+                  //TODO:
+                  const Aromas100(
+                      title: 'Ch (2015) - Carolina Herrera',
+                      description: '''
+CH (2015) de Carolina Herrera es una fragancia
+de la familia olfativa Ámbar Floral para Mujeres.
+CH (2015) se lanzó en 2015. Su longevidad y su
+estela son moderadas. Es un aroma Femenino.
+''',
+                      imageLocion: 'assets/images/ch_2015_carolina_herrera.jpg',
 
-                      imageBase5: 'assets/images/ambar.jpg',
-                      textBase5: 'Ámbar',
+                      imageNotaSalida: 'assets/images/toronja.jpg',
+                      textNotaSalida: 'Toronja',
+
+                      imageNotaSalida2: 'assets/images/bergamota.jpg',
+                      textNotaSalida2: 'Bergamota',
+
+                      imageNotaSalida3: 'assets/images/limon.jpg',
+                      textNotaSalida3: 'Limón',
+                      
+                      imageCorazon: 'assets/images/flor_de_azahar_del_naranjo.jpg',
+                      textCorazon: '''Flor del
+Naranjo''',
+                      imageCorazon2: 'assets/images/rosa.jpg',
+                      textCorazon2: 'Rosa',
+
+                      imageCorazon3: 'assets/images/jazmin.jpg',
+                      textCorazon3: 'Jazmín',
+
+                      imageBase: 'assets/images/cuero.jpg',
+                      textBase: 'Cuero',
+
+                      imageBase2: 'assets/images/praline.jpg',
+                      textBase2: 'Praliné',
+
+                      imageBase3: 'assets/images/pachuli.jpg',
+                      textBase3: 'Pachulí',
+
+                      imageBase4: 'assets/images/sandalo.jpg',
+                      textBase4: 'Sándalo',
+
+                      imageBase5: 'assets/images/cedro.jpg',
+                      textBase5: 'Cedro',
+
+                      imageBase6: 'assets/images/almizcle.jpg',
+                      textBase6: 'Almizcle',
 
                       containerWidth: 230,
                       containerColor: Color.fromRGBO(249, 255, 82, 1),
@@ -2752,34 +2952,49 @@ Roble''',
                       text: 'cítrico',
 
                       containerWidth2: 170,
-                      containerColor2: Color.fromRGBO(112, 187, 171, 1),
-                      colorText2: Colors.black87,
-                      text2: 'aromático',
+                      containerColor2: Color.fromRGBO(153, 115, 79, 1),
+                      colorText2: Colors.white,
+                      text2: 'amaderado',
 
                       containerWidth3: 150,
-                      containerColor3: Color.fromRGBO(98, 142, 190, 1),
-                      colorText3: Colors.white70,
-                      text3: 'marino',
+                      containerColor3: Color.fromRGBO(243, 246, 252, 1),
+                      colorText3: Colors.black87,
+                      text3: 'floral blanco',
+                      
+                      containerWidth4: 150,
+                      containerColor4: Color.fromRGBO(168, 137, 128, 1),
+                      colorText4: Colors.white,
+                      text4: 'cuero',
 
-                      containerWidth4: 130,
-                      containerColor4: Color.fromRGBO(183, 224, 131, 1),
-                      colorText4: Colors.black54,
-                      text4: 'fresco especiado',
+                      containerWidth5: 145,
+                      containerColor5: Color.fromRGBO(244, 128, 132, 1),
+                      colorText5: Colors.white,
+                      text5: 'dulce',
 
-                      containerWidth5: 125,
-                      containerColor5: Color.fromRGBO(255, 166, 191, 1),
-                      colorText5: Colors.black45,
-                      text5: 'florales',
-
-                      containerWidth6: 120,
-                      containerColor6: Color.fromRGBO(182, 155, 129, 1),
-                      colorText6: Colors.white70,
-                      text6: 'amaderado',
+                      containerWidth6: 130,
+                      containerColor6: Color.fromRGBO(190, 152, 120, 1),
+                      colorText6: Colors.white,
+                      text6: 'animálico',
                     
-                      containerWidth7: 120,
-                      containerColor7: Color.fromRGBO(202, 241, 245, 1),
-                      colorText7: Colors.black45,
-                      text7: 'fresco',
+                      containerWidth7: 130,
+                      containerColor7: Color.fromRGBO(167, 168, 137, 1),
+                      colorText7: Colors.white,
+                      text7: 'pachulí',
+                    
+                      containerWidth8: 130,
+                      containerColor8: Color.fromRGBO(142, 201, 188, 1),
+                      colorText8: Colors.black45,
+                      text8: 'aromático',
+                    
+                      containerWidth9: 130,
+                      containerColor9: Color.fromRGBO(245, 236, 226, 1),
+                      colorText9: Colors.black45,
+                      text9: 'atalcado',
+
+                      containerWidth10: 125,
+                      containerColor10: Color.fromRGBO(187, 225, 138, 1),
+                      colorText10: Colors.black45,
+                      text10: 'fresco especiado',
                     ),
                 ],
               ),
@@ -2857,10 +3072,22 @@ class Aromas100 extends StatelessWidget {
   final String? textCorazon6;
   final String? imageCorazon7;
   final String? textCorazon7;
+  final String? imageCorazon8;
+  final String? textCorazon8;
+  final String? imageCorazon9;
+  final String? textCorazon9;
+  final String? imageCorazon10;
+  final String? textCorazon10;
+  final String? imageCorazon11;
+  final String? textCorazon11;
+  final String? imageCorazon12;
+  final String? textCorazon12;
+  final String? imageCorazon13;
+  final String? textCorazon13;
   final String imageBase;
   final String textBase;
-  final String imageBase2;
-  final String textBase2;
+  final String? imageBase2;
+  final String? textBase2;
   final String? imageBase3;
   final String? textBase3;
   final String? imageBase4;
@@ -2950,10 +3177,22 @@ class Aromas100 extends StatelessWidget {
     this.textCorazon6,
     this.imageCorazon7,
     this.textCorazon7,
+    this.imageCorazon8,
+    this.textCorazon8,
+    this.imageCorazon9,
+    this.textCorazon9,
+    this.imageCorazon10,
+    this.textCorazon10,
+    this.imageCorazon11,
+    this.textCorazon11,
+    this.imageCorazon12,
+    this.textCorazon12,
+    this.imageCorazon13,
+    this.textCorazon13,
     required this.imageBase,
     required this.textBase,
-    required this.imageBase2,
-    required this.textBase2,
+    this.imageBase2,
+    this.textBase2,
     this.imageBase3,
     this.textBase3,
     this.imageBase4,
@@ -3137,6 +3376,47 @@ class Aromas100 extends StatelessWidget {
                 text: textCorazon7!,
                 padding: const EdgeInsets.only(right: 15),
               ),
+            if (imageCorazon8 != null && textCorazon8 != null)
+              Aromas(
+                image: imageCorazon8!,
+                text: textCorazon8!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon9 != null && textCorazon9 != null)
+              Aromas(
+                image: imageCorazon9!,
+                text: textCorazon9!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon10 != null && textCorazon10 != null)
+              Aromas(
+                image: imageCorazon10!,
+                text: textCorazon10!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageCorazon11 != null && textCorazon11 != null)
+              Aromas(
+                image: imageCorazon11!,
+                text: textCorazon11!,
+                padding: const EdgeInsets.only(left: 30, right: 15),
+              ),
+            if (imageCorazon12 != null && textCorazon12 != null)
+              Aromas(
+                image: imageCorazon12!,
+                text: textCorazon12!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon13 != null && textCorazon13 != null)
+              Aromas(
+                image: imageCorazon13!,
+                text: textCorazon13!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
           ],
         ),
         const SizedBox(height: 15),
@@ -3152,11 +3432,12 @@ class Aromas100 extends StatelessWidget {
               text: textBase,
               padding: const EdgeInsets.only(left: 30, right: 15),
             ),
-            Aromas(
-              image: imageBase2,
-              text: textBase2,
-              padding: const EdgeInsets.only(right: 15),
-            ),
+            if (imageBase2 != null && textBase2 != null)
+              Aromas(
+                image: imageBase2!,
+                text: textBase2!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
             if (imageBase3 != null && textBase3 != null)
               Aromas(
                 image: imageBase3!,

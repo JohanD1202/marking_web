@@ -3494,91 +3494,405 @@ Tonka''',
                   ),
                   //TODO:
                   const Aromas100(
-                      title: 'La Vie Est Belle - Lancôme',
-                      description: '''
+                    title: 'La Vie Est Belle - Lancôme',
+                    description: '''
 La Vie Est Belle de Lancôme es una fragancia de la
 familia olfativa Floral Frutal Gourmand para Mujeres.
 La Vie Est Belle se lanzó en 2012. Su longevidad es
 duradera y su estela es pesada. Es un aroma Femenino.
 ''',
-                      imageLocion: 'assets/images/la_vida_es_bella_lancome.avif',
-
-                      imageNotaSalida: 'assets/images/grosellas_negras.jpg',
-                      textNotaSalida: '''Grosellas
+                    imageLocion: 'assets/images/la_vie_est_belle_lancome.jpg',
+                    imageNotaSalida: 'assets/images/grosellas_negras.jpg',
+                    textNotaSalida: '''Grosellas
 Negras''',
-                      imageNotaSalida2: 'assets/images/pera.jpg',
-                      textNotaSalida2: 'Pera',
-
-                      imageCorazon: 'assets/images/iris.jpg',
-                      textCorazon: 'Iris',
-
-                      imageCorazon2: 'assets/images/jazmin.jpg',
-                      textCorazon2: 'Jazmín',
-
-                      imageCorazon3: 'assets/images/flor_de_azahar_del_naranjo.jpg',
-                      textCorazon3: '''Flor del
+                    imageNotaSalida2: 'assets/images/pera.jpg',
+                    textNotaSalida2: 'Pera',
+                    imageCorazon: 'assets/images/iris.jpg',
+                    textCorazon: 'Iris',
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: 'Jazmín',
+                    imageCorazon3:
+                        'assets/images/flor_de_azahar_del_naranjo.jpg',
+                    textCorazon3: '''Flor del
 Naranjo''',
-                      imageBase: 'assets/images/praline.jpg',
-                      textBase: 'Praliné',
-
-                      imageBase2: 'assets/images/vainilla.jpg',
-                      textBase2: 'Vainilla',
-
-                      imageBase3: 'assets/images/pachuli.jpg',
-                      textBase3: 'Pachulí',
-
-                      imageBase4: 'assets/images/cumarina.jpg',
-                      textBase4: '''Haba
+                    imageBase: 'assets/images/praline.jpg',
+                    textBase: 'Praliné',
+                    imageBase2: 'assets/images/vainilla.jpg',
+                    textBase2: 'Vainilla',
+                    imageBase3: 'assets/images/pachuli.jpg',
+                    textBase3: 'Pachulí',
+                    imageBase4: 'assets/images/cumarina.jpg',
+                    textBase4: '''Haba
 Tonka''',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(238, 54, 59, 1),
+                    colorText: Colors.white,
+                    text: 'dulce',
+                    containerWidth2: 170,
+                    containerColor2: Color.fromRGBO(255, 254, 202, 1),
+                    colorText2: Colors.black,
+                    text2: 'avainillado',
+                    containerWidth3: 155,
+                    containerColor3: Color.fromRGBO(253, 128, 105, 1),
+                    colorText3: Colors.black87,
+                    text3: 'afrutados',
+                    containerWidth4: 155,
+                    containerColor4: Color.fromRGBO(156, 157, 122, 1),
+                    colorText4: Colors.white,
+                    text4: 'pachulí',
+                    containerWidth5: 155,
+                    containerColor5: Color.fromRGBO(169, 137, 106, 1),
+                    colorText5: Colors.white,
+                    text5: 'amaderado',
+                    containerWidth6: 145,
+                    containerColor6: Color.fromRGBO(244, 247, 252, 1),
+                    colorText6: Colors.black54,
+                    text6: 'floral blanco',
+                    containerWidth7: 145,
+                    containerColor7: Color.fromRGBO(245, 235, 224, 1),
+                    colorText7: Colors.black54,
+                    text7: 'atalcado',
+                    containerWidth8: 135,
+                    containerColor8: Color.fromRGBO(159, 153, 144, 1),
+                    colorText8: Colors.white70,
+                    text8: 'terrosos',
+                    containerWidth9: 135,
+                    containerColor9: Color.fromRGBO(214, 206, 232, 1),
+                    colorText9: Colors.black45,
+                    text9: 'iris',
+                    containerWidth10: 135,
+                    containerColor10: Color.fromRGBO(226, 142, 114, 1),
+                    colorText10: Colors.white70,
+                    text10: 'cálido especiado',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Light Blue - Dolce&Gabbana',
+                    description: '''
+Light Blue de Dolce&Gabbana es una fragancia de la
+familia olfativa Floral Frutal para Mujeres. Light
+Blue se lanzó en 2001. Su longevidad es duradera y
+su estela es pesada. Es un aroma Femenino.
+''',
+                    imageLocion: 'assets/images/light_blue_dolce_gabbana.jpg',
+                    imageNotaSalida: 'assets/images/limon.jpg',
+                    textNotaSalida: '''Limón
+Siciliano''',
+                    imageNotaSalida2: 'assets/images/manzana.jpg',
+                    textNotaSalida2: 'Manzana',
+                    imageNotaSalida3: 'assets/images/cedro.jpg',
+                    textNotaSalida3: 'Cedro',
+                    imageNotaSalida4: 'assets/images/campanilla.jpg',
+                    textNotaSalida4: 'Campanilla',
+                    imageCorazon: 'assets/images/bambu.jpg',
+                    textCorazon: 'Bambú',
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: 'Jazmín',
+                    imageCorazon3: 'assets/images/rosa.jpg',
+                    textCorazon3: '''Rosa
+Blanca''',
+                    imageBase: 'assets/images/cedro.jpg',
+                    textBase: 'Cedro',
+                    imageBase2: 'assets/images/almizcle.jpg',
+                    textBase2: 'Almizcle',
+                    imageBase3: 'assets/images/ambar.jpg',
+                    textBase3: 'Ámbar',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(249, 255, 82, 1),
+                    colorText: Colors.black,
+                    text: 'cítrico',
+                    containerWidth2: 170,
+                    containerColor2: Color.fromRGBO(147, 107, 69, 1),
+                    colorText2: Colors.white,
+                    text2: 'amaderado',
+                    containerWidth3: 140,
+                    containerColor3: Color.fromRGBO(186, 237, 242, 1),
+                    colorText3: Colors.black87,
+                    text3: 'fresco',
+                    containerWidth4: 130,
+                    containerColor4: Color.fromRGBO(253, 139, 117, 1),
+                    colorText4: Colors.black54,
+                    text4: 'afrutados',
+                    containerWidth5: 120,
+                    containerColor5: Color.fromRGBO(133, 197, 183, 1),
+                    colorText5: Colors.black54,
+                    text5: 'aromático',
+                    containerWidth6: 110,
+                    containerColor6: Color.fromRGBO(241, 233, 243, 1),
+                    colorText6: Colors.black45,
+                    text6: 'almizclado',
+                    containerWidth7: 105,
+                    containerColor7: Color.fromRGBO(245, 236, 227, 1),
+                    colorText7: Colors.black45,
+                    text7: 'atalcado',
+                    containerWidth8: 100,
+                    containerColor8: Color.fromRGBO(129, 195, 137, 1),
+                    colorText8: Colors.white70,
+                    text8: 'verde',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Kim Kardashian - Kim Kardashian',
+                    description: '''
+Kim Kardashian de Kim Kardashian es una fragancia de la
+familia olfativa Ámbar Floral para Mujeres. Kim Kardashian
+se lanzó en 2009. Su longevidad es duradera y su estela
+es pesada. Es un aroma Femenino.
+''',
+                    imageLocion:
+                        'assets/images/kim_kardashian_kim_kardashian.jpg',
+                    imageNotaSalida: 'assets/images/madreselva.jpg',
+                    textNotaSalida: 'Madreselva',
+                    imageNotaSalida2:
+                        'assets/images/flor_de_azahar_del_naranjo.jpg',
+                    textNotaSalida2: '''Flor del
+Naranjo''',
+                    imageNotaSalida3: 'assets/images/mandarina.jpg',
+                    textNotaSalida3: 'Mandarina',
+                    imageCorazon: 'assets/images/nardos.jpg',
+                    textCorazon: 'Nardos',
+                    imageCorazon2: 'assets/images/gardenia.jpg',
+                    textCorazon2: 'Gardenia',
+                    imageCorazon3: 'assets/images/jazmin.jpg',
+                    textCorazon3: 'Jazmín',
+                    imageCorazon4: 'assets/images/especias.jpg',
+                    textCorazon4: 'Especias',
+                    imageBase: 'assets/images/cumarina.jpg',
+                    textBase: '''Haba
+Tonka''',
+                    imageBase2: 'assets/images/almizcle.jpg',
+                    textBase2: 'Almizcle',
+                    imageBase3: 'assets/images/sandalo.jpg',
+                    textBase3: 'Sándalo',
+                    imageBase4: 'assets/images/orquidea.jpg',
+                    textBase4: 'Orquídea',
+                    imageBase5: 'assets/images/notas_amaderadas.jpg',
+                    textBase5: '''Notas
+Amaderadas''',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(237, 242, 251, 1),
+                    colorText: Colors.black,
+                    text: 'floral blanco',
+                    containerWidth2: 130,
+                    containerColor2: Color.fromRGBO(243, 252, 248, 1),
+                    colorText2: Colors.black45,
+                    text2: 'nardos',
+                    containerWidth3: 120,
+                    containerColor3: Color.fromRGBO(195, 159, 130, 1),
+                    colorText3: Colors.white70,
+                    text3: 'animálico',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                    title: 'Angel - Mugler',
+                    description: '''
+Angel de Mugler es una fragancia de la familia
+olfativa Ámbar Vainilla para Mujeres. Angel se
+lanzó en 1992. Su longevidad es muy duradera
+y su estela es enorme. Es un aroma Femenino.
+''',
+                    imageLocion: 'assets/images/angel_mugler.webp',
+                    imageNotaSalida: 'assets/images/algodon_de_azucar.jpg',
+                    textNotaSalida: '''Algodón de
+Azúcar''',
+                    imageNotaSalida2: 'assets/images/coco.jpg',
+                    textNotaSalida2: 'Coco',
+                    imageNotaSalida3: 'assets/images/casia.jpg',
+                    textNotaSalida3: 'Casis',
+                    imageNotaSalida4: 'assets/images/melon.jpg',
+                    textNotaSalida4: 'Melón',
+                    imageNotaSalida5: 'assets/images/jazmin.jpg',
+                    textNotaSalida5: 'Jazmín',
+                    imageNotaSalida6: 'assets/images/bergamota.jpg',
+                    textNotaSalida6: 'Bergamota',
+                    imageNotaSalida7: 'assets/images/piña.jpg',
+                    textNotaSalida7: 'Piña',
+                    imageNotaSalida8: 'assets/images/mandarina.jpg',
+                    textNotaSalida8: 'Mandarina',
+                    imageCorazon: 'assets/images/miel.jpg',
+                    textCorazon: 'Miel',
+                    imageCorazon2: 'assets/images/bayas_rojas.jpg',
+                    textCorazon2: '''Bayas
+Rojas''',
+                    imageCorazon3: 'assets/images/zarzamora.jpg',
+                    textCorazon3: 'Zarzamora',
+                    imageCorazon4: 'assets/images/ciruela.jpg',
+                    textCorazon4: 'Ciruela',
+                    imageCorazon5: 'assets/images/rosa.jpg',
+                    textCorazon5: 'Rosa',
+                    imageCorazon6: 'assets/images/durazno.jpg',
+                    textCorazon6: 'Durazno',
+                    imageCorazon7: 'assets/images/jazmin.jpg',
+                    textCorazon7: 'Jazmín',
+                    imageCorazon8: 'assets/images/nuez_moscada.jpg',
+                    textCorazon8: '''Nuez
+Moscada''',
+                    imageCorazon9: 'assets/images/orquidea.jpg',
+                    textCorazon9: 'Orquídea',
+                    imageCorazon10: 'assets/images/alcaravea.jpg',
+                    textCorazon10: 'Alcaravea',
+                    imageCorazon11: 'assets/images/albaricoque.jpg',
+                    textCorazon11: 'Chabacano',
+                    imageCorazon12: 'assets/images/lirio_de_los_valles.jpg',
+                    textCorazon12: '''Lirio de
+los Valles''',
+                    imageBase: 'assets/images/pachuli.jpg',
+                    textBase: 'Pachulí',
+                    imageBase2: 'assets/images/chocolate.jpg',
+                    textBase2: 'Chocolate',
+                    imageBase3: 'assets/images/caramelo.jpg',
+                    textBase3: 'Caramelo',
+                    imageBase4: 'assets/images/vainilla.jpg',
+                    textBase4: 'Vainilla',
+                    imageBase5: 'assets/images/cumarina.jpg',
+                    textBase5: '''Haba
+Tonka''',
+                    imageBase6: 'assets/images/ambar.jpg',
+                    textBase6: 'Ámbar',
+                    imageBase7: 'assets/images/almizcle.jpg',
+                    textBase7: 'Almizcle',
+                    imageBase8: 'assets/images/sandalo.jpg',
+                    textBase8: 'Sándalo',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(238, 54, 59, 1),
+                    colorText: Colors.white,
+                    text: 'dulce',
+                    containerWidth2: 160,
+                    containerColor2: Color.fromRGBO(150, 151, 115, 1),
+                    colorText2: Colors.white,
+                    text2: 'pachulí',
+                    containerWidth3: 155,
+                    containerColor3: Color.fromRGBO(253, 135, 113, 1),
+                    colorText3: Colors.black87,
+                    text3: 'afrutados',
+                    containerWidth4: 155,
+                    containerColor4: Color.fromRGBO(221, 120, 87, 1),
+                    colorText4: Colors.white,
+                    text4: 'cálido especiado',
+                    containerWidth5: 155,
+                    containerColor5: Color.fromRGBO(232, 194, 144, 1),
+                    colorText5: Colors.black87,
+                    text5: 'caramelo',
+                    containerWidth6: 150,
+                    containerColor6: Color.fromRGBO(255, 254, 215, 1),
+                    colorText6: Colors.black87,
+                    text6: 'avainillado',
+                    containerWidth7: 145,
+                    containerColor7: Color.fromRGBO(173, 142, 113, 1),
+                    colorText7: Colors.white,
+                    text7: 'amaderado',
+                    containerWidth8: 135,
+                    containerColor8: Color.fromRGBO(252, 205, 112, 1),
+                    colorText8: Colors.black54,
+                    text8: 'amielado',
+                    containerWidth9: 135,
+                    containerColor9: Color.fromRGBO(245, 235, 226, 1),
+                    colorText9: Colors.black54,
+                    text9: 'atalcado',
+                    containerWidth10: 130,
+                    containerColor10: Color.fromRGBO(166, 139, 113, 1),
+                    colorText10: Colors.white70,
+                    text10: 'chocolate',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                      title: 'Halloween - Halloween',
+                      description: '''
+Halloween de Halloween es una fragancia de la
+familia olfativa Ámbar Floral para Mujeres.
+Halloween se lanzó en 1997. Su longevidad y
+su estela son moderadas. Es una aroma Femenino.
+''',
+                      imageLocion: 'assets/images/halloween_halloween.jpg',
+
+                      imageNotaSalida: 'assets/images/violeta.jpg',
+                      textNotaSalida: 'Violeta',
+
+                      imageNotaSalida2: 'assets/images/notas_marinas.jpg',
+                      textNotaSalida2: '''Notas
+Marinas''',
+                      imageNotaSalida3: 'assets/images/hojas_de_platano.jpg',
+                      textNotaSalida3: '''Hojas de
+Plátano''',
+                      imageNotaSalida4: 'assets/images/petit_grain.jpg',
+                      textNotaSalida4: '''Petit
+Grain''',
+                      imageCorazon: 'assets/images/violeta.jpg',
+                      textCorazon: 'Violeta',
+
+                      imageCorazon2: 'assets/images/magnolia.jpg',
+                      textCorazon2: 'Magnolia',
+
+                      imageCorazon3: 'assets/images/lirio_de_los_valles.jpg',
+                      textCorazon3: '''Lirio de
+los Valles''',
+                      imageCorazon4: 'assets/images/nardos.jpg',
+                      textCorazon4: 'Nardos',
+
+                      imageCorazon5: 'assets/images/pimienta.jpg',
+                      textCorazon5: 'Pimienta',
+
+                      imageBase: 'assets/images/incienso.jpg',
+                      textBase: 'Incienso',
+
+                      imageBase2: 'assets/images/sandalo.jpg',
+                      textBase2: 'Sándalo',
+
+                      imageBase3: 'assets/images/vainilla.jpg',
+                      textBase3: 'Vainilla',
+
+                      imageBase4: 'assets/images/mirra.jpg',
+                      textBase4: 'Mirra',
+
                       containerWidth: 230,
-                      containerColor: Color.fromRGBO(238, 54, 59, 1),
+                      containerColor: Color.fromRGBO(156, 29, 255, 1),
                       colorText: Colors.white,
-                      text: 'dulce',
+                      text: 'violeta',
 
-                      containerWidth2: 170,
-                      containerColor2: Color.fromRGBO(255, 254, 202, 1),
+                      containerWidth2: 212,
+                      containerColor2: Color.fromRGBO(239, 224, 208, 1),
                       colorText2: Colors.black,
-                      text2: 'avainillado',
+                      text2: 'atalcado',
 
-                      containerWidth3: 155,
-                      containerColor3: Color.fromRGBO(253, 128, 105, 1),
-                      colorText3: Colors.black87,
-                      text3: 'afrutados',
+                      containerWidth3: 210,
+                      containerColor3: Color.fromRGBO(37, 98, 164, 1),
+                      colorText3: Colors.white,
+                      text3: 'marino',
 
-                      containerWidth4: 155,
-                      containerColor4: Color.fromRGBO(156, 157, 122, 1),
-                      colorText4: Colors.white,
-                      text4: 'pachulí',
-
-                      containerWidth5: 155,
-                      containerColor5: Color.fromRGBO(169, 137, 106, 1),
+                      containerWidth4: 208,
+                      containerColor4: Color.fromRGBO(255, 112, 153, 1),
+                      colorText4: Colors.black,
+                      text4: 'florales',
+                      
+                      containerWidth5: 206,
+                      containerColor5: Color.fromRGBO(41, 153, 55, 1),
                       colorText5: Colors.white,
-                      text5: 'amaderado',
+                      text5: 'verde',
 
-                      containerWidth6: 145,
-                      containerColor6: Color.fromRGBO(244, 247, 252, 1),
-                      colorText6: Colors.black54,
-                      text6: 'floral blanco',
+                      containerWidth6: 185,
+                      containerColor6: Color.fromRGBO(95, 179, 160, 1),
+                      colorText6: Colors.black87,
+                      text6: 'aromático',
                     
-                      containerWidth7: 145,
-                      containerColor7: Color.fromRGBO(245, 235, 224, 1),
-                      colorText7: Colors.black54,
-                      text7: 'atalcado',
+                      containerWidth7: 185,
+                      containerColor7: Color.fromRGBO(175, 234, 240, 1),
+                      colorText7: Colors.black87,
+                      text7: 'fresco',
                     
-                      containerWidth8: 135,
-                      containerColor8: Color.fromRGBO(159, 153, 144, 1),
-                      colorText8: Colors.white70,
-                      text8: 'terrosos',
+                      containerWidth8: 165,
+                      containerColor8: Color.fromRGBO(242, 245, 252, 1),
+                      colorText8: Colors.black54,
+                      text8: 'floral blanco',
                     
-                      containerWidth9: 135,
-                      containerColor9: Color.fromRGBO(214, 206, 232, 1),
-                      colorText9: Colors.black45,
-                      text9: 'iris',
+                      containerWidth9: 145,
+                      containerColor9: Color.fromRGBO(167, 134, 103, 1),
+                      colorText9: Colors.white,
+                      text9: 'amaderado',
 
-                      containerWidth10: 135,
-                      containerColor10: Color.fromRGBO(226, 142, 114, 1),
-                      colorText10: Colors.white70,
-                      text10: 'cálido especiado',
+                      containerWidth10: 143,
+                      containerColor10: Color.fromRGBO(213, 143, 105, 1),
+                      colorText10: Colors.white,
+                      text10: 'ámbar',
                     ),
                     //TODO:
                 ],
@@ -3592,6 +3906,11 @@ Tonka''',
 }
 
 /*
+                      containerWidth4: ,
+                      containerColor4: ,
+                      colorText4: ,
+                      text4: ,
+                      
                       containerWidth5: ,
                       containerColor5: ,
                       colorText5: ,
@@ -3697,10 +4016,10 @@ class Aromas100 extends StatelessWidget {
   final Color? containerColor3;
   final Color colorText3;
   final String text3;
-  final double containerWidth4;
+  final double? containerWidth4;
   final Color? containerColor4;
-  final Color colorText4;
-  final String text4;
+  final Color? colorText4;
+  final String? text4;
   final double? containerWidth5;
   final Color? containerColor5;
   final Color? colorText5;
@@ -3799,13 +4118,13 @@ class Aromas100 extends StatelessWidget {
     required this.colorText2,
     required this.text2,
     required this.containerWidth3,
-    this.containerColor3,
+    required this.containerColor3,
     required this.colorText3,
     required this.text3,
-    required this.containerWidth4,
-    required this.containerColor4,
-    required this.colorText4,
-    required this.text4,
+    this.containerWidth4,
+    this.containerColor4,
+    this.colorText4,
+    this.text4,
     this.containerWidth5,
     this.containerColor5,
     this.colorText5,
@@ -4096,12 +4415,16 @@ class Aromas100 extends StatelessWidget {
                   colorText: colorText3,
                   text: text3,
                 ),
-                MainChords(
-                  containerWidth: containerWidth4,
-                  containerColor: containerColor4,
-                  colorText: colorText4,
-                  text: text4,
-                ),
+                if (containerWidth4 != null &&
+                    containerColor4 != null &&
+                    colorText4 != null &&
+                    text4 != null)
+                  MainChords(
+                    containerWidth: containerWidth4!,
+                    containerColor: containerColor4!,
+                    colorText: colorText4!,
+                    text: text4!,
+                  ),
                 if (containerWidth5 != null &&
                     containerColor5 != null &&
                     colorText5 != null &&

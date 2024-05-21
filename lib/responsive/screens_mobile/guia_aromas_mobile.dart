@@ -26,6 +26,8 @@ class GuiaAromasMobile extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          const SearchhBarMobile(),
+                          const SizedBox(height: 30),
                           Text('Bienvenido a Nuestra Guía de Aromas',
                               style: styleText3Mobile),
                           const SizedBox(height: 15),
@@ -41,160 +43,83 @@ class GuiaAromasMobile extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Yara - Lattafa', style: styleText3Mobile),
-                  ),
-                  const SizedBox(height: 10),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('''
+                  const Aromas100(
+                    title: 'Yara - Lattafa',
+                    description: '''
 Yara de Lattafa Perfumes es una fragancia de la 
 Familia olfativa Ámbar Vainilla para Mujeres. 
 Yara se lanzó en 2020. 
 Su longevidad y su estela son moderadas. 
 Es un aroma Femenino.
-''', style: styleTextLocion),
+''', 
+                    imageLocion: 'assets/images/yara_lattafa.jpg',
+                    
+                    imageNotaSalida: 'assets/images/orquidea.jpg',
+                    textNotaSalida: 'Orquídea',
+                    
+                    imageNotaSalida2: 'assets/images/heliotropo.jpg',
+                    textNotaSalida2: 'Heliotropo',
+
+                    imageNotaSalida3: 'assets/images/naranja_tangerina.jpg',
+                    textNotaSalida3: '''Naranja
+Tangerina''',
+                    imageCorazon: 'assets/images/acuerdo_goloso.jpg',
+                    textCorazon: '''Acuerdo
+Goloso''', 
+                    imageCorazon2: 'assets/images/frutas_tropicales.jpg',
+                    textCorazon2: '''Frutas
+Tropicales''',
+                    imageBase: 'assets/images/vainilla.jpg',
+                    textBase: 'Vainilla',
+
+                    imageBase2: 'assets/images/almizcle.jpg',
+                    textBase2: 'Almizcle',
+
+                    imageBase3: 'assets/images/sandalo.jpg',
+                    textBase3: 'Sándalo',
+
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(238, 54, 59, 1),
+                    colorText: Colors.white,
+                    text: 'dulce',
+                    
+                    containerWidth2: 225,
+                    containerColor2: Color.fromRGBO(255, 254, 193, 1),
+                    colorText2: Colors.black,
+                    text2: 'avainillado',
+                    
+                    containerWidth3: 215,
+                    containerColor3: Color.fromRGBO(239, 223, 207, 1),
+                    colorText3: Colors.black,
+                    text3: 'atalcado',
+
+                    containerWidth4: 150,
+                    containerColor4: Color.fromRGBO(249, 200, 87, 1),
+                    colorText4: Colors.black54,
+                    text4: 'tropical',
+                    
+                    containerWidth5: 145,
+                    containerColor5: Color.fromRGBO(239, 229, 241, 1),
+                    colorText5: Colors.black54,
+                    text5: 'almizclado',
+
+                    containerWidth6: 145,
+                    containerColor6: Color.fromRGBO(253, 135, 113, 1),
+                    colorText6: Colors.black54,
+                    text6: 'afrutados',
+                  
+                    containerWidth7: 130,
+                    containerColor7: Color.fromRGBO(255, 156, 185, 1),
+                    colorText7: Colors.black54,
+                    text7: 'florales',
+                  
+                    containerWidth8: 110,
+                    containerColor8: Color.fromRGBO(251, 255, 163, 1),
+                    colorText8: Colors.black45,
+                    text8: 'cítrico',
                   ),
                   //TODO:
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Notas de Salida:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/orquidea.jpg',
-                        text: 'Orquídea',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/heliotropo.jpg',
-                        text: 'Heliotropo',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/naranja_tangerina.jpg',
-                        text: 'Naranja Tangerina',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 15),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Corazón:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/acuerdo_goloso.jpg',
-                        text: 'Acuerdo Goloso',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/frutas_tropicales.jpg',
-                        text: 'Frutas Tropicales',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 15),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Base:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/vainilla.jpg',
-                        text: 'Vainilla',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/almizcle.jpg',
-                        text: 'Almizcle',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/sandalo.jpg',
-                        text: 'Sándalo',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
-                  Row(
-                    children: [
-                      Image.asset('assets/images/yara_lattafa.jpg',
-                          height: 190, width: 190),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 40),
-                            child: Text('Acordes Principales',
-                                style: styleTextLocion),
-                          ),
-                          const SizedBox(height: 10),
-                          const MainChords(
-                            containerWidth: 230,
-                            containerColor: Colors.red,
-                            colorText: Colors.white,
-                            text: 'dulce',
-                          ),
-                          MainChords(
-                            containerWidth: 220,
-                            containerColor: Colors.yellow[200],
-                            colorText: Colors.black,
-                            text: 'avainillado',
-                          ),
-                          MainChords(
-                            containerWidth: 210,
-                            containerColor: Colors.grey[200],
-                            colorText: Colors.black,
-                            text: 'atalcado',
-                          ),
-                          MainChords(
-                            containerWidth: 140,
-                            containerColor: Colors.orange[400],
-                            colorText: Colors.black54,
-                            text: 'tropical',
-                          ),
-                          MainChords(
-                            containerWidth: 130,
-                            containerColor: Colors.red[400],
-                            colorText: Colors.black54,
-                            text: 'afrutados',
-                          ),
-                          MainChords(
-                            containerWidth: 130,
-                            containerColor: Colors.grey[200],
-                            colorText: Colors.black54,
-                            text: 'almizclado',
-                          ),
-                          MainChords(
-                            containerWidth: 120,
-                            containerColor: Colors.pink[400],
-                            colorText: Colors.black54,
-                            text: 'florales',
-                          ),
-                          MainChords(
-                            containerWidth: 100,
-                            containerColor: Colors.orange[200],
-                            colorText: Colors.black54,
-                            text: 'cítrico',
-                          ),
-                          const SizedBox(height: 30)
-                        ],
-                      ),
-                      const Spacer(),
-                    ],
-                  ),
-                  //TODO:
+                  
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 30),
                     child: Text('Ombre Nomade - Louis Vuitton',
@@ -220,7 +145,8 @@ estela es enorme. Es un aroma Masculino.
                     children: [
                       Aromas(
                         image: 'assets/images/madera_de_oud.jpg',
-                        text: 'Madera de Oud',
+                        text: '''Madera
+de Oud''',
                         padding: EdgeInsets.only(left: 30, right: 15),
                       ),
                       Aromas(
@@ -236,6 +162,11 @@ estela es enorme. Es un aroma Masculino.
                       Aromas(
                         image: 'assets/images/frambuesa.jpg',
                         text: 'Frambuesa',
+                        padding: EdgeInsets.only(right: 15),
+                      ),
+                      Aromas(
+                        image: 'assets/images/abedul.jpg',
+                        text: 'Abedul',
                         padding: EdgeInsets.only(right: 0),
                       ),
                     ],
@@ -255,11 +186,6 @@ estela es enorme. Es un aroma Masculino.
                       Aromas(
                         image: 'assets/images/benjui.jpg',
                         text: 'Benjuí',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/abedul.jpg',
-                        text: 'Abedul',
                         padding: EdgeInsets.only(right: 15),
                       ),
                       Aromas(
@@ -352,165 +278,86 @@ estela es enorme. Es un aroma Masculino.
                     ],
                   ),
                   //TODO:
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Bade\'e Al Oud Amethyst - Lattafa',
-                        style: styleText3Mobile),
-                  ),
-                  const SizedBox(height: 10),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('''
+                  const Aromas100(
+                    title: 'Bade\'e Al Oud Amethyst - Lattafa',
+                    description: '''
 Bade'e Al Oud Amethyst de Lattafa Perfumes
 es una fragancia de la familia olfativa
 Ámbar Vainilla para Hombres y Mujeres.
 Bade'e Al Oud Amethyst se lanzó en 2021.
 Tiene una longevidad duradera y
 su estela es pesada. Es un aroma Unisex.
-''', style: styleTextLocion),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Notas de Salida:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/pimienta_rosa.jpg',
-                        text: 'Pimienta Rosa',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/bergamota.jpg',
-                        text: 'Bergamota',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 15),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Corazón:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/rosa.jpg',
-                        text: 'Rosa Turca',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/rosa.jpg',
-                        text: 'Rosa de Bulgaria',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/jazmin.jpg',
-                        text: 'Jazmín',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 15),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Base:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/madera_de_oud.jpg',
-                        text: 'Madera de Oud',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/ambar.jpg',
-                        text: 'Ámbar',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                      Aromas(
-                        image: 'assets/images/vainilla.jpg',
-                        text: 'Vainilla',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
-                  Row(
-                    children: [
-                      Image.asset('assets/images/amethyst_lattafa.webp',
-                          height: 190, width: 190),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 40),
-                            child: Text('Acordes Principales',
-                                style: styleTextLocion),
-                          ),
-                          const SizedBox(height: 10),
-                          const MainChords(
-                            containerWidth: 230,
-                            containerColor: Color.fromRGBO(254, 1, 107, 1),
-                            colorText: Colors.white,
-                            text: 'rosas',
-                          ),
-                          const MainChords(
-                            containerWidth: 200,
-                            containerColor: Color.fromRGBO(110, 94, 85, 1),
-                            colorText: Colors.white,
-                            text: 'oud',
-                          ),
-                          const MainChords(
-                            containerWidth: 160,
-                            containerColor: Color.fromRGBO(211, 139, 99, 1),
-                            colorText: Colors.white70,
-                            text: 'ámbar',
-                          ),
-                          const MainChords(
-                            containerWidth: 160,
-                            containerColor: Color.fromRGBO(236, 166, 142, 1),
-                            colorText: Colors.black54,
-                            text: 'especiado suave',
-                          ),
-                          const MainChords(
-                            containerWidth: 155,
-                            containerColor: Color.fromRGBO(255, 155, 184, 1),
-                            colorText: Colors.black54,
-                            text: 'florales',
-                          ),
-                          const MainChords(
-                            containerWidth: 155,
-                            containerColor: Color.fromRGBO(255, 254, 216, 1),
-                            colorText: Colors.black54,
-                            text: 'avainillado',
-                          ),
-                          const MainChords(
-                            containerWidth: 145,
-                            containerColor: Color.fromRGBO(251, 255, 153, 1),
-                            colorText: Colors.black54,
-                            text: 'cítrico',
-                          ),
-                          const MainChords(
-                            containerWidth: 140,
-                            containerColor: Color.fromRGBO(184, 224, 132, 1),
-                            colorText: Colors.black54,
-                            text: 'fresco especiado',
-                          ),
-                          const MainChords(
-                            containerWidth: 135,
-                            containerColor: Color.fromRGBO(245, 247, 252, 1),
-                            colorText: Colors.black54,
-                            text: 'floral blanco',
-                          ),
-                          const SizedBox(height: 30)
-                        ],
-                      ),
-                      const Spacer()
-                    ],
+''', 
+                    imageLocion: 'assets/images/amethyst_lattafa.webp',
+
+                    imageNotaSalida: 'assets/images/pimienta_rosa.jpg',
+                    textNotaSalida: '''Pimienta
+Rosa''',
+                    imageNotaSalida2: 'assets/images/bergamota.jpg',
+                    textNotaSalida2: 'Bergamota',
+                    
+                    imageCorazon: 'assets/images/rosa.jpg',
+                    textCorazon: '''Rosa
+Turca''',
+                    imageCorazon2: 'assets/images/rosa.jpg',
+                    textCorazon2: '''Rosa de
+Bulgaria''',
+                    imageCorazon3: 'assets/images/jazmin.jpg',
+                    textCorazon3: 'Jazmín',
+
+                    imageBase: 'assets/images/madera_de_oud.jpg',
+                    textBase: '''Madera
+de Oud''',
+                    imageBase2: 'assets/images/ambar.jpg',
+                    textBase2: 'Ámbar',
+
+                    imageBase3: 'assets/images/vainilla.jpg',
+                    textBase3: 'Vainilla',
+
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(254, 1, 107, 1),
+                    colorText: Colors.white,
+                    text: 'rosas',
+                    
+                    containerWidth2: 190,
+                    containerColor2: Color.fromRGBO(109, 93, 84, 1),
+                    colorText2: Colors.white,
+                    text2: 'oud',
+                    
+                    containerWidth3: 150,
+                    containerColor3: Color.fromRGBO(236, 166, 142, 1),
+                    colorText3: Colors.black54,
+                    text3: 'especiado suave',
+
+                    containerWidth4: 150,
+                    containerColor4: Color.fromRGBO(211, 139, 100, 1),
+                    colorText4: Colors.white,
+                    text4: 'ámbar',
+                    
+                    containerWidth5: 145,
+                    containerColor5: Color.fromRGBO(255, 155, 184, 1),
+                    colorText5: Colors.black54,
+                    text5: 'florales',
+                    
+                    containerWidth6: 145,
+                    containerColor6: Color.fromRGBO(255, 254, 216, 1),
+                    colorText6: Colors.black54,
+                    text6: 'avainillado',
+                  
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(251, 255, 154, 1),
+                    colorText7: Colors.black54,
+                    text7: 'cítrico',
+                  
+                    containerWidth8: 130,
+                    containerColor8: Color.fromRGBO(184, 224, 132, 1),
+                    colorText8: Colors.black54,
+                    text8: 'fresco especiado',
+                  
+                    containerWidth9: 125,
+                    containerColor9: Color.fromRGBO(245, 247, 252, 1),
+                    colorText9: Colors.black45,
+                    text9: 'floral blanco',
                   ),
                   //TODO:
                   const Aromas100(
@@ -3796,103 +3643,185 @@ Tonka''',
                   ),
                   //TODO:
                   const Aromas100(
-                      title: 'Halloween - Halloween',
-                      description: '''
+                    title: 'Halloween - Halloween',
+                    description: '''
 Halloween de Halloween es una fragancia de la
 familia olfativa Ámbar Floral para Mujeres.
 Halloween se lanzó en 1997. Su longevidad y
 su estela son moderadas. Es una aroma Femenino.
 ''',
-                      imageLocion: 'assets/images/halloween_halloween.jpg',
-
-                      imageNotaSalida: 'assets/images/violeta.jpg',
-                      textNotaSalida: 'Violeta',
-
-                      imageNotaSalida2: 'assets/images/notas_marinas.jpg',
-                      textNotaSalida2: '''Notas
+                    imageLocion: 'assets/images/halloween_halloween.jpg',
+                    imageNotaSalida: 'assets/images/violeta.jpg',
+                    textNotaSalida: 'Violeta',
+                    imageNotaSalida2: 'assets/images/notas_marinas.jpg',
+                    textNotaSalida2: '''Notas
 Marinas''',
-                      imageNotaSalida3: 'assets/images/hojas_de_platano.jpg',
-                      textNotaSalida3: '''Hojas de
+                    imageNotaSalida3: 'assets/images/hojas_de_platano.jpg',
+                    textNotaSalida3: '''Hojas de
 Plátano''',
-                      imageNotaSalida4: 'assets/images/petit_grain.jpg',
-                      textNotaSalida4: '''Petit
+                    imageNotaSalida4: 'assets/images/petit_grain.jpg',
+                    textNotaSalida4: '''Petit
 Grain''',
-                      imageCorazon: 'assets/images/violeta.jpg',
-                      textCorazon: 'Violeta',
-
-                      imageCorazon2: 'assets/images/magnolia.jpg',
-                      textCorazon2: 'Magnolia',
-
-                      imageCorazon3: 'assets/images/lirio_de_los_valles.jpg',
-                      textCorazon3: '''Lirio de
+                    imageCorazon: 'assets/images/violeta.jpg',
+                    textCorazon: 'Violeta',
+                    imageCorazon2: 'assets/images/magnolia.jpg',
+                    textCorazon2: 'Magnolia',
+                    imageCorazon3: 'assets/images/lirio_de_los_valles.jpg',
+                    textCorazon3: '''Lirio de
 los Valles''',
-                      imageCorazon4: 'assets/images/nardos.jpg',
-                      textCorazon4: 'Nardos',
+                    imageCorazon4: 'assets/images/nardos.jpg',
+                    textCorazon4: 'Nardos',
+                    imageCorazon5: 'assets/images/pimienta.jpg',
+                    textCorazon5: 'Pimienta',
+                    imageBase: 'assets/images/incienso.jpg',
+                    textBase: 'Incienso',
+                    imageBase2: 'assets/images/sandalo.jpg',
+                    textBase2: 'Sándalo',
+                    imageBase3: 'assets/images/vainilla.jpg',
+                    textBase3: 'Vainilla',
+                    imageBase4: 'assets/images/mirra.jpg',
+                    textBase4: 'Mirra',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(156, 29, 255, 1),
+                    colorText: Colors.white,
+                    text: 'violeta',
+                    containerWidth2: 212,
+                    containerColor2: Color.fromRGBO(239, 224, 208, 1),
+                    colorText2: Colors.black,
+                    text2: 'atalcado',
+                    containerWidth3: 210,
+                    containerColor3: Color.fromRGBO(37, 98, 164, 1),
+                    colorText3: Colors.white,
+                    text3: 'marino',
+                    containerWidth4: 208,
+                    containerColor4: Color.fromRGBO(255, 112, 153, 1),
+                    colorText4: Colors.black,
+                    text4: 'florales',
+                    containerWidth5: 206,
+                    containerColor5: Color.fromRGBO(41, 153, 55, 1),
+                    colorText5: Colors.white,
+                    text5: 'verde',
+                    containerWidth6: 185,
+                    containerColor6: Color.fromRGBO(95, 179, 160, 1),
+                    colorText6: Colors.black87,
+                    text6: 'aromático',
+                    containerWidth7: 185,
+                    containerColor7: Color.fromRGBO(175, 234, 240, 1),
+                    colorText7: Colors.black87,
+                    text7: 'fresco',
+                    containerWidth8: 165,
+                    containerColor8: Color.fromRGBO(242, 245, 252, 1),
+                    colorText8: Colors.black54,
+                    text8: 'floral blanco',
+                    containerWidth9: 145,
+                    containerColor9: Color.fromRGBO(167, 134, 103, 1),
+                    colorText9: Colors.white,
+                    text9: 'amaderado',
+                    containerWidth10: 143,
+                    containerColor10: Color.fromRGBO(213, 143, 105, 1),
+                    colorText10: Colors.white,
+                    text10: 'ámbar',
+                  ),
+                  //TODO:
+                  const Aromas100(
+                      title: 'CK2 - Calvin Klein',
+                      description: '''
+CK2 de Calvin Klein es una fragancia de la
+familia olfativa Amaderada Aromática para
+Hombres y Mujeres. CK2 se lanzó en 2016.
+Tiene una longevidad y estela moderadas.
+Es un aroma Unisex.
+''',
+                      imageLocion: 'assets/images/ck2_calvin_klein.webp',
 
-                      imageCorazon5: 'assets/images/pimienta.jpg',
-                      textCorazon5: 'Pimienta',
+                      imageNotaSalida: 'assets/images/wasabi.jpg',
+                      textNotaSalida: 'Wasabi',
 
-                      imageBase: 'assets/images/incienso.jpg',
-                      textBase: 'Incienso',
+                      imageNotaSalida2: 'assets/images/hojas_de_violeta.jpg',
+                      textNotaSalida2: '''Hojas de
+Violeta''',
+                      imageNotaSalida3: 'assets/images/mandarina.jpg',
+                      textNotaSalida3: 'Mandarina',
 
-                      imageBase2: 'assets/images/sandalo.jpg',
-                      textBase2: 'Sándalo',
+                      imageNotaSalida4: 'assets/images/pera.jpg',
+                      textNotaSalida4: 'Pera',
 
-                      imageBase3: 'assets/images/vainilla.jpg',
-                      textBase3: 'Vainilla',
+                      imageCorazon: 'assets/images/piedrecillas.jpg',
+                      textCorazon: 'Piedrecillas',
 
-                      imageBase4: 'assets/images/mirra.jpg',
-                      textBase4: 'Mirra',
+                      imageCorazon2: 'assets/images/hediona.jpg',
+                      textCorazon2: 'Hediona',
+
+                      imageCorazon3: 'assets/images/raiz_de_lirio.jpg',
+                      textCorazon3: '''Raíz de
+Lirio''',
+                      imageCorazon4: 'assets/images/peonia.jpg',
+                      textCorazon4: 'Peonía',
+
+                      imageCorazon5: 'assets/images/rosa.jpg',
+                      textCorazon5: 'Rosa',
+
+                      imageBase: 'assets/images/vetiver.jpg',
+                      textBase: 'Vetiver',
+
+                      imageBase2: 'assets/images/almizcle.jpg',
+                      textBase2: 'Almizcle',
+
+                      imageBase3: 'assets/images/incienso.jpg',
+                      textBase3: 'Incienso',
+
+                      imageBase4: 'assets/images/sandalo.jpg',
+                      textBase4: 'Sándalo',
 
                       containerWidth: 230,
-                      containerColor: Color.fromRGBO(156, 29, 255, 1),
-                      colorText: Colors.white,
-                      text: 'violeta',
+                      containerColor: Color.fromRGBO(113, 187, 191, 1),
+                      colorText: Colors.black,
+                      text: 'mineral',
 
-                      containerWidth2: 212,
-                      containerColor2: Color.fromRGBO(239, 224, 208, 1),
-                      colorText2: Colors.black,
-                      text2: 'atalcado',
+                      containerWidth2: 190,
+                      containerColor2: Color.fromRGBO(150, 209, 73, 1),
+                      colorText2: Colors.black87,
+                      text2: 'fresco especiado',
 
-                      containerWidth3: 210,
-                      containerColor3: Color.fromRGBO(37, 98, 164, 1),
-                      colorText3: Colors.white,
-                      text3: 'marino',
+                      containerWidth3: 180,
+                      containerColor3: Color.fromRGBO(211, 253, 252, 1),
+                      colorText3: Colors.black87,
+                      text3: 'ozónico',
 
-                      containerWidth4: 208,
-                      containerColor4: Color.fromRGBO(255, 112, 153, 1),
-                      colorText4: Colors.black,
-                      text4: 'florales',
+                      containerWidth4: 180,
+                      containerColor4: Color.fromRGBO(129, 214, 231, 1),
+                      colorText4: Colors.black87,
+                      text4: 'acuático',
                       
-                      containerWidth5: 206,
-                      containerColor5: Color.fromRGBO(41, 153, 55, 1),
+                      containerWidth5: 170,
+                      containerColor5: Color.fromRGBO(148, 107, 70, 1),
                       colorText5: Colors.white,
-                      text5: 'verde',
+                      text5: 'amaderado',
 
-                      containerWidth6: 185,
-                      containerColor6: Color.fromRGBO(95, 179, 160, 1),
+                      containerWidth6: 165,
+                      containerColor6: Color.fromRGBO(255, 131, 166, 1),
                       colorText6: Colors.black87,
-                      text6: 'aromático',
+                      text6: 'florales',
                     
-                      containerWidth7: 185,
-                      containerColor7: Color.fromRGBO(175, 234, 240, 1),
-                      colorText7: Colors.black87,
-                      text7: 'fresco',
+                      containerWidth7: 155,
+                      containerColor7: Color.fromRGBO(76, 170, 87, 1),
+                      colorText7: Colors.white,
+                      text7: 'verde',
                     
-                      containerWidth8: 165,
-                      containerColor8: Color.fromRGBO(242, 245, 252, 1),
+                      containerWidth8: 145,
+                      containerColor8: Color.fromRGBO(183, 236, 242, 1),
                       colorText8: Colors.black54,
-                      text8: 'floral blanco',
+                      text8: 'fresco',
                     
-                      containerWidth9: 145,
-                      containerColor9: Color.fromRGBO(167, 134, 103, 1),
-                      colorText9: Colors.white,
-                      text9: 'amaderado',
+                      containerWidth9: 135,
+                      containerColor9: Color.fromRGBO(243, 232, 221, 1),
+                      colorText9: Colors.black45,
+                      text9: 'atalcado',
 
-                      containerWidth10: 143,
-                      containerColor10: Color.fromRGBO(213, 143, 105, 1),
-                      colorText10: Colors.white,
-                      text10: 'ámbar',
+                      containerWidth10: 130,
+                      containerColor10: Color.fromRGBO(145, 137, 127, 1),
+                      colorText10: Colors.white70,
+                      text10: 'terrosos',
                     ),
                     //TODO:
                 ],

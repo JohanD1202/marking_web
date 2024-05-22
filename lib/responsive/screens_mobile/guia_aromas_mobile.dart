@@ -4424,3 +4424,556 @@ class Aromas100 extends StatelessWidget {
     );
   }
 }
+
+class AromasBuscador extends StatelessWidget {
+  final String title;
+  final String description;
+  final String imageLocion;
+  final String imageNotaSalida;
+  final String textNotaSalida;
+  final String? imageNotaSalida2;
+  final String? textNotaSalida2;
+  final String? imageNotaSalida3;
+  final String? textNotaSalida3;
+  final String? imageNotaSalida4;
+  final String? textNotaSalida4;
+  final String? imageNotaSalida5;
+  final String? textNotaSalida5;
+  final String? imageNotaSalida6;
+  final String? textNotaSalida6;
+  final String? imageNotaSalida7;
+  final String? textNotaSalida7;
+  final String? imageNotaSalida8;
+  final String? textNotaSalida8;
+  final String imageCorazon;
+  final String textCorazon;
+  final String? imageCorazon2;
+  final String? textCorazon2;
+  final String? imageCorazon3;
+  final String? textCorazon3;
+  final String? imageCorazon4;
+  final String? textCorazon4;
+  final String? imageCorazon5;
+  final String? textCorazon5;
+  final String? imageCorazon6;
+  final String? textCorazon6;
+  final String? imageCorazon7;
+  final String? textCorazon7;
+  final String? imageCorazon8;
+  final String? textCorazon8;
+  final String? imageCorazon9;
+  final String? textCorazon9;
+  final String? imageCorazon10;
+  final String? textCorazon10;
+  final String? imageCorazon11;
+  final String? textCorazon11;
+  final String? imageCorazon12;
+  final String? textCorazon12;
+  final String? imageCorazon13;
+  final String? textCorazon13;
+  final String imageBase;
+  final String textBase;
+  final String? imageBase2;
+  final String? textBase2;
+  final String? imageBase3;
+  final String? textBase3;
+  final String? imageBase4;
+  final String? textBase4;
+  final String? imageBase5;
+  final String? textBase5;
+  final String? imageBase6;
+  final String? textBase6;
+  final String? imageBase7;
+  final String? textBase7;
+  final String? imageBase8;
+  final String? textBase8;
+  final double containerWidth;
+  final Color? containerColor;
+  final Color colorText;
+  final String text;
+  final double containerWidth2;
+  final Color? containerColor2;
+  final Color colorText2;
+  final String text2;
+  final double containerWidth3;
+  final Color? containerColor3;
+  final Color colorText3;
+  final String text3;
+  final double? containerWidth4;
+  final Color? containerColor4;
+  final Color? colorText4;
+  final String? text4;
+  final double? containerWidth5;
+  final Color? containerColor5;
+  final Color? colorText5;
+  final String? text5;
+  final double? containerWidth6;
+  final Color? containerColor6;
+  final Color? colorText6;
+  final String? text6;
+  final double? containerWidth7;
+  final Color? containerColor7;
+  final Color? colorText7;
+  final String? text7;
+  final double? containerWidth8;
+  final Color? containerColor8;
+  final Color? colorText8;
+  final String? text8;
+  final double? containerWidth9;
+  final Color? containerColor9;
+  final Color? colorText9;
+  final String? text9;
+  final double? containerWidth10;
+  final Color? containerColor10;
+  final Color? colorText10;
+  final String? text10;
+
+  // ignore: use_super_parameters
+  const AromasBuscador({
+    Key? key,
+    required this.title,
+    required this.description,
+    required this.imageLocion,
+    required this.imageNotaSalida,
+    required this.textNotaSalida,
+    this.imageNotaSalida2,
+    this.textNotaSalida2,
+    this.imageNotaSalida3,
+    this.textNotaSalida3,
+    this.imageNotaSalida4,
+    this.textNotaSalida4,
+    this.imageNotaSalida5,
+    this.textNotaSalida5,
+    this.imageNotaSalida6,
+    this.textNotaSalida6,
+    this.imageNotaSalida7,
+    this.textNotaSalida7,
+    this.imageNotaSalida8,
+    this.textNotaSalida8,
+    required this.imageCorazon,
+    required this.textCorazon,
+    this.imageCorazon2,
+    this.textCorazon2,
+    this.imageCorazon3,
+    this.textCorazon3,
+    this.imageCorazon4,
+    this.textCorazon4,
+    this.imageCorazon5,
+    this.textCorazon5,
+    this.imageCorazon6,
+    this.textCorazon6,
+    this.imageCorazon7,
+    this.textCorazon7,
+    this.imageCorazon8,
+    this.textCorazon8,
+    this.imageCorazon9,
+    this.textCorazon9,
+    this.imageCorazon10,
+    this.textCorazon10,
+    this.imageCorazon11,
+    this.textCorazon11,
+    this.imageCorazon12,
+    this.textCorazon12,
+    this.imageCorazon13,
+    this.textCorazon13,
+    required this.imageBase,
+    required this.textBase,
+    this.imageBase2,
+    this.textBase2,
+    this.imageBase3,
+    this.textBase3,
+    this.imageBase4,
+    this.textBase4,
+    this.imageBase5,
+    this.textBase5,
+    this.imageBase6,
+    this.textBase6,
+    this.imageBase7,
+    this.textBase7,
+    this.imageBase8,
+    this.textBase8,
+    required this.containerWidth,
+    required this.containerColor,
+    required this.colorText,
+    required this.text,
+    required this.containerWidth2,
+    required this.containerColor2,
+    required this.colorText2,
+    required this.text2,
+    required this.containerWidth3,
+    required this.containerColor3,
+    required this.colorText3,
+    required this.text3,
+    this.containerWidth4,
+    this.containerColor4,
+    this.colorText4,
+    this.text4,
+    this.containerWidth5,
+    this.containerColor5,
+    this.colorText5,
+    this.text5,
+    this.containerWidth6,
+    this.containerColor6,
+    this.colorText6,
+    this.text6,
+    this.containerWidth7,
+    this.containerColor7,
+    this.colorText7,
+    this.text7,
+    this.containerWidth8,
+    this.containerColor8,
+    this.colorText8,
+    this.text8,
+    this.containerWidth9,
+    this.containerColor9,
+    this.colorText9,
+    this.text9,
+    this.containerWidth10,
+    this.containerColor10,
+    this.colorText10,
+    this.text10,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text(title, style: styleText3Mobile),
+        ),
+        const SizedBox(height: 10),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text(description, style: styleTextLocion),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text('Notas de Salida:', style: styleTextLocion2),
+        ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Aromas(
+              image: imageNotaSalida,
+              text: textNotaSalida,
+              padding: const EdgeInsets.only(left: 0, right: 15),
+            ),
+            if (imageNotaSalida2 != null && textNotaSalida2 != null)
+              Aromas(
+                image: imageNotaSalida2!,
+                text: textNotaSalida2!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaSalida3 != null && textNotaSalida3 != null)
+              Aromas(
+                image: imageNotaSalida3!,
+                text: textNotaSalida3!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaSalida4 != null && textNotaSalida4 != null)
+              Aromas(
+                image: imageNotaSalida4!,
+                text: textNotaSalida4!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaSalida5 != null && textNotaSalida5 != null)
+              Aromas(
+                image: imageNotaSalida5!,
+                text: textNotaSalida5!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageNotaSalida6 != null && textNotaSalida6 != null)
+              Aromas(
+                image: imageNotaSalida6!,
+                text: textNotaSalida6!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
+            if (imageNotaSalida7 != null && textNotaSalida7 != null)
+              Aromas(
+                image: imageNotaSalida7!,
+                text: textNotaSalida7!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaSalida8 != null && textNotaSalida8 != null)
+              Aromas(
+                image: imageNotaSalida8!,
+                text: textNotaSalida8!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 15),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text('Corazón:', style: styleTextLocion2),
+        ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Aromas(
+              image: imageCorazon,
+              text: textCorazon,
+              padding: const EdgeInsets.only(left: 0, right: 15),
+            ),
+            if (imageCorazon2 != null && textCorazon2 != null)
+              Aromas(
+                image: imageCorazon2!,
+                text: textCorazon2!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon3 != null && textCorazon3 != null)
+              Aromas(
+                image: imageCorazon3!,
+                text: textCorazon3!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon4 != null && textCorazon4 != null)
+              Aromas(
+                image: imageCorazon4!,
+                text: textCorazon4!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon5 != null && textCorazon5 != null)
+              Aromas(
+                image: imageCorazon5!,
+                text: textCorazon5!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageCorazon6 != null && textCorazon6 != null)
+              Aromas(
+                image: imageCorazon6!,
+                text: textCorazon6!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
+            if (imageCorazon7 != null && textCorazon7 != null)
+              Aromas(
+                image: imageCorazon7!,
+                text: textCorazon7!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon8 != null && textCorazon8 != null)
+              Aromas(
+                image: imageCorazon8!,
+                text: textCorazon8!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon9 != null && textCorazon9 != null)
+              Aromas(
+                image: imageCorazon9!,
+                text: textCorazon9!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon10 != null && textCorazon10 != null)
+              Aromas(
+                image: imageCorazon10!,
+                text: textCorazon10!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageCorazon11 != null && textCorazon11 != null)
+              Aromas(
+                image: imageCorazon11!,
+                text: textCorazon11!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
+            if (imageCorazon12 != null && textCorazon12 != null)
+              Aromas(
+                image: imageCorazon12!,
+                text: textCorazon12!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageCorazon13 != null && textCorazon13 != null)
+              Aromas(
+                image: imageCorazon13!,
+                text: textCorazon13!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 15),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text('Base:', style: styleTextLocion2),
+        ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Aromas(
+              image: imageBase,
+              text: textBase,
+              padding: const EdgeInsets.only(left: 0, right: 15),
+            ),
+            if (imageBase2 != null && textBase2 != null)
+              Aromas(
+                image: imageBase2!,
+                text: textBase2!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageBase3 != null && textBase3 != null)
+              Aromas(
+                image: imageBase3!,
+                text: textBase3!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageBase4 != null && textBase4 != null)
+              Aromas(
+                image: imageBase4!,
+                text: textBase4!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageBase5 != null && textBase5 != null)
+              Aromas(
+                image: imageBase5!,
+                text: textBase5!,
+                padding: const EdgeInsets.only(left: 15, right: 15),
+              ),
+            if (imageBase6 != null && textBase6 != null)
+              Aromas(
+                image: imageBase6!,
+                text: textBase6!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageBase7 != null && textBase7 != null)
+              Aromas(
+                image: imageBase7!,
+                text: textBase7!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageBase8 != null && textBase8 != null)
+              Aromas(
+                image: imageBase8!,
+                text: textBase8!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 30),
+        Row(
+          children: [
+            Image.asset(imageLocion, height: 158, width: 158),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 40),
+                  child: Text('Acordes Principales', style: styleTextLocion),
+                ),
+                const SizedBox(height: 10),
+                MainChords(
+                  containerWidth: containerWidth,
+                  containerColor: containerColor,
+                  colorText: colorText,
+                  text: text,
+                ),
+                MainChords(
+                  containerWidth: containerWidth2,
+                  containerColor: containerColor2,
+                  colorText: colorText2,
+                  text: text2,
+                ),
+                MainChords(
+                  containerWidth: containerWidth3,
+                  containerColor: containerColor3,
+                  colorText: colorText3,
+                  text: text3,
+                ),
+                if (containerWidth4 != null &&
+                    containerColor4 != null &&
+                    colorText4 != null &&
+                    text4 != null)
+                  MainChords(
+                    containerWidth: containerWidth4!,
+                    containerColor: containerColor4!,
+                    colorText: colorText4!,
+                    text: text4!,
+                  ),
+                if (containerWidth5 != null &&
+                    containerColor5 != null &&
+                    colorText5 != null &&
+                    text5 != null)
+                  MainChords(
+                    containerWidth: containerWidth5!,
+                    containerColor: containerColor5!,
+                    colorText: colorText5!,
+                    text: text5!,
+                  ),
+                if (containerWidth6 != null &&
+                    containerColor6 != null &&
+                    colorText6 != null &&
+                    text6 != null)
+                  MainChords(
+                    containerWidth: containerWidth6!,
+                    containerColor: containerColor6!,
+                    colorText: colorText6!,
+                    text: text6!,
+                  ),
+                if (containerWidth7 != null &&
+                    containerColor7 != null &&
+                    colorText7 != null &&
+                    text7 != null)
+                  MainChords(
+                    containerWidth: containerWidth7!,
+                    containerColor: containerColor7!,
+                    colorText: colorText7!,
+                    text: text7!,
+                  ),
+                if (containerWidth8 != null &&
+                    containerColor8 != null &&
+                    colorText8 != null &&
+                    text8 != null)
+                  MainChords(
+                    containerWidth: containerWidth8!,
+                    containerColor: containerColor8!,
+                    colorText: colorText8!,
+                    text: text8!,
+                  ),
+                if (containerWidth9 != null &&
+                    containerColor9 != null &&
+                    colorText9 != null &&
+                    text9 != null)
+                  MainChords(
+                    containerWidth: containerWidth9!,
+                    containerColor: containerColor9!,
+                    colorText: colorText9!,
+                    text: text9!,
+                  ),
+                if (containerWidth10 != null &&
+                    containerColor10 != null &&
+                    colorText10 != null &&
+                    text10 != null)
+                  MainChords(
+                    containerWidth: containerWidth10!,
+                    containerColor: containerColor10!,
+                    colorText: colorText10!,
+                    text: text10!,
+                  ),
+              ],
+            ),
+            const Spacer()
+          ],
+        ),
+      ],
+    );
+  }
+}

@@ -51,231 +51,136 @@ Familia olfativa Ámbar Vainilla para Mujeres.
 Yara se lanzó en 2020. 
 Su longevidad y su estela son moderadas. 
 Es un aroma Femenino.
-''', 
+''',
                     imageLocion: 'assets/images/yara_lattafa.jpg',
-                    
                     imageNotaSalida: 'assets/images/orquidea.jpg',
                     textNotaSalida: 'Orquídea',
-                    
                     imageNotaSalida2: 'assets/images/heliotropo.jpg',
                     textNotaSalida2: 'Heliotropo',
-
                     imageNotaSalida3: 'assets/images/naranja_tangerina.jpg',
                     textNotaSalida3: '''Naranja
 Tangerina''',
                     imageCorazon: 'assets/images/acuerdo_goloso.jpg',
                     textCorazon: '''Acuerdo
-Goloso''', 
+Goloso''',
                     imageCorazon2: 'assets/images/frutas_tropicales.jpg',
                     textCorazon2: '''Frutas
 Tropicales''',
                     imageBase: 'assets/images/vainilla.jpg',
                     textBase: 'Vainilla',
-
                     imageBase2: 'assets/images/almizcle.jpg',
                     textBase2: 'Almizcle',
-
                     imageBase3: 'assets/images/sandalo.jpg',
                     textBase3: 'Sándalo',
-
                     containerWidth: 230,
                     containerColor: Color.fromRGBO(238, 54, 59, 1),
                     colorText: Colors.white,
                     text: 'dulce',
-                    
                     containerWidth2: 225,
                     containerColor2: Color.fromRGBO(255, 254, 193, 1),
                     colorText2: Colors.black,
                     text2: 'avainillado',
-                    
                     containerWidth3: 215,
                     containerColor3: Color.fromRGBO(239, 223, 207, 1),
                     colorText3: Colors.black,
                     text3: 'atalcado',
-
                     containerWidth4: 150,
                     containerColor4: Color.fromRGBO(249, 200, 87, 1),
                     colorText4: Colors.black54,
                     text4: 'tropical',
-                    
                     containerWidth5: 145,
                     containerColor5: Color.fromRGBO(239, 229, 241, 1),
                     colorText5: Colors.black54,
                     text5: 'almizclado',
-
                     containerWidth6: 145,
                     containerColor6: Color.fromRGBO(253, 135, 113, 1),
                     colorText6: Colors.black54,
                     text6: 'afrutados',
-                  
                     containerWidth7: 130,
                     containerColor7: Color.fromRGBO(255, 156, 185, 1),
                     colorText7: Colors.black54,
                     text7: 'florales',
-                  
                     containerWidth8: 110,
                     containerColor8: Color.fromRGBO(251, 255, 163, 1),
                     colorText8: Colors.black45,
                     text8: 'cítrico',
                   ),
                   //TODO:
-                  
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Ombre Nomade - Louis Vuitton',
-                        style: styleText3Mobile),
-                  ),
-                  const SizedBox(height: 10),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('''
+                  const Aromas200(
+                    title: 'Ombre Nomade - Louis Vuitton',
+                    description: '''
 Ombre Nomade de Louis Vuitton es una fragancia
 de la familia olfativa Ámbar Amaderada para
 Hombres. Ombre Nomade se lanzó en 2018.
 Tiene una longevidad muy duradera y su
 estela es enorme. Es un aroma Masculino.
-''', style: styleTextLocion),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Notas de Fragancia:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/madera_de_oud.jpg',
-                        text: '''Madera
+''',
+                    imageLocion:
+                        'assets/images/ombre_nomade_louis_vuitton.webp',
+                    imageNotaFragancia: 'assets/images/madera_de_oud.jpg',
+                    textNotaFragancia: '''Madera
 de Oud''',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/incienso.jpg',
-                        text: 'Incienso',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/rosa.jpg',
-                        text: 'Rosa',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/frambuesa.jpg',
-                        text: 'Frambuesa',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/abedul.jpg',
-                        text: 'Abedul',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/azafran.jpg',
-                        text: 'Azafrán',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/amberwood.jpg',
-                        text: 'Amberwood',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/benjui.jpg',
-                        text: 'Benjuí',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/geranio.jpg',
-                        text: 'Geranio',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
-                  Row(
-                    children: [
-                      Image.asset(
-                          'assets/images/ombre_nomade_louis_vuitton.webp',
-                          height: 190,
-                          width: 190),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 40),
-                            child: Text('Acordes Principales',
-                                style: styleTextLocion),
-                          ),
-                          const SizedBox(height: 10),
-                          const MainChords(
-                            containerWidth: 230,
-                            containerColor: Color.fromRGBO(188, 77, 16, 1),
-                            colorText: Colors.white,
-                            text: 'ámbar',
-                          ),
-                          const MainChords(
-                            containerWidth: 200,
-                            containerColor: Color.fromRGBO(107, 91, 82, 1),
-                            colorText: Colors.white,
-                            text: 'oud',
-                          ),
-                          const MainChords(
-                            containerWidth: 190,
-                            containerColor: Color.fromRGBO(213, 88, 46, 1),
-                            colorText: Colors.white,
-                            text: 'cálido especiado',
-                          ),
-                          const MainChords(
-                            containerWidth: 180,
-                            containerColor: Color.fromRGBO(158, 147, 162, 1),
-                            colorText: Colors.white70,
-                            text: 'ahumado',
-                          ),
-                          const MainChords(
-                            containerWidth: 180,
-                            containerColor: Color.fromRGBO(254, 61, 142, 1),
-                            colorText: Colors.white70,
-                            text: 'rosas',
-                          ),
-                          const MainChords(
-                            containerWidth: 150,
-                            containerColor: Color.fromRGBO(253, 140, 119, 1),
-                            colorText: Colors.black87,
-                            text: 'afrutados',
-                          ),
-                          const MainChords(
-                            containerWidth: 150,
-                            containerColor: Color.fromRGBO(170, 138, 108, 1),
-                            colorText: Colors.white70,
-                            text: 'amaderado',
-                          ),
-                          const MainChords(
-                            containerWidth: 150,
-                            containerColor: Color.fromRGBO(171, 141, 132, 1),
-                            colorText: Colors.white70,
-                            text: 'cuero',
-                          ),
-                          const MainChords(
-                            containerWidth: 140,
-                            containerColor: Color.fromRGBO(206, 182, 157, 1),
-                            colorText: Colors.black87,
-                            text: 'balsámico',
-                          ),
-                          const MainChords(
-                            containerWidth: 130,
-                            containerColor: Color.fromRGBO(245, 141, 144, 1),
-                            colorText: Colors.white70,
-                            text: 'dulce',
-                          ),
-                          const SizedBox(height: 30)
-                        ],
-                      ),
-                      const Spacer(),
-                    ],
+                    imageNotaFragancia2: 'assets/images/incienso.jpg',
+                    textNotaFragancia2: 'Incienso',
+                    imageNotaFragancia3: 'assets/images/rosa.jpg',
+                    textNotaFragancia3: 'Rosa',
+                    imageNotaFragancia4: 'assets/images/frambuesa.jpg',
+                    textNotaFragancia4: 'Frambuesa',
+                    imageNotaFragancia5: 'assets/images/abedul.jpg',
+                    textNotaFragancia5: 'Abedul',
+                    imageNotaFragancia6: 'assets/images/azafran.jpg',
+                    textNotaFragancia6: 'Azafrán',
+                    imageNotaFragancia7: 'assets/images/amberwood.jpg',
+                    textNotaFragancia7: 'Amberwood',
+                    imageNotaFragancia8: 'assets/images/benjui.jpg',
+                    textNotaFragancia8: 'Benjuí',
+                    imageNotaFragancia9: 'assets/images/geranio.jpg',
+                    textNotaFragancia9: 'Geranio',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(188, 77, 16, 1),
+                    colorText: Colors.white,
+                    text: 'ámbar',
+                    containerWidth2: 200,
+                    containerColor2: Color.fromRGBO(107, 91, 82, 1),
+                    colorText2: Colors.white,
+                    text2: 'oud',
+
+                    containerWidth3: 190,
+                    containerColor3: Color.fromRGBO(213, 88, 46, 1),
+                    colorText3: Colors.white,
+                    text3: 'cálido especiado',
+                    containerWidth4: 180,
+                    containerColor4: Color.fromRGBO(158, 147, 162, 1),
+                    colorText4: Colors.white,
+                    text4: 'ahumado',
+                    
+                    containerWidth5: 180,
+                    containerColor5: Color.fromRGBO(254, 161, 142, 1),
+                    colorText5: Colors.white,
+                    text5: 'rosas',
+                    containerWidth6: 150,
+                    containerColor6: Color.fromRGBO(253, 140, 119, 1),
+                    colorText6: Colors.black87,
+                    text6: 'afrutados',
+                  
+                    containerWidth7: 150,
+                    containerColor7: Color.fromRGBO(170, 138, 108, 1),
+                    colorText7: Colors.white,
+                    text7: 'amaderado',
+                  
+                    containerWidth8: 150,
+                    containerColor8: Color.fromRGBO(171, 141, 132, 1),
+                    colorText8: Colors.white,
+                    text8: 'cuero',
+                  
+                    containerWidth9: 140,
+                    containerColor9: Color.fromRGBO(206, 182, 157, 1),
+                    colorText9: Colors.black54,
+                    text9: 'balsámico',
+                    containerWidth10: 130,
+                    containerColor10: Color.fromRGBO(245, 141, 144, 1),
+                    colorText10: Colors.white70,
+                    text10: 'dulce',
                   ),
                   //TODO:
                   const Aromas100(
@@ -287,15 +192,13 @@ es una fragancia de la familia olfativa
 Bade'e Al Oud Amethyst se lanzó en 2021.
 Tiene una longevidad duradera y
 su estela es pesada. Es un aroma Unisex.
-''', 
+''',
                     imageLocion: 'assets/images/amethyst_lattafa.webp',
-
                     imageNotaSalida: 'assets/images/pimienta_rosa.jpg',
                     textNotaSalida: '''Pimienta
 Rosa''',
                     imageNotaSalida2: 'assets/images/bergamota.jpg',
                     textNotaSalida2: 'Bergamota',
-                    
                     imageCorazon: 'assets/images/rosa.jpg',
                     textCorazon: '''Rosa
 Turca''',
@@ -304,56 +207,45 @@ Turca''',
 Bulgaria''',
                     imageCorazon3: 'assets/images/jazmin.jpg',
                     textCorazon3: 'Jazmín',
-
                     imageBase: 'assets/images/madera_de_oud.jpg',
                     textBase: '''Madera
 de Oud''',
                     imageBase2: 'assets/images/ambar.jpg',
                     textBase2: 'Ámbar',
-
                     imageBase3: 'assets/images/vainilla.jpg',
                     textBase3: 'Vainilla',
-
                     containerWidth: 230,
                     containerColor: Color.fromRGBO(254, 1, 107, 1),
                     colorText: Colors.white,
                     text: 'rosas',
-                    
                     containerWidth2: 190,
                     containerColor2: Color.fromRGBO(109, 93, 84, 1),
                     colorText2: Colors.white,
                     text2: 'oud',
-                    
                     containerWidth3: 150,
                     containerColor3: Color.fromRGBO(236, 166, 142, 1),
                     colorText3: Colors.black54,
                     text3: 'especiado suave',
-
                     containerWidth4: 150,
                     containerColor4: Color.fromRGBO(211, 139, 100, 1),
                     colorText4: Colors.white,
                     text4: 'ámbar',
-                    
                     containerWidth5: 145,
                     containerColor5: Color.fromRGBO(255, 155, 184, 1),
                     colorText5: Colors.black54,
                     text5: 'florales',
-                    
                     containerWidth6: 145,
                     containerColor6: Color.fromRGBO(255, 254, 216, 1),
                     colorText6: Colors.black54,
                     text6: 'avainillado',
-                  
                     containerWidth7: 135,
                     containerColor7: Color.fromRGBO(251, 255, 154, 1),
                     colorText7: Colors.black54,
                     text7: 'cítrico',
-                  
                     containerWidth8: 130,
                     containerColor8: Color.fromRGBO(184, 224, 132, 1),
                     colorText8: Colors.black54,
                     text8: 'fresco especiado',
-                  
                     containerWidth9: 125,
                     containerColor9: Color.fromRGBO(245, 247, 252, 1),
                     colorText9: Colors.black45,
@@ -373,11 +265,13 @@ estela es pesada. Es un aroma Unisex.
                     imageNotaSalida: 'assets/images/azafran.jpg',
                     textNotaSalida: 'Azafrán',
                     imageNotaSalida2: 'assets/images/nuez_moscada.jpg',
-                    textNotaSalida2: 'Nuez Moscada',
+                    textNotaSalida2: '''Nuez
+Moscada''',
                     imageNotaSalida3: 'assets/images/lavanda.jpg',
                     textNotaSalida3: 'Lavanda',
                     imageCorazon: 'assets/images/madera_de_oud.jpg',
-                    textCorazon: 'Madera de Oud',
+                    textCorazon: '''Madera
+de Oud''',
                     imageBase: 'assets/images/pachuli.jpg',
                     textBase: 'Pachulí',
                     imageBase2: 'assets/images/almizcle.jpg',
@@ -448,7 +342,8 @@ Es un aroma Unisex.
                       imageCorazon2: 'assets/images/cedro.jpg',
                       textCorazon2: 'Cedro',
                       imageCorazon3: 'assets/images/madera_de_gaiac.jpg',
-                      textCorazon3: 'Madera de Gaiac',
+                      textCorazon3: '''Madera
+de Gaiac''',
                       imageBase: 'assets/images/resinas.jpg',
                       textBase: 'Resinas',
                       imageBase2: 'assets/images/ambar.jpg',
@@ -493,11 +388,11 @@ Es un aroma Unisex.
                       text9: 'balsámico'),
                   //TODO:
                   const Aromas100(
-                    title: 'L\'Aventure - Al Haramain',
+                    title: 'L\' Aventure - Al Haramain',
                     description: '''
-L'Aventure de Al Haramain Perfumes es una
+L' Aventure de Al Haramain Perfumes es una
 fragancia de la familia olfativa Chipre
-Frutal para Hombres. L'Aventure se lanzó en 2016.
+Frutal para Hombres. L' Aventure se lanzó en 2016.
 Tiene una longevidad duradera y su estela
 es moderada. Es un aroma Masculino
 (Tiene su versión femenina) L' Aventure femme.
@@ -510,11 +405,13 @@ es moderada. Es un aroma Masculino
                     imageNotaSalida3: 'assets/images/elemi.jpg',
                     textNotaSalida3: 'Elemí',
                     imageCorazon: 'assets/images/notas_amaderadas.jpg',
-                    textCorazon: 'Notas Amaderadas',
+                    textCorazon: '''Notas
+Amaderadas''',
                     imageCorazon2: 'assets/images/jazmin.jpg',
                     textCorazon2: 'Jazmín',
                     imageCorazon3: 'assets/images/lirio_de_los_valles.jpg',
-                    textCorazon3: 'Lirio de los Valles',
+                    textCorazon3: '''Lirio de
+los Valles''',
                     imageBase: 'assets/images/almizcle.jpg',
                     textBase: 'Almizcle',
                     imageBase2: 'assets/images/pachuli.jpg',
@@ -584,11 +481,13 @@ estela es moderada. Es un aroma Unisex.
                     imageCorazon6: 'assets/images/cedro.jpg',
                     textCorazon6: 'Cedro',
                     imageCorazon7: 'assets/images/clavos_de_olor.jpg',
-                    textCorazon7: 'Clavos de Olor',
+                    textCorazon7: '''Clavos
+de Olor''',
                     imageBase: 'assets/images/sandalo.jpg',
                     textBase: 'Sándalo',
                     imageBase2: 'assets/images/notas_florales.jpg',
-                    textBase2: 'Notas Florales',
+                    textBase2: '''Notas
+Florales''',
                     imageBase3: 'assets/images/almizcle.jpg',
                     textBase3: 'Almizcle',
                     imageBase4: 'assets/images/ambar.jpg',
@@ -3724,106 +3623,85 @@ los Valles''',
                   ),
                   //TODO:
                   const Aromas100(
-                      title: 'CK2 - Calvin Klein',
-                      description: '''
+                    title: 'CK2 - Calvin Klein',
+                    description: '''
 CK2 de Calvin Klein es una fragancia de la
 familia olfativa Amaderada Aromática para
 Hombres y Mujeres. CK2 se lanzó en 2016.
 Tiene una longevidad y estela moderadas.
 Es un aroma Unisex.
 ''',
-                      imageLocion: 'assets/images/ck2_calvin_klein.webp',
-
-                      imageNotaSalida: 'assets/images/wasabi.jpg',
-                      textNotaSalida: 'Wasabi',
-
-                      imageNotaSalida2: 'assets/images/hojas_de_violeta.jpg',
-                      textNotaSalida2: '''Hojas de
+                    imageLocion: 'assets/images/ck2_calvin_klein.webp',
+                    imageNotaSalida: 'assets/images/wasabi.jpg',
+                    textNotaSalida: 'Wasabi',
+                    imageNotaSalida2: 'assets/images/hojas_de_violeta.jpg',
+                    textNotaSalida2: '''Hojas de
 Violeta''',
-                      imageNotaSalida3: 'assets/images/mandarina.jpg',
-                      textNotaSalida3: 'Mandarina',
-
-                      imageNotaSalida4: 'assets/images/pera.jpg',
-                      textNotaSalida4: 'Pera',
-
-                      imageCorazon: 'assets/images/piedrecillas.jpg',
-                      textCorazon: 'Piedrecillas',
-
-                      imageCorazon2: 'assets/images/hediona.jpg',
-                      textCorazon2: 'Hediona',
-
-                      imageCorazon3: 'assets/images/raiz_de_lirio.jpg',
-                      textCorazon3: '''Raíz de
+                    imageNotaSalida3: 'assets/images/mandarina.jpg',
+                    textNotaSalida3: 'Mandarina',
+                    imageNotaSalida4: 'assets/images/pera.jpg',
+                    textNotaSalida4: 'Pera',
+                    imageCorazon: 'assets/images/piedrecillas.jpg',
+                    textCorazon: 'Piedrecillas',
+                    imageCorazon2: 'assets/images/hediona.jpg',
+                    textCorazon2: 'Hediona',
+                    imageCorazon3: 'assets/images/raiz_de_lirio.jpg',
+                    textCorazon3: '''Raíz de
 Lirio''',
-                      imageCorazon4: 'assets/images/peonia.jpg',
-                      textCorazon4: 'Peonía',
-
-                      imageCorazon5: 'assets/images/rosa.jpg',
-                      textCorazon5: 'Rosa',
-
-                      imageBase: 'assets/images/vetiver.jpg',
-                      textBase: 'Vetiver',
-
-                      imageBase2: 'assets/images/almizcle.jpg',
-                      textBase2: 'Almizcle',
-
-                      imageBase3: 'assets/images/incienso.jpg',
-                      textBase3: 'Incienso',
-
-                      imageBase4: 'assets/images/sandalo.jpg',
-                      textBase4: 'Sándalo',
-
-                      containerWidth: 230,
-                      containerColor: Color.fromRGBO(113, 187, 191, 1),
-                      colorText: Colors.black,
-                      text: 'mineral',
-
-                      containerWidth2: 190,
-                      containerColor2: Color.fromRGBO(150, 209, 73, 1),
-                      colorText2: Colors.black87,
-                      text2: 'fresco especiado',
-
-                      containerWidth3: 180,
-                      containerColor3: Color.fromRGBO(211, 253, 252, 1),
-                      colorText3: Colors.black87,
-                      text3: 'ozónico',
-
-                      containerWidth4: 180,
-                      containerColor4: Color.fromRGBO(129, 214, 231, 1),
-                      colorText4: Colors.black87,
-                      text4: 'acuático',
-                      
-                      containerWidth5: 170,
-                      containerColor5: Color.fromRGBO(148, 107, 70, 1),
-                      colorText5: Colors.white,
-                      text5: 'amaderado',
-
-                      containerWidth6: 165,
-                      containerColor6: Color.fromRGBO(255, 131, 166, 1),
-                      colorText6: Colors.black87,
-                      text6: 'florales',
-                    
-                      containerWidth7: 155,
-                      containerColor7: Color.fromRGBO(76, 170, 87, 1),
-                      colorText7: Colors.white,
-                      text7: 'verde',
-                    
-                      containerWidth8: 145,
-                      containerColor8: Color.fromRGBO(183, 236, 242, 1),
-                      colorText8: Colors.black54,
-                      text8: 'fresco',
-                    
-                      containerWidth9: 135,
-                      containerColor9: Color.fromRGBO(243, 232, 221, 1),
-                      colorText9: Colors.black45,
-                      text9: 'atalcado',
-
-                      containerWidth10: 130,
-                      containerColor10: Color.fromRGBO(145, 137, 127, 1),
-                      colorText10: Colors.white70,
-                      text10: 'terrosos',
-                    ),
-                    //TODO:
+                    imageCorazon4: 'assets/images/peonia.jpg',
+                    textCorazon4: 'Peonía',
+                    imageCorazon5: 'assets/images/rosa.jpg',
+                    textCorazon5: 'Rosa',
+                    imageBase: 'assets/images/vetiver.jpg',
+                    textBase: 'Vetiver',
+                    imageBase2: 'assets/images/almizcle.jpg',
+                    textBase2: 'Almizcle',
+                    imageBase3: 'assets/images/incienso.jpg',
+                    textBase3: 'Incienso',
+                    imageBase4: 'assets/images/sandalo.jpg',
+                    textBase4: 'Sándalo',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(113, 187, 191, 1),
+                    colorText: Colors.black,
+                    text: 'mineral',
+                    containerWidth2: 190,
+                    containerColor2: Color.fromRGBO(150, 209, 73, 1),
+                    colorText2: Colors.black87,
+                    text2: 'fresco especiado',
+                    containerWidth3: 180,
+                    containerColor3: Color.fromRGBO(211, 253, 252, 1),
+                    colorText3: Colors.black87,
+                    text3: 'ozónico',
+                    containerWidth4: 180,
+                    containerColor4: Color.fromRGBO(129, 214, 231, 1),
+                    colorText4: Colors.black87,
+                    text4: 'acuático',
+                    containerWidth5: 170,
+                    containerColor5: Color.fromRGBO(148, 107, 70, 1),
+                    colorText5: Colors.white,
+                    text5: 'amaderado',
+                    containerWidth6: 165,
+                    containerColor6: Color.fromRGBO(255, 131, 166, 1),
+                    colorText6: Colors.black87,
+                    text6: 'florales',
+                    containerWidth7: 155,
+                    containerColor7: Color.fromRGBO(76, 170, 87, 1),
+                    colorText7: Colors.white,
+                    text7: 'verde',
+                    containerWidth8: 145,
+                    containerColor8: Color.fromRGBO(183, 236, 242, 1),
+                    colorText8: Colors.black54,
+                    text8: 'fresco',
+                    containerWidth9: 135,
+                    containerColor9: Color.fromRGBO(243, 232, 221, 1),
+                    colorText9: Colors.black45,
+                    text9: 'atalcado',
+                    containerWidth10: 130,
+                    containerColor10: Color.fromRGBO(145, 137, 127, 1),
+                    colorText10: Colors.white70,
+                    text10: 'terrosos',
+                  ),
+                  //TODO:
                 ],
               ),
             ],
@@ -4079,7 +3957,7 @@ class Aromas100 extends StatelessWidget {
     this.colorText10,
     this.text10,
   }) : super(key: key);
-
+//TODO:
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -4971,6 +4849,629 @@ class AromasBuscador extends StatelessWidget {
               ],
             ),
             const Spacer()
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class Aromas200 extends StatelessWidget {
+  final String title;
+  final String description;
+  final String imageLocion;
+  final String imageNotaFragancia;
+  final String textNotaFragancia;
+  final String imageNotaFragancia2;
+  final String textNotaFragancia2;
+  final String imageNotaFragancia3;
+  final String textNotaFragancia3;
+  final String imageNotaFragancia4;
+  final String textNotaFragancia4;
+  final String imageNotaFragancia5;
+  final String textNotaFragancia5;
+  final String imageNotaFragancia6;
+  final String textNotaFragancia6;
+  final String imageNotaFragancia7;
+  final String textNotaFragancia7;
+  final String imageNotaFragancia8;
+  final String textNotaFragancia8;
+  final String imageNotaFragancia9;
+  final String textNotaFragancia9;
+  final double containerWidth;
+  final Color? containerColor;
+  final Color colorText;
+  final String text;
+  final double containerWidth2;
+  final Color? containerColor2;
+  final Color colorText2;
+  final String text2;
+  final double containerWidth3;
+  final Color? containerColor3;
+  final Color colorText3;
+  final String text3;
+  final double? containerWidth4;
+  final Color? containerColor4;
+  final Color? colorText4;
+  final String? text4;
+  final double? containerWidth5;
+  final Color? containerColor5;
+  final Color? colorText5;
+  final String? text5;
+  final double? containerWidth6;
+  final Color? containerColor6;
+  final Color? colorText6;
+  final String? text6;
+  final double? containerWidth7;
+  final Color? containerColor7;
+  final Color? colorText7;
+  final String? text7;
+  final double? containerWidth8;
+  final Color? containerColor8;
+  final Color? colorText8;
+  final String? text8;
+  final double? containerWidth9;
+  final Color? containerColor9;
+  final Color? colorText9;
+  final String? text9;
+  final double? containerWidth10;
+  final Color? containerColor10;
+  final Color? colorText10;
+  final String? text10;
+
+  // ignore: use_super_parameters
+  const Aromas200({
+    Key? key,
+    required this.title,
+    required this.description,
+    required this.imageLocion,
+    required this.imageNotaFragancia,
+    required this.textNotaFragancia,
+    required this.imageNotaFragancia2,
+    required this.textNotaFragancia2,
+    required this.imageNotaFragancia3,
+    required this.textNotaFragancia3,
+    required this.imageNotaFragancia4,
+    required this.textNotaFragancia4,
+    required this.imageNotaFragancia5,
+    required this.textNotaFragancia5,
+    required this.imageNotaFragancia6,
+    required this.textNotaFragancia6,
+    required this.imageNotaFragancia7,
+    required this.textNotaFragancia7,
+    required this.imageNotaFragancia8,
+    required this.textNotaFragancia8,
+    required this.imageNotaFragancia9,
+    required this.textNotaFragancia9,
+    required this.containerWidth,
+    required this.containerColor,
+    required this.colorText,
+    required this.text,
+    required this.containerWidth2,
+    required this.containerColor2,
+    required this.colorText2,
+    required this.text2,
+    required this.containerWidth3,
+    required this.containerColor3,
+    required this.colorText3,
+    required this.text3,
+    this.containerWidth4,
+    this.containerColor4,
+    this.colorText4,
+    this.text4,
+    this.containerWidth5,
+    this.containerColor5,
+    this.colorText5,
+    this.text5,
+    this.containerWidth6,
+    this.containerColor6,
+    this.colorText6,
+    this.text6,
+    this.containerWidth7,
+    this.containerColor7,
+    this.colorText7,
+    this.text7,
+    this.containerWidth8,
+    this.containerColor8,
+    this.colorText8,
+    this.text8,
+    this.containerWidth9,
+    this.containerColor9,
+    this.colorText9,
+    this.text9,
+    this.containerWidth10,
+    this.containerColor10,
+    this.colorText10,
+    this.text10,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: Text(title, style: styleText3Mobile),
+        ),
+        const SizedBox(height: 10),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: Text(description, style: styleTextLocion),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: Text('Notas de Fragancia:', style: styleTextLocion2),
+        ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Aromas(
+              image: imageNotaFragancia,
+              text: textNotaFragancia,
+              padding: const EdgeInsets.only(left: 30, right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia2,
+              text: textNotaFragancia2,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia3,
+              text: textNotaFragancia3,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia4,
+              text: textNotaFragancia4,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia5,
+              text: textNotaFragancia5,
+              padding: const EdgeInsets.only(right: 0),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Aromas(
+              image: imageNotaFragancia6,
+              text: textNotaFragancia6,
+              padding: const EdgeInsets.only(left: 30, right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia7,
+              text: textNotaFragancia7,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia8,
+              text: textNotaFragancia8,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia9,
+              text: textNotaFragancia9,
+              padding: const EdgeInsets.only(right: 0),
+            ),
+          ],
+        ),
+        const SizedBox(height: 30),
+        Row(
+          children: [
+            Image.asset(imageLocion, height: 190, width: 190),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 40),
+                  child: Text('Acordes Principales', style: styleTextLocion),
+                ),
+                const SizedBox(height: 10),
+                MainChords(
+                  containerWidth: containerWidth,
+                  containerColor: containerColor,
+                  colorText: colorText,
+                  text: text,
+                ),
+                MainChords(
+                  containerWidth: containerWidth2,
+                  containerColor: containerColor2,
+                  colorText: colorText2,
+                  text: text2,
+                ),
+                MainChords(
+                  containerWidth: containerWidth3,
+                  containerColor: containerColor3,
+                  colorText: colorText3,
+                  text: text3,
+                ),
+                if (containerWidth4 != null &&
+                    containerColor4 != null &&
+                    colorText4 != null &&
+                    text4 != null)
+                  MainChords(
+                    containerWidth: containerWidth4!,
+                    containerColor: containerColor4!,
+                    colorText: colorText4!,
+                    text: text4!,
+                  ),
+                if (containerWidth5 != null &&
+                    containerColor5 != null &&
+                    colorText5 != null &&
+                    text5 != null)
+                  MainChords(
+                    containerWidth: containerWidth5!,
+                    containerColor: containerColor5!,
+                    colorText: colorText5!,
+                    text: text5!,
+                  ),
+                if (containerWidth6 != null &&
+                    containerColor6 != null &&
+                    colorText6 != null &&
+                    text6 != null)
+                  MainChords(
+                    containerWidth: containerWidth6!,
+                    containerColor: containerColor6!,
+                    colorText: colorText6!,
+                    text: text6!,
+                  ),
+                if (containerWidth7 != null &&
+                    containerColor7 != null &&
+                    colorText7 != null &&
+                    text7 != null)
+                  MainChords(
+                    containerWidth: containerWidth7!,
+                    containerColor: containerColor7!,
+                    colorText: colorText7!,
+                    text: text7!,
+                  ),
+                if (containerWidth8 != null &&
+                    containerColor8 != null &&
+                    colorText8 != null &&
+                    text8 != null)
+                  MainChords(
+                    containerWidth: containerWidth8!,
+                    containerColor: containerColor8!,
+                    colorText: colorText8!,
+                    text: text8!,
+                  ),
+                if (containerWidth9 != null &&
+                    containerColor9 != null &&
+                    colorText9 != null &&
+                    text9 != null)
+                  MainChords(
+                    containerWidth: containerWidth9!,
+                    containerColor: containerColor9!,
+                    colorText: colorText9!,
+                    text: text9!,
+                  ),
+                if (containerWidth10 != null &&
+                    containerColor10 != null &&
+                    colorText10 != null &&
+                    text10 != null)
+                  MainChords(
+                    containerWidth: containerWidth10!,
+                    containerColor: containerColor10!,
+                    colorText: colorText10!,
+                    text: text10!,
+                  ),
+                const SizedBox(height: 30)
+              ],
+            ),
+            const Spacer(),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class AromasBuscador200 extends StatelessWidget {
+  final String title;
+  final String description;
+  final String imageLocion;
+  final String imageNotaFragancia;
+  final String textNotaFragancia;
+  final String imageNotaFragancia2;
+  final String textNotaFragancia2;
+  final String imageNotaFragancia3;
+  final String textNotaFragancia3;
+  final String imageNotaFragancia4;
+  final String textNotaFragancia4;
+  final String imageNotaFragancia5;
+  final String textNotaFragancia5;
+  final String imageNotaFragancia6;
+  final String textNotaFragancia6;
+  final String imageNotaFragancia7;
+  final String textNotaFragancia7;
+  final String imageNotaFragancia8;
+  final String textNotaFragancia8;
+  final String imageNotaFragancia9;
+  final String textNotaFragancia9;
+  final double containerWidth;
+  final Color? containerColor;
+  final Color colorText;
+  final String text;
+  final double containerWidth2;
+  final Color? containerColor2;
+  final Color colorText2;
+  final String text2;
+  final double containerWidth3;
+  final Color? containerColor3;
+  final Color colorText3;
+  final String text3;
+  final double? containerWidth4;
+  final Color? containerColor4;
+  final Color? colorText4;
+  final String? text4;
+  final double? containerWidth5;
+  final Color? containerColor5;
+  final Color? colorText5;
+  final String? text5;
+  final double? containerWidth6;
+  final Color? containerColor6;
+  final Color? colorText6;
+  final String? text6;
+  final double? containerWidth7;
+  final Color? containerColor7;
+  final Color? colorText7;
+  final String? text7;
+  final double? containerWidth8;
+  final Color? containerColor8;
+  final Color? colorText8;
+  final String? text8;
+  final double? containerWidth9;
+  final Color? containerColor9;
+  final Color? colorText9;
+  final String? text9;
+  final double? containerWidth10;
+  final Color? containerColor10;
+  final Color? colorText10;
+  final String? text10;
+
+  // ignore: use_super_parameters
+  const AromasBuscador200({
+    Key? key,
+    required this.title,
+    required this.description,
+    required this.imageLocion,
+    required this.imageNotaFragancia,
+    required this.textNotaFragancia,
+    required this.imageNotaFragancia2,
+    required this.textNotaFragancia2,
+    required this.imageNotaFragancia3,
+    required this.textNotaFragancia3,
+    required this.imageNotaFragancia4,
+    required this.textNotaFragancia4,
+    required this.imageNotaFragancia5,
+    required this.textNotaFragancia5,
+    required this.imageNotaFragancia6,
+    required this.textNotaFragancia6,
+    required this.imageNotaFragancia7,
+    required this.textNotaFragancia7,
+    required this.imageNotaFragancia8,
+    required this.textNotaFragancia8,
+    required this.imageNotaFragancia9,
+    required this.textNotaFragancia9,
+    required this.containerWidth,
+    required this.containerColor,
+    required this.colorText,
+    required this.text,
+    required this.containerWidth2,
+    required this.containerColor2,
+    required this.colorText2,
+    required this.text2,
+    required this.containerWidth3,
+    required this.containerColor3,
+    required this.colorText3,
+    required this.text3,
+    this.containerWidth4,
+    this.containerColor4,
+    this.colorText4,
+    this.text4,
+    this.containerWidth5,
+    this.containerColor5,
+    this.colorText5,
+    this.text5,
+    this.containerWidth6,
+    this.containerColor6,
+    this.colorText6,
+    this.text6,
+    this.containerWidth7,
+    this.containerColor7,
+    this.colorText7,
+    this.text7,
+    this.containerWidth8,
+    this.containerColor8,
+    this.colorText8,
+    this.text8,
+    this.containerWidth9,
+    this.containerColor9,
+    this.colorText9,
+    this.text9,
+    this.containerWidth10,
+    this.containerColor10,
+    this.colorText10,
+    this.text10,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text(title, style: styleText3Mobile),
+        ),
+        const SizedBox(height: 10),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text(description, style: styleTextLocion),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: Text('Notas de Fragancia:', style: styleTextLocion2),
+        ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Aromas(
+              image: imageNotaFragancia,
+              text: textNotaFragancia,
+              padding: const EdgeInsets.only(left: 0, right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia2,
+              text: textNotaFragancia2,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia3,
+              text: textNotaFragancia3,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia4,
+              text: textNotaFragancia4,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia5,
+              text: textNotaFragancia5,
+              padding: const EdgeInsets.only(right: 0),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Aromas(
+              image: imageNotaFragancia6,
+              text: textNotaFragancia6,
+              padding: const EdgeInsets.only(left: 0, right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia7,
+              text: textNotaFragancia7,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia8,
+              text: textNotaFragancia8,
+              padding: const EdgeInsets.only(right: 15),
+            ),
+            Aromas(
+              image: imageNotaFragancia9,
+              text: textNotaFragancia9,
+              padding: const EdgeInsets.only(right: 0),
+            ),
+          ],
+        ),
+        const SizedBox(height: 30),
+        Row(
+          children: [
+            Image.asset(imageLocion, height: 158, width: 158),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 40),
+                  child: Text('Acordes Principales', style: styleTextLocion),
+                ),
+                const SizedBox(height: 10),
+                MainChords(
+                  containerWidth: containerWidth,
+                  containerColor: containerColor,
+                  colorText: colorText,
+                  text: text,
+                ),
+                MainChords(
+                  containerWidth: containerWidth2,
+                  containerColor: containerColor2,
+                  colorText: colorText2,
+                  text: text2,
+                ),
+                MainChords(
+                  containerWidth: containerWidth3,
+                  containerColor: containerColor3,
+                  colorText: colorText3,
+                  text: text3,
+                ),
+                if (containerWidth4 != null &&
+                    containerColor4 != null &&
+                    colorText4 != null &&
+                    text4 != null)
+                  MainChords(
+                    containerWidth: containerWidth4!,
+                    containerColor: containerColor4!,
+                    colorText: colorText4!,
+                    text: text4!,
+                  ),
+                if (containerWidth5 != null &&
+                    containerColor5 != null &&
+                    colorText5 != null &&
+                    text5 != null)
+                  MainChords(
+                    containerWidth: containerWidth5!,
+                    containerColor: containerColor5!,
+                    colorText: colorText5!,
+                    text: text5!,
+                  ),
+                if (containerWidth6 != null &&
+                    containerColor6 != null &&
+                    colorText6 != null &&
+                    text6 != null)
+                  MainChords(
+                    containerWidth: containerWidth6!,
+                    containerColor: containerColor6!,
+                    colorText: colorText6!,
+                    text: text6!,
+                  ),
+                if (containerWidth7 != null &&
+                    containerColor7 != null &&
+                    colorText7 != null &&
+                    text7 != null)
+                  MainChords(
+                    containerWidth: containerWidth7!,
+                    containerColor: containerColor7!,
+                    colorText: colorText7!,
+                    text: text7!,
+                  ),
+                if (containerWidth8 != null &&
+                    containerColor8 != null &&
+                    colorText8 != null &&
+                    text8 != null)
+                  MainChords(
+                    containerWidth: containerWidth8!,
+                    containerColor: containerColor8!,
+                    colorText: colorText8!,
+                    text: text8!,
+                  ),
+                if (containerWidth9 != null &&
+                    containerColor9 != null &&
+                    colorText9 != null &&
+                    text9 != null)
+                  MainChords(
+                    containerWidth: containerWidth9!,
+                    containerColor: containerColor9!,
+                    colorText: colorText9!,
+                    text: text9!,
+                  ),
+                if (containerWidth10 != null &&
+                    containerColor10 != null &&
+                    colorText10 != null &&
+                    text10 != null)
+                  MainChords(
+                    containerWidth: containerWidth10!,
+                    containerColor: containerColor10!,
+                    colorText: colorText10!,
+                    text: text10!,
+                  ),
+              ],
+            ),
+            const Spacer(),
           ],
         ),
       ],

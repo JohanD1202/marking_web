@@ -1303,7 +1303,8 @@ Madagascar''',
                     imageBase: 'assets/images/piel.jpg',
                     textBase: 'Piel',
                     imageBase2: 'assets/images/cumarina.jpg',
-                    textBase2: 'Haba Tonka',
+                    textBase2: '''Haba
+Tonka''',
                     containerWidth: 230,
                     containerColor: Color.fromRGBO(131, 201, 40, 1),
                     colorText: Colors.black,
@@ -1338,164 +1339,94 @@ Madagascar''',
                     text8: 'cálido especiado',
                   ),
                   //TODO:
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('1 Million Parfum - Paco Rabanne',
-                        style: styleText3Mobile),
-                  ),
-                  const SizedBox(height: 10),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('''
+                  const Aromas200(
+                    title: '1 Million Parfum - Paco Rabanne',
+                    description: '''
 1 Million Parfum de Paco Rabanne es una
 fragancia de la familia olfativa Cuero
 para Hombres. 1 Million Parfum se lanzó
 en 2020. Su longevidad es duradera y su
 estela es pesada. Es un aroma Masculino.
-''', style: styleTextLocion),
+''',
+                    imageLocion: 'assets/images/1_million_paco_rabanne.webp',
+                    
+                    imageNotaFragancia: 'assets/images/nardos.jpg',
+                    textNotaFragancia: 'Nardos',
+                    
+                    imageNotaFragancia2: 'assets/images/sal.jpg',
+                    textNotaFragancia2: 'Sal',
+                    
+                    imageNotaFragancia3: 'assets/images/notas_solares.jpg',
+                    textNotaFragancia3: '''Notas
+Solares''',                    
+                    imageNotaFragancia4: 'assets/images/aceite_de_monoil.jpg',
+                    textNotaFragancia4: '''Aceite
+de Monoi''',            
+                    imageNotaFragancia5: 'assets/images/ambar_gris.jpg',
+                    textNotaFragancia5: '''Ámbar
+Gris''',                    
+                    imageNotaFragancia6: 'assets/images/cuero.jpg',
+                    textNotaFragancia6: 'Cuero',
+                    
+                    imageNotaFragancia7: 'assets/images/cachemira.jpg',
+                    textNotaFragancia7: 'Cachemira',
+                    
+                    imageNotaFragancia8: 'assets/images/ladano.jpg',
+                    textNotaFragancia8: 'Ládano',
+                    
+                    imageNotaFragancia9: 'assets/images/pino.jpg',
+                    textNotaFragancia9: 'Pino',
+
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(237, 242, 251, 1),
+                    colorText: Colors.black,
+                    text: 'floral blanco',
+                    
+                    containerWidth2: 210,
+                    containerColor2: Color.fromRGBO(236, 250, 244, 1),
+                    colorText2: Colors.black,
+                    text2: 'nardos',
+                    
+                    containerWidth3: 190,
+                    containerColor3: Color.fromRGBO(197, 101, 48, 1),
+                    colorText3: Colors.white,
+                    text3: 'ámbar',
+
+                    containerWidth4: 180,
+                    containerColor4: Color.fromRGBO(161, 105, 58, 1),
+                    colorText4: Colors.white,
+                    text4: 'animálico',
+                    
+                    containerWidth5: 150,
+                    containerColor5: Color.fromRGBO(158, 122, 88, 1),
+                    colorText5: Colors.white,
+                    text5: 'amaderado',
+
+                    containerWidth6: 140,
+                    containerColor6: Color.fromRGBO(240, 255, 251, 1),
+                    colorText6: Colors.black54,
+                    text6: 'salado',
+                  
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(167, 136, 126, 1),
+                    colorText7: Colors.white70,
+                    text7: 'cuero',
+                  
+                    containerWidth8: 125,
+                    containerColor8: Color.fromRGBO(249, 206, 106, 1),
+                    colorText8: Colors.black45,
+                    text8: 'tropical',
+                  
+                    containerWidth9: 120,
+                    containerColor9: Color.fromRGBO(241, 232, 242, 1),
+                    colorText9: Colors.black45,
+                    text9: 'almizclado',
+
+                    containerWidth10: 115,
+                    containerColor10: Color.fromRGBO(247, 242, 231, 1),
+                    colorText10: Colors.black45,
+                    text10: 'coco',
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Notas de Fragancia:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/nardos.jpg',
-                        text: 'Nardos',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/sal.jpg',
-                        text: 'Sal',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/notas_solares.jpg',
-                        text: '''Notas
-Solares''',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/aceite_de_monoil.jpg',
-                        text: '''Aceite
-de Monoi''',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/ambar_gris.jpg',
-                        text: '''Ámbar
-Gris''',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/cuero.jpg',
-                        text: 'Cuero',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/cachemira.jpg',
-                        text: 'Cachemira',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/ladano.jpg',
-                        text: 'Ládano',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/pino.jpg',
-                        text: 'Pino',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
-                  Row(
-                    children: [
-                      Image.asset('assets/images/1_million_paco_rabanne.webp',
-                          height: 190, width: 190),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 40),
-                            child: Text('Acordes Principales',
-                                style: styleTextLocion),
-                          ),
-                          const SizedBox(height: 10),
-                          const MainChords(
-                            containerWidth: 230,
-                            containerColor: Color.fromRGBO(237, 242, 251, 1),
-                            colorText: Colors.black,
-                            text: 'floral blanco',
-                          ),
-                          const MainChords(
-                            containerWidth: 210,
-                            containerColor: Color.fromRGBO(236, 250, 244, 1),
-                            colorText: Colors.black,
-                            text: 'nardos',
-                          ),
-                          const MainChords(
-                            containerWidth: 190,
-                            containerColor: Color.fromRGBO(197, 101, 48, 1),
-                            colorText: Colors.white70,
-                            text: 'ámbar',
-                          ),
-                          const MainChords(
-                            containerWidth: 180,
-                            containerColor: Color.fromRGBO(161, 105, 58, 1),
-                            colorText: Colors.white,
-                            text: 'animálico',
-                          ),
-                          const MainChords(
-                            containerWidth: 150,
-                            containerColor: Color.fromRGBO(158, 122, 88, 1),
-                            colorText: Colors.white70,
-                            text: 'amaderado',
-                          ),
-                          const MainChords(
-                            containerWidth: 140,
-                            containerColor: Color.fromRGBO(240, 255, 251, 1),
-                            colorText: Colors.black54,
-                            text: 'salado',
-                          ),
-                          const MainChords(
-                            containerWidth: 135,
-                            containerColor: Color.fromRGBO(167, 136, 126, 1),
-                            colorText: Colors.white70,
-                            text: 'cuero',
-                          ),
-                          const MainChords(
-                            containerWidth: 125,
-                            containerColor: Color.fromRGBO(249, 206, 106, 1),
-                            colorText: Colors.black54,
-                            text: 'tropical',
-                          ),
-                          const MainChords(
-                            containerWidth: 120,
-                            containerColor: Color.fromRGBO(241, 232, 242, 1),
-                            colorText: Colors.black45,
-                            text: 'almizclado',
-                          ),
-                          const MainChords(
-                            containerWidth: 115,
-                            containerColor: Color.fromRGBO(247, 242, 231, 1),
-                            colorText: Colors.black45,
-                            text: 'coco',
-                          ),
-                          const SizedBox(height: 30)
-                        ],
-                      ),
-                      const Spacer(),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
                   //TODO:
                   const Aromas100(
                     title: '1 Million Lucky - Paco Rabanne',
@@ -1511,7 +1442,8 @@ estela es moderada. Es un aroma Masculino.
                     imageNotaSalida: 'assets/images/ciruela.jpg',
                     textNotaSalida: 'Ciruela',
                     imageNotaSalida2: 'assets/images/notas_ozonicas.jpg',
-                    textNotaSalida2: 'Notas Ozónicas',
+                    textNotaSalida2: '''Notas
+Ozónicas''',
                     imageNotaSalida3: 'assets/images/toronja.jpg',
                     textNotaSalida3: 'Toronja',
                     imageNotaSalida4: 'assets/images/bergamota.jpg',
@@ -1534,7 +1466,8 @@ Naranjo''',
                     imageBase2: 'assets/images/pachuli.jpg',
                     textBase2: 'Pachulí',
                     imageBase3: 'assets/images/musgo_de_roble.jpg',
-                    textBase3: 'Musgo de Roble',
+                    textBase3: '''Musgo
+de Roble''',
                     imageBase4: 'assets/images/vetiver.jpg',
                     textBase4: 'Vetiver',
                     containerWidth: 230,
@@ -1590,13 +1523,15 @@ su estela es moderada. Es un aroma Masculino.
 ''',
                     imageLocion: 'assets/images/invictus_paco_rabanne.jpg',
                     imageNotaSalida: 'assets/images/notas_marinas.jpg',
-                    textNotaSalida: 'Notas Marinas',
+                    textNotaSalida: '''Notas
+Marinas''',
                     imageNotaSalida2: 'assets/images/toronja.jpg',
                     textNotaSalida2: 'Toronja',
                     imageNotaSalida3: 'assets/images/mandarina.jpg',
                     textNotaSalida3: 'Mandarina',
                     imageCorazon: 'assets/images/hoja_de_laurel.jpg',
-                    textCorazon: 'Hoja de Laurel',
+                    textCorazon: '''Hoja de
+Laurel''',
                     imageCorazon2: 'assets/images/jazmin.jpg',
                     textCorazon2: 'Jazmín',
                     imageBase: 'assets/images/ambar_gris.jpg',
@@ -1682,7 +1617,8 @@ de Brasil''',
                     imageBase2: 'assets/images/pachuli.jpg',
                     textBase2: 'Pachulí',
                     imageBase3: 'assets/images/ambar_gris.jpg',
-                    textBase3: 'Ámbar Negro',
+                    textBase3: '''Ámbar
+Negro''',
                     containerWidth: 230,
                     containerColor: Color.fromRGBO(238, 54, 59, 1),
                     colorText: Colors.white,
@@ -2051,7 +1987,8 @@ Amaderadas''',
                     containerColor5: Color.fromRGBO(240, 226, 243, 1),
                     colorText5: Colors.black45,
                     text5: 'lavanda',
-                  ), //TODO:
+                  ),
+                  //TODO:
                   const Aromas100(
                     title: 'Nautica Voyage - Nautica',
                     description: '''
@@ -2063,11 +2000,13 @@ Es un aroma Masculino.
 ''',
                     imageLocion: 'assets/images/nautica_voyage_nautica.jpg',
                     imageNotaSalida: 'assets/images/notas_verdes.jpg',
-                    textNotaSalida: 'Hojas Verdes',
+                    textNotaSalida: '''Hojas
+Verdes''',
                     imageNotaSalida2: 'assets/images/manzana.jpg',
                     textNotaSalida2: 'Manzana',
                     imageCorazon: 'assets/images/flor_de_loto.jpg',
-                    textCorazon: 'Flor de Loto',
+                    textCorazon: '''Flor de
+Loto''',
                     imageCorazon2: 'assets/images/mimosa.jpg',
                     textCorazon2: 'Mimosa',
                     imageBase: 'assets/images/almizcle.jpg',
@@ -2075,7 +2014,8 @@ Es un aroma Masculino.
                     imageBase2: 'assets/images/cedro.jpg',
                     textBase2: 'Cedro',
                     imageBase3: 'assets/images/musgo_de_roble.jpg',
-                    textBase3: 'Musgo de Roble',
+                    textBase3: '''Musgo de
+Roble''',
                     imageBase4: 'assets/images/ambar.jpg',
                     textBase4: 'Ámbar',
                     containerWidth: 230,
@@ -2210,7 +2150,8 @@ Es un aroma Masculino.
 ''',
                     imageLocion: 'assets/images/red_lacoste.webp',
                     imageNotaSalida: 'assets/images/manzana.jpg',
-                    textNotaSalida: 'Manzana Verde',
+                    textNotaSalida: '''Manzana
+Verde''',
                     imageCorazon: 'assets/images/pino.jpg',
                     textCorazon: 'Pino',
                     imageBase: 'assets/images/pachuli.jpg',
@@ -4498,12 +4439,6 @@ class AromasBuscador extends StatelessWidget {
               Aromas(
                 image: imageNotaSalida4!,
                 text: textNotaSalida4!,
-                padding: const EdgeInsets.only(right: 15),
-              ),
-            if (imageNotaSalida5 != null && textNotaSalida5 != null)
-              Aromas(
-                image: imageNotaSalida5!,
-                text: textNotaSalida5!,
                 padding: const EdgeInsets.only(right: 0),
               ),
           ],
@@ -4511,11 +4446,17 @@ class AromasBuscador extends StatelessWidget {
         const SizedBox(height: 5),
         Row(
           children: [
+            if (imageNotaSalida5 != null && textNotaSalida5 != null)
+              Aromas(
+                image: imageNotaSalida5!,
+                text: textNotaSalida5!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
             if (imageNotaSalida6 != null && textNotaSalida6 != null)
               Aromas(
                 image: imageNotaSalida6!,
                 text: textNotaSalida6!,
-                padding: const EdgeInsets.only(left: 0, right: 15),
+                padding: const EdgeInsets.only(right: 15),
               ),
             if (imageNotaSalida7 != null && textNotaSalida7 != null)
               Aromas(
@@ -4560,24 +4501,25 @@ class AromasBuscador extends StatelessWidget {
               Aromas(
                 image: imageCorazon4!,
                 text: textCorazon4!,
-                padding: const EdgeInsets.only(right: 15),
+                padding: const EdgeInsets.only(right: 0),
               ),
-            if (imageCorazon5 != null && textCorazon5 != null)
-              Aromas(
-                image: imageCorazon5!,
-                text: textCorazon5!,
-                padding: const EdgeInsets.only(right: 15),
-              ),
+            
           ],
         ),
         const SizedBox(height: 5),
         Row(
           children: [
+            if (imageCorazon5 != null && textCorazon5 != null)
+              Aromas(
+                image: imageCorazon5!,
+                text: textCorazon5!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
             if (imageCorazon6 != null && textCorazon6 != null)
               Aromas(
                 image: imageCorazon6!,
                 text: textCorazon6!,
-                padding: const EdgeInsets.only(left: 0, right: 15),
+                padding: const EdgeInsets.only(right: 15),
               ),
             if (imageCorazon7 != null && textCorazon7 != null)
               Aromas(
@@ -4589,13 +4531,19 @@ class AromasBuscador extends StatelessWidget {
               Aromas(
                 image: imageCorazon8!,
                 text: textCorazon8!,
-                padding: const EdgeInsets.only(right: 15),
+                padding: const EdgeInsets.only(right: 0),
               ),
+            
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
             if (imageCorazon9 != null && textCorazon9 != null)
               Aromas(
                 image: imageCorazon9!,
                 text: textCorazon9!,
-                padding: const EdgeInsets.only(right: 15),
+                padding: const EdgeInsets.only(left: 0, right: 15),
               ),
             if (imageCorazon10 != null && textCorazon10 != null)
               Aromas(
@@ -4603,16 +4551,11 @@ class AromasBuscador extends StatelessWidget {
                 text: textCorazon10!,
                 padding: const EdgeInsets.only(right: 0),
               ),
-          ],
-        ),
-        const SizedBox(height: 5),
-        Row(
-          children: [
             if (imageCorazon11 != null && textCorazon11 != null)
               Aromas(
                 image: imageCorazon11!,
                 text: textCorazon11!,
-                padding: const EdgeInsets.only(left: 0, right: 15),
+                padding: const EdgeInsets.only(right: 15),
               ),
             if (imageCorazon12 != null && textCorazon12 != null)
               Aromas(

@@ -2490,7 +2490,8 @@ muy duradera y su estela es pesada. Es un aroma Femenino.
                     imageLocion:
                         'assets/images/carolina_herrera_carolina_herrera.jpg',
                     imageNotaSalida: 'assets/images/notas_verdes.jpg',
-                    textNotaSalida: 'Notas Verdes',
+                    textNotaSalida: '''Notas
+Verdes''',
                     imageNotaSalida2: 'assets/images/citricos.jpg',
                     textNotaSalida2: 'Cítricos',
                     imageCorazon: 'assets/images/nardos.jpg',
@@ -2532,7 +2533,7 @@ Amaderadas''',
                   const SizedBox(height: 30),
                   //TODO:
                   const Aromas100(
-                    title: 'Ch (2015) - Carolina Herrera',
+                    title: 'CH (2015) - Carolina Herrera',
                     description: '''
 CH (2015) de Carolina Herrera es una fragancia
 de la familia olfativa Ámbar Floral para Mujeres.
@@ -4549,7 +4550,7 @@ class AromasBuscador extends StatelessWidget {
               Aromas(
                 image: imageCorazon10!,
                 text: textCorazon10!,
-                padding: const EdgeInsets.only(right: 0),
+                padding: const EdgeInsets.only(right: 15),
               ),
             if (imageCorazon11 != null && textCorazon11 != null)
               Aromas(

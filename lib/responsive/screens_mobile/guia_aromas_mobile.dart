@@ -144,7 +144,6 @@ de Oud''',
                     containerColor2: Color.fromRGBO(107, 91, 82, 1),
                     colorText2: Colors.white,
                     text2: 'oud',
-
                     containerWidth3: 190,
                     containerColor3: Color.fromRGBO(213, 88, 46, 1),
                     colorText3: Colors.white,
@@ -153,7 +152,6 @@ de Oud''',
                     containerColor4: Color.fromRGBO(158, 147, 162, 1),
                     colorText4: Colors.white,
                     text4: 'ahumado',
-                    
                     containerWidth5: 180,
                     containerColor5: Color.fromRGBO(254, 161, 142, 1),
                     colorText5: Colors.white,
@@ -162,17 +160,14 @@ de Oud''',
                     containerColor6: Color.fromRGBO(253, 140, 119, 1),
                     colorText6: Colors.black87,
                     text6: 'afrutados',
-                  
                     containerWidth7: 150,
                     containerColor7: Color.fromRGBO(170, 138, 108, 1),
                     colorText7: Colors.white,
                     text7: 'amaderado',
-                  
                     containerWidth8: 150,
                     containerColor8: Color.fromRGBO(171, 141, 132, 1),
                     colorText8: Colors.white,
                     text8: 'cuero',
-                  
                     containerWidth9: 140,
                     containerColor9: Color.fromRGBO(206, 182, 157, 1),
                     colorText9: Colors.black54,
@@ -538,14 +533,9 @@ Florales''',
                     text10: 'cuero',
                   ),
                   //TODO:
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Santal 33 - Le Labo', style: styleText3Mobile),
-                  ),
-                  const SizedBox(height: 10),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('''
+                  const Aromas200(
+                      title: 'Santal 33 - Le Labo',
+                      description: '''
 Santal 33 de Le Labo es una fragancia
 de la familia olfativa Amaderada
 Aromática para Hombres y Mujeres.
@@ -553,111 +543,58 @@ Santal 33 se lanzó en 2011.
 Tiene una longevidad duradera y su
 estela es de moderada a pesada.
 Es un aroma Unisex.
-''', style: styleTextLocion),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
-                    child: Text('Notas de Fragancia:', style: styleTextLocion2),
-                  ),
-                  const SizedBox(height: 10),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/sandalo.jpg',
-                        text: 'Sándalo',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/cuero.jpg',
-                        text: 'Cuero',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/papiro_de_egipto.jpg',
-                        text: 'Papiro de Egipto',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/cedro.jpg',
-                        text: 'Cedro',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const Row(
-                    children: [
-                      Aromas(
-                        image: 'assets/images/violeta.jpg',
-                        text: 'Violeta',
-                        padding: EdgeInsets.only(left: 30, right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/cardamomo.jpg',
-                        text: 'Cardamomo',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/iris.jpg',
-                        text: 'Iris',
-                        padding: EdgeInsets.only(right: 15),
-                      ),
-                      Aromas(
-                        image: 'assets/images/ambar.jpg',
-                        text: 'Ámbar',
-                        padding: EdgeInsets.only(right: 0),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
-                  Row(
-                    children: [
-                      Image.asset('assets/images/santal_33_le_labo.jpg',
-                          height: 190, width: 190),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 40),
-                            child: Text('Acordes Principales',
-                                style: styleTextLocion),
-                          ),
-                          const SizedBox(height: 10),
-                          const MainChords(
-                            containerWidth: 230,
-                            containerColor: Color.fromRGBO(119, 68, 20, 1),
-                            colorText: Colors.white,
-                            text: 'amaderado',
-                          ),
-                          const MainChords(
-                            containerWidth: 150,
-                            containerColor: Color.fromRGBO(243, 231, 219, 1),
-                            colorText: Colors.black54,
-                            text: 'atalcado',
-                          ),
-                          const MainChords(
-                            containerWidth: 140,
-                            containerColor: Color.fromRGBO(166, 135, 126, 1),
-                            colorText: Colors.white70,
-                            text: 'cuero',
-                          ),
-                          const MainChords(
-                            containerWidth: 130,
-                            containerColor: Color.fromRGBO(224, 131, 100, 1),
-                            colorText: Colors.white70,
-                            text: 'cálido especiado',
-                          ),
-                          const MainChords(
-                            containerWidth: 120,
-                            containerColor: Color.fromRGBO(200, 130, 255, 1),
-                            colorText: Colors.white70,
-                            text: 'violeta',
-                          ),
-                          const SizedBox(height: 30)
-                        ],
-                      ),
-                      const Spacer(),
-                    ],
-                  ),
+''',
+                      imageLocion: 'assets/images/santal_33_le_labo.jpg',
+
+                      imageNotaFragancia: 'assets/images/sandalo.jpg',
+                      textNotaFragancia: 'Sándalo',
+
+                      imageNotaFragancia2: 'assets/images/cuero.jpg',
+                      textNotaFragancia2: 'Cuero',
+
+                      imageNotaFragancia3: 'assets/images/papiro_de_egipto.jpg',
+                      textNotaFragancia3: '''Papiro
+de Egipto''',
+                      imageNotaFragancia4: 'assets/images/cedro.jpg',
+                      textNotaFragancia4: 'Cedro',
+
+                      imageNotaFragancia5: 'assets/images/violeta.jpg',
+                      textNotaFragancia5: 'Violeta',
+
+                      imageNotaFragancia6: 'assets/images/cardamomo.jpg',
+                      textNotaFragancia6: 'Cardamomo',
+
+                      imageNotaFragancia7: 'assets/images/iris.jpg',
+                      textNotaFragancia7: 'Iris',
+
+                      imageNotaFragancia8: 'assets/images/ambar.jpg',
+                      textNotaFragancia8: 'Ámbar',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(119, 68, 20, 1),
+                      colorText: Colors.white,
+                      text: 'amaderado',
+
+                      containerWidth2: 150,
+                      containerColor2: Color.fromRGBO(243, 231, 219, 1),
+                      colorText2: Colors.black54,
+                      text2: 'atalcado',
+
+                      containerWidth3: 140,
+                      containerColor3: Color.fromRGBO(166, 135, 126, 1),
+                      colorText3: Colors.white70,
+                      text3: 'cuero',
+
+                      containerWidth4: 130,
+                      containerColor4: Color.fromRGBO(224, 131, 100, 1),
+                      colorText4: Colors.white70,
+                      text4: 'cálido especiado',
+                      
+                      containerWidth5: 120,
+                      containerColor5: Color.fromRGBO(200, 130, 255, 1),
+                      colorText5: Colors.white70,
+                      text5: 'violeta',
+                    ),
                   const SizedBox(height: 30),
                   //TODO:
                   const Aromas100(
@@ -921,7 +858,8 @@ su estela es pesada. Es un aroma Unisex.
 ''',
                     imageLocion: 'assets/images/intense_cafe_montale.jpg',
                     imageNotaSalida: 'assets/images/notas_florales.jpg',
-                    textNotaSalida: 'Notas Florales',
+                    textNotaSalida: '''Notas
+Florales''',
                     imageCorazon: 'assets/images/rosa.jpg',
                     textCorazon: 'Rosa',
                     imageCorazon2: 'assets/images/cafe.jpg',
@@ -929,7 +867,8 @@ su estela es pesada. Es un aroma Unisex.
                     imageBase: 'assets/images/vainilla.jpg',
                     textBase: 'Vainilla',
                     imageBase2: 'assets/images/almizcle.jpg',
-                    textBase2: 'Almizcle Blanco',
+                    textBase2: '''Almizcle
+Blanco''',
                     imageBase3: 'assets/images/ambar.jpg',
                     textBase3: 'Ámbar',
                     containerWidth: 230,
@@ -989,9 +928,11 @@ es pesada. Es un aroma Unisex.
                     imageCorazon: 'assets/images/amberwood.jpg',
                     textCorazon: 'Amberwood',
                     imageCorazon2: 'assets/images/ambar_gris.jpg',
-                    textCorazon2: 'Ámbar Gris',
+                    textCorazon2: '''Ámbar
+Gris''',
                     imageBase: 'assets/images/resina_de_abeto.jpg',
-                    textBase: 'Resina de Abeto',
+                    textBase: '''Resina
+de Abeto''',
                     imageBase2: 'assets/images/cedro.jpg',
                     textBase2: 'Cedro',
                     containerWidth: 230,
@@ -1040,7 +981,8 @@ Es un aroma Unisex.
 ''',
                     imageLocion: 'assets/images/oud_saffron_orientica.webp',
                     imageNotaSalida: 'assets/images/notas_orientales.jpg',
-                    textNotaSalida: 'Notas Orientales',
+                    textNotaSalida: '''Notas
+Orientales''',
                     imageNotaSalida2: 'assets/images/vainilla.jpg',
                     textNotaSalida2: 'Vainilla',
                     imageCorazon: 'assets/images/azafran.jpg',
@@ -1048,9 +990,11 @@ Es un aroma Unisex.
                     imageCorazon2: 'assets/images/pachuli.jpg',
                     textCorazon2: 'Pachulí',
                     imageBase: 'assets/images/madera_de_oud.jpg',
-                    textBase: 'Madera de Oud',
+                    textBase: '''Madera
+de Oud''',
                     imageBase2: 'assets/images/madera_de_gaiac.jpg',
-                    textBase2: 'Madera de Gaiac',
+                    textBase2: '''Madera
+de Gaiac''',
                     imageBase3: 'assets/images/almizcle.jpg',
                     textBase3: 'Almizcle',
                     containerWidth: 230,
@@ -1110,7 +1054,8 @@ estela es moderada. Es un aroma de Hombre.
                     imageNotaSalida: 'assets/images/pera.jpg',
                     textNotaSalida: 'Pera',
                     imageNotaSalida2: 'assets/images/marihuana.jpg',
-                    textNotaSalida2: 'Marihuana (cannabis)',
+                    textNotaSalida2: '''Marihuana
+(cannabis)''',
                     imageNotaSalida3: 'assets/images/jengibre.jpg',
                     textNotaSalida3: 'Jengibre',
                     imageCorazon: 'assets/images/geranio.jpg',
@@ -1196,7 +1141,8 @@ Es un aroma Masculino.
                     imageBase2: 'assets/images/cuero.jpg',
                     textBase2: 'Cuero',
                     imageBase3: 'assets/images/notas_amaderadas.jpg',
-                    textBase3: 'Notas Amaderadas',
+                    textBase3: '''Notas
+Amaderadas''',
                     containerWidth: 230,
                     containerColor: Color.fromRGBO(55, 160, 137, 1),
                     colorText: Colors.black,
@@ -1261,9 +1207,7 @@ Es un Aroma Masculino.
 Nota
 Amaderada''',
                     imageCorazon2: 'assets/images/nuez_moscada.jpg',
-                    textCorazon2: '''
-Nuez
-Moscada''',
+                    textCorazon2: 'Nuez',
                     imageCorazon3: 'assets/images/violeta.jpg',
                     textCorazon3: 'Violeta',
                     imageCorazon4: 'assets/images/azafran.jpg',
@@ -1293,7 +1237,7 @@ Roble''',
                     containerWidth: 230,
                     containerColor: Color.fromRGBO(120, 72, 58, 1),
                     colorText: Colors.white,
-                    text: 'cuerod',
+                    text: 'cuero',
                     containerWidth2: 200,
                     containerColor2: Color.fromRGBO(240, 77, 81, 1),
                     colorText2: Colors.white,
@@ -4724,7 +4668,7 @@ class AromasBuscador extends StatelessWidget {
               Aromas(
                 image: imageBase5!,
                 text: textBase5!,
-                padding: const EdgeInsets.only(left: 15, right: 15),
+                padding: const EdgeInsets.only(left: 0, right: 15),
               ),
             if (imageBase6 != null && textBase6 != null)
               Aromas(
@@ -4876,8 +4820,8 @@ class Aromas200 extends StatelessWidget {
   final String textNotaFragancia7;
   final String imageNotaFragancia8;
   final String textNotaFragancia8;
-  final String imageNotaFragancia9;
-  final String textNotaFragancia9;
+  final String? imageNotaFragancia9;
+  final String? textNotaFragancia9;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -4941,8 +4885,8 @@ class Aromas200 extends StatelessWidget {
     required this.textNotaFragancia7,
     required this.imageNotaFragancia8,
     required this.textNotaFragancia8,
-    required this.imageNotaFragancia9,
-    required this.textNotaFragancia9,
+    this.imageNotaFragancia9,
+    this.textNotaFragancia9,
     required this.containerWidth,
     required this.containerColor,
     required this.colorText,
@@ -5050,11 +4994,12 @@ class Aromas200 extends StatelessWidget {
               text: textNotaFragancia8,
               padding: const EdgeInsets.only(right: 15),
             ),
-            Aromas(
-              image: imageNotaFragancia9,
-              text: textNotaFragancia9,
-              padding: const EdgeInsets.only(right: 0),
-            ),
+            if (imageNotaFragancia9 != null && textNotaFragancia9 != null)
+              Aromas(
+                image: imageNotaFragancia9!,
+                text: textNotaFragancia9!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
           ],
         ),
         const SizedBox(height: 30),
@@ -5188,8 +5133,8 @@ class AromasBuscador200 extends StatelessWidget {
   final String textNotaFragancia7;
   final String imageNotaFragancia8;
   final String textNotaFragancia8;
-  final String imageNotaFragancia9;
-  final String textNotaFragancia9;
+  final String? imageNotaFragancia9;
+  final String? textNotaFragancia9;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -5253,8 +5198,8 @@ class AromasBuscador200 extends StatelessWidget {
     required this.textNotaFragancia7,
     required this.imageNotaFragancia8,
     required this.textNotaFragancia8,
-    required this.imageNotaFragancia9,
-    required this.textNotaFragancia9,
+    this.imageNotaFragancia9,
+    this.textNotaFragancia9,
     required this.containerWidth,
     required this.containerColor,
     required this.colorText,
@@ -5362,11 +5307,12 @@ class AromasBuscador200 extends StatelessWidget {
               text: textNotaFragancia8,
               padding: const EdgeInsets.only(right: 15),
             ),
-            Aromas(
-              image: imageNotaFragancia9,
-              text: textNotaFragancia9,
-              padding: const EdgeInsets.only(right: 0),
-            ),
+            if (imageNotaFragancia9 != null && textNotaFragancia9 != null)
+              Aromas(
+                image: imageNotaFragancia9!,
+                text: textNotaFragancia9!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
           ],
         ),
         const SizedBox(height: 30),

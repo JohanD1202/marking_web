@@ -638,7 +638,8 @@ Rosa''',
                     imageBase: 'assets/images/balsamo.jpg',
                     textBase: 'Bálsamo',
                     imageBase2: 'assets/images/madera_de_oud.jpg',
-                    textBase2: 'Madera de Oud',
+                    textBase2: '''Madera
+de Oud''',
                     imageBase3: 'assets/images/benjui.jpg',
                     textBase3: 'Benjuí',
                     imageBase4: 'assets/images/vainilla.jpg',
@@ -702,7 +703,8 @@ es moderada. Es un aroma Unisex.
                     imageNotaSalida2: 'assets/images/rosa.jpg',
                     textNotaSalida2: 'Rosa',
                     imageNotaSalida3: 'assets/images/nuez_moscada.jpg',
-                    textNotaSalida3: 'Nuez Moscada',
+                    textNotaSalida3: '''Nuez
+Moscada''',
                     imageNotaSalida4: 'assets/images/canela.jpg',
                     textNotaSalida4: 'Canela',
                     imageCorazon: 'assets/images/cedro.jpg',
@@ -1666,7 +1668,7 @@ Negro''',
                     description: '''
 Sauvage de Dior es una fragancia de la
 familia olfativa Aromática Fougère para
-ombres. Sauvage se lanzó en 2015. Tiene
+Hombres. Sauvage se lanzó en 2015. Tiene
 una longevidad duradera y su estela es
 pesada. Es un aroma Masculino.
 ''',

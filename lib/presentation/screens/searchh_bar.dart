@@ -148,6 +148,8 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
     "Light Blue - Dolce&Gabbana",
     "Kim Kardashian - Kim Kardashian",
     "Angel - Mugler",
+    "Halloween - Halloween",
+    "CK2 - Calvin Klein",
   ];
 
   final Map<String, String> suggestionImages = {
@@ -211,6 +213,8 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
     "Kim Kardashian - Kim Kardashian":
         'assets/images/kim_kardashian_kim_kardashian.jpg',
     "Angel - Mugler": 'assets/images/angel_mugler.webp',
+    "Halloween - Halloween": 'assets/images/halloween_halloween.jpg',
+    "CK2 - Calvin Klein": 'assets/images/ck2_calvin_klein.webp',
   };
 
   List<String> filteredSuggestions = [];
@@ -383,6 +387,12 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
         case 'Angel - Mugler':
           _selectedIndex = 46;
           break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 47;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 48;
+          break;
         default:
           _selectedIndex = 0;
       }
@@ -401,7 +411,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
           child: TextField(
             controller: _controller,
             decoration: InputDecoration(
-              hintText: 'Busca tus favoritos',
+              hintText: 'Busca tu aroma favorito',
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(40),
                 borderSide: const BorderSide(color: Colors.grey),
@@ -438,7 +448,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
             ),
           ),
         Container(
-          height: _selectedIndex == 0 ? 0 : 1220,
+          height: _selectedIndex == 0 ? 0 : 1280,
           width: double.infinity,
           child: IndexedStack(
             index: _selectedIndex,
@@ -3779,6 +3789,167 @@ Tonka''',
                 text10: 'chocolate',
               ),
               //TODO: 47
+              AromasBuscador(
+                title: 'Halloween - Halloween',
+                description: '''
+Halloween de Halloween es una fragancia de la
+familia olfativa Ámbar Floral para Mujeres.
+Halloween se lanzó en 1997. Su longevidad y
+su estela son moderadas. Es una aroma Femenino.
+''',
+                imageLocion: 'assets/images/halloween_halloween.jpg',
+                imageNotaSalida: 'assets/images/violeta.jpg',
+                textNotaSalida: 'Violeta',
+                imageNotaSalida2: 'assets/images/notas_marinas.jpg',
+                textNotaSalida2: '''Notas
+Marinas''',
+                imageNotaSalida3: 'assets/images/hojas_de_platano.jpg',
+                textNotaSalida3: '''Hojas de
+Plátano''',
+                imageNotaSalida4: 'assets/images/petit_grain.jpg',
+                textNotaSalida4: '''Petit
+Grain''',
+                imageCorazon: 'assets/images/violeta.jpg',
+                textCorazon: 'Violeta',
+                imageCorazon2: 'assets/images/magnolia.jpg',
+                textCorazon2: 'Magnolia',
+                imageCorazon3: 'assets/images/lirio_de_los_valles.jpg',
+                textCorazon3: '''Lirio de
+los Valles''',
+                imageCorazon4: 'assets/images/nardos.jpg',
+                textCorazon4: 'Nardos',
+                imageCorazon5: 'assets/images/pimienta.jpg',
+                textCorazon5: 'Pimienta',
+                imageBase: 'assets/images/incienso.jpg',
+                textBase: 'Incienso',
+                imageBase2: 'assets/images/sandalo.jpg',
+                textBase2: 'Sándalo',
+                imageBase3: 'assets/images/vainilla.jpg',
+                textBase3: 'Vainilla',
+                imageBase4: 'assets/images/mirra.jpg',
+                textBase4: 'Mirra',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(156, 29, 255, 1),
+                colorText: Colors.white,
+                text: 'violeta',
+                containerWidth2: 212,
+                containerColor2: Color.fromRGBO(239, 224, 208, 1),
+                colorText2: Colors.black,
+                text2: 'atalcado',
+                containerWidth3: 210,
+                containerColor3: Color.fromRGBO(37, 98, 164, 1),
+                colorText3: Colors.white,
+                text3: 'marino',
+                containerWidth4: 208,
+                containerColor4: Color.fromRGBO(255, 112, 153, 1),
+                colorText4: Colors.black,
+                text4: 'florales',
+                containerWidth5: 206,
+                containerColor5: Color.fromRGBO(41, 153, 55, 1),
+                colorText5: Colors.white,
+                text5: 'verde',
+                containerWidth6: 185,
+                containerColor6: Color.fromRGBO(95, 179, 160, 1),
+                colorText6: Colors.black87,
+                text6: 'aromático',
+                containerWidth7: 185,
+                containerColor7: Color.fromRGBO(175, 234, 240, 1),
+                colorText7: Colors.black87,
+                text7: 'fresco',
+                containerWidth8: 165,
+                containerColor8: Color.fromRGBO(242, 245, 252, 1),
+                colorText8: Colors.black54,
+                text8: 'floral blanco',
+                containerWidth9: 145,
+                containerColor9: Color.fromRGBO(167, 134, 103, 1),
+                colorText9: Colors.white,
+                text9: 'amaderado',
+                containerWidth10: 143,
+                containerColor10: Color.fromRGBO(213, 143, 105, 1),
+                colorText10: Colors.white,
+                text10: 'ámbar',
+              ),
+              //TODO: 48
+              AromasBuscador(
+                title: 'CK2 - Calvin Klein',
+                description: '''
+CK2 de Calvin Klein es una fragancia de la
+familia olfativa Amaderada Aromática para
+Hombres y Mujeres. CK2 se lanzó en 2016.
+Tiene una longevidad y estela moderadas.
+Es un aroma Unisex.
+''',
+                imageLocion: 'assets/images/ck2_calvin_klein.webp',
+                imageNotaSalida: 'assets/images/wasabi.jpg',
+                textNotaSalida: 'Wasabi',
+                imageNotaSalida2: 'assets/images/hojas_de_violeta.jpg',
+                textNotaSalida2: '''Hojas de
+Violeta''',
+                imageNotaSalida3: 'assets/images/mandarina.jpg',
+                textNotaSalida3: 'Mandarina',
+                imageNotaSalida4: 'assets/images/pera.jpg',
+                textNotaSalida4: 'Pera',
+                imageCorazon: 'assets/images/piedrecillas.jpg',
+                textCorazon: 'Piedrecillas',
+                imageCorazon2: 'assets/images/hediona.jpg',
+                textCorazon2: 'Hediona',
+                imageCorazon3: 'assets/images/raiz_de_lirio.jpg',
+                textCorazon3: '''Raíz de
+Lirio''',
+                imageCorazon4: 'assets/images/peonia.jpg',
+                textCorazon4: 'Peonía',
+                imageCorazon5: 'assets/images/rosa.jpg',
+                textCorazon5: 'Rosa',
+                imageBase: 'assets/images/vetiver.jpg',
+                textBase: 'Vetiver',
+                imageBase2: 'assets/images/almizcle.jpg',
+                textBase2: 'Almizcle',
+                imageBase3: 'assets/images/incienso.jpg',
+                textBase3: 'Incienso',
+                imageBase4: 'assets/images/sandalo.jpg',
+                textBase4: 'Sándalo',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(113, 187, 191, 1),
+                colorText: Colors.black,
+                text: 'mineral',
+                containerWidth2: 190,
+                containerColor2: Color.fromRGBO(150, 209, 73, 1),
+                colorText2: Colors.black87,
+                text2: 'fresco especiado',
+                containerWidth3: 180,
+                containerColor3: Color.fromRGBO(211, 253, 252, 1),
+                colorText3: Colors.black87,
+                text3: 'ozónico',
+                containerWidth4: 180,
+                containerColor4: Color.fromRGBO(129, 214, 231, 1),
+                colorText4: Colors.black87,
+                text4: 'acuático',
+                containerWidth5: 170,
+                containerColor5: Color.fromRGBO(148, 107, 70, 1),
+                colorText5: Colors.white,
+                text5: 'amaderado',
+                containerWidth6: 165,
+                containerColor6: Color.fromRGBO(255, 131, 166, 1),
+                colorText6: Colors.black87,
+                text6: 'florales',
+                containerWidth7: 155,
+                containerColor7: Color.fromRGBO(76, 170, 87, 1),
+                colorText7: Colors.white,
+                text7: 'verde',
+                containerWidth8: 145,
+                containerColor8: Color.fromRGBO(183, 236, 242, 1),
+                colorText8: Colors.black54,
+                text8: 'fresco',
+                containerWidth9: 135,
+                containerColor9: Color.fromRGBO(243, 232, 221, 1),
+                colorText9: Colors.black45,
+                text9: 'atalcado',
+                containerWidth10: 130,
+                containerColor10: Color.fromRGBO(145, 137, 127, 1),
+                colorText10: Colors.white70,
+                text10: 'terrosos',
+              ),
+              //TODO: 49
             ],
           ),
         ),

@@ -19,8 +19,8 @@ class _SectionMujerState extends State<SectionMujer> {
           children: [
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_2.jpg', 
-              imageBolso2: 'assets/images/bolso_1.jpg',
+              imageBolso: 'assets/images/bolso_24.jpg', 
+              imageBolso2: 'assets/images/bolso_11.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Prada',
@@ -29,8 +29,8 @@ class _SectionMujerState extends State<SectionMujer> {
             ),
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_3.jpg', 
-              imageBolso2: 'assets/images/bolso_4.jpg',
+              imageBolso: 'assets/images/bolso_11.jpg', 
+              imageBolso2: 'assets/images/bolso_28.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Dior', 
@@ -39,8 +39,8 @@ class _SectionMujerState extends State<SectionMujer> {
             ),
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_5.jpg', 
-              imageBolso2: 'assets/images/bolso_6.jpg',
+              imageBolso: 'assets/images/bolso_11.jpg', 
+              imageBolso2: 'assets/images/bolso_26.jpg',
               imageWidth: 240, 
               imageHeight: 370,
               symbol: '\$', 
@@ -49,8 +49,8 @@ class _SectionMujerState extends State<SectionMujer> {
             ),
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_8.jpg', 
-              imageBolso2: 'assets/images/bolso_7.jpg',
+              imageBolso: 'assets/images/bolso_11.jpg', 
+              imageBolso2: 'assets/images/bolso_26.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Gucci', 
@@ -67,7 +67,7 @@ class _SectionMujerState extends State<SectionMujer> {
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_9.jpg', 
-            imageBolso2: 'assets/images/bolso_2.jpg',
+            imageBolso2: 'assets/images/bolso_11.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Prada', 
@@ -77,7 +77,7 @@ class _SectionMujerState extends State<SectionMujer> {
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_10.jpg', 
-            imageBolso2: 'assets/images/bolso_4.jpg',
+            imageBolso2: 'assets/images/bolso_11.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Dior', 
@@ -87,7 +87,7 @@ class _SectionMujerState extends State<SectionMujer> {
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_13.jpg', 
-            imageBolso2: 'assets/images/bolso_6.jpg',
+            imageBolso2: 'assets/images/bolso_28.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Balenciaga', 
@@ -114,7 +114,7 @@ class _SectionMujerState extends State<SectionMujer> {
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_25.jpg', 
-            imageBolso2: 'assets/images/bolso_2.jpg',
+            imageBolso2: 'assets/images/bolso_25.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Prada',
@@ -124,7 +124,7 @@ class _SectionMujerState extends State<SectionMujer> {
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_26.jpg', 
-            imageBolso2: 'assets/images/bolso_4.jpg',
+            imageBolso2: 'assets/images/bolso_24.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Dior',
@@ -134,7 +134,7 @@ class _SectionMujerState extends State<SectionMujer> {
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_27.jpg', 
-            imageBolso2: 'assets/images/bolso_6.jpg',
+            imageBolso2: 'assets/images/bolso_26.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Balenciaga', 
@@ -144,7 +144,7 @@ class _SectionMujerState extends State<SectionMujer> {
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_28.jpg', 
-            imageBolso2: 'assets/images/bolso_8.jpg',
+            imageBolso2: 'assets/images/bolso_28.jpg',
             imageWidth: 240, 
             imageHeight: 370, 
             nameBolso: 'Bolso Gucci',
@@ -160,8 +160,8 @@ class _SectionMujerState extends State<SectionMujer> {
           children: [
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_1.jpg', 
-              imageBolso2: 'assets/images/bolso_2.jpg',
+              imageBolso: 'assets/images/bolso_11.jpg', 
+              imageBolso2: 'assets/images/bolso_26.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Prada',
@@ -170,8 +170,8 @@ class _SectionMujerState extends State<SectionMujer> {
             ),
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_3.jpg', 
-              imageBolso2: 'assets/images/bolso_4.jpg',
+              imageBolso: 'assets/images/bolso_13.jpg', 
+              imageBolso2: 'assets/images/bolso_13.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Dior', 
@@ -180,8 +180,8 @@ class _SectionMujerState extends State<SectionMujer> {
             ),
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_5.jpg', 
-              imageBolso2: 'assets/images/bolso_6.jpg',
+              imageBolso: 'assets/images/bolso_26.jpg', 
+              imageBolso2: 'assets/images/bolso_13.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Balenciaga', 
@@ -190,8 +190,8 @@ class _SectionMujerState extends State<SectionMujer> {
             ),
             Spacer(),
             Bolsos(
-              imageBolso: 'assets/images/bolso_7.jpg', 
-              imageBolso2: 'assets/images/bolso_8.jpg',
+              imageBolso: 'assets/images/bolso_13.jpg', 
+              imageBolso2: 'assets/images/bolso_26.jpg',
               imageWidth: 240, 
               imageHeight: 370, 
               nameBolso: 'Bolso Gucci',

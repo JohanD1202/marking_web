@@ -3,6 +3,7 @@ import 'package:marking_web/exports.dart';
 import 'dart:html' as html;
 
 import 'package:marking_web/presentation/screens/arabes_screen.dart';
+import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 
 
 
@@ -110,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Spacer(),
-                        const SearchhBar(),
+                        //const SearchhBar(),
                         const Spacer(),
                         IconButton(
                           icon: const Icon(Icons.shopping_cart_rounded),
@@ -185,6 +186,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     });
                   }
                 ),
+                const SizedBox(width: 50),
+                ButtonTextBar(
+                  buttonText: 'Guía de Aromas', 
+                  onPressed: () {
+                    setState(() {
+                      indiceWidget = 7;
+                    });
+                  }
+                ),
                 const Spacer(flex: 1),
               ],
             ),
@@ -199,6 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
               MujerScreen(),
               SaleScreen(),
               Help(),
+              GuiaAromas(),
             ],
           ),
           //TODO: FOOTER

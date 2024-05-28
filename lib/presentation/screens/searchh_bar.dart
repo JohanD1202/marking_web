@@ -1,6 +1,7 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 
+
 class SearchhBar extends StatefulWidget {
   // ignore: use_super_parameters
   const SearchhBar({Key? key}) : super(key: key);
@@ -358,8 +359,8 @@ class _SearchhBarState extends State<SearchhBar> {
               },
             ),
           ),
-        Container(
-          height: _selectedIndex == 0 ? 0 : 1500,
+        SizedBox(
+          height: _selectedIndex == 0 ? 0 : 1300,
           width: double.infinity,
           child: IndexedStack(
             index: _selectedIndex,
@@ -3726,6 +3727,381 @@ Lirio''',
               ),
               //TODO: 49
             ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+
+class SearchhBar2 extends StatefulWidget {
+
+  // ignore: use_super_parameters
+  const SearchhBar2({Key? key}) : super(key: key);
+
+  @override
+  State<SearchhBar2> createState() => _SearchhBar2State();
+}
+
+class _SearchhBar2State extends State<SearchhBar2> {
+  final TextEditingController _controller = TextEditingController();
+
+  final List<String> suggestions = [
+    "Yara - Lattafa",
+    "Ombre Nomade - Louis Vuitton",
+    "Bade'e Al Oud Amethyst - Lattafa",
+    "Oud For Greatness - Initio",
+    "Amber Oud - Al Haramain",
+    "L' Aventure - Al Haramain",
+    "Madinah - Al Haramain",
+    "Santal 33 - Le Labo",
+    "Il Kakuno - ILMIN",
+    "Il Femme - ILMIN",
+    "Arabians Tonka - Montale",
+    "Intense Cafe - Montale",
+    "Baccarat Rouge 540 - Francis Kurkdjian",
+    "Oud Saffron - Orientica",
+    "212 Heroes - Carolina Herrera",
+    "212 VIP Men - Carolina Herrera",
+    "CH Men - Carolina Herrera",
+    "212 VIP Men Wins - Carolina Herrera",
+    "1 Million Parfum - Paco Rabanne",
+    "1 Million Lucky - Paco Rabanne",
+    "Invictus - Paco Rabanne",
+    "Black XS - Paco Rabanne",
+    "Sauvage - Dior",
+    "Fahrenheit - Dior",
+    "CK One - Calvin Klein",
+    "360° for Men - Perry Ellis",
+    "Nautica Voyage - Nautica",
+    "Toy Boy - Moschino",
+    "Red - Lacoste",
+    "L'Eau d'Issey Pour Homme Eau & Cèdre - Issey Miyake",
+    "Hugo - Hugo Boss",
+    "Acqua di Gio - Giorgio Armani",
+    "Polo Blue - Ralph Lauren",
+    "Carolina Herrera - Carolina Herrera",
+    "CH (2015) - Carolina Herrera",
+    "212 VIP Rosé - Carolina Herrera",
+    "360° - Perry Ellis",
+    "Paris Hilton - Paris Hilton",
+    "Can Can - Paris Hilton",
+    "Heiress - Paris Hilton",
+    "Toy 2 - Moschino",
+    "Amor Amor - Cacharel",
+    "La Vie Est Belle - Lancôme",
+    "Light Blue - Dolce&Gabbana",
+    "Kim Kardashian - Kim Kardashian",
+    "Angel - Mugler",
+    "Halloween - Halloween",
+    "CK2 - Calvin Klein",
+  ];
+
+  final Map<String, String> suggestionImages = {
+    "Yara - Lattafa": 'assets/images/yara_lattafa.jpg',
+    "Ombre Nomade - Louis Vuitton":
+        'assets/images/ombre_nomade_louis_vuitton.webp',
+    "Bade'e Al Oud Amethyst - Lattafa": 'assets/images/amethyst_lattafa.webp',
+    "Oud For Greatness - Initio": 'assets/images/oud_for_greatness_initio.jpg',
+    "Amber Oud - Al Haramain": 'assets/images/amber_oud_haramain.webp',
+    "L' Aventure - Al Haramain": 'assets/images/l_aventure_haramain.jpg',
+    "Madinah - Al Haramain": 'assets/images/madinah_haramain.jpg',
+    "Santal 33 - Le Labo": 'assets/images/santal_33_le_labo.jpg',
+    "Il Kakuno - ILMIN": 'assets/images/il_kakuno_ilmin.jpg',
+    "Il Femme - ILMIN": 'assets/images/il_femme_ilmin.jpg',
+    "Arabians Tonka - Montale": 'assets/images/arabians_tonka_montale.webp',
+    "Intense Cafe - Montale": 'assets/images/intense_cafe_montale.jpg',
+    "Baccarat Rouge 540 - Francis Kurkdjian":
+        'assets/images/baccarat_rouge_francis_kurkdjian.webp',
+    "Oud Saffron - Orientica": 'assets/images/oud_saffron_orientica.webp',
+    "212 Heroes - Carolina Herrera":
+        'assets/images/212_heroes_carolina_herrera.png',
+    "212 VIP Men - Carolina Herrera":
+        'assets/images/212_vip_men_carolina_herrera.png',
+    "CH Men - Carolina Herrera": 'assets/images/ch_carolina_herrera.webp',
+    "212 VIP Men Wins - Carolina Herrera":
+        'assets/images/212_vip_wins_carolina_herrera.jpeg',
+    "1 Million Parfum - Paco Rabanne":
+        'assets/images/1_million_paco_rabanne.webp',
+    "1 Million Lucky - Paco Rabanne":
+        'assets/images/1_million_lucky_paco_rabanne.jpeg',
+    "Invictus - Paco Rabanne": 'assets/images/invictus_paco_rabanne.jpg',
+    "Black XS - Paco Rabanne": 'assets/images/black_xs_paco_rabanne.webp',
+    "Sauvage - Dior": 'assets/images/sauvage_dior.jpg',
+    "Fahrenheit - Dior": 'assets/images/fahrenheit_dior.jpeg',
+    "CK One - Calvin Klein": 'assets/images/ck_one_calvin_klein.jpeg',
+    "360° for Men - Perry Ellis": 'assets/images/360_for_men_perry_ellis.jpg',
+    "Nautica Voyage - Nautica": 'assets/images/nautica_voyage_nautica.jpg',
+    "Toy Boy - Moschino": 'assets/images/toy_boy_moschino.webp',
+    "Red - Lacoste": 'assets/images/red_lacoste.webp',
+    "L'Eau d'Issey Pour Homme Eau & Cèdre - Issey Miyake":
+        'assets/images/issey_miyake_issey_miyake.webp',
+    "Hugo - Hugo Boss": 'assets/images/hugo_hugo_boss.webp',
+    "Acqua di Gio - Giorgio Armani":
+        'assets/images/acqua_di_gio_giorgio_armani.webp',
+    "Polo Blue - Ralph Lauren": 'assets/images/polo_blue_ralph_lauren.jpg',
+    "Carolina Herrera - Carolina Herrera":
+        'assets/images/carolina_herrera_carolina_herrera.jpg',
+    "CH (2015) - Carolina Herrera":
+        'assets/images/ch_2015_carolina_herrera.jpg',
+    "212 VIP Rosé - Carolina Herrera":
+        'assets/images/212_vip_rose_carolina_herrera.jpg',
+    "360° - Perry Ellis": 'assets/images/360_perry_ellis.jpg',
+    "Paris Hilton - Paris Hilton":
+        'assets/images/paris_hilton_paris_hilton.jpg',
+    "Can Can - Paris Hilton": 'assets/images/can_can_paris_hilton.webp',
+    "Heiress - Paris Hilton": 'assets/images/heiress_paris_hilton.jpg',
+    "Toy 2 - Moschino": 'assets/images/toy_2_moschino.jpg',
+    "Amor Amor - Cacharel": 'assets/images/amor_amor_cacharel.webp',
+    "La Vie Est Belle - Lancôme": 'assets/images/la_vie_est_belle_lancome.jpg',
+    "Light Blue - Dolce&Gabbana": 'assets/images/light_blue_dolce_gabbana.jpg',
+    "Kim Kardashian - Kim Kardashian":
+        'assets/images/kim_kardashian_kim_kardashian.jpg',
+    "Angel - Mugler": 'assets/images/angel_mugler.webp',
+    "Halloween - Halloween": 'assets/images/halloween_halloween.jpg',
+    "CK2 - Calvin Klein": 'assets/images/ck2_calvin_klein.webp',
+  };
+  List<String> filteredSuggestions = [];
+  int _selectedIndex = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller.addListener(_onSearchChanged);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _onSearchChanged() {
+    final searchTerm = _controller.text.toLowerCase();
+    setState(() {
+      if (searchTerm.isNotEmpty) {
+        filteredSuggestions = suggestions
+            .where(
+                (suggestion) => suggestion.toLowerCase().contains(searchTerm))
+            .toList();
+      } else {
+        filteredSuggestions = [];
+      }
+    });
+  }
+
+  void _navigateToWidget(String suggestion) {
+    setState(() {
+      switch (suggestion) {
+        case 'Yara - Lattafa':
+          _selectedIndex = 1;
+          break;
+        case 'Ombre Nomade - Louis Vuitton':
+          _selectedIndex = 2;
+          break;
+        case 'Bade\'e Al Oud Amethyst - Lattafa':
+          _selectedIndex = 3;
+          break;
+        case 'Oud For Greatness - Initio':
+          _selectedIndex = 4;
+          break;
+        case 'Amber Oud - Al Haramain':
+          _selectedIndex = 5;
+          break;
+        case 'L\' Aventure - Al Haramain':
+          _selectedIndex = 6;
+          break;
+        case 'Madinah - Al Haramain':
+          _selectedIndex = 7;
+          break;
+        case 'Santal 33 - Le Labo':
+          _selectedIndex = 8;
+          break;
+        case 'Il Kakuno - ILMIN':
+          _selectedIndex = 9;
+          break;
+        case 'Il Femme - ILMIN':
+          _selectedIndex = 10;
+          break;
+        case 'Arabians Tonka - Montale':
+          _selectedIndex = 11;
+          break;
+        case 'Intense Cafe - Montale':
+          _selectedIndex = 12;
+          break;
+        case 'Baccarat Rouge 540 - Francis Kurkdjian':
+          _selectedIndex = 13;
+          break;
+        case 'Oud Saffron - Orientica':
+          _selectedIndex = 14;
+          break;
+        case '212 Heroes - Carolina Herrera':
+          _selectedIndex = 15;
+          break;
+        case '212 VIP Men - Carolina Herrera':
+          _selectedIndex = 16;
+          break;
+        case 'CH Men - Carolina Herrera':
+          _selectedIndex = 17;
+          break;
+        case '212 VIP Men Wins - Carolina Herrera':
+          _selectedIndex = 18;
+          break;
+        case '1 Million Parfum - Paco Rabanne':
+          _selectedIndex = 19;
+          break;
+        case '1 Million Lucky - Paco Rabanne':
+          _selectedIndex = 20;
+          break;
+        case 'Invictus - Paco Rabanne':
+          _selectedIndex = 21;
+          break;
+        case 'Black XS - Paco Rabanne':
+          _selectedIndex = 22;
+          break;
+        case 'Sauvage - Dior':
+          _selectedIndex = 23;
+          break;
+        case 'Fahrenheit - Dior':
+          _selectedIndex = 24;
+          break;
+        case 'CK One - Calvin Klein':
+          _selectedIndex = 25;
+          break;
+        case '360° for Men - Perry Ellis':
+          _selectedIndex = 26;
+          break;
+        case 'Nautica Voyage - Nautica':
+          _selectedIndex = 27;
+          break;
+        case 'Toy Boy - Moschino':
+          _selectedIndex = 28;
+          break;
+        case 'Red - Lacoste':
+          _selectedIndex = 29;
+          break;
+        case 'L\'Eau d\'Issey Pour Homme Eau & Cèdre - Issey Miyake':
+          _selectedIndex = 30;
+          break;
+        case 'Hugo - Hugo Boss':
+          _selectedIndex = 31;
+          break;
+        case 'Acqua di Gio - Giorgio Armani':
+          _selectedIndex = 32;
+          break;
+        case 'Polo Blue - Ralph Lauren':
+          _selectedIndex = 33;
+          break;
+        case 'Carolina Herrera - Carolina Herrera':
+          _selectedIndex = 34;
+          break;
+        case 'CH (2015) - Carolina Herrera':
+          _selectedIndex = 35;
+          break;
+        case '212 VIP Rosé - Carolina Herrera':
+          _selectedIndex = 36;
+          break;
+        case '360° - Perry Ellis':
+          _selectedIndex = 37;
+          break;
+        case 'Paris Hilton - Paris Hilton':
+          _selectedIndex = 38;
+          break;
+        case 'Can Can - Paris Hilton':
+          _selectedIndex = 39;
+          break;
+        case 'Heiress - Paris Hilton':
+          _selectedIndex = 40;
+          break;
+        case 'Toy 2 - Moschino':
+          _selectedIndex = 41;
+          break;
+        case 'Amor Amor - Cacharel':
+          _selectedIndex = 42;
+          break;
+        case 'La Vie Est Belle - Lancôme':
+          _selectedIndex = 43;
+          break;
+        case 'Light Blue - Dolce&Gabbana':
+          _selectedIndex = 44;
+          break;
+        case 'Kim Kardashian - Kim Kardashian':
+          _selectedIndex = 45;
+          break;
+        case 'Angel - Mugler':
+          _selectedIndex = 46;
+          break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 47;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 48;
+          break;
+        default:
+          _selectedIndex = 0;
+      }
+      _controller.clear();
+      filteredSuggestions = [];
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          height: 30,
+          width: 330,
+          child: TextField(
+            controller: _controller,
+            decoration: InputDecoration(
+              hintText: 'Busca tu aroma favorito',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(40),
+                borderSide: const BorderSide(color: Colors.grey),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(40),
+                borderSide: const BorderSide(color: Colors.grey),
+              ),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              prefixIcon: const Icon(Icons.search_rounded),
+            ),
+          ),
+        ),
+        const SizedBox(height: 10),
+        if (filteredSuggestions.isNotEmpty)
+          SizedBox(
+            height: 150,
+            child: ListView.builder(
+              itemCount: filteredSuggestions.length,
+              itemBuilder: (context, index) {
+                final suggestion = filteredSuggestions[index];
+                return ListTile(
+                  leading: Image.network(
+                    suggestionImages[suggestion] ??
+                        '',
+                    width: 50,
+                    height: 50,
+                  ),
+                  title: Text(suggestion),
+                  onTap: () => _navigateToWidget(suggestion),
+                );
+              },
+            ),
+          ),
+        SizedBox(
+          height: _selectedIndex == 0 ? 0 : 800,
+          width: double.infinity,
+          child: IndexedStack(
+            index: _selectedIndex,
+            children: const [
+              //TODO: 0
+              SizedBox.shrink(),
+              //TODO: 1
+           ],
           ),
         ),
       ],

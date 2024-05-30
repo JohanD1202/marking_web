@@ -33,16 +33,18 @@ class SaleScreenMobile extends StatelessWidget {
                             child: Text('''
 Aquí encontrarás las mejores promociones 
 En una amplia variedad de productos.
-Desde los mejores aromas hasta los
-Bolsos más bonitos y calidosos.
+
 Aprovecha estas ofertas especiales 
 Y añade estilo a tu vida con nuestros productos 
 De alta calidad a precios irresistibles.
 
+¡Tenemos las mejores promociones que incluyen
+bolsos, carteras y demás accesorios sumado a
+tus Aromas favoritos!
+
 ¡No te pierdas esta oportunidad de renovar 
-Tu estilo y disfrutar de grandes ahorros!
-¡No te pierdas nuestras increíbles rebajas 
-Y ahorra en tus compras favoritas!
+Tu estilo y disfrutar de grandes ahorros
+y nuestras increíbles rebajas.
 ''', style: TextStyle(fontSize: 18)),
                           ),
                         Text('Aromas de Hombre', style: styleText3)

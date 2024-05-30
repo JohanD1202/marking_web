@@ -85,8 +85,8 @@ class _HomeScreenState extends State<HomeScreen> {
             Row(
               children: [
                 Container(
-                  width: 165,
-                  height: 125,
+                  width: 1200,
+                  height: 130,
                   decoration: const BoxDecoration(
                     color: Colors.white
                   ),
@@ -95,10 +95,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Spacer(),
-                      Image.asset('assets/images/logo_pr1.jpg')
+                      Image.asset('assets/images/logo_pr1.jpg'),
+                      const Spacer(),
                     ],
                   ),
                 ),
+                /*
                 Material(
                   child: Container(
                     width: 1050,           //MediaQuery.of(context).size.width,
@@ -124,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   )
-                ),
+                ),*/
               ],
             ),
           Padding(
@@ -234,7 +236,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding: const EdgeInsets.only(top: 25),
                         child: Container(
                           height: 250,
-                          width: 200.5,
+                          width: 280,
                           decoration: const BoxDecoration(color: Colors.black),
                           child: Column(
                             children: [
@@ -244,10 +246,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   ButtonTextFooter(
-                                    buttonText: 'Aromas               Selectos', 
+                                    buttonText: 'Aromas Selectos', 
                                     onPressed: () {
                                       setState(() {
                                         indiceWidget = 1;  
+                                      });
+                                    }
+                                  ),
+                                  ButtonTextFooter(
+                                    buttonText: 'Aromas Árabes', 
+                                    onPressed: () {
+                                      setState(() {
+                                        indiceWidget = 2;
                                       });
                                     }
                                   ),
@@ -256,12 +266,12 @@ class _HomeScreenState extends State<HomeScreen> {
                               const SizedBox(height: 30),
                               Row(
                                 children: [
-                                  //const Spacer(),
+                                  const Spacer(),
                                   ButtonTextFooter(
                                     buttonText: 'Hombre', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 2;  
+                                        indiceWidget = 3;  
                                       });
                                     }
                                   ),
@@ -270,34 +280,26 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Mujer', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 3;
+                                        indiceWidget = 4;
                                       });
                                     }
                                   ),
-                                  //const Spacer(),
+                                  const Spacer(),
                                 ],
                               ),
                               const SizedBox(height: 30),
                               Row(
                                 children: [
-                                  //const Spacer(),
-                                  ButtonTextFooter(
-                                    buttonText: 'Nuevo', 
-                                    onPressed: () {
-                                      setState(() {
-                                        //indiceWidget = 4;
-                                      });
-                                    }
-                                  ),
                                   const Spacer(),
                                   ButtonTextFooter(
                                     buttonText: 'Sale', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 4;
+                                        indiceWidget = 5;
                                       });
                                     }
                                   ),
+                                  const Spacer(),
                                 ],
                               )
                             ],

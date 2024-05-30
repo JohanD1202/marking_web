@@ -45,8 +45,6 @@ De aromas Árabes, que capturan la esencia de la elegancia.
 
 Desde aromas frescos y vibrantes hasta notas cálidas.
 Explora nuestra colección y encuentra el aroma perfecto.
-Recordándote que en esta sección todos nuestros aromas son
-¡UNISEX! No te pierdas esta gran oportunidad.
 
 Llévate tus aromas favoritos desde tan solo \$15.000. 
 ¡No te pierdas esta increíble oportunidad de disfrutar 

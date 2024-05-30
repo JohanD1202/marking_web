@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Spacer(),
-                        //const SearchhBar(),
+                        //const SearchhBar2(),
                         const Spacer(),
                         IconButton(
                           icon: const Icon(Icons.shopping_cart_rounded),

@@ -316,10 +316,11 @@ class _SearchhBarState extends State<SearchhBar> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
           height: 30,
-          width: 330,
+          width: 500,
           child: TextField(
             controller: _controller,
             decoration: InputDecoration(
@@ -4052,11 +4053,11 @@ class _SearchhBar2State extends State<SearchhBar2> {
       children: [
         SizedBox(
           height: 30,
-          width: 330,
+          width: 800,
           child: TextField(
             controller: _controller,
             decoration: InputDecoration(
-              hintText: 'Busca tu aroma favorito',
+              hintText: 'Busca tus favoritos',
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(40),
                 borderSide: const BorderSide(color: Colors.grey),
@@ -4094,13 +4095,23 @@ class _SearchhBar2State extends State<SearchhBar2> {
           ),
         SizedBox(
           height: _selectedIndex == 0 ? 0 : 800,
-          width: double.infinity,
+          width: 800,
           child: IndexedStack(
             index: _selectedIndex,
             children: const [
               //TODO: 0
               SizedBox.shrink(),
               //TODO: 1
+              Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: 'Yara - Lattafa',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
            ],
           ),
         ),

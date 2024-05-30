@@ -93,7 +93,7 @@ class _LocionState extends State<Locion> {
             child: Text(widget.nameLocion, style: styleTextLocion),
           ),
           Positioned(
-            top: 60,
+            top: 80,
             left: 160,
             child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
           ),
@@ -213,7 +213,7 @@ class _LocionState extends State<Locion> {
               ),
             ),
             Positioned(
-              top: 60,
+              top: 80,
               left: 160,
               child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
             ),
@@ -292,7 +292,7 @@ class _LocionState extends State<Locion> {
               child: Text(widget.nameLocion, style: styleTextLocion),
             ),
             Positioned(
-              top: 390,
+              top: 410,
               bottom: 8,
               left: 12,
               right: 8,
@@ -975,7 +975,7 @@ class _BolsosState extends State<Bolsos> {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-            child: Image.asset(widget.imageBolso, width: 160),
+            child: Image.asset(widget.imageBolso, width: 150),
           ),
           Positioned(
             top: 15,
@@ -983,7 +983,7 @@ class _BolsosState extends State<Bolsos> {
             child: Text(widget.nameBolso, style: styleTextLocion),
           ),
           Positioned(
-            top: 60,
+            top: 80,
             left: 160,
             child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
           ),
@@ -1103,7 +1103,7 @@ class _BolsosState extends State<Bolsos> {
               ),
             ),
             Positioned(
-              top: 60,
+              top: 80,
               left: 160,
               child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
             ),

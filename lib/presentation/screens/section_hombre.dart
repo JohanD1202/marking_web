@@ -34,7 +34,8 @@ class _SectionHombreState extends State<SectionHombre> {
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: '212 heroes - Carolina Herrera',
+              nameLocion: '''212 Heroes
+Carolina Herrera''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -42,10 +43,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),            
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_3.jpg',
-              imageHeight: 370,
+              imageLocion2: 'assets/images/aroma_11.jpg',
+              imageHeight: 350,
               imageWidth: 240,
-              nameLocion: '212 Vip - Carolina Herrera',
+              nameLocion: '''212 VIP Men
+Carolina Herrera''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -53,10 +55,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_4.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Ch - Carolina Herrera',
+              nameLocion: '''CH Men
+Carolina Herrera''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -64,10 +67,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: '212 Vip Wins - Carolina Herrera',
+              nameLocion: '''212 VIP Men Wins
+Carolina Herrera''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -81,22 +85,12 @@ class _SectionHombreState extends State<SectionHombre> {
           children: [
             Spacer(),
             Locion(
-              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'One Million - Paco Rabanne',
-              symbol: '\$',
-              priceOriginal: 15.000,
-              onzas: '1 fl oz',
-            ),
-            Spacer(),
-            Locion(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_5.jpg',
-              imageHeight: 370,
-              imageWidth: 240,
-              nameLocion: 'One Million Lucky - Paco Rabanne',
+              nameLocion: '''1 Million Parfum
+Paco Rabanne''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -104,10 +98,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Invictus - Paco Rabanne',
+              nameLocion: '''1 Million Lucky
+Paco Rabanne''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -115,10 +110,23 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Black XS - Paco Rabanne',
+              nameLocion: '''Invictus
+Paco Rabanne''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Black XS
+Paco Rabanne''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -133,10 +141,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_3.jpg',
+              imageLocion2: 'assets/images/aroma_10.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Suavage - Dior',
+              nameLocion: '''Sauvage
+Dior''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -144,10 +153,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageLocion2: 'assets/images/aroma_12.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Fahrenheit - Dior',
+              nameLocion: '''Fahrenheit
+Dior''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -155,10 +165,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_13.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Ck One - Calvin Klein',
+              nameLocion: '''CK One
+Calvin Klein''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -166,10 +177,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: '360 - Perry Ellis',
+              nameLocion: '''360° for Men
+Perry Ellis''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -183,22 +195,12 @@ class _SectionHombreState extends State<SectionHombre> {
           children: [
             Spacer(),
             Locion(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_4.jpg',
-              imageHeight: 370,
-              imageWidth: 240,
-              nameLocion: 'Náutica Voyage - Náutica',
-              symbol: '\$',
-              priceOriginal: 15.000,
-              onzas: '1 fl oz',
-            ),
-            Spacer(),
-            Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Toy Boy - Moschino',
+              nameLocion: '''Nautica Voyage
+Nautica''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -206,10 +208,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Lacoste Red - Lacoste',
+              nameLocion: '''Toy Boy
+Moschino''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -217,10 +220,23 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Issey Miyake - Shiseido Emea',
+              nameLocion: '''Red
+Lacoste''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''L'Eau d'Issey Pour
+Homme Issey Miyake''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -235,10 +251,11 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Hugo Boss - Hugo Boss',
+              nameLocion: '''Hugo
+Hugo Boss''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -246,33 +263,37 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Acqua de Gio - Giorgio Armani',
+              nameLocion: '''Acqua di Gio
+Giorgio Armani''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_10.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Polo Blue
+Ralph Lauren''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
             Spacer(),/*
             Locion(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_4.jpg',
-              imageHeight: 370,
-              imageWidth: 240,
-              nameLocion: 'L \'Aventure',
-              symbol: '\$',
-              priceOriginal: 14.000,
-            ),
-            Spacer(),
-            Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_3.jpg',
+              imageLocion2: 'assets/images/aroma_11.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'AMETHYST (Unisex)',
               symbol: '\$',
-              priceOriginal: 14.000,
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
             ),
             Spacer(),*/
           ],

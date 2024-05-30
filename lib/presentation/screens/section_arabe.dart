@@ -45,7 +45,8 @@ class _SectionArabeState extends State<SectionArabe> {
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Ombre Nomade - Louis Vuitton',
+              nameLocion: '''Ombre Nomade
+Louis Vuitton''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -56,7 +57,8 @@ class _SectionArabeState extends State<SectionArabe> {
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Amethyst - Lattafa',
+              nameLocion: '''Bade'e Al Oud
+Amethyst Lattafa''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -64,10 +66,11 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Oud for Greatness - Initio',
+              nameLocion: '''Oud for Greatness
+Initio''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -81,22 +84,12 @@ class _SectionArabeState extends State<SectionArabe> {
           children: [
             Spacer(),
             Locion(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
-              imageHeight: 370,
-              imageWidth: 240,
-              nameLocion: 'Amber Oud - Haramain',
-              symbol: '\$',
-              priceOriginal: 15.000,
-              onzas: '1 fl oz',
-            ),
-            Spacer(),
-            Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'L Aventure - Haramain',
+              nameLocion: '''Amber Oud
+Al Haramain''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -104,10 +97,11 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Madinah - Haramain',
+              nameLocion: '''L' Aventure
+Al Haramain''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -115,10 +109,23 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Santal 33 - Le Labo',
+              nameLocion: '''Madinah
+Al Haramain''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_10.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Santal 33
+Le Labo''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -133,7 +140,7 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_3.jpg',
+              imageLocion2: 'assets/images/aroma_12.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Il Kakuno - ILMIN',
@@ -144,7 +151,7 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageLocion2: 'assets/images/aroma_13.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: 'Il Femme - ILMIN',
@@ -155,10 +162,11 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Arabians Tonka - Móntale',
+              nameLocion: '''Arabians Tonka
+Montale''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -166,10 +174,11 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_5.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Intense Cafe - Móntale',
+              nameLocion: '''Intense Cafe
+Montale''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -183,22 +192,24 @@ class _SectionArabeState extends State<SectionArabe> {
           children: [
             Spacer(),
             Locion(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_4.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Baccarat - Francis Kurkdjian',
+              nameLocion: '''Baccarat Rouge
+Francis Kurkdjian''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
             Locion(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_5.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Oud Safran - Orientica',
+              nameLocion: '''Oud Saffron
+Orientica''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -226,7 +237,7 @@ class _SectionArabeState extends State<SectionArabe> {
             Spacer(),*/
           ],
         ),
-        SizedBox(height: 20),
+        //SizedBox(height: 20),
         //TODO: QUINTO ROW DE LOCIONES ARABES
         Row(
           children: [/*

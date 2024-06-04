@@ -73,7 +73,7 @@ class FaqSectionMobile extends StatelessWidget {
     FaqItem(
       question: '¿Cómo comprar en Aromas Selectos?', 
       answer: '''
-Comprar en Aromasselectos.com.co es muy fácil, sólo debes seguir los siguientes pasos:
+Comprar en aromasselectos.com.co es muy fácil, sólo debes seguir los siguientes pasos:
 Para buscar el producto que quieres comprar puedes navegar a través de las categorías en nuestro menú de categorías 
 o utilizar la barra de búsqueda.
 Una vez hayas elegido el producto que deseas, selecciona la cantidad y agrégalo a tu carrito de compras dando click
@@ -85,13 +85,13 @@ y haz click en 'FINALIZAR COMPRA'.
 Elige el método de pago que desees. Puedes elegir Tarjeta de Crédito, PSE(tarjeta débito, cuenta de ahorros o corriente),
 Nequi, Efecty.
 Si tienes alguna duda, puedes comunicarte con nosotros a nuestros número de WhatsApp disponibles o envíanos un correo a
-aromasselectosco@gmail.com
+aromasselectos24@gmail.com
       '''
     ),
     FaqItem(
       question: '¿Cuáles son los métodos de pago que puedo utilizar en la tienda online?',
       answer: '''
-En Aromasselectos.com.co puedes pagar con tarjeta de crédito, PSE (cuenta de ahorros o cuenta corriente), 
+En aromasselectos.com.co puedes pagar con tarjeta de crédito, PSE (cuenta de ahorros o cuenta corriente), 
 Nequi, Efecty. Sólo debes escoger el medio de pago en el checkout.
 '''
     ),
@@ -105,7 +105,7 @@ pago con PSE asegúrate de tener los permisos para realizar compras online a tra
 
 Si no puedes proceder con tu pago comunícate a través de nuestros canales de atención:
 A través de nuestros números de WhatsApp
-A través de nuestro correo aromasselectosco@gmail.com
+A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
 '''
     ),
@@ -171,7 +171,7 @@ y allí te aparecerá el tiempo de entrega del producto
       answer: '''
 Puedes comunicarte a través de nuestros canales de atención:
 A través de nuestros números de Whatsapp
-A través de nuestro correo aromasselectosco@gmail.com
+A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
 '''
     ),
@@ -190,7 +190,7 @@ La transportadora realizará hasta 2 intentos de entrega y si no puede realizar 
       answer: '''
 Si no recibes el producto que ordenaste, comunícate con nosotros:
 A través de nuestros números de Whatsapp
-A través de nuestro correo aromasselectosco@gmail.com
+A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
 '''
     ),
@@ -199,7 +199,7 @@ Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
       answer: '''
 Puedes comunícarte a través de nuestros canales de atención:
 A través de nuestros números de Whatsapp
-A través de nuestro correo aromasselectosco@gmail.com
+A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
 '''
     )

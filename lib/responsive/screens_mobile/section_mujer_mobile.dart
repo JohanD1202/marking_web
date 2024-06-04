@@ -20,23 +20,23 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
           children: [
             Spacer(),
             BolsosMobile(
-              imageBolso: 'assets/images/bolso_2.jpg', 
-              imageBolso2: 'assets/images/bolso_1.jpg',
+              imageBolso: 'assets/images/bolso_bimba_y_lola_150.jpg', 
+              imageBolso2: 'assets/images/bolso_bimba_y_lola_150.jpg',
               imageHeight: 240, 
               imageWidth: 150, 
-              nameBolso: 'Bolso Prada',
+              nameBolso: 'Bolso Bimba y Lola',
               symbol: '\$',
-              priceOriginal: 80.000,
+              priceOriginal: 150.000,
             ),
             Spacer(),
             BolsosMobile(
-              imageBolso: 'assets/images/bolso_3.jpg', 
-              imageBolso2: 'assets/images/bolso_5.jpg',
+              imageBolso: 'assets/images/bolso_dior_85.jpg', 
+              imageBolso2: 'assets/images/bolso_dior_85.jpg',
               imageHeight: 240, 
               imageWidth: 150,
               nameBolso: 'Bolso Dior',
               symbol: '\$',
-              priceOriginal: 80.000,
+              priceOriginal: 85.000,
             ),
             Spacer(),
           ],
@@ -47,23 +47,23 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
          children: [
           Spacer(),
           BolsosMobile(
-              imageBolso: 'assets/images/bolso_6.jpg', 
-              imageBolso2: 'assets/images/bolso_4.jpg',
+              imageBolso: 'assets/images/bolso_louis_vuitton_150.jpg', 
+              imageBolso2: 'assets/images/bolso_louis_vuitton_150.jpg',
               imageHeight: 240,
               imageWidth: 150, 
-              nameBolso: 'Bolso Prada',
+              nameBolso: 'Bolso Louis Vuitton',
               symbol: '\$',
-              priceOriginal: 80.000,
+              priceOriginal: 150.000,
             ),
             Spacer(),
             BolsosMobile(
-              imageBolso: 'assets/images/bolso_8.jpg', 
-              imageBolso2: 'assets/images/bolso_9.jpg',
+              imageBolso: 'assets/images/bolso_marc_jacobs_grande_140.jpg', 
+              imageBolso2: 'assets/images/bolso_marc_jacobs_grande_140.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameBolso: 'Bolso Dior',
+              nameBolso: 'Bolso Marc Jacobs grande',
               symbol: '\$',
-              priceOriginal: 80.000,
+              priceOriginal: 140.000,
             ),
             Spacer(),
          ],
@@ -74,23 +74,23 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
          children: [
           Spacer(),
           BolsosMobile(
-              imageBolso: 'assets/images/bolso_2.jpg', 
-              imageBolso2: 'assets/images/bolso_1.jpg',
+              imageBolso: 'assets/images/bolso_nike_70.jpg', 
+              imageBolso2: 'assets/images/bolso_nike_70.jpg',
               imageHeight: 240,
               imageWidth: 150, 
-              nameBolso: 'Bolso Prada',
+              nameBolso: 'Bolso Nike',
               symbol: '\$',
-              priceOriginal: 80.000,
+              priceOriginal: 70.000,
             ),
             Spacer(),
             BolsosMobile(
-              imageBolso: 'assets/images/bolso_3.jpg', 
-              imageBolso2: 'assets/images/bolso_5.jpg',
+              imageBolso: 'assets/images/bolso_prada_120.jpg', 
+              imageBolso2: 'assets/images/bolso_prada_120.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameBolso: 'Bolso Dior',
+              nameBolso: 'Bolso Prada',
               symbol: '\$',
-              priceOriginal: 80.000,
+              priceOriginal: 120.000,
             ),
             Spacer(),
         ],
@@ -98,7 +98,7 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
         const SizedBox(height: 20),
         //TODO: CUARTO ROW DE BOLSOS
         const Row(
-          children: [
+          children: [/*
             Spacer(),
             BolsosMobile(
               imageBolso: 'assets/images/bolso_2.jpg', 
@@ -119,13 +119,13 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
               symbol: '\$',
               priceOriginal: 80.000,
             ),
-            Spacer(),
+            Spacer(),*/
           ],
         ),
         const SizedBox(height: 20),
         //TODO: QUINTO ROW DE BOLSOS
         const Row(
-          children: [
+          children: [/*
             Spacer(),
             BolsosMobile(
               imageBolso: 'assets/images/bolso_2.jpg', 
@@ -146,15 +146,15 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
               symbol: '\$',
               priceOriginal: 80.000,
             ),
-            Spacer(),
+            Spacer(),*/
           ],
         ),
-        const SizedBox(height: 25),
+        //const SizedBox(height: 25),
         Row(
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 30),
-              child: Text('Aromas Mujer', style: styleText3),
+              child: Text('Aromas Mujer', style: styleText3Mobile),
             ),
           ],
         ),
@@ -165,10 +165,11 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
             Spacer(),
             LocionMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Carolina Herrera - Carolina Herrera',
+              nameLocion: '''Carolina Herrera
+Carolina Herrera''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -176,10 +177,11 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
             Spacer(),
             LocionMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_1.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Ch - Carolina Herrera',
+              nameLocion: '''CH (2015)
+Carolina Herrera''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -193,22 +195,24 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
           children: [
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: '212 Vip Rose - Carolina Herrera',
+              nameLocion: '''212 VIP Rosé
+Carolina Herrera''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: '360 - Perry Ellis',
+              nameLocion: '''360°
+Perry Ellis''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -226,7 +230,8 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Paris Hilton - Paris Hilton',
+              nameLocion: '''Paris Hilton
+Paris Hilton''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -234,10 +239,11 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
             Spacer(),
             LocionMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Can Can - Paris Hilton',
+              nameLocion: '''Can Can
+Paris Hilton''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -252,10 +258,11 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
             Spacer(),
             LocionMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Heires - Paris Hilton',
+              nameLocion: '''Heiress
+Paris Hilton''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -263,10 +270,11 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
             Spacer(),
             LocionMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Toy 2 - Moschino',
+              nameLocion: '''Toy 2
+Moschino''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -281,21 +289,23 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
             Spacer(),
             LocionMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion2: 'assets/images/aroma_10.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Amor amor - Cacharel',
+              nameLocion: '''Amor Amor
+Cacharel''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion: 'assets/images/aroma_17.jpg',
+              imageLocion2: 'assets/images/aroma_16.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'La Vida es Bella - Lancome',
+              nameLocion: '''La Vie Est Belle
+Lancôme''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -309,22 +319,24 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
           children: [
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_12.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Light Blue - Dolce & Gabbana',
+              nameLocion: '''Light Blue
+Dolce&Gabbana''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_13.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Kim Kardashian - Kim Kardashian',
+              nameLocion: '''Kim Kardashian
+Kim Kardashian''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -338,22 +350,24 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
           children: [
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Angel - Thierry Mugler',
+              nameLocion: '''Angel
+Mugler''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Halloween - Jesús del Pozo',
+              nameLocion: '''Halloween
+Halloween''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -367,22 +381,24 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
           children: [
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Ck One - Calvin Klein',
+              nameLocion: '''CK One
+Calvin Klein''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
             LocionMobile(
-              imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: 'Ck 2 u - Calvin Klein',
+              nameLocion: '''CK 2
+Calvin Klein''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',

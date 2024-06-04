@@ -93,7 +93,7 @@ class _LocionMobileState extends State<LocionMobile> {
             child: Text(widget.nameLocion, style: styleTextLocion),
           ),
           Positioned(
-            top: 60,
+            top: 85,
             left: 160,
             child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
           ),
@@ -212,7 +212,7 @@ class _LocionMobileState extends State<LocionMobile> {
               ),
             ),
             Positioned(
-              top: 60,
+              top: 85,
               left: 130,
               child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
             ),
@@ -763,7 +763,7 @@ class _BolsosMobileState extends State<BolsosMobile> {
             child: Text(widget.nameBolso, style: styleTextLocion),
           ),
           Positioned(
-            top: 60,
+            top: 85,
             left: 160,
             child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
           ),
@@ -791,10 +791,9 @@ class _BolsosMobileState extends State<BolsosMobile> {
     _overlayEntry = OverlayEntry(
       builder: (context) => Consumer<CartProvider>(
         builder: (context, cart, _) => Positioned(
-          top: MediaQuery.of(context).size.height * 0.22,
-          right: 50,
-          width: 320,
-          height: 445,
+          top: MediaQuery.of(context).size.height * 0.37,
+          width: MediaQuery.of(context).size.height * 1,
+          height: 320,
           child: Material(
             elevation: 12,
             child: Container(
@@ -862,16 +861,16 @@ class _BolsosMobileState extends State<BolsosMobile> {
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-              child: Image.asset(widget.imageBolso, width: 160),
+              child: Image.asset(widget.imageBolso, width: 100),
             ),
             Positioned(
               top: 23,
-              left: 160,
+              left: 130,
               child: Text(widget.nameBolso, style: styleText9),
             ),
             Positioned(
               top: 13.5,
-              left: 283,
+              left: 260,
               child: IconButton(
                 icon: Icon(Icons.delete_rounded, color: Colors.grey[700], size: 18),
                 onPressed: () {
@@ -884,17 +883,17 @@ class _BolsosMobileState extends State<BolsosMobile> {
             ),
             Positioned(
               top: 60,
-              left: 160,
+              left: 130,
               child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
             ),
             Positioned(
-              top: 110,
-              left: 160,
+              top: 100,
+              left: 130,
               child: Text('Cantidad:', style: styleTextLocion),
             ),
             Positioned(
-              top: 150,
-              left: 170,
+              top: 100,
+              left: 220,
               child: Cantidad(
                 onQuantityChanged: (quantity) {
                   setState(() {
@@ -907,16 +906,16 @@ class _BolsosMobileState extends State<BolsosMobile> {
           ],
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(10, 120, 10, 0),
+          padding: const EdgeInsets.fromLTRB(7, 45, 7, 0),
           child: FilledButton(
             onPressed: () {},
-            style: styleText200,
+            style: styleText300,
             child: Text('FINALIZAR COMPRA', style: styleTextCar),
           ),
         ),
         const Padding(
-          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-          child: SeguirComprando(),
+          padding: EdgeInsets.fromLTRB(7, 7, 7, 7),
+          child: SeguirComprandoMobile(),
         ),
       ],
     );
@@ -1083,7 +1082,7 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
           Positioned(
             top: 15,
             left: 160,
-            child: Text(widget.nameBolso, style: styleTextLocion),
+            child: Text(widget.nameBolso, style: styleTextLocionMobile),
           ),
           Positioned(
             top: 60,
@@ -1287,7 +1286,7 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
               bottom: 8,
               left: 8,
               right: 8,
-              child: Text(widget.nameBolso, style: styleTextLocion),
+              child: Text(widget.nameBolso, style: styleTextBolsosMobile),
             ),
             Positioned(
               top: 280,

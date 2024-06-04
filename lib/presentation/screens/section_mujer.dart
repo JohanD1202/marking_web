@@ -87,7 +87,7 @@ Jacobs grande''',
             symbol: '\$',
             priceOriginal: 120.000,
           ),
-          Spacer(),
+          Spacer(),/*
           Bolsos(
             imageBolso: 'assets/images/bolso_bimba_y_lola_150.jpg', 
             imageBolso2: 'assets/images/bolso_bimba_y_lola_150.jpg',
@@ -108,13 +108,13 @@ Y Lola''',
             symbol: '\$',
             priceOriginal: 85.000,
           ),
-          Spacer(),
+          Spacer(),*/
          ],
        ),
        const SizedBox(height: 20),
         //TODO: TERCER ROW DE BOLSOS
        const Row(
-         children: [
+         children: [/*
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_louis_vuitton_150.jpg', 
@@ -157,13 +157,13 @@ Jacobs grande''',
             symbol: '\$',
             priceOriginal: 120.000,
           ),
-          Spacer(),
+          Spacer(),*/
         ],
       ),
         const SizedBox(height: 20),
         //TODO: CUARTO ROW DE BOLSOS
         const Row(
-          children: [
+          children: [/*
             Spacer(),
             Bolsos(
               imageBolso: 'assets/images/bolso_bimba_y_lola_150.jpg', 
@@ -207,10 +207,10 @@ Jacobs grande''',
               symbol: '\$',
               priceOriginal: 140.000,
             ),
-            Spacer(),
+            Spacer(),*/
           ],
         ),
-        const SizedBox(height: 30),
+        //const SizedBox(height: 30),
         Row(
           children: [
             Padding(
@@ -394,7 +394,8 @@ Kim Kardashian''',
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Angel - Mugler',
+              nameLocion: '''Angel
+Mugler''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
@@ -429,7 +430,8 @@ Calvin Klein''',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'CK2 - Calvin Klein',
+              nameLocion: '''CK2
+Calvin Klein''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',

@@ -402,6 +402,11 @@ TextStyle styleTextLocionMobile = TextStyle(
   color: Colors.grey [800]
 );
 
+TextStyle styleTextBolsosMobile = TextStyle(
+  fontSize: 14.5,
+  color: Colors.grey [800]
+);
+
 
 TextStyle styleText9 = const TextStyle(
   fontSize: 15.5,

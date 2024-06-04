@@ -45,7 +45,7 @@ En Aromas Selectos, te ofrecemos una
 Exquisita variedad de fragancias 
 Que reflejan tu personalidad única.
 
-Llévate tus aromas favoritos desde \$14.000. 
+Llévate tus aromas favoritos desde \$15.000. 
 ¡No te pierdas esta increíble oportunidad de 
 Disfrutar de fragancias de calidad 
 A un precio increíblemente bajo!''', style: TextStyle(fontSize: 18)),

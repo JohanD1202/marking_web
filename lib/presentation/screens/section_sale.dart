@@ -379,7 +379,7 @@ Fashion''',
               imageBolso2: 'assets/images/riñonera_louis_vuitton_promo_+1locion_100.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameBolso: '''Riñonera Louis +
+              nameBolso: '''Riñonera Louis
 Vuitton + 1 Locion''',
               symbol: '\$',
               priceOriginal: 115.000,

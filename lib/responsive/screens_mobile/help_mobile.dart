@@ -215,7 +215,7 @@ class _ContactanosMobileState extends State<ContactanosMobile> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20, top: 115),
-              child: Text(widget.description, style: styleTextLocionMobile),
+              child: Text(widget.description, style: styleTextBolsosMobile),
             )
           ],
         ),
@@ -294,7 +294,7 @@ class _QuestionsMobileState extends State<QuestionsMobile> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20, top: 125),
-              child: Text(widget.description, style: styleTextLocionMobile),
+              child: Text(widget.description, style: styleTextBolsosMobile),
             ),
           ],
         ),
@@ -374,7 +374,7 @@ class _AromasGuideMobileState extends State<AromasGuideMobile> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20, top: 120),
-              child: Text(widget.description, style: styleTextLocion),
+              child: Text(widget.description, style: styleTextBolsosMobile),
             ),
           ],
         ),
@@ -437,7 +437,7 @@ class _DebitoMobileState extends State<DebitoMobile> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15, top: 120),
-              child: Text(widget.description, style: styleTextLocionMobile),
+              child: Text(widget.description, style: styleTextBolsosMobile),
             )
           ],
         ),

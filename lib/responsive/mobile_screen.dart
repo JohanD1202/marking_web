@@ -65,10 +65,10 @@ class _MobileScreenState extends State<MobileScreen> {
                     HombreScreenMobile(),         //3
                     MujerScreenMobile(),          //4
                     SaleScreenMobile(),           //5
-                    HelpMobile(),                 //6
+                    //HelpMobile(),                 //6
                     PreguntasFrecuentesMobile(),  //7
-                    GuiaAromasMobile(),           //8
-                    SearchhBarMobile()            //9
+                    //GuiaAromasMobile(),           //8
+                    //SearchhBarMobile()            //9
                   ],
                 ),
                 //TODO: FOOTER

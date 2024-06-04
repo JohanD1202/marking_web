@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-
+/*
 class GuiaAromasMobile extends StatelessWidget {
   // ignore: use_super_parameters
   const GuiaAromasMobile({Key? key}) : super(key: key);
@@ -5370,3 +5370,4 @@ class AromasBuscador200 extends StatelessWidget {
     );
   }
 }
+*/

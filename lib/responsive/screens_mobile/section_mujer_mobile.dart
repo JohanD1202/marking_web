@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-
+/*
 
 class SectionMujerMobile extends StatefulWidget {
   // ignore: use_super_parameters
@@ -411,3 +411,4 @@ Calvin Klein''',
     );
   }
 }
+*/

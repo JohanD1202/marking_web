@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-
+/*
 
 class SectionSaleMobile extends StatefulWidget {
   // ignore: use_super_parameters
@@ -403,3 +403,4 @@ Vuitton + 1 Locion''',
     );
   }
 }
+*/

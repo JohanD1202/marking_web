@@ -9,15 +9,18 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
+        /*ChangeNotifierProvider(
           create: (context) => CartProvider(),
-        ),
-        ChangeNotifierProvider(
+        ),*/
+        /*ChangeNotifierProvider(
           create: (context) => CartNotifier(),
-        ),
-        ChangeNotifierProvider(
+        ),*/
+        /*ChangeNotifierProvider(
           create: (context) => HelpScreenState(),
-        ),
+        ),*/
+        ChangeNotifierProvider(
+          create: (context) => CartModel(),
+        )
       ],
     child: const MyApp(),
   ),
@@ -29,14 +32,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => CartProvider(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme(selectedColor: 0).getTheme(), 
-        title: 'Aromas Selectos',
-        home: const HomeScreen(),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme(selectedColor: 0).getTheme(), 
+      title: 'Aromas Selectos',
+      home: const HomeScreen(),
     );
   }
 }

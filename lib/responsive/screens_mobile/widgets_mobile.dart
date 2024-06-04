@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 
-
+/*
 class LocionMobile extends StatefulWidget {
 
   final String imageLocion;
@@ -310,7 +310,7 @@ class _LocionMobileState extends State<LocionMobile> {
               child: CarShopMobile(
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
-                  id: 1, 
+                  id: DateTime.now().toString(),
                   name: widget.nameLocion, 
                   price: widget.priceOriginal, 
                   image: widget.imageLocion,
@@ -656,7 +656,7 @@ class _LocionPromotionMobileState extends State<LocionPromotionMobile> {
               child: CarShopMobile(
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
-                  id: 1,
+                  id: DateTime.now().toString(),
                   name: widget.nameLocion, 
                   price: widget.priceOriginal, 
                   image: widget.imageLocion,
@@ -974,7 +974,7 @@ class _BolsosMobileState extends State<BolsosMobile> {
               child: CarShopMobile(
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
-                  id: 1, 
+                  id: DateTime.now().toString(),
                   name: widget.nameBolso, 
                   price: widget.priceOriginal, 
                   image: widget.imageBolso,
@@ -1313,7 +1313,7 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
               child: CarShopMobile(
                 onAddToCart: _addToCartAndShowOverlay,
                 productToAdd: Product(
-                  id: 1,
+                  id: DateTime.now().toString(),
                   name: widget.nameBolso, 
                   price: widget.priceOriginal, 
                   image: widget.imageBolso,
@@ -1615,4 +1615,5 @@ class Product {
     required this.image
   });
 }
+*/
 */

@@ -98,7 +98,7 @@ A un precio increíblemente asequible!
                   ],
                 ),
               ),
-              const SectionMujerMobile(),
+              //const SectionMujerMobile(),
             ],
           ),
         ),

@@ -6,7 +6,7 @@ import 'dart:html' as html;
 import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
 import 'package:marking_web/responsive/screens_mobile/guia_aromas_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/preguntas_frecuentes_mobile.dart';
-
+/*
 
 class HelpMobile extends StatefulWidget {
 
@@ -73,7 +73,7 @@ class _HelpMobileState extends State<HelpMobile> {
                                   description: 'Resuelve las dudas más frecuentes',
                                   padding: const EdgeInsets.fromLTRB(55, 15, 55, 20),
                                   onTapCallback: () {
-                                    Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
+                                    //Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
                                   },
                                 ),
                                 const Spacer(),
@@ -89,7 +89,7 @@ class _HelpMobileState extends State<HelpMobile> {
                                       description: 'Conoce tu Aroma indicado',
                                       padding: const EdgeInsets.fromLTRB(53, 15, 55, 20),
                                       onTapCallback: () {
-                                        Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
+                                        //Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
                                       },
                                     ),
                                     const Spacer(),
@@ -448,3 +448,4 @@ class _DebitoMobileState extends State<DebitoMobile> {
 
 //fromLTRB(32, 15, 100, 15)
 //fromLTRB(15, 15, 100, 15)
+*/

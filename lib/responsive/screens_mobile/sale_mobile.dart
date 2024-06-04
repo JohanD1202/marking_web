@@ -54,7 +54,7 @@ y nuestras increíbles rebajas.
                   ],
                 ),
               ),
-              const SectionSaleMobile(),
+              //const SectionSaleMobile(),
             ],
           ),
         ),

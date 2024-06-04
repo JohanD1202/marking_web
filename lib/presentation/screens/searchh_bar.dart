@@ -1,7 +1,7 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 
-
+/*
 class SearchhBar extends StatefulWidget {
   // ignore: use_super_parameters
   const SearchhBar({Key? key}) : super(key: key);
@@ -880,7 +880,7 @@ de Egipto''',
                 text5: 'violeta',
               ),
               //TODO: 9
-              AromasBuscador(
+              /*AromasBuscador(
                 title: 'Il Kakuno - ILMIN',
                 description: '''
 Il Kakuno de ILMIN Parfums es una fragancia de la familia olfativa para Hombres y Mujeres. Il Kakuno se lanzó en 2018.
@@ -965,7 +965,7 @@ de Oud''',
                 containerColor10: Color.fromRGBO(143, 130, 123, 1),
                 colorText10: Colors.white70,
                 text10: 'oud',
-              ),
+              ),*/
               //TODO: 10
               BuscadorAromas(
                 title: 'Il Femme - ILMIN',
@@ -4489,7 +4489,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
               //TODO: 0
               SizedBox.shrink(),
               //TODO: 1
-              AromasBuscador(
+              /*AromasBuscador(
                 title: 'Yara - Lattafa',
                 description: '''
 Yara de Lattafa Perfumes es una fragancia de la 
@@ -7982,7 +7982,7 @@ Lirio''',
                 containerColor10: Color.fromRGBO(145, 137, 127, 1),
                 colorText10: Colors.white70,
                 text10: 'terrosos',
-              ),
+              ),*/
               //TODO: 49
             ],
           ),
@@ -7991,3 +7991,4 @@ Lirio''',
     );
   }
 }
+*/

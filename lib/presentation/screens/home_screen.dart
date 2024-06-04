@@ -3,6 +3,7 @@ import 'package:marking_web/exports.dart';
 import 'dart:html' as html;
 
 import 'package:marking_web/presentation/screens/arabes_screen.dart';
+import 'package:marking_web/presentation/screens/cart_screen.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 
 
@@ -28,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return 
     Responsive(
-      mobile: const MobileScreen(), 
+      mobile: const MujerScreen(), 
       tablet: const TabletScreen(), 
       desktop: Scaffold(
         body: SingleChildScrollView(
@@ -197,6 +198,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     });
                   }
                 ),
+                const SizedBox(width: 50),
+                ButtonTextBar(
+                  buttonText: 'Tienda', 
+                  onPressed: () {
+                    setState(() {
+                      indiceWidget = 6;
+                    });
+                  }
+                ),
                 const Spacer(flex: 1),
               ],
             ),
@@ -210,8 +220,9 @@ class _HomeScreenState extends State<HomeScreen> {
               HombreScreen(),
               MujerScreen(),
               SaleScreen(),
-              Help(),
-              GuiaAromas(),
+              //Help(),
+              //GuiaAromas(),
+              CartScreen(),
             ],
           ),
           //TODO: FOOTER

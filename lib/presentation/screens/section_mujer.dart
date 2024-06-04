@@ -16,7 +16,7 @@ class _SectionMujerState extends State<SectionMujer> {
       children: [
         //TODO: PRIMER ROW DE BOLSOS
         const Row(
-          children: [
+          children: [/*
             Spacer(),
             Bolsos(
               imageBolso: 'assets/images/bolso_bimba_y_lola_150.jpg', 
@@ -60,13 +60,13 @@ Jacobs grande''',
               symbol: '\$',
               priceOriginal: 140.000,
             ),
-            Spacer(),
+            Spacer(),*/
           ],
        ),
        const SizedBox(height: 20),
         //TODO: SEGUNDO ROW DE BOLSOS
        const Row(
-         children: [
+         children: [/*
           Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_nike_70.jpg', 
@@ -87,7 +87,7 @@ Jacobs grande''',
             symbol: '\$',
             priceOriginal: 120.000,
           ),
-          Spacer(),/*
+          Spacer(),
           Bolsos(
             imageBolso: 'assets/images/bolso_bimba_y_lola_150.jpg', 
             imageBolso2: 'assets/images/bolso_bimba_y_lola_150.jpg',

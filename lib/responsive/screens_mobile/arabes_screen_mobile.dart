@@ -60,7 +60,7 @@ calidad a un precio increíblemente bajo!
                   ],
                 ),
               ),
-              const SectionArabeMobile(),
+              //const SectionArabeMobile(),
               //ShoppingCart(cart: myCart),
             ],
           ),

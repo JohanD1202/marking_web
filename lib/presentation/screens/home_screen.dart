@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return 
     Responsive(
-      mobile: const MujerScreen(), 
+      mobile: const MobileScreen(), 
       tablet: const TabletScreen(), 
       desktop: Scaffold(
         body: SingleChildScrollView(
@@ -112,33 +112,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                /*
-                Material(
-                  child: Container(
-                    width: 1050,           //MediaQuery.of(context).size.width,
-                    height: 40,
-                    decoration: const BoxDecoration(
-                      color: Colors.white
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Spacer(),
-                        //const SearchhBar2(),
-                        const Spacer(),
-                        IconButton(
-                          icon: const Icon(Icons.shopping_cart_rounded),
-                          iconSize: 35,
-                          onPressed: () {
-                            //Locion.showCartOverlay();
-                          },
-                        ),
-                        const Spacer()
-                      ],
-                    ),
-                  )
-                ),*/
               ],
             ),
           Padding(
@@ -190,7 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       indiceWidget = 4;
                     });
                   }
-                ),                
+                ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
                   buttonText: 'Sale', 
@@ -250,7 +223,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding: const EdgeInsets.only(top: 25),
                         child: Container(
                           height: 250,
-                          width: 280,
+                          width: 300,
                           decoration: const BoxDecoration(color: Colors.black),
                           child: Column(
                             children: [

@@ -1,4 +1,5 @@
 import 'package:marking_web/exports.dart';
+import 'package:marking_web/presentation/widgets/style_button.dart';
 
 
 class AromasScreen extends StatefulWidget {
@@ -27,6 +28,21 @@ class _AromasScreenState extends State<AromasScreen> with SingleTickerProviderSt
     'assets/images/locion_7.jpg',
     'assets/images/locion_11.jpg',
     'assets/images/locion_12.jpg',
+    'assets/images/aroma_1.jpg',
+    'assets/images/aroma_2.jpg',
+    'assets/images/aroma_3.jpg',
+    'assets/images/aroma_4.jpg',
+    'assets/images/aroma_5.jpg',
+    'assets/images/aroma_6.jpg',
+    'assets/images/aroma_7.jpg',
+    'assets/images/aroma_8.jpg',
+    'assets/images/aroma_9.jpg',
+    'assets/images/locion_1_2onzas.jpg',
+    'assets/images/locion_2_2onzas.jpg',
+    'assets/images/locion_3_3onzas.jpg',
+    'assets/images/aroma_10.jpg',
+    'assets/images/aroma_11.jpg',
+    'assets/images/aroma_12.jpg',
   ];
 
   void _nextImages() {
@@ -47,7 +63,7 @@ class _AromasScreenState extends State<AromasScreen> with SingleTickerProviderSt
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1.198,
+      height: size.height * 1.3,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(
@@ -60,15 +76,16 @@ class _AromasScreenState extends State<AromasScreen> with SingleTickerProviderSt
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Descubre Aromas Selectos:', style: styleText3),
+                        Text('Descubre Aromas Selectos', style: styleText3),
                         const SizedBox(height: 10),
-                        const Text('''
+                        Text('''
 Eleva tus sentidos con Elegancia y Estilo
 ¿Buscas una experiencia única que despierte tus sentidos y eleve tu día a día?
 ¡Entonces has llegado al lugar indicado! En Aromas Selectos,
 Nos enorgullece ofrecerte una exquisita selección de fragancias
 Que te transportarán a un mundo de lujo y sofisticación.
-                        ''', style: TextStyle(fontSize: 18))
+                        ''', style: texto
+                       ),
                       ],
                     ),
                   ],
@@ -104,12 +121,12 @@ Que te transportarán a un mundo de lujo y sofisticación.
               Container(
                 margin: const EdgeInsets.only(top: 10, left: 50),
                 alignment: Alignment.centerLeft,
-                child: const Text('''
+                child: Text('''
 Sumérgete en nuestro exclusivo catálogo de aromas meticulosamente elaborados, 
 donde cada fragancia cuenta una historia diferente. 
 Desde notas frescas y florales hasta profundas y envolventes, 
 nuestras creaciones están diseñadas para acompañarte en cada momento especial de tu vida.
-       ''', style: TextStyle(fontSize: 18),
+       ''', style: texto,
                  textAlign: TextAlign.left,
                 ),
               ),

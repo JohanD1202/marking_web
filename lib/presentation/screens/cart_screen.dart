@@ -1,5 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:flutter_share_me/flutter_share_me.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CartScreen extends StatefulWidget {
 
@@ -31,7 +32,7 @@ class _CartScreenState extends State<CartScreen> {
                   children: [
                     Image.asset('assets/images/logo_pr1.jpg', width: 300, fit: BoxFit.cover),
                     const SizedBox(height: 20),
-                    Text('Tu Carrito de Compras está vacío', style: title),
+                    Text('Tu Carrito de Compras está vacío', style: title2),
                   ],
                 ),
               );
@@ -71,7 +72,7 @@ class _CartScreenState extends State<CartScreen> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 10),
-                                    child: Text(product.onzas, style: styleTextLocion),
+                                    child: Text(product.onzas ?? "", style: styleTextLocion),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 20),
@@ -116,7 +117,7 @@ class _CartScreenState extends State<CartScreen> {
                       padding: const EdgeInsets.only(top: 20, bottom: 30),
                       child: FilledButton(
                         onPressed: () {
-                          _launchWhatsApp('573107312102', 'Hola, estoy interesado en tus productos.');
+                          _launchWhatsApp('573107312102', cart);
                         },
                         style: styleText300,
                         child: Text('FINALIZAR COMPRA', style: styleTextCar),
@@ -135,14 +136,16 @@ class _CartScreenState extends State<CartScreen> {
   }
 }
 
-void _launchWhatsApp(String phoneNumber, String message) async {
+void _launchWhatsApp(String phoneNumber, CartModel cart) async {
+  final message = cart.items.map((product) => '${product.name} - ${product.onzas} - \$${product.price}.000').join('\n');
+  final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent('Hola, estoy interesado en estos productos:\n$message')}");
 
-  try {
-    await FlutterShareMe().shareToWhatsApp(msg: message);
-  } catch (e) {
-    throw 'No se pudo abrir WhatsApp.';
+  if (await canLaunchUrl(whatsappUrl)) {
+    await launchUrl(whatsappUrl);
+  } else {
+    throw 'Could not launch $whatsappUrl';
   }
-}
+} 
 
 
 

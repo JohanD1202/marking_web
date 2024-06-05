@@ -28,7 +28,7 @@ class SaleScreen extends StatelessWidget {
                         children: [
                           Text('Bienvenidos a la sección de Sale', style: styleText3),
                           const SizedBox(height: 20),
-                          const Text('''
+                          Text('''
 Aquí encontrarás las mejores promociones en una amplia variedad de productos.
 Aprovecha estas ofertas especiales y añade estilo a tu vida
 Con nuestros productos de alta calidad a precios irresistibles.
@@ -38,7 +38,7 @@ y demás accesorios sumado a tus Aromas favoritos!
 
 No te pierdas esta oportunidad de renovar tu estilo y disfrutar 
 de grandes ahorros y nuestras increíbles rebajas.
-''', style: TextStyle(fontSize: 18)),
+''', style: texto),
                         //Text('Aromas de Hombre', style: styleText3)
                         ],
                       ),

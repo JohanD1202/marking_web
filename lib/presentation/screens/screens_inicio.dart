@@ -80,9 +80,8 @@ Aquí encontrarás tu fragancia favorita''', style: styleTextC),
                           color: Colors.black.withOpacity(0.7),
                           child: Text('''
 ¡Y eso no es todo!
-En Aromas Selectos, también ofrecemos emocionantes 
-Rifas y sorteos, donde tendrás la oportunidad de ganar
-Fabulosos premios y vivir experiencias inolvidables.''', style: styleTextB),
+En Aromas Selectos, también ofrecemos accesorios
+Bolsos y Carteras, para complementar tu estilo''', style: styleTextB),
                         ),
                       ),
                     )

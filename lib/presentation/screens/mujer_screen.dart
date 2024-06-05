@@ -73,17 +73,17 @@ class MujerScreen extends StatelessWidget {
                         children: [
                           Text('Bienvenidos a la sección de Mujer', style: styleText3),
                           const SizedBox(height: 20),
-                          const Text('''
+                          Text('''
 Bienvenidos a nuestra sección dedicada a las mujeres sofisticadas y con estilo.
 En Aromas Selectos, no solo te ofrecemos una exquisita variedad de fragancias
-Que reflejan tu esencia única, sino que también hemos seleccionado
-Cuidadosamente una colección de bolsos que realzarán tu look
-Con feminidad y originalidad.
+que reflejan tu esencia única, sino que también hemos seleccionado
+cuidadosamente una colección de bolsos, carteras y más accesorios que realzarán
+tu look con feminidad y originalidad.
 
 Descubre tus aromas favoritos desde tan solo \$15.000.
-¡No te pierdas esta maravillosa oportunidad de disfrutar
-De fragancias de primera calidad a un precio increíblemente asequible!
-                          ''', style: TextStyle(fontSize: 18)),
+¡No te pierdas esta maravillosa oportunidad de disfrutar de fragancias
+y accesorios de primera calidad a un precio increíblemente asequible!
+                          ''', style: texto),
                           Text('Bolsos', style: styleText3)
                         ],
                       ),

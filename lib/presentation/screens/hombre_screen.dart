@@ -37,15 +37,15 @@ class _HombreScreenState extends State<HombreScreen> {
                         children: [
                           Text('Bienvenidos a la sección de Hombre', style: styleText3),
                           const SizedBox(height: 20),
-                          const Text('''
+                          Text('''
 Bienvenidos a nuestra sección dedicada a los hombres modernos y con estilo. 
 En Aromas Selectos, te ofrecemos una exquisita variedad de fragancias 
-Que reflejan tu personalidad única.
+que reflejan tu personalidad única.
 
 Llévate tus aromas favoritos desde tan solo \$15.000. 
 ¡No te pierdas esta increíble oportunidad de disfrutar 
-De fragancias de calidad a un precio increíblemente bajo!
-                          ''', style: TextStyle(fontSize: 18))
+de fragancias de calidad a un precio increíblemente bajo!
+                          ''', style: texto)
                         ],
                       )
                     ),

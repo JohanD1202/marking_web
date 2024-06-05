@@ -45,28 +45,26 @@ class _ButtonTextBarState extends State<ButtonTextBar> {
       child: MouseRegion(
         onEnter: (_) => setState(() => _isHovered = true),
         onExit: (_) => setState(() => _isHovered = false),
-        child: Tooltip(
-          message: '',
-          child: Container(
-            decoration: _isHovered
-            ? const BoxDecoration(
-              border: Border(
-                bottom: BorderSide(
-                  color: Colors.grey,
-                  width: 1.5
-                )
+        child: Container(
+          decoration: _isHovered
+          ? const BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                color: Colors.grey,
+                width: 1.5
               )
             )
-            : null,
-            child: TextButton(
-              onPressed: widget.onPressed,
-              child: Text(
-                widget.buttonText,
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w900,
-                  color: _isHovered ? Colors.grey : Colors.black,
-                ),
+          )
+          : null,
+          child: TextButton(
+            onPressed: widget.onPressed,
+            child: Text(
+              widget.buttonText,
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
+                color: _isHovered ? Colors.grey : Colors.black,
+                fontFamily: 'Fredoka',
               ),
             ),
           ),
@@ -250,8 +248,9 @@ TextStyle styleTextTitle = const TextStyle(
 
 TextStyle styleTextInicio = const TextStyle(
   fontSize: 60,
-  fontWeight: FontWeight.bold,
-  color: Colors.white
+  fontWeight: FontWeight.w600,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextInicioMobile = const TextStyle(
@@ -286,8 +285,20 @@ TextStyle frequent = const TextStyle(
 
 TextStyle title = const TextStyle(
   fontSize: 25,
-  fontWeight: FontWeight.w900,
-  color: Colors.black
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
+);
+
+TextStyle title2 = const TextStyle(
+  fontSize: 22,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
+);
+
+TextStyle title3 = const TextStyle(
+  fontSize: 22,
+  color: Colors.black,
 );
 
 TextStyle frequentMobile = const TextStyle(
@@ -322,8 +333,9 @@ TextStyle styleTextA = const TextStyle(
 
 TextStyle styleTextB = const TextStyle(
   fontSize: 26,
-  fontWeight: FontWeight.w800,
-  color: Colors.white
+  fontWeight: FontWeight.normal,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextBMobile = const TextStyle(
@@ -334,14 +346,16 @@ TextStyle styleTextBMobile = const TextStyle(
 
 TextStyle styleTextC = const TextStyle(
   fontSize: 26,
-  fontWeight: FontWeight.w800,
-  color: Colors.white
+  fontWeight: FontWeight.normal,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextD = const TextStyle(
   fontSize: 35,
-  fontWeight: FontWeight.w800,
-  color: Colors.white
+  fontWeight: FontWeight.normal,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextDMobile = const TextStyle(
@@ -353,13 +367,22 @@ TextStyle styleTextDMobile = const TextStyle(
 TextStyle snackbar = const TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.w500,
-  color: Colors.white
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleText3 = const TextStyle(
   fontSize: 21,
-  fontWeight: FontWeight.w700,
-  color: Colors.black
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
+);
+
+TextStyle texto = TextStyle(
+  fontSize: 18,
+  fontWeight: FontWeight.normal,
+  color: Colors.grey[800],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleText3Mobile = const TextStyle(
@@ -377,7 +400,8 @@ TextStyle answer = const TextStyle(
 TextStyle styleTextHeader = TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w100,
-  color: Colors.grey[900]
+  color: Colors.grey[900],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextHeaderMobile = TextStyle(
@@ -401,7 +425,8 @@ TextStyle styleText4 = const TextStyle(
 
 TextStyle styleTextLocion = TextStyle(
   fontSize: 17,
-  color: Colors.grey [800]
+  color: Colors.grey [800],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextLocion100 = TextStyle(
@@ -444,7 +469,8 @@ TextStyle styleTextLocion2Mobile = TextStyle(
 
 TextStyle styleTextPrice = TextStyle(
   fontSize: 16,
-  color: Colors.grey[900]
+  color: Colors.grey[900],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextPriceMobile = TextStyle(
@@ -455,7 +481,8 @@ TextStyle styleTextPriceMobile = TextStyle(
 TextStyle styleTextSale = TextStyle(
   decoration: TextDecoration.lineThrough,
   fontSize: 14,
-  color: Colors.grey [700]
+  color: Colors.grey [700],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextSaleMobile = TextStyle(
@@ -467,7 +494,8 @@ TextStyle styleTextSaleMobile = TextStyle(
 TextStyle styleTextCar = const TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.w500,
-  color: Colors.white
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextCarMobile = const TextStyle(
@@ -510,7 +538,8 @@ TextStyle styleTextTitle2 = const TextStyle(
 TextStyle styleTextFooter = const TextStyle(
   fontSize: 22,
   fontWeight: FontWeight.w500,
-  color: Colors.white
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextFooterMobile = const TextStyle(
@@ -532,6 +561,7 @@ ButtonStyle styleText2 = ButtonStyle(
 );
 
 ButtonStyle styleText20 = ButtonStyle(
+  fixedSize: MaterialStateProperty.all(const Size(150, 13)),
   backgroundColor: MaterialStateProperty.all(Colors.black),
   foregroundColor: MaterialStateProperty.all(Colors.white),
   textStyle: MaterialStateProperty.all(styleTextCar)

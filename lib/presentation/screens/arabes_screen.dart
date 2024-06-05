@@ -41,7 +41,7 @@ class _ArabesScreenState extends State<ArabesScreen> {
                             child: Text('Bienvenidos a la sección de Aromas Árabes', style: styleText3),
                           ),
                           const SizedBox(height: 20),
-                          const Text('''
+                          Text('''
 Bienvenidos a nuestra sección de Aromas Árabes, 
 En este espacio te invitamos a descubrir una amplia gama
 De aromas Árabes, que capturan la esencia de la elegancia.
@@ -52,7 +52,7 @@ Explora nuestra colección y encuentra el aroma perfecto.
 Llévate tus aromas favoritos desde tan solo \$15.000. 
 ¡No te pierdas esta increíble oportunidad de disfrutar 
 De fragancias de calidad a un precio increíblemente bajo!
-                          ''', style: TextStyle(fontSize: 18))
+                          ''', style: texto)
                         ],
                       )
                     ),

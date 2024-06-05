@@ -217,7 +217,7 @@ class _SectionSaleState extends State<SectionSale> {
         const Row(
           children: [
             Spacer(),
-            /*BolsosPromotion(
+            BolsosPromotion(
               imageBolso: 'assets/images/promo_bolso_mk+1locion_160.jpg',
               imageBolso2: 'assets/images/promo_bolso_mk+1locion_160.jpg',
               imageHeight: 370,
@@ -268,13 +268,13 @@ Lola + 1 Locion''',
               priceDescuento: '\$130.000',
               promotion: Price(price: '20%'),
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
         const SizedBox(height: 20),
         //TODO: SEGUNDO ROW DE BOLSOS
         const Row(
-          children: [/*
+          children: [
             Spacer(),
             BolsosPromotion(
               imageBolso: 'assets/images/bolso_marc_jacobs_mediano_promo_+1locion_100.jpg',
@@ -327,13 +327,13 @@ Billetera + 1 Locion''',
               priceDescuento: '\$110.000',
               promotion: Price(price: '20%'),
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
         const SizedBox(height: 20),
         //TODO: TERCER ROW DE BOLSOS + ACCESORIOS
         const Row(
-          children: [/*
+          children: [
             Spacer(),
             BolsosPromotion(
               imageBolso: 'assets/images/cartera_ch_promo_+1locion_35.jpg',
@@ -386,7 +386,7 @@ Vuitton + 1 Locion''',
               priceDescuento: '\$100.000',
               promotion: Price(price: '13%'),
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
         const SizedBox(height: 20),

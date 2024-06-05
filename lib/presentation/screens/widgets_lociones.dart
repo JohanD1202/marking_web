@@ -120,60 +120,237 @@ class _LocionState extends State<Locion> {
   }
 }
 
-  
-
-//TODO: CANTIDAD
 
 
-class Cantidad extends StatefulWidget {
-  final Function(int) onQuantityChanged;
+
+//TODO: BOLSOS
+
+
+
+class Bolsos extends StatefulWidget {
+
+  final String imageBolso;
+  final String imageBolso2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameBolso;
+  final String symbol;
+  final double priceOriginal;
 
   // ignore: use_super_parameters
-  const Cantidad({
+  const Bolsos({
     Key? key,
-    required this.onQuantityChanged,
+    required this.imageBolso,
+    required this.imageBolso2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameBolso,
+    required this.symbol,
+    required this.priceOriginal, 
   }) : super(key: key);
 
   @override
-  State<Cantidad> createState() => _CantidadState();
+  State<Bolsos> createState() => _BolsosState();
 }
 
-class _CantidadState extends State<Cantidad> {
-  int selectedNumber = 1;
+class _BolsosState extends State<Bolsos> {
+
+  int _quantity = 1;
+  double _totalPrice = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 30,
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.black87),
-        color: Colors.white,
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
       ),
-      child: DropdownButtonHideUnderline(
-        child: DropdownButton<int>(
-          value: selectedNumber,
-          icon: const Icon(Icons.keyboard_arrow_down_rounded, color: Colors.black),
-          iconSize: 22,
-          elevation: 16,
-          style: const TextStyle(color: Colors.black, fontSize: 13),
-          onChanged: (int? newValue) {
-            if (newValue != null) {
-              setState(() {
-              selectedNumber = newValue;
-            });
-            widget.onQuantityChanged(newValue);
-            }
-          },
-          items: List.generate(10, (index) => index + 1).map<DropdownMenuItem<int>>((int value) {
-            return DropdownMenuItem<int>(
-              value: value,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 7),
-                child: Text(value.toString())
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageBolso,
+                hoverImagePath: widget.imageBolso2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
               ),
-            );
-          }).toList(),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameBolso, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 420,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice),
+            ),
+            Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameBolso,
+                  price: _totalPrice,
+                  image: widget.imageBolso,
+                  imageWidth: 120,
+                  imageHeight: 185,
+                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+//TODO: BOLSOS PROMOTION
+
+
+class BolsosPromotion extends StatefulWidget {
+
+  final String imageBolso;
+  final String imageBolso2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameBolso;
+  final String symbol;
+  final double priceOriginal;
+  final String priceDescuento;
+  final Widget promotion;
+
+  // ignore: use_super_parameters
+  const BolsosPromotion({
+    Key? key,
+    required this.imageBolso,
+    required this.imageBolso2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameBolso,
+    required this.symbol,
+    required this.priceOriginal, 
+    required this.priceDescuento, 
+    required this.promotion, 
+  }) : super(key: key);
+
+  @override
+  State<BolsosPromotion> createState() => _BolsosPromotionState();
+}
+
+class _BolsosPromotionState extends State<BolsosPromotion> {
+
+  int _quantity= 1;
+  double _totalPrice = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
+      ),
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageBolso,
+                hoverImagePath: widget.imageBolso2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
+              ),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameBolso, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 415,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale),
+            ),
+            Positioned(
+              top: 435,
+              left: 13,
+              right: 12,
+              child: Text(widget.priceDescuento, style: styleTextPrice),
+            ),
+            Positioned(
+              top: 435,
+              left: 90,
+              child: widget.promotion,
+            ),
+            Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameBolso,
+                  price: _totalPrice,
+                  image: widget.imageBolso,
+                  imageWidth: 120,
+                  imageHeight: 185,
+                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -181,30 +358,6 @@ class _CantidadState extends State<Cantidad> {
 }
 
 /*
-class CartProvider extends ChangeNotifier {
-  List<Product> _cartItems = [];
-
-  List<Product> get cartItems => _cartItems;
-
-  void addToCart(Product product) {
-    _cartItems.remove(product);
-    notifyListeners();
-  }
-}*/
-
-/*
-  void _setHovering(bool hovering) {
-    setState(() {
-      isHovering = hovering;
-      textColor = isHovering ? Colors.white : Colors.grey[700];
-    });
-  }
-}
-*/
-
-/*
-//TODO: LOCION PROMOCION
-
 class LocionPromotion extends StatefulWidget {
 
   final String imageLocion;
@@ -648,322 +801,9 @@ class _LocionPromotionState extends State<LocionPromotion> {
 }
 */
 
-/*
-
-class Bolsos extends StatefulWidget {
-
-  final String imageBolso;
-  final String imageBolso2;
-  final double imageWidth;
-  final double imageHeight;
-  final String nameBolso;
-  final String symbol;
-  final double priceOriginal;
-
-  // ignore: use_super_parameters
-  const Bolsos({
-    Key? key,
-    required this.imageBolso,
-    required this.imageBolso2,
-    required this.imageWidth,
-    required this.imageHeight,
-    required this.nameBolso,
-    required this.symbol,
-    required this.priceOriginal, 
-  }) : super(key: key);
-
-  @override
-  State<Bolsos> createState() => _BolsosState();
-}
-
-class _BolsosState extends State<Bolsos> {
-
-  bool isCartEmpty = false;
-
-  List<Widget> _overlayWidgets = [];
+//TODO: BOLSOS
 
 
-  Color? textColor = Colors.grey[700];
-  int selectedNumber = 1;
-  OverlayEntry? _overlayEntry;
-  double totalPrice = 0;
-
-  @override
-  void initState() {
-    super.initState();
-    totalPrice = widget.priceOriginal;
-  }
-
-  void updateTotalPrice(int quantity) {
-    setState(() {
-      selectedNumber = quantity;
-      totalPrice = widget.priceOriginal * quantity;
-    });
-  }
-
-  void _closeCartOverlay() {
-
-    _overlayEntry?.remove();
-
-    _overlayEntry = null;
-
-    setState(() {
-      
-    });
-  }
-
-  void _addToCartAndShowOverlay() {
-
-    setState(() {
-      isCartEmpty = false;
-    });
-    _showCartOverlay();
-  }
-
-
-  void _showCartOverlay() {
-
-  totalPrice = widget.priceOriginal * selectedNumber;
-
-    _overlayWidgets.clear();
-
-    _overlayWidgets.add(
-      Stack(
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-            child: Image.asset(widget.imageBolso, width: 150),
-          ),
-          Positioned(
-            top: 15,
-            left: 160,
-            child: Text(widget.nameBolso, style: styleTextLocion),
-          ),
-          Positioned(
-            top: 80,
-            left: 160,
-            child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
-          ),
-          Positioned(
-            top: 110,
-            left: 160,
-            child: Text('Cantidad:', style: styleTextLocion),
-          ),
-          Positioned(
-            top: 150,
-            left: 170,
-            child: Cantidad(
-              onQuantityChanged: (quantity) {
-                setState(() {
-                  selectedNumber = quantity;
-                  totalPrice = widget.priceOriginal * quantity;
-                });
-              }
-            )
-          )
-        ],
-      ),
-    );
-
-    _overlayEntry = OverlayEntry(
-      builder: (context) => Consumer<CartProvider>(
-        builder: (context, cart, _) => Positioned(
-          top: MediaQuery.of(context).size.height * 0.22,
-          right: 50,
-          width: 320,
-          height: 445,
-          child: Material(
-            elevation: 12,
-            child: Container(
-              color: Colors.white,
-              child: isCartEmpty ? _buildEmptyCart() : _buildCartContent(context),
-            ),
-          ),
-        ),
-      ),
-    );    
-    Overlay.of(context)?.insert(_overlayEntry!);
-  }
-
-  Widget _buildEmptyCart() {
-    return Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [    
-            IconButton(
-              icon: const Icon(Icons.close_rounded),
-              onPressed: _closeCartOverlay
-            )
-          ],
-        ),
-        Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Image.asset('assets/images/logo_pr1.jpg', width: 194, height: 178),
-            ),
-            Text('Tu carrito de compras está vacío', style: styleTextMo)
-          ],
-        )
-      ],
-    );
-  }
-
-
-  Widget _buildCartContent(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Material(
-          child: Container(
-            width: MediaQuery.of(context).size.width,
-            height: 40,
-            decoration: BoxDecoration(
-              color: Colors.grey[350]
-            ),
-            child: Row(
-              children: [
-                const Spacer(),
-                Text('ENVÍO GRATIS DESDE \$200.000', style: styleTextHeader),
-                const Spacer(),
-                IconButton(
-                  icon: const Icon(Icons.close_rounded),
-                  onPressed: _closeCartOverlay,
-                )
-              ],
-            ),
-          ),
-        ),
-        Stack(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(15, 15, 170, 0),
-              child: Image.asset(widget.imageBolso, width: 160),
-            ),
-            Positioned(
-              top: 23,
-              left: 160,
-              child: Text(widget.nameBolso, style: styleText9),
-            ),
-            Positioned(
-              top: 13.5,
-              left: 283,
-              child: IconButton(
-                icon: Icon(Icons.delete_rounded, color: Colors.grey[700], size: 18),
-                onPressed: () {
-                  setState(() {
-                    isCartEmpty = true;
-                  });
-                  _showCartOverlay();
-                },
-              ),
-            ),
-            Positioned(
-              top: 80,
-              left: 160,
-              child: Text('${widget.symbol}${totalPrice.toStringAsFixed(3)}', style: styleTextPrice)
-            ),
-            Positioned(
-              top: 110,
-              left: 160,
-              child: Text('Cantidad:', style: styleTextLocion),
-            ),
-            Positioned(
-              top: 150,
-              left: 170,
-              child: Cantidad(
-                onQuantityChanged: (quantity) {
-                  setState(() {
-                    selectedNumber = quantity;
-                    totalPrice = widget.priceOriginal * quantity;
-                  });
-                }
-              )
-            ),
-          ],
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(10, 120, 10, 0),
-          child: FilledButton(
-            onPressed: () {},
-            style: styleText200,
-            child: Text('FINALIZAR COMPRA', style: styleTextCar),
-          ),
-        ),
-        const Padding(
-          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-          child: SeguirComprando(),
-        ),
-      ],
-    );
-  }
-
-  @override
-  void dispose() {
-    _overlayEntry?.remove();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 12,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
-        side: const BorderSide(color: Colors.white)
-      ),
-      child: Container(
-        height: 510,
-        width: 250,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          border: Border.all(color: Colors.black),
-        ),
-        child: Stack(
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 4),
-              child: ImageOnHover(
-                imagePath: widget.imageBolso,
-                hoverImagePath: widget.imageBolso2,
-                imageWidth: widget.imageWidth, 
-                imageHeight: widget.imageHeight
-              ),
-            ),
-            Positioned(
-              top: 360,
-              bottom: 8,
-              left: 12,
-              right: 8,
-              child: Text(widget.nameBolso, style: styleTextLocion),
-            ),
-            Positioned(
-              top: 420,
-              left: 13,
-              right: 12,
-              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice)
-            ),
-            Positioned(
-              top: 470,
-              left: 5,
-              right: 5,
-              child: CarShop(
-                productToAdd: Product(
-                  id: DateTime.now().toString(),
-                  name: widget.nameBolso, 
-                  price: widget.priceOriginal, 
-                  image: widget.imageBolso,
-                ),
-              ),
-            )
-          ],
-        )
-      ),
-    );
-  }
-}
-*/
 /*
 class BolsosPromotion extends StatefulWidget {
 
@@ -1486,6 +1326,7 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
   }
 }
 */
+
 class Price extends StatelessWidget {
 
   final String price;
@@ -1551,39 +1392,6 @@ class CarShop extends StatelessWidget {
 }
 
 
-/*
-class CartNotifier extends ChangeNotifier {
-  bool _isCartOpen = false;
-
-  bool get isCartOpen => _isCartOpen;
-
-  void openCart() {
-    _isCartOpen = true;
-    notifyListeners();
-  }
-
-  void closeCart() {
-    _isCartOpen = false;
-    notifyListeners();
-  }
-}
-*/
-//TODO: 
-/*
-class CartProvider extends ChangeNotifier {
-  List<Product> _cartItems = [];
-
-  List<Product> get cartItems => _cartItems;
-
-  void addToCart(Product product) {
-    _cartItems.add(product);
-    notifyListeners();
-  }
-
-  int get itemCount => _cartItems.length;
-}
-
-*/
 
 class Product {
   final String id;
@@ -1592,7 +1400,7 @@ class Product {
   final String image;
   final double imageHeight;
   final double imageWidth;
-  final String onzas;
+  final String? onzas;
   final Widget cantidad;
 
   Product({
@@ -1602,7 +1410,7 @@ class Product {
     required this.image,
     required this.imageHeight,
     required this.imageWidth,
-    required this.onzas,
+    this.onzas,
     required this.cantidad,
   });
 }
@@ -1625,8 +1433,66 @@ class CartModel with ChangeNotifier {
   double get totalPrice => _items.fold(0.0, (sum, item) => sum + item.price);
 }
 
-//TODO:
 
+//TODO: CANTIDAD
+
+
+class Cantidad extends StatefulWidget {
+  final Function(int) onQuantityChanged;
+
+  // ignore: use_super_parameters
+  const Cantidad({
+    Key? key,
+    required this.onQuantityChanged,
+  }) : super(key: key);
+
+  @override
+  State<Cantidad> createState() => _CantidadState();
+}
+
+class _CantidadState extends State<Cantidad> {
+  int selectedNumber = 1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 50,
+      height: 30,
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.black87),
+        color: Colors.white,
+      ),
+      child: DropdownButtonHideUnderline(
+        child: DropdownButton<int>(
+          value: selectedNumber,
+          icon: const Icon(Icons.keyboard_arrow_down_rounded, color: Colors.black),
+          iconSize: 22,
+          elevation: 16,
+          style: const TextStyle(color: Colors.black, fontSize: 13),
+          onChanged: (int? newValue) {
+            if (newValue != null) {
+              setState(() {
+              selectedNumber = newValue;
+            });
+            widget.onQuantityChanged(newValue);
+            }
+          },
+          items: List.generate(10, (index) => index + 1).map<DropdownMenuItem<int>>((int value) {
+            return DropdownMenuItem<int>(
+              value: value,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 7),
+                child: Text(value.toString())
+              ),
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
+
+//TODO: TERMINA WIDGET CANTIDAD
 
 /*class WidgetCamisetas extends StatefulWidget {
 

@@ -9,15 +9,6 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        /*ChangeNotifierProvider(
-          create: (context) => CartProvider(),
-        ),*/
-        /*ChangeNotifierProvider(
-          create: (context) => CartNotifier(),
-        ),*/
-        /*ChangeNotifierProvider(
-          create: (context) => HelpScreenState(),
-        ),*/
         ChangeNotifierProvider(
           create: (context) => CartModel(),
         )

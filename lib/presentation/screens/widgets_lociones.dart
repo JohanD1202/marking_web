@@ -1,7 +1,8 @@
 import 'package:marking_web/exports.dart';
 
 
-class Locion extends StatelessWidget {
+class Locion extends StatefulWidget {
+  
   final String imageLocion;
   final String imageLocion2;
   final double imageWidth;
@@ -25,6 +26,31 @@ class Locion extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  State<Locion> createState() => _LocionState();
+
+}
+
+class _LocionState extends State<Locion> {
+
+  int _quantity = 1;
+  double _totalPrice = 0.0;
+
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
+
+
+  @override
   Widget build(BuildContext context) {
     return Card(
       elevation: 12,
@@ -44,10 +70,10 @@ class Locion extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4),
               child: ImageOnHover(
-                imagePath: imageLocion,
-                hoverImagePath: imageLocion2,
-                imageWidth: imageWidth,
-                imageHeight: imageHeight,
+                imagePath: widget.imageLocion,
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
               ),
             ),
             Positioned(
@@ -55,20 +81,20 @@ class Locion extends StatelessWidget {
               bottom: 8,
               left: 12,
               right: 8,
-              child: Text(nameLocion, style: styleTextLocion),
+              child: Text(widget.nameLocion, style: styleTextLocion),
             ),
             Positioned(
               top: 410,
               bottom: 8,
               left: 12,
               right: 8,
-              child: Text(onzas, style: styleTextLocion),
+              child: Text(widget.onzas, style: styleTextLocion),
             ),
             Positioned(
               top: 435,
               left: 13,
               right: 12,
-              child: Text('${symbol}${priceOriginal.toStringAsFixed(3)}', style: styleTextPrice),
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice),
             ),
             Positioned(
               top: 470,
@@ -77,12 +103,13 @@ class Locion extends StatelessWidget {
               child: CarShop(
                 productToAdd: Product(
                   id: DateTime.now().toString(),
-                  name: nameLocion,
-                  price: priceOriginal,
-                  image: imageLocion,
+                  name: widget.nameLocion,
+                  price: _totalPrice,
+                  image: widget.imageLocion,
                   imageWidth: 120,
                   imageHeight: 185,
-                  onzas: onzas,
+                  onzas: widget.onzas,
+                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
                 ),
               ),
             ),
@@ -96,15 +123,15 @@ class Locion extends StatelessWidget {
   
 
 //TODO: CANTIDAD
-/*
-class Cantidad extends StatefulWidget {
 
+
+class Cantidad extends StatefulWidget {
   final Function(int) onQuantityChanged;
 
   // ignore: use_super_parameters
   const Cantidad({
-    Key? key, 
-    required this.onQuantityChanged, 
+    Key? key,
+    required this.onQuantityChanged,
   }) : super(key: key);
 
   @override
@@ -112,89 +139,47 @@ class Cantidad extends StatefulWidget {
 }
 
 class _CantidadState extends State<Cantidad> {
-  
-
-  OverlayEntry? _overlayEntry;
-
-  Color? textColor = Colors.grey[700];
   int selectedNumber = 1;
-
-  OverlayEntry _createOverlayEntry() {
-    RenderBox renderBox = context.findRenderObject() as RenderBox;
-    var size = renderBox.size;
-    var offset = renderBox.localToGlobal(Offset.zero);
-
-    return OverlayEntry(
-      builder: (context) => Consumer<CartNotifier>(
-        builder: (context, cart, _) => Positioned(
-          left: offset.dx,
-          top: offset.dy + size.height * 1,//+ (1 * 20),
-          width: size.width * 1.18,
-          height: size.height * 7.5,
-          child: Material(
-            elevation: 4,
-            child: ListView.builder(
-              shrinkWrap: true,
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                int itemNumber = index + 1;
-                return Container(
-                  height: 32,
-                  child: ListTile(
-                    title: Text('$itemNumber'),
-                    onTap: () {
-                      setState(() {
-                        selectedNumber = itemNumber; //
-                      });
-                      widget.onQuantityChanged(itemNumber);
-                      _overlayEntry?.remove();
-                    },
-                  ),
-                );
-              },
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-
-  void _showMenu() {
-    _overlayEntry = _createOverlayEntry();
-    Overlay.of(context)!.insert(_overlayEntry!);
-  }
-
-  @override
-  void dispose() {
-    _overlayEntry?.remove();
-    super.dispose();
-  }
-
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: _showMenu,
-      child: Container(
-        width: 50,
-        height: 30,
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.black87),
-          color: Colors.white
+    return Container(
+      width: 50,
+      height: 30,
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.black87),
+        color: Colors.white,
+      ),
+      child: DropdownButtonHideUnderline(
+        child: DropdownButton<int>(
+          value: selectedNumber,
+          icon: const Icon(Icons.keyboard_arrow_down_rounded, color: Colors.black),
+          iconSize: 22,
+          elevation: 16,
+          style: const TextStyle(color: Colors.black, fontSize: 13),
+          onChanged: (int? newValue) {
+            if (newValue != null) {
+              setState(() {
+              selectedNumber = newValue;
+            });
+            widget.onQuantityChanged(newValue);
+            }
+          },
+          items: List.generate(10, (index) => index + 1).map<DropdownMenuItem<int>>((int value) {
+            return DropdownMenuItem<int>(
+              value: value,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 7),
+                child: Text(value.toString())
+              ),
+            );
+          }).toList(),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('$selectedNumber', style: const TextStyle(fontSize: 13, color: Colors.black)),
-            const Icon(Icons.keyboard_arrow_down_rounded, color: Colors.black),
-          ],
-        )
       ),
     );
   }
 }
-*/
+
 /*
 class CartProvider extends ChangeNotifier {
   List<Product> _cartItems = [];
@@ -1541,19 +1526,20 @@ class CarShop extends StatelessWidget {
     Key? key, 
     required this.productToAdd
   }) : super(key: key);
-/*
-  void addToCart(BuildContext context) {
-    Provider.of<CartModel>(context, listen: false).addProduct(productToAdd);
-  }
-*/
+
   @override
   Widget build(BuildContext context) {
     return OutlinedButton.icon(
       icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 17),
       onPressed: () {
         Provider.of<CartModel>(context, listen: false).addProduct(productToAdd);
-        //Provider.of<CartModel>(context, listen: false).addProduct(product);
-        //addToCart(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Agregado al Carrito', style: snackbar),
+            duration: const Duration(milliseconds: 1500),
+            backgroundColor: Colors.black,
+          )
+        );
       },
       label: Text('AGREGAR AL CARRITO', style: styleTextCar),
       style: OutlinedButton.styleFrom(
@@ -1563,6 +1549,8 @@ class CarShop extends StatelessWidget {
     );
   }
 }
+
+
 /*
 class CartNotifier extends ChangeNotifier {
   bool _isCartOpen = false;
@@ -1605,6 +1593,7 @@ class Product {
   final double imageHeight;
   final double imageWidth;
   final String onzas;
+  final Widget cantidad;
 
   Product({
     required this.id,
@@ -1613,7 +1602,8 @@ class Product {
     required this.image,
     required this.imageHeight,
     required this.imageWidth,
-    required this.onzas
+    required this.onzas,
+    required this.cantidad,
   });
 }
 

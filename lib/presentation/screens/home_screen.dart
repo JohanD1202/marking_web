@@ -98,6 +98,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       const Spacer(),
                       Image.asset('assets/images/logo_pr1.jpg'),
                       const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 55, top: 50),
+                        child: IconButton(
+                          icon: const Icon(Icons.shopping_cart_rounded, color: Colors.black,size: 35),
+                          onPressed: () {
+                            setState(() {
+                              indiceWidget = 6; 
+                            });
+                          },
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -198,15 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     });
                   }
                 ),
-                const SizedBox(width: 50),
-                ButtonTextBar(
-                  buttonText: 'Tienda', 
-                  onPressed: () {
-                    setState(() {
-                      indiceWidget = 6;
-                    });
-                  }
-                ),
+                //const SizedBox(width: 50),
                 const Spacer(flex: 1),
               ],
             ),

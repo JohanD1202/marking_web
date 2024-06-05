@@ -1,10 +1,18 @@
-import 'package:flutter/material.dart';
 import 'package:marking_web/exports.dart';
+import 'package:flutter_share_me/flutter_share_me.dart';
 
-class CartScreen extends StatelessWidget {
+class CartScreen extends StatefulWidget {
+
+  const CartScreen({
+    super.key,
+  });
+
+  @override
+  State<CartScreen> createState() => _CartScreenState();
+}
+
+class _CartScreenState extends State<CartScreen> {
   
-  const CartScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
 
@@ -16,8 +24,25 @@ class CartScreen extends StatelessWidget {
       child: Scaffold(
         body: Consumer<CartModel>(
           builder: (context, cart, child) {
-            return Column(
+            if (cart.items.isEmpty) {
+              return Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Image.asset('assets/images/logo_pr1.jpg', width: 300, fit: BoxFit.cover),
+                    const SizedBox(height: 20),
+                    Text('Tu Carrito de Compras está vacío', style: title),
+                  ],
+                ),
+              );
+            } else {
+              return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 60, top: 20, bottom: 20),
+                  child: Text('Mi Carrito de Compras', style: title),
+                ),
                 Expanded(
                   child: ListView.builder(
                     itemCount: cart.items.length,
@@ -52,6 +77,11 @@ class CartScreen extends StatelessWidget {
                                     padding: const EdgeInsets.only(top: 20),
                                     child: Text('\$${product.price}.000', style: styleTextPrice),
                                   ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 10),
+                                    child: Cantidad(
+                                      onQuantityChanged: (p0) => 1),
+                                  ),
                                 ],
                               ),
                               const Spacer(),
@@ -66,21 +96,72 @@ class CartScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(height: 10)
+                          const SizedBox(height: 10),
                         ],
                       );
                     }
                   )
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Text('Total: \$${cart.totalPrice}'),
+                Row(
+                  children: [
+                    const Spacer(),
+                    Text('Total: \$${cart.totalPrice}.000', style: styleTextPrice),
+                    const Spacer(),
+                  ],
+                ),
+                Row(
+                  children: [
+                    const Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20, bottom: 30),
+                      child: FilledButton(
+                        onPressed: () {
+                          _launchWhatsApp('573107312102', 'Hola, estoy interesado en tus productos.');
+                        },
+                        style: styleText300,
+                        child: Text('FINALIZAR COMPRA', style: styleTextCar),
+                      ),
+                    ),
+                    const Spacer(),
+                  ],
                 )
               ],
             );
+           }
           },
         ),
       ),
     );
   }
 }
+
+void _launchWhatsApp(String phoneNumber, String message) async {
+
+  try {
+    await FlutterShareMe().shareToWhatsApp(msg: message);
+  } catch (e) {
+    throw 'No se pudo abrir WhatsApp.';
+  }
+}
+
+
+
+
+
+/*
+void _launchWhatsApp(String phoneNumber) async {
+
+  String url;
+  if(phoneNumber == '573107312102') {
+    url = 'https://wa.me/$phoneNumber';
+  } else if (phoneNumber == '573104025062') {
+    url = 'https://wa.me/$phoneNumber';
+  } else {
+    throw 'Número de teléfono no válido: $phoneNumber';
+  }
+
+  html.window.open(url, 'WhatsApp');
+
+}
+
+*/

@@ -11,7 +11,6 @@ export 'package:marking_web/responsive/responsive.dart';
 export 'package:marking_web/responsive/tablet_screen.dart';
 export 'package:marking_web/presentation/screens/section_hombre.dart';
 export 'package:marking_web/presentation/screens/section_mujer.dart';
-export 'package:marking_web/presentation/screens/shopping_cart.dart';
 export 'package:video_player/video_player.dart';
 export 'dart:async';
 export 'package:marking_web/presentation/screens/my_button.dart';

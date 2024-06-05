@@ -284,6 +284,12 @@ TextStyle frequent = const TextStyle(
   color: Colors.black
 );
 
+TextStyle title = const TextStyle(
+  fontSize: 25,
+  fontWeight: FontWeight.w900,
+  color: Colors.black
+);
+
 TextStyle frequentMobile = const TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.w900,
@@ -341,6 +347,12 @@ TextStyle styleTextD = const TextStyle(
 TextStyle styleTextDMobile = const TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.w800,
+  color: Colors.white
+);
+
+TextStyle snackbar = const TextStyle(
+  fontSize: 18,
+  fontWeight: FontWeight.w500,
   color: Colors.white
 );
 

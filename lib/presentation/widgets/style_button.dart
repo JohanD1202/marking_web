@@ -132,7 +132,8 @@ class _ButtonTextMobileState extends State<ButtonTextMobile> {
                 widget.buttonText,
                 style: TextStyle(
                   fontSize: 15,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.normal,
+                  fontFamily: 'Fredoka',
                   color: _isHovered ? Colors.grey : Colors.black,
                 ),
               ),
@@ -255,36 +256,48 @@ TextStyle styleTextInicio = const TextStyle(
 
 TextStyle styleTextInicioMobile = const TextStyle(
   fontSize: 30,
-  fontWeight: FontWeight.bold,
-  color: Colors.white
+  fontWeight: FontWeight.w600,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleText = const TextStyle(
   fontSize: 15,
-  fontWeight: FontWeight.w900,
-  color: Colors.black
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle style = const TextStyle(
   fontSize: 15,
-  fontWeight: FontWeight.w600,
-  color: Colors.black
+  fontWeight: FontWeight.normal,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleMobile = const TextStyle(
   fontSize: 15,
-  fontWeight: FontWeight.w500,
-  color: Colors.black
+  fontWeight: FontWeight.normal,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle frequent = const TextStyle(
   fontSize: 40,
-  fontWeight: FontWeight.w900,
-  color: Colors.black
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle title = const TextStyle(
   fontSize: 25,
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
+);
+
+TextStyle titleMobile = const TextStyle(
+  fontSize: 21,
   fontWeight: FontWeight.w600,
   color: Colors.black,
   fontFamily: 'Fredoka',
@@ -296,6 +309,12 @@ TextStyle title2 = const TextStyle(
   fontFamily: 'Fredoka',
 );
 
+TextStyle title2Mobile = const TextStyle(
+  fontSize: 18,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
+);
+
 TextStyle title3 = const TextStyle(
   fontSize: 22,
   color: Colors.black,
@@ -303,20 +322,23 @@ TextStyle title3 = const TextStyle(
 
 TextStyle frequentMobile = const TextStyle(
   fontSize: 20,
-  fontWeight: FontWeight.w900,
-  color: Colors.black
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle frequent2 = const TextStyle(
   fontSize: 25,
-  fontWeight: FontWeight.w900,
-  color: Colors.black
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle frequent2Mobile = const TextStyle(
   fontSize: 15,
-  fontWeight: FontWeight.w900,
-  color: Colors.black
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleText10 = const TextStyle(
@@ -340,8 +362,9 @@ TextStyle styleTextB = const TextStyle(
 
 TextStyle styleTextBMobile = const TextStyle(
   fontSize: 20,
-  fontWeight: FontWeight.w800,
-  color: Colors.white
+  fontWeight: FontWeight.normal,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextC = const TextStyle(
@@ -360,13 +383,21 @@ TextStyle styleTextD = const TextStyle(
 
 TextStyle styleTextDMobile = const TextStyle(
   fontSize: 20,
-  fontWeight: FontWeight.w800,
-  color: Colors.white
+  fontWeight: FontWeight.normal,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle snackbar = const TextStyle(
   fontSize: 18,
-  fontWeight: FontWeight.w500,
+  fontWeight: FontWeight.normal,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
+);
+
+TextStyle snackbarMobile = const TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.normal,
   color: Colors.white,
   fontFamily: 'Fredoka',
 );
@@ -386,15 +417,17 @@ TextStyle texto = TextStyle(
 );
 
 TextStyle styleText3Mobile = const TextStyle(
-  fontSize: 17,
-  fontWeight: FontWeight.w700,
-  color: Colors.black
+  fontSize: 19,
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle answer = const TextStyle(
   fontSize: 15,
-  fontWeight: FontWeight.w500,
-  color: Colors.black
+  fontWeight: FontWeight.w400,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextHeader = TextStyle(
@@ -407,7 +440,8 @@ TextStyle styleTextHeader = TextStyle(
 TextStyle styleTextHeaderMobile = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w100,
-  color: Colors.grey[900]
+  color: Colors.grey[900],
+  fontFamily: 'Fredoka',
 );
 
 /*
@@ -431,17 +465,20 @@ TextStyle styleTextLocion = TextStyle(
 
 TextStyle styleTextLocion100 = TextStyle(
   fontSize: 19,
-  color: Colors.grey [800]
+  color: Colors.grey [800],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextLocionMobile = TextStyle(
   fontSize: 12,
-  color: Colors.grey [800]
+  color: Colors.grey [800],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextBolsosMobile = TextStyle(
   fontSize: 14.5,
-  color: Colors.grey [800]
+  color: Colors.grey [800],
+  fontFamily: 'Fredoka',
 );
 
 
@@ -453,18 +490,21 @@ TextStyle styleText9 = const TextStyle(
 TextStyle styleTextLocion2 = TextStyle(
   fontSize: 17,
   color: Colors.grey [800],
-  fontWeight: FontWeight.w600
+  fontWeight: FontWeight.w600,
+  fontFamily: 'Fredoka',
 );
 TextStyle styleTextLocion20 = TextStyle(
   fontSize: 19,
   color: Colors.grey [800],
-  fontWeight: FontWeight.w600
+  fontWeight: FontWeight.w600,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextLocion2Mobile = TextStyle(
   fontSize: 15.5,
   color: Colors.grey [800],
-  fontWeight: FontWeight.w600
+  fontWeight: FontWeight.w600,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextPrice = TextStyle(
@@ -475,7 +515,14 @@ TextStyle styleTextPrice = TextStyle(
 
 TextStyle styleTextPriceMobile = TextStyle(
   fontSize: 13,
-  color: Colors.grey[900]
+  color: Colors.grey[900],
+  fontFamily: 'Fredoka',
+);
+
+TextStyle styleTextPriceMobile2 = TextStyle(
+  fontSize: 14.5,
+  color: Colors.grey[900],
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextSale = TextStyle(
@@ -499,9 +546,17 @@ TextStyle styleTextCar = const TextStyle(
 );
 
 TextStyle styleTextCarMobile = const TextStyle(
-  fontSize: 8.5,
-  fontWeight: FontWeight.w500,
-  color: Colors.white
+  fontSize: 8.6,
+  fontWeight: FontWeight.w400,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
+);
+
+TextStyle styleTextCarMobile3 = const TextStyle(
+  fontSize: 8.2,
+  fontWeight: FontWeight.w400,
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextCarMobile2 = const TextStyle(
@@ -513,7 +568,8 @@ TextStyle styleTextCarMobile2 = const TextStyle(
 TextStyle styleTextCa = const TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.w500,
-  color: Colors.white
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 TextStyle styleTextMo = const TextStyle(
@@ -545,7 +601,8 @@ TextStyle styleTextFooter = const TextStyle(
 TextStyle styleTextFooterMobile = const TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.w500,
-  color: Colors.white
+  color: Colors.white,
+  fontFamily: 'Fredoka',
 );
 
 /*TextStyle styleTextFooterText = const TextStyle(
@@ -720,33 +777,33 @@ class TextHelp {
 class TextAromasGuide {
   static const String aromasGuideText = '''
 En Aromas Selectos, creemos que cada
-Fragancia cuenta una historia única y
-Evocadora. Con el fin de enriquecer su
-Experiencia de compra y ayudarle a
-Descubrir el aroma que mejor se adapte
-A su estilo y emociones, hemos creado
-Esta exclusiva Guía de Aromas.
+fragancia cuenta una historia única y
+evocadora. Con el fin de enriquecer su
+experiencia de compra y ayudarle a
+eescubrir el aroma que mejor se adapte
+e su estilo y emociones, hemos creado
+esta exclusiva Guía de Aromas.
 
 Aquí, explorará un mundo de fragancias 
-Detalladamente descritas, desde las vibrantes 
-Notas de salida hasta las profundas 
-Y duraderas notas de fondo. Cada aroma se 
-Presenta con descripciones claras y 
-Sugerentes que le invitan a imaginar y sentir 
-Cada fragancia en su complejidad.
+detalladamente descritas, desde las vibrantes 
+notas de salida hasta las profundas 
+y duraderas notas de fondo. Cada aroma se 
+presenta con descripciones claras y 
+sugerentes que le invitan a imaginar y sentir 
+cada fragancia en su complejidad.
 
 Esta guía está diseñada para ser su compañera
-En el descubrimiento de nuevos perfumes
-Y para profundizar su apreciación por los
-Aromas que ya conoce y ama. Tómese su
-Tiempo para navegar a través de nuestra
-Colección y dejar que su nariz le guíe
-A través de un viaje olfativo sin igual.
+en el descubrimiento de nuevos perfumes
+y para profundizar su apreciación por los
+aromas que ya conoce y ama. Tómese su
+tiempo para navegar a través de nuestra
+colección y dejar que su nariz le guíe
+a través de un viaje olfativo sin igual.
 
 En Aromas Selectos, su viaje hacia el perfume 
-Perfecto comienza aquí. Explore, experimente y 
-Encuentre ese aroma que resuena con su 
-Esencia.
+perfecto comienza aquí. Explore, experimente y 
+encuentre ese aroma que resuena con su 
+esencia.
 ''';
 }
 
@@ -763,8 +820,8 @@ Esta guía está diseñada para ser su compañera en el descubrimiento de nuevos
 aromas que ya conoce y ama. Tómese su tiempo para navegar a través de nuestra colección y dejar que su nariz le guíe a través de un
 viaje olfativo sin igual.
 
-En Aromas Selectos, su viaje hacia el perfume perfecto comienza aquí. Explore, experimente y encuentre ese aroma que resuena con su
-esencia.
+En Aromas Selectos, su viaje hacia el perfume perfecto comienza aquí. Explore, experimente y encuentre ese aroma que resuena con
+su esencia.
 ''';
 }
 
@@ -848,7 +905,7 @@ class TextHelpWidget extends StatelessWidget {
       // Agregamos la palabra destacada en negrita
       textSpans.add(TextSpan(
         text: match.group(0),
-        style: const TextStyle(fontWeight: FontWeight.w900),
+        style: const TextStyle(fontWeight: FontWeight.w600),
       ));
 
       // Actualizamos la posición actual
@@ -916,7 +973,7 @@ class TextHelpWidgetMobile extends StatelessWidget {
       // Agregamos la palabra destacada en negrita
       textSpans.add(TextSpan(
         text: match.group(0),
-        style: const TextStyle(fontWeight: FontWeight.w900),
+        style: const TextStyle(fontWeight: FontWeight.w600),
       ));
 
       // Actualizamos la posición actual

@@ -2,17 +2,17 @@ import 'package:marking_web/exports.dart';
 import 'package:flutter_share_me/flutter_share_me.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class CartScreen extends StatefulWidget {
+class CartScreenMobile extends StatefulWidget {
 
-  const CartScreen({
+  const CartScreenMobile({
     super.key,
   });
 
   @override
-  State<CartScreen> createState() => _CartScreenState();
+  State<CartScreenMobile> createState() => _CartScreenMobileState();
 }
 
-class _CartScreenState extends State<CartScreen> {
+class _CartScreenMobileState extends State<CartScreenMobile> {
   
   @override
   Widget build(BuildContext context) {
@@ -30,9 +30,9 @@ class _CartScreenState extends State<CartScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Image.asset('assets/images/logo_pr1.jpg', width: 300, fit: BoxFit.cover),
+                    Image.asset('assets/images/logo_pr1.jpg', width: 200, fit: BoxFit.cover),
                     const SizedBox(height: 20),
-                    Text('Tu Carrito de Compras está vacío', style: title2),
+                    Text('Tu Carrito de Compras está vacío', style: title2Mobile),
                   ],
                 ),
               );
@@ -41,8 +41,8 @@ class _CartScreenState extends State<CartScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 60, top: 20, bottom: 20),
-                  child: Text('Mi Carrito de Compras', style: title),
+                  padding: const EdgeInsets.only(left: 30, top: 15, bottom: 15),
+                  child: Text('Mi Carrito de Compras', style: titleMobile),
                 ),
                 Expanded(
                   child: ListView.builder(
@@ -56,7 +56,7 @@ class _CartScreenState extends State<CartScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(left: 60, right: 20),
+                                padding: const EdgeInsets.only(left: 30, right: 15),
                                 child: SizedBox(
                                   width: product.imageWidth,
                                   height: product.imageHeight,
@@ -68,15 +68,15 @@ class _CartScreenState extends State<CartScreen> {
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(top: 10),
-                                    child: Text(product.name, style: styleTextLocion),
+                                    child: Text(product.name, style: styleTextBolsosMobile),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 10),
-                                    child: Text(product.onzas ?? "", style: styleTextLocion),
+                                    child: Text(product.onzas ?? "", style: styleTextBolsosMobile),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 20),
-                                    child: Text('\$${product.price}.000', style: styleTextPrice),
+                                    child: Text('\$${product.price}.000', style: styleTextPriceMobile2),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 10),
@@ -87,9 +87,9 @@ class _CartScreenState extends State<CartScreen> {
                               ),
                               const Spacer(),
                               Padding(
-                                padding: const EdgeInsets.only(right: 30),
+                                padding: const EdgeInsets.only(right: 25),
                                 child: IconButton(
-                                  icon: const Icon(Icons.delete_rounded, color: Colors.black, size: 30),
+                                  icon: const Icon(Icons.delete_rounded, color: Colors.black, size: 24),
                                   onPressed: () {
                                     cart.removeProduct(product);
                                   },

@@ -6,7 +6,7 @@ import 'dart:html' as html;
 import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
 import 'package:marking_web/responsive/screens_mobile/guia_aromas_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/preguntas_frecuentes_mobile.dart';
-/*
+
 
 class HelpMobile extends StatefulWidget {
 
@@ -29,11 +29,11 @@ class _HelpMobileState extends State<HelpMobile> {
       },
     );
   }
-/*
+
   Widget buildAromasGuide(BuildContext context) {
     return const GuiaAromasMobile();
   }
-*/
+
   Widget buildFullContent(BuildContext context) {
 
   final size = MediaQuery.of(context).size;
@@ -56,7 +56,7 @@ class _HelpMobileState extends State<HelpMobile> {
                           children: [
                             Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3Mobile),
                             const SizedBox(height: 15),
-                            const TextHelpWidgetMobile(TextHelpMobile.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w200)),
+                            const TextHelpWidgetMobile(TextHelpMobile.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w400, fontFamily: 'Fredoka')),
                             Row(
                               children: [
                                 const Spacer(),
@@ -448,4 +448,3 @@ class _DebitoMobileState extends State<DebitoMobile> {
 
 //fromLTRB(32, 15, 100, 15)
 //fromLTRB(15, 15, 100, 15)
-*/

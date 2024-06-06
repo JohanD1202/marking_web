@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-/*
+
 
 class SectionMujerMobile extends StatefulWidget {
   // ignore: use_super_parameters
@@ -24,7 +24,8 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
               imageBolso2: 'assets/images/bolso_bimba_y_lola_150.jpg',
               imageHeight: 240, 
               imageWidth: 150, 
-              nameBolso: 'Bolso Bimba y Lola',
+              nameBolso: '''Bolso Bimba
+Y Lola''',
               symbol: '\$',
               priceOriginal: 150.000,
             ),
@@ -51,7 +52,8 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
               imageBolso2: 'assets/images/bolso_louis_vuitton_150.jpg',
               imageHeight: 240,
               imageWidth: 150, 
-              nameBolso: 'Bolso Louis Vuitton',
+              nameBolso: '''Bolso Louis
+Vuitton''',
               symbol: '\$',
               priceOriginal: 150.000,
             ),
@@ -61,7 +63,8 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
               imageBolso2: 'assets/images/bolso_marc_jacobs_grande_140.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameBolso: 'Bolso Marc Jacobs grande',
+              nameBolso: '''Bolso Marc
+Jacobs grande''',
               symbol: '\$',
               priceOriginal: 140.000,
             ),
@@ -122,7 +125,7 @@ class _SectionMujerMobileState extends State<SectionMujerMobile> {
             Spacer(),*/
           ],
         ),
-        const SizedBox(height: 20),
+        //const SizedBox(height: 20),
         //TODO: QUINTO ROW DE BOLSOS
         const Row(
           children: [/*
@@ -411,4 +414,3 @@ Calvin Klein''',
     );
   }
 }
-*/

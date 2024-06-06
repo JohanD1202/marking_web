@@ -1,7 +1,7 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
 
-/*
+
 
 class GuiaAromas extends StatelessWidget {
 
@@ -34,9 +34,12 @@ class GuiaAromas extends StatelessWidget {
                           Text('Bienvenido a Nuestra Guía de Aromas',
                               style: styleText3),
                           const SizedBox(height: 20),
-                          const Text(TextAromasGuide2.aromasGuideText,
-                              style: TextStyle(
-                                  fontSize: 18,))
+                          const Text(
+                            TextAromasGuide2.aromasGuideText,
+                            style: TextStyle(
+                              fontSize: 18, fontFamily: 'Fredoka'
+                            )
+                          )
                         ],
                       ),
                     ),
@@ -4428,25 +4431,25 @@ class BuscadorAromas extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 20),
               ),
             if (imageBase5 != null && textBase5 != null)
-              Aromas(
+              Aromas2(
                 image: imageBase5!,
                 text: textBase5!,
                 padding: const EdgeInsets.only(right: 20),
               ),
             if (imageBase6 != null && textBase6 != null)
-              Aromas(
+              Aromas2(
                 image: imageBase6!,
                 text: textBase6!,
                 padding: const EdgeInsets.only(right: 20),
               ),
             if (imageBase7 != null && textBase7 != null)
-              Aromas(
+              Aromas2(
                 image: imageBase7!,
                 text: textBase7!,
                 padding: const EdgeInsets.only(right: 20),
               ),
             if (imageBase8 != null && textBase8 != null)
-              Aromas(
+              Aromas2(
                 image: imageBase8!,
                 text: textBase8!,
                 padding: const EdgeInsets.only(right: 0),
@@ -5230,7 +5233,7 @@ class MainChords2 extends StatelessWidget {
     required this.containerWidth, 
     required this.containerColor, 
     required this.colorText,
-    required this.text
+    required this.text,
   }) : super(key: key);
 
   @override
@@ -5247,7 +5250,7 @@ class MainChords2 extends StatelessWidget {
           Row(
             children: [
               const Spacer(),
-              Text(text, style: TextStyle(color: colorText, fontSize: 14)),
+              Text(text, style: TextStyle(color: colorText, fontSize: 14, fontFamily: 'Fredoka')),
               const Spacer(),
             ]
           )
@@ -5256,4 +5259,3 @@ class MainChords2 extends StatelessWidget {
     );
   }
 }
-*/

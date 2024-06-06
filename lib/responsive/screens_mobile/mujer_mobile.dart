@@ -72,33 +72,35 @@ class MujerScreenMobile extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Bienvenidos a la sección de Mujer', style: styleText3),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 20, bottom: 10),
+                          Text('Bienvenidos a la sección de Mujer', style: styleText3Mobile),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20, bottom: 10),
                             child: Text('''
 Bienvenidos a nuestra sección dedicada 
-A las mujeres sofisticadas y con estilo.
+a las mujeres sofisticadas y con estilo.
 En Aromas Selectos, no solo te ofrecemos 
-Una exquisita variedad de fragancias
-Que reflejan tu esencia única, sino que 
-También hemos seleccionado cuidadosamente 
-Una colección de bolsos que realzarán 
-Tu look con feminidad y originalidad
+una exquisita variedad de fragancias
+que reflejan tu esencia única, sino que 
+también hemos seleccionado cuidadosamente 
+una colección de bolsos, carteras y más
+accesorios que realzarán tu look con
+feminidad y originalidad.
 
-Descubre tus aromas favoritos desde \$14.000.
+Descubre tus aromas favoritos desde \$15.000.
 ¡No te pierdas esta maravillosa oportunidad 
-De disfrutar de fragancias de primera calidad 
-A un precio increíblemente asequible!
-''', style: TextStyle(fontSize: 18)),
+De disfrutar de fragancias y accesorios de
+primera calidad a un precio increíblemente
+asequible!
+''', style: texto),
                           ),
-                          Text('Bolsos', style: styleText3)
+                          Text('Bolsos', style: styleText3Mobile)
                         ],
                       ),
                     ),
                   ],
                 ),
               ),
-              //const SectionMujerMobile(),
+              const SectionMujerMobile(),
             ],
           ),
         ),

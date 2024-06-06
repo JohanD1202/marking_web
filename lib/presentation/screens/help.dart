@@ -5,7 +5,7 @@ import 'dart:html' as html;
 
 import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
 
-/*
+
 class Help extends StatefulWidget {
 
   // ignore: use_super_parameters
@@ -57,7 +57,7 @@ class _HelpState extends State<Help> {
                           children: [
                             Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3),
                             const SizedBox(height: 15),
-                            const TextHelpWidget(TextHelp.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w200)),
+                            const TextHelpWidget(TextHelp.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w400, fontFamily: 'Fredoka')),
                             Row(
                               children: [
                                 const Contactanos(
@@ -450,4 +450,3 @@ class _DebitoState extends State<Debito> {
 
 //fromLTRB(32, 15, 100, 15)
 //fromLTRB(15, 15, 100, 15)
-*/

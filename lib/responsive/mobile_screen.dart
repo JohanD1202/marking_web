@@ -1,6 +1,7 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/widgets/style_button.dart';
 import 'package:marking_web/responsive/screens_mobile/arabes_screen_mobile.dart';
+import 'package:marking_web/responsive/screens_mobile/cart_screen_mobile.dart';
 //import 'package:marking_web/presentation/screens/home_screen.dart';
 
 import 'package:marking_web/responsive/screens_mobile/help_mobile.dart';
@@ -35,7 +36,7 @@ class _MobileScreenState extends State<MobileScreen> {
           SingleChildScrollView(
           child: SizedBox(
             width: size.width * 1,
-            height: size.height * 3.25,
+            height: size.height * 3.33,
             child: Column(
               children: [
                 Material(
@@ -65,17 +66,18 @@ class _MobileScreenState extends State<MobileScreen> {
                     HombreScreenMobile(),         //3
                     MujerScreenMobile(),          //4
                     SaleScreenMobile(),           //5
-                    //HelpMobile(),                 //6
+                    HelpMobile(),                 //6
                     PreguntasFrecuentesMobile(),  //7
-                    //GuiaAromasMobile(),           //8
-                    //SearchhBarMobile()            //9
+                    GuiaAromasMobile(),           //8
+                    SearchhBarMobile(),           //9
+                    CartScreenMobile(),           //10
                   ],
                 ),
                 //TODO: FOOTER
                 Material(
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 1.57,
+                    height: MediaQuery.of(context).size.height * 1.63,
                     decoration: const BoxDecoration(
                       color: Colors.black,
                     ),
@@ -102,7 +104,7 @@ class _MobileScreenState extends State<MobileScreen> {
                             padding: const EdgeInsets.only(top: 15),
                             child: Container(
                               height: 200,
-                              width: 280,
+                              width: 302,
                               decoration: const BoxDecoration(color: Colors.black),
                               child: Column(
                                 children: [
@@ -267,9 +269,9 @@ o en efectivo''',
                                   ),
                                   child: Image.asset('assets/images/bancolombia1.png', fit: BoxFit.cover),
                                 ),
-                                const SizedBox(width: 10),
+                                /*const SizedBox(width: 10),
                                 Image.asset('assets/images/pse.png', height: 20, width: 20),
-                                Image.asset('assets/images/efecty.jpg', height: 18.5, width: 61.5),
+                                Image.asset('assets/images/efecty.jpg', height: 18.5, width: 61.5),*/
                                 const Spacer(),
                               ],
                             ),
@@ -317,7 +319,11 @@ o en efectivo''',
               _scaffoldKey.currentState?.openDrawer();
             }, 
             onPressedChat: () {},
-            onPressedCarShop:() {},
+            onPressedCarShop:() {
+              setState(() {
+                indiceWidget = 10;
+              });
+            },
           ),
         )
        ]
@@ -353,7 +359,7 @@ o en efectivo''',
               ButtonTextMobile(
                 buttonText: 'Aromas Selectos',
                 padding: const EdgeInsets.only(right: 100),
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     indiceWidget = 1;
                   });

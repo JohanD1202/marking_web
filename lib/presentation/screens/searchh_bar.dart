@@ -1,7 +1,7 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 
-/*
+
 class SearchhBar extends StatefulWidget {
   // ignore: use_super_parameters
   const SearchhBar({Key? key}) : super(key: key);
@@ -880,7 +880,7 @@ de Egipto''',
                 text5: 'violeta',
               ),
               //TODO: 9
-              /*AromasBuscador(
+              AromasBuscador(
                 title: 'Il Kakuno - ILMIN',
                 description: '''
 Il Kakuno de ILMIN Parfums es una fragancia de la familia olfativa para Hombres y Mujeres. Il Kakuno se lanzó en 2018.
@@ -965,7 +965,7 @@ de Oud''',
                 containerColor10: Color.fromRGBO(143, 130, 123, 1),
                 colorText10: Colors.white70,
                 text10: 'oud',
-              ),*/
+              ),
               //TODO: 10
               BuscadorAromas(
                 title: 'Il Femme - ILMIN',
@@ -3735,7 +3735,7 @@ Lirio''',
   }
 }
 
-
+/*
 class SearchhBar2 extends StatefulWidget {
 
   // ignore: use_super_parameters
@@ -4120,7 +4120,7 @@ class _SearchhBar2State extends State<SearchhBar2> {
   }
 }
 
-
+*/
 //TODO:
 
 class SearchhBarMobile extends StatefulWidget {
@@ -4489,7 +4489,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
               //TODO: 0
               SizedBox.shrink(),
               //TODO: 1
-              /*AromasBuscador(
+              AromasBuscador(
                 title: 'Yara - Lattafa',
                 description: '''
 Yara de Lattafa Perfumes es una fragancia de la 
@@ -4831,9 +4831,9 @@ de Gaiac''',
                 description: '''
 L' Aventure de Al Haramain Perfumes es una
 fragancia de la familia olfativa Chipre
-Frutal para Hombres. L' Aventure se lanzó en 2016.
-Tiene una longevidad duradera y su estela
-es moderada. Es un aroma Masculino
+Frutal para Hombres. L' Aventure se lanzó en
+2016. Tiene una longevidad duradera y su
+estela es moderada. Es un aroma Masculino
 (Tiene su versión femenina) L' Aventure femme.
 ''',
                 imageLocion: 'assets/images/l_aventure_haramain.jpg',
@@ -6465,9 +6465,10 @@ Roble''',
                 title: 'Toy Boy - Moschino',
                 description: '''
 Toy Boy de Moschino es una fragancia de la
-familia olfativa Amaderada Especiada para Hombres.
-Toy Boy se lanzó en 2019. Su longevidad es duradera
-y su estela es pesada. Es un aroma Unisex.
+familia olfativa Amaderada Especiada para
+Hombres. Toy Boy se lanzó en 2019. Su
+longevidad es duradera y su estela es pesada.
+Es un aroma Unisex.
 ''',
                 imageLocion: 'assets/images/toy_boy_moschino.webp',
                 imageNotaSalida: 'assets/images/pimienta_rosa.jpg',
@@ -6719,8 +6720,9 @@ Verde''',
                 description: '''
 Acqua di Gio de Giorgio Armani es una fragancia
 de la familia olfativa Aromática Acuática para
-Hombres. Acqua di Gio se lanzó en 1996. Su longevidad
-y su estela son moderadas. Es un aroma Masculino.
+Hombres. Acqua di Gio se lanzó en 1996. Su
+longevidad y su estela son moderadas. Es un
+aroma Masculino.
 ''',
                 imageLocion: 'assets/images/acqua_di_gio_giorgio_armani.webp',
                 imageNotaSalida: 'assets/images/lima.jpg',
@@ -6811,9 +6813,10 @@ Roble''',
                 title: 'Polo Blue - Ralph Lauren',
                 description: '''
 Polo Blue de Ralph Lauren es una fragancia de
-la familia olfativa Aromática Fougère para Hombres.
-Polo Blue se lanzó en 2003. Su longevidad y su
-estela son moderadas. Es un aroma Masculino.
+la familia olfativa Aromática Fougère para
+Hombres. Polo Blue se lanzó en 2003. Su
+longevidad y su estela son moderadas. Es un
+aroma Masculino.
 ''',
                 imageLocion: 'assets/images/polo_blue_ralph_lauren.jpg',
                 imageNotaSalida: 'assets/images/pepino.jpg',
@@ -7982,7 +7985,7 @@ Lirio''',
                 containerColor10: Color.fromRGBO(145, 137, 127, 1),
                 colorText10: Colors.white70,
                 text10: 'terrosos',
-              ),*/
+              ),
               //TODO: 49
             ],
           ),
@@ -7991,4 +7994,4 @@ Lirio''',
     );
   }
 }
-*/
+

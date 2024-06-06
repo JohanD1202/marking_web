@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-/*
+
 class GuiaAromasMobile extends StatelessWidget {
   // ignore: use_super_parameters
   const GuiaAromasMobile({Key? key}) : super(key: key);
@@ -31,9 +31,12 @@ class GuiaAromasMobile extends StatelessWidget {
                           Text('Bienvenido a Nuestra Guía de Aromas',
                               style: styleText3Mobile),
                           const SizedBox(height: 15),
-                          const Text(TextAromasGuide.aromasGuideText,
-                              style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.w500))
+                          const Text(
+                            TextAromasGuide.aromasGuideText,
+                            style: TextStyle(
+                              fontSize: 18, fontFamily: 'Fredoka'
+                            )
+                          )
                         ],
                       ),
                     )
@@ -4191,6 +4194,7 @@ class Aromas100 extends StatelessWidget {
   }
 }
 
+
 class AromasBuscador extends StatelessWidget {
   final String title;
   final String description;
@@ -5370,4 +5374,4 @@ class AromasBuscador200 extends StatelessWidget {
     );
   }
 }
-*/
+

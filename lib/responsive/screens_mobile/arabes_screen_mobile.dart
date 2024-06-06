@@ -35,9 +35,9 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Bienvenidos a la sección de Aromas Árabes', style: styleText3),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 20, bottom: 10),
+                          Text('Bienvenidos a la sección de Aromas Árabes', style: styleText3Mobile),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20, bottom: 10),
                             child: Text('''
 Bienvenidos a nuestra sección de Aromas
 Árabes, en este espacio te invitamos a
@@ -52,7 +52,7 @@ Llévate tus aromas favoritos desde tan solo
 \$15.000. ¡No te pierdas esta increíble
 oportunidad de disfrutar de fragancias de
 calidad a un precio increíblemente bajo!
-                            ''', style: TextStyle(fontSize: 18)),
+                            ''', style: texto),
                           )
                         ],
                       )
@@ -60,8 +60,7 @@ calidad a un precio increíblemente bajo!
                   ],
                 ),
               ),
-              //const SectionArabeMobile(),
-              //ShoppingCart(cart: myCart),
+              const SectionArabeMobile(),
             ],
           ),
         ),

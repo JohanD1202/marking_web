@@ -1,7 +1,7 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
 /*
-/*
+
 enum ContentState {
   Initial,
   HelloWorld,
@@ -37,8 +37,6 @@ class _SectionHombreMobileState extends State<SectionHombreMobile> {
       selectedProduct = product;
     });
   }
-
-  //Cart myCart = Cart();
 
   @override
   Widget build(BuildContext context) {
@@ -357,4 +355,3 @@ Ralph Lauren''',
     );
   }
 }
-*/

@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-/*
+
 
 class SectionSaleMobile extends StatefulWidget {
   // ignore: use_super_parameters
@@ -11,8 +11,6 @@ class SectionSaleMobile extends StatefulWidget {
 }
 
 class _SectionSaleMobileState extends State<SectionSaleMobile> {
-
-  //Cart myCart = Cart();
 
   @override
   Widget build(BuildContext context) {
@@ -215,7 +213,7 @@ class _SectionSaleMobileState extends State<SectionSaleMobile> {
               symbol: '\$',
               priceOriginal: 200.000, 
               priceDescuento: '\$160.000', 
-              promotion: Price(price: '20%')
+              promotion: PriceMobile(price: '20%')
             ),
             Spacer(),
             BolsosPromotionMobile(
@@ -228,7 +226,7 @@ class _SectionSaleMobileState extends State<SectionSaleMobile> {
               symbol: '\$',
               priceOriginal: 142.000, 
               priceDescuento: '\$110.000', 
-              promotion: Price(price: '22%')
+              promotion: PriceMobile(price: '22%')
             ),
             Spacer(),
           ],
@@ -248,7 +246,7 @@ class _SectionSaleMobileState extends State<SectionSaleMobile> {
               symbol: '\$',
               priceOriginal: 110.000, 
               priceDescuento: '\$90.000', 
-              promotion: Price(price: '18%')
+              promotion: PriceMobile(price: '18%')
             ),
             Spacer(),
             BolsosPromotionMobile(
@@ -261,7 +259,7 @@ Lola + 1 Locion''',
               symbol: '\$',
               priceOriginal: 163.000, 
               priceDescuento: '\$130.000', 
-              promotion: Price(price: '20%')
+              promotion: PriceMobile(price: '20%')
             ),
             Spacer(),
           ],
@@ -281,7 +279,7 @@ Mediano + 1 Locion''',
               symbol: '\$',
               priceOriginal: 120.000,
               priceDescuento: '\$100.000',
-              promotion: Price(price: '18%'),
+              promotion: PriceMobile(price: '18%'),
             ),
             Spacer(),
             BolsosPromotionMobile(
@@ -294,7 +292,7 @@ Grande + 1 Locion''',
               symbol: '\$',
               priceOriginal: 105.000,
               priceDescuento: '\$90.000',
-              promotion: Price(price: '14%'),
+              promotion: PriceMobile(price: '14%'),
             ),
             Spacer(),
           ],
@@ -314,7 +312,7 @@ Vuitton + 1 Locion''',
               symbol: '\$',
               priceOriginal: 130.000,
               priceDescuento: '\$110.000',
-              promotion: Price(price: '15%'),
+              promotion: PriceMobile(price: '15%'),
             ),
             Spacer(),
             BolsosPromotionMobile(
@@ -327,7 +325,7 @@ Billetera + 1 Locion''',
               symbol: '\$',
               priceOriginal: 130.000,
               priceDescuento: '\$110.000',
-              promotion: Price(price: '20%'),
+              promotion: PriceMobile(price: '20%'),
             ),
             Spacer(),
           ]
@@ -347,7 +345,7 @@ Billetera + 1 Locion''',
               symbol: '\$',
               priceOriginal: 45.000,
               priceDescuento: '\$35.000',
-              promotion: Price(price: '22%'),
+              promotion: PriceMobile(price: '22%'),
             ),
             Spacer(),
             BolsosPromotionMobile(
@@ -360,7 +358,7 @@ Michael Kors''',
               symbol: '\$',
               priceOriginal: 100.000,
               priceDescuento: '\$85.000',
-              promotion: Price(price: '15%'),
+              promotion: PriceMobile(price: '15%'),
             ),
             Spacer(),
           ]
@@ -380,7 +378,7 @@ Fashion''',
               symbol: '\$',
               priceOriginal: 95.000,
               priceDescuento: '\$75.000',
-              promotion: Price(price: '21%'),
+              promotion: PriceMobile(price: '21%'),
             ),
             Spacer(),
             BolsosPromotionMobile(
@@ -393,7 +391,7 @@ Vuitton + 1 Locion''',
               symbol: '\$',
               priceOriginal: 115.000,
               priceDescuento: '\$100.000',
-              promotion: Price(price: '13%'),
+              promotion: PriceMobile(price: '13%'),
             ),
             Spacer(),
           ],
@@ -403,4 +401,3 @@ Vuitton + 1 Locion''',
     );
   }
 }
-*/

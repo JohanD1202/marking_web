@@ -95,20 +95,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Spacer(),
+                      const Spacer(flex: 4),
                       Image.asset('assets/images/logo_pr1.jpg'),
-                      const Spacer(),
                       Padding(
-                        padding: const EdgeInsets.only(right: 55, top: 50),
+                        padding: const EdgeInsets.only(left: 375, top: 50),
                         child: IconButton(
                           icon: const Icon(Icons.shopping_cart_rounded, color: Colors.black,size: 35),
                           onPressed: () {
                             setState(() {
-                              indiceWidget = 6; 
+                              indiceWidget = 8;
                             });
                           },
                         ),
                       ),
+                      const Spacer(),
                     ],
                   ),
                 ),
@@ -196,8 +196,8 @@ class _HomeScreenState extends State<HomeScreen> {
               HombreScreen(),
               MujerScreen(),
               SaleScreen(),
-              //Help(),
-              //GuiaAromas(),
+              Help(),
+              GuiaAromas(),
               CartScreen(),
             ],
           ),
@@ -360,12 +360,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           child: Image.asset('assets/images/bancolombia1.png', fit: BoxFit.cover),
                         ),
-                        const SizedBox(width: 10),
+                        /*const SizedBox(width: 10),
                         Image.asset('assets/images/pse.png', height: 25, width: 25),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(30),
                           child: Image.asset('assets/images/efecty.jpg', height: 25, width: 82)
-                        ),
+                        ),*/
                         const Spacer(),
                       ],
                     ),

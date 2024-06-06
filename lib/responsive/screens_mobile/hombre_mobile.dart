@@ -35,20 +35,20 @@ class _HombreScreenMobileState extends State<HombreScreenMobile> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Bienvenidos a la sección de Hombre', style: styleText3),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 20, bottom: 10),
+                          Text('Bienvenidos a la sección de Hombre', style: styleText3Mobile),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20, bottom: 10),
                             child: Text('''
-Bienvenidos a nuestra sección dedicada 
-A los hombres modernos y con estilo. 
+Bienvenidos a nuestra sección dedicada
+a los hombres modernos y con estilo. 
 En Aromas Selectos, te ofrecemos una 
-Exquisita variedad de fragancias 
-Que reflejan tu personalidad única.
+exquisita variedad de fragancias 
+que reflejan tu personalidad única.
 
 Llévate tus aromas favoritos desde \$15.000. 
 ¡No te pierdas esta increíble oportunidad de 
-Disfrutar de fragancias de calidad 
-A un precio increíblemente bajo!''', style: TextStyle(fontSize: 18)),
+disfrutar de fragancias de calidad a un
+precio increíblemente bajo!''', style: texto),
                           )
                         ],
                       )
@@ -56,8 +56,7 @@ A un precio increíblemente bajo!''', style: TextStyle(fontSize: 18)),
                   ],
                 ),
               ),
-              //const SectionHombreMobile(),
-              //ShoppingCart(cart: myCart),
+              const SectionHombreMobile(),
             ],
           ),
         ),

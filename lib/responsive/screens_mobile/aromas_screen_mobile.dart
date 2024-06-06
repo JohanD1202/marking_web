@@ -1,4 +1,5 @@
 import 'package:marking_web/exports.dart';
+import 'package:marking_web/presentation/widgets/style_button.dart';
 
 
 class AromasScreenMobile extends StatefulWidget {
@@ -27,6 +28,21 @@ class _AromasScreenMobileState extends State<AromasScreenMobile> with SingleTick
     'assets/images/locion_7.jpg',
     'assets/images/locion_11.jpg',
     'assets/images/locion_12.jpg',
+    'assets/images/aroma_1.jpg',
+    'assets/images/aroma_2.jpg',
+    'assets/images/aroma_3.jpg',
+    'assets/images/aroma_4.jpg',
+    'assets/images/aroma_5.jpg',
+    'assets/images/aroma_6.jpg',
+    'assets/images/aroma_7.jpg',
+    'assets/images/aroma_8.jpg',
+    'assets/images/aroma_9.jpg',
+    'assets/images/locion_1_2onzas.jpg',
+    'assets/images/locion_2_2onzas.jpg',
+    'assets/images/locion_3_3onzas.jpg',
+    'assets/images/aroma_10.jpg',
+    'assets/images/aroma_11.jpg',
+    'assets/images/aroma_12.jpg',
   ];
 
   void _nextImages() {
@@ -47,7 +63,7 @@ class _AromasScreenMobileState extends State<AromasScreenMobile> with SingleTick
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1.2,
+      height: size.height * 1.25,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(
@@ -60,9 +76,9 @@ class _AromasScreenMobileState extends State<AromasScreenMobile> with SingleTick
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Descubre Aromas Selectos:', style: styleText3),
+                        Text('Descubre Aromas Selectos:', style: styleText3Mobile),
                         const SizedBox(height: 10),
-                        const Text('''
+                        Text('''
 Eleva tus sentidos con Elegancia y Estilo
 ¿Buscas una experiencia única que despierte 
 Tus sentidos y eleve tu día a día?
@@ -70,7 +86,7 @@ Tus sentidos y eleve tu día a día?
 En Aromas Selectos, nos enorgullece ofrecerte 
 Una exquisita selección de fragancias
 Que te transportarán a un mundo de lujo.
-                        ''', style: TextStyle(fontSize: 18))
+                        ''', style: texto)
                       ],
                     ),
                   ],
@@ -83,7 +99,7 @@ Que te transportarán a un mundo de lujo.
                   if (i < _imagePaths.length)
                   Container(
                     margin: const EdgeInsets.only(bottom: 20),
-                    child: Image.asset(_imagePaths[i], width: 150, height: 225, fit: BoxFit.cover), //TODO:
+                    child: Image.asset(_imagePaths[i], width: 150, height: 225, fit: BoxFit.cover),
                   ),
                 ],
               ),
@@ -105,8 +121,8 @@ Que te transportarán a un mundo de lujo.
               ),
               Container(
                 alignment: Alignment.centerLeft,
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                   child: Text('''
 Sumérgete en nuestro exclusivo catálogo 
 De aromas meticulosamente elaborados, 
@@ -115,8 +131,7 @@ Diferente. Desde notas frescas y florales
 Hasta profundas y envolventes, nuestras 
 Creaciones están diseñadas para acompañarte
 En cada momento especial de tu vida.
-       ''', style: TextStyle(fontSize: 18),
-                   textAlign: TextAlign.left,
+       ''', style: texto
                   ),
                 ),
               ),

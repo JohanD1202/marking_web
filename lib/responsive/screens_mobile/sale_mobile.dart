@@ -1,5 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/section_sale.dart';
+import 'package:marking_web/presentation/widgets/style_button.dart';
 import 'package:marking_web/responsive/screens_mobile/section_sale_mobile.dart';
 
 
@@ -27,9 +28,9 @@ class SaleScreenMobile extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Bienvenidos a la sección de Sale', style: styleText3),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 20, bottom: 10),
+                          Text('Bienvenidos a la sección de Sale', style: styleText3Mobile),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20),
                             child: Text('''
 Aquí encontrarás las mejores promociones 
 en una amplia variedad de productos.
@@ -45,16 +46,15 @@ sumado a tus Aromas favoritos!
 ¡No te pierdas esta oportunidad de renovar 
 tu estilo y disfrutar de grandes ahorros
 y nuestras increíbles rebajas.
-''', style: TextStyle(fontSize: 18)),
+''', style: texto),
                           ),
-                        //Text('Aromas de Hombre', style: styleText3)
                         ],
                       ),
                     ),
                   ],
                 ),
               ),
-              //const SectionSaleMobile(),
+              const SectionSaleMobile(),
             ],
           ),
         ),

@@ -71,17 +71,17 @@ class _InicioMobileState extends State<InicioMobile> {
 
 class FloatingBar extends StatelessWidget {
 
-  final Function() onPressedHome;
-  final Function() onPressedSearch;
   final Function() onPressedMenu;
+  final Function() onPressedSearch;
+  final Function() onPressedHome;
   final Function() onPressedChat;
   final Function() onPressedCarShop;
   // ignore: use_super_parameters
   const FloatingBar({
     Key? key, 
-    required this.onPressedHome, 
-    required this.onPressedSearch, 
     required this.onPressedMenu, 
+    required this.onPressedSearch,
+    required this.onPressedHome, 
     required this.onPressedChat, 
     required this.onPressedCarShop
   }) : super(key: key);
@@ -96,10 +96,10 @@ class FloatingBar extends StatelessWidget {
           children: [
             const SizedBox(width: 20),
             IconButton(
-              icon: const Icon(Icons.home_rounded),
+              icon: const Icon(Icons.menu_rounded),
               color: Colors.black,
               iconSize: 30,
-              onPressed: onPressedHome,
+              onPressed: onPressedMenu,
             ),
             const Spacer(),
             IconButton(
@@ -110,10 +110,10 @@ class FloatingBar extends StatelessWidget {
             ),
             const Spacer(),
             IconButton(
-              icon: const Icon(Icons.menu_rounded),
+              icon: const Icon(Icons.home_rounded),
               color: Colors.black,
               iconSize: 30,
-              onPressed: onPressedMenu,
+              onPressed: onPressedHome,
             ),
             const Spacer(),
             GestureDetector(

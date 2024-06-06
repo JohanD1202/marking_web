@@ -1,5 +1,359 @@
 import 'package:marking_web/exports.dart';
 
+class LocionMobile extends StatefulWidget {
+  
+  final String imageLocion;
+  final String imageLocion2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameLocion;
+  final String symbol;
+  final double priceOriginal;
+  final String onzas;
+
+  // ignore: use_super_parameters
+  const LocionMobile({
+    Key? key,
+    required this.imageLocion,
+    required this.imageLocion2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameLocion,
+    required this.symbol,
+    required this.priceOriginal,
+    required this.onzas,
+  }) : super(key: key);
+
+  @override
+  State<LocionMobile> createState() => _LocionMobileState();
+
+}
+
+class _LocionMobileState extends State<LocionMobile> {
+
+  int _quantity = 1;
+  double _totalPrice = 0.0;
+
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
+      ),
+      child: Container(
+        height: 340,
+        width: 160,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageLocion,
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
+              ),
+            ),
+            Positioned(
+              top: 227,
+              bottom: 8,
+              left: 8,
+              right: 8,
+              child: Text(widget.nameLocion, style: styleTextLocionMobile),
+            ),
+            Positioned(
+              top: 262,
+              left: 8,
+              right: 8,
+              child: Text(widget.onzas, style: styleTextLocionMobile),
+            ),
+            Positioned(
+              top: 280,
+              left: 9,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPriceMobile),
+            ),
+            Positioned(
+              top: 305,
+              left: 3,
+              right: 3,
+              bottom: 3,
+              child: CarShopMobile(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameLocion,
+                  price: _totalPrice,
+                  image: widget.imageLocion,
+                  imageWidth: 100,
+                  imageHeight: 160,
+                  onzas: widget.onzas,
+                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+//TODO: BOLSOS
+
+class BolsosMobile extends StatefulWidget {
+
+  final String imageBolso;
+  final String imageBolso2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameBolso;
+  final String symbol;
+  final double priceOriginal;
+
+  // ignore: use_super_parameters
+  const BolsosMobile({
+    Key? key,
+    required this.imageBolso,
+    required this.imageBolso2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameBolso,
+    required this.symbol,
+    required this.priceOriginal, 
+  }) : super(key: key);
+
+  @override
+  State<BolsosMobile> createState() => _BolsosMobileState();
+}
+
+class _BolsosMobileState extends State<BolsosMobile> {
+
+  int _quantity = 1;
+  double _totalPrice = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
+      ),
+      child: Container(
+        height: 340,
+        width: 160,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageBolso,
+                hoverImagePath: widget.imageBolso2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
+              ),
+            ),
+            Positioned(
+              top: 227,
+              bottom: 8,
+              left: 8,
+              right: 8,
+              child: Text(widget.nameBolso, style: styleTextLocionMobile),
+            ),
+            Positioned(
+              top: 275,
+              left: 9,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPriceMobile),
+            ),
+            Positioned(
+              top: 305,
+              left: 5,
+              right: 5,
+              bottom: 5,
+              child: CarShopMobile(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameBolso,
+                  price: _totalPrice,
+                  image: widget.imageBolso,
+                  imageWidth: 120,
+                  imageHeight: 185,
+                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+//TODO: BOLSOS PROMOTION
+
+class BolsosPromotionMobile extends StatefulWidget {
+
+  final String imageBolso;
+  final String imageBolso2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameBolso;
+  final String symbol;
+  final double priceOriginal;
+  final String priceDescuento;
+  final Widget promotion;
+
+  // ignore: use_super_parameters
+  const BolsosPromotionMobile({
+    Key? key,
+    required this.imageBolso,
+    required this.imageBolso2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameBolso,
+    required this.symbol,
+    required this.priceOriginal, 
+    required this.priceDescuento, 
+    required this.promotion, 
+  }) : super(key: key);
+
+  @override
+  State<BolsosPromotionMobile> createState() => _BolsosPromotionMobileState();
+}
+
+class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
+
+  int _quantity= 1;
+  double _totalPrice = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
+      ),
+      child: Container(
+        height: 370,
+        width: 160,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageBolso,
+                hoverImagePath: widget.imageBolso2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
+              ),
+            ),
+            Positioned(
+              top: 227,
+              bottom: 8,
+              left: 8,
+              right: 8,
+              child: Text(widget.nameBolso, style: styleTextBolsosMobile),
+            ),
+            Positioned(
+              top: 280,
+              left: 8,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale),
+            ),
+            Positioned(
+              top: 300,
+              left: 8,
+              right: 12,
+              child: Text(widget.priceDescuento, style: styleTextPriceMobile),
+            ),
+            Positioned(
+              top: 300,
+              left: 100,
+              child: widget.promotion,
+            ),
+            Positioned(
+              top: 330,
+              left: 5,
+              right: 5,
+              bottom: 5,
+              child: CarShopMobileBolsos(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameBolso,
+                  price: _totalPrice,
+                  image: widget.imageBolso,
+                  imageWidth: 120,
+                  imageHeight: 185,
+                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
 /*
 class LocionMobile extends StatefulWidget {
 
@@ -323,7 +677,9 @@ class _LocionMobileState extends State<LocionMobile> {
     );
   }
 }
+*/
 
+/*
 //TODO: LOCION PROMOTION
 
 class LocionPromotionMobile extends StatefulWidget {
@@ -1430,30 +1786,30 @@ class _CantidadState extends State<Cantidad> {
     );
   }
 }
-
+*/
 class CarShopMobile extends StatelessWidget {
 
-  final VoidCallback onAddToCart;
   final Product productToAdd;
 
   // ignore: use_super_parameters
   const CarShopMobile({
     Key? key, 
-    required this.onAddToCart, 
     required this.productToAdd
   }) : super(key: key);
-
-  void addToCart(BuildContext context) {
-    Provider.of<CartProvider>(context, listen: false).addToCart(productToAdd);
-  }
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton.icon(
       icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 11),
       onPressed: () {
-        onAddToCart();
-        addToCart(context);
+        Provider.of<CartModel>(context, listen: false).addProduct(productToAdd);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Agregado al Carrito', style: snackbarMobile),
+            duration: const Duration(milliseconds: 1500),
+            backgroundColor: Colors.black,
+          )
+        );
       },
       label: Text('AGREGAR AL CARRITO', style: styleTextCarMobile),
       style: OutlinedButton.styleFrom(
@@ -1466,29 +1822,29 @@ class CarShopMobile extends StatelessWidget {
 
 class CarShopMobileBolsos extends StatelessWidget {
 
-  final VoidCallback onAddToCart;
   final Product productToAdd;
 
   // ignore: use_super_parameters
   const CarShopMobileBolsos({
     Key? key, 
-    required this.onAddToCart, 
     required this.productToAdd
   }) : super(key: key);
-
-  void addToCart(BuildContext context) {
-    Provider.of<CartProvider>(context, listen: false).addToCart(productToAdd);
-  }
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton.icon(
-      icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 13),
+      icon: const Icon(Icons.shopping_cart_rounded, color: Colors.white, size: 11),
       onPressed: () {
-        onAddToCart();
-        addToCart(context);
+        Provider.of<CartModel>(context, listen: false).addProduct(productToAdd);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Agregado al Carrito', style: snackbarMobile),
+            duration: const Duration(milliseconds: 1500),
+            backgroundColor: Colors.black,
+          )
+        );
       },
-      label: Text('AGREGAR AL CARRITO', style: styleTextCarMobile2),
+      label: Text('AGREGAR AL CARRITO', style: styleTextCarMobile3),
       style: OutlinedButton.styleFrom(
         backgroundColor: Colors.black,
         shape: const RoundedRectangleBorder()
@@ -1559,7 +1915,7 @@ class MainChords extends StatelessWidget {
           Row(
             children: [
               const Spacer(),
-              Text(text, style: TextStyle(color: colorText, fontSize: 14)),
+              Text(text, style: TextStyle(color: colorText, fontSize: 14, fontFamily: 'Fredoka')),
               const Spacer(),
             ]
           )
@@ -1568,6 +1924,7 @@ class MainChords extends StatelessWidget {
     );
   }
 }
+/*
 /*
 class CartNotifier extends ChangeNotifier {
   bool _isCartOpen = false;

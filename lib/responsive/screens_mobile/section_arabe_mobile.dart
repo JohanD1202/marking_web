@@ -1,6 +1,6 @@
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-/*
+
 /*
 enum ContentState {
   Initial,
@@ -17,8 +17,8 @@ class ContentModel extends ChangeNotifier {
     notifyListeners(); 
   }
 }
-
 */
+
 class SectionArabeMobile extends StatefulWidget {
   // ignore: use_super_parameters
   const SectionArabeMobile({Key? key}) : super (key: key);
@@ -266,4 +266,3 @@ Orientica''',
   }
 }
 
-*/

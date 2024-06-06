@@ -121,10 +121,7 @@ class _LocionState extends State<Locion> {
 }
 
 
-
-
 //TODO: BOLSOS
-
 
 
 class Bolsos extends StatefulWidget {
@@ -1350,13 +1347,45 @@ class Price extends StatelessWidget {
       child: InkWell(
         onTap: () {},
         child: Center(
-          child: Text(price, style: const TextStyle(fontSize: 14, color: Colors.white),
+          child: Text(price, style: const TextStyle(fontSize: 14, color: Colors.white, fontFamily: 'Fredoka'),
           ),
         ),
       ),
     );
   }
 }
+
+class PriceMobile extends StatelessWidget {
+
+  final String price;
+
+  // ignore: use_super_parameters
+  const PriceMobile({
+    Key? key,
+    required this.price
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 33,
+      height: 18,
+      decoration: BoxDecoration(
+        color: Colors.black,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.black),
+      ),
+      child: InkWell(
+        onTap: () {},
+        child: Center(
+          child: Text(price, style: const TextStyle(fontSize: 12, color: Colors.white, fontFamily: 'Fredoka'),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 
 class CarShop extends StatelessWidget {
 

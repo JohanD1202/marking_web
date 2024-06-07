@@ -19,8 +19,6 @@ class _SectionArabeState extends State<SectionArabe> {
     });
   }
 
-  //Cart myCart = Cart();
-
   @override
   Widget build(BuildContext context) {
     return const Column(
@@ -37,7 +35,7 @@ class _SectionArabeState extends State<SectionArabe> {
               nameLocion: '''Yara
 Lattafa''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),            
@@ -49,7 +47,7 @@ Lattafa''',
               nameLocion: '''Ombre Nomade
 Louis Vuitton''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -61,7 +59,7 @@ Louis Vuitton''',
               nameLocion: '''Bade'e Al Oud
 Amethyst Lattafa''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -73,7 +71,7 @@ Amethyst Lattafa''',
               nameLocion: '''Oud for Greatness
 Initio''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -92,7 +90,7 @@ Initio''',
               nameLocion: '''Amber Oud
 Al Haramain''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -104,7 +102,7 @@ Al Haramain''',
               nameLocion: '''L' Aventure
 Al Haramain''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -116,7 +114,7 @@ Al Haramain''',
               nameLocion: '''Madinah
 Al Haramain''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -128,7 +126,7 @@ Al Haramain''',
               nameLocion: '''Santal 33
 Le Labo''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -147,7 +145,7 @@ Le Labo''',
               nameLocion: '''Il Kakuno
 ILMIN''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -159,7 +157,7 @@ ILMIN''',
               nameLocion: '''Il Femme
 ILMIN''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -171,7 +169,7 @@ ILMIN''',
               nameLocion: '''Arabians Tonka
 Montale''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -183,7 +181,7 @@ Montale''',
               nameLocion: '''Intense Cafe
 Montale''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -202,7 +200,7 @@ Montale''',
               nameLocion: '''Baccarat Rouge
 Francis Kurkdjian''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -214,7 +212,7 @@ Francis Kurkdjian''',
               nameLocion: '''Oud Saffron
 Orientica''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),/*
@@ -291,3 +289,10 @@ Orientica''',
     );
   }
 }
+
+//*33.000 2 onzas
+//*45.000 3 onzas
+//Para Aromas arabes
+
+//*29.000 2 onzas
+//*40.000 3 onzas

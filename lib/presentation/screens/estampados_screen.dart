@@ -1,4 +1,4 @@
-import 'package:marking_web/exports.dart';
+/*import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/camisetas_screen.dart';
 
 class EstampadosScreen extends StatelessWidget {
@@ -51,3 +51,4 @@ Descubre la calidad y la originalidad en cada detalle.
     );
   }
 }
+*/

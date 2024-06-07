@@ -91,6 +91,12 @@ class _LocionState extends State<Locion> {
               child: Text(widget.onzas, style: styleTextLocion),
             ),
             Positioned(
+              top: 410,
+              right: 20,
+              left: 180,
+              child: Cantidad(onQuantityChanged: (p0) => 1),
+            ),
+            Positioned(
               top: 435,
               left: 13,
               right: 12,
@@ -241,8 +247,8 @@ class BolsosPromotion extends StatefulWidget {
   final double imageHeight;
   final String nameBolso;
   final String symbol;
-  final double priceOriginal;
-  final String priceDescuento;
+  final double price;
+  final double priceDescuento;
   final Widget promotion;
 
   // ignore: use_super_parameters
@@ -254,7 +260,7 @@ class BolsosPromotion extends StatefulWidget {
     required this.imageHeight,
     required this.nameBolso,
     required this.symbol,
-    required this.priceOriginal, 
+    required this.price, 
     required this.priceDescuento, 
     required this.promotion, 
   }) : super(key: key);
@@ -271,13 +277,13 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
   @override
   void initState() {
     super.initState();
-    _totalPrice = widget.priceOriginal * _quantity;
+    _totalPrice = widget.priceDescuento * _quantity;
   }
 
   void updateQuantity(int newQuantity) {
     setState(() {
       _quantity = newQuantity;
-      _totalPrice = widget.priceOriginal * _quantity;
+      _totalPrice = widget.priceDescuento * _quantity;
     });
   }
 
@@ -318,13 +324,13 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
               top: 415,
               left: 13,
               right: 12,
-              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale),
+              child: Text('${widget.symbol}${widget.price.toStringAsFixed(3)}', style: styleTextSale),
             ),
             Positioned(
               top: 435,
               left: 13,
               right: 12,
-              child: Text(widget.priceDescuento, style: styleTextPrice),
+              child: Text('${widget.symbol}${widget.priceDescuento.toStringAsFixed(3)}', style: styleTextPrice),
             ),
             Positioned(
               top: 435,
@@ -343,6 +349,7 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
                   image: widget.imageBolso,
                   imageWidth: 120,
                   imageHeight: 185,
+                  priceDescuento: widget.price,
                   cantidad: Cantidad(onQuantityChanged: updateQuantity),
                 ),
               ),
@@ -1430,6 +1437,7 @@ class Product {
   final double imageHeight;
   final double imageWidth;
   final String? onzas;
+  final double? priceDescuento;
   final Widget cantidad;
 
   Product({
@@ -1440,6 +1448,7 @@ class Product {
     required this.imageHeight,
     required this.imageWidth,
     this.onzas,
+    this.priceDescuento,
     required this.cantidad,
   });
 }

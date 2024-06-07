@@ -13,8 +13,6 @@ class HombreScreen extends StatefulWidget {
 
 class _HombreScreenState extends State<HombreScreen> {
 
-  //Cart myCart = Cart();
-
   @override
   Widget build(BuildContext context) {
 
@@ -52,12 +50,11 @@ de fragancias de calidad a un precio increíblemente bajo!
                     Padding(
                       padding: const EdgeInsets.all(8),
                       child: Image.asset('assets/images/aromas_selectos.jpg', width: 300, height: 300, fit: BoxFit.cover),
-                    )
+                    ),
                   ],
                 ),
               ),
               const SectionHombre(),
-              //ShoppingCart(cart: myCart),
               const SizedBox(height: 50),
             ],
           ),

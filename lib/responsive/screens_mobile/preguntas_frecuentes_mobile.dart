@@ -89,9 +89,10 @@ de compras que está en la parte superior derecha.
 En el resumen que encontrarás, verifica que los
 productos que están en tu carrito son los que deseas
 comprar y haz click en 'FINALIZAR COMPRA'.
-Esto te llevará a un chat de WhatsApp con los
-productos seleccionados en un mensaje, listo para
-hacer tu pedido. Si tienes alguna duda, puedes
+Esto te llevará a un chat de WhatsApp donde deberás
+presionar el botón 'Ir al Chat' para que aparezcan
+tus productos seleccionados en un mensaje, listo
+para hacer tu pedido. Si tienes alguna duda, puedes
 comunicarte con nosotros a nuestros número de
 WhatsApp disponibles o envíanos un correo a
 aromasselectos24@gmail.com

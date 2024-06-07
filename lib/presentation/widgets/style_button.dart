@@ -532,6 +532,13 @@ TextStyle styleTextSale = TextStyle(
   fontFamily: 'Fredoka',
 );
 
+TextStyle styleTextSale2 = TextStyle(
+  decoration: TextDecoration.lineThrough,
+  fontSize: 15.5,
+  color: Colors.grey [700],
+  fontFamily: 'Fredoka',
+);
+
 TextStyle styleTextSaleMobile = TextStyle(
   decoration: TextDecoration.lineThrough,
   fontSize: 12,
@@ -812,9 +819,9 @@ class TextAromasGuide2 {
 En Aromas Selectos, creemos que cada fragancia cuenta una historia única y evocadora. Con el fin de enriquecer su experiencia de
 compra y ayudarle a descubrir el aroma que mejor se adapte a su estilo y emociones, hemos creado esta exclusiva Guía de Aromas.
 
-Aquí, explorará un mundo de fragancias detalladamente descritas, desde las vibrantes notas de salida hasta las profundas y duraderas
-notas de fondo. Cada aroma se presenta con descripciones claras y sugerentes que le invitan a imaginar y sentir cada fragancia en su
-complejidad.
+Aquí, explorará un mundo de fragancias detalladamente descritas, desde las vibrantes notas de salida hasta las profundas y
+duraderas notas de fondo. Cada aroma se presenta con descripciones claras y sugerentes que le invitan a imaginar y sentir cada
+fragancia en su complejidad.
 
 Esta guía está diseñada para ser su compañera en el descubrimiento de nuevos perfumes y para profundizar su apreciación por los
 aromas que ya conoce y ama. Tómese su tiempo para navegar a través de nuestra colección y dejar que su nariz le guíe a través de un

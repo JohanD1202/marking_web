@@ -209,14 +209,14 @@ class _BolsosMobileState extends State<BolsosMobile> {
               left: 5,
               right: 5,
               bottom: 5,
-              child: CarShopMobile(
+              child: CarShopMobileBolsos(
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameBolso,
                   price: _totalPrice,
                   image: widget.imageBolso,
-                  imageWidth: 120,
-                  imageHeight: 185,
+                  imageWidth: 100,
+                  imageHeight: 160,
                   cantidad: Cantidad(onQuantityChanged: updateQuantity),
                 ),
               ),
@@ -238,8 +238,8 @@ class BolsosPromotionMobile extends StatefulWidget {
   final double imageHeight;
   final String nameBolso;
   final String symbol;
-  final double priceOriginal;
-  final String priceDescuento;
+  final double priceDescuento;
+  final double price;
   final Widget promotion;
 
   // ignore: use_super_parameters
@@ -251,7 +251,7 @@ class BolsosPromotionMobile extends StatefulWidget {
     required this.imageHeight,
     required this.nameBolso,
     required this.symbol,
-    required this.priceOriginal, 
+    required this.price, 
     required this.priceDescuento, 
     required this.promotion, 
   }) : super(key: key);
@@ -268,13 +268,13 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
   @override
   void initState() {
     super.initState();
-    _totalPrice = widget.priceOriginal * _quantity;
+    _totalPrice = widget.priceDescuento * _quantity;
   }
 
   void updateQuantity(int newQuantity) {
     setState(() {
       _quantity = newQuantity;
-      _totalPrice = widget.priceOriginal * _quantity;
+      _totalPrice = widget.priceDescuento * _quantity;
     });
   }
 
@@ -315,13 +315,13 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
               top: 280,
               left: 8,
               right: 12,
-              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextSale),
+              child: Text('${widget.symbol}${widget.price.toStringAsFixed(3)}', style: styleTextSale),
             ),
             Positioned(
               top: 300,
               left: 8,
               right: 12,
-              child: Text(widget.priceDescuento, style: styleTextPriceMobile),
+              child: Text('${widget.symbol}${widget.priceDescuento.toStringAsFixed(3)}', style: styleTextPriceMobile),
             ),
             Positioned(
               top: 300,
@@ -339,8 +339,9 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
                   name: widget.nameBolso,
                   price: _totalPrice,
                   image: widget.imageBolso,
-                  imageWidth: 120,
-                  imageHeight: 185,
+                  imageWidth: 100,
+                  imageHeight: 160,
+                  priceDescuento: widget.price,
                   cantidad: Cantidad(onQuantityChanged: updateQuantity),
                 ),
               ),

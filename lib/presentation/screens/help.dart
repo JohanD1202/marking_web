@@ -91,13 +91,13 @@ class _HelpState extends State<Help> {
                                       },
                                     ),
                                     const SizedBox(width: 15),
-                                    const Debito(
+                                    /*const Debito(
                                       image: 'assets/images/debito1.jpg',
                                       height: 100,
                                       title: 'Medios de Pago', 
                                       description: 'Consulta, agrega o edita las opciones de pago',
                                       padding: EdgeInsets.fromLTRB(2, 0, 100, 0),
-                                    ),
+                                    ),*/
                                   ],
                                 ),
                               ],

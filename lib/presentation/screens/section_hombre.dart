@@ -19,8 +19,6 @@ class _SectionHombreState extends State<SectionHombre> {
     });
   }
 
-  //Cart myCart = Cart();
-
   @override
   Widget build(BuildContext context) {
     return const Column(
@@ -31,7 +29,7 @@ class _SectionHombreState extends State<SectionHombre> {
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageLocion2: 'assets/images/locion_1_2onzas.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: '''212 Heroes
@@ -43,7 +41,7 @@ Carolina Herrera''',
             Spacer(),            
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_11.jpg',
+              imageLocion2: 'assets/images/locion_2_2onzas.jpg',
               imageHeight: 350,
               imageWidth: 240,
               nameLocion: '''212 VIP Men
@@ -55,7 +53,7 @@ Carolina Herrera''',
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageLocion2: 'assets/images/locion_3_3onzas.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: '''CH Men
@@ -67,7 +65,7 @@ Carolina Herrera''',
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_4.jpg',
+              imageLocion2: 'assets/images/locion_4_4onzas.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: '''212 VIP Men Wins
@@ -86,7 +84,7 @@ Carolina Herrera''',
             Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageLocion2: 'assets/images/locion_5_5onzas.jpg',
               imageHeight: 370,
               imageWidth: 240,
               nameLocion: '''1 Million Parfum

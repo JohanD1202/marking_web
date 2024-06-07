@@ -310,9 +310,9 @@ o en efectivo''',
                 indiceWidget = 0;
               });
             },
-            onPressedSearch: () {
+            onPressedInfo: () {
               setState(() {
-                indiceWidget = 9;
+                indiceWidget = 6;
               });
             }, 
             onPressedMenu: () {
@@ -379,7 +379,7 @@ o en efectivo''',
               ButtonTextMobile(
                 buttonText: 'Hombre',
                 padding: const EdgeInsets.only(right: 160),
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     indiceWidget = 3;
                   });
@@ -389,7 +389,7 @@ o en efectivo''',
               ButtonTextMobile(
                 buttonText: 'Mujer',
                 padding: const EdgeInsets.only(right: 175),
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     indiceWidget = 4;
                   });
@@ -399,7 +399,7 @@ o en efectivo''',
               ButtonTextMobile(
                 buttonText: 'Sale',
                 padding: const EdgeInsets.only(right: 185),
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     indiceWidget = 5;
                   });
@@ -409,7 +409,7 @@ o en efectivo''',
               ButtonTextMobile(
                 buttonText: 'Centro de Ayuda', 
                 padding: const EdgeInsets.only(right: 105),
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     indiceWidget = 6;
                   });
@@ -419,7 +419,7 @@ o en efectivo''',
               ButtonTextMobile(
                 buttonText: 'Preguntas Frecuentes', 
                 padding: const EdgeInsets.only(right: 70),
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     indiceWidget = 7;
                   });
@@ -429,9 +429,19 @@ o en efectivo''',
               ButtonTextMobile(
                 buttonText: 'Guía de Aromas', 
                 padding: const EdgeInsets.only(right: 110),
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     indiceWidget = 8;
+                  });
+                }
+              ),
+              const SizedBox(height: 15),
+              ButtonTextMobile(
+                buttonText: 'Mi Carrito', 
+                padding: const EdgeInsets.only(right: 150),
+                onPressed: () {
+                  setState(() {
+                    indiceWidget = 10;
                   });
                 }
               ),

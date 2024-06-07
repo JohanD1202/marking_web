@@ -4,6 +4,7 @@ import 'dart:html' as html;
 
 import 'package:marking_web/presentation/screens/arabes_screen.dart';
 import 'package:marking_web/presentation/screens/cart_screen.dart';
+import 'package:marking_web/presentation/screens/crea_tu_locion_screen.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 
 
@@ -129,8 +130,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 //const Spacer(),
                 const SizedBox(width: 50),
-                ButtonTextBar(
+                /*ButtonTextBar(
                   buttonText: 'Aromas Selectos', 
+                  onPressed: () {
+                    setState(() {
+                      indiceWidget = 1;
+                    });
+                  }
+                ),*/
+                //const SizedBox(width: 50),
+                ButtonTextBar(
+                  buttonText: 'Aromas Árabes', 
                   onPressed: () {
                     setState(() {
                       indiceWidget = 1;
@@ -139,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
-                  buttonText: 'Aromas Árabes', 
+                  buttonText: 'Aromas Hombre', 
                   onPressed: () {
                     setState(() {
                       indiceWidget = 2;
@@ -148,8 +158,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
-                  buttonText: 'Hombre', 
-                  onPressed: () {
+                  buttonText: 'Aromas Mujer', 
+                  onPressed: () {  
                     setState(() {
                       indiceWidget = 3;
                     });
@@ -157,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
-                  buttonText: 'Mujer', 
+                  buttonText: 'Crea tu Loción', 
                   onPressed: () {  
                     setState(() {
                       indiceWidget = 4;
@@ -191,10 +201,11 @@ class _HomeScreenState extends State<HomeScreen> {
             index: indiceWidget,
             children: const [
               Inicio(),
-              AromasScreen(),
+              //AromasScreen(),
               ArabesScreen(),
               HombreScreen(),
               MujerScreen(),
+              CreaTuLocion(),
               SaleScreen(),
               Help(),
               GuiaAromas(),
@@ -231,7 +242,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               const SizedBox(height: 40),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: [/*
                                   ButtonTextFooter(
                                     buttonText: 'Aromas Selectos', 
                                     onPressed: () {
@@ -239,15 +250,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                         indiceWidget = 1;  
                                       });
                                     }
-                                  ),
+                                  ),*/
+                                  const Spacer(),
                                   ButtonTextFooter(
                                     buttonText: 'Aromas Árabes', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 2;
+                                        indiceWidget = 1;
                                       });
                                     }
                                   ),
+                                  const Spacer(),
                                 ],
                               ),
                               const SizedBox(height: 30),
@@ -255,19 +268,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   const Spacer(),
                                   ButtonTextFooter(
-                                    buttonText: 'Hombre', 
+                                    buttonText: 'Aromas Hombre', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 3;  
+                                        indiceWidget = 2;  
                                       });
                                     }
                                   ),
                                   const Spacer(),
                                   ButtonTextFooter(
-                                    buttonText: 'Mujer', 
+                                    buttonText: 'Aromas Mujer', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 4;
+                                        indiceWidget = 3;
                                       });
                                     }
                                   ),
@@ -282,7 +295,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Sale', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 5;
+                                        indiceWidget = 4;
                                       });
                                     }
                                   ),

@@ -73,7 +73,7 @@ class _HelpMobileState extends State<HelpMobile> {
                                   description: 'Resuelve las dudas más frecuentes',
                                   padding: const EdgeInsets.fromLTRB(55, 15, 55, 20),
                                   onTapCallback: () {
-                                    //Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
+                                    Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
                                   },
                                 ),
                                 const Spacer(),
@@ -89,18 +89,18 @@ class _HelpMobileState extends State<HelpMobile> {
                                       description: 'Conoce tu Aroma indicado',
                                       padding: const EdgeInsets.fromLTRB(53, 15, 55, 20),
                                       onTapCallback: () {
-                                        //Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
+                                        Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
                                       },
                                     ),
                                     const Spacer(),
-                                    const DebitoMobile(
+                                    /*const DebitoMobile(
                                       image: 'assets/images/debito1.jpg',
                                       height: 100,
                                       title: 'Medios de Pago', 
                                       description: 'Consulta o agrega las opciones de pago',
                                       padding: EdgeInsets.fromLTRB(40, 0, 40, 0),
                                     ),
-                                    const Spacer(),
+                                    const Spacer(),*/
                                   ],
                                 ),
                               ],

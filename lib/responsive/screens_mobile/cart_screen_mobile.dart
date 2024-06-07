@@ -75,7 +75,16 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
                                     child: Text(product.onzas ?? "", style: styleTextBolsosMobile),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 20),
+                                    padding: const EdgeInsets.only(top: 10),
+                                    child: Text(
+                                      product.priceDescuento != null && product.priceDescuento! > 0 
+                                          ? '\$${product.priceDescuento}.000' 
+                                          : '',
+                                      style: styleTextSale2,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 10),
                                     child: Text('\$${product.price}.000', style: styleTextPriceMobile2),
                                   ),
                                   Padding(
@@ -137,7 +146,7 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
 }
 
 void _launchWhatsApp(String phoneNumber, CartModel cart) async {
-  final message = cart.items.map((product) => '${product.name} - ${product.onzas} - \$${product.price}.000').join('\n');
+  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? ""} - \$${product.price}.000').join('\n');
   final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent('Hola, quiero comprar estos productos:\n$message')}");
 
   if (await canLaunchUrl(whatsappUrl)) {

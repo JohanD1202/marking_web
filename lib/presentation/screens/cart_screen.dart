@@ -75,13 +75,21 @@ class _CartScreenState extends State<CartScreen> {
                                     child: Text(product.onzas ?? "", style: styleTextLocion),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 20),
+                                    padding: const EdgeInsets.only(top: 10),
+                                    child: Text(
+                                      product.priceDescuento != null && product.priceDescuento! > 0 
+                                          ? '\$${product.priceDescuento}.000' 
+                                          : '',
+                                      style: styleTextSale2,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 10),
                                     child: Text('\$${product.price}.000', style: styleTextPrice),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 10),
-                                    child: Cantidad(
-                                      onQuantityChanged: (p0) => 1),
+                                    child: product.cantidad,
                                   ),
                                 ],
                               ),
@@ -137,7 +145,7 @@ class _CartScreenState extends State<CartScreen> {
 }
 
 void _launchWhatsApp(String phoneNumber, CartModel cart) async {
-  final message = cart.items.map((product) => '${product.name} - ${product.onzas} - \$${product.price}.000').join('\n');
+  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? ""} - \$${product.price}.000').join('\n');
   final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent('Hola, quiero comprar estos productos:\n$message')}");
 
   if (await canLaunchUrl(whatsappUrl)) {

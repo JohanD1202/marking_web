@@ -1,3 +1,4 @@
+import 'package:flutter_svg/svg.dart';
 import 'package:marking_web/exports.dart';
 import 'dart:html' as html;
 
@@ -72,7 +73,7 @@ class _InicioMobileState extends State<InicioMobile> {
 class FloatingBar extends StatelessWidget {
 
   final Function() onPressedMenu;
-  final Function() onPressedSearch;
+  final Function() onPressedInfo;
   final Function() onPressedHome;
   final Function() onPressedChat;
   final Function() onPressedCarShop;
@@ -80,7 +81,7 @@ class FloatingBar extends StatelessWidget {
   const FloatingBar({
     Key? key, 
     required this.onPressedMenu, 
-    required this.onPressedSearch,
+    required this.onPressedInfo,
     required this.onPressedHome, 
     required this.onPressedChat, 
     required this.onPressedCarShop
@@ -103,10 +104,10 @@ class FloatingBar extends StatelessWidget {
             ),
             const Spacer(),
             IconButton(
-              icon: const Icon(Icons.search_rounded),
+              icon: const Icon(Icons.info_outline_rounded),
               color: Colors.black,
               iconSize: 30,
-              onPressed: onPressedSearch
+              onPressed: onPressedInfo
             ),
             const Spacer(),
             IconButton(
@@ -118,7 +119,7 @@ class FloatingBar extends StatelessWidget {
             const Spacer(),
             GestureDetector(
               onTap: () => _launchWhatsApp('573107312102'),
-              child: Image.asset('assets/images/wha_white.png', height: 30, width: 30),
+              child: SvgPicture.asset('assets/images/wh_2.svg', width: 30, height: 30),
             ),
             const Spacer(),
             IconButton(

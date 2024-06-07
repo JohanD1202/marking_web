@@ -14,8 +14,6 @@ class ArabesScreen extends StatefulWidget {
 
 class _ArabesScreenState extends State<ArabesScreen> {
 
-  //Cart myCart = Cart();
-
   @override
   Widget build(BuildContext context) {
 
@@ -48,7 +46,7 @@ a descubrir una amplia gama de aromas Árabes, que capturan la esencia de la ele
 Desde aromas frescos y vibrantes hasta notas cálidas. Explora nuestra colección
 y encuentra el aroma perfecto.
 
-Llévate tus aromas favoritos desde tan solo \$15.000. ¡No te pierdas esta increíble
+Llévate tus aromas favoritos desde tan solo \$17.000. ¡No te pierdas esta increíble
 oportunidad de disfrutar de fragancias de calidad a un precio increíblemente bajo!
                           ''', style: texto)
                         ],

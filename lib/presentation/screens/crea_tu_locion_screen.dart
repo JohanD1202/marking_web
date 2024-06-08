@@ -41,17 +41,26 @@ verdaderamente tuya.
 
 Cómo funciona:
 
-Explora nuestras sugerencias: Utiliza nuestro menú desplegable de sugerencias
-para inspirarte. Estas combinaciones recomendadas están diseñadas por expertos
-para ofrecerte mezclas armoniosas y sorprendentes.
+Explora nuestras sugerencias: 
+Utiliza nuestro menú desplegable de sugerencias para inspirarte. Estas
+combinaciones recomendadas están diseñadas por expertos para ofrecerte mezclas
+armoniosas y sorprendentes.
 
 Elige tus lociones: 
-Despliega los dos menús que contienen todas nuestras lociones disponibles.
-Selecciona una loción de cada lista para crear tu combinación personalizada.
+O puedes desplegar los dos menús que contienen todas nuestras lociones
+disponibles y seleccionar una loción de cada lista para crear tu combinación
+personalizada.
+
+Elige la cantidad:
+De último, elige la cantidad que deseas comprar de tu combinación.
 
 Añade tu creación al carrito:
 Una vez que hayas seleccionado tus lociones favoritas, simplemente haz clic en
 "Añadir al carrito" y tu fragancia personalizada estará lista para ser comprada.
+
+Te recordamos que en esta sección todas las lociones son de 1 fl oz.
+Haz click en el icono de "+", para hacer tantas combinaciones como desees.
+¡Siéntete libre de hacer tu Loción Personalizada!
 ''', style: texto)
                         ],
                       ),

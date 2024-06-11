@@ -19,19 +19,24 @@ class HelpMobile extends StatefulWidget {
 
 class _HelpMobileState extends State<HelpMobile> {
 
-  @override
-  Widget build(BuildContext context) {
-    
-    return Consumer<HelpScreenState>(builder: (context, helpScreenState, _) {
-      return helpScreenState.showFullContent
-        ? buildFullContent(context)
-        : buildPartialContent(context);
-      },
-    );
+  String currentView = 'help';
+
+  void showFullContent() {
+    setState(() {
+      currentView = 'help';
+    });
   }
 
-  Widget buildAromasGuide(BuildContext context) {
-    return const GuiaAromasMobile();
+  @override
+  Widget build(BuildContext context) {
+    switch (currentView) {
+      case 'aromasGuide':
+      return const GuiaAromasMobile();
+      case 'faq':
+      return const PreguntasFrecuentesMobile();
+      default:
+      return buildFullContent(context);
+    }
   }
 
   Widget buildFullContent(BuildContext context) {
@@ -73,7 +78,9 @@ class _HelpMobileState extends State<HelpMobile> {
                                   description: 'Resuelve las dudas más frecuentes',
                                   padding: const EdgeInsets.fromLTRB(55, 15, 55, 20),
                                   onTapCallback: () {
-                                    Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
+                                    setState(() {
+                                      currentView = 'faq';
+                                    });
                                   },
                                 ),
                                 const Spacer(),
@@ -89,18 +96,12 @@ class _HelpMobileState extends State<HelpMobile> {
                                       description: 'Conoce tu Aroma indicado',
                                       padding: const EdgeInsets.fromLTRB(53, 15, 55, 20),
                                       onTapCallback: () {
-                                        Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
+                                        setState(() {
+                                          currentView = 'aromasGuide';
+                                        });
                                       },
                                     ),
                                     const Spacer(),
-                                    /*const DebitoMobile(
-                                      image: 'assets/images/debito1.jpg',
-                                      height: 100,
-                                      title: 'Medios de Pago', 
-                                      description: 'Consulta o agrega las opciones de pago',
-                                      padding: EdgeInsets.fromLTRB(40, 0, 40, 0),
-                                    ),
-                                    const Spacer(),*/
                                   ],
                                 ),
                               ],
@@ -117,13 +118,13 @@ class _HelpMobileState extends State<HelpMobile> {
       );
   }
 } 
-  
+/*
   Widget buildPartialContent(BuildContext context) {
     return const PreguntasFrecuentesMobile();
   }
 
       
-/*
+
 class HelpScreenState extends ChangeNotifier {
   bool showFullContent = true;
   bool showAromasGuide = false;
@@ -230,7 +231,7 @@ class QuestionsMobile extends StatefulWidget {
   final String title;
   final String description;
   final EdgeInsets padding;
-  final Function onTapCallback;
+  final VoidCallback onTapCallback;
 
   // ignore: use_super_parameters
   const QuestionsMobile({
@@ -250,7 +251,7 @@ class _QuestionsMobileState extends State<QuestionsMobile> {
 
   //int indiceWidget2 = 0;
   void _handleTap() {
-    widget.onTapCallback;
+    widget.onTapCallback();
   }
 
   @override
@@ -280,9 +281,7 @@ class _QuestionsMobileState extends State<QuestionsMobile> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(100),
                   child: GestureDetector(
-                    onTap: () {
-                      Provider.of<HelpScreenState>(context, listen: false).toggleContent();
-                    },
+                    onTap: _handleTap,
                     child: Image.asset(widget.image)
                   )
                 )
@@ -310,7 +309,7 @@ class AromasGuideMobile extends StatefulWidget {
   final String title;
   final String description;
   final EdgeInsets padding;
-  final Function onTapCallback;
+  final VoidCallback onTapCallback;
 
   // ignore: use_super_parameters
   const AromasGuideMobile({
@@ -330,7 +329,7 @@ class _AromasGuideMobileState extends State<AromasGuideMobile> {
 
   //int indiceWidget2 = 0;
   void _handleTap() {
-    widget.onTapCallback;
+    widget.onTapCallback();
   }
 
   @override
@@ -360,9 +359,7 @@ class _AromasGuideMobileState extends State<AromasGuideMobile> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(100),
                   child: GestureDetector(
-                    onTap: () {
-                      Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
-                    },
+                    onTap: _handleTap,
                     child: Image.asset(widget.image)
                   )
                 )

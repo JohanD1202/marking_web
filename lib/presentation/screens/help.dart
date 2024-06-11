@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 import 'dart:html' as html;
@@ -16,23 +15,25 @@ class Help extends StatefulWidget {
 }
 
 class _HelpState extends State<Help> {
+  
+  String currentView = 'help';
+
+  void showFullContent() {
+    setState(() {
+      currentView = 'help';
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    
-    return Consumer<HelpScreenState>(builder: (context, helpScreenState, _) {
-      if (helpScreenState.showAromasGuide) {
-        return buildAromasGuide(context);
-      }
-      return helpScreenState.showFullContent
-        ? buildFullContent(context)
-        : buildPartialContent(context);
-      },
-    );
-  }
-
-  Widget buildAromasGuide(BuildContext context) {
-    return const GuiaAromas();
+    switch (currentView) {
+      case 'aromasGuide':
+      return const GuiaAromas();
+      case 'faq':
+      return const PreguntasFrecuentes();
+      default:
+      return buildFullContent(context);
+    }
   }
 
   Widget buildFullContent(BuildContext context) {
@@ -73,7 +74,9 @@ class _HelpState extends State<Help> {
                                     description: 'Resuelve las dudas más frecuentes',
                                     padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
                                     onTapCallback: () {
-                                      Provider.of<HelpScreenState>(context, listen: false).showFullContent = false;
+                                      setState(() {
+                                        currentView = 'faq';
+                                      });
                                     },
                                   ),
                                 ],
@@ -87,17 +90,12 @@ class _HelpState extends State<Help> {
                                       description: 'Conoce tu Aroma indicado',
                                       padding: const EdgeInsets.fromLTRB(15, 20, 100, 20),
                                       onTapCallback: () {
-                                        Provider.of<HelpScreenState>(context, listen: false).toggleAromasGuide();
+                                        setState(() {
+                                          currentView = 'aromasGuide';
+                                        });
                                       },
                                     ),
                                     const SizedBox(width: 15),
-                                    /*const Debito(
-                                      image: 'assets/images/debito1.jpg',
-                                      height: 100,
-                                      title: 'Medios de Pago', 
-                                      description: 'Consulta, agrega o edita las opciones de pago',
-                                      padding: EdgeInsets.fromLTRB(2, 0, 100, 0),
-                                    ),*/
                                   ],
                                 ),
                               ],
@@ -120,7 +118,7 @@ class _HelpState extends State<Help> {
       );
   }
 } 
-  
+  /*
   Widget buildPartialContent(BuildContext context) {
     return const PreguntasFrecuentes();
   }
@@ -141,9 +139,14 @@ class HelpScreenState extends ChangeNotifier {
     showFullContent = false;
     notifyListeners();
   }
+
+  void resetState() {
+    showFullContent = true;
+    showAromasGuide = false;
+    notifyListeners();  }
 }
 
-
+*/
 void _launchWhatsApp(String phoneNumber) async {
 
   String url;
@@ -234,7 +237,7 @@ class Questions extends StatefulWidget {
   final String title;
   final String description;
   final EdgeInsets padding;
-  final Function onTapCallback;
+  final VoidCallback onTapCallback;
 
   // ignore: use_super_parameters
   const Questions({
@@ -252,9 +255,8 @@ class Questions extends StatefulWidget {
 
 class _QuestionsState extends State<Questions> {
 
-  //int indiceWidget2 = 0;
   void _handleTap() {
-    widget.onTapCallback;
+    widget.onTapCallback();
   }
 
   @override
@@ -284,9 +286,7 @@ class _QuestionsState extends State<Questions> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(100),
                   child: GestureDetector(
-                    onTap: () {
-                      Provider.of<HelpScreenState>(context, listen: false).toggleContent();
-                    },
+                    onTap: _handleTap,
                     child: Image.asset(widget.image)
                   )
                 )
@@ -384,7 +384,8 @@ class _AromasGuideState extends State<AromasGuide> {
     );
   }
 }
-
+//TODO: ENSEÑAR COMO COMPRAR A LA GENTE EN HELP
+/*
 class Debito extends StatefulWidget {
 
   final String image;
@@ -450,3 +451,25 @@ class _DebitoState extends State<Debito> {
 
 //fromLTRB(32, 15, 100, 15)
 //fromLTRB(15, 15, 100, 15)
+const Debito(
+                                      image: 'assets/images/debito1.jpg',
+                                      height: 100,
+                                      title: 'Medios de Pago', 
+                                      description: 'Consulta, agrega o edita las opciones de pago',
+                                      padding: EdgeInsets.fromLTRB(2, 0, 100, 0),
+                                    ),*/
+
+                                    /*
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Provider.of<HelpScreenState>(context, listen: false).resetState();
+    });
+  }
+*/
+/*
+  Widget buildAromasGuide(BuildContext context) {
+    return const GuiaAromas();
+  }
+*/

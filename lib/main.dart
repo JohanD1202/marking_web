@@ -10,11 +10,8 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => HelpScreenState(),
-        ),
-        ChangeNotifierProvider(
           create: (context) => CartModel(),
-        )
+        ),
       ],
     child: const MyApp(),
   ),

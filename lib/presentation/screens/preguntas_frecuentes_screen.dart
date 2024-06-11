@@ -1,10 +1,21 @@
 import 'package:marking_web/exports.dart';
 
 
-class PreguntasFrecuentes extends StatelessWidget {
+class PreguntasFrecuentes extends StatefulWidget {
+
+
   // ignore: use_super_parameters
-  const PreguntasFrecuentes({Key? key}) : super(key: key);
-  
+  const PreguntasFrecuentes({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  State<PreguntasFrecuentes> createState() => _PreguntasFrecuentesState();
+}
+
+class _PreguntasFrecuentesState extends State<PreguntasFrecuentes> {
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -93,20 +104,6 @@ En aromasselectos.com.co puedes pagar con Nequi, Bancolombia, o en efectivo. Só
 productos seleccionados e inmediatamente podrás comunicarte con nosotros para decidir tu método de pago.
 '''
     ),
-    /*FaqItem(
-      question: 'No logro finalizar la compra con mi tarjeta en la tienda online ¿Por qué?',
-      answer: '''
-Antes de finalizar la compra asegúrate de haber ingresado los datos de tu tarjeta de crédito correctamente incluyendo 
-nombre de tarjetahabiente, número de tarjeta, fecha de validez, y código de seguridad, en caso de estar haciendo el 
-pago con PSE asegúrate de tener los permisos para realizar compras online a través de cuenta 
-(para consultar los permisos debes comunicarte con tu entidad bancaria).
-
-Si no puedes proceder con tu pago comunícate a través de nuestros canales de atención:
-A través de nuestros números de WhatsApp
-A través de nuestro correo aromasselectos24@gmail.com
-Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
-'''
-    ),*/
     FaqItem(
       question: '¿Los precios incluyen IVA?',
       answer: '''
@@ -163,25 +160,6 @@ tenemos envíos gratis. El tiempo de entrega oscila entre
 5 y 10 días hábiles según la ciudad donde quieras recibir tu pedido.
 '''
     ),
-    /*FaqItem(
-      question: '¿Qué hago si quiero cambiar la dirección de entrega o cometí un error en ésta al realizar la compra?',
-      answer: '''
-Puedes comunicarte a través de nuestros canales de atención:
-A través de nuestros números de Whatsapp
-A través de nuestro correo aromasselectos24@gmail.com
-Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
-'''
-    ),
-    FaqItem(
-      question: '¿Qué hago si no estaba al momento de la entrega?',
-      answer: '''
-Si no estás para recibir tu pedido, la transportadora puede dejar tu producto con cualquier persona
-mayor de edad que se encuentre en el domicilio registrado en el momento de la compra.
-Si no hay nadie para recibir el pedido, se realizará un nuevo intento de entrega al siguiente día hábil.
-La transportadora realizará hasta 2 intentos de entrega y si no puede realizar la entrega del pedido
-éste será devuelto a nuestras bodegas.
-'''
-    ),*/
     FaqItem(
       question: '¿Qué hago si mi producto no es el que pedí?',
       answer: '''
@@ -233,3 +211,38 @@ Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
   );
  }
 }
+
+/*FaqItem(
+      question: 'No logro finalizar la compra con mi tarjeta en la tienda online ¿Por qué?',
+      answer: '''
+Antes de finalizar la compra asegúrate de haber ingresado los datos de tu tarjeta de crédito correctamente incluyendo 
+nombre de tarjetahabiente, número de tarjeta, fecha de validez, y código de seguridad, en caso de estar haciendo el 
+pago con PSE asegúrate de tener los permisos para realizar compras online a través de cuenta 
+(para consultar los permisos debes comunicarte con tu entidad bancaria).
+
+Si no puedes proceder con tu pago comunícate a través de nuestros canales de atención:
+A través de nuestros números de WhatsApp
+A través de nuestro correo aromasselectos24@gmail.com
+Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
+'''
+    ),*/
+
+        /*FaqItem(
+      question: '¿Qué hago si quiero cambiar la dirección de entrega o cometí un error en ésta al realizar la compra?',
+      answer: '''
+Puedes comunicarte a través de nuestros canales de atención:
+A través de nuestros números de Whatsapp
+A través de nuestro correo aromasselectos24@gmail.com
+Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
+'''
+    ),
+    FaqItem(
+      question: '¿Qué hago si no estaba al momento de la entrega?',
+      answer: '''
+Si no estás para recibir tu pedido, la transportadora puede dejar tu producto con cualquier persona
+mayor de edad que se encuentre en el domicilio registrado en el momento de la compra.
+Si no hay nadie para recibir el pedido, se realizará un nuevo intento de entrega al siguiente día hábil.
+La transportadora realizará hasta 2 intentos de entrega y si no puede realizar la entrega del pedido
+éste será devuelto a nuestras bodegas.
+'''
+    ),*/

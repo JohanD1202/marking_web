@@ -409,6 +409,13 @@ TextStyle styleText3 = const TextStyle(
   fontFamily: 'Fredoka',
 );
 
+TextStyle help = const TextStyle(
+  fontSize: 24,
+  fontWeight: FontWeight.bold,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
+);
+
 TextStyle texto = TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.normal,
@@ -792,10 +799,10 @@ class TextHelp {
 
     Explora nuestras Categorías:
 
-    - Aromas Selectos
-    - Hombre
-    - Mujer
-    - Nuevo
+    - Aromas Árabes
+    - Aromas Hombre
+    - Aromas Mujer
+    - Crea Tu Loción
     - Sale
   ''';
 }
@@ -873,10 +880,10 @@ class TextHelpMobile {
 
     Explora nuestras Categorías:
 
-    - Aromas Selectos
-    - Hombre
-    - Mujer
-    - Nuevo
+    - Aromas Árabes
+    - Aromas Hombre
+    - Aromas Mujer
+    - Crea Tu Loción
     - Sale
   ''';
 }
@@ -907,8 +914,8 @@ class TextHelpWidget extends StatelessWidget {
     final List<String> highlightedWords = [
       'Preguntas Frecuentes', 'Aromas Selectos', 
       'Proceso de Compra','Atención al Cliente', 
-      'Nuevo', 'Hombre', 'Mujer', 
-      'Sale'
+      'Aromas Hombre', 'Aromas Mujer', 
+      'Sale', 'Aromas Árabes', 'Crea Tu Loción'
     ];
 
     // Creamos una expresión regular para buscar las palabras destacadas
@@ -975,8 +982,8 @@ class TextHelpWidgetMobile extends StatelessWidget {
     final List<String> highlightedWords = [
       'Preguntas Frecuentes', 'Aromas Selectos', 
       'Proceso de Compra','Atención al Cliente', 
-      'Nuevo', 'Hombre', 'Mujer', 
-      'Sale'
+      'Aromas Árabes', 'Aromas Hombre', 'Aromas Mujer', 
+      'Sale', 'Crea Tu Loción',
     ];
 
     // Creamos una expresión regular para buscar las palabras destacadas

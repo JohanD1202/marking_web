@@ -130,15 +130,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 //const Spacer(),
                 const SizedBox(width: 50),
-                /*ButtonTextBar(
-                  buttonText: 'Aromas Selectos', 
-                  onPressed: () {
-                    setState(() {
-                      indiceWidget = 1;
-                    });
-                  }
-                ),*/
-                //const SizedBox(width: 50),
                 ButtonTextBar(
                   buttonText: 'Aromas Árabes', 
                   onPressed: () {
@@ -192,7 +183,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     });
                   }
                 ),
-                //const SizedBox(width: 50),
                 const Spacer(flex: 1),
               ],
             ),

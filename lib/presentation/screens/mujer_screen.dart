@@ -64,7 +64,7 @@ class MujerScreen extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 35),
+                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
                 child: Row(
                   children: [
                     Expanded(
@@ -75,16 +75,19 @@ class MujerScreen extends StatelessWidget {
                           const SizedBox(height: 20),
                           Text('''
 Bienvenidos a nuestra sección dedicada a las mujeres sofisticadas y con estilo.
-En Aromas Selectos, no solo te ofrecemos una exquisita variedad de fragancias
-que reflejan tu esencia única, sino que también hemos seleccionado
-cuidadosamente una colección de bolsos, carteras y más accesorios que realzarán
-tu look con feminidad y originalidad.
+En Aromas Selectos, te ofrecemos una exquisita variedad de fragancias
+que reflejan tu esencia única.
 
 Descubre tus aromas favoritos desde tan solo \$15.000.
-¡No te pierdas esta maravillosa oportunidad de disfrutar de fragancias
-y accesorios de primera calidad a un precio increíblemente asequible!
+Elige el tamaño de tu loción en fl oz y luego la cantidad.
+Nuestros precios se manejan así:
+1 fl oz = \$15.000
+2 fl oz = \$29.000
+3 fl oz = \$40.000
+
+¡No te pierdas esta maravillosa oportunidad de disfrutar de fragancias de
+primera calidad a un precio increíblemente asequible!
                           ''', style: texto),
-                          Text('Bolsos', style: styleText3)
                         ],
                       ),
                     ),

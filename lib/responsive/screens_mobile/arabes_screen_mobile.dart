@@ -28,7 +28,7 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Row(
                   children: [
                     Expanded(
@@ -37,22 +37,30 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
                         children: [
                           Text('Bienvenidos a la sección de Aromas Árabes', style: styleText3Mobile),
                           Padding(
-                            padding: const EdgeInsets.only(top: 20, bottom: 10),
+                            padding: const EdgeInsets.only(top: 20),
                             child: Text('''
-Bienvenidos a nuestra sección de Aromas
-Árabes, en este espacio te invitamos a
-descubrir una amplia gama de aromas Árabes,
-que capturan la esencia de la elegancia.
+Bienvenidos a nuestra sección de Aromas Árabes, en
+este espacio te invitamos a descubrir una amplia
+gama de aromas Árabes, que capturan la esencia de
+la elegancia.
 
-Desde aromas frescos y vibrantes hasta
-notas cálidas. Explora nuestra colección
-y encuentra el aroma perfecto.
+Desde aromas frescos y vibrantes hasta notas cálidas.
+Explora nuestra colección y encuentra el aroma
+perfecto.
 
-Llévate tus aromas favoritos desde tan solo
-\$15.000. ¡No te pierdas esta increíble
-oportunidad de disfrutar de fragancias de
-calidad a un precio increíblemente bajo!
-                            ''', style: texto),
+Llévate tus aromas favoritos desde tan solo \$17.000.
+Elige el tamaño de tu loción en fl oz y luego la
+cantidad.
+
+Nuestros precios se manejan así:
+1 fl oz = \$17.000
+2 fl oz = \$33.000
+3 fl oz = \$45.000
+
+¡No te pierdas esta increíble oportunidad de disfrutar
+de fragancias de calidad a un precio increíblemente
+bajo!
+                            ''', style: textoMobile),
                           )
                         ],
                       )

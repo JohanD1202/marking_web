@@ -29,7 +29,8 @@ class SaleScreen extends StatelessWidget {
                           Text('Bienvenidos a la sección de Sale', style: styleText3),
                           const SizedBox(height: 20),
                           Text('''
-Aquí encontrarás las mejores promociones en una amplia variedad de productos.
+Aquí encontrarás las mejores promociones en una amplia variedad de
+productos que tenemos para ti.
 Aprovecha estas ofertas especiales y añade estilo a tu vida
 Con nuestros productos de alta calidad a precios irresistibles.
 

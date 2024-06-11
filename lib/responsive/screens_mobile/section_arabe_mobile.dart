@@ -38,8 +38,6 @@ class _SectionArabeMobileState extends State<SectionArabeMobile> {
     });
   }
 
-  //Cart myCart = Cart();
-
   @override
   Widget build(BuildContext context) {
     return const Column(
@@ -48,7 +46,7 @@ class _SectionArabeMobileState extends State<SectionArabeMobile> {
         Row(
           children: [
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
                 imageLocion: 'assets/images/aroma_1.jpg',
                 imageLocion2: 'assets/images/aroma_2.jpg',
                 imageHeight: 240,
@@ -56,11 +54,11 @@ class _SectionArabeMobileState extends State<SectionArabeMobile> {
                 nameLocion: '''Yara
 Lattafa''',
                 symbol: '\$',
-                priceOriginal: 15.000,
+                priceOriginal: 17.000,
                 onzas: '1 fl oz',
               ),
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 240,
@@ -68,7 +66,7 @@ Lattafa''',
               nameLocion: '''Ombre Nomade
 Louis Vuitton''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -79,7 +77,7 @@ Louis Vuitton''',
         Row(
           children: [
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 240,
@@ -87,11 +85,11 @@ Louis Vuitton''',
               nameLocion: '''Bade'e Al Oud Amethyst
 Lattafa''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 240,
@@ -99,7 +97,7 @@ Lattafa''',
               nameLocion: '''Oud for Greatness
 Initio''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -110,7 +108,7 @@ Initio''',
         Row(
           children: [
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 240,
@@ -118,11 +116,11 @@ Initio''',
               nameLocion: '''Amber Oud
 Al Haramain''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_8.jpg',
               imageHeight: 240,
@@ -130,7 +128,7 @@ Al Haramain''',
               nameLocion: '''L' Aventure
 Al Haramain''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -141,7 +139,7 @@ Al Haramain''',
         Row(
           children: [
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_9.jpg',
               imageHeight: 240,
@@ -149,11 +147,11 @@ Al Haramain''',
               nameLocion: '''Madinah
 Al Haramain''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_10.jpg',
               imageHeight: 240,
@@ -161,7 +159,7 @@ Al Haramain''',
               nameLocion: '''Santal 33
 Le Labo''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -172,7 +170,7 @@ Le Labo''',
         Row(
           children: [
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_12.jpg',
               imageHeight: 240,
@@ -180,11 +178,11 @@ Le Labo''',
               nameLocion: '''Il Kakuno
 ILMIN''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_13.jpg',
               imageHeight: 240,
@@ -192,7 +190,7 @@ ILMIN''',
               nameLocion: '''Il Femme
 ILMIN''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -203,7 +201,7 @@ ILMIN''',
         Row(
           children: [
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 240,
@@ -211,11 +209,11 @@ ILMIN''',
               nameLocion: '''Arabians Tonka
 Montale''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 240,
@@ -223,7 +221,7 @@ Montale''',
               nameLocion: '''Intense Cafe
 Montale''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
@@ -234,7 +232,7 @@ Montale''',
         Row(
           children: [
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 240,
@@ -242,11 +240,11 @@ Montale''',
               nameLocion: '''Baccarat Rouge 540
 Francis Kurkdjian''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),
-            LocionMobile(
+            LocionArabeMobile(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 240,
@@ -254,7 +252,7 @@ Francis Kurkdjian''',
               nameLocion: '''Oud Saffron
 Orientica''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
             Spacer(),

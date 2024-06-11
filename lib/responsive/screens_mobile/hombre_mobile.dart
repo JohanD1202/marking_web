@@ -28,7 +28,7 @@ class _HombreScreenMobileState extends State<HombreScreenMobile> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Row(
                   children: [
                     Expanded(
@@ -37,18 +37,25 @@ class _HombreScreenMobileState extends State<HombreScreenMobile> {
                         children: [
                           Text('Bienvenidos a la sección de Hombre', style: styleText3Mobile),
                           Padding(
-                            padding: const EdgeInsets.only(top: 20, bottom: 10),
+                            padding: const EdgeInsets.only(top: 20),
                             child: Text('''
-Bienvenidos a nuestra sección dedicada
-a los hombres modernos y con estilo. 
-En Aromas Selectos, te ofrecemos una 
-exquisita variedad de fragancias 
-que reflejan tu personalidad única.
+Bienvenidos a nuestra sección dedicada a los hombres
+modernos y con estilo. En Aromas Selectos, te
+ofrecemos una exquisita variedad de fragancias que
+reflejan tu personalidad única.
 
-Llévate tus aromas favoritos desde \$15.000. 
-¡No te pierdas esta increíble oportunidad de 
-disfrutar de fragancias de calidad a un
-precio increíblemente bajo!''', style: texto),
+Llévate tus aromas favoritos desde \$15.000.
+Elige el tamaño de tu loción en fl oz y luego la
+cantidad.
+
+Nuestros precios se manejan así:
+1 fl oz = \$15.000
+2 fl oz = \$29.000
+3 fl oz = \$40.000
+
+¡No te pierdas esta increíble oportunidad de
+disfrutar de fragancias de calidad a un precio
+increíblemente bajo!''', style: textoMobile),
                           )
                         ],
                       )

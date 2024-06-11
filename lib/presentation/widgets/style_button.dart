@@ -416,6 +416,13 @@ TextStyle texto = TextStyle(
   fontFamily: 'Fredoka',
 );
 
+TextStyle textoMobile = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.normal,
+  color: Colors.grey[800],
+  fontFamily: 'Fredoka',
+);
+
 TextStyle styleText3Mobile = const TextStyle(
   fontSize: 19,
   fontWeight: FontWeight.w600,
@@ -471,6 +478,18 @@ TextStyle styleTextLocion100 = TextStyle(
 
 TextStyle styleTextLocionMobile = TextStyle(
   fontSize: 12,
+  color: Colors.grey [800],
+  fontFamily: 'Fredoka',
+);
+
+TextStyle cantidadMobile = TextStyle(
+  fontSize: 11,
+  color: Colors.grey [800],
+  fontFamily: 'Fredoka',
+);
+
+TextStyle cantidad = TextStyle(
+  fontSize: 13,
   color: Colors.grey [800],
   fontFamily: 'Fredoka',
 );

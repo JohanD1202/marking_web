@@ -1,4 +1,5 @@
 import 'package:marking_web/exports.dart';
+import 'package:marking_web/presentation/screens/widgets_lociones.dart';
 
 
 class SectionArabe extends StatefulWidget {
@@ -27,7 +28,7 @@ class _SectionArabeState extends State<SectionArabe> {
         Row(
           children: [
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
@@ -39,7 +40,7 @@ Lattafa''',
               onzas: '1 fl oz',
             ),
             Spacer(),            
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
@@ -51,7 +52,7 @@ Louis Vuitton''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
@@ -63,7 +64,7 @@ Amethyst Lattafa''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
@@ -82,7 +83,7 @@ Initio''',
         Row(
           children: [
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 370,
@@ -106,7 +107,7 @@ Al Haramain''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_9.jpg',
               imageHeight: 370,
@@ -118,7 +119,7 @@ Al Haramain''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_10.jpg',
               imageHeight: 370,
@@ -137,7 +138,7 @@ Le Labo''',
         Row(
           children: [
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_12.jpg',
               imageHeight: 370,
@@ -149,7 +150,7 @@ ILMIN''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_13.jpg',
               imageHeight: 370,
@@ -161,7 +162,7 @@ ILMIN''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_2.jpg',
               imageHeight: 370,
@@ -173,7 +174,7 @@ Montale''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_3.jpg',
               imageHeight: 370,
@@ -192,7 +193,7 @@ Montale''',
         Row(
           children: [
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
@@ -204,7 +205,7 @@ Francis Kurkdjian''',
               onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,

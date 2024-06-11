@@ -34,6 +34,7 @@ class _LocionState extends State<Locion> {
 
   int _quantity = 1;
   double _totalPrice = 0.0;
+  String _selectedOnza = '1';
 
 
   @override
@@ -45,8 +46,31 @@ class _LocionState extends State<Locion> {
   void updateQuantity(int newQuantity) {
     setState(() {
       _quantity = newQuantity;
-      _totalPrice = widget.priceOriginal * _quantity;
+      _totalPrice = _calculatePrice();
     });
+  }
+
+  void updateOnza(String? newOnza) {
+    setState(() {
+      _selectedOnza = newOnza!;
+      _totalPrice = _calculatePrice();
+    });
+  }
+
+  double _calculatePrice() {
+    double basePrice;
+    switch (_selectedOnza) {
+      case '2':
+      basePrice = 29;
+      break;
+      case '3':
+      basePrice = 40;
+      break;
+      default:
+      basePrice = widget.priceOriginal;
+      break;
+    }
+    return basePrice * _quantity;
   }
 
 
@@ -84,17 +108,30 @@ class _LocionState extends State<Locion> {
               child: Text(widget.nameLocion, style: styleTextLocion),
             ),
             Positioned(
-              top: 410,
+              top: 400,
               bottom: 8,
               left: 12,
               right: 8,
-              child: Text(widget.onzas, style: styleTextLocion),
+              child: DropdownButton<String>(
+                value: _selectedOnza,
+                onChanged: updateOnza,
+                items: ['1', '2', '3'].map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text('$value fl oz', style: styleTextLocion),
+                  );
+                }).toList(),
+              ),
             ),
             Positioned(
-              top: 410,
-              right: 20,
-              left: 180,
-              child: Cantidad(onQuantityChanged: (p0) => 1),
+              top: 400,
+              left: 170,
+              child: Text('Cantidad:', style: cantidad),
+            ),
+            Positioned(
+              top: 425,
+              left: 175,
+              child: Cantidad(onQuantityChanged: updateQuantity),
             ),
             Positioned(
               top: 435,
@@ -114,8 +151,8 @@ class _LocionState extends State<Locion> {
                   image: widget.imageLocion,
                   imageWidth: 120,
                   imageHeight: 185,
-                  onzas: widget.onzas,
-                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                  onzas: _selectedOnza,
+                  cantidad: _quantity,
                 ),
               ),
             ),
@@ -126,6 +163,170 @@ class _LocionState extends State<Locion> {
   }
 }
 
+//TODO: LOCION ARABE
+
+class LocionArabe extends StatefulWidget {
+  
+  final String imageLocion;
+  final String imageLocion2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameLocion;
+  final String symbol;
+  final double priceOriginal;
+  final String onzas;
+
+  // ignore: use_super_parameters
+  const LocionArabe({
+    Key? key,
+    required this.imageLocion,
+    required this.imageLocion2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameLocion,
+    required this.symbol,
+    required this.priceOriginal,
+    required this.onzas,
+  }) : super(key: key);
+
+  @override
+  State<LocionArabe> createState() => _LocionArabeState();
+
+}
+
+class _LocionArabeState extends State<LocionArabe> {
+
+  int _quantity = 1;
+  double _totalPrice = 0.0;
+  String _selectedOnza = '1';
+
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = _calculatePrice();
+    });
+  }
+
+  void updateOnza(String? newOnza) {
+    setState(() {
+      _selectedOnza = newOnza!;
+      _totalPrice = _calculatePrice();
+    });
+  }
+
+  double _calculatePrice() {
+    double basePrice;
+    switch (_selectedOnza) {
+      case '2':
+      basePrice = 33;
+      break;
+      case '3':
+      basePrice = 45;
+      break;
+      default:
+      basePrice = widget.priceOriginal;
+      break;
+    }
+    return basePrice * _quantity;
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
+      ),
+      child: Container(
+        height: 510,
+        width: 250,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: ImageOnHover(
+                imagePath: widget.imageLocion,
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
+              ),
+            ),
+            Positioned(
+              top: 360,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameLocion, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 400,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: DropdownButton<String>(
+                value: _selectedOnza,
+                onChanged: updateOnza,
+                items: ['1', '2', '3'].map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text('$value fl oz'),
+                  );
+                }).toList(),
+              ),
+            ),
+            Positioned(
+              top: 400,
+              left: 170,
+              child: Text('Cantidad:', style: cantidad),
+            ),
+            Positioned(
+              top: 425,
+              left: 175,
+              child: Cantidad(onQuantityChanged: updateQuantity),
+            ),
+            Positioned(
+              top: 435,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice),
+            ),
+            Positioned(
+              top: 470,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameLocion,
+                  price: _totalPrice,
+                  image: widget.imageLocion,
+                  imageWidth: 120,
+                  imageHeight: 185,
+                  onzas: _selectedOnza,
+                  cantidad: _quantity,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+/*
 
 //TODO: BOLSOS
 
@@ -225,7 +426,7 @@ class _BolsosState extends State<Bolsos> {
                   image: widget.imageBolso,
                   imageWidth: 120,
                   imageHeight: 185,
-                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                  cantidad: _quantity,
                 ),
               ),
             ),
@@ -235,7 +436,7 @@ class _BolsosState extends State<Bolsos> {
     );
   }
 }
-
+*/
 //TODO: BOLSOS PROMOTION
 
 
@@ -273,17 +474,20 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
 
   int _quantity= 1;
   double _totalPrice = 0.0;
+  double _totalDiscountedPrice = 0.0;
 
   @override
   void initState() {
     super.initState();
     _totalPrice = widget.priceDescuento * _quantity;
+    _totalDiscountedPrice = widget.priceDescuento * _quantity;
   }
 
   void updateQuantity(int newQuantity) {
     setState(() {
       _quantity = newQuantity;
-      _totalPrice = widget.priceDescuento * _quantity;
+      _totalPrice = widget.price * _quantity;
+      _totalDiscountedPrice = widget.priceDescuento * _quantity;
     });
   }
 
@@ -327,6 +531,16 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
               child: Text('${widget.symbol}${widget.price.toStringAsFixed(3)}', style: styleTextSale),
             ),
             Positioned(
+              top: 400,
+              left: 170,
+              child: Text('Cantidad:', style: cantidad),
+            ),
+            Positioned(
+              top: 425,
+              left: 175,
+              child: Cantidad(onQuantityChanged: updateQuantity),
+            ),
+            Positioned(
               top: 435,
               left: 13,
               right: 12,
@@ -345,12 +559,12 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameBolso,
-                  price: _totalPrice,
+                  price: _totalDiscountedPrice,
                   image: widget.imageBolso,
                   imageWidth: 120,
                   imageHeight: 185,
-                  priceDescuento: widget.price,
-                  cantidad: Cantidad(onQuantityChanged: updateQuantity),
+                  priceDescuento: _totalPrice,
+                  cantidad: _quantity,
                 ),
               ),
             ),
@@ -1375,8 +1589,8 @@ class PriceMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 33,
-      height: 18,
+      width: 30,
+      height: 17,
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(10),
@@ -1385,7 +1599,7 @@ class PriceMobile extends StatelessWidget {
       child: InkWell(
         onTap: () {},
         child: Center(
-          child: Text(price, style: const TextStyle(fontSize: 12, color: Colors.white, fontFamily: 'Fredoka'),
+          child: Text(price, style: const TextStyle(fontSize: 11, color: Colors.white, fontFamily: 'Fredoka'),
           ),
         ),
       ),
@@ -1438,7 +1652,7 @@ class Product {
   final double imageWidth;
   final String? onzas;
   final double? priceDescuento;
-  final Widget cantidad;
+  final int cantidad;
 
   Product({
     required this.id,
@@ -1531,6 +1745,61 @@ class _CantidadState extends State<Cantidad> {
 }
 
 //TODO: TERMINA WIDGET CANTIDAD
+
+class CantidadMobile extends StatefulWidget {
+  final Function(int) onQuantityChanged;
+
+  // ignore: use_super_parameters
+  const CantidadMobile({
+    Key? key,
+    required this.onQuantityChanged,
+  }) : super(key: key);
+
+  @override
+  State<CantidadMobile> createState() => _CantidadMobileState();
+}
+
+class _CantidadMobileState extends State<CantidadMobile> {
+  int selectedNumber = 1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 33,
+      height: 20,
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.black87),
+        color: Colors.white,
+      ),
+      child: DropdownButtonHideUnderline(
+        child: DropdownButton<int>(
+          value: selectedNumber,
+          icon: const Icon(Icons.keyboard_arrow_down_rounded, color: Colors.black),
+          iconSize: 14,
+          elevation: 0,
+          style: const TextStyle(color: Colors.black, fontSize: 10),
+          onChanged: (int? newValue) {
+            if (newValue != null) {
+              setState(() {
+              selectedNumber = newValue;
+            });
+            widget.onQuantityChanged(newValue);
+            }
+          },
+          items: List.generate(10, (index) => index + 1).map<DropdownMenuItem<int>>((int value) {
+            return DropdownMenuItem<int>(
+              value: value,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 4),
+                child: Text(value.toString())
+              ),
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
 
 /*class WidgetCamisetas extends StatefulWidget {
 

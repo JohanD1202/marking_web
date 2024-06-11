@@ -67,15 +67,15 @@ class _CartScreenState extends State<CartScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 10),
+                                    padding: const EdgeInsets.only(top: 8),
                                     child: Text(product.name, style: styleTextLocion),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 10),
-                                    child: Text(product.onzas ?? "", style: styleTextLocion),
+                                    padding: const EdgeInsets.only(top: 8),
+                                    child: Text('${product.onzas} fl oz' ?? "", style: styleTextLocion),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 10),
+                                    padding: const EdgeInsets.only(top: 8),
                                     child: Text(
                                       product.priceDescuento != null && product.priceDescuento! > 0 
                                           ? '\$${product.priceDescuento}.000' 
@@ -84,12 +84,12 @@ class _CartScreenState extends State<CartScreen> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 10),
+                                    padding: const EdgeInsets.only(top: 8),
                                     child: Text('\$${product.price}.000', style: styleTextPrice),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 10),
-                                    child: product.cantidad,
+                                    padding: const EdgeInsets.only(top: 8),
+                                    child: Text('Cantidad: ${product.cantidad}', style: styleTextLocion),
                                   ),
                                 ],
                               ),
@@ -145,7 +145,7 @@ class _CartScreenState extends State<CartScreen> {
 }
 
 void _launchWhatsApp(String phoneNumber, CartModel cart) async {
-  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? ""} - \$${product.price}.000').join('\n');
+  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? ""} - Cantidad: ${product.cantidad} - \$${product.price}.000').join('\n');
   final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent('Hola, quiero comprar estos productos:\n$message')}");
 
   if (await canLaunchUrl(whatsappUrl)) {

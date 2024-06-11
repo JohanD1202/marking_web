@@ -65,7 +65,7 @@ class MujerScreenMobile extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Row(
                   children: [
                     Expanded(
@@ -74,26 +74,27 @@ class MujerScreenMobile extends StatelessWidget {
                         children: [
                           Text('Bienvenidos a la sección de Mujer', style: styleText3Mobile),
                           Padding(
-                            padding: const EdgeInsets.only(top: 20, bottom: 10),
+                            padding: const EdgeInsets.only(top: 20),
                             child: Text('''
-Bienvenidos a nuestra sección dedicada 
-a las mujeres sofisticadas y con estilo.
-En Aromas Selectos, no solo te ofrecemos 
-una exquisita variedad de fragancias
-que reflejan tu esencia única, sino que 
-también hemos seleccionado cuidadosamente 
-una colección de bolsos, carteras y más
-accesorios que realzarán tu look con
-feminidad y originalidad.
+Bienvenidos a nuestra sección dedicada a las mujeres
+sofisticadas y con estilo. En Aromas Selectos, te
+ofrecemos una exquisita variedad de fragancias que
+reflejan tu esencia única.
 
 Descubre tus aromas favoritos desde \$15.000.
-¡No te pierdas esta maravillosa oportunidad 
-De disfrutar de fragancias y accesorios de
-primera calidad a un precio increíblemente
-asequible!
-''', style: texto),
+Elige el tamaño de tu loción en fl oz y luego la
+cantidad.
+
+Nuestros precios se manejan así:
+1 fl oz = \$15.000
+2 fl oz = \$29.000
+3 fl oz = \$40.000
+
+¡No te pierdas esta maravillosa oportunidad de
+disfrutar de fragancias de primera calidad a
+un precio increíblemente asequible!
+''', style: textoMobile),
                           ),
-                          Text('Bolsos', style: styleText3Mobile)
                         ],
                       ),
                     ),

@@ -40,7 +40,13 @@ Bienvenidos a nuestra sección dedicada a los hombres modernos y con estilo.
 En Aromas Selectos, te ofrecemos una exquisita variedad de fragancias 
 que reflejan tu personalidad única.
 
-Llévate tus aromas favoritos desde tan solo \$15.000. 
+Llévate tus aromas favoritos desde tan solo \$15.000.
+Elige el tamaño de tu loción en fl oz y luego la cantidad.
+Nuestros precios se manejan así:
+1 fl oz = \$15.000
+2 fl oz = \$29.000
+3 fl oz = \$40.000
+
 ¡No te pierdas esta increíble oportunidad de disfrutar 
 de fragancias de calidad a un precio increíblemente bajo!
                           ''', style: texto)

@@ -12,6 +12,8 @@ class SectionCreaTuLocion extends StatefulWidget {
 class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
 
   String? selectedOption1;
+  String? selectedOption2;
+  int? selectedQuantity;
   List<Widget> locionesCreadaList = [];
 
   @override
@@ -32,7 +34,7 @@ class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 60, right: 250),
-                child: Text('''Arma tu propio Aroma!
+                child: Text('''O arma tu propio Aroma!
 
 Elige 1 Loción para comenzar:''', style: styleText3Mobile),
               ),
@@ -49,6 +51,7 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
                     setState(() {
                       selectedOption1 = newValue;
                     });
+                    print('Selected option 1: $selectedOption1');
                   },
                 ),
               ),
@@ -57,6 +60,11 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
               const SizedBox(width: 20),
               ListaLociones2(
                 enabled: selectedOption1 != null && selectedOption1 != "Elige 1 Loción",
+                onChanged: (newValue) {
+                  setState(() {
+                    selectedOption2 = newValue;
+                  });
+                }
               ),
               const SizedBox(width: 10),
               IconButton(
@@ -64,12 +72,6 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
                 Icons.remove_circle_outline_rounded, size: 20,
               ),
               onPressed: () {
-
-                final _context = context;
-                (context as Element).markNeedsBuild();
-                /*setState(() {
-                  locionesCreadaList.remove(widget);
-                });*/
               },
             )
             ],
@@ -82,7 +84,47 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
           const SizedBox(height: 15),
           Padding(
             padding: const EdgeInsets.only(left: 60),
-            child: Cantidad(onQuantityChanged: (p0) => 1),
+            child: Cantidad(onQuantityChanged: (newValue) {
+              setState(() {
+                selectedQuantity = newValue;
+              });
+            }),
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 60),
+            child: ButtonTextBar(
+              buttonText: 'Listo ✔',
+              onPressed: () {
+                if (selectedOption2 == null || selectedQuantity == null) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Por favor, selecciona las 2 Lociones y la Cantidad', style: snackbar),
+                      duration: const Duration(milliseconds: 1500),
+                      backgroundColor: Colors.black,
+                    ),
+                  );
+                } else if (selectedOption1 == selectedOption2) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('No puedes elegir la misma loción 2 veces', style: snackbar),
+                      duration: const Duration(milliseconds: 1500),
+                      backgroundColor: Colors.black,
+                    )
+                  );
+                } else {
+                setState(() {
+                  if (selectedOption1 != null && selectedOption2 != null && selectedQuantity != null) {
+                    locionesCreadaList.add(LocionCreada(
+                      locion1: selectedOption1!,
+                      locion2: selectedOption2!,
+                      quantity: selectedQuantity!,
+                    ));
+                  } 
+                });
+               }
+              },
+            )
           ),
           const SizedBox(height: 20),
           Padding(
@@ -92,7 +134,7 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
                 Icons.add_circle_rounded, size: 25),
               onPressed: () {
                 setState(() {
-                  locionesCreadaList.add(const LocionCreada());
+                  locionesCreadaList.add(const LocionNueva());
                 });
               },
             ),
@@ -102,19 +144,89 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
       );
   }
 }
+                /*
+                final _context = context;
+                (context as Element).markNeedsBuild();
+                setState(() {
+                  locionesCreadaList.remove(widget);
+                });*/
+
+                /*
+                final _context = context;
+                (context as Element).markNeedsBuild();
+                setState(() {
+                  locionesCreadaList.remove(widget);
+                });*/
+
+
+
 
 class LocionCreada extends StatefulWidget {
 
+  final String locion1;
+  final String locion2;
+  final int quantity;
+
   // ignore: use_super_parameters
-  const LocionCreada({Key? key}) : super(key: key);
+  const LocionCreada({
+    Key? key,
+    required this.locion1,
+    required this.locion2,
+    required this.quantity,
+  }) : super(key: key);
 
   @override
   State<LocionCreada> createState() => _LocionCreadaState();
 }
 
 class _LocionCreadaState extends State<LocionCreada> {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 60, top: 10),
+      child: Locion(
+        imageLocion: 'assets/images/aroma_1.jpg',
+        imageLocion2: 'assets/images/aroma_6.jpg',
+        imageWidth: 240,
+        imageHeight: 370,
+        nameLocion: '${widget.locion1} + ${widget.locion2}',
+        symbol: '\$',
+        priceOriginal: 25.000,
+        onzas: '1 fl oz'
+      ),
+      
+      /*
+      Row(
+        children: [
+          Text('Locion 1: ${widget.locion1}', style: styleTextLocion),
+          const SizedBox(width: 10),
+          Text('Locion 1: ${widget.locion2}', style: styleTextLocion),
+          const SizedBox(width: 10),
+          Text('Cantidad: ${widget.quantity}', style: styleTextLocion)
+        ],
+      ),*/
+    );
+  }
+}
+
+
+class LocionNueva extends StatefulWidget {
+
+ 
+  // ignore: use_super_parameters
+  const LocionNueva({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  State<LocionNueva> createState() => _LocionNuevaState();
+}
+
+class _LocionNuevaState extends State<LocionNueva> {
 
   String? selectedOption1;
+  String? selectedOption2;
+  int? selectedQuantity;
   List<Widget> locionesCreadaList = [];
 
   @override
@@ -138,6 +250,11 @@ class _LocionCreadaState extends State<LocionCreada> {
             const SizedBox(width: 20),
             ListaLociones2(
               enabled: selectedOption1 != null && selectedOption1 != "Elige 1 Loción",
+              onChanged: (newValue) {
+                setState(() {
+                  selectedOption2 = newValue;
+                });
+              },
             ),
             const SizedBox(height: 20),
             IconButton(
@@ -145,12 +262,6 @@ class _LocionCreadaState extends State<LocionCreada> {
                 Icons.remove_circle_outline_rounded, size: 20,
               ),
               onPressed: () {
-
-                final _context = context;
-                (context as Element).markNeedsBuild();
-                /*setState(() {
-                  locionesCreadaList.remove(widget);
-                });*/
               },
             )
           ],
@@ -169,7 +280,11 @@ class _LocionCreadaState extends State<LocionCreada> {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 60, bottom: 30),
-              child: Cantidad(onQuantityChanged: (p0) => 1),
+              child: Cantidad(onQuantityChanged: (newValue) {
+                setState(() {
+                  selectedQuantity = newValue;
+                });
+              }),
             ),
           ],
         ),
@@ -222,6 +337,8 @@ class _SuggestionsState extends State<Suggestions> {
     );
   }
 }
+
+//TODO: LISTA LOCIONES
 
 class ListaLociones extends StatefulWidget {
 
@@ -313,11 +430,13 @@ class _ListaLocionesState extends State<ListaLociones> {
 class ListaLociones2 extends StatefulWidget {
 
   final bool enabled;
+  final Function(String) onChanged;
 
   // ignore: use_super_parameters
   const ListaLociones2({
     Key? key,
-    required this.enabled
+    required this.enabled,
+    required this.onChanged
   }) : super(key: key);
 
   @override
@@ -390,6 +509,7 @@ class _ListaLociones2State extends State<ListaLociones2> {
       onChanged: widget.enabled? (String? newValue) {
         setState(() {
           _selectedOption = newValue!;
+          widget.onChanged(newValue);
         });
       } : null,
       disabledHint: Text(_selectedOption, style: texto.copyWith(color: Colors.grey[300])),

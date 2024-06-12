@@ -2,6 +2,7 @@ import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/widgets/style_button.dart';
 import 'package:marking_web/responsive/screens_mobile/arabes_screen_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/cart_screen_mobile.dart';
+import 'package:marking_web/responsive/screens_mobile/crea_tu_locion_screen_mobile.dart';
 //import 'package:marking_web/presentation/screens/home_screen.dart';
 
 import 'package:marking_web/responsive/screens_mobile/help_mobile.dart';
@@ -61,10 +62,10 @@ class _MobileScreenState extends State<MobileScreen> {
                   index: indiceWidget,
                   children: const [
                     InicioMobile(),               //0
-                    AromasScreenMobile(),         //1
-                    ArabesScreenMobile(),         //2
-                    HombreScreenMobile(),         //3
-                    MujerScreenMobile(),          //4
+                    ArabesScreenMobile(),         //1
+                    HombreScreenMobile(),         //2
+                    MujerScreenMobile(),          //3
+                    CreaTuLocionMobile(),         //4
                     SaleScreenMobile(),           //5
                     HelpMobile(),                 //6
                     PreguntasFrecuentesMobile(),  //7
@@ -114,48 +115,49 @@ class _MobileScreenState extends State<MobileScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       ButtonTextFooter(
-                                        buttonText: 'Aromas Selectos', 
+                                        buttonText: 'Aromas Árabes', 
                                         onPressed: () {
                                           setState(() {
                                             indiceWidget = 1;  
                                           });
                                         }
                                       ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 15),
+                                  Row(
+                                    children: [
                                       ButtonTextFooter(
-                                        buttonText: 'Aromas Árabes', 
+                                        buttonText: 'Aromas Hombre', 
                                         onPressed: () {
                                           setState(() {
                                             indiceWidget = 2;  
                                           });
                                         }
                                       ),
+                                      const Spacer(),
+                                      ButtonTextFooter(
+                                        buttonText: 'Aromas Mujer', 
+                                        onPressed: () {
+                                          setState(() {
+                                            indiceWidget = 3;
+                                          });
+                                        }
+                                      ),
                                     ],
                                   ),
                                   const SizedBox(height: 15),
                                   Row(
                                     children: [
-                                      ButtonTextFooter(
-                                        buttonText: 'Hombre', 
-                                        onPressed: () {
-                                          setState(() {
-                                            indiceWidget = 3;  
-                                          });
-                                        }
-                                      ),
                                       const Spacer(),
                                       ButtonTextFooter(
-                                        buttonText: 'Mujer', 
+                                        buttonText: 'Crea Tu Loción',
                                         onPressed: () {
                                           setState(() {
                                             indiceWidget = 4;
                                           });
                                         }
                                       ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 15),
-                                  Row(
-                                    children: [
                                       const Spacer(),
                                       ButtonTextFooter(
                                         buttonText: 'Sale', 
@@ -357,8 +359,8 @@ o en efectivo''',
                 ),
               ),
               ButtonTextMobile(
-                buttonText: 'Aromas Selectos',
-                padding: const EdgeInsets.only(right: 100),
+                buttonText: 'Aromas Árabes', 
+                padding: const EdgeInsets.only(right: 110),
                 onPressed: () {
                   setState(() {
                     indiceWidget = 1;
@@ -367,18 +369,18 @@ o en efectivo''',
               ),
               const SizedBox(height: 15),
               ButtonTextMobile(
-                buttonText: 'Aromas Árabes', 
-                padding: const EdgeInsets.only(right: 110),
+                buttonText: 'Aromas Hombre',
+                padding: const EdgeInsets.only(right: 105),
                 onPressed: () {
                   setState(() {
-                    indiceWidget = 2;  
+                    indiceWidget = 2;
                   });
                 }
               ),
               const SizedBox(height: 15),
               ButtonTextMobile(
-                buttonText: 'Hombre',
-                padding: const EdgeInsets.only(right: 160),
+                buttonText: 'Aromas Mujer',
+                padding: const EdgeInsets.only(right: 120),
                 onPressed: () {
                   setState(() {
                     indiceWidget = 3;
@@ -387,8 +389,8 @@ o en efectivo''',
               ),
               const SizedBox(height: 15),
               ButtonTextMobile(
-                buttonText: 'Mujer',
-                padding: const EdgeInsets.only(right: 175),
+                buttonText: 'Crea Tu Loción',
+                padding: const EdgeInsets.only(right: 115),
                 onPressed: () {
                   setState(() {
                     indiceWidget = 4;

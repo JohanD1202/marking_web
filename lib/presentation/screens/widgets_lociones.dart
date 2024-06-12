@@ -163,6 +163,144 @@ class _LocionState extends State<Locion> {
   }
 }
 
+//TODO: LOCION DE 'CREA TU LOCION'
+
+class LocionCreaTuLocion extends StatefulWidget {
+  
+  final String imageLocion;
+  final String imageLocion2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameLocion;
+  final String symbol;
+  final double priceOriginal;
+  final int cantidad;
+  final VoidCallback onRemove;
+
+  // ignore: use_super_parameters
+  const LocionCreaTuLocion({
+    Key? key,
+    required this.imageLocion,
+    required this.imageLocion2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameLocion,
+    required this.symbol,
+    required this.priceOriginal,
+    required this.cantidad,
+    required this.onRemove,
+  }) : super(key: key);
+
+  @override
+  State<LocionCreaTuLocion> createState() => _LocionCreaTuLocionState();
+
+}
+
+class _LocionCreaTuLocionState extends State<LocionCreaTuLocion> {
+
+  int _quantity = 1;
+  late double _totalPrice = 0.0;
+
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
+      ),
+      child: Container(
+        height: 553,
+        width: 270,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Positioned(
+              top: 1,
+              right: 1,
+              child: IconButton(
+                icon: const Icon(Icons.delete_rounded, color: Colors.black, size: 22),
+                onPressed: () {
+                  widget.onRemove();
+                }
+              ),
+            ),
+            Positioned(
+              top: 28,
+              left: 12,
+              right: 12,
+              child: ImageOnHover(
+                imagePath: widget.imageLocion,
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
+              ),
+            ),
+            Positioned(
+              top: 370,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text(widget.nameLocion, style: styleTextLocion),
+            ),
+            Positioned(
+              top: 463,
+              bottom: 8,
+              left: 12,
+              right: 8,
+              child: Text('1 fl oz', style: styleTextLocion)
+            ),
+            Positioned(
+              top: 485,
+              left: 140,
+              child: Text('Cantidad: ${widget.cantidad}', style: styleTextBolsosMobile),
+            ),
+            Positioned(
+              top: 485,
+              left: 13,
+              right: 12,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPrice),
+            ),
+            Positioned(
+              top: 515,
+              left: 5,
+              right: 5,
+              child: CarShop(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameLocion,
+                  price: _totalPrice,
+                  image: widget.imageLocion,
+                  imageWidth: 120,
+                  imageHeight: 185,
+                  cantidad: widget.cantidad,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 //TODO: LOCION ARABE
 
 class LocionArabe extends StatefulWidget {

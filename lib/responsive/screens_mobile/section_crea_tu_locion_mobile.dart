@@ -1,15 +1,15 @@
 import 'package:marking_web/exports.dart';
 
 
-class SectionCreaTuLocion extends StatefulWidget {
+class SectionCreaTuLocionMobile extends StatefulWidget {
   // ignore: use_super_parameters
-  const SectionCreaTuLocion({Key? key}) : super(key: key);
+  const SectionCreaTuLocionMobile({Key? key}) : super(key: key);
 
   @override
-  State<SectionCreaTuLocion> createState() => _SectionCreaTuLocionState();
+  State<SectionCreaTuLocionMobile> createState() => _SectionCreaTuLocionMobileState();
 }
 
-class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
+class _SectionCreaTuLocionMobileState extends State<SectionCreaTuLocionMobile> {
 
   String? selectedOption1;
   String? selectedOption2;
@@ -33,29 +33,25 @@ class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 60, right: 30),
+                padding: const EdgeInsets.only(left: 30, right: 15),
                 child: const Suggestions(),
               ),
             ],
           ),
-          const SizedBox(height: 30),
-          Row(
+          const SizedBox(height: 20),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 60, right: 250),
+                padding: const EdgeInsets.only(left: 30),
                 child: Text('''O arma tu propio Aroma!
 
-Elige 1 Loción para comenzar:''', style: styleText3Mobile),
+Elige 1 Loción para comenzar:''', style: creaLocion),
               ),
-              Text('Luego elige tu segunda Loción:', style: styleText3Mobile)
-            ],
-          ),
-          const SizedBox(height: 10),
-          Row(
-            children: [
+              const SizedBox(height: 5),
               Padding(
-                padding: const EdgeInsets.only(left: 60),
-                child: ListaLociones(
+                padding: const EdgeInsets.only(left: 30),
+                child: ListaLocionesMobile(
                   onChanged: (newValue) {
                     setState(() {
                       selectedOption1 = newValue;
@@ -63,27 +59,32 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
                   },
                 ),
               ),
-              const SizedBox(width: 20),
-              Text('+', style: styleText3),
-              const SizedBox(width: 20),
-              ListaLociones2(
-                enabled: selectedOption1 != null && selectedOption1 != "Elige 1 Loción",
-                onChanged: (newValue) {
-                  setState(() {
-                    selectedOption2 = newValue;
-                  });
-                }
-              ),
             ],
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           Padding(
-            padding: const EdgeInsets.only(left: 60),
-            child: Text('Ahora elige la Cantidad:', style: styleText3Mobile),
+            padding: const EdgeInsets.only(left: 30),
+            child: Text('Luego elige tu segunda Loción:', style: creaLocion),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: ListaLocionesMobile2(
+              enabled: selectedOption1 != null && selectedOption1 != "Elige 1 Loción",
+              onChanged: (newValue) {
+                setState(() {
+                  selectedOption2 = newValue;
+                });
+              }
+            ),
+          ),
+          const SizedBox(height: 25),
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: Text('Ahora elige la Cantidad:', style: creaLocion),
           ),
           const SizedBox(height: 15),
           Padding(
-            padding: const EdgeInsets.only(left: 60),
+            padding: const EdgeInsets.only(left: 30),
             child: Cantidad(onQuantityChanged: (newValue) {
               setState(() {
                 selectedQuantity = newValue;
@@ -92,7 +93,7 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
           ),
           const SizedBox(height: 20),
           Padding(
-            padding: const EdgeInsets.only(left: 60),
+            padding: const EdgeInsets.only(left: 30),
             child: ButtonTextBar(
               buttonText: 'Listo ✔',
               onPressed: () {
@@ -116,7 +117,7 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
                 setState(() {
                   if (selectedOption1 != null && selectedOption2 != null && selectedQuantity != null) {
                     locionesCreadaList.add(
-                      LocionCreada(
+                      LocionCreadaMobile(
                         locion1: selectedOption1!,
                         locion2: selectedOption2!,
                         quantity: selectedQuantity!,
@@ -140,24 +141,8 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
       );
   }
 }
-                /*
-                final _context = context;
-                (context as Element).markNeedsBuild();
-                setState(() {
-                  locionesCreadaList.remove(widget);
-                });*/
 
-                /*
-                final _context = context;
-                (context as Element).markNeedsBuild();
-                setState(() {
-                  locionesCreadaList.remove(widget);
-                });*/
-
-
-
-
-class LocionCreada extends StatefulWidget {
+class LocionCreadaMobile extends StatefulWidget {
 
   final String locion1;
   final String locion2;
@@ -165,7 +150,7 @@ class LocionCreada extends StatefulWidget {
   final VoidCallback onRemove;
 
   // ignore: use_super_parameters
-  const LocionCreada({
+  const LocionCreadaMobile({
     Key? key,
     required this.locion1,
     required this.locion2,
@@ -174,17 +159,17 @@ class LocionCreada extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<LocionCreada> createState() => _LocionCreadaState();
+  State<LocionCreadaMobile> createState() => _LocionCreadaMobileState();
 }
 
-class _LocionCreadaState extends State<LocionCreada> {
+class _LocionCreadaMobileState extends State<LocionCreadaMobile> {
   @override
   Widget build(BuildContext context) {
 
     double totalPrice = 25.000 * widget.quantity;
     
     return Padding(
-      padding: const EdgeInsets.only(left: 60, top: 10),
+      padding: const EdgeInsets.only(left: 30, top: 10),
         child: LocionCreaTuLocion(
         imageLocion: 'assets/images/aroma_1.jpg',
         imageLocion2: 'assets/images/aroma_6.jpg',
@@ -199,101 +184,7 @@ class _LocionCreadaState extends State<LocionCreada> {
     );
   }
 }
-/*
 
-class LocionNueva extends StatefulWidget {
-
- 
-  // ignore: use_super_parameters
-  const LocionNueva({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  State<LocionNueva> createState() => _LocionNuevaState();
-}
-
-class _LocionNuevaState extends State<LocionNueva> {
-
-  String? selectedOption1;
-  String? selectedOption2;
-  int? selectedQuantity;
-  List<Widget> locionesCreadaList = [];
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 60),
-              child: ListaLociones(
-                onChanged: (newValue) {
-                  setState(() {
-                    selectedOption1 = newValue;
-                  });
-                },
-              ),
-            ),
-            const SizedBox(width: 20),
-            Text('+', style: styleText3),
-            const SizedBox(width: 20),
-            ListaLociones2(
-              enabled: selectedOption1 != null && selectedOption1 != "Elige 1 Loción",
-              onChanged: (newValue) {
-                setState(() {
-                  selectedOption2 = newValue;
-                });
-              },
-            ),
-            const SizedBox(height: 20),
-            IconButton(
-              icon: const Icon(
-                Icons.remove_circle_outline_rounded, size: 20,
-              ),
-              onPressed: () {
-              },
-            )
-          ],
-        ),
-        const SizedBox(height: 20),
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 60),
-              child: Text('Cantidad:', style: texto),
-            ),
-          ],
-        ),
-        const SizedBox(height: 15),
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 60, bottom: 30),
-              child: Cantidad(onQuantityChanged: (newValue) {
-                setState(() {
-                  selectedQuantity = newValue;
-                });
-              }),
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            const SizedBox(width: 30),
-            SizedBox(
-              width: 1100,
-              child: Divider(color: Colors.grey[500], thickness: 3, height: 2)
-            ),
-          ],
-        ),
-        const SizedBox(height: 10)
-      ]
-    );
-  }
-}
-*/
 class Suggestions extends StatefulWidget {
   const Suggestions({super.key});
 
@@ -317,7 +208,7 @@ class _SuggestionsState extends State<Suggestions> {
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
-          child: Text(value, style: texto),
+          child: Text(value, style: textoMobile),
         );
       }).toList(),
       onChanged: (String? newValue) {
@@ -331,22 +222,22 @@ class _SuggestionsState extends State<Suggestions> {
 
 //TODO: LISTA LOCIONES
 
-class ListaLociones extends StatefulWidget {
+class ListaLocionesMobile extends StatefulWidget {
 
   final Function(String) onChanged;
 
   // ignore: use_super_parameters
-  const ListaLociones({
+  const ListaLocionesMobile({
     Key? key,
     required this.onChanged
   }) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _ListaLocionesState createState() => _ListaLocionesState();
+  _ListaLocionesMobileState createState() => _ListaLocionesMobileState();
 }
 
-class _ListaLocionesState extends State<ListaLociones> {
+class _ListaLocionesMobileState extends State<ListaLocionesMobile> {
   String _selectedOption = "Yara - Lattafa";
 
   @override
@@ -405,7 +296,7 @@ class _ListaLocionesState extends State<ListaLociones> {
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
-          child: Text(value, style: texto),
+          child: Text(value, style: textoMobile),
         );
       }).toList(),
       onChanged: (String? newValue) {
@@ -418,13 +309,13 @@ class _ListaLocionesState extends State<ListaLociones> {
   }
 }
 
-class ListaLociones2 extends StatefulWidget {
+class ListaLocionesMobile2 extends StatefulWidget {
 
   final bool enabled;
   final Function(String) onChanged;
 
   // ignore: use_super_parameters
-  const ListaLociones2({
+  const ListaLocionesMobile2({
     Key? key,
     required this.enabled,
     required this.onChanged
@@ -432,10 +323,10 @@ class ListaLociones2 extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-  _ListaLociones2State createState() => _ListaLociones2State();
+  _ListaLocionesMobile2State createState() => _ListaLocionesMobile2State();
 }
 
-class _ListaLociones2State extends State<ListaLociones2> {
+class _ListaLocionesMobile2State extends State<ListaLocionesMobile2> {
   String _selectedOption = "Yara - Lattafa";
 
   @override
@@ -494,7 +385,7 @@ class _ListaLociones2State extends State<ListaLociones2> {
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
-          child: Text(value, style: widget.enabled ? texto : texto.copyWith(color: Colors.grey[300])),
+          child: Text(value, style: widget.enabled ? textoMobile : textoMobile.copyWith(color: Colors.grey[300])),
         );
       }).toList(),
       onChanged: widget.enabled? (String? newValue) {
@@ -503,7 +394,7 @@ class _ListaLociones2State extends State<ListaLociones2> {
           widget.onChanged(newValue);
         });
       } : null,
-      disabledHint: Text(_selectedOption, style: texto.copyWith(color: Colors.grey[300])),
+      disabledHint: Text(_selectedOption, style: textoMobile.copyWith(color: Colors.grey[300])),
     );
   }
 }

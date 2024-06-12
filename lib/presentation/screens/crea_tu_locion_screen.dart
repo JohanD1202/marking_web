@@ -34,7 +34,7 @@ class _CreaTuLocionState extends State<CreaTuLocion> {
                           Text('Bienvenidos a la sección de Crea Tu Loción', style: styleText3),
                           const SizedBox(height: 20),
                           Text('''
-Bienvenido a nuestra innovadora sección "Crea tu Loción", donde la creatividad
+Bienvenido a nuestra innovadora sección Crea tu Loción, donde la creatividad
 y la personalización se unen para ofrecerte aromas únicos y exclusivos. Aquí
 puedes combinar dos de nuestras lociones para crear una fragancia que sea
 verdaderamente tuya.
@@ -45,28 +45,33 @@ Explora nuestras sugerencias:
 Utiliza nuestro menú desplegable de sugerencias para inspirarte. Estas
 combinaciones recomendadas están diseñadas por expertos para ofrecerte mezclas
 armoniosas y sorprendentes.
+Si te llama la atención una de las sugerencias armala tú mismo en las
+lociones elegibles de los menús.
 
 Elige tus lociones: 
-O puedes desplegar los dos menús que contienen todas nuestras lociones
+Puedes desplegar los dos menús que contienen todas nuestras lociones
 disponibles y seleccionar una loción de cada lista para crear tu combinación
 personalizada.
 
 Elige la cantidad:
-De último, elige la cantidad que deseas comprar de tu combinación.
+Por último, elige la cantidad que deseas comprar de tu combinación.
 
 Añade tu creación al carrito:
-Una vez que hayas seleccionado tus lociones favoritas, simplemente haz clic en
-"Añadir al carrito" y tu fragancia personalizada estará lista para ser comprada.
+Una vez que hayas seleccionado tus lociones favoritas y la cantidad, da click
+en el botón de 'Listo ✔', verás un resumen con los detalles de tu compra, solo
+haz clic en 'Añadir al carrito' y tu fragancia personalizada estará lista para
+ser comprada.
+Si no te gusta tu creación, puedes presionar en el icono de la basura para eliminarla.
 
-Te recordamos que en esta sección todas las lociones son de 1 fl oz.
-Haz click en el icono de "+", para hacer tantas combinaciones como desees.
+Te recordamos que en esta sección todas las lociones son de 1 fl oz. Y tienen
+un precio de \$25.000 por unidad. Puedes hacer tantas combinaciones como desees.
 ¡Siéntete libre de hacer tu Loción Personalizada!
 ''', style: texto)
                         ],
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(5),
                       child: Image.asset('assets/images/logo_pr1.jpg', width: 300, height: 300, fit: BoxFit.cover),
                     ),
                   ],

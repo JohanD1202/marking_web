@@ -191,7 +191,6 @@ class _HomeScreenState extends State<HomeScreen> {
             index: indiceWidget,
             children: const [
               Inicio(),
-              //AromasScreen(),
               ArabesScreen(),
               HombreScreen(),
               MujerScreen(),
@@ -232,21 +231,22 @@ class _HomeScreenState extends State<HomeScreen> {
                               const SizedBox(height: 40),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [/*
-                                  ButtonTextFooter(
-                                    buttonText: 'Aromas Selectos', 
-                                    onPressed: () {
-                                      setState(() {
-                                        indiceWidget = 1;  
-                                      });
-                                    }
-                                  ),*/
+                                children: [
                                   const Spacer(),
                                   ButtonTextFooter(
                                     buttonText: 'Aromas Árabes', 
                                     onPressed: () {
                                       setState(() {
                                         indiceWidget = 1;
+                                      });
+                                    }
+                                  ),
+                                  const Spacer(),
+                                  ButtonTextFooter(
+                                    buttonText: 'Aromas Hombre', 
+                                    onPressed: () {
+                                      setState(() {
+                                        indiceWidget = 2;  
                                       });
                                     }
                                   ),
@@ -258,19 +258,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   const Spacer(),
                                   ButtonTextFooter(
-                                    buttonText: 'Aromas Hombre', 
+                                    buttonText: 'Aromas Mujer', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 2;  
+                                        indiceWidget = 3;
                                       });
                                     }
                                   ),
                                   const Spacer(),
                                   ButtonTextFooter(
-                                    buttonText: 'Aromas Mujer', 
+                                    buttonText: 'Crea Tu Loción', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 3;
+                                        indiceWidget = 4;
                                       });
                                     }
                                   ),
@@ -285,7 +285,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     buttonText: 'Sale', 
                                     onPressed: () {
                                       setState(() {
-                                        indiceWidget = 4;
+                                        indiceWidget = 5;
                                       });
                                     }
                                   ),
@@ -333,7 +333,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             icon: const Icon(Icons.info_outline_rounded), 
                             onPressed: () {
                               setState(() {
-                                indiceWidget = 5;
+                                indiceWidget = 6;
                               });
                             },
                             color: Colors.white, 
@@ -363,12 +363,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           child: Image.asset('assets/images/bancolombia1.png', fit: BoxFit.cover),
                         ),
-                        /*const SizedBox(width: 10),
-                        Image.asset('assets/images/pse.png', height: 25, width: 25),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(30),
-                          child: Image.asset('assets/images/efecty.jpg', height: 25, width: 82)
-                        ),*/
                         const Spacer(),
                       ],
                     ),

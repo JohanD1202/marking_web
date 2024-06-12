@@ -437,6 +437,13 @@ TextStyle styleText3Mobile = const TextStyle(
   fontFamily: 'Fredoka',
 );
 
+TextStyle creaLocion = const TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.w600,
+  color: Colors.black,
+  fontFamily: 'Fredoka',
+);
+
 TextStyle answer = const TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w400,

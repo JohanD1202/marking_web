@@ -28,12 +28,11 @@ class _SectionCreaTuLocionMobileState extends State<SectionCreaTuLocionMobile> {
     }
   }
 
-  void addLocion(String locion1, String locion2, int quantity) {
+  void addLocion(String locion1, int quantity) {
   setState(() {
     locionesCreadaList.add(
       LocionCreadaMobile(
         locion1: locion1,
-        locion2: locion2,
         quantity: quantity,
         onRemove: () => removeLocion(locionesCreadaList.length - 1),
       )
@@ -49,7 +48,7 @@ class _SectionCreaTuLocionMobileState extends State<SectionCreaTuLocionMobile> {
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 30),
-            child: Text('Nuestras Sugerencias', style: creaLocion),
+            child: Text('Nuestras Sugerencias:', style: creaLocion),
           ),
           Row(
             children: [
@@ -94,11 +93,12 @@ class _SectionCreaTuLocionMobileState extends State<SectionCreaTuLocionMobile> {
                     ),
                   );
                 } else {
-                  addLocion(selectedSuggestion!, "Sugerencia", selectedSuggestionQuantity!);
-               }
+                  addLocion(selectedSuggestion!, selectedSuggestionQuantity!);
+                }
               },
             )
           ),
+          const SizedBox(height: 20),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -203,7 +203,7 @@ Elige 1 Loción para comenzar:''', style: creaLocion),
 class LocionCreadaMobile extends StatefulWidget {
 
   final String locion1;
-  final String locion2;
+  final String? locion2;
   final int quantity;
   final VoidCallback onRemove;
 
@@ -211,7 +211,7 @@ class LocionCreadaMobile extends StatefulWidget {
   const LocionCreadaMobile({
     Key? key,
     required this.locion1,
-    required this.locion2,
+    this.locion2,
     required this.quantity,
     required this.onRemove,
   }) : super(key: key);
@@ -225,6 +225,9 @@ class _LocionCreadaMobileState extends State<LocionCreadaMobile> {
   Widget build(BuildContext context) {
 
     double totalPrice = 25.000 * widget.quantity;
+    String nameLocion = widget.locion2 != null ?
+    '''${widget.locion1} + 
+${widget.locion2}''' : widget.locion1;
     
     return Padding(
       padding: const EdgeInsets.only(left: 30, top: 10),
@@ -232,8 +235,8 @@ class _LocionCreadaMobileState extends State<LocionCreadaMobile> {
         imageLocion: 'assets/images/aroma_1.jpg',
         imageLocion2: 'assets/images/aroma_6.jpg',
         imageWidth: 160,
-        imageHeight: 215,
-        nameLocion: '${widget.locion1} + ${widget.locion2}',
+        imageHeight: 210,
+        nameLocion: nameLocion,
         symbol: '\$',
         priceOriginal: totalPrice,
         cantidad: widget.quantity,
@@ -259,33 +262,44 @@ class SuggestionsMobile extends StatefulWidget {
 }
 
 class _SuggestionsMobileState extends State<SuggestionsMobile> {
-  String _selectedOption = "Baccarat Rouge 540 - Francis Kurkdjian + Oud For Greatness - Initio";
+  String _selectedOption = 
+        '''Ombre Nomade - Louis Vuitton +
+Yara - Lattafa''';
 
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
       value: _selectedOption,
       items: <String>[
-        "Baccarat Rouge 540 - Francis Kurkdjian + Oud For Greatness - Initio",
-        "Sauvage - Dior + 1 Million Parfum - Paco Rabanne",
-        "Amber Oud - Al Haramain + Arabians Tonka - Montale",
-        "Intense Cafe - Montale + La Vie Est Belle - Lancôme",
-        "CK One - Calvin Klein + 212 VIP Men - Carolina Herrera",
-        "Light Blue - Dolce&Gabbana + Nautica Voyage - Nautica",
-        "Il Femme - ILMIN + Amor Amor - Cacharel",
-        "Black XS - Paco Rabbane + Toy Boy - Moschino",
-        "Ombre Nomade - Louis Vuitton + Yara - Lattafa",
-        "Santal 33 - Le Labo + Fahrenheit - Dior",
+        '''Ombre Nomade - Louis Vuitton +
+Yara - Lattafa''',
+        '''Sauvage - Dior +
+1 Million Parfum - Paco Rabanne''',
+        '''Amber Oud - Al Haramain +
+Arabians Tonka - Montale''',
+        '''Intense Cafe - Montale +
+La Vie Est Belle - Lancôme''',
+        '''CK One - Calvin Klein +
+212 VIP Men - Carolina Herrera''',
+        '''Light Blue - Dolce&Gabbana
++ Nautica Voyage - Nautica''',
+        '''Il Femme - ILMIN +
+Amor Amor - Cacharel''',
+        '''Black XS - Paco Rabbane +
+Toy Boy - Moschino''',
+        '''Santal 33 - Le Labo +
+Fahrenheit - Dior''',
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
-          child: Text(value, style: textoMobile2),
+          child: Text(value, style: textoMobile),
         );
       }).toList(),
       onChanged: (String? newValue) {
         setState(() {
           _selectedOption = newValue!;
         });
+        widget.onSuggestionSelected(newValue!);
       },
     );
   }
@@ -309,61 +323,111 @@ class ListaLocionesMobile extends StatefulWidget {
 }
 
 class _ListaLocionesMobileState extends State<ListaLocionesMobile> {
-  String _selectedOption = "Yara - Lattafa";
+  String _selectedOption =
+        '''Yara -
+Lattafa''';
 
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
       value: _selectedOption,
       items: <String>[
-        "Yara - Lattafa",
-        "Ombre Nomade - Louis Vuitton",
-        "Bade'e Al Oud Amethyst - Lattafa",
-        "Oud For Greatness - Initio",
-        "Amber Oud - Al Haramain",
-        "L' Aventure - Al Haramain",
-        "Madinah - Al Haramain",
-        "Santal 33 - Le Labo",
-        "Il Kakuno - ILMIN",
-        "Il Femme - ILMIN",
-        "Arabians Tonka - Montale",
-        "Intense Cafe - Montale",
-        "Baccarat Rouge 540 - Francis Kurkdjian",
-        "Oud Saffron - Orientica",
-        "212 Heroes - Carolina Herrera",
-        "212 VIP Men - Carolina Herrera",
-        "CH Men - Carolina Herrera",
-        "212 VIP Men Wins - Carolina Herrera",
-        "1 Million Parfum - Paco Rabanne",
-        "1 Million Lucky - Paco Rabanne",
-        "Invictus - Paco Rabanne",
-        "Black XS - Paco Rabanne",
-        "Sauvage - Dior",
-        "Fahrenheit - Dior",
-        "CK One - Calvin Klein",
-        "360° for Men - Perry Ellis",
-        "Nautica Voyage - Nautica",
-        "Toy Boy - Moschino",
-        "Red - Lacoste",
-        "L'Eau d'Issey Pour Homme Eau & Cèdre - Issey Miyake",
-        "Hugo - Hugo Boss",
-        "Acqua di Gio - Giorgio Armani",
-        "Polo Blue - Ralph Lauren",
-        "Carolina Herrera - Carolina Herrera",
-        "CH (2015) - Carolina Herrera",
-        "212 VIP Rosé - Carolina Herrera",
-        "360° - Perry Ellis",
-        "Paris Hilton - Paris Hilton",
-        "Can Can - Paris Hilton",
-        "Heiress - Paris Hilton",
-        "Toy 2 - Moschino",
-        "Amor Amor - Cacharel",
-        "La Vie Est Belle - Lancôme",
-        "Light Blue - Dolce&Gabbana",
-        "Kim Kardashian - Kim Kardashian",
-        "Angel - Mugler",
-        "Halloween - Halloween",
-        "CK2 - Calvin Klein",
+        '''Yara -
+Lattafa''',
+        '''Ombre Nomade -
+Louis Vuitton''',
+        '''Bade'e Al Oud Amethyst
+- Lattafa''',
+        '''Oud For Greatness
+- Initio''',
+        '''Amber Oud -
+Al Haramain''',
+        '''L' Aventure -
+Al Haramain''',
+        '''Madinah -
+Al Haramain''',
+        '''Santal 33 -
+Le Labo''',
+        '''Il Kakuno
+- ILMIN''',
+        '''Il Femme
+- ILMIN''',
+        '''Arabians Tonka
+- Montale''',
+        '''Intense Cafe
+- Montale''',
+        '''Baccarat Rouge 540
+- Francis Kurkdjian''',
+        '''Oud Saffron -
+Orientica''',
+        '''212 Heroes -
+Carolina Herrera''',
+        '''212 VIP Men -
+Carolina Herrera''',
+        '''CH Men -
+Carolina Herrera''',
+        '''212 VIP Men Wins
+- Carolina Herrera''',
+        '''1 Million Parfum
+- Paco Rabanne''',
+        '''1 Million Lucky
+- Paco Rabanne''',
+        '''Invictus -
+Paco Rabanne''',
+        '''Black XS -
+Paco Rabanne''',
+        '''Sauvage
+- Dior''',
+        '''Fahrenheit
+- Dior''',
+        '''CK One -
+Calvin Klein''',
+        '''360° for Men
+- Perry Ellis''',
+        '''Nautica Voyage
+- Nautica''',
+        '''Toy Boy -
+Moschino''',
+        '''Red -
+Lacoste''',
+        '''L'Eau d'Issey Pour Homme
+Eau & Cèdre - Issey Miyake''',
+        '''Hugo -
+Hugo Boss''',
+        '''Acqua di Gio
+- Giorgio Armani''',
+        '''Polo Blue -
+Ralph Lauren''',
+        '''Carolina Herrera
+- Carolina Herrera''',
+        '''CH (2015) -
+Carolina Herrera''',
+        '''212 VIP Rosé -
+Carolina Herrera''',
+        '''360° -
+Perry Ellis''',
+        '''Paris Hilton -
+Paris Hilton''',
+        '''Can Can -
+Paris Hilton''',
+        '''Heiress -
+Paris Hilton''',
+        '''Toy 2 -
+Moschino''',
+        '''Amor Amor
+- Cacharel''',
+        '''La Vie Est
+Belle - Lancôme''',
+        '''Light Blue
+- Dolce&Gabbana''',
+        '''Kim Kardashian
+- Kim Kardashian''',
+        '''Angel
+- Mugler''',
+        '''Halloween
+- Halloween''',
+        '''CK2 -
+Calvin Klein''',
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
@@ -398,61 +462,111 @@ class ListaLocionesMobile2 extends StatefulWidget {
 }
 
 class _ListaLocionesMobile2State extends State<ListaLocionesMobile2> {
-  String _selectedOption = "Yara - Lattafa";
+  String _selectedOption = 
+        '''Yara -
+Lattafa''';
 
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
       value: _selectedOption,
       items: <String>[
-        "Yara - Lattafa",
-        "Ombre Nomade - Louis Vuitton",
-        "Bade'e Al Oud Amethyst - Lattafa",
-        "Oud For Greatness - Initio",
-        "Amber Oud - Al Haramain",
-        "L' Aventure - Al Haramain",
-        "Madinah - Al Haramain",
-        "Santal 33 - Le Labo",
-        "Il Kakuno - ILMIN",
-        "Il Femme - ILMIN",
-        "Arabians Tonka - Montale",
-        "Intense Cafe - Montale",
-        "Baccarat Rouge 540 - Francis Kurkdjian",
-        "Oud Saffron - Orientica",
-        "212 Heroes - Carolina Herrera",
-        "212 VIP Men - Carolina Herrera",
-        "CH Men - Carolina Herrera",
-        "212 VIP Men Wins - Carolina Herrera",
-        "1 Million Parfum - Paco Rabanne",
-        "1 Million Lucky - Paco Rabanne",
-        "Invictus - Paco Rabanne",
-        "Black XS - Paco Rabanne",
-        "Sauvage - Dior",
-        "Fahrenheit - Dior",
-        "CK One - Calvin Klein",
-        "360° for Men - Perry Ellis",
-        "Nautica Voyage - Nautica",
-        "Toy Boy - Moschino",
-        "Red - Lacoste",
-        "L'Eau d'Issey Pour Homme Eau & Cèdre - Issey Miyake",
-        "Hugo - Hugo Boss",
-        "Acqua di Gio - Giorgio Armani",
-        "Polo Blue - Ralph Lauren",
-        "Carolina Herrera - Carolina Herrera",
-        "CH (2015) - Carolina Herrera",
-        "212 VIP Rosé - Carolina Herrera",
-        "360° - Perry Ellis",
-        "Paris Hilton - Paris Hilton",
-        "Can Can - Paris Hilton",
-        "Heiress - Paris Hilton",
-        "Toy 2 - Moschino",
-        "Amor Amor - Cacharel",
-        "La Vie Est Belle - Lancôme",
-        "Light Blue - Dolce&Gabbana",
-        "Kim Kardashian - Kim Kardashian",
-        "Angel - Mugler",
-        "Halloween - Halloween",
-        "CK2 - Calvin Klein",
+        '''Yara -
+Lattafa''',
+        '''Ombre Nomade -
+Louis Vuitton''',
+        '''Bade'e Al Oud Amethyst
+- Lattafa''',
+        '''Oud For Greatness
+- Initio''',
+        '''Amber Oud -
+Al Haramain''',
+        '''L' Aventure -
+Al Haramain''',
+        '''Madinah -
+Al Haramain''',
+        '''Santal 33 -
+Le Labo''',
+        '''Il Kakuno
+- ILMIN''',
+        '''Il Femme
+- ILMIN''',
+        '''Arabians Tonka
+- Montale''',
+        '''Intense Cafe
+- Montale''',
+        '''Baccarat Rouge 540
+- Francis Kurkdjian''',
+        '''Oud Saffron -
+Orientica''',
+        '''212 Heroes -
+Carolina Herrera''',
+        '''212 VIP Men -
+Carolina Herrera''',
+        '''CH Men -
+Carolina Herrera''',
+        '''212 VIP Men Wins
+- Carolina Herrera''',
+        '''1 Million Parfum
+- Paco Rabanne''',
+        '''1 Million Lucky
+- Paco Rabanne''',
+        '''Invictus -
+Paco Rabanne''',
+        '''Black XS -
+Paco Rabanne''',
+        '''Sauvage
+- Dior''',
+        '''Fahrenheit
+- Dior''',
+        '''CK One -
+Calvin Klein''',
+        '''360° for Men
+- Perry Ellis''',
+        '''Nautica Voyage
+- Nautica''',
+        '''Toy Boy -
+Moschino''',
+        '''Red -
+Lacoste''',
+        '''L'Eau d'Issey Pour Homme
+Eau & Cèdre - Issey Miyake''',
+        '''Hugo -
+Hugo Boss''',
+        '''Acqua di Gio
+- Giorgio Armani''',
+        '''Polo Blue -
+Ralph Lauren''',
+        '''Carolina Herrera
+- Carolina Herrera''',
+        '''CH (2015) -
+Carolina Herrera''',
+        '''212 VIP Rosé -
+Carolina Herrera''',
+        '''360° -
+Perry Ellis''',
+        '''Paris Hilton -
+Paris Hilton''',
+        '''Can Can -
+Paris Hilton''',
+        '''Heiress -
+Paris Hilton''',
+        '''Toy 2 -
+Moschino''',
+        '''Amor Amor
+- Cacharel''',
+        '''La Vie Est
+Belle - Lancôme''',
+        '''Light Blue
+- Dolce&Gabbana''',
+        '''Kim Kardashian
+- Kim Kardashian''',
+        '''Angel
+- Mugler''',
+        '''Halloween
+- Halloween''',
+        '''CK2 -
+Calvin Klein''',
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,

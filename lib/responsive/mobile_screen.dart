@@ -114,6 +114,7 @@ class _MobileScreenState extends State<MobileScreen> {
                                   Row(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
+                                      const Spacer(),
                                       ButtonTextFooter(
                                         buttonText: 'Aromas Árabes', 
                                         onPressed: () {
@@ -122,11 +123,7 @@ class _MobileScreenState extends State<MobileScreen> {
                                           });
                                         }
                                       ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 15),
-                                  Row(
-                                    children: [
+                                      const Spacer(),
                                       ButtonTextFooter(
                                         buttonText: 'Aromas Hombre', 
                                         onPressed: () {
@@ -136,6 +133,12 @@ class _MobileScreenState extends State<MobileScreen> {
                                         }
                                       ),
                                       const Spacer(),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 15),
+                                  Row(
+                                    children: [
+                                      const Spacer(),
                                       ButtonTextFooter(
                                         buttonText: 'Aromas Mujer', 
                                         onPressed: () {
@@ -144,11 +147,6 @@ class _MobileScreenState extends State<MobileScreen> {
                                           });
                                         }
                                       ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 15),
-                                  Row(
-                                    children: [
                                       const Spacer(),
                                       ButtonTextFooter(
                                         buttonText: 'Crea Tu Loción',
@@ -158,6 +156,12 @@ class _MobileScreenState extends State<MobileScreen> {
                                           });
                                         }
                                       ),
+                                      const Spacer(),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 15),
+                                  Row(
+                                    children: [
                                       const Spacer(),
                                       ButtonTextFooter(
                                         buttonText: 'Sale', 
@@ -271,9 +275,6 @@ o en efectivo''',
                                   ),
                                   child: Image.asset('assets/images/bancolombia1.png', fit: BoxFit.cover),
                                 ),
-                                /*const SizedBox(width: 10),
-                                Image.asset('assets/images/pse.png', height: 20, width: 20),
-                                Image.asset('assets/images/efecty.jpg', height: 18.5, width: 61.5),*/
                                 const Spacer(),
                               ],
                             ),

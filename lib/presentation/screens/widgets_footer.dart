@@ -77,16 +77,16 @@ class Phones extends StatelessWidget {
                 Row(
                   children: [
                     GestureDetector(
-                      onTap: () => _launchWhatsApp('573107312102'),
+                      onTap: () => _launchWhatsApp('573026094603'),
                       child: Image.asset('assets/images/whats.png', height: 30, width: 30),
                     ),
                     GestureDetector(
-                      onTap: () => _launchWhatsApp('573107312102'),
-                      child: Text('(+57) 310 731 2102', style: styleTextCar)
+                      onTap: () => _launchWhatsApp('573026094603'),
+                      child: Text('(+57) 302 609 4603', style: styleTextCar)
                     )
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 20),/*
                 Row(
                   children: [
                     GestureDetector(
@@ -98,8 +98,7 @@ class Phones extends StatelessWidget {
                       child: Text('(+57) 310 402 5062', style: styleTextCar)
                     )
                   ],
-                )
-                
+                )*/
               ],
             )
           ],

@@ -461,11 +461,11 @@ class _InicioState extends State<Inicio> {
 void _launchWhatsApp(String phoneNumber) async {
 
   String url;
-  if(phoneNumber == '573107312102') {
+  if(phoneNumber == '573026094603') {
     url = 'https://wa.me/$phoneNumber';
-  } else if (phoneNumber == '573104025062') {
+  } /*else if (phoneNumber == '573104025062') {
     url = 'https://wa.me/$phoneNumber';
-  } else {
+  } */else {
     throw 'Número de teléfono no válido: $phoneNumber';
   }
 

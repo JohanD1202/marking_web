@@ -68,24 +68,24 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(top: 8),
-                                    child: Text(product.name, style: styleTextBolsosMobile),
+                                    child: Text(product.name, style: styleTextBolsosMobile)
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 8),
-                                    child: Text('${product.onzas} fl oz' ?? "", style: styleTextBolsosMobile),
+                                    child: Text('${product.onzas ?? "1"} fl oz', style: styleTextBolsosMobile),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 8),
                                     child: Text(
-                                      product.priceDescuento != null && product.priceDescuento! > 0 
-                                          ? '\$${product.priceDescuento}.000' 
+                                      product.price != null && product.price! > 0 
+                                          ? '\$${product.price}.000' 
                                           : '',
                                       style: styleTextSale2,
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 10),
-                                    child: Text('\$${product.price}.000', style: styleTextPriceMobile2),
+                                    child: Text('\$${product.priceDescuento}.000', style: styleTextPriceMobile2),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 8),
@@ -95,9 +95,9 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
                               ),
                               const Spacer(),
                               Padding(
-                                padding: const EdgeInsets.only(right: 25),
+                                padding: const EdgeInsets.only(right: 20),
                                 child: IconButton(
-                                  icon: const Icon(Icons.delete_rounded, color: Colors.black, size: 24),
+                                  icon: const Icon(Icons.delete_rounded, color: Colors.black, size: 22),
                                   onPressed: () {
                                     cart.removeProduct(product);
                                   },
@@ -145,7 +145,7 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
 }
 
 void _launchWhatsApp(String phoneNumber, CartModel cart) async {
-  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? ""} - Cantidad: ${product.cantidad} - \$${product.price}.000').join('\n');
+  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? "1"} fl oz - Cantidad: ${product.cantidad} - \$${product.priceDescuento}.000').join('\n');
   final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent('Hola, quiero comprar estos productos:\n$message')}");
 
   if (await canLaunchUrl(whatsappUrl)) {

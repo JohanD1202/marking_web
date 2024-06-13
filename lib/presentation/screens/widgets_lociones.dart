@@ -147,7 +147,7 @@ class _LocionState extends State<Locion> {
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameLocion,
-                  price: _totalPrice,
+                  priceDescuento: _totalPrice,
                   image: widget.imageLocion,
                   imageWidth: 120,
                   imageHeight: 185,
@@ -286,7 +286,7 @@ class _LocionCreaTuLocionState extends State<LocionCreaTuLocion> {
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameLocion,
-                  price: _totalPrice,
+                  priceDescuento: _totalPrice,
                   image: widget.imageLocion,
                   imageWidth: 120,
                   imageHeight: 185,
@@ -449,7 +449,7 @@ class _LocionArabeState extends State<LocionArabe> {
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameLocion,
-                  price: _totalPrice,
+                  priceDescuento: _totalPrice,
                   image: widget.imageLocion,
                   imageWidth: 120,
                   imageHeight: 185,
@@ -618,14 +618,14 @@ class _BolsosPromotionState extends State<BolsosPromotion> {
   void initState() {
     super.initState();
     _totalPrice = widget.priceDescuento * _quantity;
-    _totalDiscountedPrice = widget.priceDescuento * _quantity;
+    _totalDiscountedPrice = widget.price * _quantity;
   }
 
   void updateQuantity(int newQuantity) {
     setState(() {
       _quantity = newQuantity;
-      _totalPrice = widget.price * _quantity;
-      _totalDiscountedPrice = widget.priceDescuento * _quantity;
+      _totalPrice = widget.priceDescuento * _quantity;
+      _totalDiscountedPrice = widget.price * _quantity;
     });
   }
 
@@ -1784,23 +1784,23 @@ class CarShop extends StatelessWidget {
 class Product {
   final String id;
   final String name;
-  final double price;
+  final double? price;
   final String image;
   final double imageHeight;
   final double imageWidth;
   final String? onzas;
-  final double? priceDescuento;
+  final double priceDescuento;
   final int cantidad;
 
   Product({
     required this.id,
     required this.name,
-    required this.price,
+    this.price,
     required this.image,
     required this.imageHeight,
     required this.imageWidth,
     this.onzas,
-    this.priceDescuento,
+    required this.priceDescuento,
     required this.cantidad,
   });
 }
@@ -1820,7 +1820,7 @@ class CartModel with ChangeNotifier {
     notifyListeners();
   }
 
-  double get totalPrice => _items.fold(0.0, (sum, item) => sum + item.price);
+  double get totalPrice => _items.fold(0.0, (sum, item) => sum + item.priceDescuento);
 }
 
 

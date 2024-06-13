@@ -431,7 +431,7 @@ TextStyle textoMobile = TextStyle(
 );
 
 TextStyle textoMobile2 = TextStyle(
-  fontSize: 14,
+  fontSize: 12.5,
   fontWeight: FontWeight.normal,
   color: Colors.grey[800],
   fontFamily: 'Fredoka',

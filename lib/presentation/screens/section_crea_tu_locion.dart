@@ -27,12 +27,11 @@ class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
     }
   }
 
-  void addLocion(String locion1, String locion2, int quantity) {
+  void addLocion(String locion1, int quantity) {
     setState(() {
       locionesCreadaList.add(
         LocionCreada(
           locion1: locion1,
-          locion2: locion2,
           quantity: quantity,
           onRemove: () => removeLocion(locionesCreadaList.length - 1),
         )
@@ -87,7 +86,7 @@ class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
                     ),
                   );
                 } else {
-                  addLocion(selectedSuggestion!, "Sugerencia", selectedSuggestionQuantity!);
+                  addLocion(selectedSuggestion!, selectedSuggestionQuantity!);
                }
               },
             )
@@ -198,7 +197,7 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
 class LocionCreada extends StatefulWidget {
 
   final String locion1;
-  final String locion2;
+  final String? locion2;
   final int quantity;
   final VoidCallback onRemove;
 
@@ -206,7 +205,7 @@ class LocionCreada extends StatefulWidget {
   const LocionCreada({
     Key? key,
     required this.locion1,
-    required this.locion2,
+    this.locion2,
     required this.quantity,
     required this.onRemove,
   }) : super(key: key);
@@ -220,6 +219,7 @@ class _LocionCreadaState extends State<LocionCreada> {
   Widget build(BuildContext context) {
 
     double totalPrice = 25.000 * widget.quantity;
+    String nameLocion = widget.locion2 != null ? '${widget.locion1} + ${widget.locion2}' : widget.locion1;
     
     return Padding(
       padding: const EdgeInsets.only(left: 60, top: 10),
@@ -228,7 +228,7 @@ class _LocionCreadaState extends State<LocionCreada> {
         imageLocion2: 'assets/images/aroma_6.jpg',
         imageWidth: 230,
         imageHeight: 350,
-        nameLocion: '${widget.locion1} + ${widget.locion2}',
+        nameLocion: nameLocion,
         symbol: '\$',
         priceOriginal: totalPrice,
         cantidad: widget.quantity,

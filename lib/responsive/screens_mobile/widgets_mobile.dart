@@ -147,7 +147,7 @@ void updateQuantity(int newQuantity) {
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameLocion,
-                  price: _totalPrice,
+                  priceDescuento: _totalPrice,
                   image: widget.imageLocion,
                   imageWidth: 100,
                   imageHeight: 160,
@@ -242,7 +242,7 @@ class _LocionCreaTuLocionMobileState extends State<LocionCreaTuLocionMobile> {
               ),
             ),
             Positioned(
-              top: 28,
+              top: 30,
               left: 8,
               right: 8,
               child: ImageOnHover(
@@ -284,10 +284,11 @@ class _LocionCreaTuLocionMobileState extends State<LocionCreaTuLocionMobile> {
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameLocion,
-                  price: _totalPrice,
+                  priceDescuento: _totalPrice,
                   image: widget.imageLocion,
                   imageWidth: 120,
                   imageHeight: 185,
+                  onzas: '1',
                   cantidad: widget.cantidad,
                 ),
               ),
@@ -448,7 +449,7 @@ void updateQuantity(int newQuantity) {
                 productToAdd: Product(
                   id: DateTime.now().toString(),
                   name: widget.nameLocion,
-                  price: _totalPrice,
+                  priceDescuento: _totalPrice,
                   image: widget.imageLocion,
                   imageWidth: 100,
                   imageHeight: 160,
@@ -616,14 +617,14 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
   void initState() {
     super.initState();
     _totalPrice = widget.priceDescuento * _quantity;
-    _totalDiscountedPrice = widget.priceDescuento * _quantity;
+    _totalDiscountedPrice = widget.price * _quantity;
   }
 
   void updateQuantity(int newQuantity) {
     setState(() {
       _quantity = newQuantity;
-      _totalPrice = widget.price * _quantity;
-      _totalDiscountedPrice = widget.priceDescuento * _quantity;
+      _totalPrice = widget.priceDescuento * _quantity;
+      _totalDiscountedPrice = widget.price * _quantity;
     });
   }
 

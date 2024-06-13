@@ -65,17 +65,17 @@ class PhonesMobile extends StatelessWidget {
                 children: [
                   const Spacer(),
                   GestureDetector(
-                    onTap: () => _launchWhatsApp('573107312102'),
+                    onTap: () => _launchWhatsApp('573026094603'),
                     child: Image.asset('assets/images/whats.png', height: 30, width: 30),
                   ),
                   GestureDetector(
-                    onTap: () => _launchWhatsApp('573107312102'),
-                    child: Text('(+57) 310 731 2102', style: styleTextCa)
+                    onTap: () => _launchWhatsApp('573026094603'),
+                    child: Text('(+57) 302 609 4603', style: styleTextCa)
                   ),
                   const Spacer(),
                 ],
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 20),/*
               Row(
                 children: [
                   const Spacer(),
@@ -89,7 +89,7 @@ class PhonesMobile extends StatelessWidget {
                   ),
                   const Spacer(),
                 ],
-              )
+              )*/
             ],
           )
         ],
@@ -133,11 +133,11 @@ class CommentsMobile extends StatelessWidget {
 void _launchWhatsApp(String phoneNumber) async {
 
   String url;
-  if(phoneNumber == '573107312102') {
+  if(phoneNumber == '573026094603') {
     url = 'https://wa.me/$phoneNumber';
-  } else if (phoneNumber == '573104025062') {
+  } /*else if (phoneNumber == '573104025062') {
     url = 'https://wa.me/$phoneNumber';
-  } else {
+  }*/ else {
     throw 'Número de teléfono no válido: $phoneNumber';
   }
 

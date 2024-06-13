@@ -163,6 +163,142 @@ void updateQuantity(int newQuantity) {
   }
 }
 
+//TODO: LOCION CREA TU LOCION MOBILE
+
+class LocionCreaTuLocionMobile extends StatefulWidget {
+  
+  final String imageLocion;
+  final String imageLocion2;
+  final double imageWidth;
+  final double imageHeight;
+  final String nameLocion;
+  final String symbol;
+  final double priceOriginal;
+  final int cantidad;
+  final VoidCallback onRemove;
+
+  // ignore: use_super_parameters
+  const LocionCreaTuLocionMobile({
+    Key? key,
+    required this.imageLocion,
+    required this.imageLocion2,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.nameLocion,
+    required this.symbol,
+    required this.priceOriginal,
+    required this.cantidad,
+    required this.onRemove,
+  }) : super(key: key);
+
+  @override
+  State<LocionCreaTuLocionMobile> createState() => _LocionCreaTuLocionMobileState();
+
+}
+
+class _LocionCreaTuLocionMobileState extends State<LocionCreaTuLocionMobile> {
+
+  int _quantity = 1;
+  late double _totalPrice = 0.0;
+
+
+  @override
+  void initState() {
+    super.initState();
+    _totalPrice = widget.priceOriginal * _quantity;
+  }
+
+  void updateQuantity(int newQuantity) {
+    setState(() {
+      _quantity = newQuantity;
+      _totalPrice = widget.priceOriginal * _quantity;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 12,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        side: const BorderSide(color: Colors.white),
+      ),
+      child: Container(
+        height: 380,
+        width: 180,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black),
+        ),
+        child: Stack(
+          children: [
+            Positioned(
+              right: 1,
+              child: IconButton(
+                icon: const Icon(Icons.delete_rounded, color: Colors.black, size: 16),
+                onPressed: () {
+                  widget.onRemove();
+                }
+              ),
+            ),
+            Positioned(
+              top: 28,
+              left: 8,
+              right: 8,
+              child: ImageOnHover(
+                imagePath: widget.imageLocion,
+                hoverImagePath: widget.imageLocion2,
+                imageWidth: widget.imageWidth,
+                imageHeight: widget.imageHeight,
+              ),
+            ),
+            Positioned(
+              top: 245,
+              bottom: 8,
+              left: 8,
+              right: 8,
+              child: Text(widget.nameLocion, style: styleTextLocionMobile),
+            ),
+            Positioned(
+              top: 310,
+              bottom: 8,
+              left: 8,
+              right: 8,
+              child: Text('1 fl oz', style: styleTextLocionMobile)
+            ),
+            Positioned(
+              top: 324,
+              left: 90,
+              child: Text('Cantidad: ${widget.cantidad}', style: cantidad),
+            ),
+            Positioned(
+              top: 324,
+              left: 8,
+              child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPriceMobile),
+            ),
+            Positioned(
+              top: 343,
+              left: 5,
+              right: 5,
+              child: CarShopMobile(
+                productToAdd: Product(
+                  id: DateTime.now().toString(),
+                  name: widget.nameLocion,
+                  price: _totalPrice,
+                  image: widget.imageLocion,
+                  imageWidth: 120,
+                  imageHeight: 185,
+                  cantidad: widget.cantidad,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 //TODO: LOCION ARABE MOBILE
 
 class LocionArabeMobile extends StatefulWidget {

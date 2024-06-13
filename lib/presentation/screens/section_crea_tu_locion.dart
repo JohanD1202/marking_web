@@ -13,7 +13,9 @@ class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
 
   String? selectedOption1;
   String? selectedOption2;
+  String? selectedSuggestion;
   int? selectedQuantity;
+  int? selectedSuggestionQuantity;
   List<Widget> locionesCreadaList = [];
   int _elementCount = 0;
 
@@ -25,18 +27,70 @@ class _SectionCreaTuLocionState extends State<SectionCreaTuLocion> {
     }
   }
 
+  void addLocion(String locion1, String locion2, int quantity) {
+    setState(() {
+      locionesCreadaList.add(
+        LocionCreada(
+          locion1: locion1,
+          locion2: locion2,
+          quantity: quantity,
+          onRemove: () => removeLocion(locionesCreadaList.length - 1),
+        )
+      );
+      _elementCount++;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 60),
+            child: Text('Nuestras Sugerencias', style: styleText3Mobile),
+          ),
           Row(
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 60, right: 30),
-                child: const Suggestions(),
+                child: Suggestions(
+                  onSuggestionSelected: (suggestion) {
+                    setState(() {
+                      selectedSuggestion = suggestion;
+                    });
+                  }
+                ),
               ),
+              const SizedBox(width: 10),
+              Text('Elige la Cantidad:', style: styleText3Mobile),
+              const SizedBox(width: 15),
+              Cantidad(onQuantityChanged: (newValue) {
+                setState(() {
+                  selectedSuggestionQuantity = newValue;
+                });
+              }),
             ],
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 60),
+            child: ButtonTextBar(
+              buttonText: 'Listo ✔',
+              onPressed: () {
+                if (selectedSuggestion == null || selectedSuggestionQuantity == null) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Por favor, selecciona una sugerencia y la Cantidad', style: snackbar),
+                      duration: const Duration(milliseconds: 1500),
+                      backgroundColor: Colors.black,
+                    ),
+                  );
+                } else {
+                  addLocion(selectedSuggestion!, "Sugerencia", selectedSuggestionQuantity!);
+               }
+              },
+            )
           ),
           const SizedBox(height: 30),
           Row(
@@ -140,22 +194,6 @@ Elige 1 Loción para comenzar:''', style: styleText3Mobile),
       );
   }
 }
-                /*
-                final _context = context;
-                (context as Element).markNeedsBuild();
-                setState(() {
-                  locionesCreadaList.remove(widget);
-                });*/
-
-                /*
-                final _context = context;
-                (context as Element).markNeedsBuild();
-                setState(() {
-                  locionesCreadaList.remove(widget);
-                });*/
-
-
-
 
 class LocionCreada extends StatefulWidget {
 
@@ -199,103 +237,16 @@ class _LocionCreadaState extends State<LocionCreada> {
     );
   }
 }
-/*
 
-class LocionNueva extends StatefulWidget {
-
- 
-  // ignore: use_super_parameters
-  const LocionNueva({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  State<LocionNueva> createState() => _LocionNuevaState();
-}
-
-class _LocionNuevaState extends State<LocionNueva> {
-
-  String? selectedOption1;
-  String? selectedOption2;
-  int? selectedQuantity;
-  List<Widget> locionesCreadaList = [];
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 60),
-              child: ListaLociones(
-                onChanged: (newValue) {
-                  setState(() {
-                    selectedOption1 = newValue;
-                  });
-                },
-              ),
-            ),
-            const SizedBox(width: 20),
-            Text('+', style: styleText3),
-            const SizedBox(width: 20),
-            ListaLociones2(
-              enabled: selectedOption1 != null && selectedOption1 != "Elige 1 Loción",
-              onChanged: (newValue) {
-                setState(() {
-                  selectedOption2 = newValue;
-                });
-              },
-            ),
-            const SizedBox(height: 20),
-            IconButton(
-              icon: const Icon(
-                Icons.remove_circle_outline_rounded, size: 20,
-              ),
-              onPressed: () {
-              },
-            )
-          ],
-        ),
-        const SizedBox(height: 20),
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 60),
-              child: Text('Cantidad:', style: texto),
-            ),
-          ],
-        ),
-        const SizedBox(height: 15),
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 60, bottom: 30),
-              child: Cantidad(onQuantityChanged: (newValue) {
-                setState(() {
-                  selectedQuantity = newValue;
-                });
-              }),
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            const SizedBox(width: 30),
-            SizedBox(
-              width: 1100,
-              child: Divider(color: Colors.grey[500], thickness: 3, height: 2)
-            ),
-          ],
-        ),
-        const SizedBox(height: 10)
-      ]
-    );
-  }
-}
-*/
 class Suggestions extends StatefulWidget {
-  const Suggestions({super.key});
+
+  final Function(String) onSuggestionSelected;
+
+  // ignore: use_key_in_widget_constructors, use_super_parameters
+  const Suggestions({
+    Key? key,
+    required this.onSuggestionSelected,
+  }) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
@@ -303,17 +254,23 @@ class Suggestions extends StatefulWidget {
 }
 
 class _SuggestionsState extends State<Suggestions> {
-  String _selectedOption = 'Nuestras Sugerencias';
+  String _selectedOption = "Baccarat Rouge 540 - Francis Kurkdjian + Oud For Greatness - Initio";
 
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
       value: _selectedOption,
       items: <String>[
-        'Nuestras Sugerencias',
-        'Opción 1',
-        'Opción 2',
-        'Opción 3'
+        "Baccarat Rouge 540 - Francis Kurkdjian + Oud For Greatness - Initio",
+        "Sauvage - Dior + 1 Million Parfum - Paco Rabanne",
+        "Amber Oud - Al Haramain + Arabians Tonka - Montale",
+        "Intense Cafe - Montale + La Vie Est Belle - Lancôme",
+        "CK One - Calvin Klein + 212 VIP Men - Carolina Herrera",
+        "Light Blue - Dolce&Gabbana + Nautica Voyage - Nautica",
+        "Il Femme - ILMIN + Amor Amor - Cacharel",
+        "Black XS - Paco Rabbane + Toy Boy - Moschino",
+        "Ombre Nomade - Louis Vuitton + Yara - Lattafa",
+        "Santal 33 - Le Labo + Fahrenheit - Dior",
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
@@ -324,6 +281,7 @@ class _SuggestionsState extends State<Suggestions> {
         setState(() {
           _selectedOption = newValue!;
         });
+        widget.onSuggestionSelected(newValue!);
       },
     );
   }

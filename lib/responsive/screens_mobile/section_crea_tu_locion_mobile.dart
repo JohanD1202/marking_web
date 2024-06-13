@@ -1,4 +1,5 @@
 import 'package:marking_web/exports.dart';
+import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
 
 
 class SectionCreaTuLocionMobile extends StatefulWidget {
@@ -13,7 +14,9 @@ class _SectionCreaTuLocionMobileState extends State<SectionCreaTuLocionMobile> {
 
   String? selectedOption1;
   String? selectedOption2;
+  String? selectedSuggestion;
   int? selectedQuantity;
+  int? selectedSuggestionQuantity;
   List<Widget> locionesCreadaList = [];
   int _elementCount = 0;
 
@@ -25,20 +28,77 @@ class _SectionCreaTuLocionMobileState extends State<SectionCreaTuLocionMobile> {
     }
   }
 
+  void addLocion(String locion1, String locion2, int quantity) {
+  setState(() {
+    locionesCreadaList.add(
+      LocionCreadaMobile(
+        locion1: locion1,
+        locion2: locion2,
+        quantity: quantity,
+        onRemove: () => removeLocion(locionesCreadaList.length - 1),
+      )
+    );
+    _elementCount++;
+  });
+}
+
   @override
   Widget build(BuildContext context) {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: Text('Nuestras Sugerencias', style: creaLocion),
+          ),
           Row(
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 30, right: 15),
-                child: const Suggestions(),
+                child: SuggestionsMobile(
+                  onSuggestionSelected: (suggestion) {
+                    setState(() {
+                      selectedSuggestion = suggestion;
+                    });
+                  }
+                ),
               ),
             ],
           ),
+          const SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: Text('Elige la Cantidad:', style: creaLocion),
+          ),
+          const SizedBox(height: 15),
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: Cantidad(onQuantityChanged: (newValue) {
+              setState(() {
+                selectedSuggestionQuantity = newValue;
+              });
+            }),
+          ),
           const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: ButtonTextBar(
+              buttonText: 'Listo ✔',
+              onPressed: () {
+                if (selectedSuggestion == null || selectedSuggestionQuantity == null) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Por favor, selecciona una sugerencia y la Cantidad', style: snackbar),
+                      duration: const Duration(milliseconds: 1500),
+                      backgroundColor: Colors.black,
+                    ),
+                  );
+                } else {
+                  addLocion(selectedSuggestion!, "Sugerencia", selectedSuggestionQuantity!);
+               }
+              },
+            )
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -133,8 +193,6 @@ Elige 1 Loción para comenzar:''', style: creaLocion),
           ),
           const SizedBox(height: 20),
           Wrap(
-            spacing: 10,
-            runSpacing: 10,
             children: locionesCreadaList,
           ),
         ],
@@ -170,11 +228,11 @@ class _LocionCreadaMobileState extends State<LocionCreadaMobile> {
     
     return Padding(
       padding: const EdgeInsets.only(left: 30, top: 10),
-        child: LocionCreaTuLocion(
+        child: LocionCreaTuLocionMobile(
         imageLocion: 'assets/images/aroma_1.jpg',
         imageLocion2: 'assets/images/aroma_6.jpg',
-        imageWidth: 230,
-        imageHeight: 350,
+        imageWidth: 160,
+        imageHeight: 215,
         nameLocion: '${widget.locion1} + ${widget.locion2}',
         symbol: '\$',
         priceOriginal: totalPrice,
@@ -185,30 +243,43 @@ class _LocionCreadaMobileState extends State<LocionCreadaMobile> {
   }
 }
 
-class Suggestions extends StatefulWidget {
-  const Suggestions({super.key});
+class SuggestionsMobile extends StatefulWidget {
+
+  final Function(String) onSuggestionSelected;
+
+  // ignore: use_super_parameters
+  const SuggestionsMobile({
+    Key? key,
+    required this.onSuggestionSelected,
+  }) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _SuggestionsState createState() => _SuggestionsState();
+  _SuggestionsMobileState createState() => _SuggestionsMobileState();
 }
 
-class _SuggestionsState extends State<Suggestions> {
-  String _selectedOption = 'Nuestras Sugerencias';
+class _SuggestionsMobileState extends State<SuggestionsMobile> {
+  String _selectedOption = "Baccarat Rouge 540 - Francis Kurkdjian + Oud For Greatness - Initio";
 
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
       value: _selectedOption,
       items: <String>[
-        'Nuestras Sugerencias',
-        'Opción 1',
-        'Opción 2',
-        'Opción 3'
+        "Baccarat Rouge 540 - Francis Kurkdjian + Oud For Greatness - Initio",
+        "Sauvage - Dior + 1 Million Parfum - Paco Rabanne",
+        "Amber Oud - Al Haramain + Arabians Tonka - Montale",
+        "Intense Cafe - Montale + La Vie Est Belle - Lancôme",
+        "CK One - Calvin Klein + 212 VIP Men - Carolina Herrera",
+        "Light Blue - Dolce&Gabbana + Nautica Voyage - Nautica",
+        "Il Femme - ILMIN + Amor Amor - Cacharel",
+        "Black XS - Paco Rabbane + Toy Boy - Moschino",
+        "Ombre Nomade - Louis Vuitton + Yara - Lattafa",
+        "Santal 33 - Le Labo + Fahrenheit - Dior",
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
-          child: Text(value, style: textoMobile),
+          child: Text(value, style: textoMobile2),
         );
       }).toList(),
       onChanged: (String? newValue) {

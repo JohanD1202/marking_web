@@ -430,6 +430,13 @@ TextStyle textoMobile = TextStyle(
   fontFamily: 'Fredoka',
 );
 
+TextStyle textoMobile2 = TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.normal,
+  color: Colors.grey[800],
+  fontFamily: 'Fredoka',
+);
+
 TextStyle styleText3Mobile = const TextStyle(
   fontSize: 19,
   fontWeight: FontWeight.w600,

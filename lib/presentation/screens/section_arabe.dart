@@ -216,72 +216,139 @@ Orientica''',
               priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
-            Spacer(),/*
-            Locion(
+            Spacer(),
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_7.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Lacoste Red - Lacoste',
+              nameLocion: '''Amber Rouge
+Orientica''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/locion_10.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Issey Miyake - Shiseido Emea',
+              nameLocion: '''Amber Oud Gold
+Al Haramain''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
-        //SizedBox(height: 20),
+        SizedBox(height: 20),
         //TODO: QUINTO ROW DE LOCIONES ARABES
         Row(
-          children: [/*
+          children: [
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
-              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Hugo Boss - Hugo Boss',
+              nameLocion: '''King
+Bharara''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageLocion2: 'assets/images/aroma_10.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'Acqua de Gio - Giorgio Armani',
+              nameLocion: '''Corvus
+Ahli''',
               symbol: '\$',
-              priceOriginal: 15.000,
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_12.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Velvet Gold
+Orientica''',
+              symbol: '\$',
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            LocionArabe(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_13.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Asad
+Lattafa''',
+              symbol: '\$',
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: SEXTO ROW DE LOCIONES ARABES
+        Row(
+          children: [
+            Spacer(),
+            LocionArabe(
               imageLocion: 'assets/images/aroma_1.jpg',
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'L \'Aventure',
+              nameLocion: '''Club de Nuit Intense Man
+Armaf''',
               symbol: '\$',
-              priceOriginal: 14.000,
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
             ),
             Spacer(),
-            Locion(
+            LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
-              imageLocion2: 'assets/images/locion_3.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
+              nameLocion: '''Opulent Musk
+Lattafa''',
               symbol: '\$',
-              priceOriginal: 14.000,
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),/*
+            LocionArabe(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Amber Rouge
+Orientica''',
+              symbol: '\$',
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            LocionArabe(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Amber Oud Gold
+Al Haramain''',
+              symbol: '\$',
+              priceOriginal: 17.000,
+              onzas: '1 fl oz',
             ),
             Spacer(),*/
           ],

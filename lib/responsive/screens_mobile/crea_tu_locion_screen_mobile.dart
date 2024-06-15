@@ -47,9 +47,7 @@ Explora nuestras sugerencias:
 Utiliza nuestro menú desplegable de sugerencias para
 inspirarte. Estas combinaciones recomendadas están
 diseñadas por expertos para ofrecerte mezclas
-armoniosas y sorprendentes. Si te llama la atención
-una de las sugerencias armala tú mismo en las lociones
-elegibles de los menús.
+armoniosas y sorprendentes.
 
 Elige tus lociones: 
 Puedes desplegar los dos menús que contienen todas
@@ -71,7 +69,9 @@ para eliminarla.
 
 Te recordamos que en esta sección todas las lociones
 son de 1 fl oz. Y tienen un precio de \$25.000 por
-unidad. Puedes hacer tantas combinaciones como desees
+combinación. Puedes hacer tantas combinaciones como
+desees.
+
 ¡Siéntete libre de hacer tu Loción Personalizada!
 ''', style: textoMobile)
                         ],

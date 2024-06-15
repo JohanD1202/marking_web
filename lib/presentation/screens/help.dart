@@ -210,7 +210,7 @@ class _ContactanosState extends State<Contactanos> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(100),
                   child: GestureDetector(
-                    onTap: () => _launchWhatsApp('573107312102'),
+                    onTap: () => _launchWhatsApp('573026094603'),
                     child: Image.asset(widget.image)
                   )
                 )

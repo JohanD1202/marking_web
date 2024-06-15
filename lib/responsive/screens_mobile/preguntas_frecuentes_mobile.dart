@@ -204,7 +204,7 @@ La transportadora realizará hasta 2 intentos de entrega y si no puede realizar 
       answer: '''
 Si no recibes el producto que ordenaste, comunícate con
 nosotros:
-A través de nuestros números de Whatsapp
+A través de nuestros números de Whatsapp +57 302 609 4603
 A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el
 inconveniente.
@@ -215,15 +215,13 @@ inconveniente.
       answer: '''
 Puedes comunícarte a través de nuestros canales de
 atención:
-A través de nuestros números de Whatsapp
+A través de nuestros números de Whatsapp +57 302 609 4603
 A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el
 inconveniente.
 '''
     )
-
   ];
-
   
   return ListView.builder(
     shrinkWrap: true,

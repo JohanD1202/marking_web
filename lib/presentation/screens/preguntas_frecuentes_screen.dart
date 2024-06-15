@@ -164,8 +164,8 @@ tenemos envíos gratis. El tiempo de entrega oscila entre
       question: '¿Qué hago si mi producto no es el que pedí?',
       answer: '''
 Si no recibes el producto que ordenaste, comunícate con nosotros:
-A través de nuestros números de Whatsapp
-A través de nuestro correo aromasselectosc24@gmail.com
+A través de nuestros números de Whatsapp (+57) 302 609 4603
+A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
 '''
     ),
@@ -173,7 +173,7 @@ Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
       question: '¿Dónde me puedo comunicar si mi pedido se demora más de lo normal?',
       answer: '''
 Puedes comunícarte a través de nuestros canales de atención:
-A través de nuestros números de Whatsapp
+A través de nuestros números de Whatsapp (+57) 302 609 4603
 A través de nuestro correo aromasselectos24@gmail.com
 Nuestro equipo estará atento y te ayudará a resolver el inconveniente.
 '''

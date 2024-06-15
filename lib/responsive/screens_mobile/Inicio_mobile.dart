@@ -118,7 +118,7 @@ class FloatingBar extends StatelessWidget {
             ),
             const Spacer(),
             GestureDetector(
-              onTap: () => _launchWhatsApp('573107312102'),
+              onTap: () => _launchWhatsApp('573026094603'),
               child: SvgPicture.asset('assets/images/wh_2.svg', width: 30, height: 30),
             ),
             const Spacer(),

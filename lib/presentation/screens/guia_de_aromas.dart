@@ -317,7 +317,7 @@ de Oud''',
 Amber Oud de Al Haramain Perfumes es una fragancia de la familia olfativa Ámbar amaderada para Hombres y Mujeres.
 Amber Oud se lanzó en 2018. Tiene una longevidad duradera y su estela es pesada. Es un aroma Unisex.
 ''',
-                      imageLocion: 'assets/images/amber_oud_haramain.webp',
+                      imageLocion: 'assets/images/amber_oud_haramain.jpg',
                       imageNotaSalida: 'assets/images/romero.jpg',
                       textNotaSalida: 'Romero',
                       imageNotaSalida2: 'assets/images/bergamota.jpg',

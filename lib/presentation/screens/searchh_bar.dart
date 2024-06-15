@@ -325,6 +325,7 @@ class _SearchhBarState extends State<SearchhBar> {
             controller: _controller,
             decoration: InputDecoration(
               hintText: 'Busca tu aroma favorito',
+              hintStyle: hint,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(40),
                 borderSide: const BorderSide(color: Colors.grey),
@@ -4445,6 +4446,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
             controller: _controller,
             decoration: InputDecoration(
               hintText: 'Busca tu aroma favorito',
+              hintStyle: hint,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(40),
                 borderSide: const BorderSide(color: Colors.grey),

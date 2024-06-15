@@ -26,7 +26,7 @@ class SocialNetworks extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 GestureDetector(
-                  onTap: () => _launchWhatsApp('573107312102'),
+                  onTap: () => _launchWhatsApp('573026094603'),
                   child: Padding(
                     padding: const EdgeInsets.only(left: 10, top: 15),
                     child: Image.asset('assets/images/whats.png', height: 45, width: 45),
@@ -147,7 +147,7 @@ class Comments extends StatelessWidget {
 void _launchWhatsApp(String phoneNumber) async {
 
   String url;
-  if(phoneNumber == '573107312102') {
+  if(phoneNumber == '573026094603') {
     url = 'https://wa.me/$phoneNumber';
   } else if (phoneNumber == '573104025062') {
     url = 'https://wa.me/$phoneNumber';

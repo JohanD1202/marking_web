@@ -272,6 +272,67 @@ Calvin Klein''',
           ],
         ),
         const SizedBox(height: 20),
+        //TODO: NOVENO ROW DE LOCIONES DE MUJER
+        const Row(
+          children: [
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 240,
+              imageWidth: 150,
+              nameLocion: '''Scandal
+Jean Paul Galtier''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
+              imageHeight: 240,
+              imageWidth: 150,
+              nameLocion: '''Good Girl
+Carolina Herrera''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        const SizedBox(height: 20),
+        //TODO: DÉCIMO ROW DE LOCIONES DE MUJER
+        const Row(
+          children: [
+            Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
+              imageHeight: 240,
+              imageWidth: 150,
+              nameLocion: '''Omnia Coral
+Bvlgari''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),/*
+            LocionMobile(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
+              imageHeight: 240,
+              imageWidth: 150,
+              nameLocion: '''Toy 2
+Moschino''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),*/
+          ],
+        ),
       ],
     );
   }

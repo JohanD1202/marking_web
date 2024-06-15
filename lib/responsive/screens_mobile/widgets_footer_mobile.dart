@@ -24,7 +24,7 @@ class SocialNetworksMobile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               GestureDetector(
-                onTap: () => _launchWhatsApp('573107312102'),
+                onTap: () => _launchWhatsApp('573026094603'),
                 child: Image.asset('assets/images/whats.png', height: 40, width: 40),
               ),
               GestureDetector(

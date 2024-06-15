@@ -45,8 +45,6 @@ Explora nuestras sugerencias:
 Utiliza nuestro menú desplegable de sugerencias para inspirarte. Estas
 combinaciones recomendadas están diseñadas por expertos para ofrecerte mezclas
 armoniosas y sorprendentes.
-Si te llama la atención una de las sugerencias armala tú mismo en las
-lociones elegibles de los menús.
 
 Elige tus lociones: 
 Puedes desplegar los dos menús que contienen todas nuestras lociones
@@ -60,11 +58,13 @@ Añade tu creación al carrito:
 Una vez que hayas seleccionado tus lociones favoritas y la cantidad, da click
 en el botón de 'Listo ✔', verás un resumen con los detalles de tu compra, solo
 haz clic en 'Añadir al carrito' y tu fragancia personalizada estará lista para
-ser comprada.
-Si no te gusta tu creación, puedes presionar en el icono de la basura para eliminarla.
+ser comprada. Si no te gusta tu creación, puedes presionar en el icono de la
+basura para eliminarla.
 
 Te recordamos que en esta sección todas las lociones son de 1 fl oz. Y tienen
-un precio de \$25.000 por unidad. Puedes hacer tantas combinaciones como desees.
+un precio de \$25.000 por combinación. Puedes hacer tantas combinaciones como
+desees.
+
 ¡Siéntete libre de hacer tu Loción Personalizada!
 ''', style: texto)
                         ],

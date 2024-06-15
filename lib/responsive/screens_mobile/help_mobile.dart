@@ -51,7 +51,7 @@ class _HelpMobileState extends State<HelpMobile> {
         child: Column(
           children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -61,7 +61,7 @@ class _HelpMobileState extends State<HelpMobile> {
                           children: [
                             Text('Bienvenido al Centro de Ayuda de Aromas Selectos', style: styleText3Mobile),
                             const SizedBox(height: 15),
-                            const TextHelpWidgetMobile(TextHelpMobile.helpText, TextStyle(fontSize: 18, fontWeight: FontWeight.w400, fontFamily: 'Fredoka')),
+                            const TextHelpWidgetMobile(TextHelpMobile.helpText, TextStyle(fontSize: 16, fontWeight: FontWeight.w400, fontFamily: 'Fredoka')),
                             Row(
                               children: [
                                 const Spacer(),
@@ -204,7 +204,7 @@ class _ContactanosMobileState extends State<ContactanosMobile> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(100),
                   child: GestureDetector(
-                    onTap: () => _launchWhatsApp('573107312102'),
+                    onTap: () => _launchWhatsApp('573026094603'),
                     child: Image.asset(widget.image)
                   )
                 )
@@ -249,7 +249,6 @@ class QuestionsMobile extends StatefulWidget {
 
 class _QuestionsMobileState extends State<QuestionsMobile> {
 
-  //int indiceWidget2 = 0;
   void _handleTap() {
     widget.onTapCallback();
   }

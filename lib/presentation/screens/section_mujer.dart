@@ -241,7 +241,62 @@ Calvin Klein''',
             ),
             Spacer(),
           ],
-        )
+        ),
+        const SizedBox(height: 20),
+        //TODO: QUINTO ROW DE LOCIONES DE MUJER
+        const Row(
+          children: [
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Scandal 
+Jean Paul Galtier''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Good Girl
+Carolina Herrera''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Omnia Coral
+Bvlgari''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),/*
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Toy 2
+Moschino''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),*/
+          ],
+        ),
       ],
     );
   }

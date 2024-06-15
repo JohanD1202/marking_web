@@ -430,6 +430,13 @@ TextStyle textoMobile = TextStyle(
   fontFamily: 'Fredoka',
 );
 
+TextStyle hint = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.normal,
+  color: Colors.grey[600],
+  fontFamily: 'Fredoka',
+);
+
 TextStyle textoMobile2 = TextStyle(
   fontSize: 12.5,
   fontWeight: FontWeight.normal,
@@ -804,12 +811,15 @@ class TextHelp {
     Estamos aquí para brindarte asistencia y responder a todas tus preguntas. 
     Nuestra misión es hacer que tu experiencia de compra sea lo más fácil y satisfactoria posible.
 
-    Cómo podemos ayudarte:
-
-    - Preguntas Frecuentes: Explora nuestra sección de Preguntas Frecuentes para obtener 
-      respuestas rápidas a las consultas más comunes.
-
-    - Proceso de Compra: Aprende más sobre cómo realizar pedidos y opciones de pago.
+  - Proceso de Compra: 
+  
+    Para comprar por nuestra página es muy sencillo, puede explorar las diferentes categorías que
+    ofrecemos y seleccionar la cantidad de productos que desees. Una vez seleccionados, agrégalos al
+    carrito de compras. Cuando haya finalizado su selección, diríjase al carrito de compras, donde
+    encontrará un resumen de todos los productos añadidos. Luego, haga click en el botón 'Finalizar
+    Compra', y posteriormente en 'Ir al Chat'. Automáticamente será redirigido a nuestro chat de
+    WhatsApp, donde encontrará un mensaje preescrito con todos los productos que desea comprar, listo
+    para enviar su pedido.
 
     Explora nuestras Categorías:
 
@@ -874,23 +884,33 @@ su esencia.
 
 class TextHelpMobile {
   static const String helpText = '''
-  Estamos aquí para brindarte asistencia 
-  Y responder a todas tus preguntas. 
-  Nuestra misión es hacer que tu experiencia 
-  De compra sea lo más fácil posible.
+  Estamos aquí para brindarte asistencia y responder
+  a todas tus preguntas. Nuestra misión es hacer que
+  tu experiencia de compra sea lo más fácil posible.
 
-    Cómo podemos ayudarte:
+  Cómo podemos ayudarte:
 
   - Preguntas Frecuentes: 
 
-    Explora nuestra sección de Preguntas 
-    Frecuentes para obtener respuestas 
-    Rápidas a las consultas más comunes.
+    Explora nuestra sección de Preguntas Frecuentes
+    para obtener respuestas rápidas a las consultas
+    más comunes.
 
   - Proceso de Compra: 
   
-    Aprende más sobre cómo realizar pedidos
-    Y opciones de pago.
+    Para comprar por nuestra página es muy sencillo,
+    puede explorar las diferentes categorías que
+    ofrecemos y seleccionar la cantidad de productos
+    que desees. Una vez seleccionados, agrégalos al
+    carrito de compras. Cuando haya finalizado su
+    selección, diríjase al carrito de compras, donde
+    encontrará un resumen de todos los productos
+    añadidos. Luego, haga click en el botón 'Finalizar
+    Compra', y posteriormente en 'Ir al Chat'.
+    Automáticamente será redirigido a nuestro chat de
+    WhatsApp, donde encontrará un mensaje preescrito
+    con todos los productos que desea comprar, listo
+    para enviar su pedido.
 
     Explora nuestras Categorías:
 

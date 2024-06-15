@@ -282,13 +282,234 @@ Ralph Lauren''',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
-            Spacer(),/*
+            Spacer(),
             Locion(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_11.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: 'AMETHYST (Unisex)',
+              nameLocion: '''Aventus
+Creed''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: SEXTO ROW DE LOCIONES DE HOMBRE
+        Row(
+          children: [
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/locion_1_2onzas.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''D'Orsay
+Ésika''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),            
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/locion_2_2onzas.jpg',
+              imageHeight: 350,
+              imageWidth: 240,
+              nameLocion: '''Bad
+Diesel''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/locion_3_3onzas.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Diesel Plus White
+Diesel''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/locion_4_4onzas.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Aqva Pour Homme
+Bvlgari''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: SÉPTIMO ROW DE LOCIONES DE HOMBRE
+        Row(
+          children: [
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/locion_5_5onzas.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Boss The Scent
+Hugo Boss''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''The Scent of Peace
+Bond No 9''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_8.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Layton
+Parfums de Marly''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_9.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Bad Boy
+Carolina Herrera''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: OCTAVO ROW DE LOCIONES DE HOMBRE
+        Row(
+          children: [
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_10.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''212 VIP Black Red
+Carolina Herrera''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_12.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Le Beau
+Jean Paul Galtier''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_13.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Arsenal
+Gilles Cantuel''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_2.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Legend Spirit
+Montblanc''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+          ],
+        ),
+        SizedBox(height: 20),
+        //TODO: NOVENO ROW DE LOCIONES DE HOMBRE
+        Row(
+          children: [
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Valentino Born in Roma
+Valentino''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Bvlgari Man in Black
+Bvlgari''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
+            Locion(
+              imageLocion: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''Lacoste L.12.12. White
+Lacoste''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),/*
+            Locion(
+              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion2: 'assets/images/aroma_7.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameLocion: '''L'Eau d'Issey Pour
+Homme Issey Miyake''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',

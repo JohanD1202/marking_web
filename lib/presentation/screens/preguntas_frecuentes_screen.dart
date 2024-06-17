@@ -1,8 +1,6 @@
 import 'package:marking_web/exports.dart';
 
-
 class PreguntasFrecuentes extends StatefulWidget {
-
 
   // ignore: use_super_parameters
   const PreguntasFrecuentes({

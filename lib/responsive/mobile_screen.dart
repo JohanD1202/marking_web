@@ -37,7 +37,7 @@ class _MobileScreenState extends State<MobileScreen> {
           SingleChildScrollView(
           child: SizedBox(
             width: size.width * 1,
-            height: size.height * 3.33,
+            height: size.height * 3,
             child: Column(
               children: [
                 Material(
@@ -74,11 +74,12 @@ class _MobileScreenState extends State<MobileScreen> {
                     CartScreenMobile(),           //10
                   ],
                 ),
+                const SizedBox(height: 30),
                 //TODO: FOOTER
                 Material(
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 1.63,
+                    height: MediaQuery.of(context).size.height * 1.3,
                     decoration: const BoxDecoration(
                       color: Colors.black,
                     ),

@@ -146,7 +146,8 @@ class _CartScreenState extends State<CartScreen> {
 
 void _launchWhatsApp(String phoneNumber, CartModel cart) async {
   final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? "1"} fl oz - Cantidad: ${product.cantidad} - \$${product.priceDescuento}.000').join('\n');
-  final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent('Hola, quiero comprar estos productos:\n$message')}");
+  final fullMessage = 'Hola, quiero comprar estos productos:\n$message\nTotal: \$${cart.totalPrice}.000';
+  final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent(fullMessage)}");
 
   if (await canLaunchUrl(whatsappUrl)) {
     await launchUrl(whatsappUrl);

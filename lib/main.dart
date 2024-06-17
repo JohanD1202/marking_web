@@ -1,8 +1,6 @@
 import 'package:marking_web/config/theme/app_theme.dart';
 import 'package:marking_web/presentation/screens/home_screen.dart';
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/responsive/screens_mobile/section_hombre_mobile.dart';
-
 
 
 void main() {

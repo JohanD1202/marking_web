@@ -1,6 +1,4 @@
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
-
 
 
 class GuiaAromas extends StatelessWidget {

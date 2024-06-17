@@ -8,8 +8,6 @@ import 'package:marking_web/presentation/screens/crea_tu_locion_screen.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 
 
-
-
 class HomeScreen extends StatefulWidget {
 
   // ignore: use_super_parameters
@@ -31,7 +29,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return 
     Responsive(
       mobile: const MobileScreen(), 
-      tablet: const TabletScreen(), 
       desktop: Scaffold(
         body: SingleChildScrollView(
           child: SizedBox(

@@ -1,7 +1,5 @@
 import 'package:marking_web/exports.dart';
 
-
-
 class HombreScreen extends StatefulWidget {
 
   // ignore: use_super_parameters

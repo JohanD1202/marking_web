@@ -1,11 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 import 'dart:html' as html;
-
-import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
-import 'package:marking_web/responsive/screens_mobile/guia_aromas_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/preguntas_frecuentes_mobile.dart';
 
 
 class HelpMobile extends StatefulWidget {
@@ -44,7 +38,7 @@ class _HelpMobileState extends State<HelpMobile> {
   final size = MediaQuery.of(context).size;
   
   return SizedBox(
-    height: size.height * 1.35,
+    height: size.height * 1.5,
     width: size.width * 1,
     child: Scaffold(
       body: SingleChildScrollView(

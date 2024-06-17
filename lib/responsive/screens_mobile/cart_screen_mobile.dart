@@ -1,6 +1,4 @@
 import 'package:marking_web/exports.dart';
-import 'package:flutter_share_me/flutter_share_me.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CartScreenMobile extends StatefulWidget {
 
@@ -20,7 +18,7 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1.35,
+      height: size.height * 0.99,
       width: size.width * 1,
       child: Scaffold(
         body: Consumer<CartModel>(
@@ -145,8 +143,9 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
 }
 
 void _launchWhatsApp(String phoneNumber, CartModel cart) async {
-  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? "1"} fl oz - Cantidad: ${product.cantidad} - \$${product.priceDescuento}.000').join('\n');
-  final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent('Hola, quiero comprar estos productos:\n$message')}");
+  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? "1"} fl oz - Cantidad: ${product.cantidad} - \$${product.priceDescuento}.000 - Total: \$${cart.totalPrice}.000').join('\n');
+  final fullMessage = 'Hola, quiero comprar estos productos:\n$message\nTotal: \$${cart.totalPrice}.000';
+  final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent(fullMessage)}");
 
   if (await canLaunchUrl(whatsappUrl)) {
     await launchUrl(whatsappUrl);

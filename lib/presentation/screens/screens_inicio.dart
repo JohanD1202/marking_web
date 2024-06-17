@@ -79,9 +79,9 @@ Aquí encontrarás tu fragancia favorita''', style: styleTextC),
                           padding: const EdgeInsets.only(left: 30, top: 8, bottom: 8),
                           color: Colors.black.withOpacity(0.7),
                           child: Text('''
-¡Y eso no es todo!
-En Aromas Selectos, también ofrecemos accesorios
-Bolsos y Carteras, para complementar tu estilo''', style: styleTextB),
+En Aromas Selectos, te ofrecemos un amplio catálogo
+de aromas especiales como lociones Árabes, para
+Hombres y Mujeres a un precio inmejorable''', style: styleTextB),
                         ),
                       ),
                     )
@@ -95,7 +95,7 @@ Bolsos y Carteras, para complementar tu estilo''', style: styleTextB),
     );
   }
 }
-
+//TODO:
 class Screen1Mobile extends StatelessWidget {
   const Screen1Mobile({super.key});
 
@@ -106,86 +106,102 @@ class Screen1Mobile extends StatelessWidget {
       height: 630,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          alignment: Alignment.topCenter,
           fit: BoxFit.cover,
           image: AssetImage('assets/images/aroma_6.jpg'),
         ),
       ),
       child: Material(
         type: MaterialType.transparency,
-        child: Stack(
-          children: [
-            Positioned(
-              left: 30,
-              top: 40,
-              child: SizedBox(
-                width: 400,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Container(
-                          padding: const EdgeInsets.only(left: 20),
-                          width: 400,
-                          color: Colors.black.withOpacity(0.7),
-                          child: Text('Explora Aromas Selectos', style: styleTextInicioMobile)
-                        ),
+        child: SizedBox(
+          width: 400,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30, top: 20),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 23, top: 4, bottom: 4),
+                        width: 390,
+                        color: Colors.black.withOpacity(0.7),
+                        child: Text('Explora Aromas Selectos', style: styleTextInicioMobile)
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 20),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(30),
-                        child: Container(
-                          width: 400,
-                          padding: const EdgeInsets.fromLTRB(20, 8, 0, 8),
-                          color: Colors.black.withOpacity(0.7),
-                          child: Text('''
-Descubre la elegancia con Aromas 
-Selectos a través de fragancias 
-Exquisitas diseñadas para ti. 
-Sumérgete en un mundo de sensaciones 
-Únicas''', style: styleTextBMobile),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 60, bottom: 20),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(30),
-                        child: Container(
-                          width: 340,
-                          padding: const EdgeInsets.fromLTRB(20, 8, 0, 8),
-                          color: Colors.black.withOpacity(0.7),
-                          child: Text('''
-Nuestros aromas son únicos y 
-Reflejan tu personalidad.
-Aquí encontrarás tu fragancia 
-Favorita''', style: styleTextBMobile),
-                        ),
-                      ),
-                    ),
-                    ClipRRect(
+                  ),
+                  const Spacer(),
+                ],
+              ),
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(30),
                       child: Container(
-                        width: 400,
-                        padding: const EdgeInsets.fromLTRB(20, 8, 0, 8),
+                        width: 360,
+                        padding: const EdgeInsets.all(12),
                         color: Colors.black.withOpacity(0.7),
                         child: Text('''
-En Aromas Selectos, te ofrecemos un 
-Amplio catálogo de aromas especiales 
-Tanto de Hombres como Mujeres a un
-Precio Inmejorable''', style: styleTextBMobile),
+Descubre la elegancia con Aromas 
+Selectos a través de fragancias 
+exquisitas diseñadas para ti. 
+Sumérgete en un mundo de
+sensaciones únicas''', style: styleTextBMobile),
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
               ),
-            ),
-          ],
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(30),
+                      child: Container(
+                        width: 340,
+                        padding: const EdgeInsets.all(12),
+                        color: Colors.black.withOpacity(0.7),
+                        child: Text('''
+Nuestros aromas son únicos y 
+reflejan tu personalidad.
+Aquí encontrarás tu fragancia 
+favorita''', style: styleTextBMobile),
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
+              ),
+              Row(
+                children: [
+                  const Spacer(),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    child: Container(
+                      width: 360,
+                      padding: const EdgeInsets.all(12),
+                      color: Colors.black.withOpacity(0.7),
+                      child: Text('''
+En Aromas Selectos, te ofrecemos
+un amplio catálogo de aromas
+especiales como lociones Árabes,
+para Hombres y Mujeres a un
+precio inmejorable''', style: styleTextBMobile),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -240,59 +256,73 @@ Que reflejen Tu Estilo y Personalidad''', style: styleTextD),
       );
   }
 }
-
+//TODO:
 class Screen2Mobile extends StatelessWidget {
   const Screen2Mobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-        children: [
-          Image.asset(
-            'assets/images/locion_14.jpg',
-            height: 450,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
-          Positioned(
-            left: 30,
-            top: 40,
-            child: Padding(
-              padding: const EdgeInsets.only(bottom: 30),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(40),
-                child: Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.black.withOpacity(0.7),
-                  child: Text('¿Qué nos hace Diferentes?', style: styleTextInicioMobile),
-                ),
+    return Container(
+      width: double.infinity,
+      height: 450,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage('assets/images/locion_14.jpg'),
+        ),
+      ),
+      child: Material(
+        type: MaterialType.transparency,
+        child: SizedBox(
+          width: 360,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30, top: 20),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 12, right: 12, top: 4, bottom: 4),
+                        color: Colors.black.withOpacity(0.7),
+                        child: Text('¿Qué nos hace Diferentes?', style: styleTextInicioMobile),
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
               ),
-            ),
-          ),
-          SizedBox(
-            width: 410,
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(30, 120, 0, 0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(30),
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  color: Colors.black.withOpacity(0.7),
-                  child: Text('''
-En Aromas Selectos 
-No solo vendemos Fragancias, 
-¡Creamos experiencias memorables! 
+              Row(
+                children: [
+                  const Spacer(),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    child: Container(
+                      padding: const EdgeInsets.all(12),
+                      color: Colors.black.withOpacity(0.7),
+                      child: Text('''
+En Aromas Selectos no solo
+vendemos Fragancias
+¡Creamos experiencias memorables!
 
-Nuestro equipo de expertos perfumistas             
-Trabaja arduamente para ofrecerte 
-Productos únicos que reflejen 
-Tu Estilo y Personalidad''', style: styleTextDMobile),
-                ),
-              ),
-            ),
-          )
-        ],
-      );
+Nuestro equipo de expertos
+perfumistas trabaja arduamente
+para ofrecerte productos únicos
+que reflejen tu estilo y
+personalidad''', style: styleTextDMobile),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 //TODO:
@@ -346,61 +376,79 @@ Exigentes y sofisticadas''', style: styleTextD),
       );
   }
 }
-
+//TODO:
 class Screen3Mobile extends StatelessWidget {
   const Screen3Mobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-        children: [
-          Image.asset(
-            'assets/images/locion_15.jpg',
-            height: 540,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
-          Positioned(
-            top: 40,
-            left: 30,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(40),
-              child: Container(
-                padding: const EdgeInsets.all(8),
-                color: Colors.black.withOpacity(0.7),
-                child: Text('Superando Expectativas', style: styleTextInicioMobile),
+    return Container(
+      width: double.infinity,
+      height: 500,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage('assets/images/locion_15.jpg'),
+        ),
+      ),
+      child: Material(
+        type: MaterialType.transparency,
+        child: SizedBox(
+          width: 360,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30, top: 20),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 12, right: 12, top: 4, bottom: 4),
+                        color: Colors.black.withOpacity(0.7),
+                        child: Text('Superando Expectativas', style: styleTextInicioMobile),
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
               ),
-            ),
-          ),
-          Positioned(
-            top: 130,
-            left: 30,
-            child: SizedBox(
-              width: 350,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(30),
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  color: Colors.black.withOpacity(0.7),
-                  child: Text('''
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(30),
+                      child: Container(
+                        padding: const EdgeInsets.all(12),
+                        color: Colors.black.withOpacity(0.7),
+                        child: Text('''
 Desde nuestra sede en el 
-Corazón del Valle, nos esforzamos 
-Por superar las expectativas
-De nuestros clientes en cada 
-Interacción. 
+corazón del Valle, nos esforzamos 
+por superar las expectativas
+de nuestros clientes en cada 
+interacción. 
 
 Con un compromiso inquebrantable 
-Con la calidad, la innovación y la 
-Excelencia en el servicio al cliente, 
-Nos hemos convertido en el mejor 
-Destino para los amantes de los
-Aromas exigentes y sofisticadas''', style: styleTextDMobile),
-                ),
-              ),
-            ),
-          )
-        ],
-      );
+con la calidad, la innovación y la 
+excelencia en el servicio al cliente, 
+nos hemos convertido en el mejor 
+destino para los amantes de los
+aromas exigentes y sofisticadas''', style: styleTextDMobile),
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 //TODO:
@@ -451,57 +499,75 @@ Y haz una declaración de estilo con Aromas Selectos''', style: styleTextD),
       );
   }
 }
-
+//TODO:
 class Screen4Mobile extends StatelessWidget {
   const Screen4Mobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-        children: [
-          Image.asset(
-            'assets/images/locion_13.jpg',
-            height: 450,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
-          Positioned(
-            left: 30,
-            top: 40,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(40),
-              child: Container(
-                padding: const EdgeInsets.all(8),
-                color: Colors.black.withOpacity(0.7),
-                child: Text('Descubre Aromas Selectos', style: styleTextInicioMobile),
+    return Container(
+      width: double.infinity,
+      height: 450,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage('assets/images/locion_13.jpg'),
+        ),
+      ),
+      child: Material(
+        type: MaterialType.transparency,
+        child: SizedBox(
+          width: 360,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30, top: 20),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 12, right: 12, top: 4, bottom: 4),
+                        color: Colors.black.withOpacity(0.7),
+                        child: Text('Descubre Aromas Selectos', style: styleTextInicioMobile),
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
               ),
-            ),
-          ),
-          Positioned(
-            left: 30,
-            top: 140,
-            child: SizedBox(
-              width: 385,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(30),
-                child: Container(
-                  padding: const EdgeInsets.all(9),
-                  color: Colors.black.withOpacity(0.7),
-                  child: Text('''
-¿Estás listo para descubrir el mundo de 
-Aromas Selectos? Únete a nosotros y 
-Déjate llevar por una experiencia 
-Olfativa incomparable. 
+              Row(
+                children: [
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(30),
+                      child: Container(
+                        padding: const EdgeInsets.all(12),
+                        color: Colors.black.withOpacity(0.7),
+                        child: Text('''
+¿Estás listo para descubrir el mundo
+de Aromas Selectos? Únete a nosotros
+y déjate llevar por una experiencia 
+olfativa incomparable. 
 
-Encuentra tu fragancia perfecta
-Y haz una declaración de estilo con 
+Encuentra tu fragancia perfecta y haz
+una declaración de estilo con 
 Aromas Selectos''', style: styleTextDMobile),
-                ),
-              ),
-            ),
-          )
-        ],
-      );
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 

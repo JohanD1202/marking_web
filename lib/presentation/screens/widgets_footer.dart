@@ -2,8 +2,6 @@ import 'package:marking_web/exports.dart';
 import 'dart:html' as html;
 
 
-
-
 class SocialNetworks extends StatelessWidget {
   // ignore: use_super_parameters
   const SocialNetworks({Key? key}) : super(key: key);

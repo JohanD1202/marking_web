@@ -2,7 +2,6 @@ import 'package:marking_web/exports.dart';
 import 'package:marking_web/presentation/screens/section_arabe.dart';
 
 
-
 class ArabesScreen extends StatefulWidget {
 
   // ignore: use_super_parameters

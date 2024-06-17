@@ -1,6 +1,4 @@
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/widgets_lociones.dart';
-
 
 class SectionArabe extends StatefulWidget {
   // ignore: use_super_parameters

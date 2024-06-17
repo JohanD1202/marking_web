@@ -1727,8 +1727,8 @@ class PriceMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 30,
-      height: 17,
+      width: 35,
+      height: 18,
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(10),
@@ -1737,7 +1737,7 @@ class PriceMobile extends StatelessWidget {
       child: InkWell(
         onTap: () {},
         child: Center(
-          child: Text(price, style: const TextStyle(fontSize: 11, color: Colors.white, fontFamily: 'Fredoka'),
+          child: Text(price, style: const TextStyle(fontSize: 12, color: Colors.white, fontFamily: 'Fredoka'),
           ),
         ),
       ),

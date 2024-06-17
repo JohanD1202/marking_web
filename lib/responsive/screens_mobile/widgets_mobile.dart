@@ -82,7 +82,7 @@ void updateQuantity(int newQuantity) {
         side: const BorderSide(color: Colors.white),
       ),
       child: Container(
-        height: 340,
+        height: 380,
         width: 160,
         decoration: BoxDecoration(
           color: Colors.white,
@@ -123,23 +123,23 @@ void updateQuantity(int newQuantity) {
               ),
             ),
             Positioned(
-              top: 260,
-              left: 95,
+              top: 280,
+              left: 9,
               child: Text('Cantidad:', style: cantidadMobile),
             ),
             Positioned(
-              top: 277,
-              left: 105,
+              top: 297,
+              left: 12,
               child: CantidadMobile(onQuantityChanged: updateQuantity),
             ),
             Positioned(
-              top: 280,
+              top: 320,
               left: 9,
               right: 12,
               child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPriceMobile),
             ),
             Positioned(
-              top: 305,
+              top: 345,
               left: 3,
               right: 3,
               bottom: 3,
@@ -384,7 +384,7 @@ void updateQuantity(int newQuantity) {
         side: const BorderSide(color: Colors.white),
       ),
       child: Container(
-        height: 340,
+        height: 380,
         width: 160,
         decoration: BoxDecoration(
           color: Colors.white,
@@ -425,23 +425,23 @@ void updateQuantity(int newQuantity) {
               ),
             ),
             Positioned(
-              top: 260,
-              left: 95,
+              top: 280,
+              left: 9,
               child: Text('Cantidad:', style: cantidadMobile),
             ),
             Positioned(
-              top: 277,
-              left: 105,
+              top: 297,
+              left: 12,
               child: CantidadMobile(onQuantityChanged: updateQuantity),
             ),
             Positioned(
-              top: 280,
+              top: 320,
               left: 9,
               right: 12,
               child: Text('${widget.symbol}${widget.priceOriginal.toStringAsFixed(3)}', style: styleTextPriceMobile),
             ),
             Positioned(
-              top: 305,
+              top: 345,
               left: 3,
               right: 3,
               bottom: 3,
@@ -637,7 +637,7 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
         side: const BorderSide(color: Colors.white),
       ),
       child: Container(
-        height: 370,
+        height: 410,
         width: 160,
         decoration: BoxDecoration(
           color: Colors.white,
@@ -657,25 +657,15 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
             Positioned(
               top: 227,
               bottom: 8,
-              left: 8,
+              left: 9,
               right: 8,
               child: Text(widget.nameBolso, style: styleTextBolsosMobile),
             ),
             Positioned(
               top: 280,
-              left: 8,
+              left: 9,
               right: 12,
               child: Text('${widget.symbol}${widget.price.toStringAsFixed(3)}', style: styleTextSale),
-            ),
-            Positioned(
-              top: 280,
-              left: 100,
-              child: Text('Cantidad:', style: cantidadMobile),
-            ),
-            Positioned(
-              top: 300,
-              left: 110,
-              child: CantidadMobile(onQuantityChanged: updateQuantity),
             ),
             Positioned(
               top: 300,
@@ -684,12 +674,22 @@ class _BolsosPromotionMobileState extends State<BolsosPromotionMobile> {
               child: Text('${widget.symbol}${widget.priceDescuento.toStringAsFixed(3)}', style: styleTextPriceMobile),
             ),
             Positioned(
+              top: 320,
+              left: 9,
+              child: Text('Cantidad:', style: cantidadMobile),
+            ),
+            Positioned(
+              top: 340,
+              left: 12,
+              child: CantidadMobile(onQuantityChanged: updateQuantity),
+            ),
+            Positioned(
               top: 300,
-              left: 70,
+              left: 105,
               child: widget.promotion,
             ),
             Positioned(
-              top: 330,
+              top: 370,
               left: 5,
               right: 5,
               bottom: 5,

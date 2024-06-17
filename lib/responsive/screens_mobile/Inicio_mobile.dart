@@ -21,7 +21,6 @@ class _InicioMobileState extends State<InicioMobile> {
     const Screen2Mobile(),
     const Screen3Mobile(),
     const Screen4Mobile(),
-    //const Screen5(),
   ];
 
   void _next() {
@@ -138,9 +137,7 @@ class FloatingBar extends StatelessWidget {
 void _launchWhatsApp(String phoneNumber) async {
 
   String url;
-  if(phoneNumber == '573107312102') {
-    url = 'https://wa.me/$phoneNumber';
-  } else if (phoneNumber == '573104025062') {
+  if(phoneNumber == '573026094603') {
     url = 'https://wa.me/$phoneNumber';
   } else {
     throw 'Número de teléfono no válido: $phoneNumber';

@@ -38,14 +38,14 @@ class _HelpMobileState extends State<HelpMobile> {
   final size = MediaQuery.of(context).size;
   
   return SizedBox(
-    height: size.height * 1.5,
+    height: size.height * 2,
     width: size.width * 1,
     child: Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -112,35 +112,11 @@ class _HelpMobileState extends State<HelpMobile> {
       );
   }
 } 
-/*
-  Widget buildPartialContent(BuildContext context) {
-    return const PreguntasFrecuentesMobile();
-  }
-
-      
-
-class HelpScreenState extends ChangeNotifier {
-  bool showFullContent = true;
-  bool showAromasGuide = false;
-
-  void toggleContent() {
-    showFullContent = !showFullContent;
-    notifyListeners();
-  }
-
-  void toggleAromasGuide() {
-    showAromasGuide = !showAromasGuide;
-    notifyListeners();
-  }
-}
-*/
 
 void _launchWhatsApp(String phoneNumber) async {
 
   String url;
-  if(phoneNumber == '573107312102') {
-    url = 'https://wa.me/$phoneNumber';
-  } else if (phoneNumber == '573104025062') {
+  if(phoneNumber == '573026094603') {
     url = 'https://wa.me/$phoneNumber';
   } else {
     throw 'Número de teléfono no válido: $phoneNumber';
@@ -435,6 +411,3 @@ class _DebitoMobileState extends State<DebitoMobile> {
     );
   }
 }
-
-//fromLTRB(32, 15, 100, 15)
-//fromLTRB(15, 15, 100, 15)

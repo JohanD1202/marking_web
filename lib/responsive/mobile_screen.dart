@@ -1,10 +1,7 @@
 import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/widgets/style_button.dart';
 import 'package:marking_web/responsive/screens_mobile/arabes_screen_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/cart_screen_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/crea_tu_locion_screen_mobile.dart';
-//import 'package:marking_web/presentation/screens/home_screen.dart';
-
 import 'package:marking_web/responsive/screens_mobile/help_mobile.dart';
 import 'package:marking_web/responsive/screens_mobile/mujer_mobile.dart';
 
@@ -37,7 +34,7 @@ class _MobileScreenState extends State<MobileScreen> {
           SingleChildScrollView(
           child: SizedBox(
             width: size.width * 1,
-            height: size.height * 3,
+            height: size.height * 2.2,
             child: Column(
               children: [
                 Material(
@@ -57,21 +54,19 @@ class _MobileScreenState extends State<MobileScreen> {
                   ),
                 ),
                 Image.asset('assets/images/logo_pr1.jpg', height: 111.25, width: 121.25),
-        
-                IndexedStack(
-                  index: indiceWidget,
-                  children: const [
-                    InicioMobile(),               //0
-                    ArabesScreenMobile(),         //1
-                    HombreScreenMobile(),         //2
-                    MujerScreenMobile(),          //3
-                    CreaTuLocionMobile(),         //4
-                    SaleScreenMobile(),           //5
-                    HelpMobile(),                 //6
-                    PreguntasFrecuentesMobile(),  //7
-                    GuiaAromasMobile(),           //8
-                    SearchhBarMobile(),           //9
-                    CartScreenMobile(),           //10
+                Column(
+                  children: [
+                    if (indiceWidget == 0) const InicioMobile(),
+                    if (indiceWidget == 1) const ArabesScreenMobile(),
+                    if (indiceWidget == 2) const HombreScreenMobile(),
+                    if (indiceWidget == 3) const MujerScreenMobile(),
+                    if (indiceWidget == 4) const CreaTuLocionMobile(),
+                    if (indiceWidget == 5) const SaleScreenMobile(),
+                    if (indiceWidget == 6) const HelpMobile(),
+                    if (indiceWidget == 7) const PreguntasFrecuentesMobile(),
+                    if (indiceWidget == 8) const GuiaAromasMobile(),
+                    if (indiceWidget == 9) const SearchhBarMobile(),
+                    if (indiceWidget == 10) const CartScreenMobile(),
                   ],
                 ),
                 const SizedBox(height: 30),
@@ -79,7 +74,7 @@ class _MobileScreenState extends State<MobileScreen> {
                 Material(
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 1.3,
+                    height: size.height * 1.7,
                     decoration: const BoxDecoration(
                       color: Colors.black,
                     ),
@@ -174,7 +169,8 @@ class _MobileScreenState extends State<MobileScreen> {
                                       ),
                                       const Spacer(),
                                     ],
-                                  )
+                                  ),
+                                  const SizedBox(height: 15),
                                 ],
                               ),
                             )
@@ -294,7 +290,7 @@ o en efectivo''',
                               const Spacer(),
                             ],
                           ),
-                          const Spacer()
+                          const SizedBox(height: 5)
                         ],
                       ),
                   ),

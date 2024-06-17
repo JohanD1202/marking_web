@@ -18,7 +18,7 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 0.99,
+      height: size.height * 2,
       width: size.width * 1,
       child: Scaffold(
         body: Consumer<CartModel>(
@@ -143,7 +143,7 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
 }
 
 void _launchWhatsApp(String phoneNumber, CartModel cart) async {
-  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? "1"} fl oz - Cantidad: ${product.cantidad} - \$${product.priceDescuento}.000 - Total: \$${cart.totalPrice}.000').join('\n');
+  final message = cart.items.map((product) => '${product.name} - ${product.onzas ?? "1"} fl oz - Cantidad: ${product.cantidad} - \$${product.priceDescuento}.000').join('\n');
   final fullMessage = 'Hola, quiero comprar estos productos:\n$message\nTotal: \$${cart.totalPrice}.000';
   final whatsappUrl = Uri.parse("https://wa.me/$phoneNumber?text=${Uri.encodeComponent(fullMessage)}");
 

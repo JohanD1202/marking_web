@@ -11,7 +11,7 @@ class PreguntasFrecuentesMobile extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1.2,
+      height: size.height,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(

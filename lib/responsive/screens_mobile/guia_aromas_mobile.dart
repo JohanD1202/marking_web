@@ -10,7 +10,7 @@ class GuiaAromasMobile extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 1.5,
+      height: size.height * 2,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(
@@ -34,7 +34,7 @@ class GuiaAromasMobile extends StatelessWidget {
                           const Text(
                             TextAromasGuide.aromasGuideText,
                             style: TextStyle(
-                              fontSize: 18, fontFamily: 'Fredoka'
+                              fontSize: 16, fontFamily: 'Fredoka'
                             )
                           )
                         ],

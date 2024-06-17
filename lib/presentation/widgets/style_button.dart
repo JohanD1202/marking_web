@@ -908,9 +908,9 @@ class TextHelpMobile {
     añadidos. Luego, haga click en el botón 'Finalizar
     Compra', y posteriormente en 'Ir al Chat'.
     Automáticamente será redirigido a nuestro chat de
-    WhatsApp, donde encontrará un mensaje preescrito
-    con todos los productos que desea comprar, listo
-    para enviar su pedido.
+    WhatsApp, donde encontrará un mensaje
+    preescrito con todos los productos que desea
+    comprar, listo para enviar su pedido.
 
     Explora nuestras Categorías:
 

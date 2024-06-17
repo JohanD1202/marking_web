@@ -24,18 +24,17 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
   @override
   Widget build(BuildContext context) {
 
-    return ConstrainedBox(
-      constraints: const BoxConstraints(
-        minHeight: 100,
-        minWidth: double.infinity,
-        maxHeight: 1000,
-      ),
+    final size = MediaQuery.of(context).size;
+
+    return SizedBox(
+      width: size.width * 1,
+      height: size.height * 1.1,
       child: Scaffold(
         body: SingleChildScrollView(
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 child: Row(
                   children: [
                     Expanded(
@@ -417,8 +416,8 @@ Lattafa''',
             ],
           ),
         ),
-      ),
-    );
+      )
+      );
   }
 }
 

@@ -28,7 +28,7 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
 
     return SizedBox(
       width: size.width * 1,
-      height: size.height * 1.1,
+      height: size.height * 0.6,
       child: Scaffold(
         body: SingleChildScrollView(
           child: Column(
@@ -45,27 +45,27 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
                             child: Text('''
-Bienvenidos a nuestra sección de Aromas Árabes, en
-este espacio te invitamos a descubrir una amplia
-gama de aromas Árabes, que capturan la esencia de
-la elegancia.
+Bienvenidos a nuestra sección de Aromas Árabes,
+en este espacio te invitamos a descubrir una
+amplia gama de aromas Árabes, que capturan la
+esencia de la elegancia.
 
-Desde aromas frescos y vibrantes hasta notas cálidas.
-Explora nuestra colección y encuentra el aroma
-perfecto.
+Desde aromas frescos y vibrantes hasta notas
+cálidas. Explora nuestra colección y encuentra
+el aroma perfecto.
 
-Llévate tus aromas favoritos desde tan solo \$17.000.
-Elige el tamaño de tu loción en fl oz y luego la
-cantidad.
+Llévate tus aromas favoritos desde tan solo
+\$17.000. Elige el tamaño de tu loción en fl
+oz y luego la cantidad.
 
 Nuestros precios se manejan así:
 1 fl oz = \$17.000
 2 fl oz = \$33.000
 3 fl oz = \$45.000
 
-¡No te pierdas esta increíble oportunidad de disfrutar
-de fragancias de calidad a un precio increíblemente
-bajo!
+¡No te pierdas esta increíble oportunidad de
+disfrutar de fragancias de calidad a un precio
+increíblemente bajo!
                             ''', style: textoMobile),
                           )
                         ],

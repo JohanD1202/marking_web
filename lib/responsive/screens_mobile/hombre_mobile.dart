@@ -27,7 +27,7 @@ class _HombreScreenMobileState extends State<HombreScreenMobile> {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 2,
+      height: size.height * 0.6,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(
@@ -45,10 +45,10 @@ class _HombreScreenMobileState extends State<HombreScreenMobile> {
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
                             child: Text('''
-Bienvenidos a nuestra sección dedicada a los hombres
-modernos y con estilo. En Aromas Selectos, te
-ofrecemos una exquisita variedad de fragancias que
-reflejan tu personalidad única.
+Bienvenidos a nuestra sección dedicada a los
+hombres modernos y con estilo. En Aromas
+Selectos, te ofrecemos una exquisita variedad
+de fragancias que reflejan tu personalidad.
 
 Llévate tus aromas favoritos desde \$15.000.
 Elige el tamaño de tu loción en fl oz y luego la

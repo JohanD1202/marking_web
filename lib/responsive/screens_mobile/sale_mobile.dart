@@ -12,7 +12,7 @@ class SaleScreenMobile extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: size.height * 2,
+      height: size.height * 0.6,
       width: size.width * 1,
       child: Scaffold(
         body: SingleChildScrollView(

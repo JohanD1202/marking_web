@@ -34,7 +34,7 @@ class _MobileScreenState extends State<MobileScreen> {
           SingleChildScrollView(
           child: SizedBox(
             width: size.width * 1,
-            height: size.height * 2.2,
+            height: size.height * 2.3,
             child: Column(
               children: [
                 Material(

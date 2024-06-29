@@ -1,14 +1,11 @@
 import 'package:marking_web/exports.dart';
 
-
 class GuiaAromas extends StatelessWidget {
-
   // ignore: use_super_parameters
   const GuiaAromas({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
@@ -19,7 +16,8 @@ class GuiaAromas extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 60, vertical: 12),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -32,12 +30,9 @@ class GuiaAromas extends StatelessWidget {
                           Text('Bienvenido a Nuestra Guía de Aromas',
                               style: styleText3),
                           const SizedBox(height: 20),
-                          const Text(
-                            TextAromasGuide2.aromasGuideText,
-                            style: TextStyle(
-                              fontSize: 18, fontFamily: 'Fredoka'
-                            )
-                          )
+                          const Text(TextAromasGuide2.aromasGuideText,
+                              style: TextStyle(
+                                  fontSize: 18, fontFamily: 'Fredoka'))
                         ],
                       ),
                     ),
@@ -520,62 +515,50 @@ Florales''',
                   ),
                   //TODO:
                   const Aromas2000(
-                      title: 'Santal 33 - Le Labo',
-                      description: '''
+                    title: 'Santal 33 - Le Labo',
+                    description: '''
 Santal 33 de Le Labo es una fragancia de la familia olfativa Amaderada Aromática para Hombres y Mujeres. Santal 33
 se lanzó en 2011. Tiene una longevidad duradera y su estela es de moderada a pesada. Es un aroma Unisex.
 ''',
-                      imageLocion: 'assets/images/santal_33_le_labo.jpg',
-
-                      imageNotaFragancia: 'assets/images/sandalo.jpg',
-                      textNotaFragancia: 'Sándalo',
-
-                      imageNotaFragancia2: 'assets/images/cuero.jpg',
-                      textNotaFragancia2: 'Cuero',
-
-                      imageNotaFragancia3: 'assets/images/papiro_de_egipto.jpg',
-                      textNotaFragancia3: '''Papiro
+                    imageLocion: 'assets/images/santal_33_le_labo.jpg',
+                    imageNotaFragancia: 'assets/images/sandalo.jpg',
+                    textNotaFragancia: 'Sándalo',
+                    imageNotaFragancia2: 'assets/images/cuero.jpg',
+                    textNotaFragancia2: 'Cuero',
+                    imageNotaFragancia3: 'assets/images/papiro_de_egipto.jpg',
+                    textNotaFragancia3: '''Papiro
 de Egipto''',
-                      imageNotaFragancia4: 'assets/images/cedro.jpg',
-                      textNotaFragancia4: 'Cedro',
-
-                      imageNotaFragancia5: 'assets/images/violeta.jpg',
-                      textNotaFragancia5: 'Violeta',
-
-                      imageNotaFragancia6: 'assets/images/cardamomo.jpg',
-                      textNotaFragancia6: 'Cardamomo',
-
-                      imageNotaFragancia7: 'assets/images/iris.jpg',
-                      textNotaFragancia7: 'Iris',
-
-                      imageNotaFragancia8: 'assets/images/ambar.jpg',
-                      textNotaFragancia8: 'Ámbar',
-
-                      containerWidth: 230,
-                      containerColor: Color.fromRGBO(119, 68, 20, 1),
-                      colorText: Colors.white,
-                      text: 'amaderado',
-
-                      containerWidth2: 150,
-                      containerColor2: Color.fromRGBO(243, 231, 219, 1),
-                      colorText2: Colors.black54,
-                      text2: 'atalcado',
-
-                      containerWidth3: 140,
-                      containerColor3: Color.fromRGBO(166, 135, 126, 1),
-                      colorText3: Colors.white70,
-                      text3: 'cuero',
-
-                      containerWidth4: 130,
-                      containerColor4: Color.fromRGBO(224, 131, 100, 1),
-                      colorText4: Colors.white70,
-                      text4: 'cálido especiado',
-                      
-                      containerWidth5: 120,
-                      containerColor5: Color.fromRGBO(200, 130, 255, 1),
-                      colorText5: Colors.white70,
-                      text5: 'violeta',
-                    ),
+                    imageNotaFragancia4: 'assets/images/cedro.jpg',
+                    textNotaFragancia4: 'Cedro',
+                    imageNotaFragancia5: 'assets/images/violeta.jpg',
+                    textNotaFragancia5: 'Violeta',
+                    imageNotaFragancia6: 'assets/images/cardamomo.jpg',
+                    textNotaFragancia6: 'Cardamomo',
+                    imageNotaFragancia7: 'assets/images/iris.jpg',
+                    textNotaFragancia7: 'Iris',
+                    imageNotaFragancia8: 'assets/images/ambar.jpg',
+                    textNotaFragancia8: 'Ámbar',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(119, 68, 20, 1),
+                    colorText: Colors.white,
+                    text: 'amaderado',
+                    containerWidth2: 150,
+                    containerColor2: Color.fromRGBO(243, 231, 219, 1),
+                    colorText2: Colors.black54,
+                    text2: 'atalcado',
+                    containerWidth3: 140,
+                    containerColor3: Color.fromRGBO(166, 135, 126, 1),
+                    colorText3: Colors.white70,
+                    text3: 'cuero',
+                    containerWidth4: 130,
+                    containerColor4: Color.fromRGBO(224, 131, 100, 1),
+                    colorText4: Colors.white70,
+                    text4: 'cálido especiado',
+                    containerWidth5: 120,
+                    containerColor5: Color.fromRGBO(200, 130, 255, 1),
+                    colorText5: Colors.white70,
+                    text5: 'violeta',
+                  ),
                   const SizedBox(height: 30),
                   //TODO:
                   const Aromas500(
@@ -997,6 +980,231 @@ de Gaiac''',
                     colorText9: Colors.white60,
                     text9: 'pachulí',
                   ),
+                  //TODO:
+                  const Aromas500(
+                      title: 'Amber Rouge - Orientica',
+                      description: '''
+Amber Rouge de Orientica Premium es una fragancia de la familia olfativa Amaderada Especiada para Hombres y Mujeres.
+Amber Rouge se lanzó en 2021. Su longevidad es duradera y su estela es pesada. Es un aroma Unisex.
+''',
+                      imageLocion: 'assets/images/amber_rouge_orientica.jpg',
+
+                      imageNotaSalida: 'assets/images/azafran.jpg',
+                      textNotaSalida: 'Azafrán',
+
+                      imageNotaSalida2: 'assets/images/jazmin.jpg',
+                      textNotaSalida2: 'Jazmín',
+
+                      imageCorazon: 'assets/images/amberwood.jpg',
+                      textCorazon: 'Amberwood',
+
+                      imageCorazon2: 'assets/images/ambar_gris.jpg',
+                      textCorazon2: '''Ámbar
+Gris''',
+
+                      imageBase: 'assets/images/cedro.jpg',
+                      textBase: 'Cedro',
+
+                      imageBase2: 'assets/images/resina_de_abeto.jpg',
+                      textBase2: '''Resina
+de Abeto''',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(188, 77, 16, 1),
+                      colorText: Colors.white,
+                      text: 'ámbar',
+
+                      containerWidth2: 220,
+                      containerColor2: Color.fromRGBO(126, 78, 32, 1),
+                      colorText2: Colors.white,
+                      text2: 'amaderado',
+
+                      containerWidth3: 180,
+                      containerColor3: Color.fromRGBO(213, 87, 45, 1),
+                      colorText3: Colors.white,
+                      text3: 'cálido especiado',
+
+                      containerWidth4: 130,
+                      containerColor4: Color.fromRGBO(193, 208, 212, 1),
+                      colorText4: Colors.black54,
+                      text4: 'metálico',
+
+                      containerWidth5: 128,
+                      containerColor5: Color.fromRGBO(244, 247, 252, 1),
+                      colorText5: Colors.black54,
+                      text5: 'floral blanco',
+
+                      containerWidth6: 128,
+                      containerColor6: Color.fromRGBO(189, 151, 119, 1),
+                      colorText6: Colors.white70,
+                      text6: 'animálico',
+
+                      containerWidth7: 123,
+                      containerColor7: Color.fromRGBO(180, 153, 146, 1),
+                      colorText7: Colors.white70,
+                      text7: 'cuero',
+                    ),
+                    //TODO:
+                    const Aromas500(
+                      title: 'Amber Oud Gold - Al Haramain',
+                      description: '''
+Amber Oud Gold de Al Haramain Perfumes es una fragancia de la familia olfativa Ámbar Vainilla para Hombres y Mujeres.
+Amber Oud Gold se lanzó en 2018. Su longevidad es muy duradera y su estela es pesada. Es un aroma Unisex.
+''',
+                      imageLocion: 'assets/images/amber_oud_gold_haramain.webp',
+
+                      imageNotaSalida: 'assets/images/bergamota.jpg',
+                      textNotaSalida: 'Bergamota',
+
+                      imageNotaSalida2: 'assets/images/notas_verdes.jpg',
+                      textNotaSalida2: '''Notas
+Verdes''',
+
+                      imageCorazon: 'assets/images/notas_dulces.jpg',
+                      textCorazon: '''Notas
+Dulces''',
+
+                      imageCorazon2: 'assets/images/melon.jpg',
+                      textCorazon2: 'Melón',
+
+                      imageCorazon3: 'assets/images/piña.jpg',
+                      textCorazon3: 'Piña',
+
+                      imageCorazon4: 'assets/images/ambar.jpg',
+                      textCorazon4: 'Ámbar',
+
+                      imageBase: 'assets/images/almizcle.jpg',
+                      textBase: 'Almizcle',
+
+                      imageBase2: 'assets/images/vainilla.jpg',
+                      textBase2: 'Vainilla',
+
+                      imageBase3: 'assets/images/notas_amaderadas.jpg',
+                      textBase3: '''Notas
+Amaderadas''',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(238, 54, 59, 1),
+                      colorText: Colors.white,
+                      text: 'dulce',
+
+                      containerWidth2: 150,
+                      containerColor2: Color.fromRGBO(253, 130, 106, 1),
+                      colorText2: Colors.black87,
+                      text2: 'afrutados',
+
+                      containerWidth3: 135,
+                      containerColor3: Color.fromRGBO(222, 253, 252, 1),
+                      colorText3: Colors.black54,
+                      text3: 'ozónico',
+
+                      containerWidth4: 133,
+                      containerColor4: Color.fromRGBO(241, 232, 242, 1),
+                      colorText4: Colors.black54,
+                      text4: 'almizclado',
+
+                      containerWidth5: 133,
+                      containerColor5: Color.fromRGBO(245, 235, 225, 1),
+                      colorText5: Colors.black54,
+                      text5: 'atalcado',
+
+                      containerWidth6: 133,
+                      containerColor6: Color.fromRGBO(216, 151, 116, 1),
+                      colorText6: Colors.white70,
+                      text6: 'ámbar',
+
+                      containerWidth7: 133,
+                      containerColor7: Color.fromRGBO(197, 240, 244, 1),
+                      colorText7: Colors.black54,
+                      text7: 'fresco',
+
+                      containerWidth8: 133,
+                      containerColor8: Color.fromRGBO(255, 254, 219, 1),
+                      colorText8: Colors.black54,
+                      text8: 'avainillado',
+
+                      containerWidth9: 133,
+                      containerColor9: Color.fromRGBO(166, 226, 238, 1),
+                      colorText9: Colors.black54,
+                      text9: 'acuático',
+
+                      containerWidth10: 123,
+                      containerColor10: Color.fromRGBO(183, 156, 130, 1),
+                      colorText10: Colors.white70,
+                      text10: 'amaderado',
+                    ),
+                    //TODO:
+                    const Aromas500(
+                      title: 'King - Bharara',
+                      description: '''
+King de Bharara es una fragancia de la familia olfativa Aromática para Hombres. King se lanzó en 2021.
+Su longevidad es duradera y su estela es pesada. Es un aroma Unisex.
+''',
+                      imageLocion: 'assets/images/king_bharara.jpg',
+
+                      imageNotaSalida: 'assets/images/naranja.jpg',
+                      textNotaSalida: 'Naranja',
+
+                      imageNotaSalida2: 'assets/images/bergamota.jpg',
+                      textNotaSalida2: 'Bergamota',
+
+                      imageNotaSalida3: 'assets/images/limon.jpg',
+                      textNotaSalida3: 'Limón',
+
+                      imageCorazon: 'assets/images/notas_afrutadas.jpg',
+                      textCorazon: '''Notas
+Afrutadas''',
+
+                      imageBase: 'assets/images/vainilla.jpg',
+                      textBase: 'Vainilla',
+
+                      imageBase2: 'assets/images/almizcle.jpg',
+                      textBase2: '''Almizcle
+Blanco''',
+
+                      imageBase3: 'assets/images/ambar.jpg',
+                      textBase3: 'Ámbar',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(249, 255, 82, 1),
+                      colorText: Colors.black,
+                      text: 'cítrico',
+
+                      containerWidth2: 200,
+                      containerColor2: Color.fromRGBO(252, 96, 66, 1),
+                      colorText2: Colors.black,
+                      text2: 'afrutados',
+
+                      containerWidth3: 185,
+                      containerColor3: Color.fromRGBO(241, 91, 95, 1),
+                      colorText3: Colors.white,
+                      text3: 'dulce',
+
+                      containerWidth4: 180,
+                      containerColor4: Color.fromRGBO(255, 254, 206, 1),
+                      colorText4: Colors.black87,
+                      text4: 'avainillado',
+
+                      containerWidth5: 160,
+                      containerColor5: Color.fromRGBO(243, 231, 218, 1),
+                      colorText5: Colors.black54,
+                      text5: 'atalcado',
+
+                      containerWidth6: 155,
+                      containerColor6: Color.fromRGBO(238, 228, 240, 1),
+                      colorText6: Colors.black54,
+                      text6: 'almizclado',
+
+                      containerWidth7: 150,
+                      containerColor7: Color.fromRGBO(210, 137, 96, 1),
+                      colorText7: Colors.white70,
+                      text7: 'ambar',
+
+                      containerWidth8: 120,
+                      containerColor8: Color.fromRGBO(187, 225, 138, 1),
+                      colorText8: Colors.black45,
+                      text8: 'fresco especiado',
+                    ),
                   //TODO: AROMAS HOMBRE
                   Padding(
                     padding: const EdgeInsets.only(left: 60, bottom: 30),
@@ -1294,79 +1502,63 @@ Tonka''',
 en 2020. Su longevidad es duradera y su estela es pesada. Es un aroma Masculino.
 ''',
                     imageLocion: 'assets/images/1_million_paco_rabanne.webp',
-                    
                     imageNotaFragancia: 'assets/images/nardos.jpg',
                     textNotaFragancia: 'Nardos',
-                    
                     imageNotaFragancia2: 'assets/images/sal.jpg',
                     textNotaFragancia2: 'Sal',
-                    
                     imageNotaFragancia3: 'assets/images/notas_solares.jpg',
                     textNotaFragancia3: '''Notas
-Solares''',                    
+Solares''',
                     imageNotaFragancia4: 'assets/images/aceite_de_monoil.jpg',
                     textNotaFragancia4: '''Aceite
-de Monoi''',            
+de Monoi''',
                     imageNotaFragancia5: 'assets/images/ambar_gris.jpg',
                     textNotaFragancia5: '''Ámbar
-Gris''',                    
+Gris''',
                     imageNotaFragancia6: 'assets/images/cuero.jpg',
                     textNotaFragancia6: 'Cuero',
-                    
                     imageNotaFragancia7: 'assets/images/cachemira.jpg',
                     textNotaFragancia7: 'Cachemira',
-                    
                     imageNotaFragancia8: 'assets/images/ladano.jpg',
                     textNotaFragancia8: 'Ládano',
-                    
                     imageNotaFragancia9: 'assets/images/pino.jpg',
                     textNotaFragancia9: 'Pino',
-
                     containerWidth: 230,
                     containerColor: Color.fromRGBO(237, 242, 251, 1),
                     colorText: Colors.black,
                     text: 'floral blanco',
-                    
                     containerWidth2: 210,
                     containerColor2: Color.fromRGBO(236, 250, 244, 1),
                     colorText2: Colors.black,
                     text2: 'nardos',
-                    
                     containerWidth3: 190,
                     containerColor3: Color.fromRGBO(197, 101, 48, 1),
                     colorText3: Colors.white,
                     text3: 'ámbar',
-
                     containerWidth4: 180,
                     containerColor4: Color.fromRGBO(161, 105, 58, 1),
                     colorText4: Colors.white,
                     text4: 'animálico',
-                    
                     containerWidth5: 150,
                     containerColor5: Color.fromRGBO(158, 122, 88, 1),
                     colorText5: Colors.white,
                     text5: 'amaderado',
-
                     containerWidth6: 140,
                     containerColor6: Color.fromRGBO(240, 255, 251, 1),
                     colorText6: Colors.black54,
                     text6: 'salado',
-                  
                     containerWidth7: 135,
                     containerColor7: Color.fromRGBO(167, 136, 126, 1),
                     colorText7: Colors.white70,
                     text7: 'cuero',
-                  
                     containerWidth8: 125,
                     containerColor8: Color.fromRGBO(249, 206, 106, 1),
                     colorText8: Colors.black45,
                     text8: 'tropical',
-                  
                     containerWidth9: 120,
                     containerColor9: Color.fromRGBO(241, 232, 242, 1),
                     colorText9: Colors.black45,
                     text9: 'almizclado',
-
                     containerWidth10: 115,
                     containerColor10: Color.fromRGBO(247, 242, 231, 1),
                     colorText10: Colors.black45,
@@ -4371,7 +4563,6 @@ class BuscadorAromas extends StatelessWidget {
                 text: textCorazon10!,
                 padding: const EdgeInsets.only(right: 0),
               ),
-            
           ],
         ),
         const SizedBox(height: 5),
@@ -4878,7 +5069,6 @@ class Aromas2000 extends StatelessWidget {
 
 //TODO:
 
-
 class AromasBuscador2000 extends StatelessWidget {
   final String title;
   final String description;
@@ -5187,23 +5377,19 @@ class AromasBuscador2000 extends StatelessWidget {
   }
 }
 
-
-
-
 //TODO:
 
 class Aromas2 extends StatelessWidget {
-
   final String image;
   final String text;
   final EdgeInsets padding;
   // ignore: use_super_parameters
-  const Aromas2({
-    Key? key, 
-    required this.image, 
-    required this.text,
-    required this.padding
-  }) : super(key: key);
+  const Aromas2(
+      {Key? key,
+      required this.image,
+      required this.text,
+      required this.padding})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -5220,16 +5406,15 @@ class Aromas2 extends StatelessWidget {
 }
 
 class MainChords2 extends StatelessWidget {
-
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
   final String text;
   // ignore: use_super_parameters
   const MainChords2({
-    Key? key, 
-    required this.containerWidth, 
-    required this.containerColor, 
+    Key? key,
+    required this.containerWidth,
+    required this.containerColor,
     required this.colorText,
     required this.text,
   }) : super(key: key);
@@ -5240,18 +5425,18 @@ class MainChords2 extends StatelessWidget {
       width: containerWidth,
       height: 20,
       decoration: BoxDecoration(
-        color: containerColor,
-        borderRadius: const BorderRadius.horizontal(right: Radius.circular(5))
-      ),
+          color: containerColor,
+          borderRadius:
+              const BorderRadius.horizontal(right: Radius.circular(5))),
       child: Stack(
         children: [
-          Row(
-            children: [
-              const Spacer(),
-              Text(text, style: TextStyle(color: colorText, fontSize: 14, fontFamily: 'Fredoka')),
-              const Spacer(),
-            ]
-          )
+          Row(children: [
+            const Spacer(),
+            Text(text,
+                style: TextStyle(
+                    color: colorText, fontSize: 14, fontFamily: 'Fredoka')),
+            const Spacer(),
+          ])
         ],
       ),
     );

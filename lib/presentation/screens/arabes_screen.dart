@@ -67,7 +67,6 @@ a un precio increíblemente bajo!
                 ),
               ),
               const SectionArabe(),
-              //ShoppingCart(cart: myCart),
             ],
           ),
         ),

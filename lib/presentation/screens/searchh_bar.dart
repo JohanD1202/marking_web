@@ -28,6 +28,9 @@ class _SearchhBarState extends State<SearchhBar> {
     "Intense Cafe - Montale",
     "Baccarat Rouge 540 - Francis Kurkdjian",
     "Oud Saffron - Orientica",
+    "Amber Rouge - Orientica",
+    "Amber Oud Gold - Al Haramain",
+    "King - Bharara",
     "212 Heroes - Carolina Herrera",
     "212 VIP Men - Carolina Herrera",
     "CH Men - Carolina Herrera",
@@ -70,7 +73,7 @@ class _SearchhBarState extends State<SearchhBar> {
         'assets/images/ombre_nomade_louis_vuitton.webp',
     "Bade'e Al Oud Amethyst - Lattafa": 'assets/images/amethyst_lattafa.webp',
     "Oud For Greatness - Initio": 'assets/images/oud_for_greatness_initio.jpg',
-    "Amber Oud - Al Haramain": 'assets/images/amber_oud_haramain.webp',
+    "Amber Oud - Al Haramain": 'assets/images/amber_oud_haramain.jpg',
     "L' Aventure - Al Haramain": 'assets/images/l_aventure_haramain.jpg',
     "Madinah - Al Haramain": 'assets/images/madinah_haramain.jpg',
     "Santal 33 - Le Labo": 'assets/images/santal_33_le_labo.jpg',
@@ -81,6 +84,9 @@ class _SearchhBarState extends State<SearchhBar> {
     "Baccarat Rouge 540 - Francis Kurkdjian":
         'assets/images/baccarat_rouge_francis_kurkdjian.webp',
     "Oud Saffron - Orientica": 'assets/images/oud_saffron_orientica.webp',
+    "Amber Rouge - Orientica": 'assets/images/amber_rouge_orientica.jpg',
+    "Amber Oud Gold - Al Haramain": 'assets/images/amber_oud_gold_haramain.webp',
+    "King - Bharara": 'assets/images/king_bharara.jpg',
     "212 Heroes - Carolina Herrera":
         'assets/images/212_heroes_carolina_herrera.png',
     "212 VIP Men - Carolina Herrera":
@@ -203,107 +209,116 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Oud Saffron - Orientica':
           _selectedIndex = 14;
           break;
-        case '212 Heroes - Carolina Herrera':
+        case 'Amber Rouge - Orientica':
           _selectedIndex = 15;
           break;
-        case '212 VIP Men - Carolina Herrera':
+        case 'Amber Oud Gold - Al Haramain':
           _selectedIndex = 16;
           break;
-        case 'CH Men - Carolina Herrera':
+        case 'King - Bharara':
           _selectedIndex = 17;
           break;
-        case '212 VIP Men Wins - Carolina Herrera':
+        case '212 Heroes - Carolina Herrera':
           _selectedIndex = 18;
           break;
-        case '1 Million Parfum - Paco Rabanne':
+        case '212 VIP Men - Carolina Herrera':
           _selectedIndex = 19;
           break;
-        case '1 Million Lucky - Paco Rabanne':
+        case 'CH Men - Carolina Herrera':
           _selectedIndex = 20;
           break;
-        case 'Invictus - Paco Rabanne':
+        case '212 VIP Men Wins - Carolina Herrera':
           _selectedIndex = 21;
           break;
-        case 'Black XS - Paco Rabanne':
+        case '1 Million Parfum - Paco Rabanne':
           _selectedIndex = 22;
           break;
-        case 'Sauvage - Dior':
+        case '1 Million Lucky - Paco Rabanne':
           _selectedIndex = 23;
           break;
-        case 'Fahrenheit - Dior':
+        case 'Invictus - Paco Rabanne':
           _selectedIndex = 24;
           break;
-        case 'CK One - Calvin Klein':
+        case 'Black XS - Paco Rabanne':
           _selectedIndex = 25;
           break;
-        case '360° for Men - Perry Ellis':
+        case 'Sauvage - Dior':
           _selectedIndex = 26;
           break;
-        case 'Nautica Voyage - Nautica':
+        case 'Fahrenheit - Dior':
           _selectedIndex = 27;
           break;
-        case 'Toy Boy - Moschino':
+        case 'CK One - Calvin Klein':
           _selectedIndex = 28;
           break;
-        case 'Red - Lacoste':
+        case '360° for Men - Perry Ellis':
           _selectedIndex = 29;
           break;
-        case 'L\'Eau d\'Issey Pour Homme Eau & Cèdre - Issey Miyake':
+        case 'Nautica Voyage - Nautica':
           _selectedIndex = 30;
           break;
-        case 'Hugo - Hugo Boss':
+        case 'Toy Boy - Moschino':
           _selectedIndex = 31;
           break;
-        case 'Acqua di Gio - Giorgio Armani':
+        case 'Red - Lacoste':
           _selectedIndex = 32;
           break;
-        case 'Polo Blue - Ralph Lauren':
+        case 'L\'Eau d\'Issey Pour Homme Eau & Cèdre - Issey Miyake':
           _selectedIndex = 33;
           break;
-        case 'Carolina Herrera - Carolina Herrera':
+        case 'Hugo - Hugo Boss':
           _selectedIndex = 34;
           break;
-        case 'CH (2015) - Carolina Herrera':
+        case 'Acqua di Gio - Giorgio Armani':
           _selectedIndex = 35;
           break;
-        case '212 VIP Rosé - Carolina Herrera':
+        case 'Polo Blue - Ralph Lauren':
           _selectedIndex = 36;
           break;
-        case '360° - Perry Ellis':
+        case 'Carolina Herrera - Carolina Herrera':
           _selectedIndex = 37;
           break;
-        case 'Paris Hilton - Paris Hilton':
+        case 'CH (2015) - Carolina Herrera':
           _selectedIndex = 38;
           break;
-        case 'Can Can - Paris Hilton':
+        case '212 VIP Rosé - Carolina Herrera':
           _selectedIndex = 39;
           break;
-        case 'Heiress - Paris Hilton':
+        case '360° - Perry Ellis':
           _selectedIndex = 40;
           break;
-        case 'Toy 2 - Moschino':
+        case 'Paris Hilton - Paris Hilton':
           _selectedIndex = 41;
           break;
-        case 'Amor Amor - Cacharel':
+        case 'Can Can - Paris Hilton':
           _selectedIndex = 42;
           break;
-        case 'La Vie Est Belle - Lancôme':
+        case 'Heiress - Paris Hilton':
           _selectedIndex = 43;
           break;
-        case 'Light Blue - Dolce&Gabbana':
+        case 'Toy 2 - Moschino':
           _selectedIndex = 44;
           break;
-        case 'Kim Kardashian - Kim Kardashian':
+        case 'Amor Amor - Cacharel':
           _selectedIndex = 45;
           break;
-        case 'Angel - Mugler':
+        case 'La Vie Est Belle - Lancôme':
           _selectedIndex = 46;
           break;
-        case 'Halloween - Halloween':
+        case 'Light Blue - Dolce&Gabbana':
           _selectedIndex = 47;
           break;
-        case 'CK2 - Calvin Klein':
+        case 'Kim Kardashian - Kim Kardashian':
           _selectedIndex = 48;
+          break;
+        case 'Angel - Mugler':
+          _selectedIndex = 49;
+          break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 50;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 51;
           break;
         default:
           _selectedIndex = 0;
@@ -632,7 +647,7 @@ de Oud''',
 Amber Oud de Al Haramain Perfumes es una fragancia de la familia olfativa Ámbar amaderada para Hombres y Mujeres.
 Amber Oud se lanzó en 2018. Tiene una longevidad duradera y su estela es pesada. Es un aroma Unisex.
 ''',
-                  imageLocion: 'assets/images/amber_oud_haramain.webp',
+                  imageLocion: 'assets/images/amber_oud_haramain.jpg',
                   imageNotaSalida: 'assets/images/romero.jpg',
                   textNotaSalida: 'Romero',
                   imageNotaSalida2: 'assets/images/bergamota.jpg',
@@ -1300,6 +1315,231 @@ de Gaiac''',
                 text9: 'pachulí',
               ),
               //TODO: 15
+              BuscadorAromas(
+                title: 'Amber Rouge - Orientica',
+                description: '''
+Amber Rouge de Orientica Premium es una fragancia de la familia olfativa Amaderada Especiada para Hombres y Mujeres.
+Amber Rouge se lanzó en 2021.  Su longevidad es duradera y su estela es pesada. Es un aroma Unisex.
+''',
+                imageLocion: 'assets/images/amber_rouge_orientica.jpg',
+
+                imageNotaSalida: 'assets/images/azafran.jpg',
+                textNotaSalida: 'Azafrán',
+
+                imageNotaSalida2: 'assets/images/jazmin.jpg',
+                textNotaSalida2: 'Jazmín',
+
+                imageCorazon: 'assets/images/amberwood.jpg',
+                textCorazon: 'Amberwood',
+
+                imageCorazon2: 'assets/images/ambar_gris.jpg',
+                textCorazon2: '''Ámbar
+Gris''',
+
+                imageBase: 'assets/images/cedro.jpg',
+                textBase: 'Cedro',
+
+                imageBase2: 'assets/images/resina_de_abeto.jpg',
+                textBase2: '''Resina
+de Abeto''',
+
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(188, 77, 16, 1),
+                colorText: Colors.white,
+                text: 'ámbar',
+
+                containerWidth2: 220,
+                containerColor2: Color.fromRGBO(126, 78, 32, 1),
+                colorText2: Colors.white,
+                text2: 'amaderado',
+
+                containerWidth3: 180,
+                containerColor3: Color.fromRGBO(213, 87, 45, 1),
+                colorText3: Colors.white,
+                text3: 'cálido especiado',
+
+                containerWidth4: 130,
+                containerColor4: Color.fromRGBO(193, 208, 212, 1),
+                colorText4: Colors.black54,
+                text4: 'metálico',
+
+                containerWidth5: 128,
+                containerColor5: Color.fromRGBO(244, 247, 252, 1),
+                colorText5: Colors.black54,
+                text5: 'floral blanco',
+
+                containerWidth6: 128,
+                containerColor6: Color.fromRGBO(189, 151, 119, 1),
+                colorText6: Colors.white70,
+                text6: 'animálico',
+
+                containerWidth7: 123,
+                containerColor7: Color.fromRGBO(180, 153, 146, 1),
+                colorText7: Colors.white70,
+                text7: 'cuero',
+              ),
+              //TODO: 16
+              AromasBuscador(
+                title: 'Amber Oud Gold - Al Haramain',
+                description: '''
+Amber Oud Gold de Al Haramain Perfumes es una fragancia de la familia olfativa Ámbar Vainilla para Hombres y Mujeres.
+Amber Oud Gold se lanzó en 2018. Su longevidad es muy duradera y su estela es pesada. Es un aroma Unisex.
+''',
+                imageLocion: 'assets/images/amber_oud_gold_haramain.webp',
+
+                imageNotaSalida: 'assets/images/bergamota.jpg',
+                textNotaSalida: 'Bergamota',
+
+                imageNotaSalida2: 'assets/images/notas_verdes.jpg',
+                textNotaSalida2: '''Notas
+Verdes''',
+
+                imageCorazon: 'assets/images/notas_dulces.jpg',
+                textCorazon: '''Notas
+Dulces''',
+
+                imageCorazon2: 'assets/images/melon.jpg',
+                textCorazon2: 'Melón',
+
+                imageCorazon3: 'assets/images/piña.jpg',
+                textCorazon3: 'Piña',
+
+                imageCorazon4: 'assets/images/ambar.jpg',
+                textCorazon4: 'Ámbar',
+
+                imageBase: 'assets/images/almizcle.jpg',
+                textBase: 'Almizcle',
+
+                imageBase2: 'assets/images/vainilla.jpg',
+                textBase2: 'Vainilla',
+
+                imageBase3: 'assets/images/notas_amaderadas.jpg',
+                textBase3: '''Notas
+Amaderadas''',
+
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(238, 54, 59, 1),
+                colorText: Colors.white,
+                text: 'dulce',
+
+                containerWidth2: 150,
+                containerColor2: Color.fromRGBO(253, 130, 106, 1),
+                colorText2: Colors.black87,
+                text2: 'afrutados',
+
+                containerWidth3: 135,
+                containerColor3: Color.fromRGBO(222, 253, 252, 1),
+                colorText3: Colors.black54,
+                text3: 'ozónico',
+
+                containerWidth4: 133,
+                containerColor4: Color.fromRGBO(241, 232, 242, 1),
+                colorText4: Colors.black54,
+                text4: 'almizclado',
+
+                containerWidth5: 133,
+                containerColor5: Color.fromRGBO(245, 235, 225, 1),
+                colorText5: Colors.black54,
+                text5: 'atalcado',
+
+                containerWidth6: 133,
+                containerColor6: Color.fromRGBO(216, 151, 116, 1),
+                colorText6: Colors.white70,
+                text6: 'ámbar',
+
+                containerWidth7: 133,
+                containerColor7: Color.fromRGBO(197, 240, 244, 1),
+                colorText7: Colors.black54,
+                text7: 'fresco',
+
+                containerWidth8: 133,
+                containerColor8: Color.fromRGBO(255, 254, 219, 1),
+                colorText8: Colors.black54,
+                text8: 'avainillado',
+
+                containerWidth9: 133,
+                containerColor9: Color.fromRGBO(166, 226, 238, 1),
+                colorText9: Colors.black54,
+                text9: 'acuático',
+
+                containerWidth10: 123,
+                containerColor10: Color.fromRGBO(183, 156, 130, 1),
+                colorText10: Colors.white70,
+                text10: 'amaderado',
+              ),
+              //TODO: 17
+              AromasBuscador(
+                title: 'King - Bharara',
+                description: '''
+King de Bharara es una fragancia de la familia olfativa Aromática para Hombres. King se lanzó en 2021.
+Su longevidad es duradera y su estela es pesada. Es un aroma Unisex.
+''',
+                imageLocion: 'assets/images/king_bharara.jpg',
+
+                imageNotaSalida: 'assets/images/naranja.jpg',
+                textNotaSalida: 'Naranja',
+
+                imageNotaSalida2: 'assets/images/bergamota.jpg',
+                textNotaSalida2: 'Bergamota',
+
+                imageNotaSalida3: 'assets/images/limon.jpg',
+                textNotaSalida3: 'Limón',
+
+                imageCorazon: 'assets/images/notas_afrutadas.jpg',
+                textCorazon: '''Notas
+Afrutadas''',
+
+                imageBase: 'assets/images/vainilla.jpg',
+                textBase: 'Vainilla',
+
+                imageBase2: 'assets/images/almizcle.jpg',
+                textBase2: '''Almizcle
+Blanco''',
+
+                imageBase3: 'assets/images/ambar.jpg',
+                textBase3: 'Ámbar',
+
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(249, 255, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+
+                containerWidth2: 200,
+                containerColor2: Color.fromRGBO(252, 96, 66, 1),
+                colorText2: Colors.black,
+                text2: 'afrutados',
+
+                containerWidth3: 185,
+                containerColor3: Color.fromRGBO(241, 91, 95, 1),
+                colorText3: Colors.white,
+                text3: 'dulce',
+
+                containerWidth4: 180,
+                containerColor4: Color.fromRGBO(255, 254, 206, 1),
+                colorText4: Colors.black87,
+                text4: 'avainillado',
+
+                containerWidth5: 160,
+                containerColor5: Color.fromRGBO(243, 231, 218, 1),
+                colorText5: Colors.black54,
+                text5: 'atalcado',
+
+                containerWidth6: 155,
+                containerColor6: Color.fromRGBO(238, 228, 240, 1),
+                colorText6: Colors.black54,
+                text6: 'almizclado',
+
+                containerWidth7: 150,
+                containerColor7: Color.fromRGBO(210, 137, 96, 1),
+                colorText7: Colors.white70,
+                text7: 'ambar',
+
+                containerWidth8: 120,
+                containerColor8: Color.fromRGBO(187, 225, 138, 1),
+                colorText8: Colors.black45,
+                text8: 'fresco especiado',
+              ),
+              //TODO: 18
               BuscadorAromas(
                 title: '212 Heroes - Carolina Herrera',
                 description: '''

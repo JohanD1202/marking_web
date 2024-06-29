@@ -41,6 +41,9 @@ a precios irresistibles.
 bolsos, carteras y demás accesorios sumado a
 tus Aromas favoritos!
 
+Recuerda que todas las lociones incluídas en
+nuestras promociones son de 1 fl oz!
+
 ¡No te pierdas esta oportunidad de renovar tu
 estilo y disfrutar de grandes ahorros y nuestras
 increíbles rebajas.
@@ -258,6 +261,27 @@ Vuitton + 1 Locion''',
             Spacer(),
           ],
         ),
+        const SizedBox(height: 20),
+        //TODO: SEXTO ROW DE BOLSOS + ACCESORIOS
+        const Row(
+          children: [
+            Spacer(),
+            BolsosPromotionMobile(
+              imageBolso: 'assets/images/aroma_10.jpg',
+              imageBolso2: 'assets/images/locion_8.jpg',
+              imageWidth: 150,
+              imageHeight: 240,
+              nameBolso: '''2 Lociones Árabes
++ Atomizador''',
+              symbol: '\$',
+              price: 50.000,
+              priceDescuento: 45.000,
+              promotion: PriceMobile(price: '10%')
+            ),
+            Spacer(),
+          ],
+        ),
+        const SizedBox(height: 20),
             ],
           ),
         ),

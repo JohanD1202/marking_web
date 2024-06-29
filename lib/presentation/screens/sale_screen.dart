@@ -37,6 +37,9 @@ Con nuestros productos de alta calidad a precios irresistibles.
 ¡Tenemos las mejores promociones que incluyen bolsos, carteras
 y demás accesorios sumado a tus Aromas favoritos!
 
+Recuerda que todas las lociones incluídas en nuestras promociones
+son de 1 fl oz!
+
 No te pierdas esta oportunidad de renovar tu estilo y disfrutar 
 de grandes ahorros y nuestras increíbles rebajas.
 ''', style: texto),

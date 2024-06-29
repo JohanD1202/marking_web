@@ -82,34 +82,11 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  width: 1200,
-                  height: 130,
-                  decoration: const BoxDecoration(
-                    color: Colors.white
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Spacer(flex: 4),
-                      Image.asset('assets/images/logo_pr1.jpg'),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 375, top: 50),
-                        child: IconButton(
-                          icon: const Icon(Icons.shopping_cart_rounded, color: Colors.black,size: 35),
-                          onPressed: () {
-                            setState(() {
-                              indiceWidget = 8;
-                            });
-                          },
-                        ),
-                      ),
-                      const Spacer(),
-                    ],
-                  ),
-                ),
+                const Spacer(),
+                Image.asset('assets/images/logo_pr1.jpg', width: 150),
+                const Spacer(),
               ],
             ),
           Padding(
@@ -125,7 +102,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     });
                   }
                 ),
-                //const Spacer(),
                 const SizedBox(width: 50),
                 ButtonTextBar(
                   buttonText: 'Aromas Árabes', 
@@ -180,7 +156,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     });
                   }
                 ),
-                const Spacer(flex: 1),
+                const SizedBox(width: 50),
+                IconButton(
+                  icon: const Icon(Icons.shopping_cart_rounded, color: Colors.black, size: 30),
+                  onPressed: () {
+                    setState(() {
+                      indiceWidget = 8;
+                    });
+                  },
+                ),
+                const Spacer(),
               ],
             ),
           ),

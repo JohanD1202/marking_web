@@ -38,7 +38,7 @@ class _HelpMobileState extends State<HelpMobile> {
   final size = MediaQuery.of(context).size;
   
   return SizedBox(
-    height: size.height * 1.7,
+    height: size.height * 0.6,
     width: size.width * 1,
     child: Scaffold(
       body: SingleChildScrollView(

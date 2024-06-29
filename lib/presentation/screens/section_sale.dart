@@ -390,7 +390,26 @@ Vuitton + 1 Locion''',
           ],
         ),
         const SizedBox(height: 20),
-        //
+        //TODO: CUARTO ROW DE BOLSOS + ACCESORIOS
+        const Row(
+          children: [
+            Spacer(),
+            BolsosPromotion(
+              imageBolso: 'assets/images/aroma_10.jpg',
+              imageBolso2: 'assets/images/locion_8.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              nameBolso: '''2 Lociones Árabes
++ Atomizador''',
+              symbol: '\$',
+              price: 50.000,
+              priceDescuento: 45.000,
+              promotion: Price(price: '10%'),
+            ),
+            Spacer(),
+          ],
+        ),
+        const SizedBox(height: 20),
       ],
     );
   }

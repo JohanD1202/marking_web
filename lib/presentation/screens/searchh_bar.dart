@@ -34,6 +34,8 @@ class _SearchhBarState extends State<SearchhBar> {
     "Corvus - Ahli",
     "Velvet Gold - Orientica",
     "Asad - Lattafa",
+    "Club de Nuit Intense Man - Armaf",
+    "Opulent Musk - Lattafa",
     "212 Heroes - Carolina Herrera",
     "212 VIP Men - Carolina Herrera",
     "CH Men - Carolina Herrera",
@@ -53,6 +55,7 @@ class _SearchhBarState extends State<SearchhBar> {
     "Hugo - Hugo Boss",
     "Acqua di Gio - Giorgio Armani",
     "Polo Blue - Ralph Lauren",
+    "Aventus - Creed",
     "Carolina Herrera - Carolina Herrera",
     "CH (2015) - Carolina Herrera",
     "212 VIP Rosé - Carolina Herrera",
@@ -93,6 +96,8 @@ class _SearchhBarState extends State<SearchhBar> {
     "Corvus - Ahli": 'assets/images/corvus_ahli.jpg',
     "Velvet Gold - Orientica": 'assets/images/velvet_gold_orientica.jpg',
     "Asad - Lattafa": 'assets/images/asad_lattafa.jpg',
+    "Club de Nuit Intense Man - Armaf": 'assets/images/club_de_nuit_intense_man.jpg',
+    "Opulent Musk - Lattafa": 'assets/images/opulent_musk_lattafa.jpg',
     "212 Heroes - Carolina Herrera":
         'assets/images/212_heroes_carolina_herrera.png',
     "212 VIP Men - Carolina Herrera":
@@ -119,6 +124,7 @@ class _SearchhBarState extends State<SearchhBar> {
     "Acqua di Gio - Giorgio Armani":
         'assets/images/acqua_di_gio_giorgio_armani.webp',
     "Polo Blue - Ralph Lauren": 'assets/images/polo_blue_ralph_lauren.jpg',
+    "Aventus - Creed": 'assets/images/aventus_creed.jpg',
     "Carolina Herrera - Carolina Herrera":
         'assets/images/carolina_herrera_carolina_herrera.jpg',
     "CH (2015) - Carolina Herrera":
@@ -233,107 +239,116 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Asad - Lattafa':
           _selectedIndex = 20;
           break;
-        case '212 Heroes - Carolina Herrera':
+        case 'Club de Nuit Intense Man - Armaf':
           _selectedIndex = 21;
           break;
-        case '212 VIP Men - Carolina Herrera':
+        case 'Opulent Musk - Lattafa':
           _selectedIndex = 22;
           break;
-        case 'CH Men - Carolina Herrera':
+        case '212 Heroes - Carolina Herrera':
           _selectedIndex = 23;
           break;
-        case '212 VIP Men Wins - Carolina Herrera':
+        case '212 VIP Men - Carolina Herrera':
           _selectedIndex = 24;
           break;
-        case '1 Million Parfum - Paco Rabanne':
+        case 'CH Men - Carolina Herrera':
           _selectedIndex = 25;
           break;
-        case '1 Million Lucky - Paco Rabanne':
+        case '212 VIP Men Wins - Carolina Herrera':
           _selectedIndex = 26;
           break;
-        case 'Invictus - Paco Rabanne':
+        case '1 Million Parfum - Paco Rabanne':
           _selectedIndex = 27;
           break;
-        case 'Black XS - Paco Rabanne':
+        case '1 Million Lucky - Paco Rabanne':
           _selectedIndex = 28;
           break;
-        case 'Sauvage - Dior':
+        case 'Invictus - Paco Rabanne':
           _selectedIndex = 29;
           break;
-        case 'Fahrenheit - Dior':
+        case 'Black XS - Paco Rabanne':
           _selectedIndex = 30;
           break;
-        case 'CK One - Calvin Klein':
+        case 'Sauvage - Dior':
           _selectedIndex = 31;
           break;
-        case '360° for Men - Perry Ellis':
+        case 'Fahrenheit - Dior':
           _selectedIndex = 32;
           break;
-        case 'Nautica Voyage - Nautica':
+        case 'CK One - Calvin Klein':
           _selectedIndex = 33;
           break;
-        case 'Toy Boy - Moschino':
+        case '360° for Men - Perry Ellis':
           _selectedIndex = 34;
           break;
-        case 'Red - Lacoste':
+        case 'Nautica Voyage - Nautica':
           _selectedIndex = 35;
           break;
-        case 'L\'Eau d\'Issey Pour Homme - Issey Miyake':
+        case 'Toy Boy - Moschino':
           _selectedIndex = 36;
           break;
-        case 'Hugo - Hugo Boss':
+        case 'Red - Lacoste':
           _selectedIndex = 37;
           break;
-        case 'Acqua di Gio - Giorgio Armani':
+        case 'L\'Eau d\'Issey Pour Homme - Issey Miyake':
           _selectedIndex = 38;
           break;
-        case 'Polo Blue - Ralph Lauren':
+        case 'Hugo - Hugo Boss':
           _selectedIndex = 39;
           break;
-        case 'Carolina Herrera - Carolina Herrera':
+        case 'Acqua di Gio - Giorgio Armani':
           _selectedIndex = 40;
           break;
-        case 'CH (2015) - Carolina Herrera':
+        case 'Polo Blue - Ralph Lauren':
           _selectedIndex = 41;
           break;
-        case '212 VIP Rosé - Carolina Herrera':
+        case 'Aventus - Creed':
           _selectedIndex = 42;
           break;
-        case '360° - Perry Ellis':
+        case 'Carolina Herrera - Carolina Herrera':
           _selectedIndex = 43;
           break;
-        case 'Paris Hilton - Paris Hilton':
+        case 'CH (2015) - Carolina Herrera':
           _selectedIndex = 44;
           break;
-        case 'Can Can - Paris Hilton':
+        case '212 VIP Rosé - Carolina Herrera':
           _selectedIndex = 45;
           break;
-        case 'Heiress - Paris Hilton':
+        case '360° - Perry Ellis':
           _selectedIndex = 46;
           break;
-        case 'Toy 2 - Moschino':
+        case 'Paris Hilton - Paris Hilton':
           _selectedIndex = 47;
           break;
-        case 'Amor Amor - Cacharel':
+        case 'Can Can - Paris Hilton':
           _selectedIndex = 48;
           break;
-        case 'La Vie Est Belle - Lancôme':
+        case 'Heiress - Paris Hilton':
           _selectedIndex = 49;
           break;
-        case 'Light Blue - Dolce&Gabbana':
+        case 'Toy 2 - Moschino':
           _selectedIndex = 50;
           break;
-        case 'Kim Kardashian - Kim Kardashian':
+        case 'Amor Amor - Cacharel':
           _selectedIndex = 51;
           break;
-        case 'Angel - Mugler':
+        case 'La Vie Est Belle - Lancôme':
           _selectedIndex = 52;
           break;
-        case 'Halloween - Halloween':
+        case 'Light Blue - Dolce&Gabbana':
           _selectedIndex = 53;
           break;
-        case 'CK2 - Calvin Klein':
+        case 'Kim Kardashian - Kim Kardashian':
           _selectedIndex = 54;
+          break;
+        case 'Angel - Mugler':
+          _selectedIndex = 55;
+          break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 56;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 57;
           break;
         default:
           _selectedIndex = 0;
@@ -1825,6 +1840,191 @@ Seca''',
               ),
               //TODO: 21
               BuscadorAromas(
+                title: 'Club de Nuit Intense Man - Armaf',
+                description: '''
+Club de Nuit Intense Man de Armaf es una fragancia de la familia olfativa Amaderada Especiada
+para Hombres. Club de Nuit Intense Man se lanzó en 2015. Su longevidad es duradera y su estela
+es pesada. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/club_de_nuit_intense_man.jpg',
+
+                imageNotaSalida: 'assets/images/limon.jpg',
+                textNotaSalida: 'Limón',
+
+                imageNotaSalida2: 'assets/images/piña.jpg',
+                textNotaSalida2: 'Piña',
+                      
+                imageNotaSalida3: 'assets/images/bergamota.jpg',
+                textNotaSalida3: 'Bergamota',
+
+                imageNotaSalida4: 'assets/images/grosellas_negras.jpg',
+                textNotaSalida4: '''Grosellas
+Negras''',
+                imageNotaSalida5: 'assets/images/manzana.jpg',
+                textNotaSalida5: 'Manzana',
+
+                imageCorazon: 'assets/images/abedul.jpg',
+                textCorazon: 'Abedul',
+
+                imageCorazon2: 'assets/images/jazmin.jpg',
+                textCorazon2: 'Jazmín',
+
+                imageCorazon3: 'assets/images/rosa.jpg',
+                textCorazon3: 'Rosa',
+
+                imageBase: 'assets/images/almizcle.jpg',
+                textBase: 'Almizcle',
+
+                imageBase2: 'assets/images/ambar_gris.jpg',
+                textBase2: '''Ámbar
+Gris''',
+
+                imageBase3: 'assets/images/pachuli.jpg',
+                textBase3: 'Pachulí',
+
+                imageBase4: 'assets/images/vainilla.jpg',
+                textBase4: 'Vainilla',
+
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(249, 255, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+
+                containerWidth2: 180,
+                containerColor2: Color.fromRGBO(252, 115, 89, 1),
+                colorText2: Colors.black87,
+                text2: 'afrutados',
+
+                containerWidth3: 165,
+                containerColor3: Color.fromRGBO(161, 127, 117, 1),
+                colorText3: Colors.white,
+                text3: 'cuero',
+
+                containerWidth4: 155,
+                containerColor4: Color.fromRGBO(175, 166, 178, 1),
+                colorText4: Colors.white,
+                text4: 'ahumado',
+
+                containerWidth5: 152,
+                containerColor5: Color.fromRGBO(170, 138, 108, 1),
+                colorText5: Colors.white,
+                text5: 'amaderado',
+
+                containerWidth6: 145,
+                containerColor6: Color.fromRGBO(134, 197, 183, 1),
+                colorText6: Colors.black54,
+                text6: 'aromático',
+
+                containerWidth7: 142,
+                containerColor7: Color.fromRGBO(245, 136, 139, 1),
+                colorText7: Colors.white,
+                text7: 'dulce',
+
+                containerWidth8: 142,
+                containerColor8: Color.fromRGBO(195, 239, 244, 1),
+                colorText8: Colors.black54,
+                text8: 'fresco',
+
+                containerWidth9: 130,
+                containerColor9: Color.fromRGBO(242, 234, 243, 1),
+                colorText9: Colors.black45,
+                text9: 'almizclado',
+              ),
+              //TODO: 22
+              BuscadorAromas(
+                title: 'Opulent Musk - Lattafa',
+                description: '''
+Opulent Musk de Lattafa Perfumes es una fragancia de la familia olfativa Ámbar para
+Mujeres. Opulent Musk se lanzó en 2019. Su longevidad es duradera y su estela
+es moderada. Es un aroma Unisex.
+''',
+                imageLocion: 'assets/images/opulent_musk_lattafa.jpg',
+
+                imageNotaSalida: 'assets/images/almizcle.jpg',
+                textNotaSalida: '''Almizcle
+Blanco''',
+
+                imageNotaSalida2: 'assets/images/azafran.jpg',
+                textNotaSalida2: 'Azafrán',
+                      
+                imageNotaSalida3: 'assets/images/limon.jpg',
+                textNotaSalida3: 'Limón',
+
+                imageCorazon: 'assets/images/flores_blancas.jpg',
+                textCorazon: '''Flores
+Blancas''',
+
+                imageCorazon2: 'assets/images/jazmin.jpg',
+                textCorazon2: 'Jazmín',
+
+                imageBase: 'assets/images/almizcle.jpg',
+                textBase: '''Almizcle
+Blanco''',
+
+                imageBase2: 'assets/images/ambar.jpg',
+                textBase2: 'Ámbar',
+
+                imageBase3: 'assets/images/cedro.jpg',
+                textBase3: 'Cedro',
+
+                imageBase4: 'assets/images/resinas.jpg',
+                textBase4: 'Resina',
+
+                imageBase5: 'assets/images/resina_de_abeto.jpg',
+                textBase5: '''Resina
+de Abeto''',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(188, 77, 16, 1),
+                colorText: Colors.white,
+                text: 'ámbar',
+
+                containerWidth2: 227,
+                containerColor2: Color.fromRGBO(231, 216, 234, 1),
+                colorText2: Colors.black,
+                text2: 'almizclado',
+
+                containerWidth3: 217,
+                containerColor3: Color.fromRGBO(125, 76, 30, 1),
+                colorText3: Colors.white,
+                text3: 'amaderado',
+
+                containerWidth4: 190,
+                containerColor4: Color.fromRGBO(212, 84, 41, 1),
+                colorText4: Colors.white,
+                text4: 'cálido especiado',
+
+                containerWidth5: 185,
+                containerColor5: Color.fromRGBO(241, 227, 213, 1),
+                colorText5: Colors.black87,
+                text5: 'atalcado',
+
+                containerWidth6: 180,
+                containerColor6: Color.fromRGBO(241, 245, 252, 1),
+                colorText6: Colors.black87,
+                text6: 'floral blanco',
+
+                containerWidth7: 150,
+                containerColor7: Color.fromRGBO(186, 203, 207, 1),
+                colorText7: Colors.black54,
+                text7: 'metálico',
+
+                containerWidth8: 140,
+                containerColor8: Color.fromRGBO(133, 197, 183, 1),
+                colorText8: Colors.black54,
+                text8: 'aromático',
+
+                containerWidth9: 140,
+                containerColor9: Color.fromRGBO(173, 144, 136, 1),
+                colorText9: Colors.white70,
+                text9: 'cuero',
+
+                containerWidth10: 140,
+                containerColor10: Color.fromRGBO(186, 146, 112, 1),
+                colorText10: Colors.white70,
+                text10: 'animálico',
+              ),
+              //TODO: 23
+              BuscadorAromas(
                 title: '212 Heroes - Carolina Herrera',
                 description: '''
 212 Heroes de Carolina Herrera es una fragancia de la familia olfativa Aromática Frutal para Hombres. 212 Heroes se lanzó
@@ -3224,6 +3424,85 @@ Amaderadas''',
                 text10: 'cítrico',
               ),
               //TODO: 34
+              BuscadorAromas(
+                title: 'Aventus - Creed',
+                description: '''
+Aventus de Creed es una fragancia de la familia olfativa Chipre Frutal para Hombres. Aventus se
+lanzó en 2010. Su longevidad es duradera y su estela es moderada. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/aventus_creed.jpg',
+                imageNotaSalida: 'assets/images/bergamota.jpg',
+                textNotaSalida: 'Bergamota',
+                imageNotaSalida2: 'assets/images/grosellas_negras.jpg',
+                textNotaSalida2: '''Grosellas
+Negras''',
+                imageNotaSalida3: 'assets/images/manzana.jpg',
+                textNotaSalida3: 'Manzana',
+                imageNotaSalida4: 'assets/images/limon.jpg',
+                textNotaSalida4: 'Limón',
+                imageNotaSalida5: 'assets/images/pimienta_rosa.jpg',
+                textNotaSalida5: '''Pimienta
+Rosa''',
+                imageCorazon: 'assets/images/piña.jpg',
+                textCorazon: 'Piña',
+                imageCorazon2: 'assets/images/pachuli.jpg',
+                textCorazon2: 'Pachulí',
+                imageCorazon3: 'assets/images/jazmin.jpg',
+                textCorazon3: '''Jazmín de
+Marruecos''',
+                imageBase: 'assets/images/abedul.jpg',
+                textBase: 'Abedul',
+                imageBase2: 'assets/images/almizcle.jpg',
+                textBase2: 'Almizcle',
+                imageBase3: 'assets/images/musgo_de_roble.jpg',
+                textBase3: '''Musgo
+de Roble''',
+                imageBase4: 'assets/images/ambroxan.jpg',
+                textBase4: 'Ambroxan',
+                imageBase5: 'assets/images/cedro.jpg',
+                textBase5: 'Cedro',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(252, 75, 41, 1),
+                colorText: Colors.black,
+                text: 'afrutados',
+                containerWidth2: 170,
+                containerColor2: Color.fromRGBO(242, 108, 112, 1),
+                colorText2: Colors.white,
+                text2: 'dulce',
+                containerWidth3: 160,
+                containerColor3: Color.fromRGBO(161, 128, 118, 1),
+                colorText3: Colors.white,
+                text3: 'cuero',
+                containerWidth4: 160,
+                containerColor4: Color.fromRGBO(161, 126, 93, 1),
+                colorText4: Colors.white,
+                text4: 'amaderado',
+                containerWidth5: 145,
+                containerColor5: Color.fromRGBO(175, 166, 178, 1),
+                colorText5: Colors.white,
+                text5: 'ahumado',
+                containerWidth6: 135,
+                containerColor6: Color.fromRGBO(240, 231, 242, 1),
+                colorText6: Colors.black54,
+                text6: 'almizclado',
+                containerWidth7: 135,
+                containerColor7: Color.fromRGBO(251, 255, 152, 1),
+                colorText7: Colors.black54,
+                text7: 'cítrico',
+                containerWidth8: 135,
+                containerColor8: Color.fromRGBO(249, 207, 109, 1),
+                colorText8: Colors.black54,
+                text8: 'tropical',
+                containerWidth9: 130,
+                containerColor9: Color.fromRGBO(196, 239, 244, 1),
+                colorText9: Colors.black54,
+                text9: 'fresco',
+                containerWidth10: 115,
+                containerColor10: Color.fromRGBO(167, 176, 145, 1),
+                colorText10: Colors.white70,
+                text10: 'musgoso',
+              ),
+              //TODO: 35
               BuscadorAromas(
                 title: 'Carolina Herrera - Carolina Herrera',
                 description: '''

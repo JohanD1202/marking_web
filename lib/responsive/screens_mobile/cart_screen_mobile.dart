@@ -66,7 +66,7 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: 275,
+                                    width: 225,
                                     child: Padding(
                                       padding: const EdgeInsets.only(top: 8),
                                       child: Text(product.name, style: styleTextBolsosMobile)

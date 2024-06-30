@@ -253,11 +253,11 @@ de Oud''',
                   const Aromas100(
                     title: 'Oud For Greatness - Initio',
                     description: '''
-Oud for Greatness de Initio Parfums Prives es una
-fragancia de la familia olfativa para Hombres y
-Mujeres. Oud for Greatness se lanzó en 2018.
-Tiene una longevidad muy duradera y su
-estela es pesada. Es un aroma Unisex.
+Oud for Greatness de Initio Parfums Prives es
+una fragancia de la familia olfativa para
+Hombres y Mujeres. Oud for Greatness se lanzó
+en 2018. Tiene una longevidad muy duradera y
+su estela es pesada. Es un aroma Unisex.
 ''',
                     imageLocion: 'assets/images/oud_for_greatness_initio.jpg',
                     imageNotaSalida: 'assets/images/azafran.jpg',
@@ -390,9 +390,9 @@ de Gaiac''',
                     description: '''
 L' Aventure de Al Haramain Perfumes es una
 fragancia de la familia olfativa Chipre
-Frutal para Hombres. L' Aventure se lanzó en 2016.
-Tiene una longevidad duradera y su estela
-es moderada. Es un aroma Masculino
+Frutal para Hombres. L' Aventure se lanzó en
+2016. Tiene una longevidad duradera y su
+estela es moderada. Es un aroma Masculino
 (Tiene su versión femenina) L' Aventure femme.
 ''',
                     imageLocion: 'assets/images/l_aventure_haramain.jpg',
@@ -451,9 +451,9 @@ los Valles''',
                     description: '''
 Madinah de Al Haramain Perfumes es una
 fragancia de la familia olfativa Ámbar
-Floral para Hombres y Mujeres.
-Tiene una longevidad duradera y su
-estela es moderada. Es un aroma Unisex.
+Floral para Hombres y Mujeres. Tiene
+una longevidad duradera y su estela es
+moderada. Es un aroma Unisex.
 ''',
                     imageLocion: 'assets/images/madinah_haramain.jpg',
                     imageNotaSalida: 'assets/images/rosa.jpg',
@@ -542,10 +542,9 @@ Florales''',
 Santal 33 de Le Labo es una fragancia
 de la familia olfativa Amaderada
 Aromática para Hombres y Mujeres.
-Santal 33 se lanzó en 2011.
-Tiene una longevidad duradera y su
-estela es de moderada a pesada.
-Es un aroma Unisex.
+Santal 33 se lanzó en 2011. Tiene una
+longevidad duradera y su estela es de
+moderada a pesada. Es un aroma Unisex.
 ''',
                       imageLocion: 'assets/images/santal_33_le_labo.jpg',
 
@@ -1120,8 +1119,8 @@ estela es moderada. Es un aroma de Hombre.
 fragancia de la familia olfativa Ámbar
 Amaderada para Hombres. 212 VIP Men se
 lanzó en 2011. Tiene una longevidad
-duradera y su estela es pesada. 
-Es un aroma Masculino.
+duradera y su estela es pesada. Es un
+aroma Masculino.
 ''',
                     imageLocion:
                         'assets/images/212_vip_men_carolina_herrera.png',
@@ -1193,12 +1192,11 @@ Amaderadas''',
                   const Aromas100(
                     title: 'CH Men - Carolina Herrera',
                     description: '''
-CH Men de Carolina Herrera es una
-fragancia de la familia olfativa
-Ámbar Especiada para Hombres.
-CH Men se lanzó en 2009. Su longevidad
-y su estela son moderadas.
-Es un Aroma Masculino.
+CH Men de Carolina Herrera es una fragancia
+de la familia olfativa Ámbar Especiada para
+Hombres. CH Men se lanzó en 2009. Su
+longevidad y su estela son moderadas. Es un
+Aroma Masculino.
 ''',
                     imageLocion: 'assets/images/ch_carolina_herrera.webp',
                     imageNotaSalida: 'assets/images/hierba.jpg',
@@ -1284,12 +1282,12 @@ Roble''',
                   const Aromas100(
                     title: '212 VIP Men Wins - Carolina Herrera',
                     description: '''
-212 VIP Men Wins de Carolina Herrera
-es una fragancia de la familia olfativa
+212 VIP Men Wins de Carolina Herrera es
+una fragancia de la familia olfativa
 Aromática Fougère para Hombres. 212 VIP
 Men Wins se lanzó en 2021. Su longevidad
-y su estela son moderadas.
-Es un aroma Masculino.
+y su estela son moderadas. Es un aroma
+Masculino.
 ''',
                     imageLocion:
                         'assets/images/212_vip_wins_carolina_herrera.jpeg',
@@ -1999,9 +1997,9 @@ Amaderadas''',
                     description: '''
 Nautica Voyage de Nautica es una fragancia
 de la familia olfativa Amaderada Acuática
-para Hombres. Nautica Voyage se lanzó en 2006.
-Su longevidad y su estela son moderadas.
-Es un aroma Masculino.
+para Hombres. Nautica Voyage se lanzó en
+2006. Su longevidad y su estela son
+moderadas. Es un aroma Masculino.
 ''',
                     imageLocion: 'assets/images/nautica_voyage_nautica.jpg',
                     imageNotaSalida: 'assets/images/notas_verdes.jpg',
@@ -2065,9 +2063,10 @@ Roble''',
                     title: 'Toy Boy - Moschino',
                     description: '''
 Toy Boy de Moschino es una fragancia de la
-familia olfativa Amaderada Especiada para Hombres.
-Toy Boy se lanzó en 2019. Su longevidad es duradera
-y su estela es pesada. Es un aroma Unisex.
+familia olfativa Amaderada Especiada para
+Hombres. Toy Boy se lanzó en 2019. Su
+longevidad es duradera y su estela es
+pesada. Es un aroma Unisex.
 ''',
                     imageLocion: 'assets/images/toy_boy_moschino.webp',
                     imageNotaSalida: 'assets/images/pimienta_rosa.jpg',
@@ -2150,8 +2149,8 @@ de Haití''',
 Red de Lacoste Fragrances es una fragancia
 de la familia olfativa Aromática Fougère
 para Hombres. Red se lanzó en 2004. Tiene
-una longevidad y estela moderadas.
-Es un aroma Masculino.
+una longevidad y estela moderadas. Es un
+aroma Masculino.
 ''',
                     imageLocion: 'assets/images/red_lacoste.webp',
                     imageNotaSalida: 'assets/images/manzana.jpg',
@@ -2209,11 +2208,12 @@ Verde''',
                     title:
                         'L\'Eau d\'Issey Pour Homme - Issey Miyake',
                     description: '''
-L'Eau d'Issey Pour Homme de Issey Miyake es una
-fragancia de la familia olfativa Amaderada
-Aromática para Hombres. L'Eau d'Issey Pour Homme
-se lanzó en 1994. Su longevidad es moderada y su
-estela es moderada. Es un aroma Masculino.
+L'Eau d'Issey Pour Homme de Issey Miyake es
+una fragancia de la familia olfativa
+Amaderada Aromática para Hombres. L'Eau
+d'Issey Pour Homme se lanzó en 1994. Su
+longevidad es moderada y su estela es
+moderada. Es un aroma Masculino.
 ''',
                     imageLocion: 'assets/images/leau_dissey_pour_homme_issey_miyake.webp',
                     imageNotaSalida: 'assets/images/yuzu.jpg',
@@ -2362,8 +2362,9 @@ Verde''',
                     description: '''
 Acqua di Gio de Giorgio Armani es una fragancia
 de la familia olfativa Aromática Acuática para
-Hombres. Acqua di Gio se lanzó en 1996. Su longevidad
-y su estela son moderadas. Es un aroma Masculino.
+Hombres. Acqua di Gio se lanzó en 1996. Su
+longevidad y su estela son moderadas. Es un
+aroma Masculino.
 ''',
                     imageLocion:
                         'assets/images/acqua_di_gio_giorgio_armani.webp',
@@ -2455,9 +2456,10 @@ Roble''',
                     title: 'Polo Blue - Ralph Lauren',
                     description: '''
 Polo Blue de Ralph Lauren es una fragancia de
-la familia olfativa Aromática Fougère para Hombres.
-Polo Blue se lanzó en 2003. Su longevidad y su
-estela son moderadas. Es un aroma Masculino.
+la familia olfativa Aromática Fougère para
+Hombres. Polo Blue se lanzó en 2003. Su
+longevidad y su estela son moderadas. Es un
+aroma Masculino.
 ''',
                     imageLocion: 'assets/images/polo_blue_ralph_lauren.jpg',
                     imageNotaSalida: 'assets/images/pepino.jpg',
@@ -2529,10 +2531,11 @@ Amaderadas''',
                   const Aromas100(
                     title: 'Carolina Herrera - Carolina Herrera',
                     description: '''
-Carolina Herrera de Carolina Herrera es una fragancia
-de la familia olfativa Floral para Hombres y Mujeres.
-Carolina Herrera se lanzó en 2016. Su longevidad es
-muy duradera y su estela es pesada. Es un aroma Femenino.
+Carolina Herrera de Carolina Herrera es una
+fragancia de la familia olfativa Floral para
+Hombres y Mujeres. Carolina Herrera se lanzó
+en 2016. Su longevidad es muy duradera y su
+estela es pesada. Es un aroma Femenino.
 ''',
                     imageLocion:
                         'assets/images/carolina_herrera_carolina_herrera.jpg',
@@ -2659,10 +2662,11 @@ Naranjo''',
                   const Aromas100(
                     title: '212 VIP Rosé - Carolina Herrera',
                     description: '''
-212 VIP Rosé de Carolina Herrera es una fragancia
-de la familia olfativa Floral Frutal para Mujeres.
-212 VIP Rosé se lanzó en 2014. Su longevidad y
-su estela son moderadas. Es un aroma Femenino.
+212 VIP Rosé de Carolina Herrera es una
+fragancia de la familia olfativa Floral
+Frutal para Mujeres. 212 VIP Rosé se lanzó
+en 2014. Su longevidad y su estela son
+moderadas. Es un aroma Femenino.
 ''',
                     imageLocion:
                         'assets/images/212_vip_rose_carolina_herrera.jpg',
@@ -2791,8 +2795,8 @@ los Valles''',
                     description: '''
 Paris Hilton de Paris Hilton es una fragancia
 de la familia olfativa Floral Frutal para Mujeres.
-Paris Hilton se lanzó en 2005. Su longevidad y su
-estela son moderadas. Es una aroma Femenino.
+Paris Hilton se lanzó en 2005. Su longevidad y
+su estela son moderadas. Es una aroma Femenino.
 ''',
                     imageLocion: 'assets/images/paris_hilton_paris_hilton.jpg',
                     imageNotaSalida: 'assets/images/melon.jpg',
@@ -3019,10 +3023,11 @@ Blancas''',
                   const Aromas100(
                     title: 'Toy 2 - Moschino',
                     description: '''
-Toy 2 de Moschino es una fragancia de la familia
-olfativa Almizcle Floral Amaderado para Mujeres.
-Toy 2 se lanzó en 2018. Su longevidad y su
-estela son moderadas. Es una aroma Femenino.
+Toy 2 de Moschino es una fragancia de la
+familia olfativa Almizcle Floral Amaderado
+para Mujeres. Toy 2 se lanzó en 2018. Su
+longevidad y su estela son moderadas. Es
+un aroma Femenino.
 ''',
                     imageLocion: 'assets/images/toy_2_moschino.jpg',
                     imageNotaSalida: 'assets/images/manzana.jpg',
@@ -3092,7 +3097,8 @@ Blanca''',
 Amor Amor de Cacharel es una fragancia de la
 familia olfativa Floral Frutal para Mujeres.
 Amor Amor se lanzó en 2003. Su longevidad y
-su estela son moderadas. Es una aroma Femenino.
+su estela son moderadas. Es un aroma
+Femenino.
 ''',
                     imageLocion: 'assets/images/amor_amor_cacharel.webp',
                     imageNotaSalida: 'assets/images/grosellas_negras.jpg',
@@ -3175,10 +3181,11 @@ Tonka''',
                   const Aromas100(
                     title: 'La Vie Est Belle - Lancôme',
                     description: '''
-La Vie Est Belle de Lancôme es una fragancia de la
-familia olfativa Floral Frutal Gourmand para Mujeres.
-La Vie Est Belle se lanzó en 2012. Su longevidad es
-duradera y su estela es pesada. Es un aroma Femenino.
+La Vie Est Belle de Lancôme es una fragancia
+de la familia olfativa Floral Frutal Gourmand
+para Mujeres. La Vie Est Belle se lanzó en
+2012. Su longevidad es duradera y su estela
+es pesada. Es un aroma Femenino.
 ''',
                     imageLocion: 'assets/images/la_vie_est_belle_lancome.jpg',
                     imageNotaSalida: 'assets/images/grosellas_negras.jpg',
@@ -3248,10 +3255,11 @@ Tonka''',
                   const Aromas100(
                     title: 'Light Blue - Dolce&Gabbana',
                     description: '''
-Light Blue de Dolce&Gabbana es una fragancia de la
-familia olfativa Floral Frutal para Mujeres. Light
-Blue se lanzó en 2001. Su longevidad es duradera y
-su estela es pesada. Es un aroma Femenino.
+Light Blue de Dolce&Gabbana es una fragancia
+de la familia olfativa Floral Frutal para
+Mujeres. Light Blue se lanzó en 2001. Su
+longevidad es duradera y su estela es pesada.
+Es un aroma Femenino.
 ''',
                     imageLocion: 'assets/images/light_blue_dolce_gabbana.jpg',
                     imageNotaSalida: 'assets/images/limon.jpg',
@@ -3313,9 +3321,10 @@ Blanca''',
                   const Aromas100(
                     title: 'Kim Kardashian - Kim Kardashian',
                     description: '''
-Kim Kardashian de Kim Kardashian es una fragancia de la
-familia olfativa Ámbar Floral para Mujeres. Kim Kardashian
-se lanzó en 2009. Su longevidad es duradera y su estela
+Kim Kardashian de Kim Kardashian es una
+fragancia de la familia olfativa Ámbar Floral
+para Mujeres. Kim Kardashian se lanzó en
+2009. Su longevidad es duradera y su estela
 es pesada. Es un aroma Femenino.
 ''',
                     imageLocion:

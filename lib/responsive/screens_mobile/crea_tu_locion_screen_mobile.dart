@@ -143,7 +143,7 @@ como desees.
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 30, right: 15),
+                padding: const EdgeInsets.only(left: 30),
                 child: SuggestionsMobile(
                   onSuggestionSelected: (suggestion) {
                     setState(() {
@@ -675,33 +675,44 @@ class SuggestionsMobile extends StatefulWidget {
 }
 
 class _SuggestionsMobileState extends State<SuggestionsMobile> {
-  String _selectedOption = 
-        '''Ombre Nomade - Louis Vuitton +
-Yara - Lattafa''';
+  String _selectedOption = "Ombre Nomade - Louis Vuitton + Yara - Lattafa";
 
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
       value: _selectedOption,
       items: <String>[
-        '''Ombre Nomade - Louis Vuitton +
-Yara - Lattafa''',
-        '''Sauvage - Dior +
-1 Million Parfum - Paco Rabanne''',
-        '''Amber Oud - Al Haramain +
-Arabians Tonka - Montale''',
-        '''Intense Cafe - Montale +
-La Vie Est Belle - Lancôme''',
-        '''CK One - Calvin Klein +
-212 VIP Men - Carolina Herrera''',
-        '''Light Blue - Dolce&Gabbana
-+ Nautica Voyage - Nautica''',
-        '''Il Femme - ILMIN +
-Amor Amor - Cacharel''',
-        '''Black XS - Paco Rabbane +
-Toy Boy - Moschino''',
-        '''Santal 33 - Le Labo +
-Fahrenheit - Dior''',
+        "Ombre Nomade - Louis Vuitton + Yara - Lattafa",
+        "Sauvage - Dior + 1 Million Parfum - Paco Rabanne",
+        "Amber Oud - Al Haramain + Arabians Tonka - Montale",
+        "Intense Cafe - Montale + La Vie Est Belle - Lancôme",
+        "Il Femme - ILMIN + Amor Amor - Cacharel",
+        "Black XS - Paco Rabbane + Toy Boy - Moschino",
+        "Olympea - Paco Rabbane + Good Girl Suprême",
+        "Phantom - Paco Rabbane + Invictus - Paco Rabbane",
+        "Santal 33 - Le Labo + Fahrenheit - Dior",
+        "Club de Nuit Intense Man - Armaf + Il Femme - ILMIN",
+        "Il Femme - ILMIN + Ombre Leather - Tom Ford",
+        '''CK One - Calvin Klein + 212 VIP Men - Carolina
+Herrera''',
+        '''Light Blue - Dolce&Gabbana + Nautica Voyage
+- Nautica''',
+        '''Good Girl Suprême - Carolina Herrera + Light Blue
+- Dolce&Gabbana''',
+        '''Baccarat Rouge 540 - Francis Kurkdjian + Oud For
+Greatness - Initio''',
+        '''Bad Boy - Carolina Herrera + Black XS
+L'Aphrodisiaque for Men - Paco Rabbane''',
+        '''Eternity - Calvin Klein + 1 Million Parfum -
+Paco Rabbane''',
+        '''Club de Nuit Intense Man - Armaf + 1 Million
+Parfum - Paco Rabbane''',
+        '''Good Girl - Carolina Herrera + La Vie Est Belle
+- Lancôme''',
+        '''Club de Nuit Intense Man - Armaf + Amber Oud
+- Al Haramain''',
+        '''Santal 33 - Le Labo + L'Eau d'Issey Pour Homme
+- Issey Miyake''',
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,

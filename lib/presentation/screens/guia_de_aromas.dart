@@ -1474,6 +1474,191 @@ Seca''',
                       colorText10: Colors.black54,
                       text10: 'balsámico',
                     ),
+                    //TODO:
+                    const Aromas500(
+                      title: 'Club de Nuit Intense Man - Armaf',
+                      description: '''
+Club de Nuit Intense Man de Armaf es una fragancia de la familia olfativa Amaderada Especiada
+para Hombres. Club de Nuit Intense Man se lanzó en 2015. Su longevidad es duradera y su estela
+es pesada. Es un aroma Masculino.
+''',
+                      imageLocion: 'assets/images/club_de_nuit_intense_man.jpg',
+
+                      imageNotaSalida: 'assets/images/limon.jpg',
+                      textNotaSalida: 'Limón',
+
+                      imageNotaSalida2: 'assets/images/piña.jpg',
+                      textNotaSalida2: 'Piña',
+                      
+                      imageNotaSalida3: 'assets/images/bergamota.jpg',
+                      textNotaSalida3: 'Bergamota',
+
+                      imageNotaSalida4: 'assets/images/grosellas_negras.jpg',
+                      textNotaSalida4: '''Grosellas
+Negras''',
+                      imageNotaSalida5: 'assets/images/manzana.jpg',
+                      textNotaSalida5: 'Manzana',
+
+                      imageCorazon: 'assets/images/abedul.jpg',
+                      textCorazon: 'Abedul',
+
+                      imageCorazon2: 'assets/images/jazmin.jpg',
+                      textCorazon2: 'Jazmín',
+
+                      imageCorazon3: 'assets/images/rosa.jpg',
+                      textCorazon3: 'Rosa',
+
+                      imageBase: 'assets/images/almizcle.jpg',
+                      textBase: 'Almizcle',
+
+                      imageBase2: 'assets/images/ambar_gris.jpg',
+                      textBase2: '''Ámbar
+Gris''',
+
+                      imageBase3: 'assets/images/pachuli.jpg',
+                      textBase3: 'Pachulí',
+
+                      imageBase4: 'assets/images/vainilla.jpg',
+                      textBase4: 'Vainilla',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(249, 255, 82, 1),
+                      colorText: Colors.black,
+                      text: 'cítrico',
+
+                      containerWidth2: 180,
+                      containerColor2: Color.fromRGBO(252, 115, 89, 1),
+                      colorText2: Colors.black87,
+                      text2: 'afrutados',
+
+                      containerWidth3: 165,
+                      containerColor3: Color.fromRGBO(161, 127, 117, 1),
+                      colorText3: Colors.white,
+                      text3: 'cuero',
+
+                      containerWidth4: 155,
+                      containerColor4: Color.fromRGBO(175, 166, 178, 1),
+                      colorText4: Colors.white,
+                      text4: 'ahumado',
+
+                      containerWidth5: 152,
+                      containerColor5: Color.fromRGBO(170, 138, 108, 1),
+                      colorText5: Colors.white,
+                      text5: 'amaderado',
+
+                      containerWidth6: 145,
+                      containerColor6: Color.fromRGBO(134, 197, 183, 1),
+                      colorText6: Colors.black54,
+                      text6: 'aromático',
+
+                      containerWidth7: 142,
+                      containerColor7: Color.fromRGBO(245, 136, 139, 1),
+                      colorText7: Colors.white,
+                      text7: 'dulce',
+
+                      containerWidth8: 142,
+                      containerColor8: Color.fromRGBO(195, 239, 244, 1),
+                      colorText8: Colors.black54,
+                      text8: 'fresco',
+
+                      containerWidth9: 130,
+                      containerColor9: Color.fromRGBO(242, 234, 243, 1),
+                      colorText9: Colors.black45,
+                      text9: 'almizclado',
+                    ),
+                    //TODO:
+                    const Aromas500(
+                      title: 'Opulent Musk - Lattafa',
+                      description: '''
+Opulent Musk de Lattafa Perfumes es una fragancia de la familia olfativa Ámbar para
+Mujeres. Opulent Musk se lanzó en 2019. Su longevidad es duradera y su estela
+es moderada. Es un aroma Unisex.
+''',
+                      imageLocion: 'assets/images/opulent_musk_lattafa.jpg',
+
+                      imageNotaSalida: 'assets/images/almizcle.jpg',
+                      textNotaSalida: '''Almizcle
+Blanco''',
+
+                      imageNotaSalida2: 'assets/images/azafran.jpg',
+                      textNotaSalida2: 'Azafrán',
+                      
+                      imageNotaSalida3: 'assets/images/limon.jpg',
+                      textNotaSalida3: 'Limón',
+
+                      imageCorazon: 'assets/images/flores_blancas.jpg',
+                      textCorazon: '''Flores
+Blancas''',
+
+                      imageCorazon2: 'assets/images/jazmin.jpg',
+                      textCorazon2: 'Jazmín',
+
+                      imageBase: 'assets/images/almizcle.jpg',
+                      textBase: '''Almizcle
+Blanco''',
+
+                      imageBase2: 'assets/images/ambar.jpg',
+                      textBase2: 'Ámbar',
+
+                      imageBase3: 'assets/images/cedro.jpg',
+                      textBase3: 'Cedro',
+
+                      imageBase4: 'assets/images/resinas.jpg',
+                      textBase4: 'Resina',
+
+                      imageBase5: 'assets/images/resina_de_abeto.jpg',
+                      textBase5: '''Resina
+de Abeto''',
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(188, 77, 16, 1),
+                      colorText: Colors.white,
+                      text: 'ámbar',
+
+                      containerWidth2: 227,
+                      containerColor2: Color.fromRGBO(231, 216, 234, 1),
+                      colorText2: Colors.black,
+                      text2: 'almizclado',
+
+                      containerWidth3: 217,
+                      containerColor3: Color.fromRGBO(125, 76, 30, 1),
+                      colorText3: Colors.white,
+                      text3: 'amaderado',
+
+                      containerWidth4: 190,
+                      containerColor4: Color.fromRGBO(212, 84, 41, 1),
+                      colorText4: Colors.white,
+                      text4: 'cálido especiado',
+
+                      containerWidth5: 185,
+                      containerColor5: Color.fromRGBO(241, 227, 213, 1),
+                      colorText5: Colors.black87,
+                      text5: 'atalcado',
+
+                      containerWidth6: 180,
+                      containerColor6: Color.fromRGBO(241, 245, 252, 1),
+                      colorText6: Colors.black87,
+                      text6: 'floral blanco',
+
+                      containerWidth7: 150,
+                      containerColor7: Color.fromRGBO(186, 203, 207, 1),
+                      colorText7: Colors.black54,
+                      text7: 'metálico',
+
+                      containerWidth8: 140,
+                      containerColor8: Color.fromRGBO(133, 197, 183, 1),
+                      colorText8: Colors.black54,
+                      text8: 'aromático',
+
+                      containerWidth9: 140,
+                      containerColor9: Color.fromRGBO(173, 144, 136, 1),
+                      colorText9: Colors.white70,
+                      text9: 'cuero',
+
+                      containerWidth10: 140,
+                      containerColor10: Color.fromRGBO(186, 146, 112, 1),
+                      colorText10: Colors.white70,
+                      text10: 'animálico',
+                    ),
                   //TODO: AROMAS HOMBRE
                   Padding(
                     padding: const EdgeInsets.only(left: 60, bottom: 30),
@@ -2884,6 +3069,85 @@ Amaderadas''',
                     containerColor10: Color.fromRGBO(251, 255, 160, 1),
                     colorText10: Colors.black45,
                     text10: 'cítrico',
+                  ),
+                  //TODO:
+                  const Aromas500(
+                    title: 'Aventus - Creed',
+                    description: '''
+Aventus de Creed es una fragancia de la familia olfativa Chipre Frutal para Hombres. Aventus se
+lanzó en 2010. Su longevidad es duradera y su estela es moderada. Es un aroma Masculino.
+''',
+                    imageLocion: 'assets/images/aventus_creed.jpg',
+                    imageNotaSalida: 'assets/images/bergamota.jpg',
+                    textNotaSalida: 'Bergamota',
+                    imageNotaSalida2: 'assets/images/grosellas_negras.jpg',
+                    textNotaSalida2: '''Grosellas
+Negras''',
+                    imageNotaSalida3: 'assets/images/manzana.jpg',
+                    textNotaSalida3: 'Manzana',
+                    imageNotaSalida4: 'assets/images/limon.jpg',
+                    textNotaSalida4: 'Limón',
+                    imageNotaSalida5: 'assets/images/pimienta_rosa.jpg',
+                    textNotaSalida5: '''Pimienta
+Rosa''',
+                    imageCorazon: 'assets/images/piña.jpg',
+                    textCorazon: 'Piña',
+                    imageCorazon2: 'assets/images/pachuli.jpg',
+                    textCorazon2: 'Pachulí',
+                    imageCorazon3: 'assets/images/jazmin.jpg',
+                    textCorazon3: '''Jazmín de
+Marruecos''',
+                    imageBase: 'assets/images/abedul.jpg',
+                    textBase: 'Abedul',
+                    imageBase2: 'assets/images/almizcle.jpg',
+                    textBase2: 'Almizcle',
+                    imageBase3: 'assets/images/musgo_de_roble.jpg',
+                    textBase3: '''Musgo
+de Roble''',
+                    imageBase4: 'assets/images/ambroxan.jpg',
+                    textBase4: 'Ambroxan',
+                    imageBase5: 'assets/images/cedro.jpg',
+                    textBase5: 'Cedro',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(252, 75, 41, 1),
+                    colorText: Colors.black,
+                    text: 'afrutados',
+                    containerWidth2: 170,
+                    containerColor2: Color.fromRGBO(242, 108, 112, 1),
+                    colorText2: Colors.white,
+                    text2: 'dulce',
+                    containerWidth3: 160,
+                    containerColor3: Color.fromRGBO(161, 128, 118, 1),
+                    colorText3: Colors.white,
+                    text3: 'cuero',
+                    containerWidth4: 160,
+                    containerColor4: Color.fromRGBO(161, 126, 93, 1),
+                    colorText4: Colors.white,
+                    text4: 'amaderado',
+                    containerWidth5: 145,
+                    containerColor5: Color.fromRGBO(175, 166, 178, 1),
+                    colorText5: Colors.white,
+                    text5: 'ahumado',
+                    containerWidth6: 135,
+                    containerColor6: Color.fromRGBO(240, 231, 242, 1),
+                    colorText6: Colors.black54,
+                    text6: 'almizclado',
+                    containerWidth7: 135,
+                    containerColor7: Color.fromRGBO(251, 255, 152, 1),
+                    colorText7: Colors.black54,
+                    text7: 'cítrico',
+                    containerWidth8: 135,
+                    containerColor8: Color.fromRGBO(249, 207, 109, 1),
+                    colorText8: Colors.black54,
+                    text8: 'tropical',
+                    containerWidth9: 130,
+                    containerColor9: Color.fromRGBO(196, 239, 244, 1),
+                    colorText9: Colors.black54,
+                    text9: 'fresco',
+                    containerWidth10: 115,
+                    containerColor10: Color.fromRGBO(167, 176, 145, 1),
+                    colorText10: Colors.white70,
+                    text10: 'musgoso',
                   ),
                   //TODO: AROMAS MUJER
                   Padding(

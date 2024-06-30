@@ -607,6 +607,17 @@ class _SuggestionsState extends State<Suggestions> {
         "Black XS - Paco Rabbane + Toy Boy - Moschino",
         "Ombre Nomade - Louis Vuitton + Yara - Lattafa",
         "Santal 33 - Le Labo + Fahrenheit - Dior",
+        "Club de Nuit Intense Man - Armaf + Il Femme - ILMIN",
+        "Good Girl Suprême - Carolina Herrera + Light Blue - Dolce&Gabbana",
+        "Olympea - Paco Rabbane + Good Girl Suprême",
+        "Phantom - Paco Rabbane + Invictus - Paco Rabbane",
+        "Bad Boy - Carolina Herrera + Black XS L'Aphrodisiaque for Men - Paco Rabbane",
+        "Eternity - Calvin Klein + 1 Million Parfum - Paco Rabbane",
+        "Club de Nuit Intense Man - Armaf + 1 Million Parfum - Paco Rabbane",
+        "Il Femme - ILMIN + Ombre Leather - Tom Ford",
+        "Good Girl - Carolina Herrera + La Vie Est Belle - Lancôme",
+        "Club de Nuit Intense Man - Armaf + Amber Oud - Al Haramain",
+        "Santal 33 - Le Labo + L'Eau d'Issey Pour Homme - Issey Miyake",
       ].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,

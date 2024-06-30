@@ -229,7 +229,7 @@ Lacoste''',
             ),
             Spacer(),
             Locion(
-              imageLocion: 'assets/images/issey_miyake_issey_miyake.webp',
+              imageLocion: 'assets/images/leau_dissey_pour_homme_issey_miyake.webp',
               imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 370,
               imageWidth: 240,

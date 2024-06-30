@@ -1205,6 +1205,275 @@ Blanco''',
                       colorText8: Colors.black45,
                       text8: 'fresco especiado',
                     ),
+                    //TODO:
+                  const Aromas500(
+                      title: 'Corvus - Ahli',
+                      description: '''
+Corvus de Ahli es una fragancia de la familia olfativa dulce frutal amaderada para Mujeres. Corvus se lanzó en 2022.
+Su longevidad es duradera y su estela es moderada. Es un aroma de Mujer.
+''',
+                      imageLocion: 'assets/images/corvus_ahli.jpg',
+
+                      imageNotaSalida: 'assets/images/grosellas_negras.jpg',
+                      textNotaSalida: '''Grosellas
+Negras''',
+
+                      imageNotaSalida2: 'assets/images/fresa.jpg',
+                      textNotaSalida2: 'Fresa',
+
+                      imageNotaSalida3: 'assets/images/cereza.jpg',
+                      textNotaSalida3: 'Cereza',
+
+                      imageNotaSalida4: 'assets/images/mora.jpeg',
+                      textNotaSalida4: 'Mora',
+
+                      imageNotaSalida5: 'assets/images/limon.jpg',
+                      textNotaSalida5: 'Limón',
+
+                      imageNotaSalida6: 'assets/images/mandarina.jpg',
+                      textNotaSalida6: 'Mandarina',
+
+                      imageCorazon: 'assets/images/violeta.jpg',
+                      textCorazon: 'Violeta',
+
+                      imageCorazon2: 'assets/images/jazmin.jpg',
+                      textCorazon2: 'Jazmín',
+
+                      imageCorazon3: 'assets/images/ambar.jpg',
+                      textCorazon3: 'Ámbar',
+
+                      imageCorazon4: 'assets/images/pachuli.jpg',
+                      textCorazon4: 'Pachulí',
+
+                      imageBase: 'assets/images/madera_de_cachemira.jpg',
+                      textBase: '''Madera de
+Cachemira''',
+
+                      imageBase2: 'assets/images/almizcle.jpg',
+                      textBase2: 'Almizcle',
+
+                      imageBase3: 'assets/images/musgo_de_roble.jpg',
+                      textBase3: '''Musgo de
+Roble''',
+
+                      imageBase4: 'assets/images/vainilla.jpg',
+                      textBase4: 'Vainilla',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(252, 96, 66, 1),
+                      colorText: Colors.black,
+                      text: 'afrutados',
+
+                      containerWidth2: 200,
+                      containerColor2: Color.fromRGBO(240, 245, 235, 1),
+                      colorText2: Colors.black,
+                      text2: 'floral blanco',
+
+                      containerWidth3: 170,
+                      containerColor3: Color.fromRGBO(255, 254, 55, 1),
+                      colorText3: Colors.white,
+                      text3: 'cítrico',
+
+                      containerWidth4: 150,
+                      containerColor4: Color.fromRGBO(255, 254, 206, 1),
+                      colorText4: Colors.black87,
+                      text4: 'avainillado',
+
+                      containerWidth5: 140,
+                      containerColor5: Color.fromRGBO(183, 156, 130, 1),
+                      colorText5: Colors.black54,
+                      text5: 'amaderado',
+
+                      containerWidth6: 140,
+                      containerColor6: Color.fromRGBO(210, 137, 96, 1),
+                      colorText6: Colors.black54,
+                      text6: 'ámbar',
+                    ),
+                  //TODO:
+                  const Aromas500(
+                      title: 'Velvet Gold - Orientica',
+                      description: '''
+Velvet Gold de Orientica Premium es una fragancia de la familia olfativa Floral para Mujeres.
+Velvet Gold se lanzó en 2022. Su longevidad es duradera y su estela es moderada. Es un aroma Femenino.
+''',
+                      imageLocion: 'assets/images/velvet_gold_orientica.jpg',
+
+                      imageNotaSalida: 'assets/images/caramelo.jpg',
+                      textNotaSalida: 'Caramelo',
+
+                      imageNotaSalida2: 'assets/images/violeta.jpg',
+                      textNotaSalida2: 'Violeta',
+
+                      imageNotaSalida3: 'assets/images/pimienta_rosa.jpg',
+                      textNotaSalida3: '''Pimienta
+Rosa''',
+                      imageNotaSalida4: 'assets/images/bergamota.jpg',
+                      textNotaSalida4: 'Bergamota',
+
+                      imageCorazon: 'assets/images/notas_atalcadas.jpg',
+                      textCorazon: '''Notas
+Atalcadas''',
+
+                      imageCorazon2: 'assets/images/rosa.jpg',
+                      textCorazon2: 'Rosa',
+
+                      imageCorazon3: 'assets/images/pachuli.jpg',
+                      textCorazon3: 'Pachulí',
+
+                      imageBase: 'assets/images/vainilla.jpg',
+                      textBase: 'Vainilla',
+
+                      imageBase2: 'assets/images/almizcle.jpg',
+                      textBase2: 'Almizcle',
+
+                      imageBase3: 'assets/images/notas_animalicas.jpg',
+                      textBase3: '''Notas
+Animálicas''',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(238, 221, 204, 1),
+                      colorText: Colors.black,
+                      text: 'atalcado',
+
+                      containerWidth2: 170,
+                      containerColor2: Color.fromRGBO(236, 224, 238, 1),
+                      colorText2: Colors.black87,
+                      text2: 'almizclado',
+
+                      containerWidth3: 155,
+                      containerColor3: Color.fromRGBO(230, 189, 134, 1),
+                      colorText3: Colors.black87,
+                      text3: 'caramelo',
+
+                      containerWidth4: 150,
+                      containerColor4: Color.fromRGBO(255, 254, 211, 1),
+                      colorText4: Colors.black87,
+                      text4: 'avainillado',
+
+                      containerWidth5: 145,
+                      containerColor5: Color.fromRGBO(188, 103, 255, 1),
+                      colorText5: Colors.white,
+                      text5: 'violeta',
+
+                      containerWidth6: 140,
+                      containerColor6: Color.fromRGBO(243, 123, 126, 1),
+                      colorText6: Colors.white,
+                      text6: 'dulce',
+
+                      containerWidth7: 130,
+                      containerColor7: Color.fromRGBO(184, 143, 108, 1),
+                      colorText7: Colors.white,
+                      text7: 'animálico',
+
+                      containerWidth8: 115,
+                      containerColor8: Color.fromRGBO(254, 112, 172, 1),
+                      colorText8: Colors.white70,
+                      text8: 'rosas',
+
+                      containerWidth9: 115,
+                      containerColor9: Color.fromRGBO(238, 179, 158, 1),
+                      colorText9: Colors.black54,
+                      text9: 'especiado suave',
+
+                      containerWidth10: 110,
+                      containerColor10: Color.fromRGBO(255, 170, 194, 1),
+                      colorText10: Colors.white70,
+                      text10: 'florales',
+                    ),
+                  //TODO:
+                  const Aromas500(
+                      title: 'Asad - Lattafa',
+                      description: '''
+Asad de Lattafa Perfumes es una fragancia de la familia olfativa Ámbar para Hombres.
+Asad se lanzó en 2021. Su longevidad es duradera y su estela es pesada. Es un aroma Masculino.
+''',
+                      imageLocion: 'assets/images/asad_lattafa.jpg',
+
+                      imageNotaSalida: 'assets/images/pimienta_negra.jpg',
+                      textNotaSalida: '''Pimienta
+Negra''',
+
+                      imageNotaSalida2: 'assets/images/tabaco.jpg',
+                      textNotaSalida2: 'Tabaco',
+
+                      imageNotaSalida3: 'assets/images/piña.jpg',
+                      textNotaSalida3: 'Piña',
+                      
+                      imageCorazon: 'assets/images/pachuli.jpg',
+                      textCorazon: 'Pachulí',
+
+                      imageCorazon2: 'assets/images/cafe.jpg',
+                      textCorazon2: 'Café',
+
+                      imageCorazon3: 'assets/images/iris.jpg',
+                      textCorazon3: 'Iris',
+
+                      imageBase: 'assets/images/vainilla.jpg',
+                      textBase: 'Vainilla',
+
+                      imageBase2: 'assets/images/ambar.jpg',
+                      textBase2: 'Ámbar',
+
+                      imageBase3: 'assets/images/notas_amaderadas.jpg',
+                      textBase3: '''Madera
+Seca''',
+
+                      imageBase4: 'assets/images/benjui.jpg',
+                      textBase4: 'Benjuí',
+
+                      imageBase5: 'assets/images/ladano.jpg',
+                      textBase5: 'Ládano',
+
+                      containerWidth: 230,
+                      containerColor: Color.fromRGBO(188, 77, 16, 1),
+                      colorText: Colors.white,
+                      text: 'ámbar',
+
+                      containerWidth2: 210,
+                      containerColor2: Color.fromRGBO(255, 254, 198, 1),
+                      colorText2: Colors.black,
+                      text2: 'avainillado',
+
+                      containerWidth3: 200,
+                      containerColor3: Color.fromRGBO(149, 209, 72, 1),
+                      colorText3: Colors.black87,
+                      text3: 'fresco especiado',
+
+                      containerWidth4: 195,
+                      containerColor4: Color.fromRGBO(141, 98, 58, 1),
+                      colorText4: Colors.white,
+                      text4: 'amaderado',
+
+                      containerWidth5: 185,
+                      containerColor5: Color.fromRGBO(214, 90, 49, 1),
+                      colorText5: Colors.white,
+                      text5: 'cálido especiado',
+
+                      containerWidth6: 170,
+                      containerColor6: Color.fromRGBO(242, 104, 108, 1),
+                      colorText6: Colors.white,
+                      text6: 'dulce',
+
+                      containerWidth7: 160,
+                      containerColor7: Color.fromRGBO(198, 160, 105, 1),
+                      colorText7: Colors.white,
+                      text7: 'tabaco',
+
+                      containerWidth8: 150,
+                      containerColor8: Color.fromRGBO(244, 233, 222, 1),
+                      colorText8: Colors.black54,
+                      text8: 'atalcado',
+
+                      containerWidth9: 135,
+                      containerColor9: Color.fromRGBO(167, 168, 137, 1),
+                      colorText9: Colors.white70,
+                      text9: 'pachulí',
+
+                      containerWidth10: 135,
+                      containerColor10: Color.fromRGBO(209, 185, 162, 1),
+                      colorText10: Colors.black54,
+                      text10: 'balsámico',
+                    ),
                   //TODO: AROMAS HOMBRE
                   Padding(
                     padding: const EdgeInsets.only(left: 60, bottom: 30),
@@ -2311,37 +2580,80 @@ Verde''',
                   //TODO:
                   const Aromas500(
                     title:
-                        'L\'Eau d\'Issey Pour Homme Eau & Cèdre - Issey Miyake',
+                        'L\'Eau d\'Issey Pour Homme - Issey Miyake',
                     description: '''
-L'Eau d'Issey Pour Homme Eau & Cèdre de Issey Miyake es una fragancia de la familia olfativa Amaderada Aromática para
-Hombres. Esta fragrancia es nueva. L'Eau d'Issey Pour Homme Eau & Cèdre se lanzó en 2022. Su longevidad es moderada y
-su estela es suave. Es un aroma Masculino.
+L'Eau d'Issey Pour Homme de Issey Miyake es una fragancia de la familia olfativa Amaderada Aromática para
+Hombres. L'Eau d'Issey Pour Homme se lanzó en 1994. Su longevidad es moderada y su estela es moderada.
+Es un aroma Masculino.
 ''',
-                    imageLocion: 'assets/images/issey_miyake_issey_miyake.webp',
-                    imageNotaSalida: 'assets/images/cardamomo.jpg',
-                    textNotaSalida: 'Cardamomo',
-                    imageCorazon: 'assets/images/cedro.jpg',
-                    textCorazon: 'Cedro',
-                    imageBase: 'assets/images/vetiver.jpg',
-                    textBase: 'Vetiver',
-                    imageBase2: 'assets/images/pachuli.jpg',
-                    textBase2: 'Pachulí',
+                    imageLocion: 'assets/images/leau_dissey_pour_homme_issey_miyake.webp',
+                    imageNotaSalida: 'assets/images/yuzu.jpg',
+                    textNotaSalida: 'Yuzu',
+                    imageNotaSalida2: 'assets/images/bergamota.jpg',
+                    textNotaSalida2: 'Bergamota',
+                    imageNotaSalida3: 'assets/images/limon.jpg',
+                    textNotaSalida3: 'Limón',
+                    imageCorazon: 'assets/images/nuez_moscada.jpg',
+                    textCorazon: '''Nuez
+Moscada''',
+                    imageCorazon2: 'assets/images/nenufar.jpg',
+                    textCorazon2: 'Nenúfar',
+                    imageCorazon3: 'assets/images/canela.jpg',
+                    textCorazon3: 'Canela',
+                    imageCorazon4: 'assets/images/geranio.jpg',
+                    textCorazon4: 'Geranio',
+                    imageBase: 'assets/images/cedro.jpg',
+                    textBase: 'Cedro',
+                    imageBase2: 'assets/images/sandalo.jpg',
+                    textBase2: 'Sándalo',
+                    imageBase3: 'assets/images/vetiver.jpg',
+                    textBase3: 'Vetíver',
+                    imageBase4: 'assets/images/almizcle.jpg',
+                    textBase4: 'Almizcle',
+                    imageBase5: 'assets/images/ambar.jpg',
+                    textBase5: 'Ámbar',
+                    imageBase6: 'assets/images/tabaco.jpg',
+                    textBase6: 'Tabaco',
                     containerWidth: 230,
-                    containerColor: Color.fromRGBO(119, 68, 20, 1),
-                    colorText: Colors.white,
-                    text: 'amaderado',
-                    containerWidth2: 140,
-                    containerColor2: Color.fromRGBO(124, 192, 177, 1),
-                    colorText2: Colors.black54,
-                    text2: 'aromático',
-                    containerWidth3: 120,
-                    containerColor3: Color.fromRGBO(152, 145, 135, 1),
-                    colorText3: Colors.white70,
-                    text3: 'terrosos',
-                    containerWidth4: 110,
-                    containerColor4: Color.fromRGBO(227, 143, 116, 1),
-                    colorText4: Colors.white70,
-                    text4: 'cálido especiado',
+                    containerColor: Color.fromRGBO(255, 254, 60, 1),
+                    colorText: Colors.black,
+                    text: 'cítrico',
+                    containerWidth2: 200,
+                    containerColor2: Color.fromRGBO(100, 245, 130, 1),
+                    colorText2: Colors.black,
+                    text2: 'fresco especiado',
+                    containerWidth3: 180,
+                    containerColor3: Color.fromRGBO(119, 68, 20, 1),
+                    colorText3: Colors.white,
+                    text3: 'amaderado',
+                    containerWidth4: 170,
+                    containerColor4: Color.fromRGBO(55, 160, 137, 1),
+                    colorText4: Colors.black87,
+                    text4: 'aromático',
+                    containerWidth5: 170,
+                    containerColor5: Color.fromRGBO(95, 178, 105, 1),
+                    colorText5: Colors.black87,
+                    text5: 'verde',
+                    containerWidth6: 150,
+                    containerColor6: Color.fromRGBO(151, 221, 235, 1),
+                    colorText6: Colors.black54,
+                    text6: 'acuático',
+                    containerWidth7: 140,
+                    containerColor7: Color.fromRGBO(202, 114, 66, 1),
+                    colorText7: Colors.black54,
+                    text7: 'ámbar',
+                    containerWidth8: 135,
+                    containerColor8: Color.fromRGBO(255, 166, 191, 1),
+                    colorText8: Colors.black54,
+                    text8: 'florales',
+                    containerWidth9: 125,
+                    containerColor9: Color.fromRGBO(239, 229, 241, 1),
+                    colorText9: Colors.black45,
+                    text9: 'almizclado',
+                    containerWidth10: 120,
+                    containerColor10: Color.fromRGBO(221, 253, 252, 1),
+                    colorText10: Colors.black45,
+                    text10: 'ozónico',
                   ),
                   //TODO:
                   const Aromas500(

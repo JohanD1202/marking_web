@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:marking_web/exports.dart';
 
 class CartScreenMobile extends StatefulWidget {
@@ -64,9 +65,12 @@ class _CartScreenMobileState extends State<CartScreenMobile> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 8),
-                                    child: Text(product.name, style: styleTextBolsosMobile)
+                                  SizedBox(
+                                    width: 275,
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 8),
+                                      child: Text(product.name, style: styleTextBolsosMobile)
+                                    ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 8),

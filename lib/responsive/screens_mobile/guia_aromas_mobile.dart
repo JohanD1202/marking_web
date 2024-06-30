@@ -18,7 +18,7 @@ class GuiaAromasMobile extends StatelessWidget {
             children: [
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -49,11 +49,10 @@ class GuiaAromasMobile extends StatelessWidget {
                   const Aromas100(
                     title: 'Yara - Lattafa',
                     description: '''
-Yara de Lattafa Perfumes es una fragancia de la 
-Familia olfativa Ámbar Vainilla para Mujeres. 
-Yara se lanzó en 2020. 
-Su longevidad y su estela son moderadas. 
-Es un aroma Femenino.
+Yara de Lattafa Perfumes es una fragancia de
+la Familia olfativa Ámbar Vainilla para
+Mujeres. Yara se lanzó en 2020. Su longevidad
+y su estela son moderadas. Es un aroma Femenino.
 ''',
                     imageLocion: 'assets/images/yara_lattafa.jpg',
                     imageNotaSalida: 'assets/images/orquidea.jpg',
@@ -112,11 +111,12 @@ Tropicales''',
                   const Aromas200(
                     title: 'Ombre Nomade - Louis Vuitton',
                     description: '''
-Ombre Nomade de Louis Vuitton es una fragancia
-de la familia olfativa Ámbar Amaderada para
-Hombres. Ombre Nomade se lanzó en 2018.
-Tiene una longevidad muy duradera y su
-estela es enorme. Es un aroma Masculino.
+Ombre Nomade de Louis Vuitton es una
+fragancia de la familia olfativa Ámbar
+Amaderada para Hombres. Ombre Nomade se
+lanzó en 2018. Tiene una longevidad muy
+duradera y su estela es enorme. Es un
+aroma Masculino.
 ''',
                     imageLocion:
                         'assets/images/ombre_nomade_louis_vuitton.webp',
@@ -2207,40 +2207,82 @@ Verde''',
                   //TODO:
                   const Aromas100(
                     title:
-                        'L\'Eau d\'Issey Pour Homme Eau & Cèdre - Issey Miyake',
+                        'L\'Eau d\'Issey Pour Homme - Issey Miyake',
                     description: '''
-L'Eau d'Issey Pour Homme Eau & Cèdre de Issey
-Miyake es una fragancia de la familia olfativa
-Amaderada Aromática para Hombres. Esta fragrancia
-es nueva. L'Eau d'Issey Pour Homme Eau & Cèdre se
-lanzó en 2022. Su longevidad es moderada y su
-estela es suave. Es un aroma Masculino.
+L'Eau d'Issey Pour Homme de Issey Miyake es una
+fragancia de la familia olfativa Amaderada
+Aromática para Hombres. L'Eau d'Issey Pour Homme
+se lanzó en 1994. Su longevidad es moderada y su
+estela es moderada. Es un aroma Masculino.
 ''',
-                    imageLocion: 'assets/images/issey_miyake_issey_miyake.webp',
-                    imageNotaSalida: 'assets/images/cardamomo.jpg',
-                    textNotaSalida: 'Cardamomo',
-                    imageCorazon: 'assets/images/cedro.jpg',
-                    textCorazon: 'Cedro',
-                    imageBase: 'assets/images/vetiver.jpg',
-                    textBase: 'Vetiver',
-                    imageBase2: 'assets/images/pachuli.jpg',
-                    textBase2: 'Pachulí',
+                    imageLocion: 'assets/images/leau_dissey_pour_homme_issey_miyake.webp',
+                    imageNotaSalida: 'assets/images/yuzu.jpg',
+                    textNotaSalida: 'Yuzu',
+                    imageNotaSalida2: 'assets/images/bergamota.jpg',
+                    textNotaSalida2: 'Bergamota',
+                    imageNotaSalida3: 'assets/images/limon.jpg',
+                    textNotaSalida3: 'Limón',
+                    imageCorazon: 'assets/images/nuez_moscada.jpg',
+                    textCorazon: '''Nuez
+Moscada''',
+                    imageCorazon2: 'assets/images/nenufar.jpg',
+                    textCorazon2: 'Nenúfar',
+                    imageCorazon3: 'assets/images/canela.jpg',
+                    textCorazon3: 'Canela',
+                    imageCorazon4: 'assets/images/geranio.jpg',
+                    textCorazon4: 'Geranio',
+                    imageBase: 'assets/images/cedro.jpg',
+                    textBase: 'Cedro',
+                    imageBase2: 'assets/images/sandalo.jpg',
+                    textBase2: 'Sándalo',
+                    imageBase3: 'assets/images/vetiver.jpg',
+                    textBase3: 'Vetíver',
+                    imageBase4: 'assets/images/almizcle.jpg',
+                    textBase4: 'Almizcle',
+                    imageBase5: 'assets/images/ambar.jpg',
+                    textBase5: 'Ámbar',
+                    imageBase6: 'assets/images/tabaco.jpg',
+                    textBase6: 'Tabaco',
                     containerWidth: 230,
-                    containerColor: Color.fromRGBO(119, 68, 20, 1),
-                    colorText: Colors.white,
-                    text: 'amaderado',
-                    containerWidth2: 140,
-                    containerColor2: Color.fromRGBO(124, 192, 177, 1),
-                    colorText2: Colors.black54,
-                    text2: 'aromático',
-                    containerWidth3: 120,
-                    containerColor3: Color.fromRGBO(152, 145, 135, 1),
-                    colorText3: Colors.white70,
-                    text3: 'terrosos',
-                    containerWidth4: 110,
-                    containerColor4: Color.fromRGBO(227, 143, 116, 1),
-                    colorText4: Colors.white70,
-                    text4: 'cálido especiado',
+                    containerColor: Color.fromRGBO(255, 254, 60, 1),
+                    colorText: Colors.black,
+                    text: 'cítrico',
+                    containerWidth2: 200,
+                    containerColor2: Color.fromRGBO(100, 245, 130, 1),
+                    colorText2: Colors.black,
+                    text2: 'fresco especiado',
+                    containerWidth3: 180,
+                    containerColor3: Color.fromRGBO(119, 68, 20, 1),
+                    colorText3: Colors.white,
+                    text3: 'amaderado',
+                    containerWidth4: 170,
+                    containerColor4: Color.fromRGBO(55, 160, 137, 1),
+                    colorText4: Colors.black87,
+                    text4: 'aromático',
+                    containerWidth5: 170,
+                    containerColor5: Color.fromRGBO(95, 178, 105, 1),
+                    colorText5: Colors.black87,
+                    text5: 'verde',
+                    containerWidth6: 150,
+                    containerColor6: Color.fromRGBO(151, 221, 235, 1),
+                    colorText6: Colors.black54,
+                    text6: 'acuático',
+                    containerWidth7: 140,
+                    containerColor7: Color.fromRGBO(202, 114, 66, 1),
+                    colorText7: Colors.black54,
+                    text7: 'ámbar',
+                    containerWidth8: 135,
+                    containerColor8: Color.fromRGBO(255, 166, 191, 1),
+                    colorText8: Colors.black54,
+                    text8: 'florales',
+                    containerWidth9: 125,
+                    containerColor9: Color.fromRGBO(239, 229, 241, 1),
+                    colorText9: Colors.black45,
+                    text9: 'almizclado',
+                    containerWidth10: 120,
+                    containerColor10: Color.fromRGBO(221, 253, 252, 1),
+                    colorText10: Colors.black45,
+                    text10: 'ozónico',
                   ),
                   //TODO:
                   const Aromas100(
@@ -3860,7 +3902,7 @@ class Aromas100 extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.only(left: 30, right: 20),
           child: Text(description, style: styleTextLocion),
         ),
         Padding(

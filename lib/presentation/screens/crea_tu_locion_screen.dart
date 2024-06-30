@@ -59,11 +59,11 @@ Una vez que hayas seleccionado tus lociones favoritas y la cantidad, da click
 en el botón de 'Listo ✔', verás un resumen con los detalles de tu compra, solo
 haz clic en 'Añadir al carrito' y tu fragancia personalizada estará lista para
 ser comprada. Si no te gusta tu creación, puedes presionar en el icono de la
-basura para eliminarla.
+basura para eliminarla. Todas tus creaciones aparecerán al final de la sección.
 
-Te recordamos que en esta sección todas las lociones son de 1 fl oz. Y tienen
-un precio de \$25.000 por combinación. Puedes hacer tantas combinaciones como
-desees.
+Te recordamos que en esta sección todas las lociones son de 1 fl oz. Puedes
+elegir tu mezcla de 2 lociones a \$25.000 por combinación. O de 3 a \$35.000.
+Puedes hacer tantas combinaciones como desees.
 
 ¡Siéntete libre de hacer tu Loción Personalizada!
 ''', style: texto)
@@ -94,5 +94,6 @@ Beneficios de crear tu propia loción:
 Personalización total: Diseña una fragancia que se adapte a tu estilo y preferencias.
 Calidad garantizada: Todas nuestras lociones están hechas con ingredientes de la más alta calidad.
 Innovación en tus manos: Crea combinaciones únicas que no encontrarás en ninguna otra parte.
-Empieza ahora y descubre la emoción de crear una fragancia que es exclusivamente tuya. ¡Haz que cada día sea especial con tu loción personalizada!
+Empieza ahora y descubre la emoción de crear una fragancia que es exclusivamente tuya.
+¡Haz que cada día sea especial con tu loción personalizada!
 */

@@ -56,6 +56,13 @@ class _SearchhBarState extends State<SearchhBar> {
     "Acqua di Gio - Giorgio Armani",
     "Polo Blue - Ralph Lauren",
     "Aventus - Creed",
+    "D'Orsay - Ésika",
+    "Bad - Diesel",
+    "Diesel White Plus - Diesel",
+    "Aqva Pour Homme - Bvlgari",
+    "Boss The Scent - Hugo Boss",
+    "Layton - Parfums de Marly",
+    "Bad Boy - Carolina Herrera",
     "Carolina Herrera - Carolina Herrera",
     "CH (2015) - Carolina Herrera",
     "212 VIP Rosé - Carolina Herrera",
@@ -125,6 +132,13 @@ class _SearchhBarState extends State<SearchhBar> {
         'assets/images/acqua_di_gio_giorgio_armani.webp',
     "Polo Blue - Ralph Lauren": 'assets/images/polo_blue_ralph_lauren.jpg',
     "Aventus - Creed": 'assets/images/aventus_creed.jpg',
+    "D'Orsay - Ésika": 'assets/images/dorsay_esika.jpg',
+    "Bad - Diesel": 'assets/images/bad_diesel.jpg',
+    "Diesel White Plus - Diesel": 'assets/images/diesel_plus_white_diesel.jpg',
+    "Aqva Pour Homme - Bvlgari": 'assets/images/aqva_pour_homme_bvlgari.jpg',
+    "Boss The Scent - Hugo Boss": 'assets/images/boss_the_scent_hugo_boss.jpg',
+    "Layton - Parfums de Marly": 'assets/images/layton_parfums_de_marly.jpg',
+    "Bad Boy - Carolina Herrera": 'assets/images/bad_boy_carolina_herrera.jpg',
     "Carolina Herrera - Carolina Herrera":
         'assets/images/carolina_herrera_carolina_herrera.jpg',
     "CH (2015) - Carolina Herrera":
@@ -305,50 +319,71 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Aventus - Creed':
           _selectedIndex = 42;
           break;
-        case 'Carolina Herrera - Carolina Herrera':
+        case 'D\'Orsay - Ésika':
           _selectedIndex = 43;
           break;
-        case 'CH (2015) - Carolina Herrera':
+        case 'Bad - Diesel':
           _selectedIndex = 44;
           break;
-        case '212 VIP Rosé - Carolina Herrera':
+        case 'Diesel White Plus - Diesel':
           _selectedIndex = 45;
           break;
-        case '360° - Perry Ellis':
+        case 'Aqva Pour Homme - Bvlgari':
           _selectedIndex = 46;
           break;
-        case 'Paris Hilton - Paris Hilton':
+        case 'Boss The Scent - Hugo Boss':
           _selectedIndex = 47;
           break;
-        case 'Can Can - Paris Hilton':
+        case 'Layton - Parfums de Marly':
           _selectedIndex = 48;
           break;
-        case 'Heiress - Paris Hilton':
+        case 'Bad Boy - Carolina Herrera':
           _selectedIndex = 49;
           break;
-        case 'Toy 2 - Moschino':
+        case 'Carolina Herrera - Carolina Herrera':
           _selectedIndex = 50;
           break;
-        case 'Amor Amor - Cacharel':
+        case 'CH (2015) - Carolina Herrera':
           _selectedIndex = 51;
           break;
-        case 'La Vie Est Belle - Lancôme':
+        case '212 VIP Rosé - Carolina Herrera':
           _selectedIndex = 52;
           break;
-        case 'Light Blue - Dolce&Gabbana':
+        case '360° - Perry Ellis':
           _selectedIndex = 53;
           break;
-        case 'Kim Kardashian - Kim Kardashian':
+        case 'Paris Hilton - Paris Hilton':
           _selectedIndex = 54;
           break;
-        case 'Angel - Mugler':
+        case 'Can Can - Paris Hilton':
           _selectedIndex = 55;
           break;
-        case 'Halloween - Halloween':
+        case 'Heiress - Paris Hilton':
           _selectedIndex = 56;
           break;
-        case 'CK2 - Calvin Klein':
+        case 'Toy 2 - Moschino':
           _selectedIndex = 57;
+          break;
+        case 'Amor Amor - Cacharel':
+          _selectedIndex = 58;
+          break;
+        case 'La Vie Est Belle - Lancôme':
+          _selectedIndex = 59;
+          break;
+        case 'Light Blue - Dolce&Gabbana':
+          _selectedIndex = 60;
+          break;
+        case 'Kim Kardashian - Kim Kardashian':
+          _selectedIndex = 61;
+          break;
+        case 'Angel - Mugler':
+          _selectedIndex = 62;
+          break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 63;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 64;
           break;
         default:
           _selectedIndex = 0;
@@ -3503,6 +3538,435 @@ de Roble''',
                 text10: 'musgoso',
               ),
               //TODO: 35
+              AromasBuscador2000(
+                title: 'D\'Orsay - Ésika',
+                description: '''
+D'Orsay de Ésika es una fragancia de la familia olfativa Amaderada Aromática para Hombres.
+D'Orsay se lanzó en 2009. Su longevidad es moderada y su estela es de moderada a pesada.
+Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/dorsay_esika.jpg',
+                imageNotaFragancia: 'assets/images/cedron.jpg',
+                textNotaFragancia: 'Cedrón',
+                imageNotaFragancia2: 'assets/images/roble.jpg',
+                textNotaFragancia2: 'Roble',
+                imageNotaFragancia3: 'assets/images/vetiver.jpg',
+                textNotaFragancia3: 'Vetiver',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(119, 68, 20, 1),
+                colorText: Colors.white,
+                text: 'amaderado',
+                containerWidth2: 180,
+                containerColor2: Color.fromRGBO(99, 181, 163, 1),
+                colorText2: Colors.black87,
+                text2: 'aromático',
+                containerWidth3: 170,
+                containerColor3: Color.fromRGBO(250, 255, 127, 1),
+                colorText3: Colors.black87,
+                text3: 'cítrico',
+                containerWidth4: 155,
+                containerColor4: Color.fromRGBO(141, 133, 122, 1),
+                colorText4: Colors.white,
+                text4: 'terrosos',
+              ),
+              //TODO: 36
+              BuscadorAromas(
+                title: 'Bad - Diesel',
+                description: '''
+Bad de Diesel es una fragancia de la familia olfativa Amaderada Aromática para Hombres.
+Bad se lanzó en 2016. Su longevidad y su estela son moderadas. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/bad_diesel.jpg',
+                imageNotaSalida: 'assets/images/lavanda.jpg',
+                textNotaSalida: 'Lavanda',
+                imageNotaSalida2: 'assets/images/bergamota.jpg',
+                textNotaSalida2: 'Bergamota',
+                imageNotaSalida3: 'assets/images/cardamomo.jpg',
+                textNotaSalida3: 'Cardamomo',
+                imageNotaSalida4: 'assets/images/hojas_de_violeta.jpg',
+                textNotaSalida4: '''Hojas de
+Violeta''',
+                imageCorazon: 'assets/images/caviar.jpg',
+                textCorazon: 'Caviar',
+                imageCorazon2: 'assets/images/raiz_de_lirio.jpg',
+                textCorazon2: '''Raíz de
+Lirio''',
+                imageCorazon3: 'assets/images/salvia.jpg',
+                textCorazon3: 'Salvia',
+                imageBase: 'assets/images/notas_amaderadas.jpg',
+                textBase: '''Notas
+Amaderadas''',
+                imageBase2: 'assets/images/tabaco.jpg',
+                textBase2: 'Tabaco',
+                imageBase3: 'assets/images/ambroxan.jpg',
+                textBase3: 'Ambroxan',
+                imageBase4: 'assets/images/cumarina.jpg',
+                textBase4: '''Haba
+Tonka''',
+                imageBase5: 'assets/images/pachuli.jpg',
+                textBase5: 'Pachulí',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(55, 160, 137, 1),
+                colorText: Colors.black,
+                text: 'aromático',
+                containerWidth2: 220,
+                containerColor2: Color.fromRGBO(124, 75, 29, 1),
+                colorText2: Colors.white,
+                text2: 'amaderado',
+                containerWidth3: 195,
+                containerColor3: Color.fromRGBO(235, 214, 239, 1),
+                colorText3: Colors.black87,
+                text3: 'lavanda',
+                containerWidth4: 188,
+                containerColor4: Color.fromRGBO(213, 89, 48, 1),
+                colorText4: Colors.white,
+                text4: 'cálido especiado',
+                containerWidth5: 180,
+                containerColor5: Color.fromRGBO(250, 255, 121, 1),
+                colorText5: Colors.black54,
+                text5: 'cítrico',
+                containerWidth6: 165,
+                containerColor6: Color.fromRGBO(165, 216, 100, 1),
+                colorText6: Colors.black54,
+                text6: 'fresco especiado',
+                containerWidth7: 165,
+                containerColor7: Color.fromRGBO(207, 127, 83, 1),
+                colorText7: Colors.white,
+                text7: 'ámbar',
+                containerWidth8: 160,
+                containerColor8: Color.fromRGBO(235, 216, 166, 1),
+                colorText8: Colors.black54,
+                text8: 'salado',
+                containerWidth9: 155,
+                containerColor9: Color.fromRGBO(199, 162, 108, 1),
+                colorText9: Colors.black54,
+                text9: 'tabaco',
+                containerWidth10: 155,
+                containerColor10: Color.fromRGBO(179, 134, 96, 1),
+                colorText10: Colors.black54,
+                text10: 'animálico',
+              ),
+              //TODO: 37
+              BuscadorAromas(
+                title: 'Diesel White Plus - Diesel',
+                description: '''
+Diesel White Plus de Diesel es una fragancia de la familia olfativa Ámbar Especiada
+para Hombres. Diesel White Plus se lanzó en 1997. Su longevidad es moderada y su
+estela es pesada. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/diesel_plus_white.jpg',
+                imageNotaSalida: 'assets/images/naranja.jpg',
+                textNotaSalida: 'Naranja',
+                imageNotaSalida2: 'assets/images/bergamota.jpg',
+                textNotaSalida2: 'Bergamota',
+                imageNotaSalida3: 'assets/images/hojas_de_palmera.jpeg',
+                textNotaSalida3: '''Hojas de
+Palmera''',
+                imageCorazon: 'assets/images/abedul.jpg',
+                textCorazon: 'Abedul',
+                imageCorazon2: 'assets/images/violeta.jpg',
+                textCorazon2: 'Violeta',
+                imageCorazon3: 'assets/images/cardamomo.jpg',
+                textCorazon3: 'Cardamomo',
+                imageBase: 'assets/images/clavos_de_olor.jpg',
+                textBase: '''Clavos
+de Olor''',
+                imageBase2: 'assets/images/anis.jpg',
+                textBase2: 'Anís',
+                imageBase3: 'assets/images/vetiver.jpg',
+                textBase3: 'Vetiver',
+                imageBase4: 'assets/images/musgo_de_roble.jpg',
+                textBase4: '''Musgo de
+Roble''',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(55, 160, 137, 1),
+                colorText: Colors.black,
+                text: 'aromático',
+                containerWidth2: 220,
+                containerColor2: Color.fromRGBO(124, 75, 29, 1),
+                colorText2: Colors.white,
+                text2: 'amaderado',
+                containerWidth3: 190,
+                containerColor3: Color.fromRGBO(250, 254, 85, 1),
+                colorText3: Colors.black87,
+                text3: 'cítrico',
+                containerWidth4: 188,
+                containerColor4: Color.fromRGBO(236, 166, 142, 1),
+                colorText4: Colors.white,
+                text4: 'especiado suave',
+              ),
+              //TODO: 38
+              BuscadorAromas(
+                title: 'Aqva Pour Homme - Bvlgari',
+                description: '''
+Aqva Pour Homme de Bvlgari es una fragancia de la familia olfativa Aromática Acuática para Hombres.
+Aqva Pour Homme se lanzó en 2005. Su longevidad y su estela son moderadas. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/aqva_pour_homme_bvlgari.jpg',
+                imageNotaSalida: 'assets/images/mandarina.jpg',
+                textNotaSalida: 'Mandarina',
+                imageNotaSalida2: 'assets/images/naranja.jpg',
+                textNotaSalida2: 'Naranja',
+                imageNotaSalida3: 'assets/images/petit_grain.jpg',
+                textNotaSalida3: '''Petit
+Grain''',
+                imageCorazon: 'assets/images/algas_marinas.jpg',
+                textCorazon: '''Algas
+Marinas''',
+                imageCorazon2: 'assets/images/lavanda.jpg',
+                textCorazon2: 'Lavanda',
+                imageCorazon3: 'assets/images/flor_del_algodonero.jpg',
+                textCorazon3: '''Flor del
+Algodonero''',
+                imageBase: 'assets/images/cedro.jpg',
+                textBase: '''Cedro de
+Virginia''',
+                imageBase2: 'assets/images/notas_amaderadas.jpg',
+                textBase2: '''Notas
+Amaderadas''',
+                imageBase3: 'assets/images/pachuli.jpg',
+                textBase3: 'Pachulí',
+                imageBase4: 'assets/images/esclarea.jpg',
+                textBase4: 'Esclarea',
+                imageBase5: 'assets/images/ambar.jpg',
+                textBase5: 'Ámbar',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(249, 255, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+                containerWidth2: 220,
+                containerColor2: Color.fromRGBO(25, 90, 160, 1),
+                colorText2: Colors.white,
+                text2: 'marino',
+                containerWidth3: 185,
+                containerColor3: Color.fromRGBO(88, 176, 156, 1),
+                colorText3: Colors.black87,
+                text3: 'aromático',
+                containerWidth4: 175,
+                containerColor4: Color.fromRGBO(132, 215, 232, 1),
+                colorText4: Colors.black87,
+                text4: 'acuático',
+                containerWidth5: 175,
+                containerColor5: Color.fromRGBO(149, 109, 71, 1),
+                colorText5: Colors.white,
+                text5: 'amaderado',
+                 containerWidth6: 125,
+                 containerColor6: Color.fromRGBO(241, 228, 244, 1),
+                 colorText6: Colors.black54,
+                 text6: 'lavanda',
+                 containerWidth7: 120,
+                 containerColor7: Color.fromRGBO(189, 226, 142, 1),
+                 colorText7: Colors.black45,
+                 text7: 'fresco especiado',
+                 containerWidth8: 120,
+                 containerColor8: Color.fromRGBO(246, 237, 228, 1),
+                 colorText8: Colors.black45,
+                 text8: 'atalcado',
+               ),
+              //TODO: 39
+              BuscadorAromas(
+                title: 'Boss The Scent - Hugo Boss',
+                description: '''
+Boss The Scent de Hugo Boss es una fragancia de la familia olfativa Aromática Especiada para Hombres.
+Boss The Scent se lanzó en 2015. Su longevidad y su estela son moderadas. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/boss_the_scent_hugo_boss.jpg',
+                imageNotaSalida: 'assets/images/jengibre.jpg',
+                textNotaSalida: 'Jengibre',
+                imageNotaSalida2: 'assets/images/mandarina.jpg',
+                textNotaSalida2: 'Mandarina',
+                imageNotaSalida3: 'assets/images/bergamota.jpg',
+                textNotaSalida3: 'Bergamota',
+                imageCorazon: 'assets/images/maninka.jpg',
+                textCorazon: 'Maninka',
+                imageCorazon2: 'assets/images/lavanda.jpg',
+                textCorazon2: 'Lavanda',
+                imageBase: 'assets/images/cuero.jpg',
+                textBase: 'Cuero',
+                imageBase2: 'assets/images/notas_amaderadas.jpg',
+                textBase2: '''Notas
+Amaderadas''',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(249, 255, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+                containerWidth2: 220,
+                containerColor2: Color.fromRGBO(126, 80, 67, 1),
+                colorText2: Colors.white,
+                text2: 'cuero',
+                containerWidth3: 210,
+                containerColor3: Color.fromRGBO(208, 69, 22, 1),
+                colorText3: Colors.white,
+                text3: 'cálido especiado',
+                containerWidth4: 205,
+                containerColor4: Color.fromRGBO(234, 211, 238, 1),
+                colorText4: Colors.black87,
+                text4: 'lavanda',
+                containerWidth5: 180,
+                containerColor5: Color.fromRGBO(153, 115, 79, 1),
+                colorText5: Colors.white,
+                text5: 'amaderado',
+                containerWidth6: 165,
+                containerColor6: Color.fromRGBO(253, 132, 109, 1),
+                colorText6: Colors.black54,
+                text6: 'afrutados',
+                containerWidth7: 165,
+                containerColor7: Color.fromRGBO(178, 133, 95, 1),
+                colorText7: Colors.white,
+                text7: 'animálico',
+                containerWidth8: 160,
+                containerColor8: Color.fromRGBO(124, 193, 178, 1),
+                colorText8: Colors.black54,
+                text8: 'aromático',
+                containerWidth9: 157,
+                containerColor9: Color.fromRGBO(175, 220, 116, 1),
+                colorText9: Colors.black54,
+                text9: 'fresco especiado',
+                containerWidth10: 140,
+                containerColor10: Color.fromRGBO(197, 240, 244, 1),
+                colorText10: Colors.black45,
+                text10: 'fresco',
+              ),
+              //TODO: 40
+              BuscadorAromas(
+                title: 'Layton - Parfums de Marly',
+                description: '''
+Layton - Parfums de Marly es una fragancia de la familia olfativa Ámbar Floral para Hombres
+y Mujeres. Layton se lanzó en 2016. Su longevidad es duradera y su estela es pesada. Es un
+aroma Masculino.
+''',
+                imageLocion: 'assets/images/layton_parfums_de_marly.jpg',
+                imageNotaSalida: 'assets/images/manzana.jpg',
+                textNotaSalida: 'Manzana',
+                imageNotaSalida2: 'assets/images/lavanda.jpg',
+                textNotaSalida2: 'Lavanda',
+                imageNotaSalida3: 'assets/images/bergamota.jpg',
+                textNotaSalida3: 'Bergamota',
+                imageNotaSalida4: 'assets/images/mandarina.jpg',
+                textNotaSalida4: 'Mandarina',
+                imageCorazon: 'assets/images/geranio.jpg',
+                textCorazon: 'Geranio',
+                imageCorazon2: 'assets/images/violeta.jpg',
+                textCorazon2: 'Violeta',
+                imageCorazon3: 'assets/images/jazmin.jpg',
+                textCorazon3: 'Jazmín',
+                imageBase: 'assets/images/vainilla.jpg',
+                textBase: 'Vainilla',
+                imageBase2: 'assets/images/cardamomo.jpg',
+                textBase2: 'Cardamomo',
+                imageBase3: 'assets/images/sandalo.jpg',
+                textBase3: 'Sándalo',
+                imageBase4: 'assets/images/pimienta.jpg',
+                textBase4: 'Pimienta',
+                imageBase5: 'assets/images/madera_de_gaiac.jpg',
+                textBase5: '''Madera
+de Gaiac''',
+                imageBase6: 'assets/images/pachuli.jpg',
+                textBase6: 'Pachulí',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(204, 51, 0, 1),
+                colorText: Colors.white,
+                text: 'cálido especiado',
+                containerWidth2: 210,
+                containerColor2: Color.fromRGBO(255, 254, 198, 1),
+                colorText2: Colors.black,
+                text2: 'avainillado',
+                containerWidth3: 207,
+                containerColor3: Color.fromRGBO(145, 207, 64, 1),
+                colorText3: Colors.black,
+                text3: 'fresco especiado',
+                containerWidth4: 200,
+                containerColor4: Color.fromRGBO(137, 93, 51, 1),
+                colorText4: Colors.white,
+                text4: 'amaderado',
+                containerWidth5: 190,
+                containerColor5: Color.fromRGBO(89, 176, 157, 1),
+                colorText5: Colors.black87,
+                text5: 'aromático',
+                containerWidth6: 180,
+                containerColor6: Color.fromRGBO(252, 115, 89, 1),
+                colorText6: Colors.black87,
+                text6: 'afrutados',
+                containerWidth7: 170,
+                containerColor7: Color.fromRGBO(242, 230, 217, 1),
+                colorText7: Colors.black54,
+                text7: 'atalcado',
+                containerWidth8: 155,
+                containerColor8: Color.fromRGBO(239, 222, 242, 1),
+                colorText8: Colors.black54,
+                text8: 'lavanda',
+                containerWidth9: 150,
+                containerColor9: Color.fromRGBO(190, 238, 243, 1),
+                colorText9: Colors.black54,
+                text9: 'fresco',
+                containerWidth10: 145,
+                containerColor10: Color.fromRGBO(251, 255, 147, 1),
+                colorText10: Colors.black45,
+                text10: 'cítrico',
+              ),
+              //TODO: 41
+              BuscadorAromas(
+                title: 'Bad Boy - Carolina Herrera',
+                description: '''
+Bad Boy de Carolina Herrera es una fragancia de la familia olfativa Ámbar Especiada para Hombres.
+Bad Boy se lanzó en 2019. Su longevidad y su estela son moderadas. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/bad_boy_carolina_herrera.jpg',
+                imageNotaSalida: 'assets/images/pimienta_blanca.jpg',
+                textNotaSalida: '''Pimienta
+Blanca''',
+                imageNotaSalida2: 'assets/images/bergamota.jpg',
+                textNotaSalida2: 'Bergamota',
+                imageNotaSalida3: 'assets/images/pimienta_rosa.jpg',
+                textNotaSalida3: '''Pimienta
+Rosa''',
+                imageCorazon: 'assets/images/cedro.jpg',
+                textCorazon: 'Cedro',
+                imageCorazon2: 'assets/images/esclarea.jpg',
+                textCorazon2: 'Esclarea',
+                imageBase: 'assets/images/cumarina.jpg',
+                textBase: '''Haba
+Tonka''',
+                imageBase2: 'assets/images/cacao.jpg',
+                textBase2: 'Cacao',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(204, 51, 0, 1),
+                colorText: Colors.white,
+                text: 'cálido especiado',
+                containerWidth2: 220,
+                containerColor2: Color.fromRGBO(136, 203, 49, 1),
+                colorText2: Colors.black,
+                text2: 'fresco especiado',
+                containerWidth3: 215,
+                containerColor3: Color.fromRGBO(160, 70, 28, 1),
+                colorText3: Colors.white,
+                text3: 'cacao',
+                containerWidth4: 190,
+                containerColor4: Color.fromRGBO(255, 254, 203, 1),
+                colorText4: Colors.black87,
+                text4: 'avainillado',
+                containerWidth5: 180,
+                containerColor5: Color.fromRGBO(99, 181, 163, 1),
+                colorText5: Colors.black87,
+                text5: 'aromático',
+                containerWidth6: 175,
+                containerColor6: Color.fromRGBO(242, 102, 106, 1),
+                colorText6: Colors.white,
+                text6: 'dulce',
+                containerWidth7: 165,
+                containerColor7: Color.fromRGBO(250, 255, 131, 1),
+                colorText7: Colors.black54,
+                text7: 'cítrico',
+                containerWidth8: 160,
+                containerColor8: Color.fromRGBO(208, 131, 89, 1),
+                colorText8: Colors.white,
+                text8: 'ámbar',
+                containerWidth9: 160,
+                containerColor9: Color.fromRGBO(161, 126, 93, 1),
+                colorText9: Colors.white,
+                text9: 'amaderado',
+              ),
+              //TODO: 42
               BuscadorAromas(
                 title: 'Carolina Herrera - Carolina Herrera',
                 description: '''

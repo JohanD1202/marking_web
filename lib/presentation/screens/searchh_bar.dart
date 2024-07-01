@@ -66,6 +66,8 @@ class _SearchhBarState extends State<SearchhBar> {
     "212 VIP Black Red - Carolina Herrera",
     "Le Beau - Jean Paul Galtier",
     "Arsenal - Gilles Cantuel",
+    "Legend Spirit - Montblanc",
+    "Valentino Born in Roma - Valentino",
     "Carolina Herrera - Carolina Herrera",
     "CH (2015) - Carolina Herrera",
     "212 VIP Rosé - Carolina Herrera",
@@ -145,6 +147,8 @@ class _SearchhBarState extends State<SearchhBar> {
     "212 VIP Black Red - Carolina Herrera": 'assets/images/212_vip_black_red_carolina_herrera.jpg',
     "Le Beau - Jean Paul Galtier": 'assets/images/le_beau_jean_paul_galtier.jpg',
     "Arsenal - Gilles Cantuel": 'assets/images/arsenal_gilles_cantuel.webp',
+    "Legend Spirit - Montblanc": 'assets/images/legend_spirit_montblanc.jpg',
+    "Valentino Born in Roma - Valentino": 'assets/images/valentino_born_in_roma_valentino.jpg',
     "Carolina Herrera - Carolina Herrera":
         'assets/images/carolina_herrera_carolina_herrera.jpg',
     "CH (2015) - Carolina Herrera":
@@ -355,50 +359,56 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Arsenal - Gilles Cantuel':
           _selectedIndex = 52;
           break;
-        case 'Carolina Herrera - Carolina Herrera':
+        case 'Legend Spirit - Montblanc':
           _selectedIndex = 53;
           break;
-        case 'CH (2015) - Carolina Herrera':
+        case 'Valentino Born in Roma - Valentino':
           _selectedIndex = 54;
           break;
-        case '212 VIP Rosé - Carolina Herrera':
+        case 'Carolina Herrera - Carolina Herrera':
           _selectedIndex = 55;
           break;
-        case '360° - Perry Ellis':
+        case 'CH (2015) - Carolina Herrera':
           _selectedIndex = 56;
           break;
-        case 'Paris Hilton - Paris Hilton':
+        case '212 VIP Rosé - Carolina Herrera':
           _selectedIndex = 57;
           break;
-        case 'Can Can - Paris Hilton':
+        case '360° - Perry Ellis':
           _selectedIndex = 58;
           break;
-        case 'Heiress - Paris Hilton':
+        case 'Paris Hilton - Paris Hilton':
           _selectedIndex = 59;
           break;
-        case 'Toy 2 - Moschino':
+        case 'Can Can - Paris Hilton':
           _selectedIndex = 60;
           break;
-        case 'Amor Amor - Cacharel':
+        case 'Heiress - Paris Hilton':
           _selectedIndex = 61;
           break;
-        case 'La Vie Est Belle - Lancôme':
+        case 'Toy 2 - Moschino':
           _selectedIndex = 62;
           break;
-        case 'Light Blue - Dolce&Gabbana':
+        case 'Amor Amor - Cacharel':
           _selectedIndex = 63;
           break;
-        case 'Kim Kardashian - Kim Kardashian':
+        case 'La Vie Est Belle - Lancôme':
           _selectedIndex = 64;
           break;
-        case 'Angel - Mugler':
+        case 'Light Blue - Dolce&Gabbana':
           _selectedIndex = 65;
           break;
-        case 'Halloween - Halloween':
+        case 'Kim Kardashian - Kim Kardashian':
           _selectedIndex = 66;
           break;
-        case 'CK2 - Calvin Klein':
+        case 'Angel - Mugler':
           _selectedIndex = 67;
+          break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 68;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 69;
           break;
         default:
           _selectedIndex = 0;
@@ -4145,6 +4155,145 @@ aroma Masculino.
                 text5: 'cuero',
               ),
               //TODO: 45
+              BuscadorAromas(
+                title: 'Legend Spirit - Montblanc',
+                description: '''
+Legend Spirit de Montblanc es una fragancia de la familia olfativa Amaderada Aromática
+para Hombres. Legend Spirit se lanzó en 2016. Su longevidad y su estela son moderadas. Es un
+aroma Masculino.
+''',
+                imageLocion: 'assets/images/legend_spirit_montblanc.jpg',
+                imageNotaSalida: 'assets/images/toronja.jpg',
+                textNotaSalida: 'Toronja',
+                imageNotaSalida2: 'assets/images/bergamota.jpg',
+                textNotaSalida2: 'Bergamota',
+                imageNotaSalida3: 'assets/images/pimienta_rosa.jpg',
+                textNotaSalida3: '''Pimienta
+Rosa''',
+                imageCorazon: 'assets/images/notas_acuaticas.jpg',
+                textCorazon: '''Notas
+Acuáticas''',
+                imageCorazon2: 'assets/images/lavanda.jpg',
+                textCorazon2: 'Lavanda',
+                imageCorazon3: 'assets/images/cardamomo.jpg',
+                textCorazon3: 'Cardamomo',
+                imageBase: 'assets/images/almizcle.jpg',
+                textBase: '''Almizcle
+Blanco''',
+                imageBase2: 'assets/images/notas_amaderadas.jpg',
+                textBase2: '''Maderas
+Blancas''',
+                imageBase3: 'assets/images/madera_de_cachemira.jpg',
+                textBase3: '''Madera de
+Cachemira''',
+                imageBase4: 'assets/images/musgo_de_roble.jpg',
+                textBase4: '''Musgo de
+Roble''',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(249, 255, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+                containerWidth2: 180,
+                containerColor2: Color.fromRGBO(133, 215, 232, 1),
+                colorText2: Colors.black87,
+                text2: 'acuático',
+                containerWidth3: 175,
+                containerColor3: Color.fromRGBO(237, 226, 239, 1),
+                colorText3: Colors.black87,
+                text3: 'almizclado',
+                containerWidth4: 170,
+                containerColor4: Color.fromRGBO(166, 216, 101, 1),
+                colorText4: Colors.black87,
+                text4: 'fresco especiado',
+                containerWidth5: 170,
+                containerColor5: Color.fromRGBO(111, 187, 170, 1),
+                colorText5: Colors.black87,
+                text5: 'aromático',
+                containerWidth6: 165,
+                containerColor6: Color.fromRGBO(160, 124, 91, 1),
+                colorText6: Colors.white,
+                text6: 'amaderado',
+                containerWidth7: 162,
+                containerColor7: Color.fromRGBO(238, 221, 242, 1),
+                colorText7: Colors.black54,
+                text7: 'lavanda',
+                containerWidth8: 155,
+                containerColor8: Color.fromRGBO(196, 239, 244, 1),
+                colorText8: Colors.black45,
+                text8: 'fresco',
+                containerWidth9: 145,
+                containerColor9: Color.fromRGBO(245, 236, 227, 1),
+                colorText9: Colors.black45,
+                text9: 'atalcado',
+              ),
+              //TODO: 46
+              BuscadorAromas(
+                title: 'Valentino Born in Roma - Valentino',
+                description: '''
+Valentino Born in Roma de Valentino es una fragancia de la familia olfativa Amaderada Especiada
+para Hombres. Valentino Born in Roma se lanzó en 2019. Su longevidad y su estela son moderadas.
+Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/valentino_born_in_roma_valentino.jpg',
+                imageNotaSalida: 'assets/images/notas_minerales.jpg',
+                textNotaSalida: '''Notas
+Minerales''',
+                imageNotaSalida2: 'assets/images/hojas_de_violeta.jpg',
+                textNotaSalida2: '''Hojas de
+Violeta''',
+                imageNotaSalida3: 'assets/images/sal.jpg',
+                textNotaSalida3: 'Sal',
+                imageCorazon: 'assets/images/jengibre.jpg',
+                textCorazon: 'Jengibre',
+                imageCorazon2: 'assets/images/salvia.jpg',
+                textCorazon2: 'Salvia',
+                imageBase: 'assets/images/notas_amaderadas.jpg',
+                textBase: '''Maderas
+Blancas''',
+                imageBase2: 'assets/images/vetiver.jpg',
+                textBase2: 'Vetiver',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(119, 68, 20, 1),
+                colorText: Colors.white,
+                text: 'amaderado',
+                containerWidth2: 225,
+                containerColor2: Color.fromRGBO(115, 188, 192, 1),
+                colorText2: Colors.black,
+                text2: 'mineral',
+                containerWidth3: 205,
+                containerColor3: Color.fromRGBO(207, 253, 251, 1),
+                colorText3: Colors.black87,
+                text3: 'ozónico',
+                containerWidth4: 195,
+                containerColor4: Color.fromRGBO(86, 175, 155, 1),
+                colorText4: Colors.black87,
+                text4: 'aromático',
+                containerWidth5: 180,
+                containerColor5: Color.fromRGBO(136, 216, 233, 1),
+                colorText5: Colors.black87,
+                text5: 'acuático',
+                containerWidth6: 170,
+                containerColor6: Color.fromRGBO(218, 108, 72, 1),
+                colorText6: Colors.white,
+                text6: 'cálido especiado',
+                containerWidth7: 165,
+                containerColor7: Color.fromRGBO(240, 255, 251, 1),
+                colorText7: Colors.black54,
+                text7: 'salado',
+                containerWidth8: 160,
+                containerColor8: Color.fromRGBO(159, 195, 171, 1),
+                colorText8: Colors.black54,
+                text8: 'herbal',
+                containerWidth9: 150,
+                containerColor9: Color.fromRGBO(107, 184, 116, 1),
+                colorText9: Colors.white70,
+                text9: 'verde',
+                containerWidth10: 140,
+                containerColor10: Color.fromRGBO(157, 151, 141, 1),
+                colorText10: Colors.white70,
+                text10: 'terrosos',
+              ),
+              //TODO: 47
               BuscadorAromas(
                 title: 'Carolina Herrera - Carolina Herrera',
                 description: '''

@@ -63,6 +63,9 @@ class _SearchhBarState extends State<SearchhBar> {
     "Boss The Scent - Hugo Boss",
     "Layton - Parfums de Marly",
     "Bad Boy - Carolina Herrera",
+    "212 VIP Black Red - Carolina Herrera",
+    "Le Beau - Jean Paul Galtier",
+    "Arsenal - Gilles Cantuel",
     "Carolina Herrera - Carolina Herrera",
     "CH (2015) - Carolina Herrera",
     "212 VIP Rosé - Carolina Herrera",
@@ -139,6 +142,9 @@ class _SearchhBarState extends State<SearchhBar> {
     "Boss The Scent - Hugo Boss": 'assets/images/boss_the_scent_hugo_boss.jpg',
     "Layton - Parfums de Marly": 'assets/images/layton_parfums_de_marly.jpg',
     "Bad Boy - Carolina Herrera": 'assets/images/bad_boy_carolina_herrera.jpg',
+    "212 VIP Black Red - Carolina Herrera": 'assets/images/212_vip_black_red_carolina_herrera.jpg',
+    "Le Beau - Jean Paul Galtier": 'assets/images/le_beau_jean_paul_galtier.jpg',
+    "Arsenal - Gilles Cantuel": 'assets/images/arsenal_gilles_cantuel.webp',
     "Carolina Herrera - Carolina Herrera":
         'assets/images/carolina_herrera_carolina_herrera.jpg',
     "CH (2015) - Carolina Herrera":
@@ -340,50 +346,59 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Bad Boy - Carolina Herrera':
           _selectedIndex = 49;
           break;
-        case 'Carolina Herrera - Carolina Herrera':
+        case '212 VIP Black Red - Carolina Herrera':
           _selectedIndex = 50;
           break;
-        case 'CH (2015) - Carolina Herrera':
+        case 'Le Beau - Jean Paul Galtier':
           _selectedIndex = 51;
           break;
-        case '212 VIP Rosé - Carolina Herrera':
+        case 'Arsenal - Gilles Cantuel':
           _selectedIndex = 52;
           break;
-        case '360° - Perry Ellis':
+        case 'Carolina Herrera - Carolina Herrera':
           _selectedIndex = 53;
           break;
-        case 'Paris Hilton - Paris Hilton':
+        case 'CH (2015) - Carolina Herrera':
           _selectedIndex = 54;
           break;
-        case 'Can Can - Paris Hilton':
+        case '212 VIP Rosé - Carolina Herrera':
           _selectedIndex = 55;
           break;
-        case 'Heiress - Paris Hilton':
+        case '360° - Perry Ellis':
           _selectedIndex = 56;
           break;
-        case 'Toy 2 - Moschino':
+        case 'Paris Hilton - Paris Hilton':
           _selectedIndex = 57;
           break;
-        case 'Amor Amor - Cacharel':
+        case 'Can Can - Paris Hilton':
           _selectedIndex = 58;
           break;
-        case 'La Vie Est Belle - Lancôme':
+        case 'Heiress - Paris Hilton':
           _selectedIndex = 59;
           break;
-        case 'Light Blue - Dolce&Gabbana':
+        case 'Toy 2 - Moschino':
           _selectedIndex = 60;
           break;
-        case 'Kim Kardashian - Kim Kardashian':
+        case 'Amor Amor - Cacharel':
           _selectedIndex = 61;
           break;
-        case 'Angel - Mugler':
+        case 'La Vie Est Belle - Lancôme':
           _selectedIndex = 62;
           break;
-        case 'Halloween - Halloween':
+        case 'Light Blue - Dolce&Gabbana':
           _selectedIndex = 63;
           break;
-        case 'CK2 - Calvin Klein':
+        case 'Kim Kardashian - Kim Kardashian':
           _selectedIndex = 64;
+          break;
+        case 'Angel - Mugler':
+          _selectedIndex = 65;
+          break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 66;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 67;
           break;
         default:
           _selectedIndex = 0;
@@ -911,7 +926,7 @@ de Olor''',
                 text9: 'fresco',
                 containerWidth10: 140,
                 containerColor10: Color.fromRGBO(184, 158, 151, 1),
-                colorText10: Colors.white60,
+                colorText10: Colors.white70,
                 text10: 'cuero',
               ),
               //TODO: 8
@@ -3967,6 +3982,169 @@ Tonka''',
                 text9: 'amaderado',
               ),
               //TODO: 42
+              BuscadorAromas(
+                title: '212 VIP Black Red - Carolina Herrera',
+                description: '''
+212 VIP Black Red de Carolina Herrera es una fragancia de la familia olfativa Amaderada Especiada
+para Hombres. 212 VIP Black Red se lanzó en 2020. Su longevidad es moderada y su estela es pesada.
+Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/212_vip_black_red_carolina_herrera.jpg',
+                imageNotaSalida: 'assets/images/pimienta_inglesa.jpg',
+                textNotaSalida: '''Pimienta
+Inglesa''',
+                imageNotaSalida2: 'assets/images/jengibre.jpg',
+                textNotaSalida2: 'Jengibre',
+                imageNotaSalida3: 'assets/images/cardamomo.jpg',
+                textNotaSalida3: 'Cardamomo',
+                imageCorazon: 'assets/images/absenta.jpg',
+                textCorazon: 'Absenta',
+                imageBase: 'assets/images/cuero.jpg',
+                textBase: 'Cuero',
+                imageBase2: 'assets/images/madera_de_gaiac.jpg',
+                textBase2: '''Madera
+de Gaiac''',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(204, 51, 0, 1),
+                colorText: Colors.white,
+                text: 'cálido especiado',
+                containerWidth2: 220,
+                containerColor2: Color.fromRGBO(64, 164, 142, 1),
+                colorText2: Colors.black,
+                text2: 'aromático',
+                containerWidth3: 185,
+                containerColor3: Color.fromRGBO(159, 213, 90, 1),
+                colorText3: Colors.black87,
+                text3: 'fresco especiado',
+                containerWidth4: 185,
+                containerColor4: Color.fromRGBO(151, 114, 103, 1),
+                colorText4: Colors.white,
+                text4: 'cuero',
+                containerWidth5: 165,
+                containerColor5: Color.fromRGBO(214, 216, 103, 1),
+                colorText5: Colors.black54,
+                text5: 'amargo',
+                containerWidth6: 165,
+                containerColor6: Color.fromRGBO(167, 134, 104, 1),
+                colorText6: Colors.white,
+                text6: 'amaderado',
+                containerWidth7: 150,
+                containerColor7: Color.fromRGBO(189, 149, 117, 1),
+                colorText7: Colors.white,
+                text7: 'animálico',
+                containerWidth8: 145,
+                containerColor8: Color.fromRGBO(185, 177, 187, 1),
+                colorText8: Colors.white,
+                text8: 'ahumado',
+                containerWidth9: 138,
+                containerColor9: Color.fromRGBO(178, 207, 188, 1),
+                colorText9: Colors.black45,
+                text9: 'herbal',
+              ),
+              //TODO: 43
+              BuscadorAromas(
+                title: 'Le Beau - Jean Paul Galtier',
+                description: '''
+Le Beau de Jean Paul Galtier es una fragancia de la familia olfativa Amaderada Aromática
+para Hombres. Le Beau se lanzó en 2019. Su longevidad y su estela son moderadas. Es un
+aroma Masculino.
+''',
+                imageLocion: 'assets/images/le_beau_jean_paul_galtier.jpg',
+                imageNotaSalida: 'assets/images/bergamota.jpg',
+                textNotaSalida: 'Bergamota',
+                imageCorazon: 'assets/images/coco.jpg',
+                textCorazon: 'Coco',
+                imageBase: 'assets/images/cumarina.jpg',
+                textBase: '''Haba
+Tonka''',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(241, 232, 212, 1),
+                colorText: Colors.black,
+                text: 'coco',
+                containerWidth2: 200,
+                containerColor2: Color.fromRGBO(255, 254, 200, 1),
+                colorText2: Colors.black,
+                text2: 'avainillado',
+                containerWidth3: 185,
+                containerColor3: Color.fromRGBO(241, 92, 97, 1),
+                colorText3: Colors.white,
+                text3: 'dulce',
+                containerWidth4: 160,
+                containerColor4: Color.fromRGBO(251, 255, 138, 1),
+                colorText4: Colors.black87,
+                text4: 'cítrico',
+                containerWidth5: 150,
+                containerColor5: Color.fromRGBO(252, 251, 247, 1),
+                colorText5: Colors.black54,
+                text5: 'lactónico',
+                containerWidth6: 150,
+                containerColor6: Color.fromRGBO(214, 147, 109, 1),
+                colorText6: Colors.white,
+                text6: 'ámbar',
+                containerWidth7: 150,
+                containerColor7: Color.fromRGBO(133, 197, 183, 1),
+                colorText7: Colors.black54,
+                text7: 'aromático',
+                containerWidth8: 145,
+                containerColor8: Color.fromRGBO(249, 208, 112, 1),
+                colorText8: Colors.white,
+                text8: 'tropical',
+                containerWidth9: 140,
+                containerColor9: Color.fromRGBO(188, 226, 139, 1),
+                colorText9: Colors.black45,
+                text9: 'fresco especiado',
+                containerWidth10: 137,
+                containerColor10: Color.fromRGBO(215, 199, 171, 1),
+                colorText10: Colors.black45,
+                text10: 'nueces',
+              ),
+              //TODO: 44
+              BuscadorAromas(
+                title: 'Arsenal - Gilles Cantuel',
+                description: '''
+Arsenal de Gilles Cantuel es una fragancia de la familia olfativa Amaderada Especiada
+para Hombres. Le Beau se lanzó en 1996. Su longevidad y su estela son moderadas. Es un
+aroma Masculino.
+''',
+                imageLocion: 'assets/images/arsenal_gilles_cantuel.webp',
+                imageNotaSalida: 'assets/images/mandarina.jpg',
+                textNotaSalida: 'Mandarina',
+                imageNotaSalida2: 'assets/images/pomelo.jpg',
+                textNotaSalida2: 'Pomelo',
+                imageNotaSalida3: 'assets/images/menta.jpg',
+                textNotaSalida3: 'Menta',
+                imageCorazon: 'assets/images/canela.jpg',
+                textCorazon: 'Canela',
+                imageCorazon2: 'assets/images/rosa.jpg',
+                textCorazon2: 'Rosa',
+                imageBase: 'assets/images/ambar.jpg',
+                textBase: 'Ámbar',
+                imageBase2: 'assets/images/pachuli.jpg',
+                textBase2: 'Pachulí',
+                imageBase3: 'assets/images/cuero.jpg',
+                textBase3: 'Cuero',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(251, 254, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+                containerWidth2: 200,
+                containerColor2: Color.fromRGBO(236, 166, 142, 1),
+                colorText2: Colors.black,
+                text2: 'especiado suave',
+                containerWidth3: 180,
+                containerColor3: Color.fromRGBO(169, 137, 106, 1),
+                colorText3: Colors.white,
+                text3: 'amaderado',
+                containerWidth4: 160,
+                containerColor4: Color.fromRGBO(197, 101, 48, 1),
+                colorText4: Colors.white,
+                text4: 'ámbar',
+                containerWidth5: 140,
+                containerColor5: Color.fromRGBO(184, 158, 151, 1),
+                colorText5: Colors.white70,
+                text5: 'cuero',
+              ),
+              //TODO: 45
               BuscadorAromas(
                 title: 'Carolina Herrera - Carolina Herrera',
                 description: '''

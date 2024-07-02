@@ -490,19 +490,19 @@ Lacoste''',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
-            Spacer(),/*
+            Spacer(),
             Locion(
-              imageLocion: 'assets/images/aroma_6.jpg',
+              imageLocion: 'assets/images/paris_hilton_for_men_paris_hilton.jpg',
               imageLocion2: 'assets/images/aroma_7.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: '''L'Eau d'Issey Pour
-Homme Issey Miyake''',
+              nameLocion: '''Paris Hilton for Men
+Paris Hilton''',
               symbol: '\$',
               priceOriginal: 15.000,
               onzas: '1 fl oz',
             ),
-            Spacer(),*/
+            Spacer(),
           ],
         ),
         SizedBox(height: 20),

@@ -68,6 +68,9 @@ class _SearchhBarState extends State<SearchhBar> {
     "Arsenal - Gilles Cantuel",
     "Legend Spirit - Montblanc",
     "Valentino Born in Roma - Valentino",
+    "Bvlgari Man In Black - Bvlgari",
+    "Lacoste L.12.12 White - Lacoste",
+    "Paris Hilton for Men - Paris Hilton",
     "Carolina Herrera - Carolina Herrera",
     "CH (2015) - Carolina Herrera",
     "212 VIP Rosé - Carolina Herrera",
@@ -149,6 +152,9 @@ class _SearchhBarState extends State<SearchhBar> {
     "Arsenal - Gilles Cantuel": 'assets/images/arsenal_gilles_cantuel.webp',
     "Legend Spirit - Montblanc": 'assets/images/legend_spirit_montblanc.jpg',
     "Valentino Born in Roma - Valentino": 'assets/images/valentino_born_in_roma_valentino.jpg',
+    "Bvlgari Man In Black - Bvlgari": 'assets/images/bvlgari_man_in_black_bvlgari.jpg',
+    "Lacoste L.12.12 White - Lacoste": 'assets/images/lacoste_white.webp',
+    "Paris Hilton for Men - Paris Hilton": 'assets/images/paris_hilton_for_men_paris_hilton.jpg',
     "Carolina Herrera - Carolina Herrera":
         'assets/images/carolina_herrera_carolina_herrera.jpg',
     "CH (2015) - Carolina Herrera":
@@ -365,50 +371,59 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Valentino Born in Roma - Valentino':
           _selectedIndex = 54;
           break;
-        case 'Carolina Herrera - Carolina Herrera':
+        case 'Bvlgari Man In Black - Bvlgari':
           _selectedIndex = 55;
           break;
-        case 'CH (2015) - Carolina Herrera':
+        case 'Lacoste L.12.12 White - Lacoste':
           _selectedIndex = 56;
           break;
-        case '212 VIP Rosé - Carolina Herrera':
+        case 'Paris Hilton for Men - Paris Hilton':
           _selectedIndex = 57;
           break;
-        case '360° - Perry Ellis':
+        case 'Carolina Herrera - Carolina Herrera':
           _selectedIndex = 58;
           break;
-        case 'Paris Hilton - Paris Hilton':
+        case 'CH (2015) - Carolina Herrera':
           _selectedIndex = 59;
           break;
-        case 'Can Can - Paris Hilton':
+        case '212 VIP Rosé - Carolina Herrera':
           _selectedIndex = 60;
           break;
-        case 'Heiress - Paris Hilton':
+        case '360° - Perry Ellis':
           _selectedIndex = 61;
           break;
-        case 'Toy 2 - Moschino':
+        case 'Paris Hilton - Paris Hilton':
           _selectedIndex = 62;
           break;
-        case 'Amor Amor - Cacharel':
+        case 'Can Can - Paris Hilton':
           _selectedIndex = 63;
           break;
-        case 'La Vie Est Belle - Lancôme':
+        case 'Heiress - Paris Hilton':
           _selectedIndex = 64;
           break;
-        case 'Light Blue - Dolce&Gabbana':
+        case 'Toy 2 - Moschino':
           _selectedIndex = 65;
           break;
-        case 'Kim Kardashian - Kim Kardashian':
+        case 'Amor Amor - Cacharel':
           _selectedIndex = 66;
           break;
-        case 'Angel - Mugler':
+        case 'La Vie Est Belle - Lancôme':
           _selectedIndex = 67;
           break;
-        case 'Halloween - Halloween':
+        case 'Light Blue - Dolce&Gabbana':
           _selectedIndex = 68;
           break;
-        case 'CK2 - Calvin Klein':
+        case 'Kim Kardashian - Kim Kardashian':
           _selectedIndex = 69;
+          break;
+        case 'Angel - Mugler':
+          _selectedIndex = 70;
+          break;
+        case 'Halloween - Halloween':
+          _selectedIndex = 71;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 72;
           break;
         default:
           _selectedIndex = 0;
@@ -4294,6 +4309,183 @@ Blancas''',
                 text10: 'terrosos',
               ),
               //TODO: 47
+              BuscadorAromas(
+                title: 'Bvlgari Man In Black - Bvlgari',
+                description: '''
+Bvlgari Man In Black de Bvlgari es una fragancia de la familia olfativa Ámbar Floral para Hombres.
+Bvlgari Man In Black se lanzó en 2014. Su longevidad es duradera y su estela es moderada. Es un
+aroma Masculino.
+''',
+                imageLocion: 'assets/images/bvlgari_man_in_black_bvlgari.jpg',
+                imageNotaSalida: 'assets/images/especias.jpg',
+                textNotaSalida: 'Especias',
+                imageNotaSalida2: 'assets/images/ron.jpg',
+                textNotaSalida2: 'Ron',
+                imageNotaSalida3: 'assets/images/tabaco.jpg',
+                textNotaSalida3: 'Tabaco',
+                imageCorazon: 'assets/images/cuero.jpg',
+                textCorazon: 'Cuero',
+                imageCorazon2: 'assets/images/iris.jpg',
+                textCorazon2: 'Iris',
+                imageCorazon3: 'assets/images/nardos.jpg',
+                textCorazon3: 'Nardos',
+                imageBase: 'assets/images/cumarina.jpg',
+                textBase: '''Haba
+Tonka''',
+                imageBase2: 'assets/images/madera_de_gaiac.jpg',
+                textBase2: '''Madera
+de Gaiac''',
+                imageBase3: 'assets/images/benjui.jpg',
+                textBase3: 'Benjuí',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(204, 51, 0, 1),
+                colorText: Colors.white,
+                text: 'cálido especiado',
+                containerWidth2: 190,
+                containerColor2: Color.fromRGBO(148, 107, 70, 1),
+                colorText2: Colors.white,
+                text2: 'amaderado',
+                containerWidth3: 185,
+                containerColor3: Color.fromRGBO(151, 114, 103, 1),
+                colorText3: Colors.white,
+                text3: 'cuero',
+                containerWidth4: 185,
+                containerColor4: Color.fromRGBO(191, 84, 64, 1),
+                colorText4: Colors.white,
+                text4: 'ron',
+                containerWidth5: 180,
+                containerColor5: Color.fromRGBO(205, 124, 79, 1),
+                colorText5: Colors.white,
+                text5: 'ámbar',
+                containerWidth6: 170,
+                containerColor6: Color.fromRGBO(243, 113, 116, 1),
+                colorText6: Colors.white,
+                text6: 'dulce',
+                containerWidth7: 170,
+                containerColor7: Color.fromRGBO(197, 159, 103, 1),
+                colorText7: Colors.white,
+                text7: 'tabaco',
+                containerWidth8: 160,
+                containerColor8: Color.fromRGBO(255, 254, 213, 1),
+                colorText8: Colors.black54,
+                text8: 'avainillado',
+                containerWidth9: 150,
+                containerColor9: Color.fromRGBO(185, 143, 109, 1),
+                colorText9: Colors.white70,
+                text9: 'animálico',
+                containerWidth10: 140,
+                containerColor10: Color.fromRGBO(213, 204, 232, 1),
+                colorText10: Colors.black45,
+                text10: 'iris',
+              ),
+              //TODO: 48
+              BuscadorAromas(
+                title: 'Lacoste L.12.12 White - Lacoste',
+                description: '''
+Lacoste L.12.12 White de Lacoste es una fragancia de la familia olfativa Aromática Fougère para Hombres.
+Lacoste L.12.12 White se lanzó en 2011. Su longevidad y su estela son moderadas. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/lacoste_white.webp',
+                imageNotaSalida: 'assets/images/toronja.jpg',
+                textNotaSalida: 'Toronja',
+                imageNotaSalida2: 'assets/images/cardamomo.jpg',
+                textNotaSalida2: 'Cardamomo',
+                imageNotaSalida3: 'assets/images/romero.jpg',
+                textNotaSalida3: 'Romero',
+                imageCorazon: 'assets/images/ylang_ylang.jpg',
+                textCorazon: '''Ylang-
+Ylang''',
+                imageCorazon2: 'assets/images/nardos.jpg',
+                textCorazon2: 'Nardos',
+                imageBase: 'assets/images/cedro.jpg',
+                textBase: 'Cedro',
+                imageBase2: 'assets/images/vetiver.jpg',
+                textBase2: 'Vetiver',
+                imageBase3: 'assets/images/gamuza.jpg',
+                textBase3: 'Gamuza',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(249, 255, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+                containerWidth2: 200,
+                containerColor2: Color.fromRGBO(112, 181, 171, 1),
+                colorText2: Colors.black,
+                text2: 'aromático',
+                containerWidth3: 180,
+                containerColor3: Color.fromRGBO(148, 107, 70, 1),
+                colorText3: Colors.white,
+                text3: 'amaderado',
+                containerWidth4: 170,
+                containerColor4: Color.fromRGBO(244, 247, 252, 1),
+                colorText4: Colors.black87,
+                text4: 'floral blanco',
+                containerWidth5: 150,
+                containerColor5: Color.fromRGBO(218, 107, 72, 1),
+                colorText5: Colors.black54,
+                text5: 'cálido especiado',
+                containerWidth6: 140,
+                containerColor6: Color.fromRGBO(107, 184, 116, 1),
+                colorText6: Colors.white70,
+                text6: 'verde',
+              ),
+              //TODO: 49
+              AromasBuscador2000(
+                title: 'Paris Hilton for Men - Paris Hilton',
+                description: '''
+Paris Hilton for Men de Paris Hilton es una fragancia de la familia olfativa Amaderada Aromática
+para Hombres. Paris Hilton for Men se lanzó en 2005. Su longevidad y su estela son moderadas.
+Es un aroma Unisex.
+''',
+                imageLocion: 'assets/images/paris_hilton_for_men_paris_hilton.jpg',
+                imageNotaFragancia: 'assets/images/mango.jpg',
+                textNotaFragancia: 'Mango',
+                imageNotaFragancia2: 'assets/images/hojas_de_higuera.jpg',
+                textNotaFragancia2: '''Hojas de
+Higuera''',
+                imageNotaFragancia3: 'assets/images/pepino.jpg',
+                textNotaFragancia3: 'Pepino',
+                imageNotaFragancia4: 'assets/images/almizcle.jpg',
+                textNotaFragancia4: 'Almizcle',
+                imageNotaFragancia5: 'assets/images/salvia.jpg',
+                textNotaFragancia5: 'Salvia',
+                imageNotaFragancia6: 'assets/images/enebro.jpg',
+                textNotaFragancia6: '''Enebro de
+Virginia''',
+                imageNotaFragancia7: 'assets/images/cedro.jpg',
+                textNotaFragancia7: 'Cedro',
+                imageNotaFragancia8: 'assets/images/aire_de_montaña.jpg',
+                textNotaFragancia8: '''Aire de
+Montaña''',
+                imageNotaFragancia9: 'assets/images/albahaca.jpg',
+                textNotaFragancia9: 'Albahaca',
+                imageNotaFragancia10: 'assets/images/ambar.jpg',
+                textNotaFragancia10: 'Ámbar',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(249, 255, 82, 1),
+                colorText: Colors.black,
+                text: 'cítrico',
+                containerWidth2: 200,
+                containerColor2: Color.fromRGBO(112, 181, 171, 1),
+                colorText2: Colors.black,
+                text2: 'aromático',
+                containerWidth3: 180,
+                containerColor3: Color.fromRGBO(148, 107, 70, 1),
+                colorText3: Colors.white,
+                text3: 'amaderado',
+                containerWidth4: 170,
+                containerColor4: Color.fromRGBO(244, 247, 252, 1),
+                colorText4: Colors.black87,
+                text4: 'floral blanco',
+                containerWidth5: 150,
+                containerColor5: Color.fromRGBO(218, 107, 72, 1),
+                colorText5: Colors.black54,
+                text5: 'cálido especiado',
+                containerWidth6: 140,
+                containerColor6: Color.fromRGBO(107, 184, 116, 1),
+                colorText6: Colors.white70,
+                text6: 'verde',
+              ),
+              //TODO: 50
               BuscadorAromas(
                 title: 'Carolina Herrera - Carolina Herrera',
                 description: '''

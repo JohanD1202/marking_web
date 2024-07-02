@@ -599,14 +599,24 @@ Bvlgari''',
         ),
         SizedBox(height: 20),
         //TODO: 18 ROW DE LOCIONES DE HOMBRE
-        /*Row(
+        Row(
           children: [
             Spacer(),
-            
+            LocionMobile(
+              imageLocion: 'assets/images/paris_hilton_for_men_paris_hilton.jpg',
+              imageLocion2: 'assets/images/aroma_4.jpg',
+              imageHeight: 240,
+              imageWidth: 150,
+              nameLocion: '''Paris Hilton for Men
+Paris Hilton''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
             Spacer(),
           ],
         ),
-        SizedBox(height: 20)*/
+        SizedBox(height: 20)
       ],
     )
             ],

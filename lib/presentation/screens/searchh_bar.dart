@@ -71,6 +71,7 @@ class _SearchhBarState extends State<SearchhBar> {
     "Bvlgari Man In Black - Bvlgari",
     "Lacoste L.12.12 White - Lacoste",
     "Paris Hilton for Men - Paris Hilton",
+    "Scandal Pour Homme - Jean Paul Galtier",
     "Carolina Herrera - Carolina Herrera",
     "CH (2015) - Carolina Herrera",
     "212 VIP Rosé - Carolina Herrera",
@@ -86,6 +87,8 @@ class _SearchhBarState extends State<SearchhBar> {
     "Angel - Mugler",
     "Halloween - Halloween",
     "CK2 - Calvin Klein",
+    "Scandal - Jean Paul Galtier",
+    "Good Girl - Carolina Herrera",
   ];
 
   final Map<String, String> suggestionImages = {
@@ -155,6 +158,7 @@ class _SearchhBarState extends State<SearchhBar> {
     "Bvlgari Man In Black - Bvlgari": 'assets/images/bvlgari_man_in_black_bvlgari.jpg',
     "Lacoste L.12.12 White - Lacoste": 'assets/images/lacoste_white.webp',
     "Paris Hilton for Men - Paris Hilton": 'assets/images/paris_hilton_for_men_paris_hilton.jpg',
+    "Scandal Pour Homme - Jean Paul Galtier": 'assets/images/scandal_pour_homme_jean_paul_galtier.jpg',
     "Carolina Herrera - Carolina Herrera":
         'assets/images/carolina_herrera_carolina_herrera.jpg',
     "CH (2015) - Carolina Herrera":
@@ -175,6 +179,8 @@ class _SearchhBarState extends State<SearchhBar> {
     "Angel - Mugler": 'assets/images/angel_mugler.webp',
     "Halloween - Halloween": 'assets/images/halloween_halloween.jpg',
     "CK2 - Calvin Klein": 'assets/images/ck2_calvin_klein.webp',
+    "Scandal - Jean Paul Galtier": 'assets/images/scandal_jean_paul_galtier.jpg',
+    "Good Girl - Carolina Herrera": 'assets/images/good_girl_carolina_herrera.jpg',
   };
 
   List<String> filteredSuggestions = [];
@@ -380,50 +386,59 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Paris Hilton for Men - Paris Hilton':
           _selectedIndex = 57;
           break;
-        case 'Carolina Herrera - Carolina Herrera':
+        case 'Scandal Pour Homme - Jean Paul Galtier':
           _selectedIndex = 58;
           break;
-        case 'CH (2015) - Carolina Herrera':
+        case 'Carolina Herrera - Carolina Herrera':
           _selectedIndex = 59;
           break;
-        case '212 VIP Rosé - Carolina Herrera':
+        case 'CH (2015) - Carolina Herrera':
           _selectedIndex = 60;
           break;
-        case '360° - Perry Ellis':
+        case '212 VIP Rosé - Carolina Herrera':
           _selectedIndex = 61;
           break;
-        case 'Paris Hilton - Paris Hilton':
+        case '360° - Perry Ellis':
           _selectedIndex = 62;
           break;
-        case 'Can Can - Paris Hilton':
+        case 'Paris Hilton - Paris Hilton':
           _selectedIndex = 63;
           break;
-        case 'Heiress - Paris Hilton':
+        case 'Can Can - Paris Hilton':
           _selectedIndex = 64;
           break;
-        case 'Toy 2 - Moschino':
+        case 'Heiress - Paris Hilton':
           _selectedIndex = 65;
           break;
-        case 'Amor Amor - Cacharel':
+        case 'Toy 2 - Moschino':
           _selectedIndex = 66;
           break;
-        case 'La Vie Est Belle - Lancôme':
+        case 'Amor Amor - Cacharel':
           _selectedIndex = 67;
           break;
-        case 'Light Blue - Dolce&Gabbana':
+        case 'La Vie Est Belle - Lancôme':
           _selectedIndex = 68;
           break;
-        case 'Kim Kardashian - Kim Kardashian':
+        case 'Light Blue - Dolce&Gabbana':
           _selectedIndex = 69;
           break;
-        case 'Angel - Mugler':
+        case 'Kim Kardashian - Kim Kardashian':
           _selectedIndex = 70;
           break;
-        case 'Halloween - Halloween':
+        case 'Angel - Mugler':
           _selectedIndex = 71;
           break;
-        case 'CK2 - Calvin Klein':
+        case 'Halloween - Halloween':
           _selectedIndex = 72;
+          break;
+        case 'CK2 - Calvin Klein':
+          _selectedIndex = 73;
+          break;
+        case 'Scandal - Jean Paul Galtier':
+          _selectedIndex = 74;
+          break;
+        case 'Good Girl - Carolina Herrera':
+          _selectedIndex = 75;
           break;
         default:
           _selectedIndex = 0;
@@ -4487,6 +4502,62 @@ Montaña''',
               ),
               //TODO: 50
               BuscadorAromas(
+                title: 'Scandal Pour Homme - Jean Paul Galtier',
+                description: '''
+Scandal Pour Homme de Jean Paul Galtier es una fragancia de la familia olfativa Ámbar Amaderada para Hombres.
+Scandal Pour Homme se lanzó en 2021. Su longevidad es duradera y su estela es pesada. Es un aroma Masculino.
+''',
+                imageLocion: 'assets/images/scandal_pour_homme_jean_paul_galtier.jpg',
+                imageNotaSalida: 'assets/images/mandarina.jpg',
+                textNotaSalida: 'Mandarina',
+                imageNotaSalida2: 'assets/images/esclarea.jpg',
+                textNotaSalida2: 'Esclarea',
+                imageCorazon: 'assets/images/caramelo.jpg',
+                textCorazon: 'Caramelo',
+                imageCorazon2: 'assets/images/cumarina.jpg',
+                textCorazon2: '''Haba
+Tonka''',
+                imageBase: 'assets/images/vetiver.jpg',
+                textBase: 'Vetiver',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(221, 163, 86, 1),
+                colorText: Colors.black,
+                text: 'caramelo',
+                containerWidth2: 205,
+                containerColor2: Color.fromRGBO(82, 173, 153, 1),
+                colorText2: Colors.black,
+                text2: 'aromático',
+                containerWidth3: 195,
+                containerColor3: Color.fromRGBO(241, 89, 93, 1),
+                colorText3: Colors.white,
+                text3: 'dulce',
+                containerWidth4: 170,
+                containerColor4: Color.fromRGBO(251, 255, 135, 1),
+                colorText4: Colors.black87,
+                text4: 'cítrico',
+                containerWidth5: 165,
+                containerColor5: Color.fromRGBO(255, 254, 212, 1),
+                colorText5: Colors.black87,
+                text5: 'avainillado',
+                containerWidth6: 150,
+                containerColor6: Color.fromRGBO(215, 149, 112, 1),
+                colorText6: Colors.white,
+                text6: 'ámbar',
+                containerWidth7: 140,
+                containerColor7: Color.fromRGBO(181, 153, 127, 1),
+                colorText7: Colors.white70,
+                text7: 'amaderado',
+                containerWidth8: 140,
+                containerColor8: Color.fromRGBO(239, 181, 161, 1),
+                colorText8: Colors.black45,
+                text8: 'especiado suave',
+                containerWidth9: 137,
+                containerColor9: Color.fromRGBO(165, 159, 151, 1),
+                colorText9: Colors.white70,
+                text9: 'terrosos',
+              ),
+              //TODO: 51
+              BuscadorAromas(
                 title: 'Carolina Herrera - Carolina Herrera',
                 description: '''
 Carolina Herrera de Carolina Herrera es una fragancia de la familia olfativa Floral para Hombres y Mujeres.
@@ -5558,6 +5629,172 @@ Lirio''',
                 text10: 'terrosos',
               ),
               //TODO: 49
+              BuscadorAromas(
+                title: 'Scandal - Jean Paul Galtier',
+                description: '''
+Scandal de Jean Paul Galtier es una fragancia de la familia olfativa Chipre Floral para Mujeres.
+Scandal se lanzó en 2017. Tiene una longevidad duradera y su estela es pesada. Es un aroma Femenino.
+''',
+                imageLocion: 'assets/images/scandal_jean_paul_galtier.jpg',
+                imageNotaSalida: 'assets/images/naranja_sanguina.jpg',
+                textNotaSalida: '''Naranja
+Sanguina''',
+                imageNotaSalida2: 'assets/images/mandarina.jpg',
+                textNotaSalida2: 'Mandarina',
+                imageCorazon: 'assets/images/miel.jpg',
+                textCorazon: 'Miel',
+                imageCorazon2: 'assets/images/gardenia.jpg',
+                textCorazon2: 'Gardenia',
+                imageCorazon3: 'assets/images/flor_de_azahar_del_naranjo.jpg',
+                textCorazon3: '''Flor del
+Naranjo''',
+                imageCorazon4: 'assets/images/jazmin.jpg',
+                textCorazon4: 'Jazmín',
+                imageCorazon5: 'assets/images/durazno.jpg',
+                textCorazon5: 'Durazno',
+                imageBase: 'assets/images/cera_de_abeja.jpg',
+                textBase: '''Cera de
+Abeja''',
+                imageBase2: 'assets/images/caramelo.jpg',
+                textBase2: 'Caramelo',
+                imageBase3: 'assets/images/pachuli.jpg',
+                textBase3: 'Pachulí',
+                imageBase4: 'assets/images/regaliz.jpg',
+                textBase4: 'Regaliz',
+                containerWidth: 230,
+                containerColor: Color.fromRGBO(250, 169, 7, 1),
+                colorText: Colors.black,
+                text: 'amielado',
+                containerWidth2: 190,
+                containerColor2: Color.fromRGBO(241, 87, 91, 1),
+                colorText2: Colors.white,
+                text2: 'dulce',
+                containerWidth3: 175,
+                containerColor3: Color.fromRGBO(241, 245, 252, 1),
+                colorText3: Colors.black87,
+                text3: 'floral blanco',
+                containerWidth4: 160,
+                containerColor4: Color.fromRGBO(251, 255, 138, 1),
+                colorText4: Colors.black54,
+                text4: 'cítrico',
+                containerWidth5: 150,
+                containerColor5: Color.fromRGBO(233, 197, 149, 1),
+                colorText5: Colors.black54,
+                text5: 'caramelo',
+                containerWidth6: 145,
+                containerColor6: Color.fromRGBO(187, 147, 113, 1),
+                colorText6: Colors.white,
+                text6: 'animálico',
+                containerWidth7: 143,
+                containerColor7: Color.fromRGBO(246, 211, 142, 1),
+                colorText7: Colors.black54,
+                text7: 'cera de abeja',
+                containerWidth8: 140,
+                containerColor8: Color.fromRGBO(164, 165, 133, 1),
+                colorText8: Colors.black54,
+                text8: 'pachulí',
+                containerWidth9: 135,
+                containerColor9: Color.fromRGBO(255, 166, 191, 1),
+                colorText9: Colors.black45,
+                text9: 'florales',
+                containerWidth10: 128,
+                containerColor10: Color.fromRGBO(183, 156, 130, 1),
+                colorText10: Colors.white70,
+                text10: 'amaderado',
+              ),
+              BuscadorAromas(
+                title: 'Good Girl - Carolina Herrera',
+                description: '''
+Good Girl de Carolina Herrera es una fragancia de la familia olfativa Ámbar Floral para Mujeres.
+Good Girl se lanzó en 2016. Tiene una longevidad duradera y su estela es de moderada a pesada.
+Es un aroma Femenino.
+''',
+                 imageLocion: 'assets/images/good_girl_carolina_herrera.jpg',
+                 imageNotaSalida: 'assets/images/almendra.jpg',
+                 textNotaSalida: 'Almendra',
+                 imageNotaSalida2: 'assets/images/cafe.jpg',
+                 textNotaSalida2: 'Café',
+                 imageNotaSalida3: 'assets/images/bergamota.jpg',
+                 textNotaSalida3: 'Bergamota',
+                 imageNotaSalida4: 'assets/images/limon.jpg',
+                 textNotaSalida4: 'Limón',
+                 imageCorazon: 'assets/images/nardos.jpg',
+                 textCorazon: 'Nardos',
+                 imageCorazon2: 'assets/images/jazmin.jpg',
+                 textCorazon2: '''Jazmín
+Sambac''',
+                 imageCorazon3: 'assets/images/flor_de_azahar_del_naranjo.jpg',
+                 textCorazon3: '''Flor del
+Naranjo''',
+                 imageCorazon4: 'assets/images/raiz_de_lirio.jpg',
+                 textCorazon4: '''Raíz de
+Lirio''',
+                 imageBase: 'assets/images/cumarina.jpg',
+                 textBase: '''Haba
+Tonka''',
+                 imageBase2: 'assets/images/cacao.jpg',
+                 textBase2: 'Cacao',
+                 imageBase3: 'assets/images/vainilla.jpg',
+                 textBase3: 'Vainilla',
+                 imageBase4: 'assets/images/praline.jpg',
+                 textBase4: 'Praliné',
+                 imageBase5: 'assets/images/sandalo.jpg',
+                 textBase5: 'Sándalo',
+                 imageBase6: 'assets/images/almizcle.jpg',
+                 textBase6: 'Almizcle',
+                 imageBase7: 'assets/images/ambar.jpg',
+                 textBase7: 'Ámbar',
+                 imageBase8: 'assets/images/madera_de_cachemira.jpg',
+                 textBase8: '''Madera de
+Cachemira''',
+                 imageBase9: 'assets/images/canela.jpg',
+                 textBase9: 'Canela',
+                 imageBase10: 'assets/images/pachuli.jpg',
+                 textBase10: 'Pachulí',
+                 imageBase11: 'assets/images/cedro.jpg',
+                 textBase11: 'Cedro',
+                 containerWidth: 230,
+                    containerColor: Color.fromRGBO(238, 54, 59, 1),
+                    colorText: Colors.white,
+                    text: 'dulce',
+                    containerWidth2: 225,
+                    containerColor2: Color.fromRGBO(237, 242, 251, 1),
+                    colorText2: Colors.black,
+                    text2: 'floral blanco',
+                    containerWidth3: 220,
+                    containerColor3: Color.fromRGBO(206, 61, 12, 1),
+                    colorText3: Colors.white,
+                    text3: 'cálido especiado',
+                    containerWidth4: 215,
+                    containerColor4: Color.fromRGBO(255, 254, 196, 1),
+                    colorText4: Colors.black,
+                    text4: 'avainillado',
+                    containerWidth5: 180,
+                    containerColor5: Color.fromRGBO(180, 109, 75, 1),
+                    colorText5: Colors.white,
+                    text5: 'cacao',
+                    containerWidth6: 180,
+                    containerColor6: Color.fromRGBO(205, 124, 79, 1),
+                    colorText6: Colors.white,
+                    text6: 'ámbar',
+                    containerWidth7: 170,
+                    containerColor7: Color.fromRGBO(160, 124, 91, 1),
+                    colorText7: Colors.white,
+                    text7: 'amaderado',
+                    containerWidth8: 165,
+                    containerColor8: Color.fromRGBO(241, 251, 246, 1),
+                    colorText8: Colors.black54,
+                    text8: 'nardos',
+                    containerWidth9: 160,
+                    containerColor9: Color.fromRGBO(245, 236, 216, 1),
+                    colorText9: Colors.black54,
+                    text9: 'almendrado',
+                    containerWidth10: 155,
+                    containerColor10: Color.fromRGBO(243, 232, 221, 1),
+                    colorText10: Colors.black54,
+                    text10: 'atalcado',
+               ),
+            //TODO: ??
             ],
           ),
         ),

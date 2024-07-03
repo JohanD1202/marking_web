@@ -614,6 +614,18 @@ Paris Hilton''',
               onzas: '1 fl oz',
             ),
             Spacer(),
+            LocionMobile(
+              imageLocion: 'assets/images/scandal_pour_homme_jean_paul_galtier.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 240,
+              imageWidth: 150,
+              nameLocion: '''Scandal Pour Homme
+Jean Paul Galtier''',
+              symbol: '\$',
+              priceOriginal: 15.000,
+              onzas: '1 fl oz',
+            ),
+            Spacer(),
           ],
         ),
         SizedBox(height: 20)

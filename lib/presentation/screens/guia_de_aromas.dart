@@ -4040,6 +4040,61 @@ Montaña''',
                     colorText6: Colors.white70,
                     text6: 'verde',
                   ),
+                  const Aromas500(
+                    title: 'Scandal Pour Homme - Jean Paul Galtier',
+                    description: '''
+Scandal Pour Homme de Jean Paul Galtier es una fragancia de la familia olfativa Ámbar Amaderada para Hombres.
+Scandal Pour Homme se lanzó en 2021. Su longevidad es duradera y su estela es pesada. Es un aroma Masculino.
+''',
+                    imageLocion: 'assets/images/scandal_pour_homme_jean_paul_galtier.jpg',
+                    imageNotaSalida: 'assets/images/mandarina.jpg',
+                    textNotaSalida: 'Mandarina',
+                    imageNotaSalida2: 'assets/images/esclarea.jpg',
+                    textNotaSalida2: 'Esclarea',
+                    imageCorazon: 'assets/images/caramelo.jpg',
+                    textCorazon: 'Caramelo',
+                    imageCorazon2: 'assets/images/cumarina.jpg',
+                    textCorazon2: '''Haba
+Tonka''',
+                    imageBase: 'assets/images/vetiver.jpg',
+                    textBase: 'Vetiver',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(221, 163, 86, 1),
+                    colorText: Colors.black,
+                    text: 'caramelo',
+                    containerWidth2: 205,
+                    containerColor2: Color.fromRGBO(82, 173, 153, 1),
+                    colorText2: Colors.black,
+                    text2: 'aromático',
+                    containerWidth3: 195,
+                    containerColor3: Color.fromRGBO(241, 89, 93, 1),
+                    colorText3: Colors.white,
+                    text3: 'dulce',
+                    containerWidth4: 170,
+                    containerColor4: Color.fromRGBO(251, 255, 135, 1),
+                    colorText4: Colors.black87,
+                    text4: 'cítrico',
+                    containerWidth5: 165,
+                    containerColor5: Color.fromRGBO(255, 254, 212, 1),
+                    colorText5: Colors.black87,
+                    text5: 'avainillado',
+                    containerWidth6: 150,
+                    containerColor6: Color.fromRGBO(215, 149, 112, 1),
+                    colorText6: Colors.white,
+                    text6: 'ámbar',
+                    containerWidth7: 140,
+                    containerColor7: Color.fromRGBO(181, 153, 127, 1),
+                    colorText7: Colors.white70,
+                    text7: 'amaderado',
+                    containerWidth8: 140,
+                    containerColor8: Color.fromRGBO(239, 181, 161, 1),
+                    colorText8: Colors.black45,
+                    text8: 'especiado suave',
+                    containerWidth9: 137,
+                    containerColor9: Color.fromRGBO(165, 159, 151, 1),
+                    colorText9: Colors.white70,
+                    text9: 'terrosos',
+                  ),
                   //TODO: AROMAS MUJER
                   Padding(
                     padding: const EdgeInsets.only(left: 60, bottom: 30),
@@ -5123,6 +5178,171 @@ Lirio''',
                     colorText10: Colors.white70,
                     text10: 'terrosos',
                   ),
+                  const Aromas500(
+                    title: 'Scandal - Jean Paul Galtier',
+                    description: '''
+Scandal de Jean Paul Galtier es una fragancia de la familia olfativa Chipre Floral para Mujeres.
+Scandal se lanzó en 2017. Tiene una longevidad duradera y su estela es pesada. Es un aroma Femenino.
+''',
+                    imageLocion: 'assets/images/scandal_jean_paul_galtier.jpg',
+                    imageNotaSalida: 'assets/images/naranja_sanguina.jpg',
+                    textNotaSalida: '''Naranja
+Sanguina''',
+                    imageNotaSalida2: 'assets/images/mandarina.jpg',
+                    textNotaSalida2: 'Mandarina',
+                    imageCorazon: 'assets/images/miel.jpg',
+                    textCorazon: 'Miel',
+                    imageCorazon2: 'assets/images/gardenia.jpg',
+                    textCorazon2: 'Gardenia',
+                    imageCorazon3: 'assets/images/flor_de_azahar_del_naranjo.jpg',
+                    textCorazon3: '''Flor del
+Naranjo''',
+                    imageCorazon4: 'assets/images/jazmin.jpg',
+                    textCorazon4: 'Jazmín',
+                    imageCorazon5: 'assets/images/durazno.jpg',
+                    textCorazon5: 'Durazno',
+                    imageBase: 'assets/images/cera_de_abeja.jpg',
+                    textBase: '''Cera de
+Abeja''',
+                    imageBase2: 'assets/images/caramelo.jpg',
+                    textBase2: 'Caramelo',
+                    imageBase3: 'assets/images/pachuli.jpg',
+                    textBase3: 'Pachulí',
+                    imageBase4: 'assets/images/regaliz.jpg',
+                    textBase4: 'Regaliz',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(250, 169, 7, 1),
+                    colorText: Colors.black,
+                    text: 'amielado',
+                    containerWidth2: 190,
+                    containerColor2: Color.fromRGBO(241, 87, 91, 1),
+                    colorText2: Colors.white,
+                    text2: 'dulce',
+                    containerWidth3: 175,
+                    containerColor3: Color.fromRGBO(241, 245, 252, 1),
+                    colorText3: Colors.black87,
+                    text3: 'floral blanco',
+                    containerWidth4: 160,
+                    containerColor4: Color.fromRGBO(251, 255, 138, 1),
+                    colorText4: Colors.black54,
+                    text4: 'cítrico',
+                    containerWidth5: 150,
+                    containerColor5: Color.fromRGBO(233, 197, 149, 1),
+                    colorText5: Colors.black54,
+                    text5: 'caramelo',
+                    containerWidth6: 145,
+                    containerColor6: Color.fromRGBO(187, 147, 113, 1),
+                    colorText6: Colors.white,
+                    text6: 'animálico',
+                    containerWidth7: 143,
+                    containerColor7: Color.fromRGBO(246, 211, 142, 1),
+                    colorText7: Colors.black54,
+                    text7: 'cera de abeja',
+                    containerWidth8: 140,
+                    containerColor8: Color.fromRGBO(164, 165, 133, 1),
+                    colorText8: Colors.black54,
+                    text8: 'pachulí',
+                    containerWidth9: 135,
+                    containerColor9: Color.fromRGBO(255, 166, 191, 1),
+                    colorText9: Colors.black45,
+                    text9: 'florales',
+                    containerWidth10: 128,
+                    containerColor10: Color.fromRGBO(183, 156, 130, 1),
+                    colorText10: Colors.white70,
+                    text10: 'amaderado',
+                  ),
+                  const Aromas500(
+                    title: 'Good Girl - Carolina Herrera',
+                    description: '''
+Good Girl de Carolina Herrera es una fragancia de la familia olfativa Ámbar Floral para Mujeres.
+Good Girl se lanzó en 2016. Tiene una longevidad duradera y su estela es de moderada a pesada.
+Es un aroma Femenino.
+''',
+                    imageLocion: 'assets/images/good_girl_carolina_herrera.jpg',
+                    imageNotaSalida: 'assets/images/almendra.jpg',
+                    textNotaSalida: 'Almendra',
+                    imageNotaSalida2: 'assets/images/cafe.jpg',
+                    textNotaSalida2: 'Café',
+                    imageNotaSalida3: 'assets/images/bergamota.jpg',
+                    textNotaSalida3: 'Bergamota',
+                    imageNotaSalida4: 'assets/images/limon.jpg',
+                    textNotaSalida4: 'Limón',
+                    imageCorazon: 'assets/images/nardos.jpg',
+                    textCorazon: 'Nardos',
+                    imageCorazon2: 'assets/images/jazmin.jpg',
+                    textCorazon2: '''Jazmín
+Sambac''',
+                    imageCorazon3: 'assets/images/flor_de_azahar_del_naranjo.jpg',
+                    textCorazon3: '''Flor del
+Naranjo''',
+                    imageCorazon4: 'assets/images/raiz_de_lirio.jpg',
+                    textCorazon4: '''Raíz de
+Lirio''',
+                    imageBase: 'assets/images/cumarina.jpg',
+                    textBase: '''Haba
+Tonka''',
+                    imageBase2: 'assets/images/cacao.jpg',
+                    textBase2: 'Cacao',
+                    imageBase3: 'assets/images/vainilla.jpg',
+                    textBase3: 'Vainilla',
+                    imageBase4: 'assets/images/praline.jpg',
+                    textBase4: 'Praliné',
+                    imageBase5: 'assets/images/sandalo.jpg',
+                    textBase5: 'Sándalo',
+                    imageBase6: 'assets/images/almizcle.jpg',
+                    textBase6: 'Almizcle',
+                    imageBase7: 'assets/images/ambar.jpg',
+                    textBase7: 'Ámbar',
+                    imageBase8: 'assets/images/madera_de_cachemira.jpg',
+                    textBase8: '''Madera de
+Cachemira''',
+                    imageBase9: 'assets/images/canela.jpg',
+                    textBase9: 'Canela',
+                    imageBase10: 'assets/images/pachuli.jpg',
+                    textBase10: 'Pachulí',
+                    imageBase11: 'assets/images/cedro.jpg',
+                    textBase11: 'Cedro',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(238, 54, 59, 1),
+                    colorText: Colors.white,
+                    text: 'dulce',
+                    containerWidth2: 225,
+                    containerColor2: Color.fromRGBO(237, 242, 251, 1),
+                    colorText2: Colors.black,
+                    text2: 'floral blanco',
+                    containerWidth3: 220,
+                    containerColor3: Color.fromRGBO(206, 61, 12, 1),
+                    colorText3: Colors.white,
+                    text3: 'cálido especiado',
+                    containerWidth4: 215,
+                    containerColor4: Color.fromRGBO(255, 254, 196, 1),
+                    colorText4: Colors.black,
+                    text4: 'avainillado',
+                    containerWidth5: 180,
+                    containerColor5: Color.fromRGBO(180, 109, 75, 1),
+                    colorText5: Colors.white,
+                    text5: 'cacao',
+                    containerWidth6: 180,
+                    containerColor6: Color.fromRGBO(205, 124, 79, 1),
+                    colorText6: Colors.white,
+                    text6: 'ámbar',
+                    containerWidth7: 170,
+                    containerColor7: Color.fromRGBO(160, 124, 91, 1),
+                    colorText7: Colors.white,
+                    text7: 'amaderado',
+                    containerWidth8: 165,
+                    containerColor8: Color.fromRGBO(241, 251, 246, 1),
+                    colorText8: Colors.black54,
+                    text8: 'nardos',
+                    containerWidth9: 160,
+                    containerColor9: Color.fromRGBO(245, 236, 216, 1),
+                    colorText9: Colors.black54,
+                    text9: 'almendrado',
+                    containerWidth10: 155,
+                    containerColor10: Color.fromRGBO(243, 232, 221, 1),
+                    colorText10: Colors.black54,
+                    text10: 'atalcado',
+                  ),
                   //TODO:
                 ],
               )
@@ -5198,6 +5418,12 @@ class Aromas500 extends StatelessWidget {
   final String? textBase7;
   final String? imageBase8;
   final String? textBase8;
+  final String? imageBase9;
+  final String? textBase9;
+  final String? imageBase10;
+  final String? textBase10;
+  final String? imageBase11;
+  final String? textBase11;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -5303,6 +5529,12 @@ class Aromas500 extends StatelessWidget {
     this.textBase7,
     this.imageBase8,
     this.textBase8,
+    this.imageBase9,
+    this.textBase9,
+    this.imageBase10,
+    this.textBase10,
+    this.imageBase11,
+    this.textBase11,
     required this.containerWidth,
     required this.containerColor,
     required this.colorText,
@@ -5562,6 +5794,24 @@ class Aromas500 extends StatelessWidget {
                   Aromas2(
                     image: imageBase8!,
                     text: textBase8!,
+                    padding: const EdgeInsets.only(right: 20),
+                  ),
+                if (imageBase9 != null && textBase9 != null)
+                  Aromas2(
+                    image: imageBase9!,
+                    text: textBase9!,
+                    padding: const EdgeInsets.only(right: 20),
+                  ),
+                if (imageBase10 != null && textBase10 != null)
+                  Aromas2(
+                    image: imageBase10!,
+                    text: textBase10!,
+                    padding: const EdgeInsets.only(right: 20),
+                  ),
+                if (imageBase11 != null && textBase11 != null)
+                  Aromas2(
+                    image: imageBase11!,
+                    text: textBase11!,
                     padding: const EdgeInsets.only(right: 0),
                   ),
               ],
@@ -5746,6 +5996,12 @@ class BuscadorAromas extends StatelessWidget {
   final String? textBase7;
   final String? imageBase8;
   final String? textBase8;
+  final String? imageBase9;
+  final String? textBase9;
+  final String? imageBase10;
+  final String? textBase10;
+  final String? imageBase11;
+  final String? textBase11;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -5851,6 +6107,12 @@ class BuscadorAromas extends StatelessWidget {
     this.textBase7,
     this.imageBase8,
     this.textBase8,
+    this.imageBase9,
+    this.textBase9,
+    this.imageBase10,
+    this.textBase10,
+    this.imageBase11,
+    this.textBase11,
     required this.containerWidth,
     required this.containerColor,
     required this.colorText,
@@ -6108,6 +6370,24 @@ class BuscadorAromas extends StatelessWidget {
               Aromas2(
                 image: imageBase8!,
                 text: textBase8!,
+                padding: const EdgeInsets.only(right: 20),
+              ),
+            if (imageBase9 != null && textBase9 != null)
+              Aromas2(
+                image: imageBase9!,
+                text: textBase9!,
+                padding: const EdgeInsets.only(right: 20),
+              ),
+            if (imageBase10 != null && textBase10 != null)
+              Aromas2(
+                image: imageBase10!,
+                text: textBase10!,
+                padding: const EdgeInsets.only(right: 20),
+              ),
+            if (imageBase11 != null && textBase11 != null)
+              Aromas2(
+                image: imageBase11!,
+                text: textBase11!,
                 padding: const EdgeInsets.only(right: 0),
               ),
           ],

@@ -196,7 +196,7 @@ Montale''',
               imageLocion2: 'assets/images/aroma_4.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: '''Baccarat Rouge
+              nameLocion: '''Baccarat Rouge 540
 Francis Kurkdjian''',
               symbol: '\$',
               priceOriginal: 17.000,

@@ -39,6 +39,7 @@ class GuiaAromas extends StatelessWidget {
                   ],
                 ),
               ),
+              /*
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -106,7 +107,6 @@ Tropicales''',
                     colorText8: Colors.black45,
                     text8: 'cítrico',
                   ),
-                  //TODO:
                   const Aromas2000(
                     title: 'Ombre Nomade - Louis Vuitton',
                     description: '''
@@ -175,7 +175,6 @@ de Oud''',
                     colorText10: Colors.white70,
                     text10: 'dulce',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Bade\'e Al Oud Amethyst - Lattafa',
                     description: '''
@@ -240,7 +239,6 @@ de Oud''',
                     colorText9: Colors.black45,
                     text9: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Oud For Greatness - Initio',
                     description: '''
@@ -303,7 +301,6 @@ de Oud''',
                     colorText10: Colors.white70,
                     text10: 'terrosos',
                   ),
-                  //TODO:
                   const Aromas500(
                       title: 'Amber Oud - Al Haramain',
                       description: '''
@@ -368,7 +365,6 @@ de Gaiac''',
                       containerColor9: Color.fromRGBO(211, 188, 166, 1),
                       colorText9: Colors.black45,
                       text9: 'balsámico'),
-                  //TODO:
                   const Aromas500(
                     title: 'L\' Aventure - Al Haramain',
                     description: '''
@@ -426,7 +422,6 @@ los Valles''',
                     colorText7: Colors.black45,
                     text7: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Madinah - Al Haramain',
                     description: '''
@@ -513,7 +508,6 @@ Florales''',
                     colorText10: Colors.white60,
                     text10: 'cuero',
                   ),
-                  //TODO:
                   const Aromas2000(
                     title: 'Santal 33 - Le Labo',
                     description: '''
@@ -560,7 +554,6 @@ de Egipto''',
                     text5: 'violeta',
                   ),
                   const SizedBox(height: 30),
-                  //TODO:
                   const Aromas500(
                     title: 'Il Kakuno - ILMIN',
                     description: '''
@@ -648,7 +641,6 @@ de Oud''',
                     colorText10: Colors.white70,
                     text10: 'oud',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Il Femme - ILMIN',
                     description: '''
@@ -726,7 +718,6 @@ de Cachemira''',
                     colorText9: Colors.black54,
                     text9: 'afrutados',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Arabians Tonka - Montale',
                     description: '''
@@ -803,7 +794,6 @@ de Roble''',
                     colorText10: Colors.black54,
                     text10: 'atalcado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Intense Cafe - Montale',
                     description: '''
@@ -862,7 +852,6 @@ Blanco''',
                     colorText9: Colors.white60,
                     text9: 'dulce',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Baccarat Rouge 540 - Francis Kurkdjian',
                     description: '''
@@ -918,7 +907,6 @@ de Abeto''',
                     colorText8: Colors.white60,
                     text8: 'aromático',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Oud Saffron - Orientica',
                     description: '''
@@ -980,7 +968,6 @@ de Gaiac''',
                     colorText9: Colors.white60,
                     text9: 'pachulí',
                   ),
-                  //TODO:
                   const Aromas500(
                       title: 'Amber Rouge - Orientica',
                       description: '''
@@ -1044,7 +1031,6 @@ de Abeto''',
                       colorText7: Colors.white70,
                       text7: 'cuero',
                     ),
-                    //TODO:
                     const Aromas500(
                       title: 'Amber Oud Gold - Al Haramain',
                       description: '''
@@ -1133,7 +1119,6 @@ Amaderadas''',
                       colorText10: Colors.white70,
                       text10: 'amaderado',
                     ),
-                    //TODO:
                     const Aromas500(
                       title: 'King - Bharara',
                       description: '''
@@ -1205,7 +1190,6 @@ Blanco''',
                       colorText8: Colors.black45,
                       text8: 'fresco especiado',
                     ),
-                    //TODO:
                   const Aromas500(
                       title: 'Corvus - Ahli',
                       description: '''
@@ -1289,7 +1273,6 @@ Roble''',
                       colorText6: Colors.black54,
                       text6: 'ámbar',
                     ),
-                  //TODO:
                   const Aromas500(
                       title: 'Velvet Gold - Orientica',
                       description: '''
@@ -1380,7 +1363,6 @@ Animálicas''',
                       colorText10: Colors.white70,
                       text10: 'florales',
                     ),
-                  //TODO:
                   const Aromas500(
                       title: 'Asad - Lattafa',
                       description: '''
@@ -1474,7 +1456,6 @@ Seca''',
                       colorText10: Colors.black54,
                       text10: 'balsámico',
                     ),
-                    //TODO:
                     const Aromas500(
                       title: 'Club de Nuit Intense Man - Armaf',
                       description: '''
@@ -1566,7 +1547,6 @@ Gris''',
                       colorText9: Colors.black45,
                       text9: 'almizclado',
                     ),
-                    //TODO:
                     const Aromas500(
                       title: 'Opulent Musk - Lattafa',
                       description: '''
@@ -1664,7 +1644,6 @@ de Abeto''',
                     padding: const EdgeInsets.only(left: 60, bottom: 30),
                     child: Text('Aromas de Hombre', style: styleText3),
                   ),
-                  //TODO:
                   const Aromas500(
                     title: '212 Heroes - Carolina Herrera',
                     description: '''
@@ -1729,7 +1708,6 @@ en 2021. Tiene una longevidad moderada y su estela es moderada. Es un aroma de H
                     colorText10: Colors.black54,
                     text10: 'acuático',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: '212 VIP Men - Carolina Herrera',
                     description: '''
@@ -1802,7 +1780,6 @@ Amaderadas''',
                     colorText10: Colors.black45,
                     text10: 'afrutados',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'CH Men - Carolina Herrera',
                     description: '''
@@ -1889,7 +1866,6 @@ Roble''',
                     colorText10: Colors.black45,
                     text10: 'fresco',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: '212 VIP Men Wins - Carolina Herrera',
                     description: '''
@@ -1948,7 +1924,6 @@ Tonka''',
                     colorText8: Colors.white60,
                     text8: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas2000(
                     title: '1 Million Parfum - Paco Rabanne',
                     description: '''
@@ -2018,7 +1993,6 @@ Gris''',
                     colorText10: Colors.black45,
                     text10: 'coco',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: '1 Million Lucky - Paco Rabanne',
                     description: '''
@@ -2099,7 +2073,6 @@ de Roble''',
                     colorText10: Colors.black45,
                     text10: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Invictus - Paco Rabanne',
                     description: '''
@@ -2171,7 +2144,6 @@ de Roble''',
                     colorText10: Colors.black45,
                     text10: 'alcanforados',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Black XS - Paco Rabanne',
                     description: '''
@@ -2242,7 +2214,6 @@ Negro''',
                     colorText10: Colors.black45,
                     text10: 'lactónico',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Sauvage - Dior',
                     description: '''
@@ -2314,7 +2285,6 @@ Rosa''',
                     colorText9: Colors.white60,
                     text9: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Fahrenheit - Dior',
                     description: '''
@@ -2411,7 +2381,6 @@ los Valles''',
                     colorText10: Colors.white60,
                     text10: 'verde',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'CK One - Calvin Klein',
                     description: '''
@@ -2508,7 +2477,6 @@ Roble''',
                     colorText10: Colors.black45,
                     text10: 'almizclado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: '360° for Men - Perry Ellis',
                     description: '''
@@ -2559,7 +2527,6 @@ Amaderadas''',
                     colorText5: Colors.black45,
                     text5: 'lavanda',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Nautica Voyage - Nautica',
                     description: '''
@@ -2623,7 +2590,6 @@ Roble''',
                     colorText9: Colors.black45,
                     text9: 'floral amarillo',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Toy Boy - Moschino',
                     description: '''
@@ -2704,7 +2670,6 @@ de Haití''',
                     colorText10: Colors.white70,
                     text10: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Red - Lacoste',
                     description: '''
@@ -2762,7 +2727,6 @@ Verde''',
                     colorText10: Colors.white70,
                     text10: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title:
                         'L\'Eau d\'Issey Pour Homme - Issey Miyake',
@@ -2840,7 +2804,6 @@ Moscada''',
                     colorText10: Colors.black45,
                     text10: 'ozónico',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Hugo - Hugo Boss',
                     description: '''
@@ -2910,7 +2873,6 @@ Verde''',
                     colorText9: Colors.black45,
                     text9: 'cítrico',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Acqua di Gio - Giorgio Armani',
                     description: '''
@@ -4100,7 +4062,6 @@ Tonka''',
                     padding: const EdgeInsets.only(left: 60, bottom: 30),
                     child: Text('Aromas de Mujer', style: styleText3),
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Carolina Herrera - Carolina Herrera',
                     description: '''
@@ -4151,7 +4112,6 @@ Amaderadas''',
                     text7: 'animálico',
                   ),
                   const SizedBox(height: 30),
-                  //TODO:
                   const Aromas500(
                     title: 'CH (2015) - Carolina Herrera',
                     description: '''
@@ -4226,7 +4186,6 @@ Naranjo''',
                     colorText10: Colors.black45,
                     text10: 'fresco especiado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: '212 VIP Rosé - Carolina Herrera',
                     description: '''
@@ -4273,7 +4232,6 @@ Amaderadas''',
                     colorText5: Colors.black45,
                     text5: 'atalcado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: '360° - Perry Ellis',
                     description: '''
@@ -4352,7 +4310,6 @@ los Valles''',
                     colorText10: Colors.black45,
                     text10: 'ozónico',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Paris Hilton - Paris Hilton',
                     description: '''
@@ -4429,7 +4386,6 @@ Roble''',
                     colorText10: Colors.black54,
                     text10: 'floral amarillo',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Can Can - Paris Hilton',
                     description: '''
@@ -4499,7 +4455,6 @@ Amaderadas''',
                     colorText10: Colors.black45,
                     text10: 'almizclado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Heiress - Paris Hilton',
                     description: '''
@@ -4576,7 +4531,6 @@ Blancas''',
                     colorText9: Colors.black45,
                     text9: 'fresco',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Toy 2 - Moschino',
                     description: '''
@@ -4644,7 +4598,6 @@ Blanca''',
                     colorText10: Colors.black45,
                     text10: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Amor Amor - Cacharel',
                     description: '''
@@ -4728,7 +4681,6 @@ Tonka''',
                     colorText10: Colors.white,
                     text10: 'amaderado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'La Vie Est Belle - Lancôme',
                     description: '''
@@ -4799,7 +4751,6 @@ Tonka''',
                     colorText10: Colors.white70,
                     text10: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Light Blue - Dolce&Gabbana',
                     description: '''
@@ -4862,7 +4813,6 @@ Blanca''',
                     colorText8: Colors.white70,
                     text8: 'verde',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Kim Kardashian - Kim Kardashian',
                     description: '''
@@ -4912,7 +4862,6 @@ Amaderadas''',
                     colorText3: Colors.white70,
                     text3: 'animálico',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Angel - Mugler',
                     description: '''
@@ -5022,7 +4971,6 @@ Tonka''',
                     colorText10: Colors.white70,
                     text10: 'chocolate',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'Halloween - Halloween',
                     description: '''
@@ -5101,7 +5049,6 @@ los Valles''',
                     colorText10: Colors.white,
                     text10: 'ámbar',
                   ),
-                  //TODO:
                   const Aromas500(
                     title: 'CK2 - Calvin Klein',
                     description: '''
@@ -5343,9 +5290,132 @@ Cachemira''',
                     colorText10: Colors.black54,
                     text10: 'atalcado',
                   ),
-                  //TODO:
+                  const Aromas500(
+                    title: 'Omnia Coral - Bvlgari',
+                    description: '''
+Omnia Coral de Bvlgari es una fragancia de la familia olfativa Floral Frutal para Mujeres.
+Omnia Coral se lanzó en 2012. Su longevidad y su estela son moderadas. Es un aroma Femenino.
+''',
+                    imageLocion: 'assets/images/omnia_coral_bvlgari.jpg',
+                    imageNotaSalida: 'assets/images/bergamota.jpg',
+                    textNotaSalida: 'Bergamota',
+                    imageNotaSalida2: 'assets/images/bayas_de_goji.jpg',
+                    textNotaSalida2: '''Bayas
+de Goji''',
+                    imageCorazon: 'assets/images/granada.jpg',
+                    textCorazon: 'Granada',
+                    imageCorazon2: 'assets/images/hibisco.jpg',
+                    textCorazon2: 'Hibisco',
+                    imageCorazon3: 'assets/images/nenufar.jpg',
+                    textCorazon3: 'Nenúfar',
+                    imageBase: 'assets/images/almizcle.jpg',
+                    textBase: 'Almizcle',
+                    imageBase2: 'assets/images/cedro.jpg',
+                    textBase2: '''Cedro de
+Virginia''',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(255, 95, 141, 1),
+                    colorText: Colors.black,
+                    text: 'florales',
+                    containerWidth2: 220,
+                    containerColor2: Color.fromRGBO(125, 76, 30, 1),
+                    colorText2: Colors.white,
+                    text2: 'amaderado',
+                    containerWidth3: 200,
+                    containerColor3: Color.fromRGBO(151, 210, 75, 1),
+                    colorText3: Colors.black87,
+                    text3: 'fresco especiado',
+                    containerWidth4: 180,
+                    containerColor4: Color.fromRGBO(253, 128, 105, 1),
+                    colorText4: Colors.black54,
+                    text4: 'afrutados',
+                    containerWidth5: 177,
+                    containerColor5: Color.fromRGBO(238, 228, 240, 1),
+                    colorText5: Colors.black54,
+                    text5: 'almizclado',
+                    containerWidth6: 165,
+                    containerColor6: Color.fromRGBO(251, 255, 146, 1),
+                    colorText6: Colors.black54,
+                    text6: 'cítrico',
+                    containerWidth7: 155,
+                    containerColor7: Color.fromRGBO(167, 226, 238, 1),
+                    colorText7: Colors.black45,
+                    text7: 'acuático',
+                    containerWidth8: 155,
+                    containerColor8: Color.fromRGBO(245, 236, 226, 1),
+                    colorText8: Colors.black45,
+                    text8: 'atalcado',
+                    containerWidth9: 152,
+                    containerColor9: Color.fromRGBO(221, 242, 152, 1),
+                    colorText9: Colors.black45,
+                    text9: 'amargo',
+                  ),
+                  const Aromas500(
+                    title: 'The Scent Of Peace - Bond No 9',
+                    description: '''
+The Scent Of Peace de Bond No 9 es una fragancia de la familia olfativa Almizcle Floral Amaderado
+para Mujeres. The Scent Of Peace se lanzó en 2006. Su longevidad y su estela son moderadas. Es un
+aroma Femenino.
+''',
+                    imageLocion: 'assets/images/the_scent_of_peace_bond9.jpg',
+                    imageNotaSalida: 'assets/images/grosellas_negras.jpg',
+                    textNotaSalida: '''Grosellas
+Negras''',
+                    imageNotaSalida2: 'assets/images/toronja.jpg',
+                    textNotaSalida2: 'Toronja',
+                    imageCorazon: 'assets/images/lirio_de_los_valles.jpg',
+                    textCorazon: '''Lirio de
+los Valles''',
+                    imageBase: 'assets/images/almizcle.jpg',
+                    textBase: 'Almizcle',
+                    imageBase2: 'assets/images/cedro.jpg',
+                    textBase2: '''Cedro de
+Virginia''',
+                    containerWidth: 230,
+                    containerColor: Color.fromRGBO(252, 75, 41, 1),
+                    colorText: Colors.black,
+                    text: 'afrutados',
+                    containerWidth2: 225,
+                    containerColor2: Color.fromRGBO(249, 255, 87, 1),
+                    colorText2: Colors.black,
+                    text2: 'cítrico',
+                    containerWidth3: 205,
+                    containerColor3: Color.fromRGBO(137, 93, 51, 1),
+                    colorText3: Colors.white,
+                    text3: 'amaderado',
+                    containerWidth4: 202,
+                    containerColor4: Color.fromRGBO(234, 221, 237, 1),
+                    colorText4: Colors.black87,
+                    text4: 'almizclado',
+                    containerWidth5: 185,
+                    containerColor5: Color.fromRGBO(241, 245, 252, 1),
+                    colorText5: Colors.black87,
+                    text5: 'floral blanco',
+                    containerWidth6: 175,
+                    containerColor6: Color.fromRGBO(243, 231, 220, 1),
+                    colorText6: Colors.black54,
+                    text6: 'atalcado',
+                    containerWidth7: 170,
+                    containerColor7: Color.fromRGBO(122, 192, 176, 1),
+                    colorText7: Colors.black54,
+                    text7: 'aromático',
+                    containerWidth8: 165,
+                    containerColor8: Color.fromRGBO(102, 182, 111, 1),
+                    colorText8: Colors.white,
+                    text8: 'verde',
+                    containerWidth9: 162,
+                    containerColor9: Color.fromRGBO(177, 221, 120, 1),
+                    colorText9: Colors.black45,
+                    text9: 'fresco especiado',
+                    containerWidth10: 155,
+                    containerColor10: Color.fromRGBO(237, 172, 149, 1),
+                    colorText10: Colors.black45,
+                    text10: 'especiado suave',
+                  ),
+                  //TODO: FIN DE LAS LOCIONES
                 ],
-              )
+              ),
+              */
             ],
           ),
         ),

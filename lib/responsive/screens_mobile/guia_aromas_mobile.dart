@@ -43,6 +43,7 @@ class GuiaAromasMobile extends StatelessWidget {
                   ],
                 ),
               ),
+              /*
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -107,7 +108,6 @@ Tropicales''',
                     colorText8: Colors.black45,
                     text8: 'cítrico',
                   ),
-                  //TODO:
                   const Aromas200(
                     title: 'Ombre Nomade - Louis Vuitton',
                     description: '''
@@ -180,7 +180,6 @@ de Oud''',
                     colorText10: Colors.white70,
                     text10: 'dulce',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Bade\'e Al Oud Amethyst - Lattafa',
                     description: '''
@@ -249,7 +248,6 @@ de Oud''',
                     colorText9: Colors.black45,
                     text9: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Oud For Greatness - Initio',
                     description: '''
@@ -315,7 +313,6 @@ de Oud''',
                     colorText10: Colors.white70,
                     text10: 'terrosos',
                   ),
-                  //TODO:
                   const Aromas100(
                       title: 'Amber Oud - Al Haramain',
                       description: '''
@@ -384,7 +381,6 @@ de Gaiac''',
                       containerColor9: Color.fromRGBO(211, 188, 166, 1),
                       colorText9: Colors.black45,
                       text9: 'balsámico'),
-                  //TODO:
                   const Aromas100(
                     title: 'L\' Aventure - Al Haramain',
                     description: '''
@@ -445,7 +441,6 @@ los Valles''',
                     colorText7: Colors.black45,
                     text7: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Madinah - Al Haramain',
                     description: '''
@@ -535,7 +530,6 @@ Florales''',
                     colorText10: Colors.white60,
                     text10: 'cuero',
                   ),
-                  //TODO:
                   const Aromas200(
                       title: 'Santal 33 - Le Labo',
                       description: '''
@@ -598,7 +592,6 @@ de Egipto''',
                       text5: 'violeta',
                     ),
                   const SizedBox(height: 30),
-                  //TODO:
                   const Aromas100(
                     title: 'Il Kakuno - ILMIN',
                     description: '''
@@ -689,7 +682,6 @@ de Oud''',
                     colorText10: Colors.white70,
                     text10: 'oud',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Il Femme - ILMIN',
                     description: '''
@@ -770,7 +762,6 @@ de Cachemira''',
                     colorText9: Colors.black54,
                     text9: 'afrutados',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Arabians Tonka - Montale',
                     description: '''
@@ -850,7 +841,6 @@ de Roble''',
                     colorText10: Colors.black54,
                     text10: 'atalcado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Intense Cafe - Montale',
                     description: '''
@@ -912,7 +902,6 @@ Blanco''',
                     colorText9: Colors.white60,
                     text9: 'dulce',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Baccarat Rouge 540 - Francis Kurkdjian',
                     description: '''
@@ -972,7 +961,6 @@ de Abeto''',
                     colorText8: Colors.white60,
                     text8: 'aromático',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Oud Saffron - Orientica',
                     description: '''
@@ -1043,7 +1031,6 @@ de Gaiac''',
                     padding: const EdgeInsets.only(left: 30, bottom: 20),
                     child: Text('Aromas de Hombre', style: styleText3Mobile),
                   ),
-                  //TODO:
                   const Aromas100(
                     title: '212 Heroes - Carolina Herrera',
                     description: '''
@@ -1111,7 +1098,6 @@ estela es moderada. Es un aroma de Hombre.
                     colorText10: Colors.black54,
                     text10: 'acuático',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: '212 VIP Men - Carolina Herrera',
                     description: '''
@@ -1188,7 +1174,6 @@ Amaderadas''',
                     colorText10: Colors.black45,
                     text10: 'afrutados',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'CH Men - Carolina Herrera',
                     description: '''
@@ -1278,7 +1263,6 @@ Roble''',
                     colorText10: Colors.black45,
                     text10: 'fresco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: '212 VIP Men Wins - Carolina Herrera',
                     description: '''
@@ -1341,7 +1325,6 @@ Tonka''',
                     colorText8: Colors.white60,
                     text8: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas200(
                     title: '1 Million Parfum - Paco Rabanne',
                     description: '''
@@ -1430,7 +1413,6 @@ Gris''',
                     colorText10: Colors.black45,
                     text10: 'coco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: '1 Million Lucky - Paco Rabanne',
                     description: '''
@@ -1514,7 +1496,6 @@ de Roble''',
                     colorText10: Colors.black45,
                     text10: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Invictus - Paco Rabanne',
                     description: '''
@@ -1589,7 +1570,6 @@ de Roble''',
                     colorText10: Colors.black45,
                     text10: 'alcanforados',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Black XS - Paco Rabanne',
                     description: '''
@@ -1663,7 +1643,6 @@ Negro''',
                     colorText10: Colors.black45,
                     text10: 'lactónico',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Sauvage - Dior',
                     description: '''
@@ -1738,7 +1717,6 @@ Rosa''',
                     colorText9: Colors.white60,
                     text9: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Fahrenheit - Dior',
                     description: '''
@@ -1838,7 +1816,6 @@ los Valles''',
                     colorText10: Colors.white60,
                     text10: 'verde',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'CK One - Calvin Klein',
                     description: '''
@@ -1938,7 +1915,6 @@ Roble''',
                     colorText10: Colors.black45,
                     text10: 'almizclado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: '360° for Men - Perry Ellis',
                     description: '''
@@ -1991,7 +1967,6 @@ Amaderadas''',
                     colorText5: Colors.black45,
                     text5: 'lavanda',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Nautica Voyage - Nautica',
                     description: '''
@@ -2058,7 +2033,6 @@ Roble''',
                     colorText9: Colors.black45,
                     text9: 'floral amarillo',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Toy Boy - Moschino',
                     description: '''
@@ -2142,7 +2116,6 @@ de Haití''',
                     colorText10: Colors.white70,
                     text10: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Red - Lacoste',
                     description: '''
@@ -2203,7 +2176,6 @@ Verde''',
                     colorText10: Colors.white70,
                     text10: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title:
                         'L\'Eau d\'Issey Pour Homme - Issey Miyake',
@@ -2284,7 +2256,6 @@ Moscada''',
                     colorText10: Colors.black45,
                     text10: 'ozónico',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Hugo - Hugo Boss',
                     description: '''
@@ -2356,7 +2327,6 @@ Verde''',
                     colorText9: Colors.black45,
                     text9: 'cítrico',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Acqua di Gio - Giorgio Armani',
                     description: '''
@@ -2451,7 +2421,6 @@ Roble''',
                     colorText7: Colors.black45,
                     text7: 'fresco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Polo Blue - Ralph Lauren',
                     description: '''
@@ -2527,7 +2496,6 @@ Amaderadas''',
                     padding: const EdgeInsets.only(left: 30, bottom: 20),
                     child: Text('Aromas de Mujer', style: styleText3Mobile),
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Carolina Herrera - Carolina Herrera',
                     description: '''
@@ -2581,7 +2549,6 @@ Amaderadas''',
                     text7: 'animálico',
                   ),
                   const SizedBox(height: 30),
-                  //TODO:
                   const Aromas100(
                     title: 'CH (2015) - Carolina Herrera',
                     description: '''
@@ -2658,7 +2625,6 @@ Naranjo''',
                     colorText10: Colors.black45,
                     text10: 'fresco especiado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: '212 VIP Rosé - Carolina Herrera',
                     description: '''
@@ -2708,7 +2674,6 @@ Amaderadas''',
                     colorText5: Colors.black45,
                     text5: 'atalcado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: '360° - Perry Ellis',
                     description: '''
@@ -2789,7 +2754,6 @@ los Valles''',
                     colorText10: Colors.black45,
                     text10: 'ozónico',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Paris Hilton - Paris Hilton',
                     description: '''
@@ -2868,7 +2832,6 @@ Roble''',
                     colorText10: Colors.black54,
                     text10: 'floral amarillo',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Can Can - Paris Hilton',
                     description: '''
@@ -2940,7 +2903,6 @@ Amaderadas''',
                     colorText10: Colors.black45,
                     text10: 'almizclado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Heiress - Paris Hilton',
                     description: '''
@@ -3019,7 +2981,6 @@ Blancas''',
                     colorText9: Colors.black45,
                     text9: 'fresco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Toy 2 - Moschino',
                     description: '''
@@ -3090,7 +3051,6 @@ Blanca''',
                     colorText10: Colors.black45,
                     text10: 'floral blanco',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Amor Amor - Cacharel',
                     description: '''
@@ -3177,7 +3137,6 @@ Tonka''',
                     colorText10: Colors.white,
                     text10: 'amaderado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'La Vie Est Belle - Lancôme',
                     description: '''
@@ -3251,7 +3210,6 @@ Tonka''',
                     colorText10: Colors.white70,
                     text10: 'cálido especiado',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Light Blue - Dolce&Gabbana',
                     description: '''
@@ -3317,7 +3275,6 @@ Blanca''',
                     colorText8: Colors.white70,
                     text8: 'verde',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Kim Kardashian - Kim Kardashian',
                     description: '''
@@ -3370,7 +3327,6 @@ Amaderadas''',
                     colorText3: Colors.white70,
                     text3: 'animálico',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Angel - Mugler',
                     description: '''
@@ -3482,7 +3438,6 @@ Tonka''',
                     colorText10: Colors.white70,
                     text10: 'chocolate',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'Halloween - Halloween',
                     description: '''
@@ -3563,7 +3518,6 @@ los Valles''',
                     colorText10: Colors.white,
                     text10: 'ámbar',
                   ),
-                  //TODO:
                   const Aromas100(
                     title: 'CK2 - Calvin Klein',
                     description: '''
@@ -3643,9 +3597,10 @@ Lirio''',
                     colorText10: Colors.white70,
                     text10: 'terrosos',
                   ),
-                  //TODO:
+                  //TODO: FIN DE LAS LOCIONES
                 ],
               ),
+              */
             ],
           ),
         ),
@@ -3653,43 +3608,6 @@ Lirio''',
     );
   }
 }
-
-/*
-                      containerWidth4: ,
-                      containerColor4: ,
-                      colorText4: ,
-                      text4: ,
-                      
-                      containerWidth5: ,
-                      containerColor5: ,
-                      colorText5: ,
-                      text5: ,
-
-                      containerWidth6: ,
-                      containerColor6: ,
-                      colorText6: ,
-                      text6: ,
-                    
-                      containerWidth7: ,
-                      containerColor7: ,
-                      colorText7: ,
-                      text7: ,
-                    
-                      containerWidth8: ,
-                      containerColor8: ,
-                      colorText8: ,
-                      text8: ,
-                    
-                      containerWidth9: ,
-                      containerColor9: ,
-                      colorText9: ,
-                      text9: ,
-
-                      containerWidth10: ,
-                      containerColor10: ,
-                      colorText10: ,
-                      text10: ,
-*/
 
 class Aromas100 extends StatelessWidget {
   final String title;
@@ -4308,6 +4226,12 @@ class AromasBuscador extends StatelessWidget {
   final String? textBase7;
   final String? imageBase8;
   final String? textBase8;
+  final String? imageBase9;
+  final String? textBase9;
+  final String? imageBase10;
+  final String? textBase10;
+  final String? imageBase11;
+  final String? textBase11;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -4413,6 +4337,12 @@ class AromasBuscador extends StatelessWidget {
     this.textBase7,
     this.imageBase8,
     this.textBase8,
+    this.imageBase9,
+    this.textBase9,
+    this.imageBase10,
+    this.textBase10,
+    this.imageBase11,
+    this.textBase11,
     required this.containerWidth,
     required this.containerColor,
     required this.colorText,
@@ -4687,6 +4617,29 @@ class AromasBuscador extends StatelessWidget {
               Aromas(
                 image: imageBase8!,
                 text: textBase8!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageBase9 != null && textBase9 != null)
+              Aromas(
+                image: imageBase9!,
+                text: textBase9!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
+            if (imageBase10 != null && textBase10 != null)
+              Aromas(
+                image: imageBase10!,
+                text: textBase10!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageBase11 != null && textBase11 != null)
+              Aromas(
+                image: imageBase11!,
+                text: textBase11!,
                 padding: const EdgeInsets.only(right: 0),
               ),
           ],
@@ -5120,22 +5073,24 @@ class AromasBuscador200 extends StatelessWidget {
   final String imageLocion;
   final String imageNotaFragancia;
   final String textNotaFragancia;
-  final String imageNotaFragancia2;
-  final String textNotaFragancia2;
-  final String imageNotaFragancia3;
-  final String textNotaFragancia3;
-  final String imageNotaFragancia4;
-  final String textNotaFragancia4;
-  final String imageNotaFragancia5;
-  final String textNotaFragancia5;
-  final String imageNotaFragancia6;
-  final String textNotaFragancia6;
-  final String imageNotaFragancia7;
-  final String textNotaFragancia7;
-  final String imageNotaFragancia8;
-  final String textNotaFragancia8;
+  final String? imageNotaFragancia2;
+  final String? textNotaFragancia2;
+  final String? imageNotaFragancia3;
+  final String? textNotaFragancia3;
+  final String? imageNotaFragancia4;
+  final String? textNotaFragancia4;
+  final String? imageNotaFragancia5;
+  final String? textNotaFragancia5;
+  final String? imageNotaFragancia6;
+  final String? textNotaFragancia6;
+  final String? imageNotaFragancia7;
+  final String? textNotaFragancia7;
+  final String? imageNotaFragancia8;
+  final String? textNotaFragancia8;
   final String? imageNotaFragancia9;
   final String? textNotaFragancia9;
+  final String? imageNotaFragancia10;
+  final String? textNotaFragancia10;
   final double containerWidth;
   final Color? containerColor;
   final Color colorText;
@@ -5185,22 +5140,24 @@ class AromasBuscador200 extends StatelessWidget {
     required this.imageLocion,
     required this.imageNotaFragancia,
     required this.textNotaFragancia,
-    required this.imageNotaFragancia2,
-    required this.textNotaFragancia2,
-    required this.imageNotaFragancia3,
-    required this.textNotaFragancia3,
-    required this.imageNotaFragancia4,
-    required this.textNotaFragancia4,
-    required this.imageNotaFragancia5,
-    required this.textNotaFragancia5,
-    required this.imageNotaFragancia6,
-    required this.textNotaFragancia6,
-    required this.imageNotaFragancia7,
-    required this.textNotaFragancia7,
-    required this.imageNotaFragancia8,
-    required this.textNotaFragancia8,
+    this.imageNotaFragancia2,
+    this.textNotaFragancia2,
+    this.imageNotaFragancia3,
+    this.textNotaFragancia3,
+    this.imageNotaFragancia4,
+    this.textNotaFragancia4,
+    this.imageNotaFragancia5,
+    this.textNotaFragancia5,
+    this.imageNotaFragancia6,
+    this.textNotaFragancia6,
+    this.imageNotaFragancia7,
+    this.textNotaFragancia7,
+    this.imageNotaFragancia8,
+    this.textNotaFragancia8,
     this.imageNotaFragancia9,
     this.textNotaFragancia9,
+    this.imageNotaFragancia10,
+    this.textNotaFragancia10,
     required this.containerWidth,
     required this.containerColor,
     required this.colorText,
@@ -5269,50 +5226,63 @@ class AromasBuscador200 extends StatelessWidget {
               text: textNotaFragancia,
               padding: const EdgeInsets.only(left: 0, right: 15),
             ),
+            if (imageNotaFragancia2 != null && textNotaFragancia2 != null)
+              Aromas(
+                image: imageNotaFragancia2!,
+                text: textNotaFragancia2!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaFragancia3 != null && textNotaFragancia3 != null)
+              Aromas(
+                image: imageNotaFragancia3!,
+                text: textNotaFragancia3!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaFragancia4 != null && textNotaFragancia4 != null)
+              Aromas(
+                image: imageNotaFragancia4!,
+                text: textNotaFragancia4!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaFragancia5 != null && textNotaFragancia5 != null)
             Aromas(
-              image: imageNotaFragancia2,
-              text: textNotaFragancia2,
-              padding: const EdgeInsets.only(right: 15),
-            ),
-            Aromas(
-              image: imageNotaFragancia3,
-              text: textNotaFragancia3,
-              padding: const EdgeInsets.only(right: 15),
-            ),
-            Aromas(
-              image: imageNotaFragancia4,
-              text: textNotaFragancia4,
-              padding: const EdgeInsets.only(right: 15),
-            ),
-            Aromas(
-              image: imageNotaFragancia5,
-              text: textNotaFragancia5,
+              image: imageNotaFragancia5!,
+              text: textNotaFragancia5!,
               padding: const EdgeInsets.only(right: 0),
             ),
           ],
         ),
         Row(
           children: [
+            if (imageNotaFragancia6 != null && textNotaFragancia6 != null)
+              Aromas(
+                image: imageNotaFragancia6!,
+                text: textNotaFragancia6!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
+            if (imageNotaFragancia7 != null && textNotaFragancia7 != null)
+              Aromas(
+                image: imageNotaFragancia7!,
+                text: textNotaFragancia7!,
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaFragancia8 != null && textNotaFragancia8 != null)
             Aromas(
-              image: imageNotaFragancia6,
-              text: textNotaFragancia6,
-              padding: const EdgeInsets.only(left: 0, right: 15),
-            ),
-            Aromas(
-              image: imageNotaFragancia7,
-              text: textNotaFragancia7,
-              padding: const EdgeInsets.only(right: 15),
-            ),
-            Aromas(
-              image: imageNotaFragancia8,
-              text: textNotaFragancia8,
+              image: imageNotaFragancia8!,
+              text: textNotaFragancia8!,
               padding: const EdgeInsets.only(right: 15),
             ),
             if (imageNotaFragancia9 != null && textNotaFragancia9 != null)
               Aromas(
                 image: imageNotaFragancia9!,
                 text: textNotaFragancia9!,
-                padding: const EdgeInsets.only(right: 0),
+                padding: const EdgeInsets.only(right: 15),
+              ),
+            if (imageNotaFragancia10 != null && textNotaFragancia10 != null)
+              Aromas(
+                image: imageNotaFragancia10!,
+                text: textNotaFragancia10!,
+                padding: const EdgeInsets.only(right: 15),
               ),
           ],
         ),

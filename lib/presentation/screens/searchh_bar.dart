@@ -512,9 +512,8 @@ class _SearchhBarState extends State<SearchhBar> {
           child: IndexedStack(
             index: _selectedIndex,
             children: const [
-              //TODO: 0
+              //TODO: COMIENZAN LAS LOCIONES
               SizedBox.shrink(),
-              //TODO: 1
               BuscadorAromas(
                 title: 'Yara - Lattafa',
                 description: '''
@@ -574,7 +573,6 @@ Tropicales''',
                 colorText8: Colors.black45,
                 text8: 'cítrico',
               ),
-              //TODO: 2
               AromasBuscador2000(
                 title: 'Ombre Nomade - Louis Vuitton',
                 description: '''
@@ -642,7 +640,6 @@ de Oud''',
                 colorText10: Colors.white70,
                 text10: 'dulce',
               ),
-              //TODO: 3
               BuscadorAromas(
                 title: 'Bade\'e Al Oud Amethyst - Lattafa',
                 description: '''
@@ -707,7 +704,6 @@ de Oud''',
                 colorText9: Colors.black45,
                 text9: 'floral blanco',
               ),
-              //TODO: 4
               BuscadorAromas(
                 title: 'Oud For Greatness - Initio',
                 description: '''
@@ -770,7 +766,6 @@ de Oud''',
                 colorText10: Colors.white70,
                 text10: 'terrosos',
               ),
-              //TODO: 5
               BuscadorAromas(
                   title: 'Amber Oud - Al Haramain',
                   description: '''
@@ -835,7 +830,6 @@ de Gaiac''',
                   containerColor9: Color.fromRGBO(211, 188, 166, 1),
                   colorText9: Colors.black45,
                   text9: 'balsámico'),
-              //TODO: 6
               BuscadorAromas(
                 title: 'L\' Aventure - Al Haramain',
                 description: '''
@@ -893,7 +887,6 @@ los Valles''',
                 colorText7: Colors.black45,
                 text7: 'floral blanco',
               ),
-              //TODO: 7
               BuscadorAromas(
                 title: 'Madinah - Al Haramain',
                 description: '''
@@ -979,7 +972,6 @@ de Olor''',
                 colorText10: Colors.white70,
                 text10: 'cuero',
               ),
-              //TODO: 8
               AromasBuscador2000(
                 title: 'Santal 33 - Le Labo',
                 description: '''
@@ -995,7 +987,8 @@ se lanzó en 2011. Tiene una longevidad duradera y su estela es de moderada a pe
                 textNotaFragancia3: '''Papiro
 de Egipto''',
                 imageNotaFragancia4: 'assets/images/cedro.jpg',
-                textNotaFragancia4: 'Cedro',
+                textNotaFragancia4: '''Cedro de
+Virginia''',
                 imageNotaFragancia5: 'assets/images/violeta.jpg',
                 textNotaFragancia5: 'Violeta',
                 imageNotaFragancia6: 'assets/images/cardamomo.jpg',
@@ -1025,7 +1018,6 @@ de Egipto''',
                 colorText5: Colors.white70,
                 text5: 'violeta',
               ),
-              //TODO: 9
               AromasBuscador(
                 title: 'Il Kakuno - ILMIN',
                 description: '''
@@ -1060,8 +1052,9 @@ Silvestres''',
                 textCorazon5: 'Pachulí',
                 imageCorazon6: 'assets/images/azafran.jpg',
                 textCorazon6: 'Azafrán',
-                imageBase: 'assets/images/balsamo.jpg',
-                textBase: 'Bálsamo',
+                imageBase: 'assets/images/balsamo_del_peru.jpg',
+                textBase: '''Bálsamo
+del Perú''',
                 imageBase2: 'assets/images/madera_de_oud.jpg',
                 textBase2: '''Madera
 de Oud''',
@@ -1112,7 +1105,6 @@ de Oud''',
                 colorText10: Colors.white70,
                 text10: 'oud',
               ),
-              //TODO: 10
               BuscadorAromas(
                 title: 'Il Femme - ILMIN',
                 description: '''
@@ -1133,12 +1125,14 @@ Moscada''',
                 textCorazon: 'Cedro',
                 imageCorazon2: 'assets/images/cipriol.jpg',
                 textCorazon2: 'Cipriol',
-                imageCorazon3: 'assets/images/madera_de_gaiac.jpg',
-                textCorazon3: '''
-Madera
+                imageCorazon3: 'asset/images/balsamo_de_gurjum.jpg',
+                textCorazon3: '''Bálsamo
+de Gurjum''',
+                imageCorazon4: 'assets/images/madera_de_gaiac.jpg',
+                textCorazon4: '''Madera
 de Gaiac''',
-                imageCorazon4: 'assets/images/madera_de_cachemira.jpg',
-                textCorazon4: '''
+                imageCorazon5: 'assets/images/madera_de_cachemira.jpg',
+                textCorazon5: '''
 Madera
 de Cachemira''',
                 imageBase: 'assets/images/sandalo.jpg',
@@ -1190,7 +1184,6 @@ de Cachemira''',
                 colorText9: Colors.black54,
                 text9: 'afrutados',
               ),
-              //TODO: 11
               BuscadorAromas(
                 title: 'Arabians Tonka - Montale',
                 description: '''
@@ -1267,7 +1260,6 @@ de Roble''',
                 colorText10: Colors.black54,
                 text10: 'atalcado',
               ),
-              //TODO: 12
               BuscadorAromas(
                 title: 'Intense Cafe - Montale',
                 description: '''
@@ -1326,7 +1318,6 @@ Blanco''',
                 colorText9: Colors.white60,
                 text9: 'dulce',
               ),
-              //TODO: 13
               BuscadorAromas(
                 title: 'Baccarat Rouge 540 - Francis Kurkdjian',
                 description: '''
@@ -1382,7 +1373,6 @@ de Abeto''',
                 colorText8: Colors.white60,
                 text8: 'aromático',
               ),
-              //TODO: 14
               BuscadorAromas(
                 title: 'Oud Saffron - Orientica',
                 description: '''
@@ -1444,7 +1434,6 @@ de Gaiac''',
                 colorText9: Colors.white60,
                 text9: 'pachulí',
               ),
-              //TODO: 15
               BuscadorAromas(
                 title: 'Amber Rouge - Orientica',
                 description: '''
@@ -1508,7 +1497,6 @@ de Abeto''',
                 colorText7: Colors.white70,
                 text7: 'cuero',
               ),
-              //TODO: 16
               BuscadorAromas(
                 title: 'Amber Oud Gold - Al Haramain',
                 description: '''
@@ -1597,7 +1585,6 @@ Amaderadas''',
                 colorText10: Colors.white70,
                 text10: 'amaderado',
               ),
-              //TODO: 17
               BuscadorAromas(
                 title: 'King - Bharara',
                 description: '''
@@ -1669,7 +1656,6 @@ Blanco''',
                 colorText8: Colors.black45,
                 text8: 'fresco especiado',
               ),
-              //TODO: 18
               BuscadorAromas(
                 title: 'Corvus - Ahli',
                 description: '''
@@ -1753,7 +1739,6 @@ Roble''',
                 colorText6: Colors.black54,
                 text6: 'ámbar',
               ),
-              //TODO: 19
               BuscadorAromas(
                 title: 'Velvet Gold - Orientica',
                 description: '''
@@ -1844,7 +1829,6 @@ Animálicas''',
                 colorText10: Colors.white70,
                 text10: 'florales',
               ),
-              //TODO: 20
               BuscadorAromas(
                 title: 'Asad - Lattafa',
                 description: '''
@@ -1938,7 +1922,6 @@ Seca''',
                 colorText10: Colors.black54,
                 text10: 'balsámico',
               ),
-              //TODO: 21
               BuscadorAromas(
                 title: 'Club de Nuit Intense Man - Armaf',
                 description: '''
@@ -2030,7 +2013,6 @@ Gris''',
                 colorText9: Colors.black45,
                 text9: 'almizclado',
               ),
-              //TODO: 22
               BuscadorAromas(
                 title: 'Opulent Musk - Lattafa',
                 description: '''
@@ -2123,7 +2105,7 @@ de Abeto''',
                 colorText10: Colors.white70,
                 text10: 'animálico',
               ),
-              //TODO: 23
+              //TODO: LOCIONES HOMBRE
               BuscadorAromas(
                 title: '212 Heroes - Carolina Herrera',
                 description: '''

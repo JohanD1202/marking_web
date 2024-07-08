@@ -6,6 +6,7 @@ import 'package:marking_web/presentation/screens/arabes_screen.dart';
 import 'package:marking_web/presentation/screens/cart_screen.dart';
 import 'package:marking_web/presentation/screens/crea_tu_locion_screen.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
+import 'package:marking_web/presentation/screens/lotions.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -56,9 +57,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         onTap: () {},
                         child: FilledButton(
                           style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                            backgroundColor: MaterialStateProperty.all(Colors.grey[350]),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            foregroundColor: WidgetStateProperty.all<Color>(Colors.black),
+                            backgroundColor: WidgetStateProperty.all(Colors.grey[350]),
+                            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                               const RoundedRectangleBorder(
                                 borderRadius: BorderRadius.all(Radius.circular(0)),
                               )
@@ -157,6 +158,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
                 const SizedBox(width: 50),
+                ButtonTextBar(
+                  buttonText: 'Arabic Lotions', 
+                  onPressed: () {
+                    setState(() {
+                      indiceWidget = 9;
+                    });
+                  }
+                ),
+                const SizedBox(width: 50),
                 IconButton(
                   icon: const Icon(Icons.shopping_cart_rounded, color: Colors.black, size: 30),
                   onPressed: () {
@@ -181,6 +191,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Help(),
               GuiaAromas(),
               CartScreen(),
+              ArabicLotionList(),
             ],
           ),
           //TODO: FOOTER

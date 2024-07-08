@@ -1,9 +1,16 @@
 import 'package:marking_web/config/theme/app_theme.dart';
 import 'package:marking_web/presentation/screens/home_screen.dart';
 import 'package:marking_web/exports.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  
   runApp(
     MultiProvider(
       providers: [

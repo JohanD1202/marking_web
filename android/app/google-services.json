@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566679008036",
+    "project_id": "aromas-selectos-web",
+    "storage_bucket": "aromas-selectos-web.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566679008036:android:72cfbaa800349bf51cf9b1",
+        "android_client_info": {
+          "package_name": "com.example.marking_web"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMUCtbUm52fQDAfcrMm95qFMbRLTKnhoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

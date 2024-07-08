@@ -46,6 +46,96 @@ class _ImageOnHoverState extends State<ImageOnHover> {
   }
 }
 
+//TODO:
+
+class ImageOnHover2 extends StatefulWidget {
+  final String imagePath;
+  final String hoverImagePath;
+  final double imageWidth;
+  final double imageHeight;
+  final String dialogText;
+
+  // ignore: use_super_parameters
+  const ImageOnHover2({
+    Key? key,
+    required this.imagePath,
+    required this.hoverImagePath,
+    required this.imageWidth,
+    required this.imageHeight,
+    required this.dialogText,
+  }) : super(key: key);
+
+  @override
+  State<ImageOnHover2> createState() => _ImageOnHover2State();
+}
+
+class _ImageOnHover2State extends State<ImageOnHover2> {
+
+  late String currentImage;
+
+  @override
+  void initState() {
+    super.initState();
+    currentImage = widget.imagePath; // Inicializar currentImage con la primera imagen
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => _showImageDialog(context),
+      child: MouseRegion(
+        onEnter: (_) => _changeImage(true),
+        onExit: (_) => _changeImage(false),
+        child: Image.asset(currentImage, width: widget.imageWidth, height: widget.imageHeight),
+      ),
+    );
+  }
+
+  void _changeImage(bool hover) {
+    setState(() {
+      if (hover) {
+        currentImage = widget.hoverImagePath;
+      } else {
+        currentImage = widget.imagePath;
+      }
+    });
+  }
+
+  void _showImageDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Dialog(
+          backgroundColor: Colors.transparent,
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.6,
+            height: MediaQuery.of(context).size.height * 0.5,
+            padding: const EdgeInsets.all(15),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(widget.imagePath, width: widget.imageWidth, height: widget.imageHeight), // Siempre muestra la primera imagen
+                const SizedBox(width: 20),
+                SizedBox(
+                  width: 440,
+                  child: Text(widget.dialogText, style: styleTextLocion)
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+//TODO:
+
 class MujerScreen extends StatelessWidget {
 
   // ignore: use_super_parameters

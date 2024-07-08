@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:marking_web/exports.dart';
+import 'package:marking_web/presentation/screens/lotions.dart';
 
 class SectionArabe extends StatefulWidget {
   // ignore: use_super_parameters
@@ -26,28 +29,27 @@ class _SectionArabeState extends State<SectionArabe> {
         Row(
           children: [
             Spacer(),
-            LocionArabe(
+            ArabicLotion(
               imageLocion: 'assets/images/yara_lattafa.jpg',
-              imageLocion2: 'assets/images/aroma_1.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 370,
+              name: 'Juan',
+              description: '345',
+              price: 20,
               imageWidth: 240,
-              nameLocion: '''Yara
-Lattafa''',
               symbol: '\$',
-              priceOriginal: 17.000,
-              onzas: '1 fl oz',
             ),
-            Spacer(),            
-            LocionArabe(
+            Spacer(),
+            //ArabicLotionList(),
+            ArabicLotion(
               imageLocion: 'assets/images/ombre_nomade_louis_vuitton.webp',
-              imageLocion2: 'assets/images/aroma_3.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              name: 'Juan',
+              description: '345',
+              price: 20,
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: '''Ombre Nomade
-Louis Vuitton''',
               symbol: '\$',
-              priceOriginal: 17.000,
-              onzas: '1 fl oz',
             ),
             Spacer(),
             LocionArabe(
@@ -324,7 +326,16 @@ Lattafa''',
               priceOriginal: 17.000,
               onzas: '1 fl oz',
             ),
-            Spacer(),/*
+            Spacer(),
+            /*Lotion(
+              imageLocion: 'assets/images/yara_lattafa.jpg',
+              imageLocion2: 'assets/images/aroma_5.jpg',
+              imageHeight: 370,
+              imageWidth: 240,
+              symbol: '\$',
+            ),
+            Spacer(),*/
+            /*
             LocionArabe(
               imageLocion: 'assets/images/aroma_6.jpg',
               imageLocion2: 'assets/images/aroma_7.jpg',

@@ -2,11 +2,11 @@ import 'package:marking_web/exports.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
-import 'package:marking_web/presentation/screens/arabes_screen.dart';
 import 'package:marking_web/presentation/screens/cart_screen.dart';
 import 'package:marking_web/presentation/screens/crea_tu_locion_screen.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
-import 'package:marking_web/presentation/screens/lotions.dart';
+import 'package:marking_web/presentation/screens/arabes_screen.dart';
+import 'package:marking_web/presentation/screens/hombre_screen2.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -159,7 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(width: 50),
                 ButtonTextBar(
-                  buttonText: 'Arabic Lotions', 
+                  buttonText: 'Men Lotions', 
                   onPressed: () {
                     setState(() {
                       indiceWidget = 9;
@@ -191,7 +191,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Help(),
               GuiaAromas(),
               CartScreen(),
-              ArabicLotionList(),
+              MenScreen(),
             ],
           ),
           //TODO: FOOTER

@@ -40,7 +40,7 @@ class _SearchhBarState extends State<SearchhBar> {
     "212 VIP Men - Carolina Herrera",
     "CH Men - Carolina Herrera",
     "212 VIP Men Wins - Carolina Herrera",
-    "1 Million Parfum - Paco Rabanne",
+    "1 Million - Paco Rabanne",
     "1 Million Lucky - Paco Rabanne",
     "Invictus - Paco Rabanne",
     "Black XS - Paco Rabanne",
@@ -125,10 +125,10 @@ class _SearchhBarState extends State<SearchhBar> {
     "CH Men - Carolina Herrera": 'assets/images/ch_carolina_herrera.webp',
     "212 VIP Men Wins - Carolina Herrera":
         'assets/images/212_vip_wins_carolina_herrera.jpeg',
-    "1 Million Parfum - Paco Rabanne":
-        'assets/images/1_million_paco_rabanne.webp',
+    "1 Million - Paco Rabanne":
+        'assets/images/1_million__paco_rabanne.jpg',
     "1 Million Lucky - Paco Rabanne":
-        'assets/images/1_million_lucky_paco_rabanne.jpeg',
+        'assets/images/1_million__lucky_paco_rabanne.jpg',
     "Invictus - Paco Rabanne": 'assets/images/invictus_paco_rabanne.jpg',
     "Black XS - Paco Rabanne": 'assets/images/black_xs_paco_rabanne.webp',
     "Sauvage - Dior": 'assets/images/sauvage_dior.jpg',
@@ -297,7 +297,7 @@ class _SearchhBarState extends State<SearchhBar> {
         case '212 VIP Men Wins - Carolina Herrera':
           _selectedIndex = 26;
           break;
-        case '1 Million Parfum - Paco Rabanne':
+        case '1 Million - Paco Rabanne':
           _selectedIndex = 27;
           break;
         case '1 Million Lucky - Paco Rabanne':
@@ -2169,7 +2169,6 @@ en 2021. Tiene una longevidad moderada y su estela es moderada. Es un aroma de H
                 colorText10: Colors.black54,
                 text10: 'acuático',
               ),
-              //TODO: 16
               BuscadorAromas(
                 title: '212 VIP Men - Carolina Herrera',
                 description: '''
@@ -2241,7 +2240,6 @@ Amaderadas''',
                 colorText10: Colors.black45,
                 text10: 'afrutados',
               ),
-              //TODO: 17
               BuscadorAromas(
                 title: 'CH Men - Carolina Herrera',
                 description: '''
@@ -2328,7 +2326,6 @@ Roble''',
                 colorText10: Colors.black45,
                 text10: 'fresco',
               ),
-              //TODO: 18
               BuscadorAromas(
                 title: '212 VIP Men Wins - Carolina Herrera',
                 description: '''
@@ -2343,8 +2340,7 @@ Roble''',
                 imageNotaSalida3: 'assets/images/mandarina.jpg',
                 textNotaSalida3: 'Mandarina',
                 imageCorazon: 'assets/images/pimienta.jpg',
-                textCorazon: '''
-Pimienta de
+                textCorazon: '''Pimienta de
 Madagascar''',
                 imageCorazon2: 'assets/images/lavanda.jpg',
                 textCorazon2: 'Lavanda',
@@ -2386,84 +2382,85 @@ Tonka''',
                 colorText8: Colors.white60,
                 text8: 'cálido especiado',
               ),
-              //TODO: 19
-              AromasBuscador2000(
-                title: '1 Million Parfum - Paco Rabanne',
+              BuscadorAromas(
+                title: '1 Million - Paco Rabanne',
                 description: '''
-1 Million Parfum de Paco Rabanne es una fragancia de la familia olfativa Cuero para Hombres. 1 Million Parfum se lanzó
-en 2020. Su longevidad es duradera y su estela es pesada. Es un aroma Masculino.
+1 Million de Paco Rabanne es una fragancia de la familia olfativa Amaderada Especiada para Hombres.
+1 Million se lanzó en 2008. Su longevidad es duradera y su estela es pesada. Es un aroma Masculino.
 ''',
-                imageLocion: 'assets/images/1_million_paco_rabanne.webp',
-                imageNotaFragancia: 'assets/images/nardos.jpg',
-                textNotaFragancia: 'Nardos',
-                imageNotaFragancia2: 'assets/images/sal.jpg',
-                textNotaFragancia2: 'Sal',
-                imageNotaFragancia3: 'assets/images/notas_solares.jpg',
-                textNotaFragancia3: '''Notas
-Solares''',
-                imageNotaFragancia4: 'assets/images/aceite_de_monoil.jpg',
-                textNotaFragancia4: '''Aceite
-de Monoi''',
-                imageNotaFragancia5: 'assets/images/ambar_gris.jpg',
-                textNotaFragancia5: '''Ámbar
-Gris''',
-                imageNotaFragancia6: 'assets/images/cuero.jpg',
-                textNotaFragancia6: 'Cuero',
-                imageNotaFragancia7: 'assets/images/cachemira.jpg',
-                textNotaFragancia7: 'Cachemira',
-                imageNotaFragancia8: 'assets/images/ladano.jpg',
-                textNotaFragancia8: 'Ládano',
-                imageNotaFragancia9: 'assets/images/pino.jpg',
-                textNotaFragancia9: 'Pino',
+                imageLocion: 'assets/images/1_million__paco_rabanne.jpg',
+                imageNotaSalida: 'assets/images/mandarina.jpg',
+                textNotaSalida: '''Mandarina
+Roja''',
+                imageNotaSalida2: 'assets/images/toronja.jpg',
+                textNotaSalida2: 'Toronja',
+                imageNotaSalida3: 'assets/images/menta.jpg',
+                textNotaSalida3: 'Menta',
+                imageCorazon: 'assets/images/canela.jpg',
+                textCorazon: 'Canela',
+                imageCorazon2: 'assets/images/especias.jpg',
+                textCorazon2: '''Notas
+Especiadas''',
+                imageCorazon3: 'assets/images/rosa.jpg',
+                textCorazon3: 'Rosa',
+                imageBase: 'assets/images/ambar.jpg',
+                textBase: 'Ámbar',
+                imageBase2: 'assets/images/cuero.jpg',
+                textBase2: 'Cuero',
+                imageBase3: 'assets/images/notas_amaderadas.jpg',
+                textBase3: '''Notas
+Amaderadas''',
+                imageBase4: 'assets/images/pachuli.jpg',
+                textBase4: '''Pachulí
+Hindú''',
                 containerWidth: 230,
-                containerColor: Color.fromRGBO(237, 242, 251, 1),
-                colorText: Colors.black,
-                text: 'floral blanco',
-                containerWidth2: 210,
-                containerColor2: Color.fromRGBO(236, 250, 244, 1),
-                colorText2: Colors.black,
-                text2: 'nardos',
-                containerWidth3: 190,
-                containerColor3: Color.fromRGBO(197, 101, 48, 1),
-                colorText3: Colors.white,
-                text3: 'ámbar',
-                containerWidth4: 180,
-                containerColor4: Color.fromRGBO(161, 105, 58, 1),
+                containerColor: Color.fromRGBO(204, 51, 0, 1),
+                colorText: Colors.white,
+                text: 'cálido especiado',
+                containerWidth2: 200,
+                containerColor2: Color.fromRGBO(217, 128, 64, 1),
+                colorText2: Colors.white,
+                text2: 'canela',
+                containerWidth3: 185,
+                containerColor3: Color.fromRGBO(250, 255, 122, 1),
+                colorText3: Colors.black87,
+                text3: 'cítrico',
+                containerWidth4: 170,
+                containerColor4: Color.fromRGBO(209, 134, 93, 1),
                 colorText4: Colors.white,
-                text4: 'animálico',
-                containerWidth5: 150,
-                containerColor5: Color.fromRGBO(158, 122, 88, 1),
+                text4: 'ámbar',
+                containerWidth5: 168,
+                containerColor5: Color.fromRGBO(164, 130, 98, 1),
                 colorText5: Colors.white,
                 text5: 'amaderado',
-                containerWidth6: 140,
-                containerColor6: Color.fromRGBO(240, 255, 251, 1),
-                colorText6: Colors.black54,
-                text6: 'salado',
-                containerWidth7: 135,
-                containerColor7: Color.fromRGBO(167, 136, 126, 1),
-                colorText7: Colors.white70,
-                text7: 'cuero',
-                containerWidth8: 125,
-                containerColor8: Color.fromRGBO(249, 206, 106, 1),
-                colorText8: Colors.black45,
-                text8: 'tropical',
-                containerWidth9: 120,
-                containerColor9: Color.fromRGBO(241, 232, 242, 1),
-                colorText9: Colors.black45,
-                text9: 'almizclado',
-                containerWidth10: 115,
-                containerColor10: Color.fromRGBO(247, 242, 231, 1),
-                colorText10: Colors.black45,
-                text10: 'coco',
+                containerWidth6: 165,
+                containerColor6: Color.fromRGBO(167, 136, 127, 1),
+                colorText6: Colors.white,
+                text6: 'cuero',
+                containerWidth7: 155,
+                containerColor7: Color.fromRGBO(254, 101, 165, 1),
+                colorText7: Colors.white,
+                text7: 'rosas',
+                containerWidth8: 150,
+                containerColor8: Color.fromRGBO(189, 150, 118, 1),
+                colorText8: Colors.white,
+                text8: 'animálico',
+                containerWidth9: 145,
+                containerColor9: Color.fromRGBO(122, 191, 131, 1),
+                colorText9: Colors.white70,
+                text9: 'verde',
+                containerWidth10: 145,
+                containerColor10: Color.fromRGBO(170, 171, 141, 1),
+                colorText10: Colors.white70,
+                text10: 'pachulí',
               ),
-              //TODO: 20
               BuscadorAromas(
                 title: '1 Million Lucky - Paco Rabanne',
                 description: '''
 1 Million Lucky de Paco Rabanne es una fragancia de la familia olfativa Amaderada para Hombres. 1 Million Lucky se lanzó
 en 2018. Su longevidad es duradera y su estela es moderada. Es un aroma Masculino.
 ''',
-                imageLocion: 'assets/images/1_million_lucky_paco_rabanne.jpeg',
+                imageLocion: 'assets/images/1_million__lucky_paco_rabanne.jpg',
                 imageNotaSalida: 'assets/images/ciruela.jpg',
                 textNotaSalida: 'Ciruela',
                 imageNotaSalida2: 'assets/images/notas_ozonicas.jpg',
@@ -2535,7 +2532,6 @@ de Roble''',
                 colorText10: Colors.black45,
                 text10: 'floral blanco',
               ),
-              //TODO: 21
               BuscadorAromas(
                 title: 'Invictus - Paco Rabanne',
                 description: '''
@@ -2607,7 +2603,6 @@ de Roble''',
                 colorText10: Colors.black45,
                 text10: 'alcanforados',
               ),
-              //TODO: 22
               BuscadorAromas(
                 title: 'Black XS - Paco Rabanne',
                 description: '''
@@ -2678,7 +2673,6 @@ Negro''',
                 colorText10: Colors.black45,
                 text10: 'lactónico',
               ),
-              //TODO: 23
               BuscadorAromas(
                 title: 'Sauvage - Dior',
                 description: '''
@@ -2750,11 +2744,10 @@ Rosa''',
                 colorText9: Colors.white60,
                 text9: 'cálido especiado',
               ),
-              //TODO: 24
               BuscadorAromas(
                 title: 'Fahrenheit - Dior',
                 description: '''
-ahrenheit de Dior es una fragancia de la familia olfativa Aromática Fougère para Hombres. Fahrenheit se lanzó en 1988.
+Fahrenheit de Dior es una fragancia de la familia olfativa Aromática Fougère para Hombres. Fahrenheit se lanzó en 1988.
 Tiene una longevidad duradera y su estela es pesada. Es un aroma masculino.
 ''',
                 imageLocion: 'assets/images/fahrenheit_dior.jpeg',
@@ -5952,7 +5945,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
     "212 VIP Men - Carolina Herrera",
     "CH Men - Carolina Herrera",
     "212 VIP Men Wins - Carolina Herrera",
-    "1 Million Parfum - Paco Rabanne",
+    "1 Million - Paco Rabanne",
     "1 Million Lucky - Paco Rabanne",
     "Invictus - Paco Rabanne",
     "Black XS - Paco Rabanne",
@@ -6037,10 +6030,10 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
     "CH Men - Carolina Herrera": 'assets/images/ch_carolina_herrera.webp',
     "212 VIP Men Wins - Carolina Herrera":
         'assets/images/212_vip_wins_carolina_herrera.jpeg',
-    "1 Million Parfum - Paco Rabanne":
-        'assets/images/1_million_paco_rabanne.webp',
+    "1 Million - Paco Rabanne":
+        'assets/images/1_million__paco_rabanne.jpg',
     "1 Million Lucky - Paco Rabanne":
-        'assets/images/1_million_lucky_paco_rabanne.jpeg',
+        'assets/images/1_million__lucky_paco_rabanne.jpg',
     "Invictus - Paco Rabanne": 'assets/images/invictus_paco_rabanne.jpg',
     "Black XS - Paco Rabanne": 'assets/images/black_xs_paco_rabanne.webp',
     "Sauvage - Dior": 'assets/images/sauvage_dior.jpg',
@@ -6209,7 +6202,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
         case '212 VIP Men Wins - Carolina Herrera':
           _selectedIndex = 26;
           break;
-        case '1 Million Parfum - Paco Rabanne':
+        case '1 Million - Paco Rabanne':
           _selectedIndex = 27;
           break;
         case '1 Million Lucky - Paco Rabanne':
@@ -8379,77 +8372,80 @@ Tonka''',
                 colorText8: Colors.white60,
                 text8: 'cálido especiado',
               ),
-              AromasBuscador200(
-                title: '1 Million Parfum - Paco Rabanne',
+              AromasBuscador(
+                title: '1 Million - Paco Rabanne',
                 description: '''
-1 Million Parfum de Paco Rabanne es una
-fragancia de la familia olfativa Cuero
-para Hombres. 1 Million Parfum se lanzó
-en 2020. Su longevidad es duradera y su
-estela es pesada. Es un aroma Masculino.
+1 Million de Paco Rabanne es una fragancia
+de la familia olfativa Amaderada Especiada
+para Hombres. 1 Million se lanzó en 2008.
+Su longevidad es duradera y su estela es
+pesada. Es un aroma Masculino.
 ''',
-                imageLocion: 'assets/images/1_million_paco_rabanne.webp',
-                imageNotaFragancia: 'assets/images/nardos.jpg',
-                textNotaFragancia: 'Nardos',
-                imageNotaFragancia2: 'assets/images/sal.jpg',
-                textNotaFragancia2: 'Sal',
-                imageNotaFragancia3: 'assets/images/notas_solares.jpg',
-                textNotaFragancia3: '''Notas
-Solares''',
-                imageNotaFragancia4: 'assets/images/aceite_de_monoil.jpg',
-                textNotaFragancia4: '''Aceite
-de Monoi''',
-                imageNotaFragancia5: 'assets/images/ambar_gris.jpg',
-                textNotaFragancia5: '''Ámbar
-Gris''',
-                imageNotaFragancia6: 'assets/images/cuero.jpg',
-                textNotaFragancia6: 'Cuero',
-                imageNotaFragancia7: 'assets/images/cachemira.jpg',
-                textNotaFragancia7: 'Cachemira',
-                imageNotaFragancia8: 'assets/images/ladano.jpg',
-                textNotaFragancia8: 'Ládano',
-                imageNotaFragancia9: 'assets/images/pino.jpg',
-                textNotaFragancia9: 'Pino',
+                imageLocion: 'assets/images/1_million__paco_rabanne.jpg',
+                imageNotaSalida: 'assets/images/mandarina.jpg',
+                textNotaSalida: '''Mandarina
+Roja''',
+                imageNotaSalida2: 'assets/images/toronja.jpg',
+                textNotaSalida2: 'Toronja',
+                imageNotaSalida3: 'assets/images/menta.jpg',
+                textNotaSalida3: 'Menta',
+                imageCorazon: 'assets/images/canela.jpg',
+                textCorazon: 'Canela',
+                imageCorazon2: 'assets/images/especias.jpg',
+                textCorazon2: '''Notas
+Especiadas''',
+                imageCorazon3: 'assets/images/rosa.jpg',
+                textCorazon3: 'Rosa',
+                imageBase: 'assets/images/ambar.jpg',
+                textBase: 'Ámbar',
+                imageBase2: 'assets/images/cuero.jpg',
+                textBase2: 'Cuero',
+                imageBase3: 'assets/images/notas_amaderadas.jpg',
+                textBase3: '''Notas
+Amaderadas''',
+                imageBase4: 'assets/images/pachuli.jpg',
+                textBase4: '''Pachulí
+Hindú''',
                 containerWidth: 230,
-                containerColor: Color.fromRGBO(237, 242, 251, 1),
-                colorText: Colors.black,
-                text: 'floral blanco',
-                containerWidth2: 210,
-                containerColor2: Color.fromRGBO(236, 250, 244, 1),
-                colorText2: Colors.black,
-                text2: 'nardos',
-                containerWidth3: 190,
-                containerColor3: Color.fromRGBO(197, 101, 48, 1),
-                colorText3: Colors.white,
-                text3: 'ámbar',
-                containerWidth4: 180,
-                containerColor4: Color.fromRGBO(161, 105, 58, 1),
+                containerColor: Color.fromRGBO(204, 51, 0, 1),
+                colorText: Colors.white,
+                text: 'cálido especiado',
+                containerWidth2: 200,
+                containerColor2: Color.fromRGBO(217, 128, 64, 1),
+                colorText2: Colors.white,
+                text2: 'canela',
+                containerWidth3: 185,
+                containerColor3: Color.fromRGBO(250, 255, 122, 1),
+                colorText3: Colors.black87,
+                text3: 'cítrico',
+                containerWidth4: 170,
+                containerColor4: Color.fromRGBO(209, 134, 93, 1),
                 colorText4: Colors.white,
-                text4: 'animálico',
-                containerWidth5: 150,
-                containerColor5: Color.fromRGBO(158, 122, 88, 1),
+                text4: 'ámbar',
+                containerWidth5: 168,
+                containerColor5: Color.fromRGBO(164, 130, 98, 1),
                 colorText5: Colors.white,
                 text5: 'amaderado',
-                containerWidth6: 140,
-                containerColor6: Color.fromRGBO(240, 255, 251, 1),
-                colorText6: Colors.black54,
-                text6: 'salado',
-                containerWidth7: 135,
-                containerColor7: Color.fromRGBO(167, 136, 126, 1),
-                colorText7: Colors.white70,
-                text7: 'cuero',
-                containerWidth8: 125,
-                containerColor8: Color.fromRGBO(249, 206, 106, 1),
-                colorText8: Colors.black45,
-                text8: 'tropical',
-                containerWidth9: 120,
-                containerColor9: Color.fromRGBO(241, 232, 242, 1),
-                colorText9: Colors.black45,
-                text9: 'almizclado',
-                containerWidth10: 115,
-                containerColor10: Color.fromRGBO(247, 242, 231, 1),
-                colorText10: Colors.black45,
-                text10: 'coco',
+                containerWidth6: 165,
+                containerColor6: Color.fromRGBO(167, 136, 127, 1),
+                colorText6: Colors.white,
+                text6: 'cuero',
+                containerWidth7: 155,
+                containerColor7: Color.fromRGBO(254, 101, 165, 1),
+                colorText7: Colors.white,
+                text7: 'rosas',
+                containerWidth8: 150,
+                containerColor8: Color.fromRGBO(189, 150, 118, 1),
+                colorText8: Colors.white,
+                text8: 'animálico',
+                containerWidth9: 145,
+                containerColor9: Color.fromRGBO(122, 191, 131, 1),
+                colorText9: Colors.white70,
+                text9: 'verde',
+                containerWidth10: 145,
+                containerColor10: Color.fromRGBO(170, 171, 141, 1),
+                colorText10: Colors.white70,
+                text10: 'pachulí',
               ),
               AromasBuscador(
                 title: '1 Million Lucky - Paco Rabanne',

@@ -142,7 +142,7 @@ Carolina Herrrera''',
               imageLocion2: 'assets/images/aroma_5.jpg',
               imageHeight: 240,
               imageWidth: 150,
-              nameLocion: '''1 Million Parfum
+              nameLocion: '''1 Million
 Paco Rabanne''',
               symbol: '\$',
               priceOriginal: 15.000,

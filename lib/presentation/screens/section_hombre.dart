@@ -87,7 +87,7 @@ Carolina Herrera''',
               imageLocion2: 'assets/images/locion_5_5onzas.jpg',
               imageHeight: 370,
               imageWidth: 240,
-              nameLocion: '''1 Million Parfum
+              nameLocion: '''1 Million
 Paco Rabanne''',
               symbol: '\$',
               priceOriginal: 15.000,

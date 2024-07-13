@@ -58,8 +58,8 @@ class _MobileScreenState extends State<MobileScreen> {
                   children: [
                     if (indiceWidget == 0) const InicioMobile(),
                     if (indiceWidget == 1) const ArabesScreenMobile(),
-                    if (indiceWidget == 2) const HombreScreenMobile(),
-                    if (indiceWidget == 3) const MujerScreenMobile(),
+                    if (indiceWidget == 2) const MenScreenMobile(),
+                    if (indiceWidget == 3) const WomenScreenMobile(),
                     if (indiceWidget == 4) const CreaTuLocionMobile(),
                     if (indiceWidget == 5) const SaleScreenMobile(),
                     if (indiceWidget == 6) const HelpMobile(),

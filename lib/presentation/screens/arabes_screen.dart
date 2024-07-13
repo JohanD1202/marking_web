@@ -224,7 +224,7 @@ class _ArabicLotionState extends State<ArabicLotion> {
                     items: ['1', '2', '3'].map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
-                        child: Text('$value fl oz'),
+                        child: Text('$value fl oz', style: styleTextLocion),
                       );
                     }).toList(),
                   ),

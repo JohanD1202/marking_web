@@ -2,14 +2,14 @@ import 'package:marking_web/exports.dart';
 import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class ArabesScreenMobile extends StatefulWidget {
-  const ArabesScreenMobile({super.key});
+class MenScreenMobile extends StatefulWidget {
+  const MenScreenMobile({super.key});
 
   @override
-  _ArabesScreenMobileState createState() => _ArabesScreenMobileState();
+  _MenScreenMobileState createState() => _MenScreenMobileState();
 }
 
-class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
+class _MenScreenMobileState extends State<MenScreenMobile> {
   bool _loading = true;
   List<Map<String, dynamic>> _lotions = [];
 
@@ -21,7 +21,7 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
 
   void _loadLotions() async {
     try {
-      QuerySnapshot snapshot = await FirebaseFirestore.instance.collection('Arabic Lotions').orderBy('createdAt', descending: false).get();
+      QuerySnapshot snapshot = await FirebaseFirestore.instance.collection('Men Lotions').orderBy('createdAt', descending: false).get();
       List<Map<String, dynamic>> lotions = snapshot.docs.map((doc) {
         var data = doc.data() as Map<String, dynamic>;
         return {
@@ -60,28 +60,26 @@ class _ArabesScreenMobileState extends State<ArabesScreenMobile> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Bienvenidos a la sección de Aromas Árabes', style: styleText3Mobile),
+                  Text('Bienvenidos a la sección de Aromas de Hombre', style: styleText3Mobile),
                   const SizedBox(height: 20),
                   Text('''
-Bienvenidos a nuestra sección de Aromas Árabes,
-en este espacio te invitamos a descubrir una
-amplia gama de aromas Árabes, que capturan la
-esencia de la elegancia. Desde aromas frescos
-y vibrantes hasta notas cálidas. Explora nuestra
-colección y encuentra el aroma perfecto. Llévate
-tus aromas favoritos desde tan solo \$17.000.
-Elige el tamaño de tu loción en fl oz y luego
-la cantidad.
+Bienvenidos a nuestra sección dedicada a los
+hombres modernos y con estilo. En Aromas
+Selectos, te ofrecemos una exquisita variedad
+de fragancias que reflejan tu personalidad.
+
+Llévate tus aromas favoritos desde \$15.000.
+Elige el tamaño de tu loción en fl oz y luego la
+cantidad.
 
 Nuestros precios se manejan así:
-1 fl oz = \$17.000
-2 fl oz = \$33.000
-3 fl oz = \$45.000
+1 fl oz = \$15.000
+2 fl oz = \$29.000
+3 fl oz = \$40.000
 
 ¡No te pierdas esta increíble oportunidad de
 disfrutar de fragancias de calidad a un precio
-increíblemente bajo!
-                  ''', style: textoMobile),
+increíblemente bajo!''', style: textoMobile),
                   const SizedBox(height: 10),
                   GridView.builder(
                     shrinkWrap: true,
@@ -93,7 +91,7 @@ increíblemente bajo!
                     itemCount: _lotions.length,
                     itemBuilder: (context, index) {
                       final lotion = _lotions[index];
-                      return ArabicLotionMobile(
+                      return LotionMobile(
                         imageLocion: lotion['image'],
                         imageLocion2: lotion['image2'],
                         imageWidth: 150,
@@ -116,7 +114,7 @@ increíblemente bajo!
 
 //TODO: 
 
-class ArabicLotionMobile extends StatefulWidget {
+class LotionMobile extends StatefulWidget {
 
   final String imageLocion;
   final String imageLocion2;
@@ -128,7 +126,7 @@ class ArabicLotionMobile extends StatefulWidget {
   final double price;
 
   // ignore: use_super_parameters
-  const ArabicLotionMobile({
+  const LotionMobile({
     Key? key,
     required this.imageLocion,
     required this.imageLocion2,
@@ -141,10 +139,10 @@ class ArabicLotionMobile extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<ArabicLotionMobile> createState() => _ArabicLotionMobileState();
+  State<LotionMobile> createState() => _LotionMobileState();
 }
 
-class _ArabicLotionMobileState extends State<ArabicLotionMobile> {
+class _LotionMobileState extends State<LotionMobile> {
 
   int _quantity = 1;
   double _totalPrice = 0.0;
@@ -174,10 +172,10 @@ class _ArabicLotionMobileState extends State<ArabicLotionMobile> {
     double basePrice;
     switch (_selectedOnza) {
       case '2':
-      basePrice = 33;
+      basePrice = 29;
       break;
       case '3':
-      basePrice = 45;
+      basePrice = 40;
       break;
       default:
       basePrice = widget.price;

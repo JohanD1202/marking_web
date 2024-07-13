@@ -6,7 +6,8 @@ import 'package:marking_web/presentation/screens/cart_screen.dart';
 import 'package:marking_web/presentation/screens/crea_tu_locion_screen.dart';
 import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
 import 'package:marking_web/presentation/screens/arabes_screen.dart';
-import 'package:marking_web/presentation/screens/hombre_screen2.dart';
+import 'package:marking_web/presentation/screens/men_screen.dart';
+import 'package:marking_web/presentation/screens/women_screen.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -158,15 +159,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 ),
                 const SizedBox(width: 50),
-                ButtonTextBar(
-                  buttonText: 'Men Lotions', 
-                  onPressed: () {
-                    setState(() {
-                      indiceWidget = 9;
-                    });
-                  }
-                ),
-                const SizedBox(width: 50),
                 IconButton(
                   icon: const Icon(Icons.shopping_cart_rounded, color: Colors.black, size: 30),
                   onPressed: () {
@@ -184,14 +176,13 @@ class _HomeScreenState extends State<HomeScreen> {
             children: const [
               Inicio(),
               ArabesScreen(),
-              HombreScreen(),
-              MujerScreen(),
+              MenScreen(),
+              WomenScreen(),
               CreaTuLocion(),
               SaleScreen(),
               Help(),
               GuiaAromas(),
               CartScreen(),
-              MenScreen(),
             ],
           ),
           //TODO: FOOTER

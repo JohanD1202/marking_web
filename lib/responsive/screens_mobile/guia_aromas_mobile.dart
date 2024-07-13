@@ -4184,6 +4184,10 @@ class AromasBuscador extends StatelessWidget {
   final String? textNotaSalida7;
   final String? imageNotaSalida8;
   final String? textNotaSalida8;
+  final String? imageNotaSalida9;
+  final String? textNotaSalida9;
+  final String? imageNotaSalida10;
+  final String? textNotaSalida10;
   final String imageCorazon;
   final String textCorazon;
   final String? imageCorazon2;
@@ -4295,6 +4299,10 @@ class AromasBuscador extends StatelessWidget {
     this.textNotaSalida7,
     this.imageNotaSalida8,
     this.textNotaSalida8,
+    this.imageNotaSalida9,
+    this.textNotaSalida9,
+    this.imageNotaSalida10,
+    this.textNotaSalida10,
     required this.imageCorazon,
     required this.textCorazon,
     this.imageCorazon2,
@@ -4456,6 +4464,23 @@ class AromasBuscador extends StatelessWidget {
               Aromas(
                 image: imageNotaSalida8!,
                 text: textNotaSalida8!,
+                padding: const EdgeInsets.only(right: 0),
+              ),
+          ],
+        ),
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            if (imageNotaSalida9 != null && textNotaSalida9 != null)
+              Aromas(
+                image: imageNotaSalida9!,
+                text: textNotaSalida9!,
+                padding: const EdgeInsets.only(left: 0, right: 15),
+              ),
+            if (imageNotaSalida10 != null && textNotaSalida10 != null)
+              Aromas(
+                image: imageNotaSalida10!,
+                text: textNotaSalida10!,
                 padding: const EdgeInsets.only(right: 0),
               ),
           ],

@@ -83,7 +83,7 @@ Nuestros precios se manejan así:
                     itemCount: _lotions.length,
                     itemBuilder: (context, index) {
                       final lotion = _lotions[index];
-                      return MenLotion(
+                      return Lotion(
                         imageLocion: lotion['image'],
                         imageLocion2: lotion['image2'],
                         imageWidth: 240,
@@ -106,7 +106,7 @@ Nuestros precios se manejan así:
 
 //TODO: 
 
-class MenLotion extends StatefulWidget {
+class Lotion extends StatefulWidget {
 
   final String imageLocion;
   final String imageLocion2;
@@ -118,7 +118,7 @@ class MenLotion extends StatefulWidget {
   final double price;
 
   // ignore: use_super_parameters
-  const MenLotion({
+  const Lotion({
     Key? key,
     required this.imageLocion,
     required this.imageLocion2,
@@ -131,10 +131,10 @@ class MenLotion extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<MenLotion> createState() => _MenLotionState();
+  State<Lotion> createState() => _LotionState();
 }
 
-class _MenLotionState extends State<MenLotion> {
+class _LotionState extends State<Lotion> {
 
   int _quantity = 1;
   double _totalPrice = 0.0;
@@ -224,7 +224,7 @@ class _MenLotionState extends State<MenLotion> {
                     items: ['1', '2', '3'].map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
-                        child: Text('$value fl oz'),
+                        child: Text('$value fl oz', style: styleTextLocion),
                       );
                     }).toList(),
                   ),

@@ -85,7 +85,7 @@ class _SearchhBarState extends State<SearchhBar> {
     "Light Blue - Dolce&Gabbana",
     "Kim Kardashian - Kim Kardashian",
     "Angel - Mugler",
-    "Halloween - Halloween",
+    "Halloween - Jesús del Pozo",
     "CK2 - Calvin Klein",
     "Scandal - Jean Paul Galtier",
     "Good Girl - Carolina Herrera",
@@ -179,7 +179,7 @@ class _SearchhBarState extends State<SearchhBar> {
     "Kim Kardashian - Kim Kardashian":
         'assets/images/kim_kardashian_kim_kardashian.jpg',
     "Angel - Mugler": 'assets/images/angel_mugler.webp',
-    "Halloween - Halloween": 'assets/images/halloween_halloween.jpg',
+    "Halloween - Jesús del Pozo": 'assets/images/halloween_jesus_del_pozo.jpg',
     "CK2 - Calvin Klein": 'assets/images/ck2_calvin_klein.webp',
     "Scandal - Jean Paul Galtier": 'assets/images/scandal_jean_paul_galtier.jpg',
     "Good Girl - Carolina Herrera": 'assets/images/good_girl_carolina_herrera.jpg',
@@ -432,7 +432,7 @@ class _SearchhBarState extends State<SearchhBar> {
         case 'Angel - Mugler':
           _selectedIndex = 71;
           break;
-        case 'Halloween - Halloween':
+        case 'Halloween - Jesús del Pozo':
           _selectedIndex = 72;
           break;
         case 'CK2 - Calvin Klein':
@@ -1125,7 +1125,7 @@ Moscada''',
                 textCorazon: 'Cedro',
                 imageCorazon2: 'assets/images/cipriol.jpg',
                 textCorazon2: 'Cipriol',
-                imageCorazon3: 'asset/images/balsamo_de_gurjum.jpg',
+                imageCorazon3: 'assets/images/balsamo_de_gurjum.jpg',
                 textCorazon3: '''Bálsamo
 de Gurjum''',
                 imageCorazon4: 'assets/images/madera_de_gaiac.jpg',
@@ -2840,7 +2840,6 @@ los Valles''',
                 colorText10: Colors.white60,
                 text10: 'verde',
               ),
-              //TODO: 25
               BuscadorAromas(
                 title: 'CK One - Calvin Klein',
                 description: '''
@@ -2937,7 +2936,6 @@ Roble''',
                 colorText10: Colors.black45,
                 text10: 'almizclado',
               ),
-              //TODO: 26
               BuscadorAromas(
                 title: '360° for Men - Perry Ellis',
                 description: '''
@@ -2988,7 +2986,6 @@ Amaderadas''',
                 colorText5: Colors.black45,
                 text5: 'lavanda',
               ),
-              //TODO: 27
               BuscadorAromas(
                 title: 'Nautica Voyage - Nautica',
                 description: '''
@@ -3052,7 +3049,6 @@ Roble''',
                 colorText9: Colors.black45,
                 text9: 'floral amarillo',
               ),
-              //TODO: 28
               BuscadorAromas(
                 title: 'Toy Boy - Moschino',
                 description: '''
@@ -3133,7 +3129,6 @@ de Haití''',
                 colorText10: Colors.white70,
                 text10: 'cálido especiado',
               ),
-              //TODO: 29
               BuscadorAromas(
                 title: 'Red - Lacoste',
                 description: '''
@@ -3191,7 +3186,6 @@ Verde''',
                 colorText10: Colors.white70,
                 text10: 'cálido especiado',
               ),
-              //TODO: 30
               BuscadorAromas(
                 title:
                     'L\'Eau d\'Issey Pour Homme - Issey Miyake',
@@ -3207,15 +3201,38 @@ Es un aroma Masculino.
                 textNotaSalida2: 'Bergamota',
                 imageNotaSalida3: 'assets/images/limon.jpg',
                 textNotaSalida3: 'Limón',
+                imageNotaSalida4: 'assets/images/cedron.jpg',
+                textNotaSalida4: 'Cedrón',
+                imageNotaSalida5: 'assets/images/mandarina.jpg',
+                textNotaSalida5: 'Mandarina',
+                imageNotaSalida6: 'assets/images/cipres.jpg',
+                textNotaSalida6: 'Ciprés',
+                imageNotaSalida7: 'assets/images/calone.jpg',
+                textNotaSalida7: 'Calone',
+                imageNotaSalida8: 'assets/images/cilantro.jpg',
+                textNotaSalida8: 'Cilantro',
+                imageNotaSalida9: 'assets/images/estragon.jpg',
+                textNotaSalida9: 'Estragón',
+                imageNotaSalida10: 'assets/images/salvia.jpg',
+                textNotaSalida10: 'Salvia',
                 imageCorazon: 'assets/images/nuez_moscada.jpg',
                 textCorazon: '''Nuez
 Moscada''',
-                imageCorazon2: 'assets/images/nenufar.jpg',
-                textCorazon2: 'Nenúfar',
+                imageCorazon2: 'assets/images/flor_de_loto.jpg',
+                textCorazon2: '''Flor de
+Loto azul''',
                 imageCorazon3: 'assets/images/canela.jpg',
-                textCorazon3: 'Canela',
+                textCorazon3: '''Canela
+de Ceylan''',
                 imageCorazon4: 'assets/images/geranio.jpg',
                 textCorazon4: 'Geranio',
+                imageCorazon5: 'assets/images/azafran.jpg',
+                textCorazon5: 'Azafrán',
+                imageCorazon6: 'assets/images/reseda.jpg',
+                textCorazon6: 'Reseda',
+                imageCorazon7: 'assets/images/lirio_de_los_valles.jpg',
+                textCorazon7: '''Lirio de
+los Valles''',
                 imageBase: 'assets/images/cedro.jpg',
                 textBase: 'Cedro',
                 imageBase2: 'assets/images/sandalo.jpg',
@@ -3269,7 +3286,6 @@ Moscada''',
                 colorText10: Colors.black45,
                 text10: 'ozónico',
               ),
-              //TODO: 31
               BuscadorAromas(
                 title: 'Hugo - Hugo Boss',
                 description: '''
@@ -3339,7 +3355,6 @@ Verde''',
                 colorText9: Colors.black45,
                 text9: 'cítrico',
               ),
-              //TODO: 32
               BuscadorAromas(
                 title: 'Acqua di Gio - Giorgio Armani',
                 description: '''
@@ -3430,7 +3445,6 @@ Roble''',
                 colorText7: Colors.black45,
                 text7: 'fresco',
               ),
-              //TODO: 33
               BuscadorAromas(
                 title: 'Polo Blue - Ralph Lauren',
                 description: '''
@@ -3576,7 +3590,6 @@ de Roble''',
                 colorText10: Colors.white70,
                 text10: 'musgoso',
               ),
-              //TODO: 35
               AromasBuscador2000(
                 title: 'D\'Orsay - Ésika',
                 description: '''
@@ -3608,7 +3621,6 @@ Es un aroma Masculino.
                 colorText4: Colors.white,
                 text4: 'terrosos',
               ),
-              //TODO: 36
               BuscadorAromas(
                 title: 'Bad - Diesel',
                 description: '''
@@ -3685,7 +3697,6 @@ Tonka''',
                 colorText10: Colors.black54,
                 text10: 'animálico',
               ),
-              //TODO: 37
               BuscadorAromas(
                 title: 'Diesel White Plus - Diesel',
                 description: '''
@@ -3693,7 +3704,7 @@ Diesel White Plus de Diesel es una fragancia de la familia olfativa Ámbar Espec
 para Hombres. Diesel White Plus se lanzó en 1997. Su longevidad es moderada y su
 estela es pesada. Es un aroma Masculino.
 ''',
-                imageLocion: 'assets/images/diesel_plus_white.jpg',
+                imageLocion: 'assets/images/diesel_plus_white_diesel.jpg',
                 imageNotaSalida: 'assets/images/naranja.jpg',
                 textNotaSalida: 'Naranja',
                 imageNotaSalida2: 'assets/images/bergamota.jpg',
@@ -3734,7 +3745,6 @@ Roble''',
                 colorText4: Colors.white,
                 text4: 'especiado suave',
               ),
-              //TODO: 38
               BuscadorAromas(
                 title: 'Aqva Pour Homme - Bvlgari',
                 description: '''
@@ -3802,7 +3812,6 @@ Amaderadas''',
                  colorText8: Colors.black45,
                  text8: 'atalcado',
                ),
-              //TODO: 39
               BuscadorAromas(
                 title: 'Boss The Scent - Hugo Boss',
                 description: '''
@@ -4003,7 +4012,6 @@ Tonka''',
                 colorText9: Colors.white,
                 text9: 'amaderado',
               ),
-              //TODO: 42
               BuscadorAromas(
                 title: '212 VIP Black Red - Carolina Herrera',
                 description: '''
@@ -4119,7 +4127,6 @@ Tonka''',
                 colorText10: Colors.black45,
                 text10: 'nueces',
               ),
-              //TODO: 44
               BuscadorAromas(
                 title: 'Arsenal - Gilles Cantuel',
                 description: '''
@@ -4165,7 +4172,6 @@ aroma Masculino.
                 colorText5: Colors.white70,
                 text5: 'cuero',
               ),
-              //TODO: 45
               BuscadorAromas(
                 title: 'Legend Spirit - Montblanc',
                 description: '''
@@ -4237,7 +4243,6 @@ Roble''',
                 colorText9: Colors.black45,
                 text9: 'atalcado',
               ),
-              //TODO: 46
               BuscadorAromas(
                 title: 'Valentino Born in Roma - Valentino',
                 description: '''
@@ -4304,7 +4309,6 @@ Blancas''',
                 colorText10: Colors.white70,
                 text10: 'terrosos',
               ),
-              //TODO: 47
               BuscadorAromas(
                 title: 'Bvlgari Man In Black - Bvlgari',
                 description: '''
@@ -4374,7 +4378,6 @@ de Gaiac''',
                 colorText10: Colors.black45,
                 text10: 'iris',
               ),
-              //TODO: 48
               BuscadorAromas(
                 title: 'Lacoste L.12.12 White - Lacoste',
                 description: '''
@@ -4424,7 +4427,6 @@ Ylang''',
                 colorText6: Colors.white70,
                 text6: 'verde',
               ),
-              //TODO: 49
               AromasBuscador2000(
                 title: 'Paris Hilton for Men - Paris Hilton',
                 description: '''
@@ -4481,7 +4483,6 @@ Montaña''',
                 colorText6: Colors.white70,
                 text6: 'verde',
               ),
-              //TODO: 50
               BuscadorAromas(
                 title: 'Scandal Pour Homme - Jean Paul Galtier',
                 description: '''
@@ -4537,7 +4538,7 @@ Tonka''',
                 colorText9: Colors.white70,
                 text9: 'terrosos',
               ),
-              //TODO: 51
+              //TODO: LOCIONES MUJER
               BuscadorAromas(
                 title: 'Carolina Herrera - Carolina Herrera',
                 description: '''
@@ -4587,7 +4588,6 @@ Amaderadas''',
                 colorText7: Colors.white60,
                 text7: 'animálico',
               ),
-              //TODO: 35
               BuscadorAromas(
                 title: 'CH (2015) - Carolina Herrera',
                 description: '''
@@ -4661,7 +4661,6 @@ Naranjo''',
                 colorText10: Colors.black45,
                 text10: 'fresco especiado',
               ),
-              //TODO: 36
               BuscadorAromas(
                 title: '212 VIP Rosé - Carolina Herrera',
                 description: '''
@@ -4707,7 +4706,6 @@ Amaderadas''',
                 colorText5: Colors.black45,
                 text5: 'atalcado',
               ),
-              //TODO: 37
               BuscadorAromas(
                 title: '360° - Perry Ellis',
                 description: '''
@@ -4786,7 +4784,6 @@ los Valles''',
                 colorText10: Colors.black45,
                 text10: 'ozónico',
               ),
-              //TODO: 38
               BuscadorAromas(
                 title: 'Paris Hilton - Paris Hilton',
                 description: '''
@@ -4863,7 +4860,6 @@ Roble''',
                 colorText10: Colors.black54,
                 text10: 'floral amarillo',
               ),
-              //TODO: 39
               BuscadorAromas(
                 title: 'Can Can - Paris Hilton',
                 description: '''
@@ -4932,7 +4928,6 @@ Amaderadas''',
                 colorText10: Colors.black45,
                 text10: 'almizclado',
               ),
-              //TODO: 40
               BuscadorAromas(
                 title: 'Heiress - Paris Hilton',
                 description: '''
@@ -5009,7 +5004,6 @@ Blancas''',
                 colorText9: Colors.black45,
                 text9: 'fresco',
               ),
-              //TODO: 41
               BuscadorAromas(
                 title: 'Toy 2 - Moschino',
                 description: '''
@@ -5077,7 +5071,6 @@ Blanca''',
                 colorText10: Colors.black45,
                 text10: 'floral blanco',
               ),
-              //TODO: 42
               BuscadorAromas(
                 title: 'Amor Amor - Cacharel',
                 description: '''
@@ -5119,7 +5112,8 @@ Tonka''',
                 imageBase4: 'assets/images/ambar.jpg',
                 textBase4: 'Ámbar',
                 imageBase5: 'assets/images/cedro.jpg',
-                textBase5: 'Cedro',
+                textBase5: '''Cedro de
+Virginia''',
                 containerWidth: 230,
                 containerColor: Color.fromRGBO(249, 255, 82, 1),
                 colorText: Colors.black,
@@ -5161,7 +5155,6 @@ Tonka''',
                 colorText10: Colors.white,
                 text10: 'amaderado',
               ),
-              //TODO: 43
               BuscadorAromas(
                 title: 'La Vie Est Belle - Lancôme',
                 description: '''
@@ -5231,7 +5224,6 @@ Tonka''',
                 colorText10: Colors.white70,
                 text10: 'cálido especiado',
               ),
-              //TODO: 44
               BuscadorAromas(
                 title: 'Light Blue - Dolce&Gabbana',
                 description: '''
@@ -5294,7 +5286,6 @@ Blanca''',
                 colorText8: Colors.white70,
                 text8: 'verde',
               ),
-              //TODO: 45
               BuscadorAromas(
                 title: 'Kim Kardashian - Kim Kardashian',
                 description: '''
@@ -5343,7 +5334,6 @@ Amaderadas''',
                 colorText3: Colors.white70,
                 text3: 'animálico',
               ),
-              //TODO: 46
               BuscadorAromas(
                 title: 'Angel - Mugler',
                 description: '''
@@ -5453,14 +5443,13 @@ Tonka''',
                 colorText10: Colors.white70,
                 text10: 'chocolate',
               ),
-              //TODO: 47
               BuscadorAromas(
-                title: 'Halloween - Halloween',
+                title: 'Halloween - Jesús del Pozo',
                 description: '''
-Halloween de Halloween es una fragancia de la familia olfativa Ámbar Floral para Mujeres. Halloween se lanzó en 1997.
+Halloween de Jesús del Pozo es una fragancia de la familia olfativa Floral para Mujeres. Halloween se lanzó en 1997.
 Su longevidad y su estela son moderadas. Es una aroma Femenino.
 ''',
-                imageLocion: 'assets/images/halloween_halloween.jpg',
+                imageLocion: 'assets/images/halloween_jesus_del_pozo.jpg',
                 imageNotaSalida: 'assets/images/violeta.jpg',
                 textNotaSalida: 'Violeta',
                 imageNotaSalida2: 'assets/images/notas_marinas.jpg',
@@ -5532,7 +5521,6 @@ los Valles''',
                 colorText10: Colors.white,
                 text10: 'ámbar',
               ),
-              //TODO: 48
               BuscadorAromas(
                 title: 'CK2 - Calvin Klein',
                 description: '''
@@ -5990,7 +5978,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
     "Light Blue - Dolce&Gabbana",
     "Kim Kardashian - Kim Kardashian",
     "Angel - Mugler",
-    "Halloween - Halloween",
+    "Halloween - Jesús del Pozo",
     "CK2 - Calvin Klein",
     "Scandal - Jean Paul Galtier",
     "Good Girl - Carolina Herrera",
@@ -6084,7 +6072,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
     "Kim Kardashian - Kim Kardashian":
         'assets/images/kim_kardashian_kim_kardashian.jpg',
     "Angel - Mugler": 'assets/images/angel_mugler.webp',
-    "Halloween - Halloween": 'assets/images/halloween_halloween.jpg',
+    "Halloween - Jesús del Pozo": 'assets/images/halloween_jesus_del_pozo.jpg',
     "CK2 - Calvin Klein": 'assets/images/ck2_calvin_klein.webp',
     "Scandal - Jean Paul Galtier": 'assets/images/scandal_jean_paul_galtier.jpg',
     "Good Girl - Carolina Herrera": 'assets/images/good_girl_carolina_herrera.jpg',
@@ -6337,7 +6325,7 @@ class _SearchhBarMobileState extends State<SearchhBarMobile> {
         case 'Angel - Mugler':
           _selectedIndex = 71;
           break;
-        case 'Halloween - Halloween':
+        case 'Halloween - Jesús del Pozo':
           _selectedIndex = 72;
           break;
         case 'CK2 - Calvin Klein':
@@ -7069,6 +7057,9 @@ de Gaiac''',
                 textCorazon4: '''
 Madera
 de Cachemira''',
+                imageCorazon5: 'assets/images/balsamo_de_gurjum.jpg',
+                textCorazon5: '''Bálsamo
+de Gurjum''',
                 imageBase: 'assets/images/sandalo.jpg',
                 textBase: 'Sándalo',
                 imageBase2: 'assets/images/tabaco.jpg',
@@ -9225,15 +9216,38 @@ estela es moderada. Es un aroma Masculino.
                 textNotaSalida2: 'Bergamota',
                 imageNotaSalida3: 'assets/images/limon.jpg',
                 textNotaSalida3: 'Limón',
+                imageNotaSalida4: 'assets/images/cedron.jpg',
+                textNotaSalida4: 'Cedrón',
+                imageNotaSalida5: 'assets/images/mandarina.jpg',
+                textNotaSalida5: 'Mandarina',
+                imageNotaSalida6: 'assets/images/cipres.jpg',
+                textNotaSalida6: 'Ciprés',
+                imageNotaSalida7: 'assets/images/calone.jpg',
+                textNotaSalida7: 'Calone',
+                imageNotaSalida8: 'assets/images/cilantro.jpg',
+                textNotaSalida8: 'Cilantro',
+                imageNotaSalida9: 'assets/images/estragon.jpg',
+                textNotaSalida9: 'Estragón',
+                imageNotaSalida10: 'assets/images/salvia.jpg',
+                textNotaSalida10: 'Salvia',
                 imageCorazon: 'assets/images/nuez_moscada.jpg',
                 textCorazon: '''Nuez
 Moscada''',
-                imageCorazon2: 'assets/images/nenufar.jpg',
-                textCorazon2: 'Nenúfar',
+                imageCorazon2: 'assets/images/flor_de_loto.jpg',
+                textCorazon2: '''Flor de
+Loto azul''',
                 imageCorazon3: 'assets/images/canela.jpg',
-                textCorazon3: 'Canela',
+                textCorazon3: '''Canela
+de Ceylan''',
                 imageCorazon4: 'assets/images/geranio.jpg',
                 textCorazon4: 'Geranio',
+                imageCorazon5: 'assets/images/azafran.jpg',
+                textCorazon5: 'Azafrán',
+                imageCorazon6: 'assets/images/reseda.jpg',
+                textCorazon6: 'Reseda',
+                imageCorazon7: 'assets/images/lirio_de_los_valles.jpg',
+                textCorazon7: '''Lirio de
+los Valles''',
                 imageBase: 'assets/images/cedro.jpg',
                 textBase: 'Cedro',
                 imageBase2: 'assets/images/sandalo.jpg',
@@ -9721,7 +9735,7 @@ Hombres. Diesel White Plus se lanzó en 1997.
 Su longevidad es moderada y su estela es
 pesada. Es un aroma Masculino.
 ''',
-                imageLocion: 'assets/images/diesel_plus_white.jpg',
+                imageLocion: 'assets/images/diesel_plus_white_diesel.jpg',
                 imageNotaSalida: 'assets/images/naranja.jpg',
                 textNotaSalida: 'Naranja',
                 imageNotaSalida2: 'assets/images/bergamota.jpg',
@@ -11183,7 +11197,8 @@ Tonka''',
                 imageBase4: 'assets/images/ambar.jpg',
                 textBase4: 'Ámbar',
                 imageBase5: 'assets/images/cedro.jpg',
-                textBase5: 'Cedro',
+                textBase5: '''Cedro de
+Virginia''',
                 containerWidth: 230,
                 containerColor: Color.fromRGBO(249, 255, 82, 1),
                 colorText: Colors.black,
@@ -11525,14 +11540,14 @@ Tonka''',
                 text10: 'chocolate',
               ),
               AromasBuscador(
-                title: 'Halloween - Halloween',
+                title: 'Halloween - Jesús del Pozo',
                 description: '''
-Halloween de Halloween es una fragancia de la
-familia olfativa Ámbar Floral para Mujeres.
+Halloween de Jesús del Pozo es una fragancia
+de la familia olfativa Floral para Mujeres.
 Halloween se lanzó en 1997. Su longevidad y
 su estela son moderadas. Es una aroma Femenino.
 ''',
-                imageLocion: 'assets/images/halloween_halloween.jpg',
+                imageLocion: 'assets/images/halloween_jesus_del_pozo.jpg',
                 imageNotaSalida: 'assets/images/violeta.jpg',
                 textNotaSalida: 'Violeta',
                 imageNotaSalida2: 'assets/images/notas_marinas.jpg',

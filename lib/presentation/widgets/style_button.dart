@@ -1,17 +1,16 @@
 // ignore_for_file: curly_braces_in_flow_control_structures
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:marking_web/exports.dart';
+import 'package:aromas_selectos/exports.dart';
 
 
 ButtonStyle styleButton = ButtonStyle(
-  overlayColor: MaterialStateProperty.resolveWith<Color>(
-    (Set<MaterialState> states) {
-      if (states.contains(MaterialState.focused))
+  overlayColor: WidgetStateProperty.resolveWith<Color>(
+    (Set<WidgetState> states) {
+      if (states.contains(WidgetState.focused))
         return const Color.fromARGB(255, 255, 171, 15);
-      if (states.contains(MaterialState.hovered))
+      if (states.contains(WidgetState.hovered))
         return const Color.fromARGB(255, 255, 171, 15);
-      if (states.contains(MaterialState.pressed))
+      if (states.contains(WidgetState.pressed))
         return const Color.fromARGB(255, 255, 171, 15);
       return const Color.fromARGB(255, 255, 171, 15);
     }
@@ -666,38 +665,38 @@ TextStyle styleTextFooterMobile = const TextStyle(
 );*/
 
 ButtonStyle styleText2 = ButtonStyle(
-  backgroundColor: MaterialStateProperty.all(Colors.white),
-  foregroundColor: MaterialStateProperty.all(Colors.black),
-  textStyle: MaterialStateProperty.all(styleText)
+  backgroundColor: WidgetStateProperty.all(Colors.white),
+  foregroundColor: WidgetStateProperty.all(Colors.black),
+  textStyle: WidgetStateProperty.all(styleText)
 );
 
 ButtonStyle styleText20 = ButtonStyle(
-  fixedSize: MaterialStateProperty.all(const Size(150, 13)),
-  backgroundColor: MaterialStateProperty.all(Colors.black),
-  foregroundColor: MaterialStateProperty.all(Colors.white),
-  textStyle: MaterialStateProperty.all(styleTextCar)
+  fixedSize: WidgetStateProperty.all(const Size(150, 13)),
+  backgroundColor: WidgetStateProperty.all(Colors.black),
+  foregroundColor: WidgetStateProperty.all(Colors.white),
+  textStyle: WidgetStateProperty.all(styleTextCar)
 );
 
 ButtonStyle styleText200 = ButtonStyle(
-  fixedSize: MaterialStateProperty.all(const Size(300, 35)),
-  shape: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
-  backgroundColor: MaterialStateProperty.all(Colors.black),
-  foregroundColor: MaterialStateProperty.all(Colors.white),
+  fixedSize: WidgetStateProperty.all(const Size(300, 35)),
+  shape: WidgetStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
+  backgroundColor: WidgetStateProperty.all(Colors.black),
+  foregroundColor: WidgetStateProperty.all(Colors.white),
 );
 
 ButtonStyle styleText300 = ButtonStyle(
-  fixedSize: MaterialStateProperty.all(const Size(437, 35)),
-  shape: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
-  backgroundColor: MaterialStateProperty.all(Colors.black),
-  foregroundColor: MaterialStateProperty.all(Colors.white),
+  fixedSize: WidgetStateProperty.all(const Size(437, 35)),
+  shape: WidgetStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
+  backgroundColor: WidgetStateProperty.all(Colors.black),
+  foregroundColor: WidgetStateProperty.all(Colors.white),
 );
 
 ButtonStyle styleText400 = ButtonStyle(
-  fixedSize: MaterialStateProperty.all(const Size(300, 35)),
-  side: MaterialStateProperty.all(const BorderSide(color: Colors.black, width: 1)),
-  shape: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
-  backgroundColor: MaterialStateProperty.all(Colors.white),
-  foregroundColor: MaterialStateProperty.all(Colors.black),
+  fixedSize: WidgetStateProperty.all(const Size(300, 35)),
+  side: WidgetStateProperty.all(const BorderSide(color: Colors.black, width: 1)),
+  shape: WidgetStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero))),
+  backgroundColor: WidgetStateProperty.all(Colors.white),
+  foregroundColor: WidgetStateProperty.all(Colors.black),
 );
 
 
@@ -1055,37 +1054,3 @@ class TextHelpWidgetMobile extends StatelessWidget {
   }
 }
 
-
-
-
-
-// 
-/*
-Text textHelp = const Text(
-  'Bienvenido al Centro de Ayuda de Marking \n'
-  'Estamos aquí para brindarte asistencia y responder a todas tus preguntas \n'
-  'Nuestra misión es hacer que tu experiencia de compra sea lo más fácil y satisfactoria posible \n'
-  'Como podemos ayudarte: \n'
-  'Preguntas Frecuentes: Explora nuestras preguntas frecuentes para obtener respuestas rápidas a las consultas más comunes \n'
-  'Guías de Producto: Descubre guías detalladas sobre nuestros productos, incluyendo características, especificaciones y consejos de uso \n'
-  'Proceso de Compra: Aprende más sobre cómo realizar pedidos, opciones de pago y seguimiento de envíos \n'
-  'Atención al Cliente: ¿Necesitas ayuda personalizada? Nuestro equipo de atención al cliente está disponible para ayudarte. Contáctanos por chat, correo electrónico o teléfono \n'
-  'Explora nuestras Categorías: \n'
-  'Aromas Selectos \n'
-  'Nuevo \n'
-  'Hombre \n'
-  'Mujer \n'
-  'Unisex \n'
-  'Sale \n'
-  'Estamos comprometidos a proporcionarte la mejor experiencia de compra \n'
-  'Si no encuentras la información que necesitas, no dudes en contactarnos. ¡Estamos aquí para ayudarte! \n'
-);
-*/
-//       \n
-
-/*
-fontSize: 20,
-  fontWeight: FontWeight.bold,
-  color: Colors.black
-
-  */

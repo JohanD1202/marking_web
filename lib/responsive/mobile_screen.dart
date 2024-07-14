@@ -1,9 +1,10 @@
-import 'package:marking_web/exports.dart';
-import 'package:marking_web/responsive/screens_mobile/arabes_screen_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/cart_screen_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/crea_tu_locion_screen_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/help_mobile.dart';
-import 'package:marking_web/responsive/screens_mobile/mujer_mobile.dart';
+import 'package:aromas_selectos/exports.dart';
+import 'package:aromas_selectos/presentation/widgets/style_button.dart';
+import 'package:aromas_selectos/responsive/screens_mobile/arabes_screen_mobile.dart';
+import 'package:aromas_selectos/responsive/screens_mobile/cart_screen_mobile.dart';
+import 'package:aromas_selectos/responsive/screens_mobile/crea_tu_locion_screen_mobile.dart';
+import 'package:aromas_selectos/responsive/screens_mobile/help_mobile.dart';
+import 'package:aromas_selectos/responsive/screens_mobile/women_screen_mobile.dart';
 
 
 class MobileScreen extends StatefulWidget {

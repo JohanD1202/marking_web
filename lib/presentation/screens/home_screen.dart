@@ -1,13 +1,16 @@
-import 'package:marking_web/exports.dart';
+import 'package:aromas_selectos/exports.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
-import 'package:marking_web/presentation/screens/cart_screen.dart';
-import 'package:marking_web/presentation/screens/crea_tu_locion_screen.dart';
-import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
-import 'package:marking_web/presentation/screens/arabes_screen.dart';
-import 'package:marking_web/presentation/screens/men_screen.dart';
-import 'package:marking_web/presentation/screens/women_screen.dart';
+import 'package:aromas_selectos/presentation/screens/cart_screen.dart';
+import 'package:aromas_selectos/presentation/screens/crea_tu_locion_screen.dart';
+import 'package:aromas_selectos/presentation/screens/guia_de_aromas.dart';
+import 'package:aromas_selectos/presentation/screens/arabes_screen.dart';
+import 'package:aromas_selectos/presentation/screens/men_screen.dart';
+import 'package:aromas_selectos/presentation/screens/women_screen.dart';
+import 'package:aromas_selectos/presentation/widgets/style_button.dart';
+import 'package:aromas_selectos/responsive/mobile_screen.dart';
+import 'package:aromas_selectos/responsive/responsive.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -464,99 +467,3 @@ void _launchInstagram() async {
   html.window.open(url, 'Instagram');
 
 }
-
-
-/*Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: ButtonTextBar(
-                  buttonText: 'Estampados', 
-                  onPressed: () {
-                    setState(() {
-                      _selectedIndex = 2;
-                    });
-                  }
-                ),
-              ),*/
-              //const Spacer(),
-
-//TODO: DIRECCIÓN
-/*
-Column(
-                          children: [
-                            Text('Dirección', style: styleTextFooter),
-                            const SizedBox(height: 10),
-                            Text('Carrera 34 A No. 31-11 B/Victoria - Tuluá', style: styleTextCar),
-                            const SizedBox(height: 10),
-                            Text('¿Cómo Llegar?', style: styleTextCar),
-                          ],
-                        )*/
-
-
-//TODO: BOTON VER PRODUCTOS
-/*
-Padding(
-  padding: const EdgeInsets.all(8),
-  child: SizedBox(
-    height: 45,
-    width: 220,
-    child: ElevatedButton(
-      style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-        backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30),
-            side: const BorderSide( color: Colors.black)
-          )
-        )
-      ),
-      onPressed: () {},
-      child: const Text('Ver Productos'),
-    ),
-  ),
-)
-
-*/
-
-  /*Visibility(
-          visible: _selectedIndex == 0,
-          child: screen1,
-        ),
-        Visibility(
-          visible: _selectedIndex == 1,
-          child: screen2,
-        ),
-        Visibility(
-          visible: _selectedIndex == 2,
-          child: screen3,
-        ),
-        Visibility(
-          visible: _selectedIndex == 3,
-          child: screen4,
-        ),
-        Visibility(
-          visible: _selectedIndex == 4,
-          child: screen5,
-        ),*/
-
-        /*
-        Tennis Tienda de Ropa Online
-Bienvenid@ a Tennis, una tienda de ropa colombiana 
-en la que encuentras ropa, zapatos, accesorios y 
-productos de belleza para mujer, hombre, niña y niño. 
-Somos una marca enfocada en un estilo de vida joven, fresco y urbano. 
-Creamos colecciones de moda con las últimas tendencias de temporada 
-para todos los gustos y todas las edades.
-        */
-
-           /*Tooltip(
-                message: 'Bolsos', // Texto que se mostrará al pasar el ratón por encima
-                child: TextButton(
-                  onPressed: () {
-                    setState(() {
-                      _selectedIndex = 4;
-                    });
-                  },
-                  child: Text('Mujer', style: styleText), // Texto del botón
-                ),
-              ),*/

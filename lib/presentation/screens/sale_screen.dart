@@ -1,5 +1,5 @@
-import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/section_sale.dart';
+import 'package:aromas_selectos/exports.dart';
+import 'package:aromas_selectos/presentation/screens/section_sale.dart';
 
 
 class SaleScreen extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:marking_web/exports.dart';
+import 'package:aromas_selectos/exports.dart';
 
 
 class Locion extends StatefulWidget {
@@ -1067,7 +1067,7 @@ class _ImageOnHoverMobileState extends State<ImageOnHoverMobile> {
               children: [
                 Image.asset(widget.imagePath, width: widget.imageWidth, height: widget.imageHeight),
                 SizedBox(
-                  width: 250,
+                  width: 185,
                   height: 140,
                   child: SingleChildScrollView(
                     child: Text(widget.dialogText, style: styleTextLocionMobile)

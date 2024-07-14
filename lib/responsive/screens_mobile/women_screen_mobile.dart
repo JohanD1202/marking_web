@@ -1,5 +1,5 @@
-import 'package:marking_web/exports.dart';
-import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
+import 'package:aromas_selectos/exports.dart';
+import 'package:aromas_selectos/responsive/screens_mobile/widgets_mobile.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class WomenScreenMobile extends StatefulWidget {
@@ -86,7 +86,7 @@ increíblemente bajo!''', style: textoMobile),
                     physics: const NeverScrollableScrollPhysics(),
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: 0.56,
+                      childAspectRatio: 0.45,
                     ),
                     itemCount: _lotions.length,
                     itemBuilder: (context, index) {

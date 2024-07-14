@@ -1,4 +1,4 @@
-import 'package:marking_web/exports.dart';
+import 'package:aromas_selectos/exports.dart';
 import 'package:flutter_share_me/flutter_share_me.dart';
 import 'package:url_launcher/url_launcher.dart';
 

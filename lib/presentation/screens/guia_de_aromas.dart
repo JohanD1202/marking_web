@@ -1,4 +1,4 @@
-import 'package:marking_web/exports.dart';
+import 'package:aromas_selectos/exports.dart';
 
 class GuiaAromas extends StatelessWidget {
   // ignore: use_super_parameters

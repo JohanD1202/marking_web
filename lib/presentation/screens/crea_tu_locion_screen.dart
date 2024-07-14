@@ -1,5 +1,5 @@
-import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/section_crea_tu_locion.dart';
+import 'package:aromas_selectos/exports.dart';
+import 'package:aromas_selectos/presentation/screens/section_crea_tu_locion.dart';
 
 
 class CreaTuLocion extends StatefulWidget {

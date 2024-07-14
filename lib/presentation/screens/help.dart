@@ -1,8 +1,8 @@
-import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
+import 'package:aromas_selectos/exports.dart';
+import 'package:aromas_selectos/presentation/screens/guia_de_aromas.dart';
 import 'dart:html' as html;
 
-import 'package:marking_web/presentation/screens/preguntas_frecuentes_screen.dart';
+import 'package:aromas_selectos/presentation/screens/preguntas_frecuentes_screen.dart';
 
 
 class Help extends StatefulWidget {

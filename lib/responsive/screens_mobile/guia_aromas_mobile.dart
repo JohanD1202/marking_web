@@ -1,5 +1,5 @@
-import 'package:marking_web/exports.dart';
-import 'package:marking_web/responsive/screens_mobile/widgets_mobile.dart';
+import 'package:aromas_selectos/exports.dart';
+import 'package:aromas_selectos/responsive/screens_mobile/widgets_mobile.dart';
 
 class GuiaAromasMobile extends StatelessWidget {
   // ignore: use_super_parameters

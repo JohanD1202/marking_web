@@ -1,4 +1,4 @@
-import 'package:marking_web/exports.dart';
+import 'package:aromas_selectos/exports.dart';
 
 
 class PreguntasFrecuentesMobile extends StatelessWidget {

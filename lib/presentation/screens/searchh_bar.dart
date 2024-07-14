@@ -1,5 +1,5 @@
-import 'package:marking_web/exports.dart';
-import 'package:marking_web/presentation/screens/guia_de_aromas.dart';
+import 'package:aromas_selectos/exports.dart';
+import 'package:aromas_selectos/presentation/screens/guia_de_aromas.dart';
 
 
 class SearchhBar extends StatefulWidget {
